@@ -140,6 +140,17 @@ blocks = [
               'o relatório <b>Financeiro - Recebimentos</b> agora tem a coluna e o filtro <b>Operadora</b> '
               '(pela guia faturada), e o <b>Relatório Guia Faturamento</b> tem a opção <b>Agrupar por Operadora</b>.'),
 
+    ('h2', 'Como ver quais sessões compõem cada número (novo)'),
+    ('p', 'Cada número do Dashboard pode ser aberto para mostrar <b>as sessões que o formam</b>. Clique em um dos cards '
+          '(Sessões Registradas, Pacientes, Taxa de Presença, Taxa de Absenteísmo), em uma linha das tabelas Por '
+          'Profissional, Por Especialidade ou Por Operadora, ou em Particular / Convênio. Para ver todas as sessões do '
+          'período, use o botão <b>Ver sessões</b> ao lado de Buscar. A lista usa exatamente o mesmo critério do painel, '
+          'então o total da lista é sempre igual ao número clicado.'),
+    ('img', '44-dashboard-drilldown.png', 'Ao clicar em Taxa de Presença (Setembro/2026): as 10 sessões presentes, com paciente, profissional, especialidade, operadora, data de inclusão e dias de antecedência.'),
+    ('p', 'Use o botão <b>Exportar CSV</b> para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, '
+          'Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. '
+          'A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".'),
+
     ('h2', 'Quadro resumo: onde conferir cada informação'),
     ('tabelagen', ['Informação do Dashboard', 'Onde conferir', 'Observação'],
      [
