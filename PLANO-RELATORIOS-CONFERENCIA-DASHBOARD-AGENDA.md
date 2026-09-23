@@ -75,6 +75,10 @@ drill-down.
 2. Recebimentos: coluna e filtro de Operadora (via guia faturada).
 3. Guia Faturamento: opção de agrupar por Operadora.
 
+### Status (23/09/2026)
+R1 (sessões), R2 (novos x recorrentes), R3 (capacidade) e R4 (faturamento por convênio) foram entregues como
+**drill-down** nos cards e tabelas do Dashboard (lista + Exportar CSV), com o mesmo critério do painel.
+
 ## 3. Ordem sugerida
 1. Decidir a opção A/B/C do item 1.2 (bloqueia o texto final dos cards).
 2. Ajustes baratos (1–3 acima).

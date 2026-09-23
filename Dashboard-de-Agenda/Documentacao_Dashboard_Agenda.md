@@ -136,6 +136,24 @@ Cada número do Dashboard pode ser aberto para mostrar as sessões que o formam.
 
 _Ao clicar em Taxa de Presença (Setembro/2026): as 10 sessões presentes, com paciente, profissional, especialidade, operadora, data de inclusão e dias de antecedência._
 
+## Listas de conferência dos demais cards
+
+Os cards que não são sessões também abrem uma lista, com o mesmo critério do painel: Pacientes Novos e Pacientes Recorrentes (paciente, data da primeira sessão de toda a história e sessões no período), Taxa de Ocupação (cada horário de profissional que compõe a capacidade, com data, dia da semana, profissional, horário e se é fixo ou avulso) e as linhas do quadro Faturamento por Convênio (uma linha por conta a receber, com quantidade de guias, valor faturado e valor recebido no período).
+
+![Pacientes Novos (Setembro/2026): 2 pacientes, cuja primeira sessão de toda a história cai dentro do período.](45-drilldown-novos.png)
+
+_Pacientes Novos (Setembro/2026): 2 pacientes, cuja primeira sessão de toda a história cai dentro do período._
+
+![Taxa de Ocupação: a lista tem 629 linhas, uma para cada horário disponível; esse é o denominador da taxa (15 de 629).](46-drilldown-capacidade.png)
+
+_Taxa de Ocupação: a lista tem 629 linhas, uma para cada horário disponível; esse é o denominador da taxa (15 de 629)._
+
+![Faturamento por Convênio, linha PROPRIO (01/01 a 30/09/2026): conta a receber 61, 1 guia, R$ 1.223,00 faturado e R$ 1.373,00 recebido; confere com o quadro.](47-drilldown-faturamento.png)
+
+_Faturamento por Convênio, linha PROPRIO (01/01 a 30/09/2026): conta a receber 61, 1 guia, R$ 1.223,00 faturado e R$ 1.373,00 recebido; confere com o quadro._
+
+> ⚠️ Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista e pode ser identificado ali.
+
 Use o botão Exportar CSV para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".
 
 ## Quadro resumo: onde conferir cada informação

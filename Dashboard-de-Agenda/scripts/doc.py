@@ -147,6 +147,18 @@ blocks = [
           'período, use o botão <b>Ver sessões</b> ao lado de Buscar. A lista usa exatamente o mesmo critério do painel, '
           'então o total da lista é sempre igual ao número clicado.'),
     ('img', '44-dashboard-drilldown.png', 'Ao clicar em Taxa de Presença (Setembro/2026): as 10 sessões presentes, com paciente, profissional, especialidade, operadora, data de inclusão e dias de antecedência.'),
+    ('h2', 'Listas de conferência dos demais cards'),
+    ('p', 'Os cards que não são sessões também abrem uma lista, com o mesmo critério do painel: '
+          '<b>Pacientes Novos</b> e <b>Pacientes Recorrentes</b> (paciente, data da primeira sessão de toda a história e '
+          'sessões no período), <b>Taxa de Ocupação</b> (cada horário de profissional que compõe a capacidade, com data, dia '
+          'da semana, profissional, horário e se é fixo ou avulso) e as linhas do quadro <b>Faturamento por Convênio</b> '
+          '(uma linha por conta a receber, com quantidade de guias, valor faturado e valor recebido no período).'),
+    ('img', '45-drilldown-novos.png', 'Pacientes Novos (Setembro/2026): 2 pacientes, cuja primeira sessão de toda a história cai dentro do período.'),
+    ('img', '46-drilldown-capacidade.png', 'Taxa de Ocupação: a lista tem 629 linhas, uma para cada horário disponível; esse é o denominador da taxa (15 de 629).'),
+    ('img', '47-drilldown-faturamento.png', 'Faturamento por Convênio, linha PROPRIO (01/01 a 30/09/2026): conta a receber 61, 1 guia, R$ 1.223,00 faturado e R$ 1.373,00 recebido; confere com o quadro.'),
+    ('aviso', 'Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. '
+              'Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista '
+              'e pode ser identificado ali.'),
     ('p', 'Use o botão <b>Exportar CSV</b> para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, '
           'Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. '
           'A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".'),

@@ -16,36 +16,41 @@
   },
   {
     "audio": "04.wav",
+    "imagem": "46-drilldown-capacidade.png",
+    "texto": "Os outros cards também abrem listas. Pacientes novos e recorrentes mostram a data da primeira sessão de cada paciente. A taxa de ocupação lista os horários que formam a capacidade, seiscentos e vinte e nove neste exemplo. E cada linha do faturamento por convênio mostra as contas a receber, com o valor faturado e o recebido. O número de linhas da lista deve sempre bater com o card."
+  },
+  {
+    "audio": "05.wav",
     "imagem": "22-agendamento-grade-mes.png",
     "texto": "Para conferir, abra Agenda e clique em Ver Agenda no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
   },
   {
-    "audio": "05.wav",
+    "audio": "06.wav",
     "imagem": "23a-modal-filtro-sessao1-presente.png",
     "texto": "Clique em Filtros, escolha Presente no campo Sessão 1 e filtre. O rodapé mostra o total de registros: oito. Repita para as Sessões 2 a 5, e some: oito, mais um, mais um, dá dez presentes."
   },
   {
-    "audio": "06.wav",
+    "audio": "07.wav",
     "imagem": "23-agendamento-filtro-sessao1-presente.png",
     "texto": "Fazendo o mesmo com Ausente, dá cinco ausentes. Então as sessões registradas são quinze, a taxa de presença é dez sobre quinze, sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze, trinta e três vírgula três por cento. Bate com o Dashboard."
   },
   {
-    "audio": "07.wav",
+    "audio": "08.wav",
     "imagem": "24-relatorio-qtd-marcacao.png",
     "texto": "Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação, que mostra presentes, ausentes e ausência justificada por profissional, com a linha de total somando o mês inteiro. Atenção apenas: a quantidade de sessões é a prevista, não a registrada."
   },
   {
-    "audio": "08.wav",
+    "audio": "09.wav",
     "imagem": "42-prof-horarios.png",
     "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Profissional horários. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
   },
   {
-    "audio": "09.wav",
+    "audio": "10.wav",
     "imagem": "43-faturamento-corrigido.png",
     "texto": "O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro. Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia. Nesta revisão, corrigimos um erro que repetia o valor faturado a cada baixa."
   },
   {
-    "audio": "10.wav",
+    "audio": "11.wav",
     "imagem": "32-relatorio-recebimentos-periodo.png",
     "texto": "Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período, e filtre pela operadora, que agora tem coluna e filtro próprios. Some as baixas da guia: mil e vinte e três, mais duzentos, mais cento e cinquenta, dá mil trezentos e setenta e três reais recebidos. O relatório Guia Faturamento também pode ser agrupado por operadora."
   }
