@@ -35,7 +35,7 @@ _styles.add(ParagraphStyle(name='H1', fontSize=18, leading=22, textColor=colors.
 _styles.add(ParagraphStyle(name='H2', fontSize=13, leading=16, textColor=colors.HexColor(COR_TITULO_SECAO), spaceBefore=14, spaceAfter=6, fontName='Helvetica-Bold'))
 _styles.add(ParagraphStyle(name='Corpo', fontSize=9.5, leading=13, alignment=TA_LEFT, spaceAfter=6))
 _styles.add(ParagraphStyle(name='Legenda', fontSize=8.5, leading=11, textColor=colors.HexColor('#666'), alignment=TA_CENTER, spaceBefore=4, spaceAfter=14, fontName='Helvetica-Oblique'))
-_styles.add(ParagraphStyle(name='Aviso', fontSize=9.5, leading=13, textColor=colors.HexColor('#8a4b00'), backColor=colors.HexColor('#fff3cd'), borderPadding=8, spaceAfter=10))
+_styles.add(ParagraphStyle(name='Aviso', fontSize=9.5, leading=13, textColor=colors.HexColor('#8a4b00'), backColor=colors.HexColor('#fff3cd'), borderPadding=8, spaceBefore=6, spaceAfter=10))
 _CELL = ParagraphStyle(name='Cell', fontSize=8.3, leading=10.5, fontName='Helvetica')
 _CELL_B = ParagraphStyle(name='CellB', fontSize=8.3, leading=10.5, fontName='Helvetica-Bold')
 
@@ -110,15 +110,20 @@ def render_pdf(blocks, out_path, titulo, subtitulo, versao, data, screenshots_di
                 ('VALIGN', (0, 0), (-1, -1), 'TOP'),
                 ('LEFTPADDING', (0, 0), (-1, -1), 5),
                 ('RIGHTPADDING', (0, 0), (-1, -1), 5),
-                ('TOPPADDING', (0, 0), (-1, -1), 4),
-                ('BOTTOMPADDING', (0, 0), (-1, -1), 4),
+                ('TOPPADDING', (0, 0), (-1, -1), 5),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
             ]))
             # Tabelas curtas (poucas linhas) ficam inteiras numa página; tabelas
             # longas continuam podendo quebrar (repeatRows=1 repete o cabeçalho).
+            # O Spacer depois da tabela viaja junto no KeepTogether para garantir
+            # uma folga real antes do próximo bloco (ex.: uma caixa de aviso opaca
+            # logo em seguida) — sem isso, o próximo flowable é desenhado colado
+            # na tabela e pode visualmente cobrir a última linha dela.
             if len(data_rows) <= 8:
-                story.append(KeepTogether([t]))
+                story.append(KeepTogether([t, Spacer(1, 0.35 * cm)]))
             else:
                 story.append(t)
+                story.append(Spacer(1, 0.35 * cm))
         elif tipo == 'pagebreak':
             story.append(PageBreak())
 
