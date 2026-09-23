@@ -1,0 +1,37 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "01-auditoria.png",
+    "texto": "Este vídeo é para o administrador. Ele mostra como conferir, mês a mês, se os atendimentos realizados geraram prontuários finalizados. Em Relatórios, a Auditoria pede a agenda, ou seja, o mês, e o tipo de prontuário, que são obrigatórios. Profissional, método e tag são opcionais, e você escolhe entre sintético e analítico."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "04-sintetico.png",
+    "texto": "O relatório sintético traz uma linha por profissional. Presenças é o número de atendimentos que foram marcados como presentes no mês. Finalizado é a quantidade de prontuários finalizados desse tipo. Não Finalizado são os rascunhos, e Sem Tag são os prontuários sem nenhuma tag."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "05-analitico.png",
+    "texto": "A linha fica em vermelho quando o total de finalizados é diferente das presenças. Em regra, cada presença deveria ter um prontuário. No exemplo, o profissional tem cinco presenças, mas só dois prontuários finalizados. O analítico mostra por paciente onde está a diferença, e o botão Exportar baixa o resultado em CSV."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "10-sintetico-evolucao.png",
+    "texto": "Nesta documentação, corrigimos dois pontos. Rascunhos sem data de emissão não entravam no mês, e por isso o Não Finalizado ficava menor que o real: em setembro havia quatro rascunhos de evolução diária e o relatório mostrava um só. Agora eles entram pelo mês da criação."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "07-producao-resultado.png",
+    "texto": "O relatório de Produção mede apenas os prontuários, por profissional e tipo, em um período de emissão, no total ou dia a dia. Ele contava prontuários excluídos também como finalizados. Agora conta só os ativos e mostra os excluídos em uma coluna à parte."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "06-sequenciais-resultado.png",
+    "texto": "Algumas clínicas ligam a opção Atendimento duplo conta como um. Quando dois horários seguidos do mesmo paciente, profissional, método e dia da semana têm presença, isso conta como um atendimento só na auditoria. O relatório de Atendimentos Sequenciais lista esses pares, com as presenças de cada horário e em quantas datas os dois tiveram presença."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "01-auditoria.png",
+    "texto": "Resumindo o roteiro mensal: abra a auditoria sintética do mês, veja as linhas em vermelho, consulte o analítico para achar o paciente sem prontuário, cobre os rascunhos e as tags que faltam, e use a Produção para acompanhar o total finalizado no período."
+  }
+]

@@ -58,5 +58,6 @@ nav:
   - Prontuário:
       - Prontuário — Configuração (Tipos, Alíneas e Textos padrão): prontuario/prontuario-configuracao.md
       - Prontuário — Uso pelo Profissional: prontuario/prontuario-uso.md
+      - Prontuário — Auditoria e Relatórios: prontuario/prontuario-auditoria.md
   - Área do Profissional:
       - Manual da Área do Profissional: area-do-profissional/area-do-profissional.md

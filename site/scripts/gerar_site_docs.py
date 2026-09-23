@@ -40,6 +40,7 @@ ROTINAS = [
     ("Prontuario-Configuracao", "Prontuário", "prontuario", "Prontuário — Configuração (Tipos, Alíneas e Textos padrão)"),
 
     ("Prontuario-Uso", "Prontuário", "prontuario", "Prontuário — Uso pelo Profissional"),
+    ("Prontuario-Auditoria", "Prontuário", "prontuario", "Prontuário — Auditoria e Relatórios"),
     ("Area-do-Profissional", "Área do Profissional", "area-do-profissional", "Manual da Área do Profissional"),
 ]
 

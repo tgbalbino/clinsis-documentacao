@@ -45,6 +45,7 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 
 - [Prontuário — Configuração (Tipos, Alíneas e Textos padrão)](prontuario/prontuario-configuracao.md)
 - [Prontuário — Uso pelo Profissional](prontuario/prontuario-uso.md)
+- [Prontuário — Auditoria e Relatórios](prontuario/prontuario-auditoria.md)
 
 ## Área do Profissional
 
