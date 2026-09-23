@@ -70,12 +70,11 @@ blocks = [
     ('p', '<b>Como conferir na Agenda:</b> use o passo a passo acima (Filtros → Sessão 1 a 5 = AUSENTE e '
           'PRESENTE) e faça a divisão. Exemplo de Setembro: 5 ÷ (10 + 5) = 33,3%.'),
     ('img', '24-relatorio-qtd-marcacao.png', 'Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Agenda 2026/SETEMBRO) traz Presentes e Ausentes por profissional.'),
-    ('aviso', 'Cuidados ao usar o relatório "Agenda - Qtd Marcação": (1) a linha <b>TOTAL soma só a '
-              'página que está na tela</b> — em Setembro a página 1 mostra 5 presentes / 2 ausentes e a '
-              'página 2 mostra 5 / 3; some as páginas (total real: <b>10 presentes e 5 ausentes</b>). '
-              '(2) A coluna <b>Ausentes</b> desse relatório <b>inclui</b> "Ausente - Justificativa", '
-              'enquanto o Dashboard conta só AUSENTE. (3) A coluna "Qtde. Sessões" é o número de '
-              'sessões <b>previstas</b> (165 em Setembro), não as registradas (15).'),
+    ('aviso', 'Sobre o relatório "Agenda - Qtd Marcação" (atualizado): a linha <b>TOTAL agora soma o mês '
+              'inteiro</b>, em todas as páginas (Setembro: 165 sessões, <b>10 presentes, 5 ausentes</b>, '
+              '0 ausência justificada), e a coluna <b>Ausência Justificada</b> é separada de Ausente, como no '
+              'Dashboard. Atenção: "Qtde. Sessões" continua sendo o número de sessões <b>previstas</b> '
+              '(165), não as registradas (15).'),
 
     ('h2', 'Os 8 cards do topo — o que são e como conferir'),
     ('tabelagen', ['Card', 'O que é / como é calculado', 'Como conferir no sistema'],
@@ -137,15 +136,15 @@ blocks = [
     ('img', '32-relatorio-recebimentos-periodo.png', 'Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRIO" somam o Valor Recebido do quadro.'),
     ('aviso', '<b>Correção realizada nesta revisão:</b> o quadro estava somando o valor faturado da guia '
               '<b>uma vez para cada baixa</b> (uma guia de R$ 1.223,00 com 3 baixas aparecia como '
-              'R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. <b>Limitação:</b> '
-              'nenhuma tela do sistema agrupa faturado/recebido por operadora — a conferência por convênio '
-              'é manual (identificando as guias de cada operadora em Doc. Faturamento → Listar).'),
+              'R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. <b>Conferência por operadora:</b> '
+              'o relatório <b>Financeiro - Recebimentos</b> agora tem a coluna e o filtro <b>Operadora</b> '
+              '(pela guia faturada), e o <b>Relatório Guia Faturamento</b> tem a opção <b>Agrupar por Operadora</b>.'),
 
     ('h2', 'Quadro resumo: onde conferir cada informação'),
     ('tabelagen', ['Informação do Dashboard', 'Onde conferir', 'Observação'],
      [
          ['Sessões Registradas, Presentes, Ausentes, Taxas', 'Agenda → Ver Agenda → Filtros (Sessão 1 a 5)', 'Somar as 5 colunas; repetir por mês.'],
-         ['Por profissional / status', 'Relatórios → Agenda - Qtd Marcação', 'TOTAL só da página; "Ausentes" inclui justificativas.'],
+         ['Por profissional / status', 'Relatórios → Agenda - Qtd Marcação', 'TOTAL do mês inteiro; "Ausência Justificada" em coluna própria.'],
          ['Cards/contagens de um mês', 'Relatórios → Relatório Agenda (Agenda → botão Relatório)', 'Mostra Presentes/Ausentes/desmarcações do mês da agenda.'],
          ['Presença de um dia', 'Relatórios → Presença Diária (por data de marcação)', 'A data é a do <b>registro</b> da marcação, não a da sessão.'],
          ['Pacientes Novos/Recorrentes', 'Relatórios → Histórico do Paciente → aba Agenda', 'Ir à última página para ver a 1ª sessão.'],
@@ -160,8 +159,8 @@ blocks = [
      [
          ['Período', 'Intervalo livre de datas (data da sessão).', 'Um mês de Agenda por vez.'],
          ['O que conta', 'Sessões com data registrada (Presente, Ausente, Justificada, Remarcação).', 'Agenda mostra todas as linhas; "Qtd Marcação" conta sessões previstas.'],
-         ['Ausente', 'Só status AUSENTE.', 'Qtd Marcação soma AUSENTE + AUSENTE-JUSTIFICATIVA.'],
-         ['Totais', 'Do período inteiro.', 'Qtd Marcação: TOTAL só da página exibida.'],
+         ['Ausente', 'Só status AUSENTE.', 'Qtd Marcação separa AUSENTE e Ausência Justificada.'],
+         ['Totais', 'Do período inteiro.', 'Qtd Marcação: TOTAL do período inteiro.'],
      ], [3.0, 7.0, 7.5]),
     ('aviso', 'Previsão de melhorias: foi elaborado um plano para criar relatórios que permitam conferir '
               'todos os números do Dashboard diretamente (sessões por período, pacientes novos, '

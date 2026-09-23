@@ -70,7 +70,7 @@ card/gráfico/tabela do Dashboard abre uma lista com as linhas que compõem aque
 "Exportar CSV". Garante critério idêntico e evita quatro telas novas. R1–R4 viram as "visões" desse
 drill-down.
 
-### Ajustes em relatórios existentes (baratos, fazer junto)
+### Ajustes em relatórios existentes (baratos) — **CONCLUÍDOS em 23/09/2026**
 1. Qtd Marcação: TOTAL geral (não por página) e separar "Ausente" de "Ausência Justificada".
 2. Recebimentos: coluna e filtro de Operadora (via guia faturada).
 3. Guia Faturamento: opção de agrupar por Operadora.

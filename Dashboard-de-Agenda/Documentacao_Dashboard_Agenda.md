@@ -60,7 +60,7 @@ Como conferir na Agenda: use o passo a passo acima (Filtros → Sessão 1 a 5 = 
 
 _Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Agenda 2026/SETEMBRO) traz Presentes e Ausentes por profissional._
 
-> ⚠️ Cuidados ao usar o relatório "Agenda - Qtd Marcação": (1) a linha TOTAL soma só a página que está na tela — em Setembro a página 1 mostra 5 presentes / 2 ausentes e a página 2 mostra 5 / 3; some as páginas (total real: 10 presentes e 5 ausentes). (2) A coluna Ausentes desse relatório inclui "Ausente - Justificativa", enquanto o Dashboard conta só AUSENTE. (3) A coluna "Qtde. Sessões" é o número de sessões previstas (165 em Setembro), não as registradas (15).
+> ⚠️ Sobre o relatório "Agenda - Qtd Marcação" (atualizado): a linha TOTAL agora soma o mês inteiro, em todas as páginas (Setembro: 165 sessões, 10 presentes, 5 ausentes, 0 ausência justificada), e a coluna Ausência Justificada é separada de Ausente, como no Dashboard. Atenção: "Qtde. Sessões" continua sendo o número de sessões previstas (165), não as registradas (15).
 
 ## Os 8 cards do topo — o que são e como conferir
 
@@ -126,14 +126,14 @@ No exemplo: aparecem 4 baixas com o nome "PROPRIO" na coluna Paciente. Três del
 
 _Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRIO" somam o Valor Recebido do quadro._
 
-> ⚠️ Correção realizada nesta revisão: o quadro estava somando o valor faturado da guia uma vez para cada baixa (uma guia de R$ 1.223,00 com 3 baixas aparecia como R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. Limitação: nenhuma tela do sistema agrupa faturado/recebido por operadora — a conferência por convênio é manual (identificando as guias de cada operadora em Doc. Faturamento → Listar).
+> ⚠️ Correção realizada nesta revisão: o quadro estava somando o valor faturado da guia uma vez para cada baixa (uma guia de R$ 1.223,00 com 3 baixas aparecia como R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. Conferência por operadora: o relatório Financeiro - Recebimentos agora tem a coluna e o filtro Operadora (pela guia faturada), e o Relatório Guia Faturamento tem a opção Agrupar por Operadora.
 
 ## Quadro resumo: onde conferir cada informação
 
 | Informação do Dashboard | Onde conferir | Observação |
 |---|---|---|
 | Sessões Registradas, Presentes, Ausentes, Taxas | Agenda → Ver Agenda → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
-| Por profissional / status | Relatórios → Agenda - Qtd Marcação | TOTAL só da página; "Ausentes" inclui justificativas. |
+| Por profissional / status | Relatórios → Agenda - Qtd Marcação | TOTAL do mês inteiro; "Ausência Justificada" em coluna própria. |
 | Cards/contagens de um mês | Relatórios → Relatório Agenda (Agenda → botão Relatório) | Mostra Presentes/Ausentes/desmarcações do mês da agenda. |
 | Presença de um dia | Relatórios → Presença Diária (por data de marcação) | A data é a do registro da marcação, não a da sessão. |
 | Pacientes Novos/Recorrentes | Relatórios → Histórico do Paciente → aba Agenda | Ir à última página para ver a 1ª sessão. |
@@ -148,7 +148,7 @@ _Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRI
 |---|---|---|
 | Período | Intervalo livre de datas (data da sessão). | Um mês de Agenda por vez. |
 | O que conta | Sessões com data registrada (Presente, Ausente, Justificada, Remarcação). | Agenda mostra todas as linhas; "Qtd Marcação" conta sessões previstas. |
-| Ausente | Só status AUSENTE. | Qtd Marcação soma AUSENTE + AUSENTE-JUSTIFICATIVA. |
-| Totais | Do período inteiro. | Qtd Marcação: TOTAL só da página exibida. |
+| Ausente | Só status AUSENTE. | Qtd Marcação separa AUSENTE e Ausência Justificada. |
+| Totais | Do período inteiro. | Qtd Marcação: TOTAL do período inteiro. |
 
 > ⚠️ Previsão de melhorias: foi elaborado um plano para criar relatórios que permitam conferir todos os números do Dashboard diretamente (sessões por período, pacientes novos, capacidade e faturamento por convênio), além de decidir se o Dashboard deve passar a contar também as sessões agendadas e desmarcadas. Enquanto isso, use os caminhos acima.

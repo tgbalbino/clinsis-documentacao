@@ -27,7 +27,7 @@
   {
     "audio": "06.wav",
     "imagem": "24-relatorio-qtd-marcacao.png",
-    "texto": "Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação, que mostra presentes e ausentes por profissional. Mas atenção: a linha de total soma só a página exibida, a coluna Ausentes inclui ausência justificada, e a quantidade de sessões é a prevista, não a registrada."
+    "texto": "Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação, que mostra presentes, ausentes e ausência justificada por profissional, com a linha de total somando o mês inteiro. Atenção apenas: a quantidade de sessões é a prevista, não a registrada."
   },
   {
     "audio": "07.wav",
@@ -42,6 +42,6 @@
   {
     "audio": "09.wav",
     "imagem": "32-relatorio-recebimentos-periodo.png",
-    "texto": "Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período, e some as baixas da guia. No exemplo, mil e vinte e três, mais duzentos, mais cento e cinquenta, dá mil trezentos e setenta e três reais recebidos. Hoje nenhuma tela agrupa por operadora, então essa conferência é manual."
+    "texto": "Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período, e filtre pela operadora, que agora tem coluna e filtro próprios. Some as baixas da guia: mil e vinte e três, mais duzentos, mais cento e cinquenta, dá mil trezentos e setenta e três reais recebidos. O relatório Guia Faturamento também pode ser agrupado por operadora."
   }
 ]
