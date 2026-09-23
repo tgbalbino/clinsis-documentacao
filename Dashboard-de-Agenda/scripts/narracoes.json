@@ -1,47 +1,47 @@
 [
   {
     "audio": "01.wav",
-    "imagem": "10-topo-cards.png",
-    "texto": "O Dashboard de Agenda reúne os principais números sobre os atendimentos agendados num período. Fica em Agenda, Dashboard Agenda, e o único filtro é o período, que já vem com o mês corrente selecionado. Um detalhe importante: existe um filtro de profissional no sistema, mas ele ainda não aparece nesta tela; hoje o dashboard sempre mostra todos os profissionais juntos."
+    "imagem": "40-dashboard-setembro-cards.png",
+    "texto": "O Dashboard de Agenda reúne os principais números dos atendimentos de um período. Fica em Agenda, Dashboard Agenda, e o filtro é o período, que já vem com o mês corrente. Vamos ver o que cada número significa e, principalmente, como conferir cada um dentro do sistema, usando como exemplo o mês de setembro."
   },
   {
     "audio": "02.wav",
-    "imagem": "10-topo-cards.png",
-    "texto": "Quase todos os blocos contam sessões dentro do período, sendo sessão cada data de atendimento agendada. Total de Sessões conta todas, com qualquer status. Pacientes Atendidos conta pacientes distintos com sessão no período, mesmo quem faltou ou desmarcou."
+    "imagem": "40-dashboard-setembro-cards.png",
+    "texto": "Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada, ou seja, sessões marcadas como Presente, Ausente, Ausente com justificativa ou Remarcação. Sessões pendentes e desmarcações não aparecem. Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15, que são as dez presentes mais as cinco ausentes."
   },
   {
     "audio": "03.wav",
-    "imagem": "10-topo-cards.png",
-    "texto": "Taxa de Presença e Taxa de Absenteísmo comparam só Presentes contra Ausentes puros; desmarcações e ausência justificada não entram nessa conta. Pacientes Novos são os que tiveram a primeira sessão da vida deles dentro do período; Recorrentes já tinham sessão antes."
+    "imagem": "22-agendamento-grade-mes.png",
+    "texto": "Para conferir, abra Agenda e clique em Ver Agenda no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
   },
   {
     "audio": "04.wav",
-    "imagem": "10-topo-cards.png",
-    "texto": "Dias de Antecedência é a média entre a data do agendamento e a data em que ele foi cadastrado no sistema. Taxa de Ocupação divide o total de sessões pela capacidade total da agenda no período, já descontando feriados cadastrados. Férias ou bloqueios individuais de um profissional ainda não são descontados dessa capacidade, então a taxa real pode ser um pouco maior do que a exibida."
+    "imagem": "23a-modal-filtro-sessao1-presente.png",
+    "texto": "Clique em Filtros, escolha Presente no campo Sessão 1 e filtre. O rodapé mostra o total de registros: oito. Repita para as Sessões 2 a 5, e some: oito, mais um, mais um, dá dez presentes."
   },
   {
     "audio": "05.wav",
-    "imagem": "11-graficos.png",
-    "texto": "O gráfico de pizza mostra todas as sessões divididas por status: presentes, ausentes, ausência justificada, desmarcações e remarcações. Sessões sem status definido não aparecem em nenhuma fatia, só entram no Total de Sessões. Já o gráfico de linha mostra a evolução diária de presentes e ausentes."
+    "imagem": "23-agendamento-filtro-sessao1-presente.png",
+    "texto": "Fazendo o mesmo com Ausente, dá cinco ausentes. Então o total de sessões é quinze, a taxa de presença é dez sobre quinze, sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze, trinta e três vírgula três por cento. Bate com o Dashboard."
   },
   {
     "audio": "06.wav",
-    "imagem": "12-tabelas-profissional-especialidade.png",
-    "texto": "Nas tabelas Por Profissional e Por Especialidade, cada linha soma as sessões daquele profissional ou especialidade no período. Em Particular x Convênio, uma sessão sem essa marcação preenchida é contada como Convênio, não fica de fora."
+    "imagem": "24-relatorio-qtd-marcacao.png",
+    "texto": "Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação, que mostra presentes e ausentes por profissional. Mas atenção: a linha de total soma só a página exibida, a coluna Ausentes inclui ausência justificada, e a quantidade de sessões é a prevista, não a registrada."
   },
   {
     "audio": "07.wav",
-    "imagem": "13-metodo-programa.png",
-    "texto": "Por Método e Por Programa só aparecem se a clínica tiver essas opções habilitadas no cadastro, e contam apenas sessões que têm essa informação preenchida."
+    "imagem": "42-prof-horarios.png",
+    "texto": "A taxa de ocupação divide o total de sessões pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Profissional horários. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
   },
   {
     "audio": "08.wav",
-    "imagem": "14-faixa-etaria-dias-horarios.png",
-    "texto": "Sessões por Faixa Etária usa a idade do paciente na data de cada sessão, não a idade atual dele. E Dias e Horários Mais Concorridos mostra o top dez, útil para identificar os horários de pico da agenda."
+    "imagem": "43-faturamento-corrigido.png",
+    "texto": "O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro. Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia. Nesta revisão, corrigimos um erro que repetia o valor faturado a cada baixa."
   },
   {
     "audio": "09.wav",
-    "imagem": "15-faturamento-convenio.png",
-    "texto": "Por fim, Faturamento por Convênio é o único bloco que não usa a data da sessão: o período aqui filtra a data em que o recebimento da guia foi registrado no Financeiro. Uma sessão de um mês pode ter sua guia recebida só em outro mês. Guias ainda sem nenhuma baixa não aparecem nesta lista."
+    "imagem": "32-relatorio-recebimentos-periodo.png",
+    "texto": "Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período, e some as baixas da guia. No exemplo, mil e vinte e três, mais duzentos, mais cento e cinquenta, dá mil trezentos e setenta e três reais recebidos. Hoje nenhuma tela agrupa por operadora, então essa conferência é manual."
   }
 ]

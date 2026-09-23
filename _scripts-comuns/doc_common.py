@@ -11,6 +11,7 @@ Tipos de bloco (tuplas):
   ('aviso', texto)
   ('img', nome_arquivo, legenda)        -- nome_arquivo relativo a screenshots_dir
   ('tabela', [(campo, origem, calculado), ...])
+  ('tabelagen', [cabecalhos], [linhas], [larguras_cm])
   ('pagebreak',)
 """
 import os
@@ -32,7 +33,7 @@ _styles = getSampleStyleSheet()
 _styles.add(ParagraphStyle(name='TituloCapa', fontSize=24, leading=28, alignment=TA_CENTER, textColor=colors.HexColor('#1a1a2e'), spaceAfter=10))
 _styles.add(ParagraphStyle(name='SubtituloCapa', fontSize=13, leading=18, alignment=TA_CENTER, textColor=colors.HexColor('#555'), spaceAfter=6))
 _styles.add(ParagraphStyle(name='H1', fontSize=18, leading=22, textColor=colors.HexColor('#1a1a2e'), spaceBefore=6, spaceAfter=10, fontName='Helvetica-Bold'))
-_styles.add(ParagraphStyle(name='H2', fontSize=13, leading=16, textColor=colors.HexColor(COR_TITULO_SECAO), spaceBefore=14, spaceAfter=6, fontName='Helvetica-Bold'))
+_styles.add(ParagraphStyle(name='H2', fontSize=13, leading=16, textColor=colors.HexColor(COR_TITULO_SECAO), spaceBefore=14, spaceAfter=6, fontName='Helvetica-Bold', keepWithNext=1))
 _styles.add(ParagraphStyle(name='Corpo', fontSize=9.5, leading=13, alignment=TA_LEFT, spaceAfter=6))
 _styles.add(ParagraphStyle(name='Legenda', fontSize=8.5, leading=11, textColor=colors.HexColor('#666'), alignment=TA_CENTER, spaceBefore=4, spaceAfter=14, fontName='Helvetica-Oblique'))
 _styles.add(ParagraphStyle(name='Aviso', fontSize=9.5, leading=13, textColor=colors.HexColor('#8a4b00'), backColor=colors.HexColor('#fff3cd'), borderPadding=8, spaceBefore=6, spaceAfter=10))
@@ -124,6 +125,28 @@ def render_pdf(blocks, out_path, titulo, subtitulo, versao, data, screenshots_di
             else:
                 story.append(t)
                 story.append(Spacer(1, 0.35 * cm))
+        elif tipo == 'tabelagen':
+            _, headers, rows_g, widths_cm = b
+            data_g = [[_cell(h, True) for h in headers]]
+            for r in rows_g:
+                data_g.append([_cell(c) for c in r])
+            tg = Table(data_g, colWidths=[w * cm for w in widths_cm], repeatRows=1)
+            tg.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor(COR_HEADER_TABELA)),
+                ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+                ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#cccccc')),
+                ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#f4f7fb')]),
+                ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                ('LEFTPADDING', (0, 0), (-1, -1), 5),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 5),
+                ('TOPPADDING', (0, 0), (-1, -1), 5),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+            ]))
+            if len(data_g) <= 8:
+                story.append(KeepTogether([tg, Spacer(1, 0.35 * cm)]))
+            else:
+                story.append(tg)
+                story.append(Spacer(1, 0.35 * cm))
         elif tipo == 'pagebreak':
             story.append(PageBreak())
 
@@ -184,6 +207,12 @@ def render_md(blocks, out_path, titulo, subtitulo, versao, data, video_nome=None
                 origem_l = _strip_tags(origem).replace('\n', ' ').replace('|', '\\|')
                 calc_l = _strip_tags(calc).replace('\n', ' ').replace('|', '\\|')
                 lines.append(f'| {campo_l} | {origem_l} | {calc_l} |')
+        elif tipo == 'tabelagen':
+            _, headers, rows_g, _w = b
+            lines += ['', '| ' + ' | '.join(headers) + ' |', '|' + '---|' * len(headers)]
+            for r in rows_g:
+                cel = [_strip_tags(c).replace('\n', ' ').replace('|', '\\|') for c in r]
+                lines.append('| ' + ' | '.join(cel) + ' |')
         elif tipo == 'pagebreak':
             pass
 

@@ -1,10 +1,10 @@
 # Dashboard de Agenda
 
-_O que significa cada informação da tela e como conferir cada uma no sistema_
+_O que significa cada informação e como conferir cada uma no sistema_
 
-Versão 1.0 — 22/09/2026
+Versão 2.0 — 23/09/2026
 
-O Dashboard de Agenda reúne, num só lugar, os principais números sobre os atendimentos agendados num período: quantas sessões aconteceram, quantos pacientes foram atendidos, taxas de presença/falta, ocupação da agenda e outros recortes (por profissional, especialidade, convênio, faixa etária, etc.). Este manual explica o que cada card, gráfico e tabela representa e, principalmente, como o número é calculado — para que qualquer valor exibido possa ser conferido manualmente se necessário.
+O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
 Vídeo narrado desta rotina: `video-dashboard-agenda-com-legenda.mp4 (ou -sem-legenda.mp4)`
 
@@ -12,91 +12,143 @@ Vídeo narrado desta rotina: `video-dashboard-agenda-com-legenda.mp4 (ou -sem-le
 
 ## Onde encontrar e o filtro de período
 
-Acesso em Agenda → Dashboard Agenda (restrito ao perfil administrador). Os únicos filtros da tela são Período - Início e Período - Fim; ao abrir a tela, eles já vêm preenchidos com o mês corrente (do dia 1 ao último dia do mês), e o botão "Limpar" (ícone de borracha) volta a esse padrão.
+Acesso em Agenda → Dashboard Agenda (perfil administrador). Os filtros são Período - Início e Período - Fim; ao abrir, vêm com o mês corrente, e o botão de borracha volta a esse padrão. O filtro de Profissional existe no sistema, mas não aparece na tela: o Dashboard sempre mostra todos os profissionais juntos.
 
-![Filtros de período e os 8 cards de resumo no topo da tela.](10-topo-cards.png)
+![Dashboard filtrado para Setembro/2026 (01/09 a 30/09) — os números deste exemplo serão conferidos abaixo.](40-dashboard-setembro-cards.png)
 
-_Filtros de período e os 8 cards de resumo no topo da tela._
+_Dashboard filtrado para Setembro/2026 (01/09 a 30/09) — os números deste exemplo serão conferidos abaixo._
 
-> ⚠️ Existe um filtro de Profissional já implementado no backend, mas ele não aparece na tela hoje — na prática, o Dashboard sempre mostra todos os profissionais juntos, sem opção de filtrar por um profissional específico.
+## Atenção: o que o Dashboard conta como "sessão"
 
-Praticamente todos os blocos da tela contam sessões dentro do período — e "sessão" aqui é cada data de atendimento agendada (um agendamento recorrente de segunda e quarta, por exemplo, gera uma sessão para cada dia). A única exceção é o quadro "Faturamento por Convênio", explicado ao final, que usa outra data.
+> ⚠️ O Dashboard só enxerga sessões que já têm uma data registrada. O sistema só grava essa data quando a sessão é marcada como PRESENTE, AUSENTE, AUSENTE - JUSTIFICATIVA ou REMARCAÇÃO. Por isso: (1) sessões ainda pendentes ("****", sem marcação) não aparecem; (2) PAC. DESMARCOU e PRO. DESMARCOU não aparecem (as fatias "Desmarcado" do gráfico normalmente ficam vazias). Em outras palavras, o Dashboard mostra sessões registradas, e não todas as sessões agendadas.
 
-## Os 8 cards do topo
+Exemplo real (Agenda de Setembro/2026): a agenda tem 165 sessões previstas — 150 ainda pendentes, 10 marcadas como Presente e 5 como Ausente. O Dashboard mostra 15 (10 + 5). Os relatórios de Agenda (que contam as sessões previstas) mostram 165.
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
+## Exemplo passo a passo: conferindo Total de Sessões, Presença e Absenteísmo
+
+Estes números do Dashboard de Setembro: Total de Sessões = 15, Taxa de Presença = 66,7%, Taxa de Absenteísmo = 33,3%. Para conferir dentro da Agenda:
+
+| Passo | O que fazer |
+|---|---|
+| 1 | Menu Agenda → na linha do mês (2026 / SETEMBRO) clique em Ver Agenda. |
+| 2 | Clique em Filtros. No campo Sessão 1, escolha PRESENTE e clique em Filtrar. Veja no rodapé: "Total de registros: 8". |
+| 3 | Repita trocando para Sessão 2 (resultado: 1), Sessão 3 (1), Sessão 4 (0) e Sessão 5 (0). Some: 8 + 1 + 1 = 10 presentes. |
+| 4 | Repita tudo com AUSENTE: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = 5 ausentes. |
+| 5 | Total de Sessões = 10 + 5 = 15. Taxa de Presença = 10 ÷ 15 = 66,7%. Taxa de Absenteísmo = 5 ÷ 15 = 33,3%. Bate com o Dashboard. |
+
+![Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).](22-agendamento-grade-mes.png)
+
+_Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões)._
+
+![Filtros → Sessão 1 = PRESENTE.](23a-modal-filtro-sessao1-presente.png)
+
+_Filtros → Sessão 1 = PRESENTE._
+
+![Resultado: "Total de registros: 8" — as linhas cuja Sessão 1 é PRESENTE.](23-agendamento-filtro-sessao1-presente.png)
+
+_Resultado: "Total de registros: 8" — as linhas cuja Sessão 1 é PRESENTE._
+
+> ⚠️ Por que somar as 5 colunas? A grade tem uma linha por agendamento, com até 5 sessões (Sessão 1 a 5). O Dashboard conta cada sessão, então é preciso somar o resultado de cada coluna. Se o período passar de um mês, repita para cada mês (a Agenda é mensal) e some — o Dashboard usa a data da sessão, não o mês da agenda.
+
+## Taxa de Absenteísmo: o que é e como conferir
+
+Absenteísmo é a taxa de faltas: Ausentes ÷ (Presentes + Ausentes) × 100. É o complemento exato da Taxa de Presença (as duas somam 100%). Só entram na conta as sessões marcadas PRESENTE e AUSENTE; AUSENTE - JUSTIFICATIVA, remarcações e desmarcações ficam fora da fórmula.
+
+Como conferir na Agenda: use o passo a passo acima (Filtros → Sessão 1 a 5 = AUSENTE e PRESENTE) e faça a divisão. Exemplo de Setembro: 5 ÷ (10 + 5) = 33,3%.
+
+![Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Agenda 2026/SETEMBRO) traz Presentes e Ausentes por profissional.](24-relatorio-qtd-marcacao.png)
+
+_Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Agenda 2026/SETEMBRO) traz Presentes e Ausentes por profissional._
+
+> ⚠️ Cuidados ao usar o relatório "Agenda - Qtd Marcação": (1) a linha TOTAL soma só a página que está na tela — em Setembro a página 1 mostra 5 presentes / 2 ausentes e a página 2 mostra 5 / 3; some as páginas (total real: 10 presentes e 5 ausentes). (2) A coluna Ausentes desse relatório inclui "Ausente - Justificativa", enquanto o Dashboard conta só AUSENTE. (3) A coluna "Qtde. Sessões" é o número de sessões previstas (165 em Setembro), não as registradas (15).
+
+## Os 8 cards do topo — o que são e como conferir
+
+| Card | O que é / como é calculado | Como conferir no sistema |
 |---|---|---|
-| Total de Sessões | Quantidade de sessões agendadas no período, com qualquer status (inclui as que ainda nem aconteceram, faltas e desmarcações). | Contagem de sessões no período |
-| Pacientes Atendidos | Quantidade de pacientes distintos que têm ao menos uma sessão no período. O nome pode sugerir "que compareceram", mas conta qualquer status, inclusive falta e desmarcação. | Pacientes distintos com sessão no período |
-| Taxa de Presença | Presentes ÷ (Presentes + Ausentes) × 100. Só compara quem esteve presente com quem faltou puro — não entra no cálculo quem desmarcou, teve ausência justificada ou está sem status. | Presentes / (Presentes + Ausentes) |
-| Taxa de Absenteísmo | Ausentes ÷ (Presentes + Ausentes) × 100 — é o espelho exato da Taxa de Presença (as duas somam 100%). Mesma ressalva: ignora desmarcações e ausência justificada. | Ausentes / (Presentes + Ausentes) |
-| Pacientes Novos | Entre os pacientes atendidos no período, quantos tiveram a primeira sessão de toda a história deles na clínica dentro desse período. | Primeira sessão do paciente cai dentro do período |
-| Pacientes Recorrentes | O restante dos pacientes atendidos: já tinham ao menos uma sessão antes do início do período filtrado. | Primeira sessão do paciente é anterior ao período |
-| Dias de Antecedência (média) | Média de quantos dias antes da sessão o agendamento foi cadastrado no sistema (data do agendamento menos data de inclusão do registro). | Média de (Data da Sessão − Data de Cadastro) |
-| Taxa de Ocupação | Total de Sessões ÷ Capacidade Total da agenda × 100. O número entre parênteses no card mostra as duas partes da conta (ex.: "70 de 2319"). | Total de Sessões / Capacidade Total |
+| Total de Sessões | Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação. | Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima). |
+| Pacientes Atendidos | Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou). | Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente. |
+| Taxa de Presença | Presentes ÷ (Presentes + Ausentes) × 100. | Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima). |
+| Taxa de Absenteísmo | Ausentes ÷ (Presentes + Ausentes) × 100. | Idem — ver seção anterior. |
+| Pacientes Novos | Pacientes cuja primeira sessão registrada de toda a história cai dentro do período. | Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a última página para ver a primeira sessão. |
+| Pacientes Recorrentes | Pacientes do período que já tinham sessão registrada antes do início do período. | Mesma consulta acima (primeira sessão anterior ao início do período). |
+| Dias de Antecedência (média) | Média de dias entre a data de inclusão do agendamento e a data da sessão. | Não há tela que mostre a data de inclusão do agendamento — hoje só é possível conferir por consulta ao banco. Ver "Relatórios previstos". |
+| Taxa de Ocupação | Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados. | Agenda → Prof. horários (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total. |
 
-> ⚠️ Taxa de Ocupação tem um ícone de informação (ⓘ) com a explicação completa direto na tela: a "capacidade" soma todos os horários fixos e avulsos configurados na Agenda de cada profissional no período, já descontando os feriados cadastrados em Tabelas Aux. → Feriados. Férias ou bloqueios individuais de um profissional específico ainda não são descontados dessa capacidade — então, se algum profissional tirou férias no período, a taxa de ocupação real fica um pouco menor do que a exibida (o denominador conta uma capacidade maior do que a disponível de fato).
+![Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabela é um horário disponível; a capacidade do card soma esses horários pelos dias do período.](42-prof-horarios.png)
 
-## Gráfico "Presença x Ausência x Desmarcações"
+_Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabela é um horário disponível; a capacidade do card soma esses horários pelos dias do período._
 
-Pizza com todas as sessões do período divididas pelo status: Presentes, Ausentes, Ausência Justificada, Desmarcado Paciente, Desmarcado Profissional e Remarcações.
+> ⚠️ Taxa de Ocupação: como só as sessões registradas entram no numerador, a taxa fica baixa em meses em andamento (2,4% em Setembro, com muitas sessões ainda pendentes). Férias ou bloqueios de um profissional específico não são descontados da capacidade — só feriados cadastrados em Tabelas Aux. → Feriados (isso já aparece no tooltip do card).
 
-![Gráfico de pizza (status das sessões) e gráfico de linha (evolução diária) lado a lado.](11-graficos.png)
+## Gráficos
 
-_Gráfico de pizza (status das sessões) e gráfico de linha (evolução diária) lado a lado._
-
-> ⚠️ Sessões sem nenhum status definido ("em aberto", ainda não marcadas como presente/falta) não aparecem em nenhuma fatia desse gráfico nem em nenhum outro card — elas só entram no card "Total de Sessões". Se o total de sessões for maior que a soma de todas as fatias, é porque existem sessões sem status no período.
-
-## Gráfico "Evolução Diária"
-
-Duas linhas — Presentes e Ausentes — mostrando, dia a dia dentro do período, quantas sessões tiveram cada um desses dois status. As demais categorias (desmarcação, ausência justificada) não entram nesse gráfico, só no de pizza acima.
-
-## Tabelas "Por Profissional", "Por Especialidade" e "Particular x Convênio"
-
-![Tabelas "Por Profissional" (sessões/presentes/ausentes), "Por Especialidade" e "Particular x Convênio"/"Por Operadora".](12-tabelas-profissional-especialidade.png)
-
-_Tabelas "Por Profissional" (sessões/presentes/ausentes), "Por Especialidade" e "Particular x Convênio"/"Por Operadora"._
-
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
+| Gráfico | O que mostra | Como conferir |
 |---|---|---|
-| Por Profissional | Sessões, Presentes e Ausentes de cada profissional no período, ordenado do maior para o menor número de sessões. | Agrupado por profissional |
-| Por Especialidade | Total de sessões de cada especialidade no período. | Agrupado por especialidade da agenda |
-| Particular x Convênio | Quantas sessões foram marcadas como Particular e quantas como Convênio. | Campo "Particular" da agenda |
-| Por Operadora | Total de sessões de cada operadora/convênio. | Agrupado por operadora da agenda |
+| Presença x Ausência x Desmarcações (pizza) | Sessões registradas por status. As fatias "Desmarcado Paciente/Profissional" normalmente ficam vazias (esses status não gravam data). | Mesmas contagens da Agenda por status (Filtros → Sessão n). |
+| Evolução Diária | Presentes e Ausentes de cada dia do período. | Agenda → Filtros → campo Data (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios). |
+| Sessões por Faixa Etária | Sessões por idade do paciente na data da sessão (0–10, 11–20, 21–30, 31–40, 41+). | Sem tela de conferência; usa a data de nascimento do cadastro do paciente. |
 
-> ⚠️ A coluna "Desmarcações" que aparece em outras telas do sistema, quando existir aqui, soma Desmarcado Paciente + Desmarcado Profissional num único número (não separa quem desmarcou). Já no card "Particular x Convênio": uma sessão sem essa marcação preenchida é contabilizada como Convênio, não fica de fora da conta.
+![Gráficos de pizza (status) e de linha (evolução diária).](11-graficos.png)
 
-## "Por Método" e "Por Programa"
+_Gráficos de pizza (status) e de linha (evolução diária)._
 
-![Tabelas "Por Método" e "Por Programa" — só aparecem se a clínica tiver essas opções habilitadas.](13-metodo-programa.png)
+## Tabelas do Dashboard
 
-_Tabelas "Por Método" e "Por Programa" — só aparecem se a clínica tiver essas opções habilitadas._
-
-Esses dois quadros só aparecem se a clínica tiver, no cadastro dela, a exibição de Método e/ou de Programa da Agenda habilitada. Contam sessões que têm um Método/Programa definido — sessões sem essa informação preenchida não entram na lista, mesmo que o quadro esteja visível.
-
-## Gráfico "Sessões por Faixa Etária"
-
-Sessões agrupadas pela idade do paciente na data de cada sessão (não a idade atual dele), em faixas de 0–10, 11–20, 21–30, 31–40 e 41 anos ou mais. Por isso, um mesmo paciente pode contribuir para faixas diferentes se tiver sessões espalhadas por datas distantes (ex.: fazendo aniversário de faixa no meio do período analisado).
-
-![Gráfico de barras por faixa etária e tabela "Dias e Horários Mais Concorridos".](14-faixa-etaria-dias-horarios.png)
-
-_Gráfico de barras por faixa etária e tabela "Dias e Horários Mais Concorridos"._
-
-## Tabela "Dias e Horários Mais Concorridos"
-
-Mostra as combinações de dia da semana + horário com mais sessões marcadas no período — útil para identificar os horários de pico da agenda. A tela exibe apenas o Top 10; existem mais combinações calculadas por trás, mas só as 10 primeiras (por quantidade de sessões) são mostradas.
-
-## Tabela "Faturamento por Convênio"
-
-![Faturamento por Convênio: valor faturado e valor recebido, por operadora.](15-faturamento-convenio.png)
-
-_Faturamento por Convênio: valor faturado e valor recebido, por operadora._
-
-> ⚠️ Esta é a única tabela da tela que NÃO usa a data da sessão. O próprio título traz o aviso "(por data de recebimento, não por data da sessão)": o período do filtro aqui passa a valer sobre a data em que a baixa do pagamento da guia foi registrada no Financeiro. Uma sessão atendida em um mês pode ter sua guia recebida (e portanto contabilizada aqui) só em outro mês.
-
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
+| Tabela | O que mostra | Como conferir |
 |---|---|---|
-| Valor Faturado | Soma do valor das guias de faturamento cujo recebimento caiu dentro do período filtrado. | Guias com baixa no período |
-| Valor Recebido | Soma do valor efetivamente pago (baixado) dessas guias no período. | Baixas de Conta a Receber no período |
+| Por Profissional | Sessões, Presentes e Ausentes de cada profissional. | Agenda → Filtros → Profissionais (marque um) + Sessão n; ou relatório Agenda - Qtd Marcação (uma linha por profissional). |
+| Por Especialidade | Sessões registradas por especialidade. | Agenda: a coluna Espec. tem filtro no cabeçalho; combine com Sessão n. |
+| Particular x Convênio | Sessões particulares × demais (sem marcação de Particular conta como Convênio). | Agenda → Filtros → Particular (Sim/Não) + Sessão n. |
+| Por Operadora | Sessões por convênio/operadora. | Agenda: coluna Plano (filtro no cabeçalho) + Sessão n. |
+| Por Método / Por Programa | Só aparecem se a clínica usa Método/Programa; contam sessões que têm essa informação. | Agenda → Filtros → Método (e coluna de programa, se habilitada). |
+| Dias e Horários Mais Concorridos | Top 10 de dia da semana + horário com mais sessões registradas. | Agenda: filtros de cabeçalho Dia e Hora (ou Filtros → Dias) + Sessão n. Lembre: o Dashboard conta sessões; a grade conta linhas. |
 
-> ⚠️ Guias já faturadas mas que ainda não tiveram nenhuma baixa de recebimento não aparecem nessa lista — o quadro mostra só o que já foi efetivamente recebido no período.
+![Tabelas Por Profissional, Por Especialidade, Particular x Convênio e Por Operadora.](12-tabelas-profissional-especialidade.png)
+
+_Tabelas Por Profissional, Por Especialidade, Particular x Convênio e Por Operadora._
+
+## Faturamento por Convênio: de onde vem e como conferir
+
+> ⚠️ Este é o único quadro que não usa a data da sessão. O período filtra a data do pagamento (baixa) registrado no Financeiro. Uma sessão de um mês pode ser paga em outro.
+
+De onde vem: só entram guias de faturamento (Doc. Faturamento) que já tiveram baixa em Contas a Receber dentro do período. Valor Faturado = valor da guia faturada; Valor Recebido = soma das baixas (valor pago) dessa conta. Guias faturadas sem nenhuma baixa no período não aparecem.
+
+![Quadro Faturamento por Convênio (01/01 a 30/09/2026): Operadora PROPRIO — Faturado R$ 1.223,00 / Recebido R$ 1.373,00.](43-faturamento-corrigido.png)
+
+_Quadro Faturamento por Convênio (01/01 a 30/09/2026): Operadora PROPRIO — Faturado R$ 1.223,00 / Recebido R$ 1.373,00._
+
+Como conferir hoje: (1) Doc. Faturamento → Listar (botão "Listar Últimos" ou "Filtros") mostra as guias: número, paciente, emissão, sessões, status, localização e a coluna Faturamento; (2) Relatórios → Financeiro - Recebimentos (Contas a Receber), com Filtros → Data inicial/final = o período do Dashboard, lista as baixas (data, forma, valor original, valor pago) com o total no rodapé.
+
+No exemplo: aparecem 4 baixas com o nome "PROPRIO" na coluna Paciente. Três delas têm valor original de R$ 1.223,00 (a conta da guia): R$ 1.023,00 + R$ 200,00 + R$ 150,00 = R$ 1.373,00 recebidos, que é o valor do quadro. A quarta (R$ 180,00, valor original R$ 200,00) é de outra conta a receber, que não é de guia, e por isso não entra no quadro.
+
+![Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRIO" somam o Valor Recebido do quadro.](32-relatorio-recebimentos-periodo.png)
+
+_Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRIO" somam o Valor Recebido do quadro._
+
+> ⚠️ Correção realizada nesta revisão: o quadro estava somando o valor faturado da guia uma vez para cada baixa (uma guia de R$ 1.223,00 com 3 baixas aparecia como R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. Limitação: nenhuma tela do sistema agrupa faturado/recebido por operadora — a conferência por convênio é manual (identificando as guias de cada operadora em Doc. Faturamento → Listar).
+
+## Quadro resumo: onde conferir cada informação
+
+| Informação do Dashboard | Onde conferir | Observação |
+|---|---|---|
+| Total de Sessões, Presentes, Ausentes, Taxas | Agenda → Ver Agenda → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
+| Por profissional / status | Relatórios → Agenda - Qtd Marcação | TOTAL só da página; "Ausentes" inclui justificativas. |
+| Cards/contagens de um mês | Relatórios → Relatório Agenda (Agenda → botão Relatório) | Mostra Presentes/Ausentes/desmarcações do mês da agenda. |
+| Presença de um dia | Relatórios → Presença Diária (por data de marcação) | A data é a do registro da marcação, não a da sessão. |
+| Pacientes Novos/Recorrentes | Relatórios → Histórico do Paciente → aba Agenda | Ir à última página para ver a 1ª sessão. |
+| Taxa de Ocupação (capacidade) | Agenda → Prof. horários | Somar horários × dias; descontar feriados. |
+| Faturamento por Convênio | Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos | Sem agrupamento por operadora. |
+| Dias de Antecedência | — (sem tela) | Só por consulta ao banco. |
+| Faixa etária | — (sem tela) | Idade calculada na data da sessão. |
+
+## Diferenças entre o Dashboard e as telas da Agenda
+
+| Ponto | Dashboard | Telas da Agenda / relatórios |
+|---|---|---|
+| Período | Intervalo livre de datas (data da sessão). | Um mês de Agenda por vez. |
+| O que conta | Sessões com data registrada (Presente, Ausente, Justificada, Remarcação). | Agenda mostra todas as linhas; "Qtd Marcação" conta sessões previstas. |
+| Ausente | Só status AUSENTE. | Qtd Marcação soma AUSENTE + AUSENTE-JUSTIFICATIVA. |
+| Totais | Do período inteiro. | Qtd Marcação: TOTAL só da página exibida. |
+
+> ⚠️ Previsão de melhorias: foi elaborado um plano para criar relatórios que permitam conferir todos os números do Dashboard diretamente (sessões por período, pacientes novos, capacidade e faturamento por convênio), além de decidir se o Dashboard deve passar a contar também as sessões agendadas e desmarcadas. Enquanto isso, use os caminhos acima.
