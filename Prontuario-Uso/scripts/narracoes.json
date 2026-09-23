@@ -1,0 +1,47 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "01-inbox.png",
+    "texto": "Este vídeo mostra o dia a dia do prontuário para o profissional. Em Prontuário, no menu, aparece a janela de filtros. O tipo é obrigatório, como Anamnese ou Evolução diária, e os demais filtros são opcionais: número, paciente, datas de emissão e inclusão, situação e tags."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "13-lista-filtrada.png",
+    "texto": "A lista mostra cada prontuário como Digitação, que é o rascunho, ou Finalizada. Em cada linha há o olho para visualizar, o botão de tags, o botão amarelo para preencher, e a lixeira, que só aparece nos seus rascunhos."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "06-pacientes-agenda.png",
+    "texto": "Para criar, clique em Novo. Você pode listar os pacientes da agenda atual e marcar um ou vários. Escolha a especialidade, que é obrigatória, e clique em Adicionar. Pacientes que já têm um rascunho do mesmo tipo não aparecem, para evitar duplicidade."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "08-apos-adicionar.png",
+    "texto": "O prontuário abre para preenchimento. Você vê os dados do paciente, a data de emissão, que vem com a data de hoje, as tags e a primeira alínea. Use Anterior e Próxima para navegar entre as alíneas, e salve cada uma separadamente."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "09-texto-padrao-confirmar.png",
+    "texto": "Você pode inserir um texto padrão escolhendo na lista. Atenção: o sistema avisa que o texto já digitado no campo será apagado. Por isso, insira o texto padrão primeiro e complemente depois."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "10-alinea-salva.png",
+    "texto": "Depois de salvar o texto, aparece o botão Finalizar. As tags identificam o método de atendimento. Se o paciente tem um único método na agenda do mês, a tag é aplicada sozinha ao criar. Se a clínica usa tags, é preciso ter ao menos uma para finalizar."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "11-finalizar-confirmar.png",
+    "texto": "Ao finalizar, o sistema confirma a data de emissão. Depois disso o prontuário fica travado: ninguém consegue alterar o texto, e ele não pode ser excluído. Só o profissional dono edita, e o compartilhamento com outros profissionais é sempre somente leitura."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "18-pdf-prontuario.png",
+    "texto": "Para imprimir, marque o prontuário finalizado e clique na impressora. O PDF traz os dados do paciente, as alíneas preenchidas, a marca d'água da clínica e a linha de assinatura. Só é possível imprimir de um paciente por vez, e o arquivo agora leva o nome do paciente."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "20-excluir-rascunho.png",
+    "texto": "Rascunhos podem ser excluídos pela lixeira. Sem texto salvo, o prontuário é apagado de vez. Com texto salvo, ele é marcado como excluído e o registro é preservado. Nesta documentação, corrigimos a tag automática ao criar e a exclusão de rascunhos com tag, que falhava em silêncio."
+  }
+]

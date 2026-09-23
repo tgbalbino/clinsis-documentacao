@@ -1,0 +1,27 @@
+const { open, go, shot } = require('./lib');
+(async () => {
+  const { browser, page } = await open('55555555555', 'Cli55555');
+  const modal = () => page.locator('.modal.show').last();
+  await go(page, '/prontuario/profissional'); await modal().locator('select').first().selectOption({ label: 'Anamnese' }); await modal().locator('button:has-text("Pesquisar")').click(); await page.waitForTimeout(2500);
+  await page.locator('.btn-primary:has-text("Novo")').first().click(); await page.waitForTimeout(1500);
+  await modal().locator('button:has-text("Listar Pacientes da agenda atual")').click(); await page.waitForTimeout(2500);
+  await modal().locator('tr', { hasText: 'TESTE NOVO PACIENTE' }).locator('input[type=checkbox]').check();
+  await modal().locator('select').selectOption({ label: 'NEUROPSICOLOGO' });
+  await modal().locator('button:has-text("Adicionar")').click(); await page.waitForTimeout(3000);
+  const id = new URL(page.url()).searchParams.get('idProntuario'); console.log('criado', id);
+  await shot(page, '25-sem-tag');
+  await page.locator('textarea').fill('Paciente novo, encaminhado pela escola. Avaliação inicial em andamento.');
+  await page.locator('button.btn-success:has-text("Salvar")').last().click(); await page.waitForTimeout(2000);
+  await page.locator('button:has-text("Finalizar")').click(); await page.waitForTimeout(800);
+  await page.getByRole('button', { name: 'Sim', exact: true }).click(); await page.waitForTimeout(1500);
+  await shot(page, '26-erro-sem-tag');
+  const toasts = await page.locator('.toast-message, .toast').allInnerTexts(); console.log('toast:', toasts.join(' | '));
+  const selTag = page.locator('select').filter({ has: page.locator('option:has-text("Padrão")') }).first();
+  await selTag.selectOption({ label: 'Padrão' });
+  await page.locator('button:has-text("Salvar")').nth(1).click(); await page.waitForTimeout(2000);
+  await shot(page, '27-tag-adicionada');
+  await page.locator('button:has-text("Finalizar")').click(); await page.waitForTimeout(800);
+  await page.getByRole('button', { name: 'Sim', exact: true }).click(); await page.waitForTimeout(2500);
+  const t2 = await page.locator('.toast-message, .toast').allInnerTexts(); console.log('toast2:', t2.join(' | '));
+  await browser.close();
+})();
