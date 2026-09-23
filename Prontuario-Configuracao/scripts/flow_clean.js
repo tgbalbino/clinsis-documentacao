@@ -1,0 +1,25 @@
+const { open, go, shot } = require('./lib');
+const NOME = 'Relatório de Alta';
+(async () => {
+  let { browser, page } = await open('55555555555', 'Cli55555');
+  const espera = (ms = 1500) => page.waitForTimeout(ms);
+  await go(page, '/prontuario/textopadrao');
+  await page.locator('tr', { hasText: 'Queixa inicial' }).locator('button.btn-danger').click(); await espera(1200);
+  await shot(page, '13-texto-padrao-excluir');
+  await page.getByRole('button', { name: 'Sim', exact: true }).click(); await espera(1800);
+  console.log('textos:', JSON.stringify(await page.locator('tbody tr').allInnerTexts()));
+  await browser.close();
+  ({ browser, page } = await open('99999999999', 'Cli99999'));
+  await go(page, '/prontuario/alineas');
+  await page.locator('select').first().selectOption({ label: NOME }); await espera(1500);
+  await page.locator('tr', { hasText: 'Anexar laudo' }).locator('button.btn-danger').click(); await espera(1200);
+  await shot(page, '14-alinea-excluir');
+  await page.getByRole('button', { name: 'Sim', exact: true }).click(); await espera(1800);
+  console.log('alineas:', JSON.stringify(await page.locator('tbody tr').allInnerTexts()));
+  await go(page, '/prontuario/tipos');
+  await page.locator('tr', { hasText: NOME }).locator('button.btn-danger').click(); await espera(1200);
+  await shot(page, '15-tipo-excluir');
+  await page.getByRole('button', { name: 'Sim', exact: true }).click(); await espera(2000);
+  console.log('tipos:', JSON.stringify(await page.locator('tbody tr').allInnerTexts()));
+  await browser.close();
+})();

@@ -1,0 +1,42 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "01-tipos.png",
+    "texto": "Antes de um profissional preencher um prontuário, a clínica precisa configurar três coisas: os tipos de prontuário, as alíneas de cada tipo, e os textos padrão. Os tipos e as alíneas são feitos pelo administrador, no menu Prontuário. Os textos padrão são de cada profissional. Vamos começar pelos tipos, que são as categorias, como Anamnese, Evolução diária ou Relatório técnico."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "02-tipo-novo.png",
+    "texto": "Para criar um tipo, clique em Novo e informe só o nome. O tipo nasce vazio, sem nenhum campo. Por isso, o próximo passo é sempre cadastrar as alíneas dele."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "04-tipo-alterar.png",
+    "texto": "No botão amarelo, você edita o tipo. O campo Dias é guardado, mas hoje nenhuma tela usa esse número. Já a opção Visível na agenda faz o tipo aparecer na Agenda resumida, para criar o prontuário direto a partir da agenda. O botão Modelo permite anexar um arquivo, como um formulário em Word, para os profissionais baixarem. E só é possível excluir um tipo que nunca teve prontuários."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "07-alinea-nova.png",
+    "texto": "A alínea é cada campo do prontuário, como queixa principal ou conduta. Em Prontuário, Alíneas, clique em Novo, escolha o tipo, o tipo de campo e o nome. O campo pode ser Texto, Sim ou Não, ou Arquivo para anexar um documento. A janela continua aberta para você cadastrar várias alíneas seguidas."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "08-alineas-do-tipo.png",
+    "texto": "Ao filtrar por um tipo, você vê as alíneas dele na ordem em que aparecerão para o profissional. Atenção: o sistema não impede dois nomes iguais, então confira para não duplicar."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "10-alineas-ordem-salva.png",
+    "texto": "Use as setas para subir ou descer uma alínea e clique em Salvar para gravar a nova ordem. Evite excluir ou reordenar alíneas de um tipo que já está em uso, porque isso muda o formulário dos prontuários em andamento."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "11-texto-padrao-novo.png",
+    "texto": "Por fim, os textos padrão. Cada profissional cria os seus, em Prontuário, Textos padrão. Escolha o tipo, dê um título de até vinte caracteres e escreva o texto. Depois, ao preencher um prontuário, é só inserir o texto pronto numa alínea, sem digitar tudo de novo."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "12-texto-padrao-lista.png",
+    "texto": "A lista mostra os textos do profissional, com opção de visualizar, alterar ou excluir. Durante esta documentação, corrigimos um erro: excluir um tipo deixava as alíneas dele para trás, e o próximo tipo criado herdava essas alíneas. Agora tudo é removido junto."
+  }
+]
