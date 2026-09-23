@@ -10,7 +10,7 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "2.0"
+VERSAO = "2.1"
 DATA = "23/09/2026"
 TITULO = "Dashboard de Agenda"
 SUBTITULO = "O que significa cada informação e como conferir cada uma no sistema"
@@ -37,14 +37,14 @@ blocks = [
               'essa data quando a sessão é marcada como <b>PRESENTE, AUSENTE, AUSENTE - JUSTIFICATIVA ou '
               'REMARCAÇÃO</b>. Por isso: (1) sessões ainda pendentes ("****", sem marcação) '
               '<b>não aparecem</b>; (2) <b>PAC. DESMARCOU</b> e <b>PRO. DESMARCOU</b> <b>não aparecem</b> '
-              '(as fatias "Desmarcado" do gráfico normalmente ficam vazias). Em outras palavras, o '
-              'Dashboard mostra <b>sessões registradas</b>, e não todas as sessões agendadas.'),
+              '(por isso o gráfico não tem fatias de desmarcação). Em outras palavras, o '
+              'Dashboard mostra <b>sessões registradas</b>, e não todas as sessões agendadas — a própria tela traz esse aviso e os cards foram renomeados para deixar isso claro.'),
     ('p', '<b>Exemplo real (Agenda de Setembro/2026):</b> a agenda tem 165 sessões previstas — 150 ainda '
           'pendentes, 10 marcadas como Presente e 5 como Ausente. O Dashboard mostra <b>15</b> '
           '(10 + 5). Os relatórios de Agenda (que contam as sessões previstas) mostram 165.'),
 
-    ('h2', 'Exemplo passo a passo: conferindo Total de Sessões, Presença e Absenteísmo'),
-    ('p', 'Estes números do Dashboard de Setembro: <b>Total de Sessões = 15</b>, <b>Taxa de Presença = '
+    ('h2', 'Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo'),
+    ('p', 'Estes números do Dashboard de Setembro: <b>Sessões Registradas = 15</b>, <b>Taxa de Presença = '
           '66,7%</b>, <b>Taxa de Absenteísmo = 33,3%</b>. Para conferir dentro da Agenda:'),
     ('tabelagen', ['Passo', 'O que fazer'],
      [
@@ -52,7 +52,7 @@ blocks = [
          ['2', 'Clique em <b>Filtros</b>. No campo <b>Sessão 1</b>, escolha <b>PRESENTE</b> e clique em <b>Filtrar</b>. Veja no rodapé: <b>"Total de registros: 8"</b>.'],
          ['3', 'Repita trocando para <b>Sessão 2</b> (resultado: 1), <b>Sessão 3</b> (1), <b>Sessão 4</b> (0) e <b>Sessão 5</b> (0). Some: 8 + 1 + 1 = <b>10 presentes</b>.'],
          ['4', 'Repita tudo com <b>AUSENTE</b>: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = <b>5 ausentes</b>.'],
-         ['5', 'Total de Sessões = 10 + 5 = <b>15</b>. Taxa de Presença = 10 ÷ 15 = <b>66,7%</b>. Taxa de Absenteísmo = 5 ÷ 15 = <b>33,3%</b>. Bate com o Dashboard.'],
+         ['5', 'Sessões Registradas = 10 + 5 = <b>15</b>. Taxa de Presença = 10 ÷ 15 = <b>66,7%</b>. Taxa de Absenteísmo = 5 ÷ 15 = <b>33,3%</b>. Bate com o Dashboard.'],
      ], [1.6, 15.9]),
     ('img', '22-agendamento-grade-mes.png', 'Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).'),
     ('img', '23a-modal-filtro-sessao1-presente.png', 'Filtros → Sessão 1 = PRESENTE.'),
@@ -80,8 +80,8 @@ blocks = [
     ('h2', 'Os 8 cards do topo — o que são e como conferir'),
     ('tabelagen', ['Card', 'O que é / como é calculado', 'Como conferir no sistema'],
      [
-         ['Total de Sessões', 'Quantidade de sessões <b>registradas</b> (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.', 'Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).'],
-         ['Pacientes Atendidos', 'Pacientes <b>distintos</b> com ao menos uma sessão registrada no período (inclui quem faltou).', 'Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente.'],
+         ['Sessões Registradas (antes "Total de Sessões")', 'Quantidade de sessões <b>registradas</b> (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.', 'Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).'],
+         ['Pacientes com Sessão Registrada (antes "Pacientes Atendidos")', 'Pacientes <b>distintos</b> com ao menos uma sessão registrada no período (inclui quem faltou).', 'Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente.'],
          ['Taxa de Presença', 'Presentes ÷ (Presentes + Ausentes) × 100.', 'Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima).'],
          ['Taxa de Absenteísmo', 'Ausentes ÷ (Presentes + Ausentes) × 100.', 'Idem — ver seção anterior.'],
          ['Pacientes Novos', 'Pacientes cuja <b>primeira sessão registrada de toda a história</b> cai dentro do período.', 'Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a <b>última página</b> para ver a primeira sessão.'],
@@ -98,7 +98,7 @@ blocks = [
     ('h2', 'Gráficos'),
     ('tabelagen', ['Gráfico', 'O que mostra', 'Como conferir'],
      [
-         ['Presença x Ausência x Desmarcações (pizza)', 'Sessões registradas por status. As fatias "Desmarcado Paciente/Profissional" normalmente ficam vazias (esses status não gravam data).', 'Mesmas contagens da Agenda por status (Filtros → Sessão n).'],
+         ['Sessões Registradas por Status (pizza)', 'Presentes, Ausentes, Ausência Justificada e Remarcações. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam.', 'Mesmas contagens da Agenda por status (Filtros → Sessão n).'],
          ['Evolução Diária', 'Presentes e Ausentes de cada dia do período.', 'Agenda → Filtros → campo <b>Data</b> (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios).'],
          ['Sessões por Faixa Etária', 'Sessões por idade do paciente <b>na data da sessão</b> (0–10, 11–20, 21–30, 31–40, 41+).', 'Sem tela de conferência; usa a data de nascimento do cadastro do paciente.'],
      ], [4.0, 7.0, 6.5]),
@@ -144,7 +144,7 @@ blocks = [
     ('h2', 'Quadro resumo: onde conferir cada informação'),
     ('tabelagen', ['Informação do Dashboard', 'Onde conferir', 'Observação'],
      [
-         ['Total de Sessões, Presentes, Ausentes, Taxas', 'Agenda → Ver Agenda → Filtros (Sessão 1 a 5)', 'Somar as 5 colunas; repetir por mês.'],
+         ['Sessões Registradas, Presentes, Ausentes, Taxas', 'Agenda → Ver Agenda → Filtros (Sessão 1 a 5)', 'Somar as 5 colunas; repetir por mês.'],
          ['Por profissional / status', 'Relatórios → Agenda - Qtd Marcação', 'TOTAL só da página; "Ausentes" inclui justificativas.'],
          ['Cards/contagens de um mês', 'Relatórios → Relatório Agenda (Agenda → botão Relatório)', 'Mostra Presentes/Ausentes/desmarcações do mês da agenda.'],
          ['Presença de um dia', 'Relatórios → Presença Diária (por data de marcação)', 'A data é a do <b>registro</b> da marcação, não a da sessão.'],

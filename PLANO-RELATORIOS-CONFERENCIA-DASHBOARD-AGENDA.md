@@ -41,7 +41,7 @@ registradas**, não sessões agendadas.
   Desmarcação funcionarem, mas altera o dado gravado e pode afetar relatórios que assumem "data =
   sessão ocorrida" (ex.: Cobrança usa `DataS <= hoje` + status).
 
-Recomendação: **A agora** (honestidade dos rótulos) e decidir B/C depois, com o relatório R1 abaixo
+Decisão do usuário (23/09/2026): **opção A aplicada** (rótulos, aviso e gráfico ajustados no front). Pendem B/C. Recomendação original: **A agora** (honestidade dos rótulos) e decidir B/C depois, com o relatório R1 abaixo
 já permitindo comparar "previstas × registradas".
 
 ### 1.3 Inconsistências entre telas

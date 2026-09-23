@@ -2,7 +2,7 @@
 
 _O que significa cada informação e como conferir cada uma no sistema_
 
-Versão 2.0 — 23/09/2026
+Versão 2.1 — 23/09/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
@@ -20,13 +20,13 @@ _Dashboard filtrado para Setembro/2026 (01/09 a 30/09) — os números deste exe
 
 ## Atenção: o que o Dashboard conta como "sessão"
 
-> ⚠️ O Dashboard só enxerga sessões que já têm uma data registrada. O sistema só grava essa data quando a sessão é marcada como PRESENTE, AUSENTE, AUSENTE - JUSTIFICATIVA ou REMARCAÇÃO. Por isso: (1) sessões ainda pendentes ("****", sem marcação) não aparecem; (2) PAC. DESMARCOU e PRO. DESMARCOU não aparecem (as fatias "Desmarcado" do gráfico normalmente ficam vazias). Em outras palavras, o Dashboard mostra sessões registradas, e não todas as sessões agendadas.
+> ⚠️ O Dashboard só enxerga sessões que já têm uma data registrada. O sistema só grava essa data quando a sessão é marcada como PRESENTE, AUSENTE, AUSENTE - JUSTIFICATIVA ou REMARCAÇÃO. Por isso: (1) sessões ainda pendentes ("****", sem marcação) não aparecem; (2) PAC. DESMARCOU e PRO. DESMARCOU não aparecem (por isso o gráfico não tem fatias de desmarcação). Em outras palavras, o Dashboard mostra sessões registradas, e não todas as sessões agendadas — a própria tela traz esse aviso e os cards foram renomeados para deixar isso claro.
 
 Exemplo real (Agenda de Setembro/2026): a agenda tem 165 sessões previstas — 150 ainda pendentes, 10 marcadas como Presente e 5 como Ausente. O Dashboard mostra 15 (10 + 5). Os relatórios de Agenda (que contam as sessões previstas) mostram 165.
 
-## Exemplo passo a passo: conferindo Total de Sessões, Presença e Absenteísmo
+## Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo
 
-Estes números do Dashboard de Setembro: Total de Sessões = 15, Taxa de Presença = 66,7%, Taxa de Absenteísmo = 33,3%. Para conferir dentro da Agenda:
+Estes números do Dashboard de Setembro: Sessões Registradas = 15, Taxa de Presença = 66,7%, Taxa de Absenteísmo = 33,3%. Para conferir dentro da Agenda:
 
 | Passo | O que fazer |
 |---|---|
@@ -34,7 +34,7 @@ Estes números do Dashboard de Setembro: Total de Sessões = 15, Taxa de Presen�
 | 2 | Clique em Filtros. No campo Sessão 1, escolha PRESENTE e clique em Filtrar. Veja no rodapé: "Total de registros: 8". |
 | 3 | Repita trocando para Sessão 2 (resultado: 1), Sessão 3 (1), Sessão 4 (0) e Sessão 5 (0). Some: 8 + 1 + 1 = 10 presentes. |
 | 4 | Repita tudo com AUSENTE: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = 5 ausentes. |
-| 5 | Total de Sessões = 10 + 5 = 15. Taxa de Presença = 10 ÷ 15 = 66,7%. Taxa de Absenteísmo = 5 ÷ 15 = 33,3%. Bate com o Dashboard. |
+| 5 | Sessões Registradas = 10 + 5 = 15. Taxa de Presença = 10 ÷ 15 = 66,7%. Taxa de Absenteísmo = 5 ÷ 15 = 33,3%. Bate com o Dashboard. |
 
 ![Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).](22-agendamento-grade-mes.png)
 
@@ -66,8 +66,8 @@ _Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Ag
 
 | Card | O que é / como é calculado | Como conferir no sistema |
 |---|---|---|
-| Total de Sessões | Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação. | Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima). |
-| Pacientes Atendidos | Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou). | Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente. |
+| Sessões Registradas (antes "Total de Sessões") | Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação. | Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima). |
+| Pacientes com Sessão Registrada (antes "Pacientes Atendidos") | Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou). | Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente. |
 | Taxa de Presença | Presentes ÷ (Presentes + Ausentes) × 100. | Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima). |
 | Taxa de Absenteísmo | Ausentes ÷ (Presentes + Ausentes) × 100. | Idem — ver seção anterior. |
 | Pacientes Novos | Pacientes cuja primeira sessão registrada de toda a história cai dentro do período. | Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a última página para ver a primeira sessão. |
@@ -85,7 +85,7 @@ _Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabe
 
 | Gráfico | O que mostra | Como conferir |
 |---|---|---|
-| Presença x Ausência x Desmarcações (pizza) | Sessões registradas por status. As fatias "Desmarcado Paciente/Profissional" normalmente ficam vazias (esses status não gravam data). | Mesmas contagens da Agenda por status (Filtros → Sessão n). |
+| Sessões Registradas por Status (pizza) | Presentes, Ausentes, Ausência Justificada e Remarcações. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam. | Mesmas contagens da Agenda por status (Filtros → Sessão n). |
 | Evolução Diária | Presentes e Ausentes de cada dia do período. | Agenda → Filtros → campo Data (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios). |
 | Sessões por Faixa Etária | Sessões por idade do paciente na data da sessão (0–10, 11–20, 21–30, 31–40, 41+). | Sem tela de conferência; usa a data de nascimento do cadastro do paciente. |
 
@@ -132,7 +132,7 @@ _Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRI
 
 | Informação do Dashboard | Onde conferir | Observação |
 |---|---|---|
-| Total de Sessões, Presentes, Ausentes, Taxas | Agenda → Ver Agenda → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
+| Sessões Registradas, Presentes, Ausentes, Taxas | Agenda → Ver Agenda → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
 | Por profissional / status | Relatórios → Agenda - Qtd Marcação | TOTAL só da página; "Ausentes" inclui justificativas. |
 | Cards/contagens de um mês | Relatórios → Relatório Agenda (Agenda → botão Relatório) | Mostra Presentes/Ausentes/desmarcações do mês da agenda. |
 | Presença de um dia | Relatórios → Presença Diária (por data de marcação) | A data é a do registro da marcação, não a da sessão. |

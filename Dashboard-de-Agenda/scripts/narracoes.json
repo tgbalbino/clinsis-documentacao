@@ -7,7 +7,7 @@
   {
     "audio": "02.wav",
     "imagem": "40-dashboard-setembro-cards.png",
-    "texto": "Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada, ou seja, sessões marcadas como Presente, Ausente, Ausente com justificativa ou Remarcação. Sessões pendentes e desmarcações não aparecem. Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15, que são as dez presentes mais as cinco ausentes."
+    "texto": "Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada, ou seja, sessões marcadas como Presente, Ausente, Ausente com justificativa ou Remarcação. Sessões pendentes e desmarcações não aparecem. A tela agora traz esse aviso, e o card se chama Sessões Registradas. Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15, que são as dez presentes mais as cinco ausentes."
   },
   {
     "audio": "03.wav",
@@ -22,7 +22,7 @@
   {
     "audio": "05.wav",
     "imagem": "23-agendamento-filtro-sessao1-presente.png",
-    "texto": "Fazendo o mesmo com Ausente, dá cinco ausentes. Então o total de sessões é quinze, a taxa de presença é dez sobre quinze, sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze, trinta e três vírgula três por cento. Bate com o Dashboard."
+    "texto": "Fazendo o mesmo com Ausente, dá cinco ausentes. Então as sessões registradas são quinze, a taxa de presença é dez sobre quinze, sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze, trinta e três vírgula três por cento. Bate com o Dashboard."
   },
   {
     "audio": "06.wav",
@@ -32,7 +32,7 @@
   {
     "audio": "07.wav",
     "imagem": "42-prof-horarios.png",
-    "texto": "A taxa de ocupação divide o total de sessões pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Profissional horários. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
+    "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Profissional horários. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
   },
   {
     "audio": "08.wav",
