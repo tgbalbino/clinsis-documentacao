@@ -75,6 +75,11 @@ drill-down.
 2. Recebimentos: coluna e filtro de Operadora (via guia faturada).
 3. Guia Faturamento: opção de agrupar por Operadora.
 
+### Decisão sobre sessões previstas/desmarcações (23/09/2026)
+Opção C descartada. Opção B (expandir em datas) descartada por exigir inventar datas (a data da sessão é livre e só
+existe quando marcada). Implementada alternativa somente leitura: **previsto por mês da agenda** (previstas, pendentes,
+desmarcadas pelo paciente/profissional), validada contra o Qtd Marcação (165/95/84).
+
 ### Status (23/09/2026)
 R1 (sessões), R2 (novos x recorrentes), R3 (capacidade) e R4 (faturamento por convênio) foram entregues como
 **drill-down** nos cards e tabelas do Dashboard (lista + Exportar CSV), com o mesmo critério do painel.

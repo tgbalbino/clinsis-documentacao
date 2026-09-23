@@ -140,6 +140,18 @@ blocks = [
               'o relatório <b>Financeiro - Recebimentos</b> agora tem a coluna e o filtro <b>Operadora</b> '
               '(pela guia faturada), e o <b>Relatório Guia Faturamento</b> tem a opção <b>Agrupar por Operadora</b>.'),
 
+    ('h2', 'Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas'),
+    ('p', 'Logo abaixo do aviso, uma faixa de quatro cards mostra o <b>previsto no mês da agenda</b>: <b>Sessões Previstas</b> '
+          '(soma das sessões de todos os agendamentos do mês), <b>Sessões Pendentes</b> (ainda sem marcação), '
+          '<b>Desmarcadas pelo Paciente</b> e <b>Desmarcadas pelo Profissional</b>. Esses números vêm do status de cada sessão '
+          'do agendamento, e por isso não dependem de haver uma data gravada.'),
+    ('img', '48-dashboard-previstas.png', 'Setembro/2026: 165 sessões previstas, 150 pendentes, 0 desmarcadas pelo paciente e 0 pelo profissional.'),
+    ('aviso', 'Cuidados: (1) esses quatro cards são sempre por <b>mês da agenda</b>; se o período informado não for de meses '
+              'fechados (por exemplo, 10 a 20 de setembro), eles mostram o mês inteiro, e a tela avisa isso. '
+              '(2) Como conferir: Sessões Previstas = coluna "Qtde. Sessões" do relatório Agenda - Qtd Marcação (165 em Setembro, '
+              '95 em Agosto, 84 em Julho). (3) Sessões Previstas e Sessões Registradas nem sempre fecham exatamente com as '
+              'Pendentes, porque remarcações e lançamentos fora do dia previsto entram de forma diferente (em Agosto, 87 pendentes + '
+              '9 registradas = 96 para 95 previstas). Use como referência, não como igualdade contábil.'),
     ('h2', 'Como ver quais sessões compõem cada número (novo)'),
     ('p', 'Cada número do Dashboard pode ser aberto para mostrar <b>as sessões que o formam</b>. Clique em um dos cards '
           '(Sessões Registradas, Pacientes, Taxa de Presença, Taxa de Absenteísmo), em uma linha das tabelas Por '

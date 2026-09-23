@@ -128,6 +128,16 @@ _Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRI
 
 > ⚠️ Correção realizada nesta revisão: o quadro estava somando o valor faturado da guia uma vez para cada baixa (uma guia de R$ 1.223,00 com 3 baixas aparecia como R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. Conferência por operadora: o relatório Financeiro - Recebimentos agora tem a coluna e o filtro Operadora (pela guia faturada), e o Relatório Guia Faturamento tem a opção Agrupar por Operadora.
 
+## Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas
+
+Logo abaixo do aviso, uma faixa de quatro cards mostra o previsto no mês da agenda: Sessões Previstas (soma das sessões de todos os agendamentos do mês), Sessões Pendentes (ainda sem marcação), Desmarcadas pelo Paciente e Desmarcadas pelo Profissional. Esses números vêm do status de cada sessão do agendamento, e por isso não dependem de haver uma data gravada.
+
+![Setembro/2026: 165 sessões previstas, 150 pendentes, 0 desmarcadas pelo paciente e 0 pelo profissional.](48-dashboard-previstas.png)
+
+_Setembro/2026: 165 sessões previstas, 150 pendentes, 0 desmarcadas pelo paciente e 0 pelo profissional._
+
+> ⚠️ Cuidados: (1) esses quatro cards são sempre por mês da agenda; se o período informado não for de meses fechados (por exemplo, 10 a 20 de setembro), eles mostram o mês inteiro, e a tela avisa isso. (2) Como conferir: Sessões Previstas = coluna "Qtde. Sessões" do relatório Agenda - Qtd Marcação (165 em Setembro, 95 em Agosto, 84 em Julho). (3) Sessões Previstas e Sessões Registradas nem sempre fecham exatamente com as Pendentes, porque remarcações e lançamentos fora do dia previsto entram de forma diferente (em Agosto, 87 pendentes + 9 registradas = 96 para 95 previstas). Use como referência, não como igualdade contábil.
+
 ## Como ver quais sessões compõem cada número (novo)
 
 Cada número do Dashboard pode ser aberto para mostrar as sessões que o formam. Clique em um dos cards (Sessões Registradas, Pacientes, Taxa de Presença, Taxa de Absenteísmo), em uma linha das tabelas Por Profissional, Por Especialidade ou Por Operadora, ou em Particular / Convênio. Para ver todas as sessões do período, use o botão Ver sessões ao lado de Buscar. A lista usa exatamente o mesmo critério do painel, então o total da lista é sempre igual ao número clicado.
