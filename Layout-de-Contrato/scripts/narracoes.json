@@ -1,0 +1,27 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-layouts.png",
+    "texto": "Esta tela define o modelo que vira o PDF de qualquer contrato da clínica, tanto pra impressão quanto pra assinatura eletrônica. Só existe um layout ativo por vez, mas dá pra manter várias versões cadastradas."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-editor-layout-ativo.png",
+    "texto": "Editando um layout, o texto é escrito em Markdown, com variáveis entre chaves duplas que o sistema troca pelos dados reais de cada contrato na hora de gerar o PDF."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "02-variaveis-disponiveis.png",
+    "texto": "A lista completa de variáveis aparece logo abaixo do campo de texto: dados da clínica, do contrato, do paciente, do responsável, e duas tabelas prontas, de serviços e de pagamentos."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "04-modelo-padrao-preenchido.png",
+    "texto": "Quem está criando um layout do zero pode clicar em Usar modelo padrão: preenche o campo com um contrato de prestação de serviços completo e pronto, já usando as variáveis corretas."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "05-pdf-exemplo-gerado.png",
+    "texto": "Antes de ativar, use Visualizar PDF de exemplo: gera um PDF de verdade com dados fictícios, sem precisar salvar, pra conferir a formatação. Um erro de acentuação no texto só aparece visualmente aqui, não no editor."
+  }
+]

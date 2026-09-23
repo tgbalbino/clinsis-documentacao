@@ -1,0 +1,32 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-aba-especialidade.png",
+    "texto": "A Tabela de Preços para Cobrança define quanto cobrar do paciente por sessão particular. Diferente da Tabela de Pagamento, aqui não existem várias vigências: é uma configuração única, sempre viva, com três abas."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "00-aba-especialidade.png",
+    "texto": "Especialidade define o valor padrão. Profissional sobrepõe esse valor só para um profissional específico. E Operadora sobrepõe o valor pra atendimentos daquele convênio."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "01-reajuste-formulario-aberto.png",
+    "texto": "O card Manutenção rápida de preços também está presente nas três abas, sempre reajustando o escopo daquela aba. Informe o percentual, marque Valor cobrado, Valor social, ou os dois."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "02-reajuste-previa.png",
+    "texto": "Calcular prévia mostra o valor atual e o valor novo de cada especialidade, sem gravar nada. Só depois de conferir, clique em Confirmar reajuste."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "03-reajuste-confirmado.png",
+    "texto": "Depois de confirmar, os valores são gravados de uma vez só, e a grade já mostra os novos preços."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "06-aba-operadora.png",
+    "texto": "Na aba Operadora, escolha o convênio no topo antes de configurar ou reajustar os valores específicos dele."
+  }
+]

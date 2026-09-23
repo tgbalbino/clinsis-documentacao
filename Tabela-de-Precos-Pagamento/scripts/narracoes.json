@@ -1,0 +1,32 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-vigencias.png",
+    "texto": "A Tabela de Preços para Pagamento define quanto a clínica paga a cada profissional por sessão. Cada linha aqui é uma tabela de valores, chamada de vigência, com o status Ativo. O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como Ativo, então nunca deixe duas tabelas ativas ao mesmo tempo."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "02-aba-especialidades.png",
+    "texto": "Ao clicar em Gerenciar, existem três abas: Agenda, que vincula os meses que usam essa tabela; Especialidades, com o valor padrão por especialidade; e Profissionais, com valores específicos que sobrepõem o padrão."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "08-modal-valores-profissional.png",
+    "texto": "Na aba Profissionais, o botão com o cifrão abre a grade de valores específicos daquele profissional, que vale só pra ele."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "03-reajuste-formulario-aberto.png",
+    "texto": "O card Manutenção rápida de preços permite reajustar vários valores de uma vez, por percentual. Informe o percentual, marque se quer reajustar Valor, Valor Convênio, ou os dois."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "04-reajuste-previa.png",
+    "texto": "Calcular prévia mostra o valor atual e o valor novo de cada linha, sem gravar nada ainda. Só depois de conferir, clique em Confirmar reajuste."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "06-reajuste-confirmado.png",
+    "texto": "Depois de confirmar, os valores são gravados de uma vez. O mesmo recurso existe dentro do modal de um profissional específico, reajustando só os valores dele."
+  }
+]

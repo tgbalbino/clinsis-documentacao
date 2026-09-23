@@ -1,0 +1,32 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-e-indicador-conciliacao.png",
+    "texto": "Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro numa Conta Financeira específica, com data, valor e origem. Serve pra conferir esse extrato contra o extrato real do banco e é a base do Fluxo de Caixa e do Dashboard Financeiro."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "00-lista-e-indicador-conciliacao.png",
+    "texto": "As linhas são geradas automaticamente: baixa de Conta a Pagar gera uma saída, baixa de Conta a Receber gera uma entrada, e a Nova Transferência desta própria tela gera as duas ao mesmo tempo. Se uma baixa for cancelada, o movimento correspondente some sozinho da lista. O card Conciliação, no topo, soma o total, o conciliado e o não conciliado do período."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "01-apos-conciliar.png",
+    "texto": "O botão verde marca o lançamento como conciliado, confirmando que ele bate com o extrato real do banco. Um lançamento conciliado ganha o botão amarelo de desconciliar, e não pode mais ser excluído diretamente até ser desconciliado."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "02-modal-motivo-exclusao.png",
+    "texto": "O botão vermelho exclui um lançamento não conciliado, pedindo antes o motivo. Mas atenção: excluir aqui não desfaz a baixa que gerou o lançamento, só remove esta linha do extrato."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "03-nova-transferencia-preenchida.png",
+    "texto": "Nova Transferência registra uma movimentação interna entre duas contas da clínica, como levar dinheiro do caixa pro banco. Pede conta de origem, conta de destino, valor, e também Plano de Contas e Centro de Custo, os mesmos dados exigidos em qualquer outro lançamento financeiro."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "04-apos-transferencia.png",
+    "texto": "Depois de salvar, aparecem duas linhas novas: uma saída na conta de origem e uma entrada na conta de destino, as duas com origem Transferência."
+  }
+]

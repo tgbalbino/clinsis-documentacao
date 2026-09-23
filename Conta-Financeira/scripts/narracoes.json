@@ -1,0 +1,67 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-contas-financeiras.png",
+    "texto": "A Conta Financeira é o lugar onde o dinheiro da clínica realmente entra e sai: uma conta bancária, ou o próprio caixa em dinheiro. Toda baixa de recebimento ou pagamento informa em qual conta o valor caiu, ou de qual conta ele saiu. É isso que permite conferir o extrato do banco e montar o Fluxo de Caixa. O cadastro fica em Financeiro, Cadastros, Contas Financeiras, e a coluna Tipo mostra Banco ou Caixa."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "10-novo-cadastro-completo.png",
+    "texto": "Para cadastrar, clique em Novo. Só a descrição é obrigatória. Banco, agência, conta e chave PIX são opcionais e servem para identificar a conta bancária. Uma conta sem banco é tratada como Caixa, ou seja, dinheiro em espécie."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "22-movimentos-filtrado-caixa.png",
+    "texto": "A conta é usada nas baixas de Contas a Pagar e de Contas a Receber, e no pagamento do Checkin. Para conferir o que passou por uma conta, abra Movimentos Financeiros e filtre pela Conta Financeira. Aqui, só os lançamentos do Caixa: uma entrada de Conta a Receber e uma saída de Conta a Pagar."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "21v-fluxo-por-conta.png",
+    "texto": "O Fluxo de Caixa também mostra, no quadro Por Conta Financeira, as entradas, saídas e o resultado de cada conta cadastrada."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "23v-formas-pagamento-clinica.png",
+    "texto": "Agora a validação entre Conta Financeira e Forma de Pagamento. Nem toda forma faz sentido em toda conta. Cartão, por exemplo, é depositado na conta bancária, e não existe dentro da gaveta do caixa. Por isso, cada conta tem a sua lista de formas permitidas, e o sistema recusa qualquer baixa fora dessa lista. Primeiro passo: em Tabelas Auxiliares, Formas de Pagamento, ficam as formas ativas da clínica."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "12-formas-conta-nova.png",
+    "texto": "Segundo passo: na lista de contas, clique no botão Formas de pagamento desta conta. Ao criar uma conta nova, o sistema já habilita todas as formas ativas da clínica, como sugestão. Basta desabilitar as que não se aplicam."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "03-formas-pagamento-depois.png",
+    "texto": "No exemplo, desabilitamos o Cartão de Crédito na conta Caixa. Ela passa a aceitar só Dinheiro e Pix."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "05-erro-forma-nao-habilitada.png",
+    "texto": "Ao tentar receber com Cartão de Crédito na conta Caixa, o sistema recusa e avisa: esta forma de pagamento não está habilitada para a conta financeira selecionada. Configure essa relação na tela de Conta Financeira."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "07-baixa-com-sucesso.png",
+    "texto": "Trocando para Dinheiro, que a conta Caixa aceita, a baixa é gravada normalmente e aparece no extrato da conta."
+  },
+  {
+    "audio": "10.wav",
+    "imagem": "26-contapagar-erro-forma-nao-habilitada.png",
+    "texto": "A mesma regra vale em Contas a Pagar, com a mesma mensagem. Se isso acontecer no dia a dia, escolha outra conta que aceite aquela forma, ou habilite a forma na conta desejada."
+  },
+  {
+    "audio": "11.wav",
+    "imagem": "24v-parametro-checkin.png",
+    "texto": "No Checkin, o recepcionista não escolhe a conta. O sistema usa a conta definida no parâmetro Conta Financeira do Checkin, em Tabelas Auxiliares, Parâmetros. A forma de pagamento do Checkin também é validada contra essa conta. Por isso, aponte o parâmetro para uma conta que aceite todas as formas usadas na recepção."
+  },
+  {
+    "audio": "12.wav",
+    "imagem": "15-resultado-exclusao-caixa.png",
+    "texto": "Uma conta só pode ser excluída se nunca foi usada. Se ela já tem movimentos, o sistema recusa e orienta a alterar o cadastro para Inativo, preservando o histórico. Também não é possível excluir a conta configurada no parâmetro do Checkin."
+  },
+  {
+    "audio": "13.wav",
+    "imagem": "09-erro-caixa-fechado.png",
+    "texto": "Atenção: para usuários com a opção Controla Caixa marcada, qualquer baixa exige o caixa aberto. Sem ele, o sistema recusa com a mensagem: nenhum caixa aberto para o usuário. Abra o caixa antes de registrar o recebimento."
+  }
+]

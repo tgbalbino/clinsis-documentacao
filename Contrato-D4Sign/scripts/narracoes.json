@@ -1,0 +1,37 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-config-d4sign.png",
+    "texto": "Este manual complementa o de Contrato sem assinatura digital, cobrindo o que muda quando a clínica usa a D4Sign pra colher a assinatura eletronicamente. Antes de tudo, a integração precisa estar configurada em Tabelas Auxiliares, D4Sign: token, cofre, ambiente e a URL do webhook."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-contrato-pronto-enviar-assinatura.png",
+    "texto": "Com o contrato criado, serviços e pagamento preenchidos, clique em Enviar para assinatura, em vez de marcar como assinado manualmente."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "02b-modal-enviado-com-sucesso.png",
+    "texto": "O sistema gera o PDF, envia pra D4Sign e dispara o convite de assinatura por e-mail pro responsável, ou pro próprio paciente quando não há responsável cadastrado."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "07-contrato-aguardando-assinatura-bloqueado.png",
+    "texto": "Depois do envio, o contrato fica bloqueado, com o badge Aguardando assinaturas, e todos os campos somente leitura. A assinatura em si acontece fora do ClinSis, na página da D4Sign."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "05-historico-assinatura.png",
+    "texto": "A aba Histórico da assinatura registra cada evento recebido. Normalmente o ClinSis fica sabendo automaticamente, via webhook; se esse aviso não chegar, existe o botão Sincronizar com a D4Sign pra consultar o status manualmente."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "04-contrato-fechado-automaticamente.png",
+    "texto": "Assim que a assinatura é confirmada, o ClinSis marca o contrato como assinado e fecha ele automaticamente, sem nenhum clique da equipe: gera as parcelas em Contas a Receber e trava o contrato definitivamente."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "06-conta-a-receber-gerada.png",
+    "texto": "A parcela gerada pelo fechamento automático aparece normalmente em Contas a Receber, com situação Aberto, igual na versão sem D4Sign. Se o fechamento automático falhar, um alerta aparece na tela do próprio contrato explicando o motivo."
+  }
+]

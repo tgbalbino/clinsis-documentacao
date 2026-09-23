@@ -1,0 +1,72 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-vigencia-lista.png",
+    "texto": "Pagamento de Profissionais calcula, a partir dos atendimentos do mês, quanto a clínica deve repassar pra cada profissional, e gera a Conta a Pagar de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Preços para Pagamento, em Tabelas Auxiliares, Tab. Pagamento."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-vigencia-gerenciar-agenda.png",
+    "texto": "Dentro da tabela de preços, a aba Agenda mostra quais meses já usam essa tabela. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele período."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "02-vigencia-gerenciar-profissionais.png",
+    "texto": "A aba Especialidades define um valor padrão por especialidade, e a aba Profissionais permite um valor específico por profissional, que tem prioridade sobre o valor padrão."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "13-vigencia-aba-especialidades.png",
+    "texto": "Cada linha tem dois campos: Valor e Valor Convênio. Mas atenção: hoje o sistema sempre usa o campo Valor no cálculo do pagamento, seja o atendimento particular ou de convênio. O Valor Convênio fica salvo, mas não influencia o valor pago ao profissional."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "13-vigencia-aba-especialidades.png",
+    "texto": "O Tipo de Marcação permite valores diferentes por tipo de atendimento. Por exemplo, no ambiente de testes, Terapeuta Ocupacional tem Todos os tipos a dois reais e uma linha específica de Avaliação a três reais: toda avaliação passa a pagar o valor específico, e os demais continuam no valor genérico."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "14-vigencia-modal-valores-profissional.png",
+    "texto": "O mesmo vale por profissional: aqui, o Profissional 01 tem um valor específico pra Psicólogo, diferente do valor padrão da aba Especialidades, sobrepondo o valor padrão só pra ele."
+  },
+  {
+    "audio": "06b.wav",
+    "imagem": "16-especialidade-cadastro-tipocobranca.png",
+    "texto": "Já o Tipo de Cobrança fica no cadastro da Especialidade, em Cadastros, não nesta tabela de preços, e também afeta o cálculo. Por Sessão paga por cada sessão confirmada; Paciente paga uma única vez por agendamento, não importa quantas sessões ele teve. Por exemplo, cinco sessões previstas, três confirmadas, a cinquenta reais cada: Por Sessão paga cento e cinquenta reais, Paciente paga só cinquenta."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "00-vigencia-lista.png",
+    "texto": "Um ponto de atenção: o cálculo sempre usa a tabela de preços mais recente marcada como ativa pra clínica inteira, e não necessariamente a tabela vinculada aquele mês específico na aba Agenda. Isso significa que editar valores ou ativar uma tabela nova pode alterar o cálculo de meses antigos que ainda não tiveram a conta gerada. Só a conta a pagar já gerada fica congelada no valor original."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "05-resultado-agenda-vinculada.png",
+    "texto": "No relatório, escolha a Agenda do mês que quer calcular e clique em Filtrar. Ele mostra, por profissional e especialidade, quantas sessões entram no cálculo e o valor total a repassar."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "12-analitico-resultado.png",
+    "texto": "Existe também o Relatório de Pagamento de Profissionais analítico, que mostra a mesma conta detalhada paciente por paciente, sem o botão de gerar conta a pagar. Ele serve pra conferir, antes de gerar o pagamento em lote, exatamente quais sessões de quais pacientes estão compondo o valor total de cada profissional."
+  },
+  {
+    "audio": "10.wav",
+    "imagem": "07-modal-gerar-preenchido.png",
+    "texto": "Marque as linhas desejadas e clique em Gerar Contas a Pagar. Preencha Plano de Contas, Centro de Custo e Data de Vencimento, todos obrigatórios, e confirme em Sim, Gerar."
+  },
+  {
+    "audio": "11.wav",
+    "imagem": "08-apos-gerar.png",
+    "texto": "A conta é gerada na hora, e a linha fica marcada como Conta a pagar gerada, pra não ser selecionada de novo por engano."
+  },
+  {
+    "audio": "12.wav",
+    "imagem": "10-conta-a-pagar-gerada-pelo-pagamento-profissional.png",
+    "texto": "Conferindo em Contas a Pagar, a conta do profissional aparece lá, mas com situação Em Aberto e valor pago zero. Ou seja, essa rotina só calcula e registra a dívida com o profissional; o pagamento em si é lançado depois, manualmente, no botão de Pagamento e Acerto, quando a clínica realmente faz o repasse."
+  },
+  {
+    "audio": "13.wav",
+    "imagem": "09-agenda-nao-vinculada-sem-linhas.png",
+    "texto": "Se o mês escolhido ainda não estiver vinculado a nenhuma tabela de preços, o sistema avisa: Agenda não vinculada a uma configuração de pagamento. Nesse caso, é só voltar na tela de configuração e vincular esse mês antes de tentar de novo."
+  }
+]

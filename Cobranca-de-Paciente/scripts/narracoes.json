@@ -1,0 +1,52 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-cobranca-config-especialidade.png",
+    "texto": "Cobrança de Paciente calcula, a partir dos atendimentos particulares do mês, quanto cada paciente deve pagar, e gera a Conta a Receber de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Preços para Cobrança, em Tabelas Auxiliares, Tab. Cobrança, com o valor por especialidade."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-cobranca-config-profissional.png",
+    "texto": "A aba Profissional permite um valor específico por profissional, que tem prioridade sobre o valor padrão da especialidade. A aba Operadora guarda valores específicos por convênio."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "02-cobranca-config-operadora.png",
+    "texto": "Atenção: o campo Valor Social, nas abas Especialidade e Operadora, fica salvo mas não é usado no cálculo hoje. O relatório sempre soma pelo campo Valor normal."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "04-sintetico-filtro-preenchido.png",
+    "texto": "No relatório sintético, escolha a Agenda do mês, marque os status de sessão e clique em Filtrar. Só entram atendimentos particulares nesse cálculo."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "05-sintetico-resultado.png",
+    "texto": "O resultado mostra, por paciente, quantas sessões entram no cálculo e o valor total a receber."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "07-sintetico-modal-gerar-preenchido.png",
+    "texto": "Marque os pacientes desejados e clique em Gerar Conta a Receber. Preencha Data de Vencimento, Plano de Contas e Centro de Custo, todos obrigatórios, e confirme em Sim, Gerar."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "08-sintetico-apos-gerar.png",
+    "texto": "A conta é gerada na hora, com o aviso de sucesso."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "09-conta-a-receber-gerada-pela-cobranca.png",
+    "texto": "Conferindo em Contas a Receber, a conta do paciente aparece lá com situação Aberto e saldo restante igual ao valor total. Essa rotina só calcula e registra a cobrança; o recebimento em si é lançado depois, manualmente, quando o paciente realmente paga."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "11-analitico-resultado.png",
+    "texto": "Existe também o Relatório de Cobrança de Paciente analítico, que mostra a mesma conta detalhada por paciente, profissional e especialidade, sem o botão de gerar conta a receber. Serve pra conferir, antes de gerar em lote, exatamente quais sessões estão compondo o valor de cada paciente."
+  },
+  {
+    "audio": "10.wav",
+    "imagem": "12-sintetico-com-cobrancas-ja-geradas.png",
+    "texto": "Rodar o relatório de novo não gera cobrança duplicada: o paciente que já teve conta gerada aparece marcado como Conta a receber gerada, sem checkbox pra selecionar de novo, evitando cobrar duas vezes pelas mesmas sessões."
+  }
+]

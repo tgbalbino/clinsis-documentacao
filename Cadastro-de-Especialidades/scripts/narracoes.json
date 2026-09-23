@@ -1,0 +1,32 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-especialidades.png",
+    "texto": "O cadastro de Especialidade tem duas configurações que mudam o comportamento de outras telas do sistema: Tipo de Cobrança e Relatório Compartilhado de Prontuários. Fica em Tabelas Auxiliares, Especialidade."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-cadastro-tipo-cobranca-rel-compartilhado.png",
+    "texto": "Tipo de Cobrança só é usado num único lugar: o cálculo do Pagamento de Profissionais. Por Sessão paga uma vez para cada sessão confirmada no mês. Já Paciente paga só uma vez por paciente no mês, não importa quantas sessões ele teve."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "01-cadastro-tipo-cobranca-rel-compartilhado.png",
+    "texto": "Por exemplo: se Fonoaudiologia está configurada Por Sessão, um paciente com 4 sessões no mês gera 4 sessões a pagar pro profissional. Já se Avaliação Neuropsicológica está configurada como Paciente, mesmo com 3 sessões marcadas, o sistema paga só 1 vez, o pacote fechado."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "00-lista-especialidades.png",
+    "texto": "Relatório Compartilhado controla se um profissional pode ver o prontuário já finalizado de outro profissional, quando os dois atendem o mesmo paciente. Prontuário em rascunho nunca é compartilhado, só depois de finalizado."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "00-lista-especialidades.png",
+    "texto": "Não bloqueia todo mundo. Somente mesma especialidade libera só entre colegas da mesma especialidade que também atendam aquele paciente. E Qualquer profissional do mesmo paciente libera pra qualquer profissional que atenda o paciente, mesmo de especialidade diferente."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "01-cadastro-tipo-cobranca-rel-compartilhado.png",
+    "texto": "Por exemplo: com Psicologia configurada como Somente mesma especialidade, outra psicóloga que atenda o mesmo paciente consegue ver o prontuário finalizado, mas um fisioterapeuta que atenda esse paciente não consegue, por ser de outra especialidade."
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "10-topo-cards.png",
+    "texto": "O Dashboard de Agenda reúne os principais números sobre os atendimentos agendados num período. Fica em Agenda, Dashboard Agenda, e o único filtro é o período, que já vem com o mês corrente selecionado. Um detalhe importante: existe um filtro de profissional no sistema, mas ele ainda não aparece nesta tela; hoje o dashboard sempre mostra todos os profissionais juntos."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "10-topo-cards.png",
+    "texto": "Quase todos os blocos contam sessões dentro do período, sendo sessão cada data de atendimento agendada. Total de Sessões conta todas, com qualquer status. Pacientes Atendidos conta pacientes distintos com sessão no período, mesmo quem faltou ou desmarcou."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "10-topo-cards.png",
+    "texto": "Taxa de Presença e Taxa de Absenteísmo comparam só Presentes contra Ausentes puros; desmarcações e ausência justificada não entram nessa conta. Pacientes Novos são os que tiveram a primeira sessão da vida deles dentro do período; Recorrentes já tinham sessão antes."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "10-topo-cards.png",
+    "texto": "Dias de Antecedência é a média entre a data do agendamento e a data em que ele foi cadastrado no sistema. Taxa de Ocupação divide o total de sessões pela capacidade total da agenda no período, já descontando feriados cadastrados. Férias ou bloqueios individuais de um profissional ainda não são descontados dessa capacidade, então a taxa real pode ser um pouco maior do que a exibida."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "11-graficos.png",
+    "texto": "O gráfico de pizza mostra todas as sessões divididas por status: presentes, ausentes, ausência justificada, desmarcações e remarcações. Sessões sem status definido não aparecem em nenhuma fatia, só entram no Total de Sessões. Já o gráfico de linha mostra a evolução diária de presentes e ausentes."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "12-tabelas-profissional-especialidade.png",
+    "texto": "Nas tabelas Por Profissional e Por Especialidade, cada linha soma as sessões daquele profissional ou especialidade no período. Em Particular x Convênio, uma sessão sem essa marcação preenchida é contada como Convênio, não fica de fora."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "13-metodo-programa.png",
+    "texto": "Por Método e Por Programa só aparecem se a clínica tiver essas opções habilitadas no cadastro, e contam apenas sessões que têm essa informação preenchida."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "14-faixa-etaria-dias-horarios.png",
+    "texto": "Sessões por Faixa Etária usa a idade do paciente na data de cada sessão, não a idade atual dele. E Dias e Horários Mais Concorridos mostra o top dez, útil para identificar os horários de pico da agenda."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "15-faturamento-convenio.png",
+    "texto": "Por fim, Faturamento por Convênio é o único bloco que não usa a data da sessão: o período aqui filtra a data em que o recebimento da guia foi registrado no Financeiro. Uma sessão de um mês pode ter sua guia recebida só em outro mês. Guias ainda sem nenhuma baixa não aparecem nesta lista."
+  }
+]

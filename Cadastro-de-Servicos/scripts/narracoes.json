@@ -1,0 +1,32 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-lista-servicos.png",
+    "texto": "Um Serviço é um item simples de nome e valor, um item de catálogo usado como base para montar os itens de um Contrato. Fica em Tabelas Auxiliares, Serviços."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "01-cadastro-servico-vazio.png",
+    "texto": "O cadastro é bem enxuto: só o nome do serviço e o preço. Não existe ativo ou inativo, nem vínculo com convênio, e não há como excluir um serviço já cadastrado."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "02-contrato-aba-servicos.png",
+    "texto": "Apesar do nome sugerir algo amplo, o Serviço é usado num único lugar do sistema: a aba Serviços dentro do cadastro de Contrato. Guia de Faturamento, Cobrança e Tabela de Preços de convênio usam outro conceito, sem relação com este cadastro."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "04-modal-buscar-servico-resultado.png",
+    "texto": "Ao clicar em Novo dentro da aba Serviços do contrato, abre a busca: escolhe um serviço já cadastrado pelo botão verde."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "07-contrato-servico-adicionado.png",
+    "texto": "O valor sugerido já vem preenchido; basta informar a quantidade de sessões, e o valor total é calculado automaticamente. O total do contrato é sempre a soma de todos os serviços adicionados."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "07-contrato-servico-adicionado.png",
+    "texto": "Além disso, ao renovar um contrato, o sistema copia automaticamente os mesmos serviços pro contrato novo. E na impressão do contrato, existe um espaço reservado que mostra essa lista de serviços no documento final."
+  }
+]

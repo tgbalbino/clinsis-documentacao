@@ -1,0 +1,37 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "00-meu-caixa-inicial.png",
+    "texto": "O módulo Caixa controla o dinheiro que passa pela mão de cada atendente durante o dia. Cada usuário tem o seu próprio caixa; mais de um atendente pode estar com o caixa aberto ao mesmo tempo."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "02-abrir-caixa-preenchido.png",
+    "texto": "Pra abrir o caixa, é informado só o valor inicial, o fundo de troco. Só é possível ter um caixa aberto por usuário de cada vez."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "07-extrato-com-suprimento.png",
+    "texto": "Com o caixa aberto, dá pra lançar Suprimento ou Sangria manualmente. Suprimento só pode ser feito em dinheiro; sangria é validada contra o saldo em espécie disponível."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "10-extrato-com-entrada-refletida.png",
+    "texto": "Toda baixa de Conta a Receber ou Conta a Pagar feita com o caixa aberto entra automaticamente no extrato, sem lançamento manual. Isso só vale pra usuários com a opção Controla Caixa marcada no cadastro de acesso."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "17-bloqueio-fechar-com-solicitacao-pendente.png",
+    "texto": "Ao fechar, o sistema mostra o resumo de entradas e saídas e calcula o saldo final. O fechamento é totalmente calculado pelo sistema, não existe contagem manual do dinheiro físico nem registro de quebra de caixa."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "18-solicitacoes-pendentes.png",
+    "texto": "Cancelar um lançamento manual precisa de aprovação: o usuário solicita, e só o administrador efetiva, na tela Solicitações. Enquanto tiver solicitação pendente, o fechamento do caixa fica bloqueado."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "23-listar-historico-caixas.png",
+    "texto": "Em Listar, dá pra consultar o histórico de caixas por usuário e período. Reabrir um caixa já fechado só pode ser feito por um administrador, com um motivo informado."
+  }
+]

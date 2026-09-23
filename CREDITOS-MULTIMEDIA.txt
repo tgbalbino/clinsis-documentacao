@@ -1,0 +1,17 @@
+Créditos de trilha sonora usada na abertura/encerramento dos vídeos de documentação
+
+Trilha: "Sport Rock Racing" by Infraction [No Copyright Music]
+Canal: Infraction (YouTube)
+Uso: trecho curto (poucos segundos) na abertura e no encerramento de cada vídeo,
+     com volume reduzido, como "vinheta" de identificação da marca ClinSis.
+Licença: liberada gratuitamente pelo canal Infraction para uso em vídeos,
+         mediante crédito ao autor.
+
+Ao publicar qualquer um destes vídeos em um canal/plataforma pública (YouTube,
+site institucional, etc.), incluir na descrição algo como:
+
+  Music: "Sport Rock Racing" by Infraction
+  https://www.youtube.com/@Infraction
+
+Locutação (narração em português) gerada por Google Cloud Text-to-Speech
+(voz pt-BR-Neural2-C).
