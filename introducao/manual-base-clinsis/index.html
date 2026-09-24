@@ -1792,7 +1792,7 @@
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <hr />
 <p><em>O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões</em></p>
-<p>Versão 1.0 — 23/09/2026</p>
+<p>Versão 1.1 — 24/09/2026</p>
 <p>Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda.</p>
 <hr />
 <h1 id="1-o-que-e-o-clinsis">1. O que é o ClinSis<a class="headerlink" href="#1-o-que-e-o-clinsis" title="Permanent link">&para;</a></h1>
@@ -2030,7 +2030,7 @@
 <h2 id="especialidades">Especialidades<a class="headerlink" href="#especialidades" title="Permanent link">&para;</a></h2>
 <p>Define os tipos de atendimento da clínica. Cada especialidade tem descrição, abreviação (que aparece na agenda, ex.: FONO), Tipo de Cobrança (Por Sessão ou Paciente) e Relatório Compartilhado (Prontuários), que controla se um profissional enxerga o prontuário finalizado de um colega. Os detalhes estão no manual "Cadastro de Especialidades".</p>
 <h2 id="profissionais">Profissionais<a class="headerlink" href="#profissionais" title="Permanent link">&para;</a></h2>
-<p>O cadastro do profissional reúne CPF, nome, data de nascimento, Locação, Nome Agenda (o nome curto que aparece na grade da agenda), registro profissional (conselho), endereço, contatos e se é estagiário. Os campos marcados com * são obrigatórios. O profissional pode ser ativado ou inativado (menu Profissional → Inativação).</p>
+<p>O cadastro do profissional reúne CPF, nome, data de nascimento, Locação, Nome Agenda (o nome curto que aparece na grade da agenda), registro profissional (conselho), endereço, contatos e se é estagiário. Os campos marcados com * são obrigatórios. O profissional pode ser ativado ou inativado, um a um no cadastro ou em massa pelo menu Profissional → Inativação.</p>
 <h2 id="pacientes">Pacientes<a class="headerlink" href="#pacientes" title="Permanent link">&para;</a></h2>
 <p>O cadastro do paciente pede CPF, titular, nome, data de nascimento, sexo, mãe, pai, estado civil, endereço e celular (campos com *), além de dados opcionais como RG, CPS (carteira do convênio), indicação médica, doença/alergia e responsável, com anexo de laudo. Depois de cadastrado, o paciente pode ser vinculado a horários da agenda. No menu Paciente também existem Entrada e Saída (registro do tipo, data e motivo da entrada ou saída do paciente no tratamento) e Inativação.</p>
 <h2 id="operadoras-convenios">Operadoras (convênios)<a class="headerlink" href="#operadoras-convenios" title="Permanent link">&para;</a></h2>
@@ -2111,16 +2111,16 @@
 <td>Resumo do mês: quantidade de agendamentos, pacientes, sessões, presentes, ausentes e desmarcações.</td>
 </tr>
 <tr>
-<td>Prof. horários</td>
-<td>Define os horários de cada profissional naquele mês.</td>
+<td>Horários</td>
+<td>Define os horários de cada profissional naquele mês (antes o botão se chamava "Prof. horários").</td>
 </tr>
 <tr>
-<td>Ver Agenda</td>
-<td>Abre a grade de agendamento (onde os pacientes são vinculados e as sessões marcadas).</td>
+<td>Acessar</td>
+<td>Abre a grade de agendamento, onde os pacientes são vinculados e as sessões marcadas (antes "Ver Agenda").</td>
 </tr>
 <tr>
 <td>Divergência Sessões</td>
-<td>Lista os agendamentos cuja quantidade de Sessões difere das Sessões Esperadas do mês (quantas vezes o dia da semana acontece) e permite Ajustar, um a um ou em lote.</td>
+<td>Lista os agendamentos cuja quantidade de Sessões difere das Sessões Esperadas do mês (quantas vezes o dia da semana acontece) e permite Ajustar, um a um ou em lote. O botão Ajustar Seleção fica numa barra no topo da lista, junto com o total de divergências e de selecionadas, e acompanha a rolagem.</td>
 </tr>
 <tr>
 <td>Lixeira (vermelho)</td>
@@ -2179,7 +2179,7 @@
 </tr>
 <tr>
 <td>Horários do profissional</td>
-<td>Agenda → Prof. horários</td>
+<td>Agenda → Horários</td>
 <td>Quais desses horários cada profissional atende, em cada dia da semana (ou em datas específicas), naquele mês.</td>
 </tr>
 </tbody>
@@ -2204,11 +2204,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="horarios-do-profissional-agenda-prof-horarios">Horários do profissional (Agenda → Prof. horários)<a class="headerlink" href="#horarios-do-profissional-agenda-prof-horarios" title="Permanent link">&para;</a></h2>
-<p>Depois de criada a agenda do mês, clique em Prof. horários nela. A tela "Profissional Agenda" permite montar a grade de cada profissional.</p>
+<h2 id="horarios-do-profissional-agenda-horarios">Horários do profissional (Agenda → Horários)<a class="headerlink" href="#horarios-do-profissional-agenda-horarios" title="Permanent link">&para;</a></h2>
+<p>Depois de criada a agenda do mês, clique em Horários nela. A tela "Profissional Agenda" monta a grade de cada profissional. No primeiro acesso, uma apresentação rápida mostra o que mudou no layout e onde voltar ao layout anterior.</p>
 <ol>
-<li>Escolha o profissional (pela lista ou em "buscar profissional"). 2. Se a clínica trabalha com os dois formatos, escolha o Formato: SEMANAL (um dia da semana, que se repete o mês inteiro) ou DATA (um dia específico). 3. Marque o Dia (ou a Data). 4. Marque os Horários desejados (ou "Marcar todos"). 5. Clique em Incluir. Repita para os outros dias.</li>
+<li>Escolha o Profissional na lista (ou use Buscar para procurar por nome, CPF ou código). Ao lado aparecem quantos horários ele já tem, em quantos dias da semana e em quantas datas específicas. 2. Escolha Semanal (dia da semana que se repete o mês inteiro) ou Data específica (um dia do mês). Se a clínica trabalha com um só formato, essa escolha não aparece. 3. No Semanal, marque um ou vários dias da semana: os mesmos horários serão incluídos em todos. O número embaixo de cada dia é quantos horários ele já tem. 4. Marque os horários, que ficam separados em Madrugada, Manhã, Tarde e Noite, cada período com "marcar período" e "limpar". Horários que o dia já tem aparecem tracejados e não são incluídos de novo. 5. Clique no botão de incluir, que diz quantos horários e em quais dias serão incluídos (ex.: "Incluir 25 horários em Seg, Qua").</li>
 </ol>
+<p>À direita, Horários cadastrados mostra a grade da semana (uma coluna por dia) e, na outra aba, as datas específicas. Para remover, clique nos horários (ficam riscados em vermelho) ou use "marcar dia"; uma barra mostra quantos estão marcados e o botão Remover, que pede confirmação.</p>
 <table>
 <thead>
 <tr>
@@ -2218,24 +2219,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Manter Marcação</td>
-<td>Ao incluir, mantém os horários marcados na tela, para repetir a mesma seleção em outro dia sem remarcar tudo.</td>
+<td>Manter marcação após incluir</td>
+<td>Mantém os horários marcados depois de incluir, para repetir a mesma seleção em outro dia sem remarcar tudo.</td>
 </tr>
 <tr>
-<td>Transferir horários/agenda para outro profissional</td>
+<td>Mais ações → Transferir horários para outro profissional</td>
 <td>Passa a agenda deste profissional (horários e pacientes) para outro. Útil quando um profissional sai.</td>
 </tr>
 <tr>
-<td>Clonar horários para outro profissional</td>
+<td>Mais ações → Clonar horários para outro profissional</td>
 <td>Copia os horários deste profissional para outro, sem tirar do original.</td>
 </tr>
 <tr>
-<td>Remover Todos os Horários deste profissional</td>
-<td>Limpa toda a grade do profissional no mês.</td>
+<td>Mais ações → Remover todos os horários deste profissional</td>
+<td>Marca todos os horários do profissional no mês para remoção e pede confirmação.</td>
 </tr>
 <tr>
-<td>Remover (caixas + lixeira)</td>
-<td>Marque as linhas da tabela e use a lixeira para remover horários específicos.</td>
+<td>Novo layout / Layout anterior (topo da tela)</td>
+<td>Troca entre o layout novo e o anterior. A tela abre sempre no último layout escolhido pelo usuário, e o rodapé lembra onde fica essa troca.</td>
 </tr>
 </tbody>
 </table>
@@ -2243,7 +2244,7 @@
 <p>⚠️ Sem horários de profissional definidos, a grade de agendamento fica vazia: não há onde vincular pacientes.</p>
 </blockquote>
 <h1 id="7-agendamento-de-pacientes">7. Agendamento de pacientes<a class="headerlink" href="#7-agendamento-de-pacientes" title="Permanent link">&para;</a></h1>
-<p>Com a agenda criada e os horários dos profissionais definidos, o agendamento é feito em Agenda → Ver Agenda (ou pelo botão Agendamento dentro de Prof. horários). A tela é uma grade: cada linha é um horário de um profissional em um dia da semana ou data.</p>
+<p>Com a agenda criada e os horários dos profissionais definidos, o agendamento é feito em Agenda → Acessar (ou pelo botão Agendamento dentro de Horários). A tela é uma grade: cada linha é um horário de um profissional em um dia da semana ou data.</p>
 <p>As linhas em branco com o botão verde (+) são horários vagos. As linhas com o botão azul de engrenagem já têm paciente. A cor da linha pode indicar a situação da guia de faturamento. Use "Somente vagos" para listar apenas os horários livres.</p>
 <h2 id="como-agendar-um-paciente">Como agendar um paciente<a class="headerlink" href="#como-agendar-um-paciente" title="Permanent link">&para;</a></h2>
 <ol>
@@ -2389,27 +2390,27 @@
 <tbody>
 <tr>
 <td>Atendimento Diário (PDF)</td>
-<td>Ver Agenda → Relatórios</td>
+<td>Acessar → Relatórios</td>
 <td>Lista do dia, por profissional, com horário, paciente e campos de assinatura do responsável e convênio. Serve para a recepção conferir e colher assinaturas.</td>
 </tr>
 <tr>
 <td>Marcação - Presença/Ausência (PDF)</td>
-<td>Ver Agenda → Relatórios</td>
+<td>Acessar → Relatórios</td>
 <td>Lista de presença do dia: sessão, profissional, paciente, mãe e o status marcado. Serve para conferência de quem veio e quem faltou.</td>
 </tr>
 <tr>
 <td>Marcação sessão dia (tela)</td>
-<td>Ver Agenda → Relatórios</td>
+<td>Acessar → Relatórios</td>
 <td>Mostra na tela as sessões marcadas naquele dia: quem marcou, status, data da sessão e totais por status. Serve para auditar as marcações.</td>
 </tr>
 <tr>
 <td>Horários do paciente (PDF)</td>
-<td>Ver Agenda → engrenagem da linha → Horários Pac.</td>
+<td>Acessar → engrenagem da linha → Horários Pac.</td>
 <td>Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável.</td>
 </tr>
 <tr>
 <td>Exportar agenda (CSV)</td>
-<td>Ver Agenda → Exportar</td>
+<td>Acessar → Exportar</td>
 <td>Leva a agenda para planilha, com filtros ou completa, para análises próprias.</td>
 </tr>
 <tr>
@@ -2424,7 +2425,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="relatorios-do-dia-ver-agenda-relatorios">Relatórios do dia (Ver Agenda → Relatórios)<a class="headerlink" href="#relatorios-do-dia-ver-agenda-relatorios" title="Permanent link">&para;</a></h2>
+<h2 id="relatorios-do-dia-agenda-acessar-relatorios">Relatórios do dia (Agenda → Acessar → Relatórios)<a class="headerlink" href="#relatorios-do-dia-agenda-acessar-relatorios" title="Permanent link">&para;</a></h2>
 <p>Escolha a data (dentro do mês da agenda) e o tipo: "Atendimento Diário", "Marcação - Presença/Ausência" ou "Marcação sessão dia". Os dois primeiros baixam um PDF; o terceiro abre na tela (botão Visualizar).</p>
 <h2 id="atendimento-diario">Atendimento Diário<a class="headerlink" href="#atendimento-diario" title="Permanent link">&para;</a></h2>
 <p>Mostra o dia da semana escolhido (ex.: QUARTA-FEIRA 23/09/2026) e, para cada profissional, os pacientes por horário, com colunas para assinatura do responsável e convênio e uma linha final ASSINATURA DO PROFISSIONAL. É a folha de presença impressa da recepção.</p>
@@ -2486,22 +2487,22 @@
 <tr>
 <td>8</td>
 <td>Definir os horários de cada profissional</td>
-<td>Agenda → Prof. horários</td>
+<td>Agenda → Horários</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Vincular os pacientes aos horários</td>
-<td>Agenda → Ver Agenda → (+)</td>
+<td>Agenda → Acessar → (+)</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Marcar presença/ausência a cada sessão</td>
-<td>Ver Agenda → engrenagem → Sessão</td>
+<td>Acessar → engrenagem → Sessão</td>
 </tr>
 <tr>
 <td>11</td>
 <td>Imprimir/conferir</td>
-<td>Ver Agenda → Relatórios; Relatórios → Agenda</td>
+<td>Acessar → Relatórios; Relatórios → Agenda</td>
 </tr>
 </tbody>
 </table>
