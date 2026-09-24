@@ -88,6 +88,7 @@ def limpar_para_usuario_final(md):
     correção interna), já que o site é destinado ao usuário final."""
     saida = []
     pular_nivel = None
+    tabela_tecnica = False
     for l in md.split("\n"):
         m = re.match(r"^(#+)\s+(.*)", l)
         if m:
@@ -103,16 +104,19 @@ def limpar_para_usuario_final(md):
             continue
         if re.match(r"^(Assista ao v[ií]deo narrado|V[ií]deo narrado desta rotina)", l):
             continue  # o site já traz o vídeo incorporado na seção "Vídeo narrado"
-        if l.startswith("|") and l.count("|") >= 4:
-            if set(l.strip()) <= set("|- :"):
-                l = "|---|---|"
-            else:
-                cel = [c.strip() for c in l.strip().strip("|").split("|")]
-                if len(cel) == 3 and cel[1].startswith("Origem no banco"):
-                    l = "| Campo / Label na tela | O que é / de onde vem |"
-                elif len(cel) == 3:
+        if l.startswith("|"):
+            cel = [c.strip() for c in l.strip().strip("|").split("|")]
+            if len(cel) == 3 and cel[1].startswith("Origem no banco"):
+                tabela_tecnica = True
+                l = "| Campo / Label na tela | O que é / de onde vem |"
+            elif tabela_tecnica and len(cel) >= 3:
+                if set(l.strip()) <= set("|- :"):
+                    l = "|---|---|"
+                else:
                     extra = " *(obrigatório)*" if cel[2].lower().startswith("obrigat") else ""
                     l = f"| {cel[0]} | {cel[1]}{extra} |"
+        else:
+            tabela_tecnica = False
         saida.append(l)
     return "\n".join(saida).replace("preservado no banco", "preservado no sistema")
 
