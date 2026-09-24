@@ -1,0 +1,10 @@
+# arquivos binarios: nunca converter fim de linha
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.wav binary
+*.webm binary
+*.ico binary
+*.woff binary
+*.woff2 binary
