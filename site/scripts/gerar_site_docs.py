@@ -206,9 +206,7 @@ def main():
         linhas_md.append("")
 
         if md_path:
-            linhas_md += ["## Conteúdo completo do manual", "",
-                          "*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*",
-                          "", "---", ""]
+            linhas_md += ["## Conteúdo completo do manual", "", "---", ""]
             with open(md_path, encoding="utf-8") as f:
                 conteudo = f.read()
             # remove o H1 duplicado do topo do md original
