@@ -1,0 +1,231 @@
+1
+00:00:00,400 --> 00:00:05,713
+O Dashboard de Agenda reúne os principais números dos atendimentos de um período.
+
+2
+00:00:05,713 --> 00:00:09,451
+Fica em Agenda, Dashboard Agenda, e o filtro é o período,
+
+3
+00:00:09,451 --> 00:00:11,419
+que já vem com o mês corrente.
+
+4
+00:00:11,419 --> 00:00:15,092
+Vamos ver o que cada número significa e, principalmente,
+
+5
+00:00:15,092 --> 00:00:20,273
+como conferir cada um dentro do sistema, usando como exemplo o mês de setembro.
+
+6
+00:00:21,373 --> 00:00:27,045
+Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada,
+
+7
+00:00:27,045 --> 00:00:30,563
+ou seja, sessões marcadas como Presente, Ausente,
+
+8
+00:00:30,563 --> 00:00:33,435
+Ausente com justificativa ou Remarcação.
+
+9
+00:00:33,435 --> 00:00:36,737
+Sessões pendentes e desmarcações não aparecem.
+
+10
+00:00:36,737 --> 00:00:41,619
+A tela agora traz esse aviso, e o card se chama Sessões Registradas.
+
+11
+00:00:41,619 --> 00:00:47,004
+Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15,
+
+12
+00:00:47,004 --> 00:00:50,450
+que são as dez presentes mais as cinco ausentes.
+
+13
+00:00:51,550 --> 00:00:56,439
+Logo abaixo, uma faixa mostra o previsto no mês da agenda: sessões previstas,
+
+14
+00:00:56,439 --> 00:01:00,186
+pendentes e desmarcadas pelo paciente ou pelo profissional.
+
+15
+00:01:00,186 --> 00:01:05,393
+Em setembro, são cento e sessenta e cinco previstas e cento e cinquenta pendentes.
+
+16
+00:01:05,393 --> 00:01:08,568
+Esses números são sempre do mês inteiro da agenda,
+
+17
+00:01:08,568 --> 00:01:13,521
+e a previsão bate com a coluna de sessões do relatório Quantidade de Marcação.
+
+18
+00:01:14,621 --> 00:01:18,330
+Uma novidade: qualquer número do painel pode ser aberto.
+
+19
+00:01:18,330 --> 00:01:22,369
+Clique em um card, em uma linha das tabelas por profissional,
+
+20
+00:01:22,369 --> 00:01:25,813
+especialidade ou operadora, ou no botão Ver sessões.
+
+21
+00:01:25,813 --> 00:01:30,978
+Abre a lista das sessões que formam aquele número, com paciente, profissional,
+
+22
+00:01:30,978 --> 00:01:35,481
+operadora e dias de antecedência, e você pode exportar para o Excel.
+
+23
+00:01:35,481 --> 00:01:38,792
+O total da lista é sempre igual ao número clicado.
+
+24
+00:01:39,892 --> 00:01:42,291
+Os outros cards também abrem listas.
+
+25
+00:01:42,291 --> 00:01:47,688
+Pacientes novos e recorrentes mostram a data da primeira sessão de cada paciente.
+
+26
+00:01:47,688 --> 00:01:51,753
+A taxa de ocupação lista os horários que formam a capacidade,
+
+27
+00:01:51,753 --> 00:01:54,418
+seiscentos e vinte e nove neste exemplo.
+
+28
+00:01:54,418 --> 00:01:58,949
+E cada linha do faturamento por convênio mostra as contas a receber,
+
+29
+00:01:58,949 --> 00:02:01,215
+com o valor faturado e o recebido.
+
+30
+00:02:01,215 --> 00:02:05,013
+O número de linhas da lista deve sempre bater com o card.
+
+31
+00:02:06,113 --> 00:02:10,871
+Para conferir, abra Agenda e clique em Acessar no mês desejado.
+
+32
+00:02:10,871 --> 00:02:15,478
+A grade tem uma linha por agendamento, com até cinco sessões.
+
+33
+00:02:16,578 --> 00:02:21,698
+Clique em Filtros, escolha Presente no campo Sessão 1 e filtre.
+
+34
+00:02:21,698 --> 00:02:25,192
+O rodapé mostra o total de registros: oito.
+
+35
+00:02:25,192 --> 00:02:31,612
+Repita para as Sessões 2 a 5, e some: oito, mais um, mais um, dá dez presentes.
+
+36
+00:02:32,712 --> 00:02:35,878
+Fazendo o mesmo com Ausente, dá cinco ausentes.
+
+37
+00:02:35,878 --> 00:02:41,200
+Então as sessões registradas são quinze, a taxa de presença é dez sobre quinze,
+
+38
+00:02:41,200 --> 00:02:46,387
+sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze,
+
+39
+00:02:46,387 --> 00:02:48,879
+trinta e três vírgula três por cento.
+
+40
+00:02:48,879 --> 00:02:50,294
+Bate com o Dashboard.
+
+41
+00:02:51,394 --> 00:02:56,242
+Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação,
+
+42
+00:02:56,242 --> 00:03:00,958
+que mostra presentes, ausentes e ausência justificada por profissional,
+
+43
+00:03:00,958 --> 00:03:03,813
+com a linha de total somando o mês inteiro.
+
+44
+00:03:03,813 --> 00:03:08,529
+Atenção apenas: a quantidade de sessões é a prevista, não a registrada.
+
+45
+00:03:09,629 --> 00:03:13,850
+A taxa de ocupação divide as sessões registradas pela capacidade,
+
+46
+00:03:13,850 --> 00:03:18,266
+que é a soma dos horários configurados dos profissionais no período.
+
+47
+00:03:18,266 --> 00:03:21,513
+Esses horários aparecem em Agenda, botão Horários,
+
+48
+00:03:21,513 --> 00:03:24,110
+na grade da semana de cada profissional.
+
+49
+00:03:24,110 --> 00:03:27,162
+Como só as sessões registradas entram na conta,
+
+50
+00:03:27,162 --> 00:03:29,760
+a taxa fica baixa em meses em andamento.
+
+51
+00:03:30,860 --> 00:03:38,765
+O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro.
+
+52
+00:03:38,765 --> 00:03:44,353
+Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia.
+
+53
+00:03:44,353 --> 00:03:49,532
+Nesta revisão, corrigimos um erro que repetia o valor faturado a cada baixa.
+
+54
+00:03:50,632 --> 00:03:55,802
+Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período,
+
+55
+00:03:55,802 --> 00:04:00,099
+e filtre pela operadora, que agora tem coluna e filtro próprios.
+
+56
+00:04:00,099 --> 00:04:05,605
+Some as baixas da guia: mil e vinte e três, mais duzentos, mais cento e cinquenta,
+
+57
+00:04:05,605 --> 00:04:08,962
+dá mil trezentos e setenta e três reais recebidos.
+
+58
+00:04:08,962 --> 00:04:13,528
+O relatório Guia Faturamento também pode ser agrupado por operadora.
