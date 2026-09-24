@@ -2135,40 +2135,49 @@
 <tr>
 <th>Card</th>
 <th>O que é / como é calculado</th>
+<th>Como conferir no sistema</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Sessões Registradas (antes "Total de Sessões")</td>
 <td>Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.</td>
+<td>Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).</td>
 </tr>
 <tr>
 <td>Pacientes com Sessão Registrada (antes "Pacientes Atendidos")</td>
 <td>Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou).</td>
+<td>Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente.</td>
 </tr>
 <tr>
 <td>Taxa de Presença</td>
 <td>Presentes ÷ (Presentes + Ausentes) × 100.</td>
+<td>Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima).</td>
 </tr>
 <tr>
 <td>Taxa de Absenteísmo</td>
 <td>Ausentes ÷ (Presentes + Ausentes) × 100.</td>
+<td>Idem — ver seção anterior.</td>
 </tr>
 <tr>
 <td>Pacientes Novos</td>
 <td>Pacientes cuja primeira sessão registrada de toda a história cai dentro do período.</td>
+<td>Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a última página para ver a primeira sessão.</td>
 </tr>
 <tr>
 <td>Pacientes Recorrentes</td>
 <td>Pacientes do período que já tinham sessão registrada antes do início do período.</td>
+<td>Mesma consulta acima (primeira sessão anterior ao início do período).</td>
 </tr>
 <tr>
 <td>Dias de Antecedência (média)</td>
 <td>Média de dias entre a data de inclusão do agendamento e a data da sessão.</td>
+<td>Não há tela que mostre a data de inclusão do agendamento — hoje só é possível conferir por consulta ao banco. Ver "Relatórios previstos".</td>
 </tr>
 <tr>
 <td>Taxa de Ocupação</td>
 <td>Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.</td>
+<td>Agenda → Prof. horários (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.</td>
 </tr>
 </tbody>
 </table>
@@ -2181,20 +2190,24 @@
 <tr>
 <th>Gráfico</th>
 <th>O que mostra</th>
+<th>Como conferir</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Sessões Registradas por Status (pizza)</td>
 <td>Presentes, Ausentes, Ausência Justificada e Remarcações. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam.</td>
+<td>Mesmas contagens da Agenda por status (Filtros → Sessão n).</td>
 </tr>
 <tr>
 <td>Evolução Diária</td>
 <td>Presentes e Ausentes de cada dia do período.</td>
+<td>Agenda → Filtros → campo Data (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios).</td>
 </tr>
 <tr>
 <td>Sessões por Faixa Etária</td>
 <td>Sessões por idade do paciente na data da sessão (0–10, 11–20, 21–30, 31–40, 41+).</td>
+<td>Sem tela de conferência; usa a data de nascimento do cadastro do paciente.</td>
 </tr>
 </tbody>
 </table>
@@ -2204,32 +2217,39 @@
 <tr>
 <th>Tabela</th>
 <th>O que mostra</th>
+<th>Como conferir</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Por Profissional</td>
 <td>Sessões, Presentes e Ausentes de cada profissional.</td>
+<td>Agenda → Filtros → Profissionais (marque um) + Sessão n; ou relatório Agenda - Qtd Marcação (uma linha por profissional).</td>
 </tr>
 <tr>
 <td>Por Especialidade</td>
 <td>Sessões registradas por especialidade.</td>
+<td>Agenda: a coluna Espec. tem filtro no cabeçalho; combine com Sessão n.</td>
 </tr>
 <tr>
 <td>Particular x Convênio</td>
 <td>Sessões particulares × demais (sem marcação de Particular conta como Convênio).</td>
+<td>Agenda → Filtros → Particular (Sim/Não) + Sessão n.</td>
 </tr>
 <tr>
 <td>Por Operadora</td>
 <td>Sessões por convênio/operadora.</td>
+<td>Agenda: coluna Plano (filtro no cabeçalho) + Sessão n.</td>
 </tr>
 <tr>
 <td>Por Método / Por Programa</td>
 <td>Só aparecem se a clínica usa Método/Programa; contam sessões que têm essa informação.</td>
+<td>Agenda → Filtros → Método (e coluna de programa, se habilitada).</td>
 </tr>
 <tr>
 <td>Dias e Horários Mais Concorridos</td>
 <td>Top 10 de dia da semana + horário com mais sessões registradas.</td>
+<td>Agenda: filtros de cabeçalho Dia e Hora (ou Filtros → Dias) + Sessão n. Lembre: o Dashboard conta sessões; a grade conta linhas.</td>
 </tr>
 </tbody>
 </table>
@@ -2259,44 +2279,54 @@
 <tr>
 <th>Informação do Dashboard</th>
 <th>Onde conferir</th>
+<th>Observação</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Sessões Registradas, Presentes, Ausentes, Taxas</td>
 <td>Agenda → Ver Agenda → Filtros (Sessão 1 a 5)</td>
+<td>Somar as 5 colunas; repetir por mês.</td>
 </tr>
 <tr>
 <td>Por profissional / status</td>
 <td>Relatórios → Agenda - Qtd Marcação</td>
+<td>TOTAL do mês inteiro; "Ausência Justificada" em coluna própria.</td>
 </tr>
 <tr>
 <td>Cards/contagens de um mês</td>
 <td>Relatórios → Relatório Agenda (Agenda → botão Relatório)</td>
+<td>Mostra Presentes/Ausentes/desmarcações do mês da agenda.</td>
 </tr>
 <tr>
 <td>Presença de um dia</td>
 <td>Relatórios → Presença Diária (por data de marcação)</td>
+<td>A data é a do registro da marcação, não a da sessão.</td>
 </tr>
 <tr>
 <td>Pacientes Novos/Recorrentes</td>
 <td>Relatórios → Histórico do Paciente → aba Agenda</td>
+<td>Ir à última página para ver a 1ª sessão.</td>
 </tr>
 <tr>
 <td>Taxa de Ocupação (capacidade)</td>
 <td>Agenda → Prof. horários</td>
+<td>Somar horários × dias; descontar feriados.</td>
 </tr>
 <tr>
 <td>Faturamento por Convênio</td>
 <td>Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos</td>
+<td>Sem agrupamento por operadora.</td>
 </tr>
 <tr>
 <td>Dias de Antecedência</td>
 <td>— (sem tela)</td>
+<td>Só por consulta ao banco.</td>
 </tr>
 <tr>
 <td>Faixa etária</td>
 <td>— (sem tela)</td>
+<td>Idade calculada na data da sessão.</td>
 </tr>
 </tbody>
 </table>
@@ -2306,24 +2336,29 @@
 <tr>
 <th>Ponto</th>
 <th>Dashboard</th>
+<th>Telas da Agenda / relatórios</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Período</td>
 <td>Intervalo livre de datas (data da sessão).</td>
+<td>Um mês de Agenda por vez.</td>
 </tr>
 <tr>
 <td>O que conta</td>
 <td>Sessões com data registrada (Presente, Ausente, Justificada, Remarcação).</td>
+<td>Agenda mostra todas as linhas; "Qtd Marcação" conta sessões previstas.</td>
 </tr>
 <tr>
 <td>Ausente</td>
 <td>Só status AUSENTE.</td>
+<td>Qtd Marcação separa AUSENTE e Ausência Justificada.</td>
 </tr>
 <tr>
 <td>Totais</td>
 <td>Do período inteiro.</td>
+<td>Qtd Marcação: TOTAL do período inteiro.</td>
 </tr>
 </tbody>
 </table>
