@@ -1,0 +1,54 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Prontuário — Auditoria e Relatórios
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-prontuario-auditoria-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Prontuário — Auditoria e Relatórios (com legendas)
+
+DESCRIÇÃO:
+Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais.
+
+Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
+
+Neste vídeo:
+• Para que serve cada relatório
+• 1. Auditoria de Prontuários
+• 2. Produção de Prontuários
+• 3. Configurações da clínica que mudam a auditoria
+• 4. Atendimentos Sequenciais
+• Roteiro de conferência mensal
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-prontuario-auditoria-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Prontuário — Auditoria e Relatórios (sem legendas)
+
+DESCRIÇÃO:
+Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais.
+
+Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
+
+Neste vídeo:
+• Para que serve cada relatório
+• 1. Auditoria de Prontuários
+• 2. Produção de Prontuários
+• 3. Configurações da clínica que mudam a auditoria
+• 4. Atendimentos Sequenciais
+• Roteiro de conferência mensal
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

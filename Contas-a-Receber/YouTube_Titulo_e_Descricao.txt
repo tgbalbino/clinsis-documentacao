@@ -1,0 +1,48 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Contas a Receber
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-contas-a-receber-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Contas a Receber (com legendas)
+
+DESCRIÇÃO:
+Cadastrar e receber os valores que os pacientes/convênios devem à clínica.
+
+Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
+
+Neste vídeo:
+• Indicadores e como abrir a lista
+• Cadastrando um recebimento — "Parcela Automática" (exemplo)
+• Recebendo (baixando) uma parcela
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-contas-a-receber-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Contas a Receber (sem legendas)
+
+DESCRIÇÃO:
+Cadastrar e receber os valores que os pacientes/convênios devem à clínica.
+
+Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
+
+Neste vídeo:
+• Indicadores e como abrir a lista
+• Cadastrando um recebimento — "Parcela Automática" (exemplo)
+• Recebendo (baixando) uma parcela
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

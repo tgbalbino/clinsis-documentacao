@@ -1,0 +1,52 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Layout de Contrato
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-layout-contrato-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Layout de Contrato (com legendas)
+
+DESCRIÇÃO:
+O modelo (template) usado para gerar o PDF de todos os contratos da clínica.
+
+Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
+
+Neste vídeo:
+• Onde fica e o que é
+• Editando o layout
+• Modelo padrão pronto
+• Pré-visualizando antes de ativar
+• Ativando um layout
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-layout-contrato-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Layout de Contrato (sem legendas)
+
+DESCRIÇÃO:
+O modelo (template) usado para gerar o PDF de todos os contratos da clínica.
+
+Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
+
+Neste vídeo:
+• Onde fica e o que é
+• Editando o layout
+• Modelo padrão pronto
+• Pré-visualizando antes de ativar
+• Ativando um layout
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -1,0 +1,54 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Módulo de Caixa
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-caixa-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Módulo de Caixa (com legendas)
+
+DESCRIÇÃO:
+Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico.
+
+O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
+
+Neste vídeo:
+• Abrindo o caixa
+• Lançamentos manuais: Suprimento e Sangria
+• Recebimentos e pagamentos aparecem automaticamente
+• Fechando o caixa
+• Solicitação de cancelamento de lançamento
+• Histórico de caixas
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-caixa-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Módulo de Caixa (sem legendas)
+
+DESCRIÇÃO:
+Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico.
+
+O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
+
+Neste vídeo:
+• Abrindo o caixa
+• Lançamentos manuais: Suprimento e Sangria
+• Recebimentos e pagamentos aparecem automaticamente
+• Fechando o caixa
+• Solicitação de cancelamento de lançamento
+• Histórico de caixas
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Pagamento de Profissionais
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-pagamento-profissionais-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Pagamento de Profissionais (com legendas)
+
+DESCRIÇÃO:
+Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês.
+
+Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
+
+Neste vídeo:
+• Configuração prévia: Tabela de Preços para Pagamento
+• "Valor" e "Valor Convênio": qual dos dois é usado no cálculo
+• "Tipo de Marcação": valores diferentes por tipo de atendimento
+• "Tipo de Cobrança" da Especialidade: por sessão ou por paciente
+• Quando criar uma nova Tabela de Preços
+• Relatório de Pagamento de Profissionais (sintético)
+• Relatório de Pagamento de Profissionais (analítico)
+• Gerando a Conta a Pagar
+• Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
+• Quando o mês não está vinculado a nenhuma tabela de preços
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-pagamento-profissionais-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Pagamento de Profissionais (sem legendas)
+
+DESCRIÇÃO:
+Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês.
+
+Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
+
+Neste vídeo:
+• Configuração prévia: Tabela de Preços para Pagamento
+• "Valor" e "Valor Convênio": qual dos dois é usado no cálculo
+• "Tipo de Marcação": valores diferentes por tipo de atendimento
+• "Tipo de Cobrança" da Especialidade: por sessão ou por paciente
+• Quando criar uma nova Tabela de Preços
+• Relatório de Pagamento de Profissionais (sintético)
+• Relatório de Pagamento de Profissionais (analítico)
+• Gerando a Conta a Pagar
+• Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
+• Quando o mês não está vinculado a nenhuma tabela de preços
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

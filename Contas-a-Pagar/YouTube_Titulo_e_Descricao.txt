@@ -1,0 +1,48 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Contas a Pagar
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-contas-a-pagar-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Contas a Pagar (com legendas)
+
+DESCRIÇÃO:
+Cadastrar e pagar as contas da clínica, com indicadores de vencimento.
+
+Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
+
+Neste vídeo:
+• Indicadores do topo
+• Cadastrando uma conta a pagar (exemplo)
+• Pagando (baixando) uma conta
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-contas-a-pagar-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Contas a Pagar (sem legendas)
+
+DESCRIÇÃO:
+Cadastrar e pagar as contas da clínica, com indicadores de vencimento.
+
+Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
+
+Neste vídeo:
+• Indicadores do topo
+• Cadastrando uma conta a pagar (exemplo)
+• Pagando (baixando) uma conta
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Manual Base do ClinSis
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-manual-base-clinsis-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Manual Base do ClinSis (com legendas)
+
+DESCRIÇÃO:
+O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões.
+
+Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda. # 1. O que é o ClinSis O ClinSis é um sistema web de gestão para clínicas de atendimento em saúde (fisioterapia, fonoaudiologia, psicologia, nutrição, terapia ocupacional e outras). Ele reúne, num só lugar, o que a clínica faz todos os dias...
+
+Neste vídeo:
+• Objetivos do sistema
+• Funcionalidades base (menu lateral)
+• Perfis de acesso
+• Clínica
+• Setores
+• Especialidades
+• Profissionais
+• Pacientes
+• Operadoras (convênios)
+• Criando um novo acesso
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-manual-base-clinsis-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Manual Base do ClinSis (sem legendas)
+
+DESCRIÇÃO:
+O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões.
+
+Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda. # 1. O que é o ClinSis O ClinSis é um sistema web de gestão para clínicas de atendimento em saúde (fisioterapia, fonoaudiologia, psicologia, nutrição, terapia ocupacional e outras). Ele reúne, num só lugar, o que a clínica faz todos os dias...
+
+Neste vídeo:
+• Objetivos do sistema
+• Funcionalidades base (menu lateral)
+• Perfis de acesso
+• Clínica
+• Setores
+• Especialidades
+• Profissionais
+• Pacientes
+• Operadoras (convênios)
+• Criando um novo acesso
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

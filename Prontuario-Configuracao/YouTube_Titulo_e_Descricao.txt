@@ -1,0 +1,52 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Prontuário — Configuração
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-prontuario-configuracao-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Prontuário — Configuração (com legendas)
+
+DESCRIÇÃO:
+Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem.
+
+Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
+
+Neste vídeo:
+• Visão geral: o que configurar e quem faz
+• 1. Tipos de prontuário
+• 2. Alíneas
+• 3. Textos padrão
+• Itens ligados a esta configuração
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-prontuario-configuracao-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Prontuário — Configuração (sem legendas)
+
+DESCRIÇÃO:
+Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem.
+
+Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
+
+Neste vídeo:
+• Visão geral: o que configurar e quem faz
+• 1. Tipos de prontuário
+• 2. Alíneas
+• 3. Textos padrão
+• Itens ligados a esta configuração
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

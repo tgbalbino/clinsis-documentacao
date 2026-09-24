@@ -1,0 +1,54 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Cobrança de Paciente
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-cobranca-de-paciente-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Cobrança de Paciente (com legendas)
+
+DESCRIÇÃO:
+Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês.
+
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+
+Neste vídeo:
+• Configuração prévia: Tabela de Preços para Cobrança
+• Relatório de Cobrança de Paciente (sintético)
+• Gerando a Conta a Receber
+• Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
+• Relatório de Cobrança de Paciente (analítico)
+• Proteção contra cobrança em duplicidade
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-cobranca-de-paciente-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Cobrança de Paciente (sem legendas)
+
+DESCRIÇÃO:
+Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês.
+
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+
+Neste vídeo:
+• Configuração prévia: Tabela de Preços para Cobrança
+• Relatório de Cobrança de Paciente (sintético)
+• Gerando a Conta a Receber
+• Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
+• Relatório de Cobrança de Paciente (analítico)
+• Proteção contra cobrança em duplicidade
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

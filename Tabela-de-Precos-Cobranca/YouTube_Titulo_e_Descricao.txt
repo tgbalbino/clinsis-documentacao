@@ -1,0 +1,46 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Tabela de Preços para Cobrança
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-tabela-preco-cobranca-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Tabela de Preços para Cobrança (com legendas)
+
+DESCRIÇÃO:
+Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa.
+
+A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
+
+Neste vídeo:
+• Diferença em relação à Tabela de Pagamento
+• Reajuste de preço em massa
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-tabela-preco-cobranca-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Tabela de Preços para Cobrança (sem legendas)
+
+DESCRIÇÃO:
+Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa.
+
+A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
+
+Neste vídeo:
+• Diferença em relação à Tabela de Pagamento
+• Reajuste de preço em massa
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

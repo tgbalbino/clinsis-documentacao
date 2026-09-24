@@ -1,0 +1,52 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Contrato com Assinatura Digital (D4Sign)
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-contrato-d4sign-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Contrato com Assinatura Digital (D4Sign) (com legendas)
+
+DESCRIÇÃO:
+Envio para assinatura eletrônica, acompanhamento e fechamento automático.
+
+Este manual complementa o de Contrato (sem assinatura digital), cobrindo o que muda quando a clínica usa a integração com a D4Sign para colher a assinatura do paciente eletronicamente, em vez de assinar manualmente no sistema. O ciclo de vida do contrato (Criado → Assinado → Fechado, com geração automática de Conta a Receber) continua o mesmo — o que muda é como a assinatura acontece: em vez de um clique interno, o paciente assina de verdade, remotamente, e o próprio sistema fecha o contrato sozinho assim que a assinatura é confirmada. > ⚠️ Para o contrato poder ser fechado/enviado para...
+
+Neste vídeo:
+• Configuração prévia (feita uma vez pela equipe técnica)
+• Enviando o contrato para assinatura eletrônica
+• Acompanhando a assinatura
+• Fechamento automático após a assinatura
+• Cancelando uma solicitação de assinatura
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-contrato-d4sign-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Contrato com Assinatura Digital (D4Sign) (sem legendas)
+
+DESCRIÇÃO:
+Envio para assinatura eletrônica, acompanhamento e fechamento automático.
+
+Este manual complementa o de Contrato (sem assinatura digital), cobrindo o que muda quando a clínica usa a integração com a D4Sign para colher a assinatura do paciente eletronicamente, em vez de assinar manualmente no sistema. O ciclo de vida do contrato (Criado → Assinado → Fechado, com geração automática de Conta a Receber) continua o mesmo — o que muda é como a assinatura acontece: em vez de um clique interno, o paciente assina de verdade, remotamente, e o próprio sistema fecha o contrato sozinho assim que a assinatura é confirmada. > ⚠️ Para o contrato poder ser fechado/enviado para...
+
+Neste vídeo:
+• Configuração prévia (feita uma vez pela equipe técnica)
+• Enviando o contrato para assinatura eletrônica
+• Acompanhando a assinatura
+• Fechamento automático após a assinatura
+• Cancelando uma solicitação de assinatura
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

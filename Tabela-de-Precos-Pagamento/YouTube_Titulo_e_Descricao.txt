@@ -1,0 +1,48 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Tabela de Preços para Pagamento
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-tabela-preco-pagamento-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Tabela de Preços para Pagamento (com legendas)
+
+DESCRIÇÃO:
+Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa.
+
+A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
+
+Neste vídeo:
+• O conceito de "Tabela" (vigência)
+• Dentro de "Gerenciar": três abas
+• Reajuste de preço em massa
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-tabela-preco-pagamento-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Tabela de Preços para Pagamento (sem legendas)
+
+DESCRIÇÃO:
+Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa.
+
+A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
+
+Neste vídeo:
+• O conceito de "Tabela" (vigência)
+• Dentro de "Gerenciar": três abas
+• Reajuste de preço em massa
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

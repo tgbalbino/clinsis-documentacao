@@ -1,0 +1,48 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Cadastro de Serviços
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-cadastro-servicos-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Serviços (com legendas)
+
+DESCRIÇÃO:
+Para que serve e onde é utilizado (Tabelas Aux. → Serviços).
+
+Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
+
+Neste vídeo:
+• O que é um Serviço
+• Onde é utilizado: exclusivamente no módulo Contrato
+• Outros pontos onde o Serviço aparece
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-cadastro-servicos-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Serviços (sem legendas)
+
+DESCRIÇÃO:
+Para que serve e onde é utilizado (Tabelas Aux. → Serviços).
+
+Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
+
+Neste vídeo:
+• O que é um Serviço
+• Onde é utilizado: exclusivamente no módulo Contrato
+• Outros pontos onde o Serviço aparece
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Dashboard de Agenda
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-dashboard-agenda-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Dashboard de Agenda (com legendas)
+
+DESCRIÇÃO:
+O que significa cada informação e como conferir cada uma no sistema.
+
+O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
+
+Neste vídeo:
+• Onde encontrar e o filtro de período
+• Atenção: o que o Dashboard conta como "sessão"
+• Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo
+• Taxa de Absenteísmo: o que é e como conferir
+• Os 8 cards do topo — o que são e como conferir
+• Gráficos
+• Tabelas do Dashboard
+• Faturamento por Convênio: de onde vem e como conferir
+• Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas
+• Como ver quais sessões compõem cada número (novo)
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-dashboard-agenda-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Dashboard de Agenda (sem legendas)
+
+DESCRIÇÃO:
+O que significa cada informação e como conferir cada uma no sistema.
+
+O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
+
+Neste vídeo:
+• Onde encontrar e o filtro de período
+• Atenção: o que o Dashboard conta como "sessão"
+• Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo
+• Taxa de Absenteísmo: o que é e como conferir
+• Os 8 cards do topo — o que são e como conferir
+• Gráficos
+• Tabelas do Dashboard
+• Faturamento por Convênio: de onde vem e como conferir
+• Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas
+• Como ver quais sessões compõem cada número (novo)
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

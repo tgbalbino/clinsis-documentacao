@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Contrato (sem assinatura digital)
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-contrato-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Contrato (sem assinatura digital) (com legendas)
+
+DESCRIÇÃO:
+Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, renovação e aviso de vencimento.
+
+Contrato formaliza um pacote de sessões vendido ao paciente (ex.: "10 sessões de Fisioterapia"), com um valor total e uma ou mais condições de pagamento (à vista, parcelado no cartão, etc.). Diferente de um agendamento avulso, o Contrato tem um ciclo de vida com fases — criado, assinado, fechado — e, uma vez fechado, gera automaticamente as parcelas em Contas a Receber. Este manual cobre a versão sem assinatura digital (assinatura "no papel", marcada manualmente no sistema); a versão com assinatura eletrônica pela D4Sign é documentada à parte. > ⚠️ Para o contrato poder ser fechado/impresso...
+
+Neste vídeo:
+• As fases do Contrato
+• Criando um contrato
+• Adicionando Serviços
+• Condição de Pagamento (Acertos/Pagamentos)
+• Assinatura (sem D4Sign)
+• Fechando o Contrato (gera a Conta a Receber)
+• Aviso de vencimento (contratos "vencendo")
+• Configurando quantos dias de antecedência do aviso
+• Renovando um contrato
+• Quando o paciente não vai renovar
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-contrato-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Contrato (sem assinatura digital) (sem legendas)
+
+DESCRIÇÃO:
+Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, renovação e aviso de vencimento.
+
+Contrato formaliza um pacote de sessões vendido ao paciente (ex.: "10 sessões de Fisioterapia"), com um valor total e uma ou mais condições de pagamento (à vista, parcelado no cartão, etc.). Diferente de um agendamento avulso, o Contrato tem um ciclo de vida com fases — criado, assinado, fechado — e, uma vez fechado, gera automaticamente as parcelas em Contas a Receber. Este manual cobre a versão sem assinatura digital (assinatura "no papel", marcada manualmente no sistema); a versão com assinatura eletrônica pela D4Sign é documentada à parte. > ⚠️ Para o contrato poder ser fechado/impresso...
+
+Neste vídeo:
+• As fases do Contrato
+• Criando um contrato
+• Adicionando Serviços
+• Condição de Pagamento (Acertos/Pagamentos)
+• Assinatura (sem D4Sign)
+• Fechando o Contrato (gera a Conta a Receber)
+• Aviso de vencimento (contratos "vencendo")
+• Configurando quantos dias de antecedência do aviso
+• Renovando um contrato
+• Quando o paciente não vai renovar
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

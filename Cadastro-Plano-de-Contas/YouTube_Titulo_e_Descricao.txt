@@ -1,0 +1,50 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Cadastro de Plano de Contas
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-cadastro-plano-de-contas-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Plano de Contas (com legendas)
+
+DESCRIÇÃO:
+Como organizar as categorias de receitas e despesas da clínica.
+
+O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
+
+Neste vídeo:
+• Duas formas de visualizar: Árvore ou Lista
+• Cadastrando uma nova conta (exemplo)
+• Filtrando contas cadastradas
+• Atalho: Importar Plano de Contas Padrão
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-cadastro-plano-de-contas-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Plano de Contas (sem legendas)
+
+DESCRIÇÃO:
+Como organizar as categorias de receitas e despesas da clínica.
+
+O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
+
+Neste vídeo:
+• Duas formas de visualizar: Árvore ou Lista
+• Cadastrando uma nova conta (exemplo)
+• Filtrando contas cadastradas
+• Atalho: Importar Plano de Contas Padrão
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

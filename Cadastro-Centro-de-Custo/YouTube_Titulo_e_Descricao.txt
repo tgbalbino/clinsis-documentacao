@@ -1,0 +1,50 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Cadastro de Centro de Custo
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-cadastro-centro-de-custo-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Centro de Custo (com legendas)
+
+DESCRIÇÃO:
+Como organizar a clínica em setores para saber onde o dinheiro entra e sai.
+
+O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
+
+Neste vídeo:
+• Diferença entre Plano de Conta e Centro de Custo
+• Cadastrando um novo Centro de Custo (exemplo)
+• Filtrando centros de custo cadastrados
+• Atalho: Importar Centros de Custo Padrão
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-cadastro-centro-de-custo-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Cadastro de Centro de Custo (sem legendas)
+
+DESCRIÇÃO:
+Como organizar a clínica em setores para saber onde o dinheiro entra e sai.
+
+O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
+
+Neste vídeo:
+• Diferença entre Plano de Conta e Centro de Custo
+• Cadastrando um novo Centro de Custo (exemplo)
+• Filtrando centros de custo cadastrados
+• Atalho: Importar Centros de Custo Padrão
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
