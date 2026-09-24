@@ -48,8 +48,8 @@ O mesmo card "Manutenção rápida de preços" usado na Tabela de Pagamento apar
 |---|---|
 | 1. Percentual de reajuste | Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%. |
 | 2. Campos a reajustar | Marque "Valor cobrado", "Valor social", ou os dois. |
-| 3. Calcular prévia | Mostra o valor atual e o valor novo de cada especialidade — sem gravar nada ainda. | ReajustePreco/cobranca(/profissional\|/operadora)/simular |
-| 4. Confirmar reajuste | Só depois de conferir a prévia, grava de fato, com uma confirmação extra. | ReajustePreco/cobranca(/profissional\|/operadora)/confirmar |
+| 3. Calcular prévia | Mostra o valor atual e o valor novo de cada especialidade — sem gravar nada ainda. |
+| 4. Confirmar reajuste | Só depois de conferir a prévia, grava de fato, com uma confirmação extra. |
 
 
 

@@ -27,11 +27,11 @@ Este manual é para o administrador. Ele explica como conferir, mês a mês, se 
 
 ## Para que serve cada relatório
 
-| Relatório | Pergunta que responde |
-|---|---|
-| Auditoria de Prontuários | Cada profissional fez prontuário dos atendimentos que realizou no mês? |
-| Produção de Prontuários | Quantos prontuários foram finalizados, estão em digitação ou foram excluídos por profissional e tipo, em um período? |
-| Atendimentos Sequenciais | Quais atendimentos em horários seguidos o sistema junta como um só na auditoria? |
+| Relatório | Pergunta que responde | Onde |
+|---|---|---|
+| Auditoria de Prontuários | Cada profissional fez prontuário dos atendimentos que realizou no mês? | Relatórios (painel) → Auditoria |
+| Produção de Prontuários | Quantos prontuários foram finalizados, estão em digitação ou foram excluídos por profissional e tipo, em um período? | Relatórios (painel) → Produção de Prontuários |
+| Atendimentos Sequenciais | Quais atendimentos em horários seguidos o sistema junta como um só na auditoria? | Relatórios (painel) → Atendimentos Sequenciais |
 
 ## 1. Auditoria de Prontuários
 

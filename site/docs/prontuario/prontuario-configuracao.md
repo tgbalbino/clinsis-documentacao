@@ -27,11 +27,11 @@ Antes de um profissional preencher um prontuário, a clínica precisa definir qu
 
 ## Visão geral: o que configurar e quem faz
 
-| Configuração | Quem faz |
-|---|---|
-| Tipo de prontuário | Administrador |
-| Alíneas do tipo (os campos) | Administrador |
-| Texto padrão | Cada profissional (são pessoais) |
+| Configuração | Quem faz | Onde |
+|---|---|---|
+| Tipo de prontuário | Administrador | Menu Prontuário → Tipos |
+| Alíneas do tipo (os campos) | Administrador | Menu Prontuário → Alíneas |
+| Texto padrão | Cada profissional (são pessoais) | Menu Prontuário → Textos padrão (área do profissional) |
 
 A ordem natural é: 1) criar o Tipo, 2) cadastrar as Alíneas dele, 3) cada profissional cria seus Textos padrão. Só depois o profissional consegue criar e preencher prontuários daquele tipo. As telas só aparecem se o módulo Prontuário estiver ligado para a clínica.
 
@@ -93,10 +93,10 @@ Um Texto padrão é um trecho pronto que o profissional insere numa alínea de t
 
 ## Itens ligados a esta configuração
 
-| Item | O que é |
-|---|---|
-| Relatório Compartilhado(Prontuários) | Define se um profissional vê o prontuário finalizado de outro. |
-| De-Para de prontuário | Forma antiga de autorizar um profissional a ver prontuários de outro. Está oculta do menu e sendo substituída pelo Relatório Compartilhado. |
-| Tags do prontuário | Rótulos por método de atendimento; ligadas por configuração da clínica (PRONTUARIO_TAGS). |
+| Item | O que é | Onde está |
+|---|---|---|
+| Relatório Compartilhado(Prontuários) | Define se um profissional vê o prontuário finalizado de outro. | Cadastro de Especialidades (manual próprio) |
+| De-Para de prontuário | Forma antiga de autorizar um profissional a ver prontuários de outro. Está oculta do menu e sendo substituída pelo Relatório Compartilhado. | Rota /prontuario/depara (não aparece no menu) |
+| Tags do prontuário | Rótulos por método de atendimento; ligadas por configuração da clínica (PRONTUARIO_TAGS). | Manuais "Uso do Prontuário" e "Auditoria de Prontuário" |
 
 > ⚠️ Resumo dos cuidados: (1) crie primeiro o tipo e as alíneas; (2) evite excluir ou reordenar alíneas de um tipo já em uso, pois isso muda o formulário dos prontuários em andamento; (3) tipo com prontuários não pode ser excluído; (4) textos padrão são pessoais de cada profissional.

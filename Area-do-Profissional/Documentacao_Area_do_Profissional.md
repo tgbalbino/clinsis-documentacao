@@ -2,7 +2,7 @@
 
 _O que o profissional de saúde vê e pode fazer no ClinSis_
 
-Versão 1.0 — 24/09/2026
+Versão 1.1 — 24/09/2026
 
 Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
 
@@ -42,7 +42,7 @@ _Home do profissional: cartões de atalho (Agenda, Prontuário, Protocolo, Atend
 
 ## Resumo do dia e pendências
 
-Se a clínica ativou essa configuração, aparece uma faixa com os números de hoje: Total de Pacientes, Total de Presentes, Relatórios Finalizados, Relatórios Abertos, Evoluções Finalizadas e Evoluções Abertas. Em Pendências gerais você vê as Evoluções Abertas e os Relatórios Abertos no geral. Pendência é algo que você começou e ainda não finalizou.
+Logo abaixo aparece uma faixa com os números de hoje (disponível para todas as clínicas, sem configuração): Total de Pacientes, Total de Presentes, Relatórios Finalizados, Relatórios Abertos, Evoluções Finalizadas e Evoluções Abertas. Em Pendências gerais você vê as Evoluções Abertas e os Relatórios Abertos no geral. Pendência é algo que você começou e ainda não finalizou.
 
 # 2. Agenda
 
@@ -52,7 +52,7 @@ Menu Agenda: lista de Ano/Mês. Em cada linha, o botão Acessar abre a Agenda re
 
 _Menu Agenda do profissional: só o botão Acessar por mês._
 
-> ⚠️ O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Prof. horários, Ver Agenda e Divergência Sessões. Esses são do administrador e do atendente.
+> ⚠️ O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Horários, Acessar (grade de agendamento) e Divergência Sessões. Esses são do administrador e do atendente.
 
 ## Agenda resumida
 

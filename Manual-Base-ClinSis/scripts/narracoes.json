@@ -57,12 +57,12 @@
   {
     "audio": "12.wav",
     "imagem": "b05-prof-horarios-selecionado.png",
-    "texto": "Depois, em Prof. horários, escolha o profissional, o dia da semana ou a data, marque os horários e clique em Incluir. Também é possível transferir ou clonar horários para outro profissional."
+    "texto": "Depois, em Horários, escolha o profissional, marque um ou mais dias da semana, marque os horários, que ficam separados por período, e clique em Incluir. Em Mais ações também é possível transferir ou clonar horários para outro profissional."
   },
   {
     "audio": "13.wav",
     "imagem": "d01-agendamento.png",
-    "texto": "Em Ver Agenda, cada linha é um horário de um profissional. Linhas com o botão verde estão vagas. Para agendar, clique no botão verde."
+    "texto": "Em Acessar, cada linha é um horário de um profissional. Linhas com o botão verde estão vagas. Para agendar, clique no botão verde."
   },
   {
     "audio": "14.wav",

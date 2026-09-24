@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Gera os áudios de narração (Google Cloud TTS) para uma rotina.
-Uso: python gerar_narracao_google.py <pasta_da_rotina>
+Uso: python gerar_narracao_google.py <pasta_da_rotina> [12.wav,13.wav]
+(a lista opcional gera só esses trechos e mantém os outros áudios)
 A pasta deve conter narracoes.json e vai receber output/audio/*.wav
 """
 import base64
@@ -22,8 +23,12 @@ AUDIO_CONFIG = {"audioEncoding": "LINEAR16", "sampleRateHertz": 24000, "speaking
 with open(os.path.join(ROTINA_DIR, "narracoes.json"), "r", encoding="utf-8") as f:
     itens = json.load(f)
 
+SOMENTE = set(sys.argv[2].split(",")) if len(sys.argv) > 2 else None
+
 total_chars = 0
 for item in itens:
+    if SOMENTE and item["audio"] not in SOMENTE:
+        continue
     body = json.dumps({
         "input": {"text": item["texto"]},
         "voice": VOICE,

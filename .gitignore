@@ -3,3 +3,7 @@ site/.cache/
 
 # cópias duplicadas de ativos de marca usadas só para gerar intro/outro (originais em Marca-ClinSis)
 **/pipeline-video/marca/
+
+# intermediarios da geracao (PDF/MD/video finais sao copiados para a pasta da rotina)
+**/scripts/entrega/
+**/output/clips/

@@ -2,11 +2,12 @@
 
 _O que significa cada informação e como conferir cada uma no sistema_
 
-Versão 2.1 — 23/09/2026
+Versão 2.2 — 24/09/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/QAra0-JTD5w](https://youtu.be/QAra0-JTD5w)
+
 ---
 
 ## Onde encontrar e o filtro de período
@@ -29,15 +30,15 @@ Estes números do Dashboard de Setembro: Sessões Registradas = 15, Taxa de Pres
 
 | Passo | O que fazer |
 |---|---|
-| 1 | Menu Agenda → na linha do mês (2026 / SETEMBRO) clique em Ver Agenda. |
+| 1 | Menu Agenda → na linha do mês (2026 / SETEMBRO) clique em Acessar. |
 | 2 | Clique em Filtros. No campo Sessão 1, escolha PRESENTE e clique em Filtrar. Veja no rodapé: "Total de registros: 8". |
 | 3 | Repita trocando para Sessão 2 (resultado: 1), Sessão 3 (1), Sessão 4 (0) e Sessão 5 (0). Some: 8 + 1 + 1 = 10 presentes. |
 | 4 | Repita tudo com AUSENTE: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = 5 ausentes. |
 | 5 | Sessões Registradas = 10 + 5 = 15. Taxa de Presença = 10 ÷ 15 = 66,7%. Taxa de Absenteísmo = 5 ÷ 15 = 33,3%. Bate com o Dashboard. |
 
-![Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).](22-agendamento-grade-mes.png)
+![Tela Agenda de Setembro/2026 (botão Acessar): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).](22-agendamento-grade-mes.png)
 
-_Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões)._
+_Tela Agenda de Setembro/2026 (botão Acessar): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões)._
 
 ![Filtros → Sessão 1 = PRESENTE.](23a-modal-filtro-sessao1-presente.png)
 
@@ -65,18 +66,18 @@ _Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Ag
 
 | Card | O que é / como é calculado | Como conferir no sistema |
 |---|---|---|
-| Sessões Registradas (antes "Total de Sessões") | Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação. | Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima). |
+| Sessões Registradas (antes "Total de Sessões") | Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação. | Agenda → Acessar → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima). |
 | Pacientes com Sessão Registrada (antes "Pacientes Atendidos") | Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou). | Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente. |
 | Taxa de Presença | Presentes ÷ (Presentes + Ausentes) × 100. | Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima). |
 | Taxa de Absenteísmo | Ausentes ÷ (Presentes + Ausentes) × 100. | Idem — ver seção anterior. |
 | Pacientes Novos | Pacientes cuja primeira sessão registrada de toda a história cai dentro do período. | Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a última página para ver a primeira sessão. |
 | Pacientes Recorrentes | Pacientes do período que já tinham sessão registrada antes do início do período. | Mesma consulta acima (primeira sessão anterior ao início do período). |
 | Dias de Antecedência (média) | Média de dias entre a data de inclusão do agendamento e a data da sessão. | Não há tela que mostre a data de inclusão do agendamento — hoje só é possível conferir por consulta ao banco. Ver "Relatórios previstos". |
-| Taxa de Ocupação | Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados. | Agenda → Prof. horários (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total. |
+| Taxa de Ocupação | Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados. | Agenda → Horários (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total. |
 
-![Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabela é um horário disponível; a capacidade do card soma esses horários pelos dias do período.](42-prof-horarios.png)
+![Agenda → Horários (Profissional 01, Setembro/2026): em Horários cadastrados, cada dia da semana mostra os horários do profissional; a capacidade do card soma esses horários pelos dias do período.](42-prof-horarios.png)
 
-_Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabela é um horário disponível; a capacidade do card soma esses horários pelos dias do período._
+_Agenda → Horários (Profissional 01, Setembro/2026): em Horários cadastrados, cada dia da semana mostra os horários do profissional; a capacidade do card soma esses horários pelos dias do período._
 
 > ⚠️ Taxa de Ocupação: como só as sessões registradas entram no numerador, a taxa fica baixa em meses em andamento (2,4% em Setembro, com muitas sessões ainda pendentes). Férias ou bloqueios de um profissional específico não são descontados da capacidade — só feriados cadastrados em Tabelas Aux. → Feriados (isso já aparece no tooltip do card).
 
@@ -169,12 +170,12 @@ Use o botão Exportar CSV para levar a lista ao Excel. Colunas: Data, Sessão, P
 
 | Informação do Dashboard | Onde conferir | Observação |
 |---|---|---|
-| Sessões Registradas, Presentes, Ausentes, Taxas | Agenda → Ver Agenda → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
+| Sessões Registradas, Presentes, Ausentes, Taxas | Agenda → Acessar → Filtros (Sessão 1 a 5) | Somar as 5 colunas; repetir por mês. |
 | Por profissional / status | Relatórios → Agenda - Qtd Marcação | TOTAL do mês inteiro; "Ausência Justificada" em coluna própria. |
 | Cards/contagens de um mês | Relatórios → Relatório Agenda (Agenda → botão Relatório) | Mostra Presentes/Ausentes/desmarcações do mês da agenda. |
 | Presença de um dia | Relatórios → Presença Diária (por data de marcação) | A data é a do registro da marcação, não a da sessão. |
 | Pacientes Novos/Recorrentes | Relatórios → Histórico do Paciente → aba Agenda | Ir à última página para ver a 1ª sessão. |
-| Taxa de Ocupação (capacidade) | Agenda → Prof. horários | Somar horários × dias; descontar feriados. |
+| Taxa de Ocupação (capacidade) | Agenda → Horários | Somar horários × dias; descontar feriados. |
 | Faturamento por Convênio | Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos | Sem agrupamento por operadora. |
 | Dias de Antecedência | — (sem tela) | Só por consulta ao banco. |
 | Faixa etária | — (sem tela) | Idade calculada na data da sessão. |

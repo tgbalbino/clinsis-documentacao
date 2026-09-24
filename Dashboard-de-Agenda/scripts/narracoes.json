@@ -27,7 +27,7 @@
   {
     "audio": "06.wav",
     "imagem": "22-agendamento-grade-mes.png",
-    "texto": "Para conferir, abra Agenda e clique em Ver Agenda no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
+    "texto": "Para conferir, abra Agenda e clique em Acessar no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
   },
   {
     "audio": "07.wav",
@@ -47,7 +47,7 @@
   {
     "audio": "10.wav",
     "imagem": "42-prof-horarios.png",
-    "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Profissional horários. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
+    "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, botão Horários, na grade da semana de cada profissional. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
   },
   {
     "audio": "11.wav",

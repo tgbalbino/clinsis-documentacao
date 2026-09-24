@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "23/09/2026"
+VERSAO = "1.1"
+DATA = "24/09/2026"
 TITULO = "Manual Base do ClinSis"
 SUBTITULO = "O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões"
 VIDEO_NOME = "https://youtu.be/r7iJc03azkw"
@@ -134,7 +134,7 @@ blocos = [
     ('p', 'O cadastro do profissional reúne CPF, nome, data de nascimento, <b>Locação</b>, <b>Nome Agenda</b> '
           '(o nome curto que aparece na grade da agenda), registro profissional (conselho), endereço, '
           'contatos e se é estagiário. Os campos marcados com <font color="red">*</font> são obrigatórios. '
-          'O profissional pode ser ativado ou inativado (menu Profissional → Inativação).'),
+          'O profissional pode ser ativado ou inativado, um a um no cadastro ou em massa pelo menu Profissional → Inativação.'),
     ('img', 'c05-profissional-cadastro.png', 'Cadastros → Profissional → Cadastro: dados pessoais, endereço e contato.'),
 
     ('h2', 'Pacientes'),
@@ -191,9 +191,9 @@ blocos = [
     ('img', 'b00-agenda-lista.png', 'Menu Agenda: lista de agendas por Ano/Mês, com os botões de cada uma.'),
     ('tabelagen', ['Botão', 'Função'], [
         ['Relatório', 'Resumo do mês: quantidade de agendamentos, pacientes, sessões, presentes, ausentes e desmarcações.'],
-        ['Prof. horários', 'Define os horários de cada profissional naquele mês.'],
-        ['Ver Agenda', 'Abre a grade de agendamento (onde os pacientes são vinculados e as sessões marcadas).'],
-        ['Divergência Sessões', 'Lista os agendamentos cuja quantidade de <b>Sessões</b> difere das <b>Sessões Esperadas</b> do mês (quantas vezes o dia da semana acontece) e permite <b>Ajustar</b>, um a um ou em lote.'],
+        ['Horários', 'Define os horários de cada profissional naquele mês (antes o botão se chamava "Prof. horários").'],
+        ['Acessar', 'Abre a grade de agendamento, onde os pacientes são vinculados e as sessões marcadas (antes "Ver Agenda").'],
+        ['Divergência Sessões', 'Lista os agendamentos cuja quantidade de <b>Sessões</b> difere das <b>Sessões Esperadas</b> do mês (quantas vezes o dia da semana acontece) e permite <b>Ajustar</b>, um a um ou em lote. O botão <b>Ajustar Seleção</b> fica numa barra no topo da lista, junto com o total de divergências e de selecionadas, e acompanha a rolagem.'],
         ['Lixeira (vermelho)', 'Remove a agenda do mês.'],
         ['Remoção Rápida de Pacientes (link no topo)', 'Atalho para remover pacientes da agenda em lote.'],
     ], [5, 12.5]),
@@ -220,7 +220,7 @@ blocos = [
     ('p', 'Há dois níveis de horários, e é importante não confundir:'),
     ('tabelagen', ['Nível', 'Onde', 'O que define'], [
         ['Horários da clínica', 'Tabelas Aux. → Horários', 'A lista geral de horários que a clínica trabalha (ex.: 07:00, 07:30, 08:00…). É o "cardápio" de horários.'],
-        ['Horários do profissional', 'Agenda → Prof. horários', 'Quais desses horários cada profissional atende, em cada dia da semana (ou em datas específicas), naquele mês.'],
+        ['Horários do profissional', 'Agenda → Horários', 'Quais desses horários cada profissional atende, em cada dia da semana (ou em datas específicas), naquele mês.'],
     ], [3.8, 4.6, 9.1]),
 
     ('h2', 'Horários da clínica (Tabelas Aux. → Horários)'),
@@ -234,29 +234,39 @@ blocos = [
     ], [5, 12.5]),
     ('img', 'b03-gerar-horarios.png', 'Gerar Horários: exemplo de 08:00 às 18:00 de 30 em 30 minutos.'),
 
-    ('h2', 'Horários do profissional (Agenda → Prof. horários)'),
-    ('p', 'Depois de criada a agenda do mês, clique em <b>Prof. horários</b> nela. A tela "Profissional Agenda" '
-          'permite montar a grade de cada profissional.'),
-    ('p', '1. Escolha o profissional (pela lista ou em "buscar profissional"). '
-          '2. Se a clínica trabalha com os dois formatos, escolha o <b>Formato</b>: <b>SEMANAL</b> (um dia da semana, que se repete o mês inteiro) '
-          'ou <b>DATA</b> (um dia específico). '
-          '3. Marque o <b>Dia</b> (ou a <b>Data</b>). '
-          '4. Marque os <b>Horários</b> desejados (ou "Marcar todos"). '
-          '5. Clique em <b>Incluir</b>. Repita para os outros dias.'),
-    ('img', 'b05-prof-horarios-selecionado.png', 'Prof. horários: escolha do profissional, formato, dia, marcação dos horários e a tabela dos horários já incluídos.'),
+    ('h2', 'Horários do profissional (Agenda → Horários)'),
+    ('p', 'Depois de criada a agenda do mês, clique em <b>Horários</b> nela. A tela "Profissional Agenda" '
+          'monta a grade de cada profissional. No primeiro acesso, uma apresentação rápida mostra o que '
+          'mudou no layout e onde voltar ao layout anterior.'),
+    ('img', 'b04-prof-horarios-apresentacao.png', 'Primeiro acesso: apresentação do novo layout da tela de horários.'),
+    ('p', '1. Escolha o <b>Profissional</b> na lista (ou use <b>Buscar</b> para procurar por nome, CPF ou código). '
+          'Ao lado aparecem quantos horários ele já tem, em quantos dias da semana e em quantas datas específicas. '
+          '2. Escolha <b>Semanal</b> (dia da semana que se repete o mês inteiro) ou <b>Data específica</b> '
+          '(um dia do mês). Se a clínica trabalha com um só formato, essa escolha não aparece. '
+          '3. No Semanal, marque um ou <b>vários dias da semana</b>: os mesmos horários serão incluídos em todos. '
+          'O número embaixo de cada dia é quantos horários ele já tem. '
+          '4. Marque os horários, que ficam separados em <b>Madrugada, Manhã, Tarde e Noite</b>, cada período com '
+          '"marcar período" e "limpar". Horários que o dia já tem aparecem tracejados e não são incluídos de novo. '
+          '5. Clique no botão de incluir, que diz quantos horários e em quais dias serão incluídos '
+          '(ex.: "Incluir 25 horários em Seg, Qua").'),
+    ('img', 'b05-prof-horarios-selecionado.png', 'Horários: Seg e Qua marcados, período da Manhã selecionado e, à direita, a grade da semana com os horários já cadastrados.'),
+    ('p', 'À direita, <b>Horários cadastrados</b> mostra a grade da semana (uma coluna por dia) e, na outra aba, '
+          'as datas específicas. Para remover, clique nos horários (ficam riscados em vermelho) ou use '
+          '"marcar dia"; uma barra mostra quantos estão marcados e o botão <b>Remover</b>, que pede confirmação.'),
     ('tabelagen', ['Recurso', 'Para que serve'], [
-        ['Manter Marcação', 'Ao incluir, mantém os horários marcados na tela, para repetir a mesma seleção em outro dia sem remarcar tudo.'],
-        ['Transferir horários/agenda para outro profissional', 'Passa a agenda deste profissional (horários e pacientes) para outro. Útil quando um profissional sai.'],
-        ['Clonar horários para outro profissional', 'Copia os horários deste profissional para outro, sem tirar do original.'],
-        ['Remover Todos os Horários deste profissional', 'Limpa toda a grade do profissional no mês.'],
-        ['Remover (caixas + lixeira)', 'Marque as linhas da tabela e use a lixeira para remover horários específicos.'],
+        ['Manter marcação após incluir', 'Mantém os horários marcados depois de incluir, para repetir a mesma seleção em outro dia sem remarcar tudo.'],
+        ['Mais ações → Transferir horários para outro profissional', 'Passa a agenda deste profissional (horários e pacientes) para outro. Útil quando um profissional sai.'],
+        ['Mais ações → Clonar horários para outro profissional', 'Copia os horários deste profissional para outro, sem tirar do original.'],
+        ['Mais ações → Remover todos os horários deste profissional', 'Marca todos os horários do profissional no mês para remoção e pede confirmação.'],
+        ['Novo layout / Layout anterior (topo da tela)', 'Troca entre o layout novo e o anterior. A tela abre sempre no último layout escolhido pelo usuário, e o rodapé lembra onde fica essa troca.'],
     ], [6.4, 11.1]),
+    ('img', 'b06-prof-horarios-mais-acoes.png', 'Menu Mais ações: transferir, clonar ou remover todos os horários do profissional.'),
     ('aviso', 'Sem horários de profissional definidos, a grade de agendamento fica vazia: não há onde vincular pacientes.'),
 
     # ------------------------------------------------------------------ 7
     ('h1', '7. Agendamento de pacientes'),
     ('p', 'Com a agenda criada e os horários dos profissionais definidos, o agendamento é feito em '
-          '<b>Agenda → Ver Agenda</b> (ou pelo botão Agendamento dentro de Prof. horários). A tela é uma '
+          '<b>Agenda → Acessar</b> (ou pelo botão Agendamento dentro de Horários). A tela é uma '
           'grade: <b>cada linha é um horário de um profissional</b> em um dia da semana ou data.'),
     ('img', 'd01-agendamento.png', 'Grade de agendamento: horários dos profissionais, pacientes vinculados, plano, sessões e status de cada sessão.'),
     ('p', 'As linhas em <b>branco</b> com o botão verde (+) são <b>horários vagos</b>. As linhas com o botão '
@@ -314,16 +324,16 @@ blocos = [
     ('p', 'O ClinSis oferece impressões/relatórios da agenda para situações diferentes do dia a dia. '
           'A tabela resume qual usar em cada caso:'),
     ('tabelagen', ['Impressão', 'Onde encontrar', 'Objetivo'], [
-        ['Atendimento Diário (PDF)', 'Ver Agenda → Relatórios', 'Lista do dia, por profissional, com horário, paciente e campos de assinatura do responsável e convênio. Serve para a recepção conferir e colher assinaturas.'],
-        ['Marcação - Presença/Ausência (PDF)', 'Ver Agenda → Relatórios', 'Lista de presença do dia: sessão, profissional, paciente, mãe e o status marcado. Serve para conferência de quem veio e quem faltou.'],
-        ['Marcação sessão dia (tela)', 'Ver Agenda → Relatórios', 'Mostra na tela as sessões marcadas naquele dia: quem marcou, status, data da sessão e totais por status. Serve para auditar as marcações.'],
-        ['Horários do paciente (PDF)', 'Ver Agenda → engrenagem da linha → Horários Pac.', 'Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável.'],
-        ['Exportar agenda (CSV)', 'Ver Agenda → Exportar', 'Leva a agenda para planilha, com filtros ou completa, para análises próprias.'],
+        ['Atendimento Diário (PDF)', 'Acessar → Relatórios', 'Lista do dia, por profissional, com horário, paciente e campos de assinatura do responsável e convênio. Serve para a recepção conferir e colher assinaturas.'],
+        ['Marcação - Presença/Ausência (PDF)', 'Acessar → Relatórios', 'Lista de presença do dia: sessão, profissional, paciente, mãe e o status marcado. Serve para conferência de quem veio e quem faltou.'],
+        ['Marcação sessão dia (tela)', 'Acessar → Relatórios', 'Mostra na tela as sessões marcadas naquele dia: quem marcou, status, data da sessão e totais por status. Serve para auditar as marcações.'],
+        ['Horários do paciente (PDF)', 'Acessar → engrenagem da linha → Horários Pac.', 'Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável.'],
+        ['Exportar agenda (CSV)', 'Acessar → Exportar', 'Leva a agenda para planilha, com filtros ou completa, para análises próprias.'],
         ['Relatório da Agenda (tela)', 'Agenda → Relatório (na linha do mês)', 'Resumo do mês: agendamentos, pacientes, sessões, presentes, ausentes e desmarcações, por profissional ou todos.'],
         ['Relatórios de Agenda (menu Relatórios)', 'Relatórios → Agenda', 'Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária e Atendimentos Sequenciais, com filtros próprios.'],
     ], [4.4, 4.6, 8.5]),
 
-    ('h2', 'Relatórios do dia (Ver Agenda → Relatórios)'),
+    ('h2', 'Relatórios do dia (Agenda → Acessar → Relatórios)'),
     ('p', 'Escolha a <b>data</b> (dentro do mês da agenda) e o <b>tipo</b>: "Atendimento Diário", '
           '"Marcação - Presença/Ausência" ou "Marcação sessão dia". Os dois primeiros baixam um PDF; o '
           'terceiro abre na tela (botão <b>Visualizar</b>).'),
@@ -367,10 +377,10 @@ blocos = [
         ['5', 'Cadastrar os horários da clínica', 'Tabelas Aux. → Horários (Gerar Horários)'],
         ['6', 'Criar os acessos da equipe', 'Cadastros → Acessos'],
         ['7', 'Criar a agenda do mês', 'Agenda → Novo'],
-        ['8', 'Definir os horários de cada profissional', 'Agenda → Prof. horários'],
-        ['9', 'Vincular os pacientes aos horários', 'Agenda → Ver Agenda → (+)'],
-        ['10', 'Marcar presença/ausência a cada sessão', 'Ver Agenda → engrenagem → Sessão'],
-        ['11', 'Imprimir/conferir', 'Ver Agenda → Relatórios; Relatórios → Agenda'],
+        ['8', 'Definir os horários de cada profissional', 'Agenda → Horários'],
+        ['9', 'Vincular os pacientes aos horários', 'Agenda → Acessar → (+)'],
+        ['10', 'Marcar presença/ausência a cada sessão', 'Acessar → engrenagem → Sessão'],
+        ['11', 'Imprimir/conferir', 'Acessar → Relatórios; Relatórios → Agenda'],
     ], [1.6, 8.2, 7.7]),
     ('aviso', 'A partir do segundo mês, o caminho é bem mais curto: <b>criar a agenda copiando a anterior</b> '
               '(passo 7 com "Copiar agenda anterior") já traz horários e pacientes. Só é preciso ajustar as exceções.'),
@@ -383,7 +393,7 @@ blocos_tecnico = blocos + [
         ['Cópia da agenda', 'Ao criar com "Copiar agenda anterior", a API chama a stored procedure <b>AgendaAbertura</b>, que cria a linha em <b>Agenda</b> (com IdAgendaCopy apontando para a origem), copia <b>AgendaProfissionalDia</b> (horários) e <b>AgendaProfissionalDiaPac</b> (pacientes vinculados) e, nesta última, zera IDSTATUS_S1..S5 (-1) e DATAS1..S5 (nulas).'],
         ['Modo de cópia', 'O campo <b>Clinica.CopiaAgenda</b> define o que é copiado: T = tudo, S = só horários semanais (Data = 1900-01-01), D = só horários por data específica.'],
         ['Unicidade', 'A API impede duas agendas no mesmo mês/ano da clínica (mensagem "Já existe uma agenda criada para...").'],
-        ['Horários da clínica', 'Tabela de horários ativos consultada na montagem da grade de Prof. horários (tela Tabelas Aux. → Horários, rota /aux/horarios).'],
+        ['Horários da clínica', 'Tabela de horários ativos consultada na montagem da grade de Horários do profissional (tela Tabelas Aux. → Horários, rota /aux/horarios).'],
         ['Perfis (IdPerfil)', 'Profissional = 10, Atendente = 20, Administrador = 50. Não é permitido 50 + 20 (nem 20 + 50) como principal + secundário.'],
         ['Rotas do front', '/agenda, /agenda/profissional, /agendamento, /aux/horarios, /acessos, /acessos/permissoes, /acessos/bloqueiodias, /acessos/logs, /relatorio/agenda, /relatorios.'],
         ['Impressões', 'Atendimento Diário: RelatorioController.PdfAgendaAtendimentoDia; Presença/Ausência: pdf/agenda/presentesAusentes (PresentesAusentesPDF); Horários do paciente: AgendaPacienteHorariosPDF.'],

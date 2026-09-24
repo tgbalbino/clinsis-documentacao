@@ -2,7 +2,8 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(RAIZ, "_scripts-comuns"))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "2.1"
-DATA = "23/09/2026"
+VERSAO = "2.2"
+DATA = "24/09/2026"
 TITULO = "Dashboard de Agenda"
 SUBTITULO = "O que significa cada informação e como conferir cada uma no sistema"
-VIDEO_NOME = "video-dashboard-agenda-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/QAra0-JTD5w"
 INTRO = ('O <b>Dashboard de Agenda</b> reúne, num só lugar, números sobre os atendimentos de um '
          'período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. '
          'Este manual explica <b>o que cada card, gráfico e tabela representa</b>, <b>como o número é '
@@ -48,13 +49,13 @@ blocks = [
           '66,7%</b>, <b>Taxa de Absenteísmo = 33,3%</b>. Para conferir dentro da Agenda:'),
     ('tabelagen', ['Passo', 'O que fazer'],
      [
-         ['1', 'Menu <b>Agenda</b> → na linha do mês (2026 / SETEMBRO) clique em <b>Ver Agenda</b>.'],
+         ['1', 'Menu <b>Agenda</b> → na linha do mês (2026 / SETEMBRO) clique em <b>Acessar</b>.'],
          ['2', 'Clique em <b>Filtros</b>. No campo <b>Sessão 1</b>, escolha <b>PRESENTE</b> e clique em <b>Filtrar</b>. Veja no rodapé: <b>"Total de registros: 8"</b>.'],
          ['3', 'Repita trocando para <b>Sessão 2</b> (resultado: 1), <b>Sessão 3</b> (1), <b>Sessão 4</b> (0) e <b>Sessão 5</b> (0). Some: 8 + 1 + 1 = <b>10 presentes</b>.'],
          ['4', 'Repita tudo com <b>AUSENTE</b>: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = <b>5 ausentes</b>.'],
          ['5', 'Sessões Registradas = 10 + 5 = <b>15</b>. Taxa de Presença = 10 ÷ 15 = <b>66,7%</b>. Taxa de Absenteísmo = 5 ÷ 15 = <b>33,3%</b>. Bate com o Dashboard.'],
      ], [1.6, 15.9]),
-    ('img', '22-agendamento-grade-mes.png', 'Tela Agenda de Setembro/2026 (Ver Agenda): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).'),
+    ('img', '22-agendamento-grade-mes.png', 'Tela Agenda de Setembro/2026 (botão Acessar): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).'),
     ('img', '23a-modal-filtro-sessao1-presente.png', 'Filtros → Sessão 1 = PRESENTE.'),
     ('img', '23-agendamento-filtro-sessao1-presente.png', 'Resultado: "Total de registros: 8" — as linhas cuja Sessão 1 é PRESENTE.'),
     ('aviso', 'Por que somar as 5 colunas? A grade tem <b>uma linha por agendamento</b>, com até 5 sessões '
@@ -79,16 +80,16 @@ blocks = [
     ('h2', 'Os 8 cards do topo — o que são e como conferir'),
     ('tabelagen', ['Card', 'O que é / como é calculado', 'Como conferir no sistema'],
      [
-         ['Sessões Registradas (antes "Total de Sessões")', 'Quantidade de sessões <b>registradas</b> (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.', 'Agenda → Ver Agenda → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).'],
+         ['Sessões Registradas (antes "Total de Sessões")', 'Quantidade de sessões <b>registradas</b> (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.', 'Agenda → Acessar → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).'],
          ['Pacientes com Sessão Registrada (antes "Pacientes Atendidos")', 'Pacientes <b>distintos</b> com ao menos uma sessão registrada no período (inclui quem faltou).', 'Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente.'],
          ['Taxa de Presença', 'Presentes ÷ (Presentes + Ausentes) × 100.', 'Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima).'],
          ['Taxa de Absenteísmo', 'Ausentes ÷ (Presentes + Ausentes) × 100.', 'Idem — ver seção anterior.'],
          ['Pacientes Novos', 'Pacientes cuja <b>primeira sessão registrada de toda a história</b> cai dentro do período.', 'Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a <b>última página</b> para ver a primeira sessão.'],
          ['Pacientes Recorrentes', 'Pacientes do período que já tinham sessão registrada <b>antes</b> do início do período.', 'Mesma consulta acima (primeira sessão anterior ao início do período).'],
          ['Dias de Antecedência (média)', 'Média de dias entre a data de inclusão do agendamento e a data da sessão.', '<b>Não há tela que mostre a data de inclusão do agendamento</b> — hoje só é possível conferir por consulta ao banco. Ver "Relatórios previstos".'],
-         ['Taxa de Ocupação', 'Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.', 'Agenda → <b>Prof. horários</b> (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.'],
+         ['Taxa de Ocupação', 'Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.', 'Agenda → <b>Horários</b> (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.'],
      ], [3.0, 7.2, 7.3]),
-    ('img', '42-prof-horarios.png', 'Agenda → Prof. horários (Profissional 01, Setembro/2026): cada linha da tabela é um horário disponível; a capacidade do card soma esses horários pelos dias do período.'),
+    ('img', '42-prof-horarios.png', 'Agenda → Horários (Profissional 01, Setembro/2026): em Horários cadastrados, cada dia da semana mostra os horários do profissional; a capacidade do card soma esses horários pelos dias do período.'),
     ('aviso', '<b>Taxa de Ocupação</b>: como só as sessões registradas entram no numerador, a taxa fica '
               'baixa em meses em andamento (2,4% em Setembro, com muitas sessões ainda pendentes). '
               'Férias ou bloqueios de um profissional específico não são descontados da capacidade — só '
@@ -178,12 +179,12 @@ blocks = [
     ('h2', 'Quadro resumo: onde conferir cada informação'),
     ('tabelagen', ['Informação do Dashboard', 'Onde conferir', 'Observação'],
      [
-         ['Sessões Registradas, Presentes, Ausentes, Taxas', 'Agenda → Ver Agenda → Filtros (Sessão 1 a 5)', 'Somar as 5 colunas; repetir por mês.'],
+         ['Sessões Registradas, Presentes, Ausentes, Taxas', 'Agenda → Acessar → Filtros (Sessão 1 a 5)', 'Somar as 5 colunas; repetir por mês.'],
          ['Por profissional / status', 'Relatórios → Agenda - Qtd Marcação', 'TOTAL do mês inteiro; "Ausência Justificada" em coluna própria.'],
          ['Cards/contagens de um mês', 'Relatórios → Relatório Agenda (Agenda → botão Relatório)', 'Mostra Presentes/Ausentes/desmarcações do mês da agenda.'],
          ['Presença de um dia', 'Relatórios → Presença Diária (por data de marcação)', 'A data é a do <b>registro</b> da marcação, não a da sessão.'],
          ['Pacientes Novos/Recorrentes', 'Relatórios → Histórico do Paciente → aba Agenda', 'Ir à última página para ver a 1ª sessão.'],
-         ['Taxa de Ocupação (capacidade)', 'Agenda → Prof. horários', 'Somar horários × dias; descontar feriados.'],
+         ['Taxa de Ocupação (capacidade)', 'Agenda → Horários', 'Somar horários × dias; descontar feriados.'],
          ['Faturamento por Convênio', 'Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos', 'Sem agrupamento por operadora.'],
          ['Dias de Antecedência', '— (sem tela)', 'Só por consulta ao banco.'],
          ['Faixa etária', '— (sem tela)', 'Idade calculada na data da sessão.'],

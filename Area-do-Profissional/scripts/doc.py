@@ -11,7 +11,7 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
+VERSAO = "1.1"
 DATA = "24/09/2026"
 TITULO = "Área do Profissional"
 SUBTITULO = "O que o profissional de saúde vê e pode fazer no ClinSis"
@@ -48,7 +48,7 @@ blocos = [
         ['Alterar Perfil', 'Só aparece se o seu usuário tem um segundo perfil de acesso.'],
     ], [3.6, 13.9]),
     ('h2', 'Resumo do dia e pendências'),
-    ('p', 'Se a clínica ativou essa configuração, aparece uma faixa com os números de hoje: <b>Total de Pacientes, Total de Presentes, '
+    ('p', 'Logo abaixo aparece uma faixa com os números de hoje (disponível para todas as clínicas, sem configuração): <b>Total de Pacientes, Total de Presentes, '
           'Relatórios Finalizados, Relatórios Abertos, Evoluções Finalizadas e Evoluções Abertas</b>. Em <b>Pendências gerais</b> você vê as '
           'Evoluções Abertas e os Relatórios Abertos no geral. Pendência é algo que você começou e ainda não finalizou.'),
 
@@ -56,7 +56,7 @@ blocos = [
     ('p', 'Menu <b>Agenda</b>: lista de Ano/Mês. Em cada linha, o botão <b>Acessar</b> abre a Agenda resumida do mês. '
           'Se a clínica não for consultório, aparece também o link <b>Ver lista simples de pacientes do dia</b>.'),
     ('img', 'p02-agenda.png', 'Menu Agenda do profissional: só o botão Acessar por mês.'),
-    ('aviso', 'O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Prof. horários, Ver Agenda e Divergência Sessões. Esses são do administrador e do atendente.'),
+    ('aviso', 'O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Horários, Acessar (grade de agendamento) e Divergência Sessões. Esses são do administrador e do atendente.'),
     ('h2', 'Agenda resumida'),
     ('p', 'Mostra os seus pacientes agendados no mês. Recursos:'),
     ('tabelagen', ['Recurso', 'Como usar'], [
