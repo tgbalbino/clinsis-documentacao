@@ -197,7 +197,15 @@ def main():
         yt = YOUTUBE_LINKS.get(pasta)
         if yt:
             if isinstance(yt, str):
-                linhas_md.append(f"- [▶️ Assistir o vídeo no YouTube]({yt})")
+                vid = yt.rstrip("/").split("/")[-1]
+                linhas_md.append(
+                    '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">'
+                    f'<iframe src="https://www.youtube.com/embed/{vid}?rel=0" title="Vídeo narrado" '
+                    'style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" '
+                    'allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" '
+                    'allowfullscreen></iframe></div>')
+                linhas_md.append("")
+                linhas_md.append(f"[Abrir no YouTube]({yt})")
             else:
                 linhas_md.append(f"- [▶️ Assistir com legenda]({yt[0]})")
                 linhas_md.append(f"- [▶️ Assistir sem legenda]({yt[1]})")
