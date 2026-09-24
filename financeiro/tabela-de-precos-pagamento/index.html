@@ -942,6 +942,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeb5jlz0kweim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/B5Jlz0kweIM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-conceito-de-tabela-vigencia" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1796,6 +1807,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeb5jlz0kweim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/B5Jlz0kweIM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-conceito-de-tabela-vigencia" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1849,19 +1871,19 @@
 <p><em>Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/B5Jlz0kweIM">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa</em></p>
 <p>Versão 1.0 — 22/09/2026</p>
 <p>A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.</p>
-<p>Vídeo narrado desta rotina: <code>video-tabela-preco-pagamento-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubeb5jlz0kweim">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/B5Jlz0kweIM">https://youtu.be/B5Jlz0kweIM</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeb5jlz0kweim" title="Permanent link">&para;</a></h2>
 <h2 id="o-conceito-de-tabela-vigencia">O conceito de "Tabela" (vigência)<a class="headerlink" href="#o-conceito-de-tabela-vigencia" title="Permanent link">&para;</a></h2>
 <p>Cada linha da lista principal é uma tabela de valores (o sistema chama de "vigência"), com uma Descrição e um status Ativo/Inativo. O botão de engrenagem ("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.</p>
 <blockquote>
@@ -1872,25 +1894,21 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Agenda</td>
 <td>Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo).</td>
-<td>AgendaVigenciaProfPagto</td>
 </tr>
 <tr>
 <td>Especialidades</td>
 <td>Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico.</td>
-<td>ConfigEspecPagto</td>
 </tr>
 <tr>
 <td>Profissionais</td>
 <td>Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional.</td>
-<td>ConfigProfissionalEspecialidadePagto</td>
 </tr>
 </tbody>
 </table>
@@ -1901,30 +1919,25 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1. Percentual de reajuste</td>
 <td>Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%.</td>
-<td>ReajustePrecoController.cs</td>
 </tr>
 <tr>
 <td>2. Campos a reajustar</td>
 <td>Marque "Valor", "Valor convênio", ou os dois.</td>
-<td>reajuste-preco.component.html</td>
 </tr>
 <tr>
 <td>3. Calcular prévia</td>
 <td>Mostra uma tabela comparando o valor atual com o valor novo, linha por linha — sem gravar nada ainda.</td>
-<td>ReajustePreco/pagamento/simular</td>
 </tr>
 <tr>
 <td>4. Confirmar reajuste</td>
 <td>Só depois de conferir a prévia, grava de fato. Pede uma confirmação extra ("Confirma o reajuste de X valor(es) em Y registro(s)?").</td>
-<td>ReajustePreco/pagamento/confirmar</td>
 </tr>
 </tbody>
 </table>

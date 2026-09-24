@@ -1601,6 +1601,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubexrpztxrga3y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/xRpzTXrGA3Y
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#para-que-serve-cada-relatorio" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1829,6 +1840,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubexrpztxrga3y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/xRpzTXrGA3Y
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#para-que-serve-cada-relatorio" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1915,43 +1937,39 @@
 <p><em>Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/xRpzTXrGA3Y">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais</em></p>
 <p>Versão 1.0 — 23/09/2026</p>
 <p>Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.</p>
-<p>Vídeo narrado desta rotina: <code>video-prontuario-auditoria-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubexrpztxrga3y">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/xRpzTXrGA3Y">https://youtu.be/xRpzTXrGA3Y</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubexrpztxrga3y" title="Permanent link">&para;</a></h2>
 <h2 id="para-que-serve-cada-relatorio">Para que serve cada relatório<a class="headerlink" href="#para-que-serve-cada-relatorio" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Relatório</th>
 <th>Pergunta que responde</th>
-<th>Onde</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Auditoria de Prontuários</td>
 <td>Cada profissional fez prontuário dos atendimentos que realizou no mês?</td>
-<td>Relatórios (painel) → Auditoria</td>
 </tr>
 <tr>
 <td>Produção de Prontuários</td>
 <td>Quantos prontuários foram finalizados, estão em digitação ou foram excluídos por profissional e tipo, em um período?</td>
-<td>Relatórios (painel) → Produção de Prontuários</td>
 </tr>
 <tr>
 <td>Atendimentos Sequenciais</td>
 <td>Quais atendimentos em horários seguidos o sistema junta como um só na auditoria?</td>
-<td>Relatórios (painel) → Atendimentos Sequenciais</td>
 </tr>
 </tbody>
 </table>
@@ -1994,30 +2012,25 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Presenças</td>
 <td>Quantidade de sessões marcadas como Presente na agenda do mês (data da sessão registrada). É o número de atendimentos realizados.</td>
-<td>AgendaProfissionalDiaPac (status 3)</td>
 </tr>
 <tr>
 <td>Finalizado</td>
 <td>Prontuários do tipo escolhido com situação Finalizada e data de emissão dentro do mês. Prontuários excluídos não contam.</td>
-<td>Prontuario.Situacao = F</td>
 </tr>
 <tr>
 <td>Não Finalizado</td>
 <td>Prontuários em Digitação (rascunho). Rascunhos sem data de emissão entram pelo mês da criação.</td>
-<td>Prontuario.Situacao = D</td>
 </tr>
 <tr>
 <td>Sem Tag</td>
 <td>Prontuários sem nenhuma tag (relevante nas clínicas que usam tags).</td>
-<td>ProntuarioTag</td>
 </tr>
 </tbody>
 </table>

@@ -1458,6 +1458,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeuotror-rj6s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/uotROr-rj6s
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-e-um-servico" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1796,6 +1807,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeuotror-rj6s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/uotROr-rj6s
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-e-um-servico" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1849,19 +1871,19 @@
 <p><em>Para que serve e onde é utilizado (Tabelas Aux. → Serviços)</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/uotROr-rj6s">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Para que serve e onde é utilizado (Tabelas Aux. → Serviços)</em></p>
 <p>Versão 1.0 — 22/09/2026</p>
 <p>Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.</p>
-<p>Vídeo narrado desta rotina: <code>video-cadastro-servicos-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubeuotror-rj6s">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/uotROr-rj6s">https://youtu.be/uotROr-rj6s</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeuotror-rj6s" title="Permanent link">&para;</a></h2>
 <h2 id="o-que-e-um-servico">O que é um Serviço<a class="headerlink" href="#o-que-e-um-servico" title="Permanent link">&para;</a></h2>
 <p>Pense num Serviço como um item de catálogo: um nome ("Sessão de Fisioterapia", "Avaliação Inicial", "Pacote 10 sessões") e um valor sugerido. Ao montar um Contrato, em vez de digitar manualmente a descrição e o valor de cada item, o usuário busca um Serviço já cadastrado e usa isso como ponto de partida.</p>
 <p>O cadastro é bem enxuto: só Descrição e Preço. Não existe ativo/inativo, categoria, nem vínculo com convênio — e não há como excluir um Serviço já cadastrado pela tela, ele permanece disponível permanentemente na lista.</p>
@@ -1875,25 +1897,21 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Cálculo do Valor Total do Contrato</td>
 <td>A soma de todas as linhas de serviço do contrato define o valor total dele, usado depois para comparar com os pagamentos/acertos lançados ("Falta Acertar").</td>
-<td>ContratoServicoRepository.cs</td>
 </tr>
 <tr>
 <td>Renovação de Contrato</td>
 <td>Ao renovar um contrato, o sistema copia automaticamente os mesmos Serviços/quantidades/valores para o contrato novo. Se o contrato antigo não tiver nenhum serviço, a renovação é bloqueada.</td>
-<td>ContratoRenovacaoService.cs</td>
 </tr>
 <tr>
 <td>Impressão do Contrato</td>
 <td>No layout de impressão do contrato (Tabelas Aux. → Layout Contrato), existe um placeholder "TabelaServicos" que renderiza a lista de serviços contratados no PDF/documento impresso.</td>
-<td>contrato-laiout-config.component.ts</td>
 </tr>
 </tbody>
 </table>

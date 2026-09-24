@@ -858,6 +858,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube72i8flokhii" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/72i8FLOKhII
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#indicadores-e-como-abrir-a-lista" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1796,6 +1807,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube72i8flokhii" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/72i8FLOKhII
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#indicadores-e-como-abrir-a-lista" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1849,19 +1871,19 @@
 <p><em>Cadastrar e receber os valores que os pacientes/convênios devem à clínica</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Contas-a-Receber/Documentacao_Contas_a_Receber.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Contas-a-Receber/Documentacao_Contas_a_Receber_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Contas-a-Receber/Documentacao_Contas_a_Receber_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/72i8FLOKhII">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Cadastrar e receber os valores que os pacientes/convênios devem à clínica</em></p>
 <p>Versão 1.0 — 17/09/2026</p>
 <p>Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.</p>
-<p>Vídeo narrado desta rotina: <code>video-contas-a-receber-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutube72i8flokhii">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/72i8FLOKhII">https://youtu.be/72i8FLOKhII</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutube72i8flokhii" title="Permanent link">&para;</a></h2>
 <h2 id="indicadores-e-como-abrir-a-lista">Indicadores e como abrir a lista<a class="headerlink" href="#indicadores-e-como-abrir-a-lista" title="Permanent link">&para;</a></h2>
 <p>As mesmas cinco caixas de resumo de Contas a Pagar aparecem aqui: Em Aberto, Vencido, Vence Hoje, A Vencer e Recebido no Mês. Diferente de Contas a Pagar, a lista começa vazia — é preciso clicar em Filtros e depois em Buscar para carregar os lançamentos (dá pra buscar por paciente, situação, plano de conta, centro de custo, competência, entre outros).</p>
 <h2 id="cadastrando-um-recebimento-parcela-automatica-exemplo">Cadastrando um recebimento — "Parcela Automática" (exemplo)<a class="headerlink" href="#cadastrando-um-recebimento-parcela-automatica-exemplo" title="Permanent link">&para;</a></h2>
@@ -1870,35 +1892,29 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Paciente</td>
-<td>Para quem é o recebimento (quem deve o valor à clínica).</td>
-<td>Obrigatório</td>
+<td>Para quem é o recebimento (quem deve o valor à clínica). <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Plano de Contas / Centro de Custo</td>
-<td>Mesma categoria/setor para todas as parcelas geradas.</td>
-<td>Obrigatório; precisam existir antes</td>
+<td>Mesma categoria/setor para todas as parcelas geradas. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Qtd Parcelas</td>
 <td>Em quantas vezes o valor será dividido.</td>
-<td>ContaReceberController.cs</td>
 </tr>
 <tr>
 <td>Data de Vencimento Base</td>
 <td>Vencimento da primeira parcela; as seguintes são geradas a partir dela (normalmente +1 mês por parcela).</td>
-<td>ContaReceberController.cs</td>
 </tr>
 <tr>
 <td>Tipo Valor</td>
-<td>"Valor por parcela" (cada uma vale o valor informado) ou "Valor Total" (o valor informado é dividido pelas parcelas).</td>
-<td>Obrigatório</td>
+<td>"Valor por parcela" (cada uma vale o valor informado) ou "Valor Total" (o valor informado é dividido pelas parcelas). <em>(obrigatório)</em></td>
 </tr>
 </tbody>
 </table>

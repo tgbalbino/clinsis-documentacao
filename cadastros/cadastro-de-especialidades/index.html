@@ -1430,6 +1430,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube9ptvpuswb_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/9pTvpUSwb_g
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#onde-fica-o-cadastro" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1796,6 +1807,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube9ptvpuswb_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/9pTvpUSwb_g
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#onde-fica-o-cadastro" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1849,19 +1871,19 @@
 <p><em>"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com exemplos</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Cadastro-de-Especialidades/Documentacao_Especialidade.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Cadastro-de-Especialidades/Documentacao_Especialidade_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Cadastro-de-Especialidades/Documentacao_Especialidade_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/9pTvpUSwb_g">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com exemplos</em></p>
 <p>Versão 1.0 — 22/09/2026</p>
 <p>O cadastro de Especialidade (Psicologia, Fisioterapia, Fonoaudiologia, etc.) tem duas configurações que mudam o comportamento de outras partes do sistema, mas cujo efeito nem sempre é óbvio pelo nome: Tipo de Cobrança (usada só no Pagamento de Profissionais) e Relatório Compartilhado(Prontuários) (usada só no Prontuário). Este manual explica as duas em detalhe, com exemplos.</p>
-<p>Vídeo narrado desta rotina: <code>video-especialidade-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutube9ptvpuswb_g">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/9pTvpUSwb_g">https://youtu.be/9pTvpUSwb_g</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutube9ptvpuswb_g" title="Permanent link">&para;</a></h2>
 <h2 id="onde-fica-o-cadastro">Onde fica o cadastro<a class="headerlink" href="#onde-fica-o-cadastro" title="Permanent link">&para;</a></h2>
 <p>Acesso em Tabelas Aux. → Especialidade (rota aux/especialidade). Além de Descrição, Abreviação e Ativo, cada especialidade tem os dois campos explicados abaixo — que não afetam o cadastro em si, e sim como outras telas do sistema se comportam para os atendimentos daquela especialidade.</p>
 <h2 id="tipo-de-cobranca-usado-so-no-pagamento-de-profissionais">Tipo de Cobrança — usado só no Pagamento de Profissionais<a class="headerlink" href="#tipo-de-cobranca-usado-so-no-pagamento-de-profissionais" title="Permanent link">&para;</a></h2>
@@ -1870,20 +1892,17 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Por Sessão</td>
 <td>Paga uma vez para CADA sessão realizada (presença confirmada) no mês, dentro daquele agendamento.</td>
-<td>Relatorio_Query.cs</td>
 </tr>
 <tr>
 <td>Paciente</td>
 <td>Paga só 1 vez por paciente/agendamento no mês, não importa quantas sessões ele teve — é um valor "fechado" por paciente, não por sessão.</td>
-<td>Relatorio_Query.cs</td>
 </tr>
 </tbody>
 </table>
@@ -1897,25 +1916,21 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Não</td>
 <td>Prontuários finalizados dessa especialidade nunca ficam visíveis para outro profissional (só quem escreveu, ou um administrador).</td>
-<td>ProntuarioRepository.cs</td>
 </tr>
 <tr>
 <td>Somente mesma especialidade</td>
 <td>Outro profissional só vê o prontuário se ele também for da mesma especialidade E também atender aquele paciente.</td>
-<td>ProntuarioRepository.cs</td>
 </tr>
 <tr>
 <td>Qualquer profissional do mesmo paciente</td>
 <td>Qualquer profissional que atenda aquele paciente pode ver o prontuário finalizado, mesmo sendo de outra especialidade.</td>
-<td>ProntuarioRepository.cs</td>
 </tr>
 </tbody>
 </table>

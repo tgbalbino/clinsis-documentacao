@@ -774,6 +774,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeer1uv0qlujk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/er1uv0qlUjk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-e-e-para-que-serve" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1862,6 +1873,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeer1uv0qlujk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/er1uv0qlUjk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o-que-e-e-para-que-serve" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1981,19 +2003,19 @@
 <p><em>O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Conta-Financeira/Documentacao_Conta_Financeira.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Conta-Financeira/Documentacao_Conta_Financeira_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Conta-Financeira/Documentacao_Conta_Financeira_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/er1uv0qlUjk">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento</em></p>
 <p>Versão 1.0 — 18/09/2026</p>
 <p>A Conta Financeira é o "cofre" onde o dinheiro da clínica realmente entra e sai: uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta ele saiu — é isso que permite conferir o extrato do banco, saber o saldo de cada conta e montar o Fluxo de Caixa. Este manual explica o cadastro, onde ele é usado e, principalmente, a regra que amarra cada Conta Financeira às Formas de Pagamento permitidas nela.</p>
-<p>Vídeo narrado desta rotina: <code>video-conta-financeira-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubeer1uv0qlujk">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/er1uv0qlUjk">https://youtu.be/er1uv0qlUjk</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubeer1uv0qlujk" title="Permanent link">&para;</a></h2>
 <h2 id="o-que-e-e-para-que-serve">O que é e para que serve<a class="headerlink" href="#o-que-e-e-para-que-serve" title="Permanent link">&para;</a></h2>
 <p>Cada Conta Financeira representa um lugar onde existe saldo. Exemplos: "BANCO BRASIL" (conta corrente da clínica), "SICOOB CONTA CORRENTE" ou "CAIXA" (o dinheiro em espécie na recepção). Sem Conta Financeira o sistema não sabe onde o dinheiro foi parar, e por isso ela é obrigatória em toda baixa de Conta a Pagar e de Conta a Receber, e também na baixa automática do Checkin.</p>
 <p>O cadastro fica em Financeiro → Cadastros → Contas Financeiras (acesso do administrador).</p>
@@ -2003,45 +2025,37 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Descrição *</td>
 <td>Nome que aparece em todas as telas de baixa, movimentos e fluxo de caixa. Sempre gravado em maiúsculas.</td>
-<td>ContaFinanceira.Descricao</td>
 </tr>
 <tr>
 <td>Banco</td>
 <td>Banco da conta (lista de bancos cadastrados). Deixe em branco para uma conta do tipo Caixa.</td>
-<td>ContaFinanceira.IdBanco</td>
 </tr>
 <tr>
 <td>Agência</td>
 <td>Agência bancária (até 20 caracteres).</td>
-<td>ContaFinanceira.Agencia</td>
 </tr>
 <tr>
 <td>Conta</td>
 <td>Número da conta (até 30 caracteres).</td>
-<td>ContaFinanceira.Conta</td>
 </tr>
 <tr>
 <td>Chave PIX</td>
 <td>Chave PIX da conta, só para consulta/identificação.</td>
-<td>ContaFinanceira.ChavePix</td>
 </tr>
 <tr>
 <td>Ativo (só ao editar)</td>
 <td>Conta inativa deixa de ser oferecida nas telas de baixa (só contas ativas aparecem na lista), mas o histórico é mantido.</td>
-<td>ContaFinanceira.Ativo</td>
 </tr>
 <tr>
 <td>Tipo (badge Banco/Caixa)</td>
 <td>Não é um campo: aparece como "Banco" se Banco/Agência/Conta estiverem preenchidos e como "Caixa" caso contrário.</td>
-<td>Calculado na tela (conta-financeira-painel)</td>
 </tr>
 </tbody>
 </table>
@@ -2053,35 +2067,29 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Contas a Pagar — baixa</td>
 <td>Campo Conta Financeira (obrigatório): de qual conta o dinheiro saiu. Gera um movimento de Saída na conta.</td>
-<td>ContaPagarBaixaRepository.cs</td>
 </tr>
 <tr>
 <td>Contas a Receber — baixa</td>
 <td>Campo Conta Financeira (obrigatório na tela: "Informe a conta financeira"): em qual conta o dinheiro entrou. Gera um movimento de Entrada na conta.</td>
-<td>ContaReceberBaixaRepository.cs</td>
 </tr>
 <tr>
 <td>Checkin de Paciente</td>
 <td>A baixa automática do pagamento feito no Checkin usa a conta definida no parâmetro IdContaFinanceiraCheckin.</td>
-<td>CheckinRepository.cs / Parametro</td>
 </tr>
 <tr>
 <td>Movimentos Financeiros</td>
 <td>Extrato de todas as entradas/saídas, com filtro por conta. Também permite Nova Transferência entre duas contas.</td>
-<td>MovimentoFinanceiro</td>
 </tr>
 <tr>
 <td>Fluxo de Caixa e Dashboard</td>
 <td>Saldo, entradas e saídas por conta (quadro "Por Conta Financeira").</td>
-<td>MovimentoFinanceiro</td>
 </tr>
 </tbody>
 </table>
@@ -2105,20 +2113,17 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Regra de validação</td>
 <td>Ao gravar a baixa, o sistema consulta se existe o par (Conta Financeira, Forma de Pagamento) habilitado. Se não existir, recusa e não grava nada.</td>
-<td>ContaFinanceiraPagamentoForma</td>
 </tr>
 <tr>
 <td>Onde é conferida</td>
 <td>Baixa de Conta a Receber, baixa de Conta a Pagar e pagamento do Checkin (que usa a conta do parâmetro IdContaFinanceiraCheckin).</td>
-<td>ContaReceberBaixaRepository.cs / ContaPagarBaixaRepository.cs / CheckinRepository.cs</td>
 </tr>
 </tbody>
 </table>

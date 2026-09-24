@@ -1200,6 +1200,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube0dvv7ctvdpe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/0dVv7ctVDPE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuracao-previa-tabela-de-precos-para-pagamento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1873,6 +1884,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube0dvv7ctvdpe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/0dVv7ctVDPE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuracao-previa-tabela-de-precos-para-pagamento" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2003,44 +2025,40 @@
 <p><em>Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/0dVv7ctVDPE">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês</em></p>
 <p>Versão 1.0 — 17/09/2026</p>
 <p>Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.</p>
-<p>Vídeo narrado desta rotina: <code>video-pagamento-profissionais-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutube0dvv7ctvdpe">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/0dVv7ctVDPE">https://youtu.be/0dVv7ctVDPE</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutube0dvv7ctvdpe" title="Permanent link">&para;</a></h2>
 <h2 id="configuracao-previa-tabela-de-precos-para-pagamento">Configuração prévia: Tabela de Preços para Pagamento<a class="headerlink" href="#configuracao-previa-tabela-de-precos-para-pagamento" title="Permanent link">&para;</a></h2>
 <p>Em Tabelas Aux. → Tab. Pagamento (rota /aux/vigenciaprofpagto) fica a lista de "tabelas de preço" — cada uma agrupa um conjunto de valores usados para calcular o repasse dos profissionais. Ao abrir uma tabela (botão da engrenagem), três abas organizam a configuração:</p>
 <table>
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Aba Agenda</td>
 <td>Quais competências (mês/ano) usam esta tabela de preços. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês.</td>
-<td>ConfigAgendaProfEspecPagtoController.cs</td>
 </tr>
 <tr>
 <td>Aba Especialidades</td>
 <td>Valor padrão por Especialidade (ex.: Fisioterapeuta, Psicólogo), aplicado a todos os profissionais daquela especialidade que não tiverem um valor específico.</td>
-<td>ConfigProfissionalEspecialidadePagtoController.cs</td>
 </tr>
 <tr>
 <td>Aba Profissionais</td>
 <td>Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidades quando presente.</td>
-<td>ConfigProfissionalEspecialidadePagtoController.cs</td>
 </tr>
 </tbody>
 </table>
@@ -2058,20 +2076,17 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Por Sessão</td>
 <td>O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis.</td>
-<td>Especialidade.TipoCobranca = 1</td>
 </tr>
 <tr>
 <td>Paciente</td>
 <td>O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa.</td>
-<td>Especialidade.TipoCobranca = 2</td>
 </tr>
 </tbody>
 </table>
@@ -2088,35 +2103,29 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Agenda (filtro)</td>
-<td>Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços.</td>
-<td>Obrigatório</td>
+<td>Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Profissional (filtro)</td>
 <td>Restringe o relatório a um profissional específico.</td>
-<td>Opcional</td>
 </tr>
 <tr>
 <td>Status (filtro)</td>
-<td>Quais status de agendamento entram no cálculo (Presente, Ausente, etc.).</td>
-<td>Obrigatório ter ao menos 1 marcado</td>
+<td>Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Sessões / Sessões Pagamento</td>
 <td>Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados).</td>
-<td>RelatorioRepository.cs</td>
 </tr>
 <tr>
 <td>Valor Total</td>
 <td>Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Preços). Só fica com checkbox pra selecionar se for maior que zero.</td>
-<td>RelatorioRepository.cs</td>
 </tr>
 </tbody>
 </table>

@@ -802,6 +802,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube1qx_mgp4t_q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/1qx_Mgp4T_Q
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tela-inicial" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1807,6 +1818,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutube1qx_mgp4t_q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/1qx_Mgp4T_Q
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tela-inicial" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1871,19 +1893,19 @@
 <p><em>Contas que se repetem todo mês (ou a cada período) geradas automaticamente</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/1qx_Mgp4T_Q">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Contas que se repetem todo mês (ou a cada período) geradas automaticamente</em></p>
 <p>Versão 1.0 — 17/09/2026</p>
 <p>Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.</p>
-<p>Vídeo narrado desta rotina: <code>video-contas-recorrentes-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutube1qx_mgp4t_q">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/1qx_Mgp4T_Q">https://youtu.be/1qx_Mgp4T_Q</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutube1qx_mgp4t_q" title="Permanent link">&para;</a></h2>
 <h2 id="tela-inicial">Tela inicial<a class="headerlink" href="#tela-inicial" title="Permanent link">&para;</a></h2>
 <p>Lista todas as contas recorrentes já cadastradas, com Favorecido, Plano de Contas, Centro de Custo, Descrição, Frequência, Dia de Vencimento, período de vigência (Início/Fim) e Valor.</p>
 <h2 id="cadastrando-uma-nova-conta-recorrente-exemplo">Cadastrando uma nova conta recorrente (exemplo)<a class="headerlink" href="#cadastrando-uma-nova-conta-recorrente-exemplo" title="Permanent link">&para;</a></h2>
@@ -1892,55 +1914,45 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Favorecido</td>
-<td>Pessoa (fornecedor, profissional, cliente) para quem o pagamento é feito ou de quem o recebimento vem.</td>
-<td>Obrigatório</td>
+<td>Pessoa (fornecedor, profissional, cliente) para quem o pagamento é feito ou de quem o recebimento vem. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Plano de Contas</td>
-<td>Categoria do lançamento (ex.: Aluguel). Precisa estar cadastrado antes, na tela de Plano de Contas.</td>
-<td>Obrigatório; validado em ContaRecorrenteController.cs</td>
+<td>Categoria do lançamento (ex.: Aluguel). Precisa estar cadastrado antes, na tela de Plano de Contas. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Centro de Custo</td>
-<td>Setor da clínica responsável pelo lançamento. Precisa estar cadastrado antes, na tela de Centro de Custo.</td>
-<td>Obrigatório; validado em ContaRecorrenteController.cs</td>
+<td>Setor da clínica responsável pelo lançamento. Precisa estar cadastrado antes, na tela de Centro de Custo. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Descrição</td>
-<td>Texto livre identificando o lançamento nas contas geradas.</td>
-<td>Obrigatório</td>
+<td>Texto livre identificando o lançamento nas contas geradas. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Valor</td>
-<td>Valor de cada parcela gerada automaticamente.</td>
-<td>Obrigatório</td>
+<td>Valor de cada parcela gerada automaticamente. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Dia Vencimento</td>
-<td>Dia do mês (1 a 31) em que a conta gerada deve vencer.</td>
-<td>Obrigatório</td>
+<td>Dia do mês (1 a 31) em que a conta gerada deve vencer. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Frequência</td>
-<td>De quanto em quanto tempo o sistema gera uma nova conta: Mensal, Bimestral, Trimestral, Semestral ou Anual.</td>
-<td>Obrigatório</td>
+<td>De quanto em quanto tempo o sistema gera uma nova conta: Mensal, Bimestral, Trimestral, Semestral ou Anual. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Data Início / Data Fim</td>
 <td>Período em que a recorrência vale. Data Fim vazia = sem previsão de encerramento.</td>
-<td>Data Início obrigatória</td>
 </tr>
 <tr>
 <td>Gerar Antecedência</td>
 <td>Quantos dias antes do vencimento o sistema já pode gerar a conta (para dar tempo de conferir/pagar antes do prazo).</td>
-<td>Opcional, padrão 0</td>
 </tr>
 </tbody>
 </table>

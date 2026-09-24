@@ -718,6 +718,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubem4e2bmesmzg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/m4e2BMEsMZg
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#duas-formas-de-visualizar-arvore-ou-lista" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1807,6 +1818,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubem4e2bmesmzg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/m4e2BMEsMZg
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#duas-formas-de-visualizar-arvore-ou-lista" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1871,19 +1893,19 @@
 <p><em>Como organizar as categorias de receitas e despesas da clínica</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/m4e2BMEsMZg">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Como organizar as categorias de receitas e despesas da clínica</em></p>
 <p>Versão 1.0 — 17/09/2026</p>
 <p>O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.</p>
-<p>Vídeo narrado desta rotina: <code>video-cadastro-plano-de-contas.mp4</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubem4e2bmesmzg">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/m4e2BMEsMZg">https://youtu.be/m4e2BMEsMZg</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubem4e2bmesmzg" title="Permanent link">&para;</a></h2>
 <h2 id="duas-formas-de-visualizar-arvore-ou-lista">Duas formas de visualizar: Árvore ou Lista<a class="headerlink" href="#duas-formas-de-visualizar-arvore-ou-lista" title="Permanent link">&para;</a></h2>
 <p>A tela abre no modo Árvore, que agrupa as contas em três grupos fixos — 1 - RECEITAS, 2 - DESPESAS e 3 - OUTROS — e permite até 2 níveis dentro de cada grupo (uma conta "pai" e suas contas "filhas"). O botão Lista, no canto superior direito, troca para uma tabela simples com todas as contas cadastradas, sem a hierarquia visual.</p>
 <h2 id="cadastrando-uma-nova-conta-exemplo">Cadastrando uma nova conta (exemplo)<a class="headerlink" href="#cadastrando-uma-nova-conta-exemplo" title="Permanent link">&para;</a></h2>
@@ -1892,35 +1914,29 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Tipo</td>
-<td>D (Despesa) ou R (Receita) — define se a conta vai aparecer no grupo de Receitas ou de Despesas.</td>
-<td>Obrigatório; validado em PlanoContaController.cs (Criar/Alterar)</td>
+<td>D (Despesa) ou R (Receita) — define se a conta vai aparecer no grupo de Receitas ou de Despesas. <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Código</td>
 <td>Gerado automaticamente pelo sistema ao criar uma conta nova (não é digitado) — segue a numeração do grupo/conta pai.</td>
-<td>PlanoContaController.cs</td>
 </tr>
 <tr>
 <td>Descrição</td>
-<td>Nome da categoria, como vai aparecer em todos os relatórios e telas financeiras (ex.: "Aluguel", "Consulta por Convênio").</td>
-<td>Obrigatório; máx. 100 caracteres</td>
+<td>Nome da categoria, como vai aparecer em todos os relatórios e telas financeiras (ex.: "Aluguel", "Consulta por Convênio"). <em>(obrigatório)</em></td>
 </tr>
 <tr>
 <td>Plano de Conta Pai</td>
 <td>Opcional. Se preenchido, a nova conta vira uma "conta filha" da selecionada — usado para detalhar uma categoria maior. Sistema permite no máximo 2 níveis.</td>
-<td>PlanoContaController.cs</td>
 </tr>
 <tr>
 <td>Ativo</td>
 <td>Contas inativas continuam existindo (para não quebrar lançamentos antigos), mas somem das listas de seleção ao lançar novas contas a pagar/receber.</td>
-<td>PlanoContaController.cs</td>
 </tr>
 </tbody>
 </table>

@@ -1545,6 +1545,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubex4clyuuisae" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/X4ClyuUIsAE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#visao-geral-o-que-configurar-e-quem-faz" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1818,6 +1829,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubex4clyuuisae" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/X4ClyuUIsAE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#visao-geral-o-que-configurar-e-quem-faz" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1893,43 +1915,39 @@
 <p><em>Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Prontuario-Configuracao/Documentacao_Prontuario_Configuracao.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Prontuario-Configuracao/Documentacao_Prontuario_Configuracao_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Prontuario-Configuracao/Documentacao_Prontuario_Configuracao_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/X4ClyuUIsAE">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem</em></p>
 <p>Versão 1.0 — 23/09/2026</p>
 <p>Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.</p>
-<p>Vídeo narrado desta rotina: <code>video-prontuario-configuracao-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubex4clyuuisae">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/X4ClyuUIsAE">https://youtu.be/X4ClyuUIsAE</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubex4clyuuisae" title="Permanent link">&para;</a></h2>
 <h2 id="visao-geral-o-que-configurar-e-quem-faz">Visão geral: o que configurar e quem faz<a class="headerlink" href="#visao-geral-o-que-configurar-e-quem-faz" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Configuração</th>
 <th>Quem faz</th>
-<th>Onde</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Tipo de prontuário</td>
 <td>Administrador</td>
-<td>Menu Prontuário → Tipos</td>
 </tr>
 <tr>
 <td>Alíneas do tipo (os campos)</td>
 <td>Administrador</td>
-<td>Menu Prontuário → Alíneas</td>
 </tr>
 <tr>
 <td>Texto padrão</td>
 <td>Cada profissional (são pessoais)</td>
-<td>Menu Prontuário → Textos padrão (área do profissional)</td>
 </tr>
 </tbody>
 </table>
@@ -1942,28 +1960,22 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Dias</td>
 <td>Número gravado no tipo e copiado para cada prontuário criado. Hoje nenhuma tela usa esse número, então preenchê-lo não muda o comportamento do sistema.</td>
-<td>ProntuarioTipo.Dias</td>
 </tr>
 <tr>
 <td>Visível na agenda para preenchimento dos profissionais?</td>
 <td>Quando marcado, o tipo aparece na lista de tipos da tela Agenda resumida, permitindo criar o prontuário direto a partir da agenda. Na lista de Tipos aparece como "Sim" ou "Não".</td>
-<td>ProntuarioTipo.VisivelNaAgenda</td>
 </tr>
 </tbody>
 </table>
 <p>Modelo (botão azul ou verde): serve para anexar ao tipo um arquivo de modelo (por exemplo, um formulário em Word) que os profissionais podem baixar na tela Prontuário. O botão fica verde quando o tipo já tem modelo. O arquivo é guardado no armazenamento de arquivos da clínica (S3); nesta demonstração o envio não foi testado, pois o ambiente de teste não tem esse armazenamento configurado.</p>
 <p>Excluir (botão vermelho): pede confirmação. Não é possível excluir um tipo que já tenha prontuários — o sistema avisa "Este tipo está vinculado a prontuário, não pode ser removido". Quando o tipo nunca foi usado, ele é excluído junto com suas alíneas, textos padrão, modelo e vínculos De-Para.</p>
-<blockquote>
-<p>⚠️ Correção feita nesta documentação: antes, excluir um tipo deixava suas alíneas "órfãs" no banco. Como o próximo tipo criado reaproveita o mesmo número interno, ele aparecia já com alíneas que ninguém cadastrou (foi assim que uma alínea "Descritiva" apareceu num tipo novo durante o teste). Agora a exclusão remove tudo junto. Para limpar registros órfãos antigos existe o script 139_Limpar_Orfaos_De_Prontuario_Tipo_Removido.sql, que precisa ser executado no banco de cada ambiente.</p>
-</blockquote>
 <h2 id="2-alineas">2. Alíneas<a class="headerlink" href="#2-alineas" title="Permanent link">&para;</a></h2>
 <p>A Alínea é cada campo (ou seção) do prontuário: "Queixa principal", "Conduta", "Resumo do atendimento"... O profissional preenche uma alínea por vez. Acesso: Prontuário → Alíneas (administrador). A lista mostra as alíneas de todos os tipos, ou só as do tipo escolhido no filtro do topo.</p>
 <table>
@@ -1997,25 +2009,21 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Prontuário tipo</td>
 <td>Em quais prontuários este texto estará disponível. Não pode ser trocado depois de salvo.</td>
-<td>ProntuarioTextoPadrao.IdProntuarioTipo</td>
 </tr>
 <tr>
 <td>Título</td>
 <td>Nome curto que o profissional vê na lista ao inserir (máximo 20 caracteres).</td>
-<td>ProntuarioTextoPadrao.Titulo</td>
 </tr>
 <tr>
 <td>Texto</td>
 <td>O conteúdo que será inserido na alínea.</td>
-<td>ProntuarioTextoPadrao.Texto</td>
 </tr>
 </tbody>
 </table>
@@ -2025,24 +2033,20 @@
 <tr>
 <th>Item</th>
 <th>O que é</th>
-<th>Onde está</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Relatório Compartilhado(Prontuários)</td>
 <td>Define se um profissional vê o prontuário finalizado de outro.</td>
-<td>Cadastro de Especialidades (manual próprio)</td>
 </tr>
 <tr>
 <td>De-Para de prontuário</td>
 <td>Forma antiga de autorizar um profissional a ver prontuários de outro. Está oculta do menu e sendo substituída pelo Relatório Compartilhado.</td>
-<td>Rota /prontuario/depara (não aparece no menu)</td>
 </tr>
 <tr>
 <td>Tags do prontuário</td>
 <td>Rótulos por método de atendimento; ligadas por configuração da clínica (PRONTUARIO_TAGS).</td>
-<td>Manuais "Uso do Prontuário" e "Auditoria de Prontuário"</td>
 </tr>
 </tbody>
 </table>

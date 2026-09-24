@@ -1343,6 +1343,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubew-cctvekqng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/w-cCTVEKQng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#onde-fica-e-o-que-e" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1818,6 +1829,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#assista-ao-video-narrado-desta-rotina-httpsyoutubew-cctvekqng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assista ao vídeo narrado desta rotina: https://youtu.be/w-cCTVEKQng
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#onde-fica-e-o-que-e" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1893,19 +1915,19 @@
 <p><em>O modelo (template) usado para gerar o PDF de todos os contratos da clínica</em></p>
 <h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../assets/Layout-de-Contrato/Documentacao_Layout_Contrato.pdf">📄 Manual completo (com origem técnica no banco)</a></li>
-<li><a href="../../assets/Layout-de-Contrato/Documentacao_Layout_Contrato_Simplificado.pdf">📄 Manual simplificado</a></li>
+<li><a href="../../assets/Layout-de-Contrato/Documentacao_Layout_Contrato_Simplificado.pdf">📄 Manual em PDF</a></li>
 </ul>
 <h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
-<p><em>Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.</em></p>
+<ul>
+<li><a href="https://youtu.be/w-cCTVEKQng">▶️ Assistir o vídeo no YouTube</a></li>
+</ul>
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <p><em>As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.</em></p>
 <hr />
 <p><em>O modelo (template) usado para gerar o PDF de todos os contratos da clínica</em></p>
 <p>Versão 1.0 — 18/09/2026</p>
 <p>Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.</p>
-<p>Vídeo narrado desta rotina: <code>video-layout-contrato-com-legenda.mp4 (ou -sem-legenda.mp4)</code></p>
-<hr />
+<h2 id="assista-ao-video-narrado-desta-rotina-httpsyoutubew-cctvekqng">Assista ao vídeo narrado desta rotina: <a href="https://youtu.be/w-cCTVEKQng">https://youtu.be/w-cCTVEKQng</a><a class="headerlink" href="#assista-ao-video-narrado-desta-rotina-httpsyoutubew-cctvekqng" title="Permanent link">&para;</a></h2>
 <h2 id="onde-fica-e-o-que-e">Onde fica e o que é<a class="headerlink" href="#onde-fica-e-o-que-e" title="Permanent link">&para;</a></h2>
 <p>Em Tabelas Aux. → Layout Contrato (rota /aux/contratolaiout), a clínica escreve o texto do contrato em Markdown (um formato de texto simples com marcações como <strong>negrito</strong> e # Título), usando "variáveis" entre chaves duplas que o sistema troca automaticamente pelos dados reais de cada contrato na hora de gerar o PDF (nome do paciente, valor, datas, etc.).</p>
 <blockquote>
@@ -1917,35 +1939,29 @@
 <thead>
 <tr>
 <th>Campo / Label na tela</th>
-<th>Origem no banco de dados (fórmula)</th>
-<th>Onde é calculado</th>
+<th>O que é / de onde vem</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Dados da clínica</td>
 <td>{{ClinicaNomeFantasia}}, {{ClinicaRazaoSocial}}, {{ClinicaCnpj}}, {{ClinicaEndereco}}, {{ClinicaCidade}}, {{ClinicaUf}}, {{ClinicaTelefone}}, {{ClinicaEmail}}, {{ClinicaResponsavelNome}}, {{ClinicaResponsavelCPF}}</td>
-<td>PDFContratoService.cs</td>
 </tr>
 <tr>
 <td>Dados do contrato</td>
 <td>{{ContratoId}}, {{ContratoDataEmissao}}, {{ContratoDataVencimento}}, {{ContratoValorTotal}}, {{ContratoObservacao}}, {{DataAtual}} (data em que o PDF foi gerado)</td>
-<td>PDFContratoService.cs</td>
 </tr>
 <tr>
 <td>Dados do paciente</td>
 <td>{{PacienteNome}}, {{PacienteCPF}}, {{PacienteDataNascimento}}, {{PacienteEndereco}}</td>
-<td>PDFContratoService.cs</td>
 </tr>
 <tr>
 <td>Dados do responsável</td>
 <td>{{ResponsavelNome}}, {{ResponsavelCPF}}, {{ResponsavelEndereco}} (se não houver responsável cadastrado, usam os dados do próprio paciente), e {{RelacaoResponsavelLinha}} (linha "Relação com o paciente" — só aparece quando há responsável com relação preenchida)</td>
-<td>PDFContratoService.cs</td>
 </tr>
 <tr>
 <td>Tabelas prontas</td>
 <td>{{TabelaServicos}} (lista os serviços contratados: nome, quantidade, valor unitário e total) e {{TabelaPagamentos}} (lista as condições de pagamento: forma, valor, parcelas, 1ª e última parcela) — cada uma vira uma tabela pronta no PDF</td>
-<td>PDFContratoService.cs</td>
 </tr>
 </tbody>
 </table>
