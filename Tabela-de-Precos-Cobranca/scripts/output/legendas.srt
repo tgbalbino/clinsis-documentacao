@@ -1,0 +1,67 @@
+1
+00:00:00,400 --> 00:00:06,452
+A Tabela de Valores para Cobrança define quanto cobrar do paciente por sessão particular.
+
+2
+00:00:06,452 --> 00:00:08,696
+Diferente da Tabela de Pagamento,
+
+3
+00:00:08,696 --> 00:00:14,272
+aqui não existem várias tabelas de valores: é uma configuração única, sempre viva,
+
+4
+00:00:14,272 --> 00:00:15,224
+com três abas.
+
+5
+00:00:16,324 --> 00:00:18,617
+Especialidade define o valor padrão.
+
+6
+00:00:18,617 --> 00:00:22,948
+Profissional sobrepõe esse valor só para um profissional específico.
+
+7
+00:00:22,948 --> 00:00:26,961
+E Operadora sobrepõe o valor pra atendimentos daquele convênio.
+
+8
+00:00:28,061 --> 00:00:33,219
+O card Manutenção rápida de preços também está presente nas três abas,
+
+9
+00:00:33,219 --> 00:00:36,167
+sempre reajustando o escopo daquela aba.
+
+10
+00:00:36,167 --> 00:00:41,251
+Informe o percentual, marque Valor cobrado, Valor social, ou os dois.
+
+11
+00:00:42,351 --> 00:00:47,530
+Calcular prévia mostra o valor atual e o valor novo de cada especialidade,
+
+12
+00:00:47,530 --> 00:00:48,650
+sem gravar nada.
+
+13
+00:00:48,650 --> 00:00:52,289
+Só depois de conferir, clique em Confirmar reajuste.
+
+14
+00:00:53,389 --> 00:00:57,341
+Depois de confirmar, os valores são gravados de uma vez só,
+
+15
+00:00:57,341 --> 00:00:59,752
+e a grade já mostra os novos preços.
+
+16
+00:01:00,852 --> 00:01:02,006
+Na aba Operadora,
+
+17
+00:01:02,006 --> 00:01:07,977
+escolha o convênio no topo antes de configurar ou reajustar os valores específicos dele.

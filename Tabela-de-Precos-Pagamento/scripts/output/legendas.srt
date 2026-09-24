@@ -1,0 +1,79 @@
+1
+00:00:00,400 --> 00:00:06,630
+A Tabela de Valores para Pagamento define quanto a clínica paga a cada profissional por sessão.
+
+2
+00:00:06,630 --> 00:00:10,565
+Cada linha aqui é uma tabela de valores, com o status Ativo.
+
+3
+00:00:10,565 --> 00:00:15,746
+O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como Ativo,
+
+4
+00:00:15,746 --> 00:00:19,221
+então nunca deixe duas tabelas ativas ao mesmo tempo.
+
+5
+00:00:20,321 --> 00:00:23,565
+Ao clicar em Gerenciar, existem três abas: Agenda,
+
+6
+00:00:23,565 --> 00:00:27,327
+que vincula os meses que usam essa tabela; Especialidades,
+
+7
+00:00:27,327 --> 00:00:30,830
+com o valor padrão por especialidade; e Profissionais,
+
+8
+00:00:30,830 --> 00:00:33,878
+com valores específicos que sobrepõem o padrão.
+
+9
+00:00:34,978 --> 00:00:36,324
+Na aba Profissionais,
+
+10
+00:00:36,324 --> 00:00:41,320
+o botão com o cifrão abre a grade de valores específicos daquele profissional,
+
+11
+00:00:41,320 --> 00:00:42,601
+que vale só pra ele.
+
+12
+00:00:43,701 --> 00:00:49,402
+O card Manutenção rápida de preços permite reajustar vários valores de uma vez,
+
+13
+00:00:49,402 --> 00:00:50,484
+por percentual.
+
+14
+00:00:50,484 --> 00:00:56,329
+Informe o percentual, marque se quer reajustar Valor, Valor Convênio, ou os dois.
+
+15
+00:00:57,429 --> 00:01:02,065
+Calcular prévia mostra o valor atual e o valor novo de cada linha,
+
+16
+00:01:02,065 --> 00:01:03,610
+sem gravar nada ainda.
+
+17
+00:01:03,610 --> 00:01:07,263
+Só depois de conferir, clique em Confirmar reajuste.
+
+18
+00:01:08,363 --> 00:01:12,036
+Depois de confirmar, os valores são gravados de uma vez.
+
+19
+00:01:12,036 --> 00:01:16,561
+O mesmo recurso existe dentro do modal de um profissional específico,
+
+20
+00:01:16,561 --> 00:01:18,595
+reajustando só os valores dele.
