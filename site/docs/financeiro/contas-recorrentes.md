@@ -4,12 +4,11 @@ _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes.pdf)
-- [📄 Manual simplificado](../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Contas-Recorrentes/Documentacao_Contas_Recorrentes_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/1qx_Mgp4T_Q)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 17/09/2026
 
 Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.
 
-Vídeo narrado desta rotina: `video-contas-recorrentes-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/1qx_Mgp4T_Q](https://youtu.be/1qx_Mgp4T_Q)
 ---
 
 ## Tela inicial
@@ -38,17 +36,17 @@ Lista todas as contas recorrentes já cadastradas, com Favorecido, Plano de Cont
 Clique em Novo. No exemplo abaixo, cadastramos um aluguel de R$ 1.500,00, mensal, vencendo todo dia 10, começando hoje.
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Favorecido | Pessoa (fornecedor, profissional, cliente) para quem o pagamento é feito ou de quem o recebimento vem. | Obrigatório |
-| Plano de Contas | Categoria do lançamento (ex.: Aluguel). Precisa estar cadastrado antes, na tela de Plano de Contas. | Obrigatório; validado em ContaRecorrenteController.cs |
-| Centro de Custo | Setor da clínica responsável pelo lançamento. Precisa estar cadastrado antes, na tela de Centro de Custo. | Obrigatório; validado em ContaRecorrenteController.cs |
-| Descrição | Texto livre identificando o lançamento nas contas geradas. | Obrigatório |
-| Valor | Valor de cada parcela gerada automaticamente. | Obrigatório |
-| Dia Vencimento | Dia do mês (1 a 31) em que a conta gerada deve vencer. | Obrigatório |
-| Frequência | De quanto em quanto tempo o sistema gera uma nova conta: Mensal, Bimestral, Trimestral, Semestral ou Anual. | Obrigatório |
-| Data Início / Data Fim | Período em que a recorrência vale. Data Fim vazia = sem previsão de encerramento. | Data Início obrigatória |
-| Gerar Antecedência | Quantos dias antes do vencimento o sistema já pode gerar a conta (para dar tempo de conferir/pagar antes do prazo). | Opcional, padrão 0 |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Favorecido | Pessoa (fornecedor, profissional, cliente) para quem o pagamento é feito ou de quem o recebimento vem. *(obrigatório)* |
+| Plano de Contas | Categoria do lançamento (ex.: Aluguel). Precisa estar cadastrado antes, na tela de Plano de Contas. *(obrigatório)* |
+| Centro de Custo | Setor da clínica responsável pelo lançamento. Precisa estar cadastrado antes, na tela de Centro de Custo. *(obrigatório)* |
+| Descrição | Texto livre identificando o lançamento nas contas geradas. *(obrigatório)* |
+| Valor | Valor de cada parcela gerada automaticamente. *(obrigatório)* |
+| Dia Vencimento | Dia do mês (1 a 31) em que a conta gerada deve vencer. *(obrigatório)* |
+| Frequência | De quanto em quanto tempo o sistema gera uma nova conta: Mensal, Bimestral, Trimestral, Semestral ou Anual. *(obrigatório)* |
+| Data Início / Data Fim | Período em que a recorrência vale. Data Fim vazia = sem previsão de encerramento. |
+| Gerar Antecedência | Quantos dias antes do vencimento o sistema já pode gerar a conta (para dar tempo de conferir/pagar antes do prazo). |
 
 
 ## Como a geração automática acontece

@@ -4,12 +4,11 @@ _Criar, preencher, finalizar, consultar e imprimir prontuários_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Prontuario-Uso/Documentacao_Prontuario_Uso.pdf)
-- [📄 Manual simplificado](../assets/Prontuario-Uso/Documentacao_Prontuario_Uso_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Prontuario-Uso/Documentacao_Prontuario_Uso_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/XPTXN2u41Ps)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 23/09/2026
 
 Este manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". A conferência gerencial (auditoria) tem manual próprio.
 
-Vídeo narrado desta rotina: `video-prontuario-uso-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/XPTXN2u41Ps](https://youtu.be/XPTXN2u41Ps)
 ---
 
 ## Quem faz o quê
@@ -98,7 +96,6 @@ As tags identificam o método de atendimento (por exemplo, "Padrão" ou "Jedi") 
 | Ao finalizar | Se a clínica usa tags e existem tags cadastradas, é preciso ter ao menos 1 tag, senão a tela avisa "Informe ao menos 1 tag antes de finalizar o prontuário". |
 
 
-> ⚠️ Correção feita nesta documentação: a tag automática ao criar o prontuário não funcionava, porque o cálculo do mês dependia da data de emissão, que só existe ao finalizar. Agora usa a data de criação, e ela é aplicada corretamente (testado: paciente com método único recebeu a tag na criação).
 
 ## 5. Finalizar
 
@@ -122,7 +119,6 @@ Para gerar o PDF direto da lista, marque a caixa dos prontuários finalizados e 
 
 
 
-> ⚠️ Correção feita nesta documentação: o nome do arquivo saía como "pac__data.pdf", sem o nome do paciente. Agora inclui o nome (ex.: "pac_Paciente_0005_23-09-2026 17-49.pdf"). O modelo do PDF (1, 2 ou 3) é definido por tipo de prontuário na configuração da clínica.
 
 ## 7. Excluir um rascunho
 
@@ -133,9 +129,8 @@ A lixeira aparece só nos seus rascunhos (situação Digitação).
 | Situação do rascunho | O que a exclusão faz |
 |---|---|
 | Nenhuma alínea salva | Apaga o prontuário de vez (junto com as tags). |
-| Já tem texto salvo | Marca como excluído: some da lista, mas o registro é preservado no banco. |
+| Já tem texto salvo | Marca como excluído: some da lista, mas o registro é preservado no sistema. |
 
-> ⚠️ Correção feita nesta documentação: excluir um rascunho que tinha tag (inclusive a automática) falhava em silêncio, porque a tag impedia a exclusão no banco. Agora as tags saem junto (testado com o rascunho criado durante o teste).
 
 ## 8. Ver prontuários de outros profissionais
 

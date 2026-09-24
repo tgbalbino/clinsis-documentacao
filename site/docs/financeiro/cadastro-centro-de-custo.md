@@ -4,12 +4,11 @@ _Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Cadastro-Centro-de-Custo/Documentacao_Cadastro_Centro_de_Custo.pdf)
-- [📄 Manual simplificado](../assets/Cadastro-Centro-de-Custo/Documentacao_Cadastro_Centro_de_Custo_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Cadastro-Centro-de-Custo/Documentacao_Cadastro_Centro_de_Custo_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/mUPp2HgJV6I)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 17/09/2026
 
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
-Vídeo narrado desta rotina: `video-cadastro-centro-de-custo.mp4`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/mUPp2HgJV6I](https://youtu.be/mUPp2HgJV6I)
 ---
 
 ## Diferença entre Plano de Conta e Centro de Custo
@@ -38,10 +36,10 @@ Vídeo narrado desta rotina: `video-cadastro-centro-de-custo.mp4`
 Clique em Novo. A tela é bem simples: só pede a Descrição do setor e se ele está Ativo. No exemplo abaixo, criamos o centro de custo "FISIOTERAPIA".
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Descrição | Nome do setor/área da clínica, como vai aparecer em todos os relatórios e telas financeiras. | Obrigatório; máx. 100 caracteres |
-| Ativo | Centros inativos continuam existindo (para não quebrar lançamentos antigos), mas somem das listas de seleção ao lançar novas contas a pagar/receber. | CentroCustoController.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Descrição | Nome do setor/área da clínica, como vai aparecer em todos os relatórios e telas financeiras. *(obrigatório)* |
+| Ativo | Centros inativos continuam existindo (para não quebrar lançamentos antigos), mas somem das listas de seleção ao lançar novas contas a pagar/receber. |
 
 
 ## Filtrando centros de custo cadastrados

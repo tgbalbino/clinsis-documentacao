@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 O Checkin registra a chegada do paciente na clínica no dia da consulta/sessão. Quando o paciente tem um horário AGENDADO PARA HOJE que é cobrado na hora (ex.: particular, pagamento no ato), o Checkin também mostra a cobrança e permite lançar o pagamento — nesse caso, o sistema gera automaticamente uma Conta a Receber já paga. Pré-requisito importante: para o Checkin com pagamento funcionar, a clínica precisa ter configurado, na tela de Parâmetros do sistema, qual Plano de Conta, Centro de Custo e Conta Financeira usar para os recebimentos do Checkin — sem isso configurado corretamente (apontando para cadastros que realmente existem), o sistema recusa o lançamento.
 
-Vídeo narrado desta rotina: `video-checkin-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/6usoK6x4e3I](https://youtu.be/6usoK6x4e3I)
 ---
 
 ## Tela inicial

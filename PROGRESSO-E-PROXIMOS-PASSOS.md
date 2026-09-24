@@ -68,3 +68,10 @@ Detalhado nas memórias `documentacao-usuario-padrao-video-com-marca`, `document
 4. `montar_video.py` → `gerar_legendas.py` → `queimar_legendas.py`.
 5. `marca/gerar_frames.py "<Título da Rotina>"` → `marca/montar_intro_outro.py` → `marca/aplicar_intro_outro.py` (com legenda e sem legenda).
 6. Copiar PDFs/MD/vídeos + pasta `scripts/` para `Documentacao-Entrega/<Rotina>/`.
+
+## 21. Manual Base do ClinSis (23/09/2026)
+PDF completo + simplificado + MD prontos em `Manual-Base-ClinSis/` e incluídos no site MkDocs (categoria "Introdução"). Vídeos (com/sem legenda, ~3m55s) entregues; pipeline reutilizável em `scripts/pipeline-video/` (usa a variável GCP_TTS_KEY, chave pedida a cada sessão).
+
+## 22. Área do Profissional (24/09/2026)
+PDF completo + simplificado + MD + vídeos (com/sem legenda, ~3m38s) em `Area-do-Profissional/`, feitos com usuário de perfil Profissional (login de teste 55555555555). Link do YouTube ainda pendente (a capa do PDF cita o nome do arquivo até o link existir).
+Site: agora só o PDF simplificado é publicado e o texto é limpo de informação técnica (ver `limpar_para_usuario_final` em `site/scripts/gerar_site_docs.py`).

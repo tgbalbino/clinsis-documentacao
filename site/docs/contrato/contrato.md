@@ -4,12 +4,11 @@ _Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, re
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Contrato/Documentacao_Contrato.pdf)
-- [📄 Manual simplificado](../assets/Contrato/Documentacao_Contrato_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Contrato/Documentacao_Contrato_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/c1ki58j_khQ)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 18/09/2026
 
 Contrato formaliza um pacote de sessões vendido ao paciente (ex.: "10 sessões de Fisioterapia"), com um valor total e uma ou mais condições de pagamento (à vista, parcelado no cartão, etc.). Diferente de um agendamento avulso, o Contrato tem um ciclo de vida com fases — criado, assinado, fechado — e, uma vez fechado, gera automaticamente as parcelas em Contas a Receber. Este manual cobre a versão sem assinatura digital (assinatura "no papel", marcada manualmente no sistema); a versão com assinatura eletrônica pela D4Sign é documentada à parte.
 
-Vídeo narrado desta rotina: `video-contrato-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/c1ki58j_khQ](https://youtu.be/c1ki58j_khQ)
 ---
 
 > ⚠️ Para o contrato poder ser fechado/impresso, a clínica precisa ter um Layout de Contrato ativo configurado (o modelo/template que vira o PDF) — veja o manual separado "Layout de Contrato" para essa configuração.
@@ -34,13 +32,13 @@ Vídeo narrado desta rotina: `video-contrato-com-legenda.mp4 (ou -sem-legenda.mp
 
 O Contrato não tem um único campo de "status" — a fase em que ele está é resultado da combinação de algumas informações: se está Ativo, se já foi Assinado, se já foi Fechado e, depois de fechado, se está pendente de renovação. Na prática, um contrato passa pelas seguintes fases:
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Criado | Contrato recém-cadastrado. Serviços e condição de pagamento podem ser editados livremente. | Ativo=Sim, Assinado=Não, Fechado=Não |
-| Assinado | Marcado manualmente como assinado "no papel" (sem D4Sign). A partir daqui, os dados do contrato não podem mais ser alterados. | Assinado=Sim |
-| Fechado | Botão "Fechar Contrato" acionado: gera as parcelas em Contas a Receber e trava o contrato definitivamente. | Fechado=Sim, com data de fechamento |
-| Cancelado | Pode acontecer a qualquer momento antes de Fechado, desmarcando "Ativo" na edição do contrato. É definitivo — não existe botão para reativar. | Ativo=Não |
-| Vencendo / Renovado / Não vai renovar | Só depois de Fechado: controla se aquele contrato já venceu (ou está perto de vencer) e o que a clínica decidiu fazer a respeito. | Status de Renovação |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Criado | Contrato recém-cadastrado. Serviços e condição de pagamento podem ser editados livremente. |
+| Assinado | Marcado manualmente como assinado "no papel" (sem D4Sign). A partir daqui, os dados do contrato não podem mais ser alterados. |
+| Fechado | Botão "Fechar Contrato" acionado: gera as parcelas em Contas a Receber e trava o contrato definitivamente. |
+| Cancelado | Pode acontecer a qualquer momento antes de Fechado, desmarcando "Ativo" na edição do contrato. É definitivo — não existe botão para reativar. |
+| Vencendo / Renovado / Não vai renovar | Só depois de Fechado: controla se aquele contrato já venceu (ou está perto de vencer) e o que a clínica decidiu fazer a respeito. |
 
 > ⚠️ Um contrato assinado não pode mais ser editado — nem os serviços, nem a condição de pagamento. Revise tudo com atenção antes de marcar como assinado.
 

@@ -4,12 +4,11 @@ _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Movimentos-Financeiros/Documentacao_Movimentos_Financeiros.pdf)
-- [📄 Manual simplificado](../assets/Movimentos-Financeiros/Documentacao_Movimentos_Financeiros_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Movimentos-Financeiros/Documentacao_Movimentos_Financeiros_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/YEE6RAVUX8I)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 22/09/2026
 
 Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor e origem. A tela serve para conferir esse extrato contra o extrato real do banco (conciliação), fazer transferências entre contas do sistema e, se necessário, excluir um lançamento incorreto.
 
-Vídeo narrado desta rotina: `video-movimentos-financeiros-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/YEE6RAVUX8I](https://youtu.be/YEE6RAVUX8I)
 ---
 
 ## O que é e de onde vem cada linha
@@ -33,11 +31,11 @@ Vídeo narrado desta rotina: `video-movimentos-financeiros-com-legenda.mp4 (ou -
 Acesso em Financeiro → Movimentos → Movimentos Financeiros (rota financeiro/movimentos). Cada linha da lista representa um lançamento numa Conta Financeira, gerado automaticamente pelo sistema — nesta tela não existe um botão de "lançamento manual avulso"; as únicas formas de gerar uma linha nova aqui são as baixas do financeiro e a Transferência entre Contas (explicada mais abaixo).
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Baixa de Conta a Pagar | Toda vez que um pagamento é registrado com uma Conta Financeira informada, gera uma linha de Saída. | ContaPagarBaixaRepository.cs |
-| Baixa de Conta a Receber | Todo recebimento registrado com uma Conta Financeira informada gera uma linha de Entrada. | ContaReceberBaixaRepository.cs |
-| Transferência entre Contas | O botão "Nova Transferência" desta própria tela gera duas linhas ao mesmo tempo: uma Saída na conta de origem e uma Entrada na conta de destino. | MovimentoFinanceiroRepository.cs (Transferir) |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Baixa de Conta a Pagar | Toda vez que um pagamento é registrado com uma Conta Financeira informada, gera uma linha de Saída. |
+| Baixa de Conta a Receber | Todo recebimento registrado com uma Conta Financeira informada gera uma linha de Entrada. |
+| Transferência entre Contas | O botão "Nova Transferência" desta própria tela gera duas linhas ao mesmo tempo: uma Saída na conta de origem e uma Entrada na conta de destino. |
 
 > ⚠️ Se uma baixa de Conta a Pagar/Receber for cancelada ou excluída, o sistema remove automaticamente (some da lista) o Movimento Financeiro que ela tinha gerado — não é preciso fazer nada manualmente nesta tela nesse caso.
 
@@ -47,13 +45,13 @@ Acesso em Financeiro → Movimentos → Movimentos Financeiros (rota financeiro/
 
 ## Filtros
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Período - Início/Fim | Obrigatório; vem com o mês corrente por padrão. | DataMovimento |
-| Conta Financeira | Filtra só os lançamentos de uma conta. | IdContaFinanceira |
-| Tipo | Entrada ou Saída. | TipoMovimento |
-| Origem | Conta a Pagar, Conta a Receber ou Transferência. | Origem |
-| Conciliado | Sim, Não ou Todos. | Conciliado |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Período - Início/Fim | Obrigatório; vem com o mês corrente por padrão. |
+| Conta Financeira | Filtra só os lançamentos de uma conta. |
+| Tipo | Entrada ou Saída. |
+| Origem | Conta a Pagar, Conta a Receber ou Transferência. |
+| Conciliado | Sim, Não ou Todos. |
 
 ## Card "Conciliação"
 

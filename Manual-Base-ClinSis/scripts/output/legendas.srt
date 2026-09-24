@@ -1,0 +1,215 @@
+1
+00:00:00,400 --> 00:00:04,659
+O ClinSis é um sistema web de gestão para clínicas de saúde.
+
+2
+00:00:04,659 --> 00:00:10,125
+Reúne cadastros, agenda, atendimento, prontuário e financeiro em um só lugar,
+
+3
+00:00:10,125 --> 00:00:13,816
+e cada usuário vê apenas o que o seu perfil permite.
+
+4
+00:00:14,916 --> 00:00:19,607
+O fluxo segue uma ordem natural: primeiro os cadastros, depois a agenda,
+
+5
+00:00:19,607 --> 00:00:23,776
+em seguida o atendimento e o prontuário, e por fim o financeiro,
+
+6
+00:00:23,776 --> 00:00:26,252
+com Contas a Receber e Contas a Pagar.
+
+7
+00:00:27,352 --> 00:00:31,153
+O atendimento gera cobranças, que viram Contas a Receber.
+
+8
+00:00:31,153 --> 00:00:35,687
+Já as despesas e o pagamento dos profissionais viram Contas a Pagar.
+
+9
+00:00:36,787 --> 00:00:42,678
+Antes de agendar, cadastre a clínica, os setores, as especialidades, as operadoras,
+
+10
+00:00:42,678 --> 00:00:45,872
+os profissionais e os pacientes, nesta ordem.
+
+11
+00:00:46,972 --> 00:00:53,331
+O cadastro do profissional pede CPF, nome, locação e o nome que aparecerá na agenda.
+
+12
+00:00:53,331 --> 00:00:56,435
+Os campos com asterisco são obrigatórios.
+
+13
+00:00:57,535 --> 00:01:00,591
+O acesso é o login de quem usa o sistema.
+
+14
+00:01:00,591 --> 00:01:05,584
+Fica em Cadastros, Acessos, e só o administrador enxerga essa tela.
+
+15
+00:01:06,684 --> 00:01:09,707
+Para criar um acesso, informe o CPF.
+
+16
+00:01:09,707 --> 00:01:14,915
+Se a pessoa já tem usuário, basta escolher o perfil e o setor.
+
+17
+00:01:14,915 --> 00:01:20,206
+Se não tem, o sistema pede login, e-mail, nome, perfil e setor.
+
+18
+00:01:21,306 --> 00:01:27,184
+No menu de cada usuário você edita o perfil e o setor, desativa, define permissões,
+
+19
+00:01:27,184 --> 00:01:31,149
+bloqueia dias da semana ou reseta a senha para o padrão.
+
+20
+00:01:32,249 --> 00:01:33,637
+A agenda é mensal.
+
+21
+00:01:33,637 --> 00:01:37,955
+Em Agenda, clique em Novo para criar a agenda de um mês.
+
+22
+00:01:39,055 --> 00:01:40,483
+Escolha o mês e o ano.
+
+23
+00:01:40,483 --> 00:01:42,560
+Marcando copiar agenda anterior,
+
+24
+00:01:42,560 --> 00:01:47,493
+os horários dos profissionais e os pacientes vinculados vêm para o novo mês,
+
+25
+00:01:47,493 --> 00:01:48,986
+com as sessões zeradas.
+
+26
+00:01:50,085 --> 00:01:54,676
+Em Tabelas Auxiliares, Horários, cadastre os horários da clínica.
+
+27
+00:01:54,676 --> 00:02:00,468
+Use Gerar Horários para criar tudo de uma vez, informando início, fim e intervalo.
+
+28
+00:02:01,568 --> 00:02:02,646
+Depois, em Prof.
+
+29
+00:02:02,646 --> 00:02:06,687
+horários, escolha o profissional, o dia da semana ou a data,
+
+30
+00:02:06,687 --> 00:02:09,313
+marque os horários e clique em Incluir.
+
+31
+00:02:09,313 --> 00:02:14,162
+Também é possível transferir ou clonar horários para outro profissional.
+
+32
+00:02:15,262 --> 00:02:19,455
+Em Ver Agenda, cada linha é um horário de um profissional.
+
+33
+00:02:19,455 --> 00:02:22,130
+Linhas com o botão verde estão vagas.
+
+34
+00:02:22,130 --> 00:02:24,732
+Para agendar, clique no botão verde.
+
+35
+00:02:25,832 --> 00:02:30,653
+Escolha o paciente e preencha o atendimento: particular ou convênio,
+
+36
+00:02:30,653 --> 00:02:35,829
+número de sessões, forma de atendimento, especialidade, tipo de marcação,
+
+37
+00:02:35,829 --> 00:02:37,105
+método e programa.
+
+38
+00:02:38,205 --> 00:02:43,633
+A engrenagem da linha permite editar, marcar a sessão, adicionar outro paciente,
+
+39
+00:02:43,633 --> 00:02:46,143
+desmarcar, registrar entrada e saída,
+
+40
+00:02:46,143 --> 00:02:49,807
+trocar o profissional e gerar os horários do paciente.
+
+41
+00:02:50,907 --> 00:02:53,621
+Em Relatórios, escolha a data e o tipo.
+
+42
+00:02:53,621 --> 00:02:58,006
+O Atendimento Diário é a folha do dia com campos de assinatura.
+
+43
+00:02:58,006 --> 00:03:01,624
+A Presença e Ausência lista quem veio e quem faltou.
+
+44
+00:03:02,724 --> 00:03:07,452
+O Atendimento Diário lista, por profissional, os pacientes de cada horário,
+
+45
+00:03:07,452 --> 00:03:11,360
+com espaço para a assinatura do responsável e do profissional.
+
+46
+00:03:12,460 --> 00:03:17,883
+A opção Horários do Paciente gera uma folha com os dias e horários do paciente no mês,
+
+47
+00:03:17,883 --> 00:03:19,712
+para entregar ao responsável.
+
+48
+00:03:20,812 --> 00:03:26,018
+O Relatório da Agenda resume o mês com agendamentos, pacientes, sessões,
+
+49
+00:03:26,018 --> 00:03:27,536
+presentes e ausentes.
+
+50
+00:03:27,536 --> 00:03:31,586
+No menu Relatórios há ainda outros relatórios de agenda.
+
+51
+00:03:32,686 --> 00:03:37,296
+Resumindo: cadastre, crie a agenda, defina horários, agende,
+
+52
+00:03:37,296 --> 00:03:40,754
+marque as sessões e confira pelos relatórios.
+
+53
+00:03:40,754 --> 00:03:44,211
+Nos meses seguintes, copie a agenda anterior.
+
+54
+00:03:44,211 --> 00:03:45,210
+Bom trabalho!

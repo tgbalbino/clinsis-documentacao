@@ -6,8 +6,7 @@ Versão 1.0 — 22/09/2026
 
 A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
 
-Vídeo narrado desta rotina: `video-tabela-preco-pagamento-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/B5Jlz0kweIM](https://youtu.be/B5Jlz0kweIM)
 ---
 
 ## O conceito de "Tabela" (vigência)

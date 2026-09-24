@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.
 
-Vídeo narrado desta rotina: `video-contas-recorrentes-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/1qx_Mgp4T_Q](https://youtu.be/1qx_Mgp4T_Q)
 ---
 
 ## Tela inicial

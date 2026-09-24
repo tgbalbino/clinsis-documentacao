@@ -4,12 +4,11 @@ _Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento.pdf)
-- [📄 Manual simplificado](../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Tabela-de-Precos-Pagamento/Documentacao_Tabela_Preco_Pagamento_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/B5Jlz0kweIM)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 22/09/2026
 
 A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
 
-Vídeo narrado desta rotina: `video-tabela-preco-pagamento-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/B5Jlz0kweIM](https://youtu.be/B5Jlz0kweIM)
 ---
 
 ## O conceito de "Tabela" (vigência)
@@ -37,11 +35,11 @@ Cada linha da lista principal é uma tabela de valores (o sistema chama de "vig�
 
 ## Dentro de "Gerenciar": três abas
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Agenda | Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo). | AgendaVigenciaProfPagto |
-| Especialidades | Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico. | ConfigEspecPagto |
-| Profissionais | Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional. | ConfigProfissionalEspecialidadePagto |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Agenda | Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo). |
+| Especialidades | Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico. |
+| Profissionais | Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional. |
 
 
 
@@ -52,12 +50,12 @@ O card "Manutenção rápida de preços" aparece tanto na aba Especialidades (re
 
 Passo a passo:
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| 1. Percentual de reajuste | Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%. | ReajustePrecoController.cs |
-| 2. Campos a reajustar | Marque "Valor", "Valor convênio", ou os dois. | reajuste-preco.component.html |
-| 3. Calcular prévia | Mostra uma tabela comparando o valor atual com o valor novo, linha por linha — sem gravar nada ainda. | ReajustePreco/pagamento/simular |
-| 4. Confirmar reajuste | Só depois de conferir a prévia, grava de fato. Pede uma confirmação extra ("Confirma o reajuste de X valor(es) em Y registro(s)?"). | ReajustePreco/pagamento/confirmar |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| 1. Percentual de reajuste | Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%. |
+| 2. Campos a reajustar | Marque "Valor", "Valor convênio", ou os dois. |
+| 3. Calcular prévia | Mostra uma tabela comparando o valor atual com o valor novo, linha por linha — sem gravar nada ainda. |
+| 4. Confirmar reajuste | Só depois de conferir a prévia, grava de fato. Pede uma confirmação extra ("Confirma o reajuste de X valor(es) em Y registro(s)?"). |
 
 
 

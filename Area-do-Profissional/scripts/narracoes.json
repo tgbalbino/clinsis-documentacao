@@ -1,0 +1,77 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "p01-home.png",
+    "texto": "Esta é a Área do Profissional no ClinSis. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente. Na Home ficam os atalhos para agenda, prontuário, protocolo e atendimentos."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "p01-home.png",
+    "texto": "Logo abaixo, o resumo do dia mostra pacientes, presentes, relatórios e evoluções finalizados ou abertos, e as pendências gerais, que são tudo aquilo que você começou e ainda não finalizou."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "p02-agenda.png",
+    "texto": "Em Agenda, você vê os meses disponíveis. O botão Acessar abre a sua agenda resumida do mês. O profissional não cria nem remove agendas, isso é feito pelo administrador ou pelo atendente."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "p03-agenda-resumida.png",
+    "texto": "A agenda resumida mostra seus pacientes agendados no mês. Você pode alternar entre a visão por paciente e a visão em tabela, filtrar por dia, hora e paciente, e criar um prontuário com dois cliques no paciente."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "p03b-pacientes-dia.png",
+    "texto": "Em Pacientes do dia, escolha a data e clique em Pesquisar. A lista mostra hora, paciente, celular, programa e o status das sessões, e, se a clínica permitir, o botão Marcar Presença."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "p04-pacientes.png",
+    "texto": "No menu Pacientes, o profissional consulta a lista e abre o cadastro de um paciente existente. Ele não cadastra paciente novo, não baixa a ficha e não altera os dados adicionais."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "p05-prontuarios-filtro.png",
+    "texto": "No menu Prontuário, use Pesquisa para filtrar. O tipo de prontuário é obrigatório. Você pode filtrar também por paciente, datas de emissão e inclusão, situação e ordenação."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "p05b-prontuarios-lista.png",
+    "texto": "A lista mostra os seus prontuários, com a situação de cada um: Digitação ou Finalizada. O olho visualiza, o bloco amarelo abre para preencher, e a lixeira exclui, mas só prontuário seu que ainda está em digitação."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "p05c-prontuario-novo.png",
+    "texto": "Para criar um novo, clique em Novo, escolha o paciente da agenda atual ou busque por dados, e selecione a especialidade."
+  },
+  {
+    "audio": "10.wav",
+    "imagem": "p06c-prontuario-preencher.png",
+    "texto": "Ao preencher, informe a data de emissão, responda cada alínea, use Anterior e Próxima para navegar e clique em Salvar. Com todas as alíneas respondidas, clique em Finalizar. Depois de finalizado, só o administrador pode reabrir."
+  },
+  {
+    "audio": "11.wav",
+    "imagem": "p06-prontuario-visualizar.png",
+    "texto": "Com o prontuário finalizado, a visualização mostra todas as respostas, e a página de impressão permite imprimir ou baixar o documento."
+  },
+  {
+    "audio": "12.wav",
+    "imagem": "p07b-texto-padrao-novo.png",
+    "texto": "Em Textos padrões, você guarda textos que usa sempre. Escolha o tipo de prontuário, dê um título de até vinte caracteres, escreva o texto e salve. Ao usar um texto padrão em um campo, o que você já digitou é apagado."
+  },
+  {
+    "audio": "13.wav",
+    "imagem": "p08-atendimento.png",
+    "texto": "No menu Atendimento, quando o módulo Receituário está ativo, você lista seus atendimentos, com receita de medicamentos e pedido de exames, e pode finalizar e imprimir o atendimento completo, só os exames ou só os medicamentos."
+  },
+  {
+    "audio": "14.wav",
+    "imagem": "p09-protocolo.png",
+    "texto": "Em Protocolo, você acompanha solicitações com prazo entre as pessoas da clínica. A lista mostra solicitante, destinatários, tipo, status e prazo, e o botão Novo cria um novo protocolo."
+  },
+  {
+    "audio": "15.wav",
+    "imagem": "p10-perfil.png",
+    "texto": "Por fim, em Perfil você vê os dados da sua conta, pode alterar nome, e-mail e data de nascimento, e trocar a sua senha, informando a senha atual e a nova."
+  }
+]

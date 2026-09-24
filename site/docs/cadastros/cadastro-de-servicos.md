@@ -4,12 +4,11 @@ _Para que serve e onde é utilizado (Tabelas Aux. → Serviços)_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos.pdf)
-- [📄 Manual simplificado](../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Cadastro-de-Servicos/Documentacao_Cadastro_Servicos_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/uotROr-rj6s)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 22/09/2026
 
 Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
 
-Vídeo narrado desta rotina: `video-cadastro-servicos-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/uotROr-rj6s](https://youtu.be/uotROr-rj6s)
 ---
 
 ## O que é um Serviço
@@ -48,10 +46,10 @@ Dentro de um Contrato, cada linha de serviço contratado (Serviço + Quantidade 
 
 ## Outros pontos onde o Serviço aparece
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Cálculo do Valor Total do Contrato | A soma de todas as linhas de serviço do contrato define o valor total dele, usado depois para comparar com os pagamentos/acertos lançados ("Falta Acertar"). | ContratoServicoRepository.cs |
-| Renovação de Contrato | Ao renovar um contrato, o sistema copia automaticamente os mesmos Serviços/quantidades/valores para o contrato novo. Se o contrato antigo não tiver nenhum serviço, a renovação é bloqueada. | ContratoRenovacaoService.cs |
-| Impressão do Contrato | No layout de impressão do contrato (Tabelas Aux. → Layout Contrato), existe um placeholder "TabelaServicos" que renderiza a lista de serviços contratados no PDF/documento impresso. | contrato-laiout-config.component.ts |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Cálculo do Valor Total do Contrato | A soma de todas as linhas de serviço do contrato define o valor total dele, usado depois para comparar com os pagamentos/acertos lançados ("Falta Acertar"). |
+| Renovação de Contrato | Ao renovar um contrato, o sistema copia automaticamente os mesmos Serviços/quantidades/valores para o contrato novo. Se o contrato antigo não tiver nenhum serviço, a renovação é bloqueada. |
+| Impressão do Contrato | No layout de impressão do contrato (Tabelas Aux. → Layout Contrato), existe um placeholder "TabelaServicos" que renderiza a lista de serviços contratados no PDF/documento impresso. |
 
 > ⚠️ Um Serviço só pode ser adicionado, alterado ou removido de um contrato enquanto ele estiver ativo e ainda não assinado (nem com uma solicitação de assinatura eletrônica em andamento) — depois de assinado, o contrato fica travado.

@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
-Vídeo narrado desta rotina: `video-cadastro-centro-de-custo.mp4`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/mUPp2HgJV6I](https://youtu.be/mUPp2HgJV6I)
 ---
 
 ## Diferença entre Plano de Conta e Centro de Custo

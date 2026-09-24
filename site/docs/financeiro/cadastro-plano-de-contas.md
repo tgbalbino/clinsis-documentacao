@@ -4,12 +4,11 @@ _Como organizar as categorias de receitas e despesas da clínica_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas.pdf)
-- [📄 Manual simplificado](../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Cadastro-Plano-de-Contas/Documentacao_Cadastro_Plano_de_Contas_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/m4e2BMEsMZg)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 17/09/2026
 
 O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
 
-Vídeo narrado desta rotina: `video-cadastro-plano-de-contas.mp4`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/m4e2BMEsMZg](https://youtu.be/m4e2BMEsMZg)
 ---
 
 ## Duas formas de visualizar: Árvore ou Lista
@@ -39,13 +37,13 @@ A tela abre no modo Árvore, que agrupa as contas em três grupos fixos — 1 - 
 Clique em Novo. No exemplo abaixo, criamos a conta "MATERIAL DE ESCRITORIO" como uma conta filha de "2 - Despesas" — ou seja, ela aparece dentro do grupo de despesas, como mais uma categoria de gasto.
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Tipo | D (Despesa) ou R (Receita) — define se a conta vai aparecer no grupo de Receitas ou de Despesas. | Obrigatório; validado em PlanoContaController.cs (Criar/Alterar) |
-| Código | Gerado automaticamente pelo sistema ao criar uma conta nova (não é digitado) — segue a numeração do grupo/conta pai. | PlanoContaController.cs |
-| Descrição | Nome da categoria, como vai aparecer em todos os relatórios e telas financeiras (ex.: "Aluguel", "Consulta por Convênio"). | Obrigatório; máx. 100 caracteres |
-| Plano de Conta Pai | Opcional. Se preenchido, a nova conta vira uma "conta filha" da selecionada — usado para detalhar uma categoria maior. Sistema permite no máximo 2 níveis. | PlanoContaController.cs |
-| Ativo | Contas inativas continuam existindo (para não quebrar lançamentos antigos), mas somem das listas de seleção ao lançar novas contas a pagar/receber. | PlanoContaController.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Tipo | D (Despesa) ou R (Receita) — define se a conta vai aparecer no grupo de Receitas ou de Despesas. *(obrigatório)* |
+| Código | Gerado automaticamente pelo sistema ao criar uma conta nova (não é digitado) — segue a numeração do grupo/conta pai. |
+| Descrição | Nome da categoria, como vai aparecer em todos os relatórios e telas financeiras (ex.: "Aluguel", "Consulta por Convênio"). *(obrigatório)* |
+| Plano de Conta Pai | Opcional. Se preenchido, a nova conta vira uma "conta filha" da selecionada — usado para detalhar uma categoria maior. Sistema permite no máximo 2 níveis. |
+| Ativo | Contas inativas continuam existindo (para não quebrar lançamentos antigos), mas somem das listas de seleção ao lançar novas contas a pagar/receber. |
 
 
 ## Filtrando contas cadastradas

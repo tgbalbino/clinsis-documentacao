@@ -4,12 +4,11 @@ _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Conta-Financeira/Documentacao_Conta_Financeira.pdf)
-- [📄 Manual simplificado](../assets/Conta-Financeira/Documentacao_Conta_Financeira_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Conta-Financeira/Documentacao_Conta_Financeira_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/er1uv0qlUjk)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 18/09/2026
 
 A Conta Financeira é o "cofre" onde o dinheiro da clínica realmente entra e sai: uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta ele saiu — é isso que permite conferir o extrato do banco, saber o saldo de cada conta e montar o Fluxo de Caixa. Este manual explica o cadastro, onde ele é usado e, principalmente, a regra que amarra cada Conta Financeira às Formas de Pagamento permitidas nela.
 
-Vídeo narrado desta rotina: `video-conta-financeira-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/er1uv0qlUjk](https://youtu.be/er1uv0qlUjk)
 ---
 
 ## O que é e para que serve
@@ -40,15 +38,15 @@ O cadastro fica em Financeiro → Cadastros → Contas Financeiras (acesso do ad
 Clique em Novo e preencha. Só a Descrição é obrigatória; os demais campos são opcionais e servem para identificar a conta bancária.
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Descrição * | Nome que aparece em todas as telas de baixa, movimentos e fluxo de caixa. Sempre gravado em maiúsculas. | ContaFinanceira.Descricao |
-| Banco | Banco da conta (lista de bancos cadastrados). Deixe em branco para uma conta do tipo Caixa. | ContaFinanceira.IdBanco |
-| Agência | Agência bancária (até 20 caracteres). | ContaFinanceira.Agencia |
-| Conta | Número da conta (até 30 caracteres). | ContaFinanceira.Conta |
-| Chave PIX | Chave PIX da conta, só para consulta/identificação. | ContaFinanceira.ChavePix |
-| Ativo (só ao editar) | Conta inativa deixa de ser oferecida nas telas de baixa (só contas ativas aparecem na lista), mas o histórico é mantido. | ContaFinanceira.Ativo |
-| Tipo (badge Banco/Caixa) | Não é um campo: aparece como "Banco" se Banco/Agência/Conta estiverem preenchidos e como "Caixa" caso contrário. | Calculado na tela (conta-financeira-painel) |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Descrição * | Nome que aparece em todas as telas de baixa, movimentos e fluxo de caixa. Sempre gravado em maiúsculas. |
+| Banco | Banco da conta (lista de bancos cadastrados). Deixe em branco para uma conta do tipo Caixa. |
+| Agência | Agência bancária (até 20 caracteres). |
+| Conta | Número da conta (até 30 caracteres). |
+| Chave PIX | Chave PIX da conta, só para consulta/identificação. |
+| Ativo (só ao editar) | Conta inativa deixa de ser oferecida nas telas de baixa (só contas ativas aparecem na lista), mas o histórico é mantido. |
+| Tipo (badge Banco/Caixa) | Não é um campo: aparece como "Banco" se Banco/Agência/Conta estiverem preenchidos e como "Caixa" caso contrário. |
 
 
 
@@ -56,13 +54,13 @@ Clique em Novo e preencha. Só a Descrição é obrigatória; os demais campos s
 
 ## Onde a Conta Financeira é usada
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Contas a Pagar — baixa | Campo Conta Financeira (obrigatório): de qual conta o dinheiro saiu. Gera um movimento de Saída na conta. | ContaPagarBaixaRepository.cs |
-| Contas a Receber — baixa | Campo Conta Financeira (obrigatório na tela: "Informe a conta financeira"): em qual conta o dinheiro entrou. Gera um movimento de Entrada na conta. | ContaReceberBaixaRepository.cs |
-| Checkin de Paciente | A baixa automática do pagamento feito no Checkin usa a conta definida no parâmetro IdContaFinanceiraCheckin. | CheckinRepository.cs / Parametro |
-| Movimentos Financeiros | Extrato de todas as entradas/saídas, com filtro por conta. Também permite Nova Transferência entre duas contas. | MovimentoFinanceiro |
-| Fluxo de Caixa e Dashboard | Saldo, entradas e saídas por conta (quadro "Por Conta Financeira"). | MovimentoFinanceiro |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Contas a Pagar — baixa | Campo Conta Financeira (obrigatório): de qual conta o dinheiro saiu. Gera um movimento de Saída na conta. |
+| Contas a Receber — baixa | Campo Conta Financeira (obrigatório na tela: "Informe a conta financeira"): em qual conta o dinheiro entrou. Gera um movimento de Entrada na conta. |
+| Checkin de Paciente | A baixa automática do pagamento feito no Checkin usa a conta definida no parâmetro IdContaFinanceiraCheckin. |
+| Movimentos Financeiros | Extrato de todas as entradas/saídas, com filtro por conta. Também permite Nova Transferência entre duas contas. |
+| Fluxo de Caixa e Dashboard | Saldo, entradas e saídas por conta (quadro "Por Conta Financeira"). |
 
 
 
@@ -97,10 +95,10 @@ Exemplo 3 — Mesma regra em Contas a Pagar. A baixa de uma Conta a Pagar com Ca
 
 > ⚠️ Se aparecer essa mensagem no dia a dia, há duas saídas: escolher outra Conta Financeira que aceite aquela forma (ex.: a conta bancária, para cartão) ou habilitar a forma na conta desejada pelo botão "Formas de pagamento desta conta".
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Regra de validação | Ao gravar a baixa, o sistema consulta se existe o par (Conta Financeira, Forma de Pagamento) habilitado. Se não existir, recusa e não grava nada. | ContaFinanceiraPagamentoForma |
-| Onde é conferida | Baixa de Conta a Receber, baixa de Conta a Pagar e pagamento do Checkin (que usa a conta do parâmetro IdContaFinanceiraCheckin). | ContaReceberBaixaRepository.cs / ContaPagarBaixaRepository.cs / CheckinRepository.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Regra de validação | Ao gravar a baixa, o sistema consulta se existe o par (Conta Financeira, Forma de Pagamento) habilitado. Se não existir, recusa e não grava nada. |
+| Onde é conferida | Baixa de Conta a Receber, baixa de Conta a Pagar e pagamento do Checkin (que usa a conta do parâmetro IdContaFinanceiraCheckin). |
 
 ## Conta Financeira do Checkin
 

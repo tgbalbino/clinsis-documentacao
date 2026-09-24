@@ -6,8 +6,7 @@ Versão 1.0 — 22/09/2026
 
 Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
 
-Vídeo narrado desta rotina: `video-cadastro-servicos-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/uotROr-rj6s](https://youtu.be/uotROr-rj6s)
 ---
 
 ## O que é um Serviço

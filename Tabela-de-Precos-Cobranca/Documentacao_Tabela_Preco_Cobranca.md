@@ -6,8 +6,7 @@ Versão 1.0 — 22/09/2026
 
 A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
 
-Vídeo narrado desta rotina: `video-tabela-preco-cobranca-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/mFThg03z-RY](https://youtu.be/mFThg03z-RY)
 ---
 
 ## Diferença em relação à Tabela de Pagamento

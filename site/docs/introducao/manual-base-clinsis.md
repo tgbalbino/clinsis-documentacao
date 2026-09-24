@@ -4,12 +4,11 @@ _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as imp
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Manual-Base-ClinSis/Documentacao_Manual_Base_ClinSis.pdf)
-- [📄 Manual simplificado](../assets/Manual-Base-ClinSis/Documentacao_Manual_Base_ClinSis_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Manual-Base-ClinSis/Documentacao_Manual_Base_ClinSis_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/r7iJc03azkw)
 
 ## Conteúdo completo do manual
 
@@ -24,7 +23,7 @@ Versão 1.0 — 23/09/2026
 
 Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda.
 
-Vídeo narrado desta rotina: `video-manual-base-clinsis-com-legenda.mp4 (ou -sem-legenda.mp4)`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/r7iJc03azkw](https://youtu.be/r7iJc03azkw)
 
 ---
 
@@ -82,13 +81,13 @@ Cada usuário tem um perfil principal e, se necessário, um perfil secundário:
 Tudo no ClinSis segue uma ordem natural. Cada etapa depende da anterior:
 
 
-| Etapa | O que acontece | Onde fazer |
-|---|---|---|
-| 1. Cadastros | Cadastra-se a clínica, os setores, as especialidades, os profissionais, os pacientes, os convênios e os acessos (logins) da equipe. | Menu Cadastros e Tabelas Aux. |
-| 2. Agenda | Cria-se a agenda do mês, definem-se os horários de cada profissional e vinculam-se os pacientes aos horários. | Menu Agenda |
-| 3. Atendimento e Prontuário | A cada sessão marca-se presença ou ausência; o profissional registra o prontuário do paciente. | Agenda (sessões), menus Atendimento e Prontuário |
-| 4. Contas a Receber | O atendimento gera cobrança: pelo Check-in (particular), pela Cobrança de Paciente ou pelo faturamento de convênio. Cada cobrança vira uma Conta a Receber, que é baixada quando o pagamento entra. | Financeiro → Contas a Receber |
-| 4. Contas a Pagar | O que a clínica deve pagar — despesas, fornecedores e o pagamento dos profissionais calculado a partir das sessões realizadas — vira Conta a Pagar, baixada quando é paga. | Financeiro → Contas a Pagar |
+| Etapa | O que acontece |
+|---|---|
+| 1. Cadastros | Cadastra-se a clínica, os setores, as especialidades, os profissionais, os pacientes, os convênios e os acessos (logins) da equipe. |
+| 2. Agenda | Cria-se a agenda do mês, definem-se os horários de cada profissional e vinculam-se os pacientes aos horários. |
+| 3. Atendimento e Prontuário | A cada sessão marca-se presença ou ausência; o profissional registra o prontuário do paciente. |
+| 4. Contas a Receber | O atendimento gera cobrança: pelo Check-in (particular), pela Cobrança de Paciente ou pelo faturamento de convênio. Cada cobrança vira uma Conta a Receber, que é baixada quando o pagamento entra. |
+| 4. Contas a Pagar | O que a clínica deve pagar — despesas, fornecedores e o pagamento dos profissionais calculado a partir das sessões realizadas — vira Conta a Pagar, baixada quando é paga. |
 
 
 
@@ -99,7 +98,7 @@ Cada uma dessas rotinas financeiras e clínicas tem manual próprio nesta mesma 
 Antes de criar qualquer agenda, é preciso que estes cadastros existam. A ordem abaixo evita retrabalho, pois um depende do outro:
 
 | Ordem | Cadastro | Menu | Por que é necessário |
-|---|---|---|---|
+|---|---|
 | 1 | Clínica | Cadastros → Clínica | Dados da clínica (endereço, contato, responsável) e contadores de pacientes, profissionais e acessos. |
 | 2 | Setores | Cadastros → Setores | Áreas da equipe (ex.: Recepção, Contabilidade). Usado ao criar o acesso de cada usuário. |
 | 3 | Especialidades | Tabelas Aux. → Especialidade | Tipos de atendimento (Fisioterapia, Psicologia…). Cada agendamento tem uma especialidade. |
@@ -207,10 +206,10 @@ A agenda do ClinSis é mensal: existe uma agenda para cada mês/ano. Ela fica em
 
 Há dois níveis de horários, e é importante não confundir:
 
-| Nível | Onde | O que define |
-|---|---|---|
-| Horários da clínica | Tabelas Aux. → Horários | A lista geral de horários que a clínica trabalha (ex.: 07:00, 07:30, 08:00…). É o "cardápio" de horários. |
-| Horários do profissional | Agenda → Prof. horários | Quais desses horários cada profissional atende, em cada dia da semana (ou em datas específicas), naquele mês. |
+| Nível | Onde |
+|---|---|
+| Horários da clínica | Tabelas Aux. → Horários |
+| Horários do profissional | Agenda → Prof. horários |
 
 ## Horários da clínica (Tabelas Aux. → Horários)
 
@@ -301,15 +300,15 @@ O botão de engrenagem de cada linha abre o menu de ações:
 
 O ClinSis oferece impressões/relatórios da agenda para situações diferentes do dia a dia. A tabela resume qual usar em cada caso:
 
-| Impressão | Onde encontrar | Objetivo |
-|---|---|---|
-| Atendimento Diário (PDF) | Ver Agenda → Relatórios | Lista do dia, por profissional, com horário, paciente e campos de assinatura do responsável e convênio. Serve para a recepção conferir e colher assinaturas. |
-| Marcação - Presença/Ausência (PDF) | Ver Agenda → Relatórios | Lista de presença do dia: sessão, profissional, paciente, mãe e o status marcado. Serve para conferência de quem veio e quem faltou. |
-| Marcação sessão dia (tela) | Ver Agenda → Relatórios | Mostra na tela as sessões marcadas naquele dia: quem marcou, status, data da sessão e totais por status. Serve para auditar as marcações. |
-| Horários do paciente (PDF) | Ver Agenda → engrenagem da linha → Horários Pac. | Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável. |
-| Exportar agenda (CSV) | Ver Agenda → Exportar | Leva a agenda para planilha, com filtros ou completa, para análises próprias. |
-| Relatório da Agenda (tela) | Agenda → Relatório (na linha do mês) | Resumo do mês: agendamentos, pacientes, sessões, presentes, ausentes e desmarcações, por profissional ou todos. |
-| Relatórios de Agenda (menu Relatórios) | Relatórios → Agenda | Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária e Atendimentos Sequenciais, com filtros próprios. |
+| Impressão | Onde encontrar |
+|---|---|
+| Atendimento Diário (PDF) | Ver Agenda → Relatórios |
+| Marcação - Presença/Ausência (PDF) | Ver Agenda → Relatórios |
+| Marcação sessão dia (tela) | Ver Agenda → Relatórios |
+| Horários do paciente (PDF) | Ver Agenda → engrenagem da linha → Horários Pac. |
+| Exportar agenda (CSV) | Ver Agenda → Exportar |
+| Relatório da Agenda (tela) | Agenda → Relatório (na linha do mês) |
+| Relatórios de Agenda (menu Relatórios) | Relatórios → Agenda |
 
 ## Relatórios do dia (Ver Agenda → Relatórios)
 
@@ -345,30 +344,18 @@ Impressão individual: mês/ano, clínica, nome do paciente, usuário que gerou 
 
 # 9. Resumo: da implantação ao primeiro agendamento
 
-| Passo | Ação | Onde |
-|---|---|---|
-| 1 | Conferir os dados da clínica | Cadastros → Clínica |
-| 2 | Cadastrar setores | Cadastros → Setores |
-| 3 | Cadastrar especialidades e operadoras | Tabelas Aux. → Especialidade; Cadastros → Operadora |
-| 4 | Cadastrar profissionais e pacientes | Cadastros → Profissional / Paciente |
-| 5 | Cadastrar os horários da clínica | Tabelas Aux. → Horários (Gerar Horários) |
-| 6 | Criar os acessos da equipe | Cadastros → Acessos |
-| 7 | Criar a agenda do mês | Agenda → Novo |
-| 8 | Definir os horários de cada profissional | Agenda → Prof. horários |
-| 9 | Vincular os pacientes aos horários | Agenda → Ver Agenda → (+) |
-| 10 | Marcar presença/ausência a cada sessão | Ver Agenda → engrenagem → Sessão |
-| 11 | Imprimir/conferir | Ver Agenda → Relatórios; Relatórios → Agenda |
+| Passo | Ação |
+|---|---|
+| 1 | Conferir os dados da clínica |
+| 2 | Cadastrar setores |
+| 3 | Cadastrar especialidades e operadoras |
+| 4 | Cadastrar profissionais e pacientes |
+| 5 | Cadastrar os horários da clínica |
+| 6 | Criar os acessos da equipe |
+| 7 | Criar a agenda do mês |
+| 8 | Definir os horários de cada profissional |
+| 9 | Vincular os pacientes aos horários |
+| 10 | Marcar presença/ausência a cada sessão |
+| 11 | Imprimir/conferir |
 
 > ⚠️ A partir do segundo mês, o caminho é bem mais curto: criar a agenda copiando a anterior (passo 7 com "Copiar agenda anterior") já traz horários e pacientes. Só é preciso ajustar as exceções.
-
-# Anexo técnico (somente versão completa)
-
-| Assunto | Detalhe técnico |
-|---|---|
-| Cópia da agenda | Ao criar com "Copiar agenda anterior", a API chama a stored procedure AgendaAbertura, que cria a linha em Agenda (com IdAgendaCopy apontando para a origem), copia AgendaProfissionalDia (horários) e AgendaProfissionalDiaPac (pacientes vinculados) e, nesta última, zera IDSTATUS_S1..S5 (-1) e DATAS1..S5 (nulas). |
-| Modo de cópia | O campo Clinica.CopiaAgenda define o que é copiado: T = tudo, S = só horários semanais (Data = 1900-01-01), D = só horários por data específica. |
-| Unicidade | A API impede duas agendas no mesmo mês/ano da clínica (mensagem "Já existe uma agenda criada para..."). |
-| Horários da clínica | Tabela de horários ativos consultada na montagem da grade de Prof. horários (tela Tabelas Aux. → Horários, rota /aux/horarios). |
-| Perfis (IdPerfil) | Profissional = 10, Atendente = 20, Administrador = 50. Não é permitido 50 + 20 (nem 20 + 50) como principal + secundário. |
-| Rotas do front | /agenda, /agenda/profissional, /agendamento, /aux/horarios, /acessos, /acessos/permissoes, /acessos/bloqueiodias, /acessos/logs, /relatorio/agenda, /relatorios. |
-| Impressões | Atendimento Diário: RelatorioController.PdfAgendaAtendimentoDia; Presença/Ausência: pdf/agenda/presentesAusentes (PresentesAusentesPDF); Horários do paciente: AgendaPacienteHorariosPDF. |

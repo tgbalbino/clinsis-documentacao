@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
 
-Vídeo narrado desta rotina: `video-contas-a-pagar-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/dlllj9on1gQ](https://youtu.be/dlllj9on1gQ)
 ---
 
 ## Indicadores do topo

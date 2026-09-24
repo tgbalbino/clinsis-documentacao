@@ -4,12 +4,11 @@ _O modelo (template) usado para gerar o PDF de todos os contratos da clínica_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Layout-de-Contrato/Documentacao_Layout_Contrato.pdf)
-- [📄 Manual simplificado](../assets/Layout-de-Contrato/Documentacao_Layout_Contrato_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Layout-de-Contrato/Documentacao_Layout_Contrato_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/w-cCTVEKQng)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 18/09/2026
 
 Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
 
-Vídeo narrado desta rotina: `video-layout-contrato-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)
 ---
 
 ## Onde fica e o que é
@@ -41,13 +39,13 @@ Ao clicar em "Editar" (ou "Novo layout"), aparece uma caixa de texto grande para
 
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Dados da clínica | {{ClinicaNomeFantasia}}, {{ClinicaRazaoSocial}}, {{ClinicaCnpj}}, {{ClinicaEndereco}}, {{ClinicaCidade}}, {{ClinicaUf}}, {{ClinicaTelefone}}, {{ClinicaEmail}}, {{ClinicaResponsavelNome}}, {{ClinicaResponsavelCPF}} | PDFContratoService.cs |
-| Dados do contrato | {{ContratoId}}, {{ContratoDataEmissao}}, {{ContratoDataVencimento}}, {{ContratoValorTotal}}, {{ContratoObservacao}}, {{DataAtual}} (data em que o PDF foi gerado) | PDFContratoService.cs |
-| Dados do paciente | {{PacienteNome}}, {{PacienteCPF}}, {{PacienteDataNascimento}}, {{PacienteEndereco}} | PDFContratoService.cs |
-| Dados do responsável | {{ResponsavelNome}}, {{ResponsavelCPF}}, {{ResponsavelEndereco}} (se não houver responsável cadastrado, usam os dados do próprio paciente), e {{RelacaoResponsavelLinha}} (linha "Relação com o paciente" — só aparece quando há responsável com relação preenchida) | PDFContratoService.cs |
-| Tabelas prontas | {{TabelaServicos}} (lista os serviços contratados: nome, quantidade, valor unitário e total) e {{TabelaPagamentos}} (lista as condições de pagamento: forma, valor, parcelas, 1ª e última parcela) — cada uma vira uma tabela pronta no PDF | PDFContratoService.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Dados da clínica | {{ClinicaNomeFantasia}}, {{ClinicaRazaoSocial}}, {{ClinicaCnpj}}, {{ClinicaEndereco}}, {{ClinicaCidade}}, {{ClinicaUf}}, {{ClinicaTelefone}}, {{ClinicaEmail}}, {{ClinicaResponsavelNome}}, {{ClinicaResponsavelCPF}} |
+| Dados do contrato | {{ContratoId}}, {{ContratoDataEmissao}}, {{ContratoDataVencimento}}, {{ContratoValorTotal}}, {{ContratoObservacao}}, {{DataAtual}} (data em que o PDF foi gerado) |
+| Dados do paciente | {{PacienteNome}}, {{PacienteCPF}}, {{PacienteDataNascimento}}, {{PacienteEndereco}} |
+| Dados do responsável | {{ResponsavelNome}}, {{ResponsavelCPF}}, {{ResponsavelEndereco}} (se não houver responsável cadastrado, usam os dados do próprio paciente), e {{RelacaoResponsavelLinha}} (linha "Relação com o paciente" — só aparece quando há responsável com relação preenchida) |
+| Tabelas prontas | {{TabelaServicos}} (lista os serviços contratados: nome, quantidade, valor unitário e total) e {{TabelaPagamentos}} (lista as condições de pagamento: forma, valor, parcelas, 1ª e última parcela) — cada uma vira uma tabela pronta no PDF |
 
 > ⚠️ A substituição é por texto exato — {{PacienteNome}}, sem espaços e com a grafia exatamente como na lista. Copiar o código da própria lista de variáveis evita erro de digitação.
 

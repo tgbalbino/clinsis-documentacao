@@ -4,12 +4,11 @@ _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Tabela-de-Precos-Cobranca/Documentacao_Tabela_Preco_Cobranca.pdf)
-- [📄 Manual simplificado](../assets/Tabela-de-Precos-Cobranca/Documentacao_Tabela_Preco_Cobranca_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Tabela-de-Precos-Cobranca/Documentacao_Tabela_Preco_Cobranca_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/mFThg03z-RY)
 
 ## Conteúdo completo do manual
 
@@ -24,19 +23,18 @@ Versão 1.0 — 22/09/2026
 
 A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
 
-Vídeo narrado desta rotina: `video-tabela-preco-cobranca-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/mFThg03z-RY](https://youtu.be/mFThg03z-RY)
 ---
 
 ## Diferença em relação à Tabela de Pagamento
 
 Ao contrário da Tabela de Preços para Pagamento, aqui não existe o conceito de várias tabelas/vigências — é uma configuração única e sempre "viva" por clínica, sem histórico de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente de valor.
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Especialidade | Valor padrão por Especialidade, usado quando não há valor específico do profissional nem da operadora. | ConfigCobrancaEspecPagto |
-| Profissional | Valor específico por Profissional × Especialidade, que sobrepõe o valor padrão só para aquele profissional. | ConfigCobrancaProfEspecPagto |
-| Operadora | Valor específico por Operadora (convênio) × Especialidade, que sobrepõe o valor padrão para atendimentos daquela operadora. | ConfigCobrancaOperadoraEspecPagto |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Especialidade | Valor padrão por Especialidade, usado quando não há valor específico do profissional nem da operadora. |
+| Profissional | Valor específico por Profissional × Especialidade, que sobrepõe o valor padrão só para aquele profissional. |
+| Operadora | Valor específico por Operadora (convênio) × Especialidade, que sobrepõe o valor padrão para atendimentos daquela operadora. |
 
 
 
@@ -46,10 +44,10 @@ Ao contrário da Tabela de Preços para Pagamento, aqui não existe o conceito d
 O mesmo card "Manutenção rápida de preços" usado na Tabela de Pagamento aparece aqui também, nas três abas — reajustando sempre o escopo da aba em que está (Especialidade = valor padrão geral; Profissional = só daquele profissional; Operadora = só daquela operadora).
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| 1. Percentual de reajuste | Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%. | ReajustePrecoController.cs |
-| 2. Campos a reajustar | Marque "Valor cobrado", "Valor social", ou os dois. | reajuste-preco.component.html |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| 1. Percentual de reajuste | Número positivo (aumento) ou negativo (desconto). Limite: maior que -100% e até 1000%. |
+| 2. Campos a reajustar | Marque "Valor cobrado", "Valor social", ou os dois. |
 | 3. Calcular prévia | Mostra o valor atual e o valor novo de cada especialidade — sem gravar nada ainda. | ReajustePreco/cobranca(/profissional\|/operadora)/simular |
 | 4. Confirmar reajuste | Só depois de conferir a prévia, grava de fato, com uma confirmação extra. | ReajustePreco/cobranca(/profissional\|/operadora)/confirmar |
 

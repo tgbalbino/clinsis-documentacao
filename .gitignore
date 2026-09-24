@@ -1,2 +1,5 @@
 site/publicado/
 site/.cache/
+
+# cópias duplicadas de ativos de marca usadas só para gerar intro/outro (originais em Marca-ClinSis)
+**/pipeline-video/marca/

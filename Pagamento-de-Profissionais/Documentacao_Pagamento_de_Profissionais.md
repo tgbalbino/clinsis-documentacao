@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
 
-Vídeo narrado desta rotina: `video-pagamento-profissionais-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/0dVv7ctVDPE](https://youtu.be/0dVv7ctVDPE)
 ---
 
 ## Configuração prévia: Tabela de Preços para Pagamento

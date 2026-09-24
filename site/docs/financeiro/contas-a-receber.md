@@ -4,12 +4,11 @@ _Cadastrar e receber os valores que os pacientes/convênios devem à clínica_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Contas-a-Receber/Documentacao_Contas_a_Receber.pdf)
-- [📄 Manual simplificado](../assets/Contas-a-Receber/Documentacao_Contas_a_Receber_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Contas-a-Receber/Documentacao_Contas_a_Receber_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/72i8FLOKhII)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 17/09/2026
 
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
-Vídeo narrado desta rotina: `video-contas-a-receber-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/72i8FLOKhII](https://youtu.be/72i8FLOKhII)
 ---
 
 ## Indicadores e como abrir a lista
@@ -40,13 +38,13 @@ O botão Novo abre um assistente de parcelas automáticas: você escolhe o pacie
 
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Paciente | Para quem é o recebimento (quem deve o valor à clínica). | Obrigatório |
-| Plano de Contas / Centro de Custo | Mesma categoria/setor para todas as parcelas geradas. | Obrigatório; precisam existir antes |
-| Qtd Parcelas | Em quantas vezes o valor será dividido. | ContaReceberController.cs |
-| Data de Vencimento Base | Vencimento da primeira parcela; as seguintes são geradas a partir dela (normalmente +1 mês por parcela). | ContaReceberController.cs |
-| Tipo Valor | "Valor por parcela" (cada uma vale o valor informado) ou "Valor Total" (o valor informado é dividido pelas parcelas). | Obrigatório |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Paciente | Para quem é o recebimento (quem deve o valor à clínica). *(obrigatório)* |
+| Plano de Contas / Centro de Custo | Mesma categoria/setor para todas as parcelas geradas. *(obrigatório)* |
+| Qtd Parcelas | Em quantas vezes o valor será dividido. |
+| Data de Vencimento Base | Vencimento da primeira parcela; as seguintes são geradas a partir dela (normalmente +1 mês por parcela). |
+| Tipo Valor | "Valor por parcela" (cada uma vale o valor informado) ou "Valor Total" (o valor informado é dividido pelas parcelas). *(obrigatório)* |
 
 
 ## Recebendo (baixando) uma parcela

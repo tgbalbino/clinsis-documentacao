@@ -4,12 +4,11 @@ _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Cobranca-de-Paciente/Documentacao_Cobranca_de_Paciente.pdf)
-- [📄 Manual simplificado](../assets/Cobranca-de-Paciente/Documentacao_Cobranca_de_Paciente_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Cobranca-de-Paciente/Documentacao_Cobranca_de_Paciente_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/AdzPSoJ7_4I)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 18/09/2026
 
 Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
 
-Vídeo narrado desta rotina: `video-cobranca-de-paciente-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
 ---
 
 ## Configuração prévia: Tabela de Preços para Cobrança
@@ -33,11 +31,11 @@ Vídeo narrado desta rotina: `video-cobranca-de-paciente-com-legenda.mp4 (ou -se
 Em Tabelas Aux. → Tab. Cobrança (rota /aux/cobranca/gerenciar) fica a configuração dos valores cobrados de cada paciente particular, organizada em três abas:
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Aba Especialidade | Valor padrão cobrado por sessão de cada especialidade, aplicado a todos os profissionais que não tiverem um valor específico. | ConfigCobrancaEspecPagtoController.cs |
-| Aba Profissional | Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidade quando presente. | ConfigCobrancaProfEspecPagtoController.cs |
-| Aba Operadora | Valores específicos por Operadora de convênio (colunas Valor e Valor Social), usados quando o relatório de cobrança de convênio for aplicável. | ConfigCobrancaRepository.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Aba Especialidade | Valor padrão cobrado por sessão de cada especialidade, aplicado a todos os profissionais que não tiverem um valor específico. |
+| Aba Profissional | Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidade quando presente. |
+| Aba Operadora | Valores específicos por Operadora de convênio (colunas Valor e Valor Social), usados quando o relatório de cobrança de convênio for aplicável. |
 
 
 

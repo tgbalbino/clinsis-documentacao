@@ -6,8 +6,7 @@ Versão 1.0 — 23/09/2026
 
 Este manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". A conferência gerencial (auditoria) tem manual próprio.
 
-Vídeo narrado desta rotina: `video-prontuario-uso-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/XPTXN2u41Ps](https://youtu.be/XPTXN2u41Ps)
 ---
 
 ## Quem faz o quê

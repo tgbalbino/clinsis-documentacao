@@ -4,12 +4,11 @@ _Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e At
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria.pdf)
-- [📄 Manual simplificado](../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Prontuario-Auditoria/Documentacao_Prontuario_Auditoria_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/xRpzTXrGA3Y)
 
 ## Conteúdo completo do manual
 
@@ -24,17 +23,16 @@ Versão 1.0 — 23/09/2026
 
 Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
 
-Vídeo narrado desta rotina: `video-prontuario-auditoria-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/xRpzTXrGA3Y](https://youtu.be/xRpzTXrGA3Y)
 ---
 
 ## Para que serve cada relatório
 
-| Relatório | Pergunta que responde | Onde |
-|---|---|---|
-| Auditoria de Prontuários | Cada profissional fez prontuário dos atendimentos que realizou no mês? | Relatórios (painel) → Auditoria |
-| Produção de Prontuários | Quantos prontuários foram finalizados, estão em digitação ou foram excluídos por profissional e tipo, em um período? | Relatórios (painel) → Produção de Prontuários |
-| Atendimentos Sequenciais | Quais atendimentos em horários seguidos o sistema junta como um só na auditoria? | Relatórios (painel) → Atendimentos Sequenciais |
+| Relatório | Pergunta que responde |
+|---|---|
+| Auditoria de Prontuários | Cada profissional fez prontuário dos atendimentos que realizou no mês? |
+| Produção de Prontuários | Quantos prontuários foram finalizados, estão em digitação ou foram excluídos por profissional e tipo, em um período? |
+| Atendimentos Sequenciais | Quais atendimentos em horários seguidos o sistema junta como um só na auditoria? |
 
 ## 1. Auditoria de Prontuários
 
@@ -49,12 +47,12 @@ Vídeo narrado desta rotina: `video-prontuario-auditoria-com-legenda.mp4 (ou -se
 | Tipo de Relatório | Sintético (uma linha por profissional) ou Analítico (uma linha por profissional e paciente). |
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Presenças | Quantidade de sessões marcadas como Presente na agenda do mês (data da sessão registrada). É o número de atendimentos realizados. | AgendaProfissionalDiaPac (status 3) |
-| Finalizado | Prontuários do tipo escolhido com situação Finalizada e data de emissão dentro do mês. Prontuários excluídos não contam. | Prontuario.Situacao = F |
-| Não Finalizado | Prontuários em Digitação (rascunho). Rascunhos sem data de emissão entram pelo mês da criação. | Prontuario.Situacao = D |
-| Sem Tag | Prontuários sem nenhuma tag (relevante nas clínicas que usam tags). | ProntuarioTag |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Presenças | Quantidade de sessões marcadas como Presente na agenda do mês (data da sessão registrada). É o número de atendimentos realizados. |
+| Finalizado | Prontuários do tipo escolhido com situação Finalizada e data de emissão dentro do mês. Prontuários excluídos não contam. |
+| Não Finalizado | Prontuários em Digitação (rascunho). Rascunhos sem data de emissão entram pelo mês da criação. |
+| Sem Tag | Prontuários sem nenhuma tag (relevante nas clínicas que usam tags). |
 
 A linha do profissional fica em vermelho quando o número de Finalizado é diferente de Presenças. Em regra, cada presença deveria ter um prontuário finalizado. No exemplo, o PSICANALISTA tem 5 presenças, mas só 2 prontuários finalizados, então merece conferência.
 

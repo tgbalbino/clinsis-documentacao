@@ -6,8 +6,7 @@ Versão 1.0 — 17/09/2026
 
 O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
 
-Vídeo narrado desta rotina: `video-cadastro-plano-de-contas.mp4`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/m4e2BMEsMZg](https://youtu.be/m4e2BMEsMZg)
 ---
 
 ## Duas formas de visualizar: Árvore ou Lista

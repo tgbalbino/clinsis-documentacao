@@ -1,0 +1,199 @@
+1
+00:00:00,400 --> 00:00:03,228
+Esta é a Área do Profissional no ClinSis.
+
+2
+00:00:03,228 --> 00:00:06,952
+O menu do profissional é menor que o do administrador,
+
+3
+00:00:06,952 --> 00:00:11,986
+e algumas opções só aparecem se a clínica ativou o módulo correspondente.
+
+4
+00:00:11,986 --> 00:00:17,158
+Na Home ficam os atalhos para agenda, prontuário, protocolo e atendimentos.
+
+5
+00:00:18,258 --> 00:00:22,049
+Logo abaixo, o resumo do dia mostra pacientes, presentes,
+
+6
+00:00:22,049 --> 00:00:26,705
+relatórios e evoluções finalizados ou abertos, e as pendências gerais,
+
+7
+00:00:26,705 --> 00:00:30,629
+que são tudo aquilo que você começou e ainda não finalizou.
+
+8
+00:00:31,729 --> 00:00:34,554
+Em Agenda, você vê os meses disponíveis.
+
+9
+00:00:34,554 --> 00:00:38,086
+O botão Acessar abre a sua agenda resumida do mês.
+
+10
+00:00:38,086 --> 00:00:41,124
+O profissional não cria nem remove agendas,
+
+11
+00:00:41,124 --> 00:00:44,656
+isso é feito pelo administrador ou pelo atendente.
+
+12
+00:00:45,756 --> 00:00:49,497
+A agenda resumida mostra seus pacientes agendados no mês.
+
+13
+00:00:49,497 --> 00:00:54,944
+Você pode alternar entre a visão por paciente e a visão em tabela, filtrar por dia,
+
+14
+00:00:54,944 --> 00:00:59,407
+hora e paciente, e criar um prontuário com dois cliques no paciente.
+
+15
+00:01:00,507 --> 00:01:04,825
+Em Pacientes do dia, escolha a data e clique em Pesquisar.
+
+16
+00:01:04,825 --> 00:01:10,409
+A lista mostra hora, paciente, celular, programa e o status das sessões, e,
+
+17
+00:01:10,409 --> 00:01:13,909
+se a clínica permitir, o botão Marcar Presença.
+
+18
+00:01:15,009 --> 00:01:16,241
+No menu Pacientes,
+
+19
+00:01:16,241 --> 00:01:21,376
+o profissional consulta a lista e abre o cadastro de um paciente existente.
+
+20
+00:01:21,376 --> 00:01:27,059
+Ele não cadastra paciente novo, não baixa a ficha e não altera os dados adicionais.
+
+21
+00:01:28,159 --> 00:01:31,549
+No menu Prontuário, use Pesquisa para filtrar.
+
+22
+00:01:31,549 --> 00:01:34,128
+O tipo de prontuário é obrigatório.
+
+23
+00:01:34,128 --> 00:01:39,065
+Você pode filtrar também por paciente, datas de emissão e inclusão,
+
+24
+00:01:39,065 --> 00:01:40,613
+situação e ordenação.
+
+25
+00:01:41,713 --> 00:01:44,149
+A lista mostra os seus prontuários,
+
+26
+00:01:44,149 --> 00:01:47,698
+com a situação de cada um: Digitação ou Finalizada.
+
+27
+00:01:47,698 --> 00:01:52,848
+O olho visualiza, o bloco amarelo abre para preencher, e a lixeira exclui,
+
+28
+00:01:52,848 --> 00:01:56,328
+mas só prontuário seu que ainda está em digitação.
+
+29
+00:01:57,428 --> 00:01:59,809
+Para criar um novo, clique em Novo,
+
+30
+00:01:59,809 --> 00:02:05,522
+escolha o paciente da agenda atual ou busque por dados, e selecione a especialidade.
+
+31
+00:02:06,622 --> 00:02:10,934
+Ao preencher, informe a data de emissão, responda cada alínea,
+
+32
+00:02:10,934 --> 00:02:14,759
+use Anterior e Próxima para navegar e clique em Salvar.
+
+33
+00:02:14,759 --> 00:02:18,515
+Com todas as alíneas respondidas, clique em Finalizar.
+
+34
+00:02:18,515 --> 00:02:22,271
+Depois de finalizado, só o administrador pode reabrir.
+
+35
+00:02:23,371 --> 00:02:27,834
+Com o prontuário finalizado, a visualização mostra todas as respostas,
+
+36
+00:02:27,834 --> 00:02:31,850
+e a página de impressão permite imprimir ou baixar o documento.
+
+37
+00:02:32,950 --> 00:02:36,685
+Em Textos padrões, você guarda textos que usa sempre.
+
+38
+00:02:36,685 --> 00:02:41,407
+Escolha o tipo de prontuário, dê um título de até vinte caracteres,
+
+39
+00:02:41,407 --> 00:02:43,098
+escreva o texto e salve.
+
+40
+00:02:43,098 --> 00:02:47,961
+Ao usar um texto padrão em um campo, o que você já digitou é apagado.
+
+41
+00:02:49,061 --> 00:02:52,905
+No menu Atendimento, quando o módulo Receituário está ativo,
+
+42
+00:02:52,905 --> 00:02:57,839
+você lista seus atendimentos, com receita de medicamentos e pedido de exames,
+
+43
+00:02:57,839 --> 00:03:01,107
+e pode finalizar e imprimir o atendimento completo,
+
+44
+00:03:01,107 --> 00:03:03,350
+só os exames ou só os medicamentos.
+
+45
+00:03:04,450 --> 00:03:10,366
+Em Protocolo, você acompanha solicitações com prazo entre as pessoas da clínica.
+
+46
+00:03:10,366 --> 00:03:15,099
+A lista mostra solicitante, destinatários, tipo, status e prazo,
+
+47
+00:03:15,099 --> 00:03:17,909
+e o botão Novo cria um novo protocolo.
+
+48
+00:03:19,009 --> 00:03:23,648
+Por fim, em Perfil você vê os dados da sua conta, pode alterar nome,
+
+49
+00:03:23,648 --> 00:03:27,060
+e-mail e data de nascimento, e trocar a sua senha,
+
+50
+00:03:27,060 --> 00:03:29,379
+informando a senha atual e a nova.

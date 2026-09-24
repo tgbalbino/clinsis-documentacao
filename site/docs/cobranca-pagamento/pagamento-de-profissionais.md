@@ -4,12 +4,11 @@ _Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais.pdf)
-- [📄 Manual simplificado](../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Pagamento-de-Profissionais/Documentacao_Pagamento_de_Profissionais_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/0dVv7ctVDPE)
 
 ## Conteúdo completo do manual
 
@@ -24,8 +23,7 @@ Versão 1.0 — 17/09/2026
 
 Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
 
-Vídeo narrado desta rotina: `video-pagamento-profissionais-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/0dVv7ctVDPE](https://youtu.be/0dVv7ctVDPE)
 ---
 
 ## Configuração prévia: Tabela de Preços para Pagamento
@@ -33,11 +31,11 @@ Vídeo narrado desta rotina: `video-pagamento-profissionais-com-legenda.mp4 (ou 
 Em Tabelas Aux. → Tab. Pagamento (rota /aux/vigenciaprofpagto) fica a lista de "tabelas de preço" — cada uma agrupa um conjunto de valores usados para calcular o repasse dos profissionais. Ao abrir uma tabela (botão da engrenagem), três abas organizam a configuração:
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Aba Agenda | Quais competências (mês/ano) usam esta tabela de preços. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês. | ConfigAgendaProfEspecPagtoController.cs |
-| Aba Especialidades | Valor padrão por Especialidade (ex.: Fisioterapeuta, Psicólogo), aplicado a todos os profissionais daquela especialidade que não tiverem um valor específico. | ConfigProfissionalEspecialidadePagtoController.cs |
-| Aba Profissionais | Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidades quando presente. | ConfigProfissionalEspecialidadePagtoController.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Aba Agenda | Quais competências (mês/ano) usam esta tabela de preços. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês. |
+| Aba Especialidades | Valor padrão por Especialidade (ex.: Fisioterapeuta, Psicólogo), aplicado a todos os profissionais daquela especialidade que não tiverem um valor específico. |
+| Aba Profissionais | Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidades quando presente. |
 
 
 
@@ -61,10 +59,10 @@ Esse campo não fica na Tabela de Preços — ele é configurado no cadastro da 
 
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Por Sessão | O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis. | Especialidade.TipoCobranca = 1 |
-| Paciente | O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. | Especialidade.TipoCobranca = 2 |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Por Sessão | O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis. |
+| Paciente | O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. |
 
 Exemplo numérico: Especialidade "Fisioterapia" com Valor = R$ 50,00 e um agendamento com 5 sessões previstas no mês, das quais 3 foram confirmadas como realizadas. Se o Tipo de Cobrança da especialidade for Por Sessão, o valor total é 3 × R$ 50 = R$ 150,00. Se for Paciente, o valor total é 1 × R$ 50 = R$ 50,00 — paga uma única vez pelo pacote do mês, mesmo que várias sessões tenham ocorrido.
 
@@ -81,13 +79,13 @@ Na prática, para reajustar valores com segurança: gere e confira a Conta a Pag
 Rota /relatorio/pagamento/profissional/agrupado. Clique em Filtros, escolha a Agenda (mês/ano) que quer calcular, e clique em Filtrar. O relatório mostra, por Profissional e Especialidade, quantas sessões foram realizadas, quantas entram no cálculo do pagamento, e o Valor Total a repassar.
 
 
-| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
-|---|---|---|
-| Agenda (filtro) | Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços. | Obrigatório |
-| Profissional (filtro) | Restringe o relatório a um profissional específico. | Opcional |
-| Status (filtro) | Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). | Obrigatório ter ao menos 1 marcado |
-| Sessões / Sessões Pagamento | Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados). | RelatorioRepository.cs |
-| Valor Total | Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Preços). Só fica com checkbox pra selecionar se for maior que zero. | RelatorioRepository.cs |
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Agenda (filtro) | Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços. *(obrigatório)* |
+| Profissional (filtro) | Restringe o relatório a um profissional específico. |
+| Status (filtro) | Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). *(obrigatório)* |
+| Sessões / Sessões Pagamento | Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados). |
+| Valor Total | Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Preços). Só fica com checkbox pra selecionar se for maior que zero. |
 
 ## Relatório de Pagamento de Profissionais (analítico)
 

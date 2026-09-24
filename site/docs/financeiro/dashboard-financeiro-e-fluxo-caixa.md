@@ -2,9 +2,8 @@
 
 ## Documentação em PDF
 
-- [📄 Manual completo (com origem técnica no banco)](../assets/Dashboard-Financeiro-e-Fluxo-Caixa/Documentacao_Dashboard_Financeiro_e_Fluxo_de_Caixa.pdf)
-- [📄 Manual simplificado](../assets/Dashboard-Financeiro-e-Fluxo-Caixa/Documentacao_Dashboard_Financeiro_e_Fluxo_de_Caixa_Simplificado.pdf)
+- [📄 Manual em PDF](../assets/Dashboard-Financeiro-e-Fluxo-Caixa/Documentacao_Dashboard_Financeiro_e_Fluxo_de_Caixa_Simplificado.pdf)
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+- [▶️ Assistir o vídeo no YouTube](https://youtu.be/aO-85WdVPYY)

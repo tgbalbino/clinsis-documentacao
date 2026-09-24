@@ -1,9 +1,10 @@
 # Área do Profissional
 
-Este manual explica o que o **profissional de saúde** vê e pode fazer no ClinSis.
+_O que o profissional de saúde vê e pode fazer no ClinSis_
 
 ## Documentação em PDF
 
+- [📄 Manual em PDF](../assets/Area-do-Profissional/Documentacao_Area_do_Profissional_Simplificado.pdf)
 
 ## Vídeo narrado
 
@@ -16,11 +17,19 @@ Este manual explica o que o **profissional de saúde** vê e pode fazer no ClinS
 ---
 
 
-Este manual explica o que o **profissional de saúde** vê e pode fazer no ClinSis.
+_O que o profissional de saúde vê e pode fazer no ClinSis_
+
+Versão 1.0 — 24/09/2026
+
+Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
+
+Vídeo narrado desta rotina: `video-area-do-profissional-com-legenda.mp4 (ou -sem-legenda.mp4)`
+
+---
+
+# 1. Menu e Home do profissional
 
 O menu do profissional é menor que o do administrador. Algumas opções só aparecem se a clínica ativou o módulo ou a configuração correspondente.
-
-## Menu do profissional
 
 | Opção do menu | Aparece quando |
 |---|---|
@@ -28,291 +37,155 @@ O menu do profissional é menor que o do administrador. Algumas opções só apa
 | Pacientes | Configuração "Profissional pode ver pacientes" ativa |
 | Prontuário | Módulo Prontuário ativo |
 | Atendimento (Listar) | Módulo Receituário ativo |
-| Atendimento > Pacientes do dia | Módulo Receituário ativo **e** clínica no modelo consultório |
+| Atendimento > Pacientes do dia | Módulo Receituário ativo e clínica no modelo consultório |
 | Protocolo | Módulo Protocolo ativo |
-| Perfil | Sempre |
-| Home | Sempre |
-| Sair | Sempre |
+| Perfil, Home e Sair | Sempre |
 
-!!! note "Não achou uma opção?"
-    Se falta uma opção do menu, o módulo ou a configuração não está ativo na sua clínica. Fale com o administrador.
+> ⚠️ Se falta uma opção no menu, o módulo ou a configuração não está ativo na sua clínica. Fale com o administrador. O profissional não vê os menus de Cadastros, Tabelas Auxiliares, Financeiro, Relatórios, Caixa e Doc. Faturamento.
 
-O profissional **não vê** os menus de Cadastros, Tabelas Auxiliares, Financeiro, Relatórios, Caixa e Doc. Faturamento. Também não vê o link "Documentação" do menu.
 
----
+## Cartões de atalho
 
-## Home
+| Cartão | O que faz |
+|---|---|
+| Agenda | Lista os dois últimos meses de agenda, cada um com o botão Agenda resumida. O link Agenda detalhada abre a lista de pacientes do dia. |
+| Prontuário | Abre seus prontuários e tem o link Textos padrões. Só aparece com o módulo Prontuário ativo. |
+| Protocolo | Só aparece com o módulo Protocolo ativo. |
+| Atendimentos | Abre "Pacientes do dia" do consultório. Só aparece se a clínica for consultório. |
+| Alterar Perfil | Só aparece se o seu usuário tem um segundo perfil de acesso. |
 
-**Para que serve:** tela inicial, com atalhos e um resumo do seu dia.
+## Resumo do dia e pendências
 
-**Como acessar:** clique em **Home** no menu.
+Se a clínica ativou essa configuração, aparece uma faixa com os números de hoje: Total de Pacientes, Total de Presentes, Relatórios Finalizados, Relatórios Abertos, Evoluções Finalizadas e Evoluções Abertas. Em Pendências gerais você vê as Evoluções Abertas e os Relatórios Abertos no geral. Pendência é algo que você começou e ainda não finalizou.
 
-### Cartões de atalho
+# 2. Agenda
 
-- **Agenda**: lista os dois últimos meses de agenda. Ao lado de cada mês há o botão **Agenda resumida**. Há também o link **Agenda detalhada**, que abre a lista de pacientes do dia.
-- **Prontuário**: abre seus prontuários. Tem o link **Textos padrões**. Só aparece com o módulo Prontuário ativo.
-- **Protocolo**: só aparece com o módulo Protocolo ativo.
-- **Atendimentos**: abre "Pacientes do dia" do consultório. Só aparece se a clínica for consultório.
-- **Alterar Perfil**: aparece somente se o seu usuário tem um segundo perfil de acesso.
+Menu Agenda: lista de Ano/Mês. Em cada linha, o botão Acessar abre a Agenda resumida do mês. Se a clínica não for consultório, aparece também o link Ver lista simples de pacientes do dia.
 
-### Resumo do dia
 
-Faixa com números de hoje. Só aparece se a clínica ativou essa configuração.
+> ⚠️ O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Prof. horários, Ver Agenda e Divergência Sessões. Esses são do administrador e do atendente.
 
-- Total de Pacientes
-- Total de Presentes
-- Relatórios Finalizados
-- Relatórios Abertos
-- Evoluções Finalizadas
-- Evoluções Abertas
+## Agenda resumida
 
-Em **Pendências gerais** você vê:
+Mostra os seus pacientes agendados no mês. Recursos:
 
-- Evoluções Abertas no Geral
-- Relatórios Abertos no Geral
+| Recurso | Como usar |
+|---|---|
+| Ver Pacientes / Ver Planilha | Alterna entre a visão por paciente e a visão em tabela. |
+| Pacientes do dia | Marque a caixa, informe a data e clique em Carregar. |
+| Confirmação WhatsApp | Só aparece se o módulo WhatsApp estiver ativo. |
+| Filtros da tabela | Filtre por Dia, Data, Hora e Paciente. |
+| Ícone verde ao lado do paciente | Indica que o prontuário de evolução diária de hoje já foi finalizado. |
 
-!!! note
-    Pendência é algo que você começou e ainda não finalizou.
 
----
+Criar prontuário a partir da agenda: dê dois cliques no paciente (ou clique em Prontuários, na visão por paciente), escolha o Tipo de prontuário, a Especialidade e confirme a inclusão.
 
-## Agenda
+> ⚠️ Se a clínica bloqueou a criação de prontuários, nada acontece ao clicar. Para prontuário de evolução diária, não é permitido usar data futura.
 
-**Para que serve:** ver os meses de agenda e entrar na sua agenda.
+## Pacientes do dia (Agenda detalhada)
 
-**Como acessar:** menu **Agenda**.
+Acesse pelo link Agenda detalhada da Home, ou Ver lista simples de pacientes do dia na Agenda. Escolha a data e clique em Pesquisar. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão Marcar Presença em cada linha.
 
-**O que você vê:** uma lista de Ano/Mês. Em cada linha, o botão **Acessar** abre a Agenda resumida do mês.
 
-Se a clínica **não** for consultório, aparece o link **Ver lista simples de pacientes do dia**.
+# 3. Pacientes
 
-!!! warning "O que o profissional não pode"
-    Não pode criar nem remover agendas. Não vê os botões Relatório, Prof. horários, Ver Agenda e Divergência Sessões. Esses são do administrador e do atendente.
+Menu Pacientes, só com a configuração "Profissional pode ver pacientes" ativa. Sem ela, o sistema volta para a Home. O profissional pode ver a lista e abrir o cadastro de um paciente existente.
 
-### Agenda resumida
 
-**Para que serve:** ver seus pacientes agendados no mês.
+| O profissional NÃO pode | Detalhe |
+|---|---|
+| Cadastrar paciente novo | O botão de cadastrar fica oculto. |
+| Baixar a ficha do paciente | O botão fica oculto. |
+| Alterar os dados adicionais | Os campos ficam bloqueados. |
+| Abrir o cadastro sem escolher paciente | É preciso abrir a partir da lista. |
 
-**Como acessar:** em Agenda, clique em **Acessar**. Ou, na Home, clique em **Agenda resumida**.
+# 4. Prontuário
 
-**Recursos:**
+Menu Prontuário (com o módulo Prontuário ativo): criar, preencher e finalizar prontuários e relatórios dos seus pacientes.
 
-- **Ver Pacientes / Ver Planilha**: alterna entre a visão por paciente e a visão em tabela.
-- **Pacientes do dia**: marque a caixa, informe a data e clique em **Carregar**.
-- **Confirmação WhatsApp**: só aparece se o módulo WhatsApp estiver ativo.
-- Lista **Meus Pacientes**: aparece só se existirem outros profissionais vinculados como origem de pacientes (a confirmar a regra exata).
-- Na tabela: filtros por Dia, Data, Hora e Paciente.
-- Um ícone verde ao lado do paciente indica que o prontuário de evolução diária de hoje já foi finalizado.
+## Lista de prontuários
 
-**Criar prontuário a partir da agenda:** dê dois cliques no paciente (ou clique em **Prontuários**, na visão por paciente).
+Para ver a lista, use Pesquisa e escolha o Tipo (obrigatório). Filtros: Nº do prontuário, nome do paciente, emissão e inclusão (data inicial e final), Finalizado (Todos, Finalizado ou Digitação), Ordenação e Tags (se ativas).
 
-1. Escolha o **Tipo** de prontuário.
-2. Escolha a **Especialidade**.
-3. Confirme a inclusão.
 
-!!! warning
-    Se a clínica bloqueou a criação de prontuários, nada acontece ao clicar. Para prontuário de evolução diária há uma regra de data (não é permitido para data futura). Detalhes exatos a confirmar.
+A lista mostra automaticamente o seu profissional, com as colunas Nº, Profissional, Paciente, Mãe, Situação, Início, Finalização e Emissão. Uma etiqueta compartilhado indica um relatório de outro profissional da mesma especialidade; linhas em cor diferente indicam prontuário atrasado.
 
-### Pacientes do dia (Agenda detalhada)
-
-**Como acessar:** link **Agenda detalhada** na Home, ou **Ver lista simples de pacientes do dia** na Agenda.
-
-**O que você vê:** escolha a data e clique em **Pesquisar**. A lista mostra:
-
-- Dia e Hora
-- Paciente
-- Celular
-- Situação da guia
-- Operadora
-- Programa
-- Observação
-- Status das sessões S1 a S5
-
-Se a clínica permitir, aparece o botão **Marcar Presença** em cada linha.
-
----
-
-## Pacientes
-
-**Para que serve:** consultar o cadastro dos pacientes.
-
-**Como acessar:** menu **Pacientes**. Só aparece com a configuração "Profissional pode ver pacientes" ativa. Sem ela, o sistema volta para a Home.
-
-**O que você pode:**
-
-- Ver a lista e abrir o cadastro de um paciente existente.
-
-**O que você NÃO pode:**
-
-- Cadastrar paciente novo. O botão de cadastrar fica oculto.
-- Baixar a ficha do paciente. O botão fica oculto.
-- Alterar os dados adicionais do paciente. Os campos ficam bloqueados.
-- Abrir a tela de cadastro sem escolher um paciente da lista.
-
-!!! note "A confirmar"
-    Se outras abas do cadastro do paciente também ficam somente leitura para o profissional.
-
----
-
-## Prontuário
-
-**Para que serve:** criar, preencher e finalizar prontuários e relatórios dos seus pacientes.
-
-**Como acessar:** menu **Prontuário**. Só aparece com o módulo Prontuário ativo.
-
-### Lista de prontuários
-
-Para ver a lista, use **Pesquisa** e escolha o **Tipo** (obrigatório).
-
-**Filtros:** Nº do prontuário, nome do paciente, emissão (data inicial e final), inclusão (data inicial e final), Finalizado (Todos, Finalizado ou Digitação), Ordenação (mais recentes, paciente, emissão) e Tags (se ativas).
-
-**Colunas:** Nº, Profissional, Paciente, Mãe, Situação, Início, Finalização e Emissão.
-
-- A lista mostra o **seu** profissional automaticamente.
-- Uma etiqueta **compartilhado** indica um relatório de outro profissional da mesma especialidade.
-- Linhas em cor diferente indicam prontuário atrasado.
-
-**Botões:**
 
 | Botão | O que faz |
 |---|---|
-| **Novo** | Cria um prontuário (escolhe o paciente). Não aparece se a clínica bloqueou a criação. |
+| Novo | Cria um prontuário (escolhe o paciente). Não aparece se a clínica bloqueou a criação. |
 | Olho | Visualiza o prontuário. |
 | Bloco amarelo | Abre para preencher. Só nos prontuários que são seus. |
-| Lixeira | Exclui. Só prontuário seu que ainda está em **Digitação**. |
+| Lixeira | Exclui. Só prontuário seu que ainda está em Digitação, com confirmação. |
 | tags | Mostra as tags do prontuário (se ativas). |
-| Impressora (rodapé) | Gera o PDF dos prontuários que você marcou. Só dá para marcar os finalizados. |
+| Impressora (rodapé) | Gera o PDF dos prontuários marcados. Só é possível marcar os finalizados. |
 
-!!! warning "Não pode"
-    Não pode excluir prontuário finalizado nem prontuário de outro profissional. Não pode exportar CSV (é do administrador).
 
-!!! note "Atalho pela notificação"
-    Ao abrir pelo aviso de prontuários não finalizados, a lista já vem filtrada em Digitação.
+> ⚠️ O profissional não pode excluir prontuário finalizado nem de outro profissional, e não exporta CSV (isso é do administrador).
 
-### Preencher o prontuário
+## Preencher o prontuário
 
-1. Abra o prontuário no bloco amarelo.
-2. Informe a **Data de emissão**.
-3. Responda cada **Alínea** (pergunta). Use **Anterior** e **Próxima** para navegar.
-4. Clique em **Salvar**.
-5. Quando todas as alíneas estiverem respondidas, clique em **Finalizar**.
+1. Abra o prontuário no bloco amarelo. 2. Informe a Data de emissão. 3. Responda cada Alínea (pergunta), usando Anterior e Próxima. 4. Clique em Salvar. 5. Com todas as alíneas respondidas, clique em Finalizar.
 
-**Tipos de resposta:**
 
-- Texto livre (até 50.000 caracteres).
-- Sim ou Não.
-- Arquivo PDF: envie o arquivo ou visualize o já salvo.
+| Tipo de resposta | Como funciona |
+|---|---|
+| Texto livre | Até 50.000 caracteres. |
+| Sim ou Não | Marque a opção. |
+| Arquivo PDF | Envie o arquivo ou visualize o já salvo. |
+| Texto Padrão | Escolha o texto na lista para inserir. |
 
-Se houver **Texto Padrão** cadastrado, escolha na lista para inserir.
+> ⚠️ Inserir um texto padrão apaga o que você já digitou no campo. E, depois de Finalizar, o prontuário não pode mais ser editado por você: somente o administrador pode reabrir.
 
-!!! warning
-    Inserir um texto padrão apaga o que você já digitou no campo.
+## Visualizar e imprimir
 
-!!! warning
-    Depois de **Finalizar**, o prontuário não pode mais ser editado por você. Somente o administrador pode reabrir.
+A visualização mostra todas as alíneas. Com o prontuário finalizado, use Página de impressão / Download.
 
-### Visualizar e imprimir
 
-Mostra todas as alíneas. Com o prontuário finalizado, use **Página de impressão / Download**. A tela também tem link para baixar o modelo do formulário, quando existir.
+## Textos padrões
 
-### Textos padrões
+Na Home, no cartão Prontuário, o link Textos padrões guarda textos que você usa sempre. Clique em Novo, escolha o Tipo de prontuário, digite o Título (máximo de 20 caracteres) e o Texto, e clique em Salvar. Para mudar, use Visualizar/Alterar; para apagar, a lixeira. O tipo não pode ser trocado depois de salvo.
 
-**Como acessar:** na Home, cartão Prontuário, link **Textos padrões**.
 
-**Para que serve:** guardar textos que você usa sempre.
 
-**Como usar:**
+# 5. Atendimento (receituário)
 
-1. Clique em **Novo**.
-2. Escolha o **Tipo de prontuário**.
-3. Digite o **Título** (máximo 20 caracteres).
-4. Digite o **Texto**.
-5. Clique em **Salvar**.
+Menu Atendimento, com o módulo Receituário ativo: registra consultas com receita de medicamentos e pedido de exames. Em Atendimento > Listar aparecem os seus atendimentos, com filtros por paciente, data inicial e final e "Filtrar atendimentos do dia atual".
 
-Para mudar, use **Visualizar/Alterar**. Para apagar, use a lixeira. O tipo não pode ser trocado depois de salvo.
 
----
+| Botão por linha | O que faz |
+|---|---|
+| Finalizar Atendimento | Só aparece se o atendimento ainda não foi finalizado. |
+| Visualizar | Abre o atendimento. |
+| Imp. Completo, Imp. Exames e Imp. Medicamentos | Imprimem o atendimento inteiro ou só exames ou só medicamentos. |
 
-## Atendimento (receituário)
+Na ficha do atendimento há Novo Medicamento, Novo Exame, Anamnese (preenchimento pelo prontuário) e Observação (opcional). Depois de finalizado, a ficha fica somente para leitura.
 
-**Para que serve:** registrar consultas com receita de medicamentos e pedido de exames.
+Atendimento > Pacientes do dia (clínica no modelo consultório): mostra Paciente, Data, Horário e se está Finalizado. Use Atendimento para abrir a ficha (ou dois cliques na linha), Finalizar Atendimento e Ver últimos atendimentos.
 
-**Como acessar:** menu **Atendimento**. Só aparece com o módulo Receituário ativo.
+# 6. Protocolo
 
-### Atendimento > Listar
+Menu Protocolo (com o módulo Protocolo ativo): registrar e acompanhar solicitações com prazo, entre pessoas da clínica.
 
-Mostra **seus** atendimentos.
 
-**Filtros:** paciente, data inicial e final, e "Filtrar atendimentos do dia atual".
+A lista tem protocolo, data de alteração, data limite, solicitante, usuário e profissional destinatários, tipo, status, prazo em dias, atendido e data de finalização. Filtre por tipo, status, solicitante, destinatário, atendido e período de inclusão. Para criar, clique em Novo e informe Tipo, Situação, Data Limite, Prazo de entrega (dias), Solicitante, Usuário destinatário, Profissional destinatário e Data do atendimento.
 
-**Botões por linha:**
+# 7. Perfil
 
-- **Finalizar Atendimento** (só se ainda não finalizado).
-- **Visualizar**: abre o atendimento.
-- **Imp. Completo**, **Imp. Exames** e **Imp. Medicamentos**.
+Menu Perfil: cuidar dos dados da sua conta. Mostra nome, e-mail, situação (Ativo ou Inativo), perfil de acesso e data de cadastro.
 
-### Ficha do atendimento
 
-- **Novo Medicamento** e **Novo Exame**.
-- **Anamnese** (preenchimento pelo prontuário).
-- **Observação** (opcional).
+| Opção | Como usar |
+|---|---|
+| Alterar Dados | Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. |
+| Alterar Senha | Informe a senha atual, a nova senha e repita a nova senha. |
 
-Depois de finalizado, a ficha fica somente para leitura.
+# 8. Resumo: o que o profissional não faz
 
-### Atendimento > Pacientes do dia
-
-**Como acessar:** menu **Atendimento > Pacientes do dia**, ou cartão **Atendimentos** na Home. Só para clínica no modelo consultório.
-
-**O que você vê:** Paciente, Data, Horário e se está Finalizado.
-
-- **Atendimento**: abre a ficha (ou dois cliques na linha).
-- **Finalizar Atendimento**.
-- **Ver últimos atendimentos**: abre a lista de atendimentos do paciente em outra aba.
-
-!!! note "A confirmar"
-    A tela também abre para a clínica de código 1 mesmo sem ser consultório, mas o menu só mostra a opção para consultório.
-
----
-
-## Protocolo
-
-**Para que serve:** registrar e acompanhar solicitações com prazo, entre pessoas da clínica.
-
-**Como acessar:** menu **Protocolo**. Só aparece com o módulo Protocolo ativo.
-
-**Lista:** Protocolo, data de alteração, data limite, solicitante, usuário e profissional destinatários, tipo, status, prazo em dias, atendido e data de finalização.
-
-**Filtros:** tipo, status, solicitante, destinatário, atendido e período de inclusão.
-
-**Novo protocolo:** botão **Novo**. Campos: Tipo, Situação, Data Limite, Prazo de entrega (dias), Solicitante, Usuário destinatário, Profissional destinatário e Data do atendimento.
-
-!!! note "A confirmar"
-    Regras de quem pode alterar ou finalizar um protocolo. Há também o botão **Exportar CSV** na lista (a confirmar se está liberado para o profissional).
-
----
-
-## Perfil
-
-**Para que serve:** cuidar dos dados da sua conta.
-
-**Como acessar:** menu **Perfil**.
-
-**O que você vê:** seu nome, e-mail, situação (Ativo ou Inativo), perfil de acesso e data de cadastro.
-
-### Alterar dados
-
-Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar.
-
-### Alterar senha
-
-Informe a senha atual, a nova senha e repita a nova senha.
-
----
-
-## Resumo do que o profissional não faz
-
-- Não cria nem remove agendas.
-- Não cadastra pacientes.
-- Não exclui prontuário finalizado nem de outro profissional.
-- Não reabre prontuário finalizado.
-- Não acessa Financeiro, Relatórios, Caixa, Doc. Faturamento nem Tabelas Auxiliares.
+| Não faz | Quem faz |
+|---|---|
+| Criar ou remover agendas | Administrador / Atendente |
+| Cadastrar pacientes | Administrador / Atendente |
+| Excluir prontuário finalizado ou de outro profissional | Ninguém pelo profissional; só exclui o próprio prontuário em Digitação |
+| Reabrir prontuário finalizado | Administrador |
+| Acessar Financeiro, Relatórios, Caixa, Doc. Faturamento e Tabelas Auxiliares | Administrador / Atendente |

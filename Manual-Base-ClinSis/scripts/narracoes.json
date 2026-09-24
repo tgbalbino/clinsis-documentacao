@@ -1,0 +1,102 @@
+[
+  {
+    "audio": "01.wav",
+    "imagem": "a01-home.png",
+    "texto": "O ClinSis é um sistema web de gestão para clínicas de saúde. Reúne cadastros, agenda, atendimento, prontuário e financeiro em um só lugar, e cada usuário vê apenas o que o seu perfil permite."
+  },
+  {
+    "audio": "02.wav",
+    "imagem": "h01-fluxo.png",
+    "texto": "O fluxo segue uma ordem natural: primeiro os cadastros, depois a agenda, em seguida o atendimento e o prontuário, e por fim o financeiro, com Contas a Receber e Contas a Pagar."
+  },
+  {
+    "audio": "03.wav",
+    "imagem": "f05-contas-receber.png",
+    "texto": "O atendimento gera cobranças, que viram Contas a Receber. Já as despesas e o pagamento dos profissionais viram Contas a Pagar."
+  },
+  {
+    "audio": "04.wav",
+    "imagem": "c03-especialidades.png",
+    "texto": "Antes de agendar, cadastre a clínica, os setores, as especialidades, as operadoras, os profissionais e os pacientes, nesta ordem."
+  },
+  {
+    "audio": "05.wav",
+    "imagem": "c05-profissional-cadastro.png",
+    "texto": "O cadastro do profissional pede CPF, nome, locação e o nome que aparecerá na agenda. Os campos com asterisco são obrigatórios."
+  },
+  {
+    "audio": "06.wav",
+    "imagem": "c08b-acessos-lista.png",
+    "texto": "O acesso é o login de quem usa o sistema. Fica em Cadastros, Acessos, e só o administrador enxerga essa tela."
+  },
+  {
+    "audio": "07.wav",
+    "imagem": "c09b-acesso-novo.png",
+    "texto": "Para criar um acesso, informe o CPF. Se a pessoa já tem usuário, basta escolher o perfil e o setor. Se não tem, o sistema pede login, e-mail, nome, perfil e setor."
+  },
+  {
+    "audio": "08.wav",
+    "imagem": "c10-acesso-menu.png",
+    "texto": "No menu de cada usuário você edita o perfil e o setor, desativa, define permissões, bloqueia dias da semana ou reseta a senha para o padrão."
+  },
+  {
+    "audio": "09.wav",
+    "imagem": "b00-agenda-lista.png",
+    "texto": "A agenda é mensal. Em Agenda, clique em Novo para criar a agenda de um mês."
+  },
+  {
+    "audio": "10.wav",
+    "imagem": "b01-nova-agenda.png",
+    "texto": "Escolha o mês e o ano. Marcando copiar agenda anterior, os horários dos profissionais e os pacientes vinculados vêm para o novo mês, com as sessões zeradas."
+  },
+  {
+    "audio": "11.wav",
+    "imagem": "b03-gerar-horarios.png",
+    "texto": "Em Tabelas Auxiliares, Horários, cadastre os horários da clínica. Use Gerar Horários para criar tudo de uma vez, informando início, fim e intervalo."
+  },
+  {
+    "audio": "12.wav",
+    "imagem": "b05-prof-horarios-selecionado.png",
+    "texto": "Depois, em Prof. horários, escolha o profissional, o dia da semana ou a data, marque os horários e clique em Incluir. Também é possível transferir ou clonar horários para outro profissional."
+  },
+  {
+    "audio": "13.wav",
+    "imagem": "d01-agendamento.png",
+    "texto": "Em Ver Agenda, cada linha é um horário de um profissional. Linhas com o botão verde estão vagas. Para agendar, clique no botão verde."
+  },
+  {
+    "audio": "14.wav",
+    "imagem": "d06-agendar-form-preenchido.png",
+    "texto": "Escolha o paciente e preencha o atendimento: particular ou convênio, número de sessões, forma de atendimento, especialidade, tipo de marcação, método e programa."
+  },
+  {
+    "audio": "15.wav",
+    "imagem": "d02-agendamento-menu-linha.png",
+    "texto": "A engrenagem da linha permite editar, marcar a sessão, adicionar outro paciente, desmarcar, registrar entrada e saída, trocar o profissional e gerar os horários do paciente."
+  },
+  {
+    "audio": "16.wav",
+    "imagem": "d09b-relatorios-presenca.png",
+    "texto": "Em Relatórios, escolha a data e o tipo. O Atendimento Diário é a folha do dia com campos de assinatura. A Presença e Ausência lista quem veio e quem faltou."
+  },
+  {
+    "audio": "17.wav",
+    "imagem": "e-atendimento-diario.png",
+    "texto": "O Atendimento Diário lista, por profissional, os pacientes de cada horário, com espaço para a assinatura do responsável e do profissional."
+  },
+  {
+    "audio": "18.wav",
+    "imagem": "e-horarios-paciente.png",
+    "texto": "A opção Horários do Paciente gera uma folha com os dias e horários do paciente no mês, para entregar ao responsável."
+  },
+  {
+    "audio": "19.wav",
+    "imagem": "e05-relatorio-agenda.png",
+    "texto": "O Relatório da Agenda resume o mês com agendamentos, pacientes, sessões, presentes e ausentes. No menu Relatórios há ainda outros relatórios de agenda."
+  },
+  {
+    "audio": "20.wav",
+    "imagem": "h01-fluxo.png",
+    "texto": "Resumindo: cadastre, crie a agenda, defina horários, agende, marque as sessões e confira pelos relatórios. Nos meses seguintes, copie a agenda anterior. Bom trabalho!"
+  }
+]

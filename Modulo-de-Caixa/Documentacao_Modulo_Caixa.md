@@ -6,8 +6,7 @@ Versão 1.0 — 18/09/2026
 
 O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
 
-Vídeo narrado desta rotina: `video-caixa-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/n7F19sn_uXs](https://youtu.be/n7F19sn_uXs)
 ---
 
 ## Abrindo o caixa

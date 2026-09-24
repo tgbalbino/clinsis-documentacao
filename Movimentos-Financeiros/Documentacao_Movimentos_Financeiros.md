@@ -6,8 +6,7 @@ Versão 1.0 — 22/09/2026
 
 Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor e origem. A tela serve para conferir esse extrato contra o extrato real do banco (conciliação), fazer transferências entre contas do sistema e, se necessário, excluir um lançamento incorreto.
 
-Vídeo narrado desta rotina: `video-movimentos-financeiros-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/YEE6RAVUX8I](https://youtu.be/YEE6RAVUX8I)
 ---
 
 ## O que é e de onde vem cada linha

@@ -45,9 +45,32 @@ ROTINAS = [
 ]
 
 # Links do YouTube: preencha aqui quando os vídeos forem publicados.
-# Chave = pasta de origem; valor = (url_com_legenda, url_sem_legenda)
+# Chave = pasta de origem; valor = url do vídeo com legenda (str) ou (url_com_legenda, url_sem_legenda)
 YOUTUBE_LINKS = {
-    # "Checkin": ("https://youtu.be/xxxx", "https://youtu.be/yyyy"),
+    "Manual-Base-ClinSis": "https://youtu.be/r7iJc03azkw",
+    "Cadastro-Plano-de-Contas": "https://youtu.be/m4e2BMEsMZg",
+    "Cadastro-Centro-de-Custo": "https://youtu.be/mUPp2HgJV6I",
+    "Conta-Financeira": "https://youtu.be/er1uv0qlUjk",
+    "Cadastro-de-Especialidades": "https://youtu.be/9pTvpUSwb_g",
+    "Cadastro-de-Servicos": "https://youtu.be/uotROr-rj6s",
+    "Tabela-de-Precos-Cobranca": "https://youtu.be/mFThg03z-RY",
+    "Tabela-de-Precos-Pagamento": "https://youtu.be/B5Jlz0kweIM",
+    "Prontuario-Configuracao": "https://youtu.be/X4ClyuUIsAE",
+    "Layout-de-Contrato": "https://youtu.be/w-cCTVEKQng",
+    "Modulo-de-Caixa": "https://youtu.be/n7F19sn_uXs",
+    "Contas-a-Receber": "https://youtu.be/72i8FLOKhII",
+    "Contas-a-Pagar": "https://youtu.be/dlllj9on1gQ",
+    "Contas-Recorrentes": "https://youtu.be/1qx_Mgp4T_Q",
+    "Movimentos-Financeiros": "https://youtu.be/YEE6RAVUX8I",
+    "Checkin": "https://youtu.be/6usoK6x4e3I",
+    "Prontuario-Uso": "https://youtu.be/XPTXN2u41Ps",
+    "Contrato": "https://youtu.be/c1ki58j_khQ",
+    "Contrato-D4Sign": "https://youtu.be/OY-A2nyWsuA",
+    "Cobranca-de-Paciente": "https://youtu.be/AdzPSoJ7_4I",
+    "Pagamento-de-Profissionais": "https://youtu.be/0dVv7ctVDPE",
+    "Dashboard-de-Agenda": "https://youtu.be/QAra0-JTD5w",
+    "Prontuario-Auditoria": "https://youtu.be/xRpzTXrGA3Y",
+    "Dashboard-Financeiro-e-Fluxo-Caixa": "https://youtu.be/aO-85WdVPYY",
 }
 
 
@@ -58,6 +81,38 @@ def slugify(nome):
            .replace("ô", "o").replace("õ", "o").replace("ú", "u"))
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s
+
+
+def limpar_para_usuario_final(md):
+    """Remove do texto do manual o que é técnico (arquivos de código, banco de dados, notas de
+    correção interna), já que o site é destinado ao usuário final."""
+    saida = []
+    pular_nivel = None
+    for l in md.split("\n"):
+        m = re.match(r"^(#+)\s+(.*)", l)
+        if m:
+            nivel = len(m.group(1))
+            if pular_nivel is not None and nivel <= pular_nivel:
+                pular_nivel = None
+            if pular_nivel is None and re.search(r"anexo t[eé]cnico", m.group(2), re.I):
+                pular_nivel = nivel
+                continue
+        if pular_nivel is not None:
+            continue
+        if re.match(r"^>\s*.{0,4}Corre[cç][aã]o (feita|realizada)", l):
+            continue
+        if l.startswith("|") and l.count("|") >= 4:
+            if set(l.strip()) <= set("|- :"):
+                l = "|---|---|"
+            else:
+                cel = [c.strip() for c in l.strip().strip("|").split("|")]
+                if len(cel) == 3 and cel[1].startswith("Origem no banco"):
+                    l = "| Campo / Label na tela | O que é / de onde vem |"
+                elif len(cel) == 3:
+                    extra = " *(obrigatório)*" if cel[2].lower().startswith("obrigat") else ""
+                    l = f"| {cel[0]} | {cel[1]}{extra} |"
+        saida.append(l)
+    return "\n".join(saida).replace("preservado no banco", "preservado no sistema")
 
 
 def extrair_intro(md_path):
@@ -119,6 +174,8 @@ def main():
         dest_assets = os.path.join(assets_dir, pasta)
         os.makedirs(dest_assets, exist_ok=True)
         for pdf in pdfs:
+            if pdf == pdf_completo and pdf_simples:
+                continue  # o completo tem coluna técnica (banco/código): não é publicado para o usuário final
             shutil.copy2(os.path.join(origem, pdf), os.path.join(dest_assets, pdf))
 
         pagina_slug = slugify(pasta)
@@ -131,17 +188,19 @@ def main():
             linhas_md += [intro, ""]
 
         linhas_md += ["## Documentação em PDF", ""]
-        if pdf_completo:
-            linhas_md.append(f"- [📄 Manual completo (com origem técnica no banco)](../assets/{pasta}/{pdf_completo})")
-        if pdf_simples:
-            linhas_md.append(f"- [📄 Manual simplificado](../assets/{pasta}/{pdf_simples})")
+        pdf_publico = pdf_simples or pdf_completo
+        if pdf_publico:
+            linhas_md.append(f"- [📄 Manual em PDF](../assets/{pasta}/{pdf_publico})")
         linhas_md.append("")
 
         linhas_md += ["## Vídeo narrado", ""]
         yt = YOUTUBE_LINKS.get(pasta)
         if yt:
-            linhas_md.append(f"- [▶️ Assistir com legenda]({yt[0]})")
-            linhas_md.append(f"- [▶️ Assistir sem legenda]({yt[1]})")
+            if isinstance(yt, str):
+                linhas_md.append(f"- [▶️ Assistir o vídeo no YouTube]({yt})")
+            else:
+                linhas_md.append(f"- [▶️ Assistir com legenda]({yt[0]})")
+                linhas_md.append(f"- [▶️ Assistir sem legenda]({yt[1]})")
         else:
             linhas_md.append("*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*")
         linhas_md.append("")
@@ -157,7 +216,7 @@ def main():
             # remove blocos de imagem (![legenda](arquivo.png) + linha em branco + _legenda_),
             # pois os screenshots originais não fazem parte da entrega final (só o PDF já renderizado os tem)
             conteudo = re.sub(r"!\[.*?\]\([^)\n]+\.png\)\n\n_.*?_\n", "", conteudo, flags=re.DOTALL)
-            linhas_md.append(conteudo)
+            linhas_md.append(limpar_para_usuario_final(conteudo))
 
         with open(pagina_path, "w", encoding="utf-8") as f:
             f.write("\n".join(linhas_md))

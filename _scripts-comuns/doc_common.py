@@ -68,8 +68,12 @@ def render_pdf(blocks, out_path, titulo, subtitulo, versao, data, screenshots_di
         story.append(Paragraph(intro_texto, _styles['Corpo']))
     if video_nome:
         story.append(Spacer(1, 0.3 * cm))
-        story.append(Paragraph(f'Vídeo narrado explicando esta rotina (arquivo separado, '
-                                f'entregue junto com este PDF): <b>{video_nome}</b>', _styles['Corpo']))
+        if video_nome.startswith('http'):
+            story.append(Paragraph(f'Assista ao vídeo narrado desta rotina: '
+                                    f'<a href="{video_nome}" color="blue"><u>{video_nome}</u></a>', _styles['Corpo']))
+        else:
+            story.append(Paragraph(f'Vídeo narrado explicando esta rotina (arquivo separado, '
+                                    f'entregue junto com este PDF): <b>{video_nome}</b>', _styles['Corpo']))
     story.append(PageBreak())
 
     for b in blocks:
@@ -182,7 +186,10 @@ def render_md(blocks, out_path, titulo, subtitulo, versao, data, video_nome=None
     if intro_texto:
         lines += [_strip_tags(intro_texto), '']
     if video_nome:
-        lines += [f'Vídeo narrado desta rotina: `{video_nome}`', '']
+        if video_nome.startswith('http'):
+            lines += [f'Assista ao vídeo narrado desta rotina: [{video_nome}]({video_nome})', '']
+        else:
+            lines += [f'Vídeo narrado desta rotina: `{video_nome}`', '']
     lines.append('---')
 
     for b in blocks:

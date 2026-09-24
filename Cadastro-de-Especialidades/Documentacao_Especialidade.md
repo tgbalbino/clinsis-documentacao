@@ -6,8 +6,7 @@ Versão 1.0 — 22/09/2026
 
 O cadastro de Especialidade (Psicologia, Fisioterapia, Fonoaudiologia, etc.) tem duas configurações que mudam o comportamento de outras partes do sistema, mas cujo efeito nem sempre é óbvio pelo nome: Tipo de Cobrança (usada só no Pagamento de Profissionais) e Relatório Compartilhado(Prontuários) (usada só no Prontuário). Este manual explica as duas em detalhe, com exemplos.
 
-Vídeo narrado desta rotina: `video-especialidade-com-legenda.mp4 (ou -sem-legenda.mp4)`
-
+Assista ao vídeo narrado desta rotina: [https://youtu.be/9pTvpUSwb_g](https://youtu.be/9pTvpUSwb_g)
 ---
 
 ## Onde fica o cadastro

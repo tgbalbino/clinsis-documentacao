@@ -2,7 +2,7 @@ const { start } = require('./lib');
 (async () => {
   const { browser, page, go, shot, modal } = await start();
   await go('/agendamento?idAgenda=33'); await page.waitForTimeout(4000);
-  const cancel = async () => { await page.locator('.modal.show button:has-text("Cancelar"), .modal.show button:has-text("Fechar")').last().click().catch(()=>{}); await page.waitForTimeout(800); };
+  const cancel = async () => { await page.locator('.modal.show button:has-text("Cancelar"), .modal.show button:has-text("Fechar"), .modal.show button:has-text("Não")').last().click().catch(()=>{}); await page.waitForTimeout(800); };
   await page.locator('tbody tr button.btn-success:visible').first().click(); await modal();
   await page.locator('.modal.show input[type=text]').first().fill('Paciente 000'); await page.keyboard.press('Enter'); await page.waitForTimeout(1500);
   await page.locator('.modal.show tbody tr').first().locator('button').first().click(); await page.waitForTimeout(1500);
