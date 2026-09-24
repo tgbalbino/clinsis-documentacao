@@ -12,10 +12,10 @@ os.makedirs(ENTREGA, exist_ok=True)
 
 VERSAO = "1.0"
 DATA = "22/09/2026"
-TITULO = "Tabela de Preços para Pagamento"
+TITULO = "Tabela de Valores para Pagamento"
 SUBTITULO = "Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa"
-VIDEO_NOME = "video-tabela-preco-pagamento-com-legenda.mp4 (ou -sem-legenda.mp4)"
-INTRO = ('A <b>Tabela de Preços para Pagamento</b> (Tabelas Aux. → Tab. Pagamento) define quanto a '
+VIDEO_NOME = "https://youtu.be/B5Jlz0kweIM"
+INTRO = ('A <b>Tabela de Valores para Pagamento</b> (Tabelas Aux. → Tab. Pagamento) define quanto a '
          'clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de '
          '<b>Pagamento de Profissionais</b> usa para calcular o valor a pagar todo mês. Este manual '
          'cobre o cadastro completo e a ferramenta de <b>reajuste de preço em massa</b>, que aplica um '
@@ -25,9 +25,8 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'O conceito de "Tabela" (vigência)'),
-    ('p', 'Cada linha da lista principal é uma <b>tabela de valores</b> (o sistema chama de '
-          '"vigência"), com uma Descrição e um status Ativo/Inativo. O botão de engrenagem '
+    ('h2', 'O conceito de "Tabela de Valores"'),
+    ('p', 'Cada linha da lista principal é uma <b>Tabela de Valores</b>, com uma Descrição e um status Ativo/Inativo. O botão de engrenagem '
           '("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.'),
     ('img', '00-lista-vigencias.png', 'Lista de tabelas de pagamento cadastradas, com o status Ativo de cada uma.'),
     ('aviso', 'O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como '
@@ -37,7 +36,7 @@ blocks = [
 
     ('h2', 'Dentro de "Gerenciar": três abas'),
     ('tabela', [
-        ('Agenda', 'Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo).', 'AgendaVigenciaProfPagto'),
+        ('Agenda', 'Vincula quais meses/anos de agenda usam esta tabela de valores (não define preço, só habilita o mês para entrar no cálculo).', 'AgendaVigenciaProfPagto'),
         ('Especialidades', 'Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico.', 'ConfigEspecPagto'),
         ('Profissionais', 'Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional.', 'ConfigProfissionalEspecialidadePagto'),
     ]),

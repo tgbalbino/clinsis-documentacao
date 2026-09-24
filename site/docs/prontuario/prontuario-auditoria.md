@@ -8,11 +8,11 @@ _Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e At
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/xRpzTXrGA3Y)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/xRpzTXrGA3Y?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/xRpzTXrGA3Y)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 23/09/2026
 
 Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/xRpzTXrGA3Y](https://youtu.be/xRpzTXrGA3Y)
 ---
 
 ## Para que serve cada relatório

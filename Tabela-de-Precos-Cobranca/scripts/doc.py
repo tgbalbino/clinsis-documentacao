@@ -12,10 +12,10 @@ os.makedirs(ENTREGA, exist_ok=True)
 
 VERSAO = "1.0"
 DATA = "22/09/2026"
-TITULO = "Tabela de Preços para Cobrança"
+TITULO = "Tabela de Valores para Cobrança"
 SUBTITULO = "Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa"
-VIDEO_NOME = "video-tabela-preco-cobranca-com-legenda.mp4 (ou -sem-legenda.mp4)"
-INTRO = ('A <b>Tabela de Preços para Cobrança</b> (Tabelas Aux. → Tab. Cobrança) define quanto cobrar '
+VIDEO_NOME = "https://youtu.be/mFThg03z-RY"
+INTRO = ('A <b>Tabela de Valores para Cobrança</b> (Tabelas Aux. → Tab. Cobrança) define quanto cobrar '
          'do paciente por sessão particular. É essa tabela que o relatório de <b>Cobrança de '
          'Paciente</b> usa para calcular o valor a receber todo mês. Este manual cobre as três formas '
          'de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de '
@@ -26,8 +26,8 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
 
 blocks = [
     ('h2', 'Diferença em relação à Tabela de Pagamento'),
-    ('p', 'Ao contrário da Tabela de Preços para Pagamento, aqui <b>não existe o conceito de várias '
-          'tabelas/vigências</b> — é uma configuração única e sempre "viva" por clínica, sem histórico '
+    ('p', 'Ao contrário da Tabela de Valores para Pagamento, aqui <b>não existe o conceito de várias '
+          'tabelas de valores</b> — é uma configuração única e sempre "viva" por clínica, sem histórico '
           'de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente '
           'de valor.'),
     ('tabela', [

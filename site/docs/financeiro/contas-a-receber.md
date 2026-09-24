@@ -8,11 +8,11 @@ _Cadastrar e receber os valores que os pacientes/convênios devem à clínica_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/72i8FLOKhII)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/72i8FLOKhII?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/72i8FLOKhII)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 17/09/2026
 
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/72i8FLOKhII](https://youtu.be/72i8FLOKhII)
 ---
 
 ## Indicadores e como abrir a lista

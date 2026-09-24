@@ -2,7 +2,7 @@
   {
     "audio": "01.wav",
     "imagem": "00-cobranca-config-especialidade.png",
-    "texto": "Cobrança de Paciente calcula, a partir dos atendimentos particulares do mês, quanto cada paciente deve pagar, e gera a Conta a Receber de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Preços para Cobrança, em Tabelas Auxiliares, Tab. Cobrança, com o valor por especialidade."
+    "texto": "Cobrança de Paciente calcula, a partir dos atendimentos particulares do mês, quanto cada paciente deve pagar, e gera a Conta a Receber de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Valores para Cobrança, em Tabelas Auxiliares, Tab. Cobrança, com o valor por especialidade."
   },
   {
     "audio": "02.wav",

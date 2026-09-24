@@ -8,11 +8,11 @@ _Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/n7F19sn_uXs)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/n7F19sn_uXs?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/n7F19sn_uXs)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 18/09/2026
 
 O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/n7F19sn_uXs](https://youtu.be/n7F19sn_uXs)
 ---
 
 ## Abrindo o caixa

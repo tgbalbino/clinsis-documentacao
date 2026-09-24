@@ -14,8 +14,8 @@ VERSAO = "1.0"
 DATA = "22/09/2026"
 TITULO = "Cadastro de Serviços"
 SUBTITULO = "Para que serve e onde é utilizado (Tabelas Aux. → Serviços)"
-VIDEO_NOME = "video-cadastro-servicos-com-legenda.mp4 (ou -sem-legenda.mp4)"
-INTRO = ('Um <b>Serviço</b> é um item simples de "nome + valor" — como um item de tabela de preços — '
+VIDEO_NOME = "https://youtu.be/uotROr-rj6s"
+INTRO = ('Um <b>Serviço</b> é um item simples de "nome + valor" — como um item de tabela de valores — '
          'usado como base para montar os itens de um <b>Contrato</b>. Este manual explica o cadastro e, '
          'principalmente, onde ele entra em uso dentro do sistema.')
 RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em ambiente local de '
@@ -37,7 +37,7 @@ blocks = [
     ('h2', 'Onde é utilizado: exclusivamente no módulo Contrato'),
     ('aviso', 'Apesar do nome "Serviço" sugerir algo amplo (faturamento, convênio, guias), na prática '
               'ele é usado em <b>um único lugar do sistema</b>: a aba "Serviços" dentro do cadastro de '
-              'Contrato. Guia de Faturamento, Cobrança de Paciente e Tabela de Preços de convênio usam '
+              'Contrato. Guia de Faturamento, Cobrança de Paciente e Tabela de Valores de convênio usam '
               'outro conceito (Especialidade), sem nenhuma relação com este cadastro.'),
     ('p', 'Dentro de um Contrato, cada linha de serviço contratado (Serviço + Quantidade de sessões + '
           'Valor da sessão) fica registrada, e o <b>Valor Total do Contrato é a soma de todas essas '

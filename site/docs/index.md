@@ -17,8 +17,8 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 - [Contas a Receber](financeiro/contas-a-receber.md)
 - [Movimentos Financeiros](financeiro/movimentos-financeiros.md)
 - [Módulo de Caixa](financeiro/modulo-de-caixa.md)
-- [Tabela de Preços para Pagamento](financeiro/tabela-de-precos-pagamento.md)
-- [Tabela de Preços para Cobrança](financeiro/tabela-de-precos-cobranca.md)
+- [Tabela de Valores para Pagamento](financeiro/tabela-de-precos-pagamento.md)
+- [Tabela de Valores para Cobrança](financeiro/tabela-de-precos-cobranca.md)
 
 ## Agenda e Atendimento
 

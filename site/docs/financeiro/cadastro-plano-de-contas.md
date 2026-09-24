@@ -8,11 +8,11 @@ _Como organizar as categorias de receitas e despesas da clínica_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/m4e2BMEsMZg)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/m4e2BMEsMZg?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/m4e2BMEsMZg)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 17/09/2026
 
 O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/m4e2BMEsMZg](https://youtu.be/m4e2BMEsMZg)
 ---
 
 ## Duas formas de visualizar: Árvore ou Lista

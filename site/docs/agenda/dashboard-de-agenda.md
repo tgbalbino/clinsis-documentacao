@@ -8,11 +8,11 @@ _O que significa cada informação e como conferir cada uma no sistema_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/QAra0-JTD5w)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/QAra0-JTD5w?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/QAra0-JTD5w)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 2.1 — 23/09/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/QAra0-JTD5w](https://youtu.be/QAra0-JTD5w)
 ---
 
 ## Onde encontrar e o filtro de período

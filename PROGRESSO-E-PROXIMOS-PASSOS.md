@@ -13,7 +13,7 @@ Cada entrega fica em `C:\Projetos\W_Clinica\Documentacao-Entrega\<Nome-da-Rotina
 5. ✅ Contas a Pagar
 6. ✅ Contas a Receber
 7. ✅ Checkin de Paciente (fluxo completo de pagamento)
-8. ✅ Pagamento de Profissionais (com aprofundamento de Valor/Valor Convênio, Tipo de Marcação, Tipo de Cobrança, quando criar nova Tabela de Preços, e relatório analítico)
+8. ✅ Pagamento de Profissionais (com aprofundamento de Valor/Valor Convênio, Tipo de Marcação, Tipo de Cobrança, quando criar nova Tabela de Valores, e relatório analítico)
 9. ✅ Cobrança de Paciente
 10. ✅ Contrato (sem assinatura digital)
 11. ✅ Contrato (com assinatura digital / D4Sign) — testado ponta a ponta com Sandbox real
@@ -24,8 +24,8 @@ Cada entrega fica em `C:\Projetos\W_Clinica\Documentacao-Entrega\<Nome-da-Rotina
 16. ✅ Movimentos Financeiros (o que é, de onde vem, conciliação, exclusão e transferência entre contas)
 17. ✅ Cadastro de Especialidades — campos "Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados em detalhe
 18. ✅ Cadastro de Serviços — para que serve e único uso real (aba Serviços do Contrato)
-19. ✅ Tabela de Preços (Pagamento) — vigências, valores por Especialidade/Profissional, reajuste de preço em massa
-20. ✅ Tabela de Preços (Cobrança) — valores por Especialidade/Profissional/Operadora, reajuste de preço em massa
+19. ✅ Tabela de Valores (Pagamento) — valores por Especialidade/Profissional, reajuste de preço em massa
+20. ✅ Tabela de Valores (Cobrança) — valores por Especialidade/Profissional/Operadora, reajuste de preço em massa
 
 ## Bugs reais corrigidos durante a documentação (política: sempre corrigir, nunca só documentar)
 

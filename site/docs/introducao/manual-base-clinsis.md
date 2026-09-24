@@ -8,11 +8,11 @@ _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as imp
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/r7iJc03azkw)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/r7iJc03azkw?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/r7iJc03azkw)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 23/09/2026
 
 Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/r7iJc03azkw](https://youtu.be/r7iJc03azkw)
 
 ---
 
@@ -58,7 +57,7 @@ Funciona pelo navegador (computador, tablet ou celular), sem instalar nada. Cada
 | Doc. Faturamento | Guias/documentos de faturamento de convênios e relatório de faturamento. |
 | Caixa | Abertura e fechamento de caixa, solicitações de cancelamento e histórico. |
 | Protocolo | Protocolos de atendimento (módulo opcional da clínica). |
-| Tabelas Aux. | Configurações: Horários, Especialidade, Feriados, Formas de Pagamento, Tabelas de Preço, Parâmetros, Layout de Contrato, entre outras. |
+| Tabelas Aux. | Configurações: Horários, Especialidade, Feriados, Formas de Pagamento, Tabelas de Valores, Parâmetros, Layout de Contrato, entre outras. |
 | Relatórios | Relatórios de Cobrança, Paciente, Agenda, Prontuário, Pagamentos e Contratos. |
 | Financeiro | Contas a Pagar, Contas a Receber, Movimentos Financeiros, Plano de Contas, Centro de Custos, Contas Financeiras, Dashboard e Fluxo de Caixa. |
 

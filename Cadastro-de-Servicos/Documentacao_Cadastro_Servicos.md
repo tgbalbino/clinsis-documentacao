@@ -4,9 +4,10 @@ _Para que serve e onde é utilizado (Tabelas Aux. → Serviços)_
 
 Versão 1.0 — 22/09/2026
 
-Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
+Um Serviço é um item simples de "nome + valor" — como um item de tabela de valores — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/uotROr-rj6s](https://youtu.be/uotROr-rj6s)
+
 ---
 
 ## O que é um Serviço
@@ -25,7 +26,7 @@ _Tela de cadastro: só dois campos, Serviço (nome) e Preço._
 
 ## Onde é utilizado: exclusivamente no módulo Contrato
 
-> ⚠️ Apesar do nome "Serviço" sugerir algo amplo (faturamento, convênio, guias), na prática ele é usado em um único lugar do sistema: a aba "Serviços" dentro do cadastro de Contrato. Guia de Faturamento, Cobrança de Paciente e Tabela de Preços de convênio usam outro conceito (Especialidade), sem nenhuma relação com este cadastro.
+> ⚠️ Apesar do nome "Serviço" sugerir algo amplo (faturamento, convênio, guias), na prática ele é usado em um único lugar do sistema: a aba "Serviços" dentro do cadastro de Contrato. Guia de Faturamento, Cobrança de Paciente e Tabela de Valores de convênio usam outro conceito (Especialidade), sem nenhuma relação com este cadastro.
 
 Dentro de um Contrato, cada linha de serviço contratado (Serviço + Quantidade de sessões + Valor da sessão) fica registrada, e o Valor Total do Contrato é a soma de todas essas linhas — calculado automaticamente pelo sistema, sem que o usuário precise somar nada manualmente.
 

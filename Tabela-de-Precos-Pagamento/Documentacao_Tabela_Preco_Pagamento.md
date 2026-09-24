@@ -1,17 +1,18 @@
-# Tabela de Preços para Pagamento
+# Tabela de Valores para Pagamento
 
 _Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa_
 
 Versão 1.0 — 22/09/2026
 
-A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
+A Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/B5Jlz0kweIM](https://youtu.be/B5Jlz0kweIM)
+
 ---
 
-## O conceito de "Tabela" (vigência)
+## O conceito de "Tabela de Valores"
 
-Cada linha da lista principal é uma tabela de valores (o sistema chama de "vigência"), com uma Descrição e um status Ativo/Inativo. O botão de engrenagem ("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.
+Cada linha da lista principal é uma Tabela de Valores, com uma Descrição e um status Ativo/Inativo. O botão de engrenagem ("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.
 
 ![Lista de tabelas de pagamento cadastradas, com o status Ativo de cada uma.](00-lista-vigencias.png)
 
@@ -23,7 +24,7 @@ _Lista de tabelas de pagamento cadastradas, com o status Ativo de cada uma._
 
 | Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
 |---|---|---|
-| Agenda | Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo). | AgendaVigenciaProfPagto |
+| Agenda | Vincula quais meses/anos de agenda usam esta tabela de valores (não define preço, só habilita o mês para entrar no cálculo). | AgendaVigenciaProfPagto |
 | Especialidades | Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico. | ConfigEspecPagto |
 | Profissionais | Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional. | ConfigProfissionalEspecialidadePagto |
 

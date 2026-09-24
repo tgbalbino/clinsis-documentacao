@@ -8,11 +8,11 @@ _Envio para assinatura eletrônica, acompanhamento e fechamento automático_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/OY-A2nyWsuA)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/OY-A2nyWsuA?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/OY-A2nyWsuA)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 18/09/2026
 
 Este manual complementa o de Contrato (sem assinatura digital), cobrindo o que muda quando a clínica usa a integração com a D4Sign para colher a assinatura do paciente eletronicamente, em vez de assinar manualmente no sistema. O ciclo de vida do contrato (Criado → Assinado → Fechado, com geração automática de Conta a Receber) continua o mesmo — o que muda é como a assinatura acontece: em vez de um clique interno, o paciente assina de verdade, remotamente, e o próprio sistema fecha o contrato sozinho assim que a assinatura é confirmada.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/OY-A2nyWsuA](https://youtu.be/OY-A2nyWsuA)
 ---
 
 > ⚠️ Para o contrato poder ser fechado/enviado para assinatura, a clínica também precisa ter um Layout de Contrato ativo configurado (o modelo/template que vira o PDF enviado à D4Sign) — veja o manual separado "Layout de Contrato" para essa configuração.

@@ -2,7 +2,7 @@
   {
     "audio": "01.wav",
     "imagem": "00-lista-vigencias.png",
-    "texto": "A Tabela de Preços para Pagamento define quanto a clínica paga a cada profissional por sessão. Cada linha aqui é uma tabela de valores, chamada de vigência, com o status Ativo. O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como Ativo, então nunca deixe duas tabelas ativas ao mesmo tempo."
+    "texto": "A Tabela de Valores para Pagamento define quanto a clínica paga a cada profissional por sessão. Cada linha aqui é uma tabela de valores, com o status Ativo. O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como Ativo, então nunca deixe duas tabelas ativas ao mesmo tempo."
   },
   {
     "audio": "02.wav",

@@ -2,12 +2,12 @@
   {
     "audio": "01.wav",
     "imagem": "00-vigencia-lista.png",
-    "texto": "Pagamento de Profissionais calcula, a partir dos atendimentos do mês, quanto a clínica deve repassar pra cada profissional, e gera a Conta a Pagar de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Preços para Pagamento, em Tabelas Auxiliares, Tab. Pagamento."
+    "texto": "Pagamento de Profissionais calcula, a partir dos atendimentos do mês, quanto a clínica deve repassar pra cada profissional, e gera a Conta a Pagar de todos de uma vez. Antes de usar, é preciso configurar uma Tabela de Valores para Pagamento, em Tabelas Auxiliares, Tab. Pagamento."
   },
   {
     "audio": "02.wav",
     "imagem": "01-vigencia-gerenciar-agenda.png",
-    "texto": "Dentro da tabela de preços, a aba Agenda mostra quais meses já usam essa tabela. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele período."
+    "texto": "Dentro da tabela de valores, a aba Agenda mostra quais meses já usam essa tabela. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele período."
   },
   {
     "audio": "03.wav",
@@ -32,12 +32,12 @@
   {
     "audio": "06b.wav",
     "imagem": "16-especialidade-cadastro-tipocobranca.png",
-    "texto": "Já o Tipo de Cobrança fica no cadastro da Especialidade, em Cadastros, não nesta tabela de preços, e também afeta o cálculo. Por Sessão paga por cada sessão confirmada; Paciente paga uma única vez por agendamento, não importa quantas sessões ele teve. Por exemplo, cinco sessões previstas, três confirmadas, a cinquenta reais cada: Por Sessão paga cento e cinquenta reais, Paciente paga só cinquenta."
+    "texto": "Já o Tipo de Cobrança fica no cadastro da Especialidade, em Cadastros, não nesta tabela de valores, e também afeta o cálculo. Por Sessão paga por cada sessão confirmada; Paciente paga uma única vez por agendamento, não importa quantas sessões ele teve. Por exemplo, cinco sessões previstas, três confirmadas, a cinquenta reais cada: Por Sessão paga cento e cinquenta reais, Paciente paga só cinquenta."
   },
   {
     "audio": "07.wav",
     "imagem": "00-vigencia-lista.png",
-    "texto": "Um ponto de atenção: o cálculo sempre usa a tabela de preços mais recente marcada como ativa pra clínica inteira, e não necessariamente a tabela vinculada aquele mês específico na aba Agenda. Isso significa que editar valores ou ativar uma tabela nova pode alterar o cálculo de meses antigos que ainda não tiveram a conta gerada. Só a conta a pagar já gerada fica congelada no valor original."
+    "texto": "Um ponto de atenção: o cálculo sempre usa a tabela de valores mais recente marcada como ativa pra clínica inteira, e não necessariamente a tabela vinculada aquele mês específico na aba Agenda. Isso significa que editar valores ou ativar uma tabela nova pode alterar o cálculo de meses antigos que ainda não tiveram a conta gerada. Só a conta a pagar já gerada fica congelada no valor original."
   },
   {
     "audio": "08.wav",
@@ -67,6 +67,6 @@
   {
     "audio": "13.wav",
     "imagem": "09-agenda-nao-vinculada-sem-linhas.png",
-    "texto": "Se o mês escolhido ainda não estiver vinculado a nenhuma tabela de preços, o sistema avisa: Agenda não vinculada a uma configuração de pagamento. Nesse caso, é só voltar na tela de configuração e vincular esse mês antes de tentar de novo."
+    "texto": "Se o mês escolhido ainda não estiver vinculado a nenhuma tabela de valores, o sistema avisa: Agenda não vinculada a uma configuração de pagamento. Nesse caso, é só voltar na tela de configuração e vincular esse mês antes de tentar de novo."
   }
 ]

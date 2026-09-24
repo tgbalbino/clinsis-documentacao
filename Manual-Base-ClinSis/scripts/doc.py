@@ -60,7 +60,7 @@ blocos = [
         ['Doc. Faturamento', 'Guias/documentos de faturamento de convênios e relatório de faturamento.'],
         ['Caixa', 'Abertura e fechamento de caixa, solicitações de cancelamento e histórico.'],
         ['Protocolo', 'Protocolos de atendimento (módulo opcional da clínica).'],
-        ['Tabelas Aux.', 'Configurações: Horários, Especialidade, Feriados, Formas de Pagamento, Tabelas de Preço, Parâmetros, Layout de Contrato, entre outras.'],
+        ['Tabelas Aux.', 'Configurações: Horários, Especialidade, Feriados, Formas de Pagamento, Tabelas de Valores, Parâmetros, Layout de Contrato, entre outras.'],
         ['Relatórios', 'Relatórios de Cobrança, Paciente, Agenda, Prontuário, Pagamentos e Contratos.'],
         ['Financeiro', 'Contas a Pagar, Contas a Receber, Movimentos Financeiros, Plano de Contas, Centro de Custos, Contas Financeiras, Dashboard e Fluxo de Caixa.'],
     ], [3.6, 13.9]),

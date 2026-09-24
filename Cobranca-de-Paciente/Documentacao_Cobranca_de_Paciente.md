@@ -4,12 +4,13 @@ _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do
 
 Versão 1.0 — 18/09/2026
 
-Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
+
 ---
 
-## Configuração prévia: Tabela de Preços para Cobrança
+## Configuração prévia: Tabela de Valores para Cobrança
 
 Em Tabelas Aux. → Tab. Cobrança (rota /aux/cobranca/gerenciar) fica a configuração dos valores cobrados de cada paciente particular, organizada em três abas:
 
@@ -95,4 +96,4 @@ Rodar o relatório sintético mais de uma vez para o mesmo mês não gera cobran
 
 _Depois de gerado, o paciente já cobrado (ex.: "Paciente 0005") aparece com o aviso "Conta a receber gerada" no lugar do checkbox, impedindo nova seleção para aquele mesmo mês._
 
-> ⚠️ Esta é uma das rotinas que geram Conta a Receber automaticamente: em vez de lançar manualmente uma conta para cada paciente todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos particulares realizados e da Tabela de Preços configurada — o Plano de Contas usado costuma ser algo como "Consulta Particular". Assim como no Pagamento de Profissionais, a conta nasce em aberto: a baixa/recebimento em si é um passo manual separado, feito quando o paciente realmente paga.
+> ⚠️ Esta é uma das rotinas que geram Conta a Receber automaticamente: em vez de lançar manualmente uma conta para cada paciente todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos particulares realizados e da Tabela de Valores configurada — o Plano de Contas usado costuma ser algo como "Consulta Particular". Assim como no Pagamento de Profissionais, a conta nasce em aberto: a baixa/recebimento em si é um passo manual separado, feito quando o paciente realmente paga.

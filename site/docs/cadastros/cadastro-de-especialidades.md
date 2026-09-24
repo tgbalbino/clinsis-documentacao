@@ -8,11 +8,11 @@ _"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com e
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/9pTvpUSwb_g)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/9pTvpUSwb_g?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/9pTvpUSwb_g)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 22/09/2026
 
 O cadastro de Especialidade (Psicologia, Fisioterapia, Fonoaudiologia, etc.) tem duas configurações que mudam o comportamento de outras partes do sistema, mas cujo efeito nem sempre é óbvio pelo nome: Tipo de Cobrança (usada só no Pagamento de Profissionais) e Relatório Compartilhado(Prontuários) (usada só no Prontuário). Este manual explica as duas em detalhe, com exemplos.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/9pTvpUSwb_g](https://youtu.be/9pTvpUSwb_g)
 ---
 
 ## Onde fica o cadastro

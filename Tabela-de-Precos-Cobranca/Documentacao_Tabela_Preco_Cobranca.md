@@ -1,17 +1,18 @@
-# Tabela de Preços para Cobrança
+# Tabela de Valores para Cobrança
 
 _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa_
 
 Versão 1.0 — 22/09/2026
 
-A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
+A Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/mFThg03z-RY](https://youtu.be/mFThg03z-RY)
+
 ---
 
 ## Diferença em relação à Tabela de Pagamento
 
-Ao contrário da Tabela de Preços para Pagamento, aqui não existe o conceito de várias tabelas/vigências — é uma configuração única e sempre "viva" por clínica, sem histórico de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente de valor.
+Ao contrário da Tabela de Valores para Pagamento, aqui não existe o conceito de várias tabelas de valores — é uma configuração única e sempre "viva" por clínica, sem histórico de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente de valor.
 
 | Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
 |---|---|---|

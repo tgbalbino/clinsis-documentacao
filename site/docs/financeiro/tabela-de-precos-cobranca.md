@@ -1,4 +1,4 @@
-# Tabela de Preços para Cobrança
+# Tabela de Valores para Cobrança
 
 _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa_
 
@@ -8,11 +8,11 @@ _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/mFThg03z-RY)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/mFThg03z-RY?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/mFThg03z-RY)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -21,14 +21,14 @@ _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa
 
 Versão 1.0 — 22/09/2026
 
-A Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
+A Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/mFThg03z-RY](https://youtu.be/mFThg03z-RY)
+
 ---
 
 ## Diferença em relação à Tabela de Pagamento
 
-Ao contrário da Tabela de Preços para Pagamento, aqui não existe o conceito de várias tabelas/vigências — é uma configuração única e sempre "viva" por clínica, sem histórico de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente de valor.
+Ao contrário da Tabela de Valores para Pagamento, aqui não existe o conceito de várias tabelas de valores — é uma configuração única e sempre "viva" por clínica, sem histórico de versões nem status Ativo/Inativo. A tela tem três abas, cada uma com um escopo diferente de valor.
 
 | Campo / Label na tela | O que é / de onde vem |
 |---|---|

@@ -12,8 +12,6 @@ _O que o profissional de saúde vê e pode fazer no ClinSis_
 
 ## Conteúdo completo do manual
 
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
-
 ---
 
 
@@ -23,7 +21,6 @@ Versão 1.0 — 24/09/2026
 
 Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
 
-Vídeo narrado desta rotina: `video-area-do-profissional-com-legenda.mp4 (ou -sem-legenda.mp4)`
 
 ---
 

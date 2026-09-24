@@ -14,18 +14,18 @@ VERSAO = "1.0"
 DATA = "18/09/2026"
 TITULO = "Cobrança de Paciente"
 SUBTITULO = "Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês"
-VIDEO_NOME = "video-cobranca-de-paciente-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/AdzPSoJ7_4I"
 INTRO = ('Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, '
          'quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber '
          'correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para '
-         'isso funcionar, é preciso configurar ANTES uma <b>Tabela de Preços para Cobrança</b> '
+         'isso funcionar, é preciso configurar ANTES uma <b>Tabela de Valores para Cobrança</b> '
          '(Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.')
 RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em ambiente local de '
           'homologação, clínica de testes "Homologação" (Clínica 1), usuário administrador de teste. '
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'Configuração prévia: Tabela de Preços para Cobrança'),
+    ('h2', 'Configuração prévia: Tabela de Valores para Cobrança'),
     ('p', 'Em <b>Tabelas Aux. → Tab. Cobrança</b> (rota <font face="Courier">/aux/cobranca/gerenciar</font>) '
           'fica a configuração dos valores cobrados de cada paciente particular, organizada em três abas:'),
     ('img', '00-cobranca-config-especialidade.png',
@@ -102,7 +102,7 @@ blocks = [
 
     ('aviso', 'Esta é uma das rotinas que <b>geram Conta a Receber automaticamente</b>: em vez de lançar '
               'manualmente uma conta para cada paciente todo mês, o sistema calcula e gera tudo de uma vez '
-              'a partir dos atendimentos particulares realizados e da Tabela de Preços configurada — o '
+              'a partir dos atendimentos particulares realizados e da Tabela de Valores configurada — o '
               'Plano de Contas usado costuma ser algo como "Consulta Particular". Assim como no Pagamento '
               'de Profissionais, a conta nasce <b>em aberto</b>: a baixa/recebimento em si é um passo '
               'manual separado, feito quando o paciente realmente paga.'),

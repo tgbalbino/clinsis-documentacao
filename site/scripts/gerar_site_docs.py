@@ -21,8 +21,8 @@ ROTINAS = [
     ("Contas-a-Receber", "Financeiro", "financeiro", "Contas a Receber"),
     ("Movimentos-Financeiros", "Financeiro", "financeiro", "Movimentos Financeiros"),
     ("Modulo-de-Caixa", "Financeiro", "financeiro", "Módulo de Caixa"),
-    ("Tabela-de-Precos-Pagamento", "Financeiro", "financeiro", "Tabela de Preços para Pagamento"),
-    ("Tabela-de-Precos-Cobranca", "Financeiro", "financeiro", "Tabela de Preços para Cobrança"),
+    ("Tabela-de-Precos-Pagamento", "Financeiro", "financeiro", "Tabela de Valores para Pagamento"),
+    ("Tabela-de-Precos-Cobranca", "Financeiro", "financeiro", "Tabela de Valores para Cobrança"),
 
     ("Checkin", "Agenda e Atendimento", "agenda", "Checkin de Paciente"),
     ("Dashboard-de-Agenda", "Agenda e Atendimento", "agenda", "Dashboard de Agenda"),
@@ -101,6 +101,8 @@ def limpar_para_usuario_final(md):
             continue
         if re.match(r"^>\s*.{0,4}Corre[cç][aã]o (feita|realizada)", l):
             continue
+        if re.match(r"^(Assista ao v[ií]deo narrado|V[ií]deo narrado desta rotina)", l):
+            continue  # o site já traz o vídeo incorporado na seção "Vídeo narrado"
         if l.startswith("|") and l.count("|") >= 4:
             if set(l.strip()) <= set("|- :"):
                 l = "|---|---|"

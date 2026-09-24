@@ -1,4 +1,4 @@
-# Tabela de Preços para Pagamento
+# Tabela de Valores para Pagamento
 
 _Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa_
 
@@ -8,11 +8,11 @@ _Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/B5Jlz0kweIM)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/B5Jlz0kweIM?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/B5Jlz0kweIM)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -21,14 +21,14 @@ _Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa_
 
 Versão 1.0 — 22/09/2026
 
-A Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
+A Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/B5Jlz0kweIM](https://youtu.be/B5Jlz0kweIM)
+
 ---
 
-## O conceito de "Tabela" (vigência)
+## O conceito de "Tabela de Valores"
 
-Cada linha da lista principal é uma tabela de valores (o sistema chama de "vigência"), com uma Descrição e um status Ativo/Inativo. O botão de engrenagem ("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.
+Cada linha da lista principal é uma Tabela de Valores, com uma Descrição e um status Ativo/Inativo. O botão de engrenagem ("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.
 
 
 > ⚠️ O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como Ativo = Sim — e o sistema não garante que exista só uma. Nunca deixe duas tabelas ativas ao mesmo tempo: como não há uma ordem confiável entre elas, o resultado do cálculo fica imprevisível.
@@ -37,7 +37,7 @@ Cada linha da lista principal é uma tabela de valores (o sistema chama de "vig�
 
 | Campo / Label na tela | O que é / de onde vem |
 |---|---|
-| Agenda | Vincula quais meses/anos de agenda usam esta tabela de vigência (não define preço, só habilita o mês para entrar no cálculo). |
+| Agenda | Vincula quais meses/anos de agenda usam esta tabela de valores (não define preço, só habilita o mês para entrar no cálculo). |
 | Especialidades | Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico. |
 | Profissionais | Valor específico por Profissional × Especialidade × Tipo de Marcação, que sobrepõe o valor padrão da aba Especialidades só para aquele profissional. |
 

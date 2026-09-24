@@ -14,11 +14,11 @@ VERSAO = "1.0"
 DATA = "17/09/2026"
 TITULO = "Pagamento de Profissionais"
 SUBTITULO = "Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês"
-VIDEO_NOME = "video-pagamento-profissionais-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/0dVv7ctVDPE"
 INTRO = ('Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto '
          'a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente '
          'com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso '
-         'funcionar, é preciso configurar ANTES uma <b>Tabela de Preços para Pagamento</b> '
+         'funcionar, é preciso configurar ANTES uma <b>Tabela de Valores para Pagamento</b> '
          '(Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando '
          'o mês (Agenda) que vai usar essa tabela.')
 RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em ambiente local de '
@@ -26,18 +26,18 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'Configuração prévia: Tabela de Preços para Pagamento'),
-    ('p', 'Em <b>Tabelas Aux. → Tab. Pagamento</b> (rota <font face="Courier">/aux/vigenciaprofpagto</font>) '
-          'fica a lista de "tabelas de preço" — cada uma agrupa um conjunto de valores usados para '
+    ('h2', 'Configuração prévia: Tabela de Valores para Pagamento'),
+    ('p', 'Em <b>Tabelas Aux. → Tab. Pagamento</b> '
+          'fica a lista de "tabelas de valores" — cada uma agrupa um conjunto de valores usados para '
           'calcular o repasse dos profissionais. Ao abrir uma tabela (botão da engrenagem), '
           'três abas organizam a configuração:'),
-    ('img', '00-vigencia-lista.png', 'Lista de tabelas de preço para pagamento. No exemplo, a "Tabela 2026" já está ativa.'),
+    ('img', '00-vigencia-lista.png', 'Lista de tabelas de valores para pagamento. No exemplo, a "Tabela 2026" já está ativa.'),
     ('tabela', [
-        ('Aba Agenda', 'Quais competências (mês/ano) usam esta tabela de preços. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês.', 'ConfigAgendaProfEspecPagtoController.cs'),
+        ('Aba Agenda', 'Quais competências (mês/ano) usam esta tabela de valores. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês.', 'ConfigAgendaProfEspecPagtoController.cs'),
         ('Aba Especialidades', 'Valor padrão por Especialidade (ex.: Fisioterapeuta, Psicólogo), aplicado a todos os profissionais daquela especialidade que não tiverem um valor específico.', 'ConfigProfissionalEspecialidadePagtoController.cs'),
         ('Aba Profissionais', 'Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidades quando presente.', 'ConfigProfissionalEspecialidadePagtoController.cs'),
     ]),
-    ('img', '01-vigencia-gerenciar-agenda.png', 'Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de preços.'),
+    ('img', '01-vigencia-gerenciar-agenda.png', 'Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de valores.'),
     ('img', '02-vigencia-gerenciar-profissionais.png', 'Aba Profissionais: lista de profissionais; o botão "$" abre o cadastro dos valores daquele profissional por especialidade.'),
 
     ('h2', '"Valor" e "Valor Convênio": qual dos dois é usado no cálculo'),
@@ -71,7 +71,7 @@ blocks = [
      'da aba Especialidades (R$ 80,00).'),
 
     ('h2', '"Tipo de Cobrança" da Especialidade: por sessão ou por paciente'),
-    ('p', 'Esse campo <b>não fica na Tabela de Preços</b> — ele é configurado no cadastro da própria '
+    ('p', 'Esse campo <b>não fica na Tabela de Valores</b> — ele é configurado no cadastro da própria '
           '<b>Especialidade</b> (Cadastros → Especialidades), no campo <b>Tipo de Cobrança</b>, com duas '
           'opções: <b>Por Sessão</b> ou <b>Paciente</b>. Mesmo estando em outra tela, ele afeta diretamente '
           'como o Pagamento de Profissionais conta as sessões:'),
@@ -91,11 +91,11 @@ blocks = [
           '<b>Paciente</b>, o valor total é 1 × R$ 50 = <b>R$ 50,00</b> — paga uma única vez pelo pacote do '
           'mês, mesmo que várias sessões tenham ocorrido.'),
 
-    ('h2', 'Quando criar uma nova Tabela de Preços'),
-    ('p', 'Seria natural imaginar que, ao reajustar valores, bastaria criar uma <b>nova</b> Tabela de Preços e '
+    ('h2', 'Quando criar uma nova Tabela de Valores'),
+    ('p', 'Seria natural imaginar que, ao reajustar valores, bastaria criar uma <b>nova</b> Tabela de Valores e '
           'vincular só os meses futuros a ela, preservando os valores antigos dos meses já vinculados à tabela '
           'anterior. É importante entender como o sistema realmente se comporta hoje antes de fazer isso:'),
-    ('aviso', 'O cálculo do relatório usa sempre a Tabela de Preços <b>mais recentemente cadastrada que estiver '
+    ('aviso', 'O cálculo do relatório usa sempre a Tabela de Valores <b>mais recentemente cadastrada que estiver '
               'marcada como "Ativo = Sim"</b> para toda a clínica — e não, especificamente, a tabela vinculada '
               'àquele mês na aba Agenda. A aba Agenda só controla se aquele mês pode ou não entrar no cálculo '
               '(precisa estar vinculado a alguma tabela), mas os <b>valores</b> aplicados vêm sempre da tabela '
@@ -118,11 +118,11 @@ blocks = [
     ('img', '05-resultado-agenda-vinculada.png',
      'Resultado para Setembro/2026 (mês já vinculado à Tabela 2026): 4 linhas com Valor Total calculado, somando R$ 67,00.'),
     ('tabela', [
-        ('Agenda (filtro)', 'Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços.', 'Obrigatório'),
+        ('Agenda (filtro)', 'Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Valores.', 'Obrigatório'),
         ('Profissional (filtro)', 'Restringe o relatório a um profissional específico.', 'Opcional'),
         ('Status (filtro)', 'Quais status de agendamento entram no cálculo (Presente, Ausente, etc.).', 'Obrigatório ter ao menos 1 marcado'),
         ('Sessões / Sessões Pagamento', 'Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados).', 'RelatorioRepository.cs'),
-        ('Valor Total', 'Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Preços). Só fica com checkbox pra selecionar se for maior que zero.', 'RelatorioRepository.cs'),
+        ('Valor Total', 'Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Valores). Só fica com checkbox pra selecionar se for maior que zero.', 'RelatorioRepository.cs'),
     ]),
 
     ('h2', 'Relatório de Pagamento de Profissionais (analítico)'),
@@ -164,9 +164,9 @@ blocks = [
     ('img', '10-conta-a-pagar-gerada-pelo-pagamento-profissional.png',
      'Conferindo em Contas a Pagar: a conta do "Profissional 01" (Plano de Contas "Honorário Médico", R$ 40,00) aparece com Situação "1 - Aberto" e Valor Pago R$ 0,00 — pendente só da baixa quando o pagamento for efetivamente feito.'),
 
-    ('h2', 'Quando o mês não está vinculado a nenhuma tabela de preços'),
+    ('h2', 'Quando o mês não está vinculado a nenhuma tabela de valores'),
     ('p', 'Se a Agenda (mês/ano) escolhida no filtro ainda não foi vinculada a nenhuma Tabela de '
-          'Preços (aba Agenda, tela de configuração), o sistema recusa com o aviso '
+          'Valores (aba Agenda, tela de configuração), o sistema recusa com o aviso '
           '<b>"Agenda não vinculada a uma conf. Pagamento"</b> — é preciso voltar em Tabelas Aux. → '
           'Tab. Pagamento e vincular aquele mês antes de tentar gerar o pagamento dele.'),
     ('img', '09-agenda-nao-vinculada-sem-linhas.png',
@@ -174,7 +174,7 @@ blocks = [
 
     ('aviso', 'Esta é uma das rotinas que <b>geram Conta a Pagar automaticamente</b>: em vez de '
               'lançar manualmente uma conta para cada profissional todo mês, o sistema calcula e '
-              'gera tudo de uma vez a partir dos atendimentos realizados e da Tabela de Preços '
+              'gera tudo de uma vez a partir dos atendimentos realizados e da Tabela de Valores '
               'configurada — o Plano de Contas usado costuma ser algo como "Honorário Médico" e o '
               'Tipo de Documento fica marcado como "Pag. Profissional" na Conta a Pagar gerada. '
               'Diferente do Checkin (que já gera a conta paga), aqui a conta nasce <b>em aberto</b>: '

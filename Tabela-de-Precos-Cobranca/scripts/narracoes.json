@@ -2,7 +2,7 @@
   {
     "audio": "01.wav",
     "imagem": "00-aba-especialidade.png",
-    "texto": "A Tabela de Preços para Cobrança define quanto cobrar do paciente por sessão particular. Diferente da Tabela de Pagamento, aqui não existem várias vigências: é uma configuração única, sempre viva, com três abas."
+    "texto": "A Tabela de Valores para Cobrança define quanto cobrar do paciente por sessão particular. Diferente da Tabela de Pagamento, aqui não existem várias tabelas de valores: é uma configuração única, sempre viva, com três abas."
   },
   {
     "audio": "02.wav",

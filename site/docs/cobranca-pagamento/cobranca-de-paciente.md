@@ -8,11 +8,11 @@ _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/AdzPSoJ7_4I)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/AdzPSoJ7_4I?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/AdzPSoJ7_4I)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -21,12 +21,12 @@ _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do
 
 Versão 1.0 — 18/09/2026
 
-Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
+
 ---
 
-## Configuração prévia: Tabela de Preços para Cobrança
+## Configuração prévia: Tabela de Valores para Cobrança
 
 Em Tabelas Aux. → Tab. Cobrança (rota /aux/cobranca/gerenciar) fica a configuração dos valores cobrados de cada paciente particular, organizada em três abas:
 
@@ -73,4 +73,4 @@ Serve como tela de conferência/auditoria antes de gerar a cobrança em lote pel
 Rodar o relatório sintético mais de uma vez para o mesmo mês não gera cobrança duplicada: assim que uma Conta a Receber é gerada para um paciente naquela Agenda, o relatório passa a marcar esse paciente como "Conta a receber gerada" e esconde o checkbox de seleção dele — só volta a aparecer selecionável se essa conta for cancelada. Isso evita cobrar o mesmo paciente duas vezes pelas mesmas sessões.
 
 
-> ⚠️ Esta é uma das rotinas que geram Conta a Receber automaticamente: em vez de lançar manualmente uma conta para cada paciente todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos particulares realizados e da Tabela de Preços configurada — o Plano de Contas usado costuma ser algo como "Consulta Particular". Assim como no Pagamento de Profissionais, a conta nasce em aberto: a baixa/recebimento em si é um passo manual separado, feito quando o paciente realmente paga.
+> ⚠️ Esta é uma das rotinas que geram Conta a Receber automaticamente: em vez de lançar manualmente uma conta para cada paciente todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos particulares realizados e da Tabela de Valores configurada — o Plano de Contas usado costuma ser algo como "Consulta Particular". Assim como no Pagamento de Profissionais, a conta nasce em aberto: a baixa/recebimento em si é um passo manual separado, feito quando o paciente realmente paga.

@@ -8,11 +8,11 @@ _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/YEE6RAVUX8I)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/YEE6RAVUX8I?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/YEE6RAVUX8I)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 22/09/2026
 
 Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor e origem. A tela serve para conferir esse extrato contra o extrato real do banco (conciliação), fazer transferências entre contas do sistema e, se necessário, excluir um lançamento incorreto.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/YEE6RAVUX8I](https://youtu.be/YEE6RAVUX8I)
 ---
 
 ## O que é e de onde vem cada linha

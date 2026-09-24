@@ -8,11 +8,11 @@ _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/1qx_Mgp4T_Q)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/1qx_Mgp4T_Q?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/1qx_Mgp4T_Q)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 17/09/2026
 
 Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/1qx_Mgp4T_Q](https://youtu.be/1qx_Mgp4T_Q)
 ---
 
 ## Tela inicial

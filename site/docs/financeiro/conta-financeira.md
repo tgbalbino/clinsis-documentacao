@@ -8,11 +8,11 @@ _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/er1uv0qlUjk)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/er1uv0qlUjk?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/er1uv0qlUjk)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 18/09/2026
 
 A Conta Financeira é o "cofre" onde o dinheiro da clínica realmente entra e sai: uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta ele saiu — é isso que permite conferir o extrato do banco, saber o saldo de cada conta e montar o Fluxo de Caixa. Este manual explica o cadastro, onde ele é usado e, principalmente, a regra que amarra cada Conta Financeira às Formas de Pagamento permitidas nela.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/er1uv0qlUjk](https://youtu.be/er1uv0qlUjk)
 ---
 
 ## O que é e para que serve

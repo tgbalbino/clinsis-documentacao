@@ -4,28 +4,29 @@ _Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
 
 Versão 1.0 — 17/09/2026
 
-Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
+Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
 
 Assista ao vídeo narrado desta rotina: [https://youtu.be/0dVv7ctVDPE](https://youtu.be/0dVv7ctVDPE)
+
 ---
 
-## Configuração prévia: Tabela de Preços para Pagamento
+## Configuração prévia: Tabela de Valores para Pagamento
 
-Em Tabelas Aux. → Tab. Pagamento (rota /aux/vigenciaprofpagto) fica a lista de "tabelas de preço" — cada uma agrupa um conjunto de valores usados para calcular o repasse dos profissionais. Ao abrir uma tabela (botão da engrenagem), três abas organizam a configuração:
+Em Tabelas Aux. → Tab. Pagamento fica a lista de "tabelas de valores" — cada uma agrupa um conjunto de valores usados para calcular o repasse dos profissionais. Ao abrir uma tabela (botão da engrenagem), três abas organizam a configuração:
 
-![Lista de tabelas de preço para pagamento. No exemplo, a "Tabela 2026" já está ativa.](00-vigencia-lista.png)
+![Lista de tabelas de valores para pagamento. No exemplo, a "Tabela 2026" já está ativa.](00-vigencia-lista.png)
 
-_Lista de tabelas de preço para pagamento. No exemplo, a "Tabela 2026" já está ativa._
+_Lista de tabelas de valores para pagamento. No exemplo, a "Tabela 2026" já está ativa._
 
 | Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
 |---|---|---|
-| Aba Agenda | Quais competências (mês/ano) usam esta tabela de preços. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês. | ConfigAgendaProfEspecPagtoController.cs |
+| Aba Agenda | Quais competências (mês/ano) usam esta tabela de valores. Sem vincular o mês aqui, o sistema recusa gerar o pagamento daquele mês. | ConfigAgendaProfEspecPagtoController.cs |
 | Aba Especialidades | Valor padrão por Especialidade (ex.: Fisioterapeuta, Psicólogo), aplicado a todos os profissionais daquela especialidade que não tiverem um valor específico. | ConfigProfissionalEspecialidadePagtoController.cs |
 | Aba Profissionais | Valor específico por Profissional + Especialidade, que sobrepõe o valor padrão da aba Especialidades quando presente. | ConfigProfissionalEspecialidadePagtoController.cs |
 
-![Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de preços.](01-vigencia-gerenciar-agenda.png)
+![Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de valores.](01-vigencia-gerenciar-agenda.png)
 
-_Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de preços._
+_Aba Agenda: lista de competências (2026/Setembro, 2026/Agosto, etc.) já vinculadas a esta tabela de valores._
 
 ![Aba Profissionais: lista de profissionais; o botão "$" abre o cadastro dos valores daquele profissional por especialidade.](02-vigencia-gerenciar-profissionais.png)
 
@@ -53,7 +54,7 @@ _O mesmo vale na aba Profissionais: o "Profissional 01" tem valor específico pa
 
 ## "Tipo de Cobrança" da Especialidade: por sessão ou por paciente
 
-Esse campo não fica na Tabela de Preços — ele é configurado no cadastro da própria Especialidade (Cadastros → Especialidades), no campo Tipo de Cobrança, com duas opções: Por Sessão ou Paciente. Mesmo estando em outra tela, ele afeta diretamente como o Pagamento de Profissionais conta as sessões:
+Esse campo não fica na Tabela de Valores — ele é configurado no cadastro da própria Especialidade (Cadastros → Especialidades), no campo Tipo de Cobrança, com duas opções: Por Sessão ou Paciente. Mesmo estando em outra tela, ele afeta diretamente como o Pagamento de Profissionais conta as sessões:
 
 ![Cadastros → Especialidades: a lista já mostra a coluna Tipo de Cobrança de cada especialidade — no ambiente de testes, todas estão configuradas como "Por Sessão".](15-especialidade-lista-tipocobranca.png)
 
@@ -70,11 +71,11 @@ _Abrindo "Editar" numa especialidade (ex.: Fisioterapeuta), o campo Tipo de Cobr
 
 Exemplo numérico: Especialidade "Fisioterapia" com Valor = R$ 50,00 e um agendamento com 5 sessões previstas no mês, das quais 3 foram confirmadas como realizadas. Se o Tipo de Cobrança da especialidade for Por Sessão, o valor total é 3 × R$ 50 = R$ 150,00. Se for Paciente, o valor total é 1 × R$ 50 = R$ 50,00 — paga uma única vez pelo pacote do mês, mesmo que várias sessões tenham ocorrido.
 
-## Quando criar uma nova Tabela de Preços
+## Quando criar uma nova Tabela de Valores
 
-Seria natural imaginar que, ao reajustar valores, bastaria criar uma nova Tabela de Preços e vincular só os meses futuros a ela, preservando os valores antigos dos meses já vinculados à tabela anterior. É importante entender como o sistema realmente se comporta hoje antes de fazer isso:
+Seria natural imaginar que, ao reajustar valores, bastaria criar uma nova Tabela de Valores e vincular só os meses futuros a ela, preservando os valores antigos dos meses já vinculados à tabela anterior. É importante entender como o sistema realmente se comporta hoje antes de fazer isso:
 
-> ⚠️ O cálculo do relatório usa sempre a Tabela de Preços mais recentemente cadastrada que estiver marcada como "Ativo = Sim" para toda a clínica — e não, especificamente, a tabela vinculada àquele mês na aba Agenda. A aba Agenda só controla se aquele mês pode ou não entrar no cálculo (precisa estar vinculado a alguma tabela), mas os valores aplicados vêm sempre da tabela ativa mais nova. Ou seja: editar um Valor numa tabela existente, ou ativar uma tabela nova, pode alterar o cálculo de meses antigos que ainda não tiveram o pagamento gerado — a única coisa que realmente fica "congelada" é a Conta a Pagar já gerada; uma vez gerada, ela não é recalculada.
+> ⚠️ O cálculo do relatório usa sempre a Tabela de Valores mais recentemente cadastrada que estiver marcada como "Ativo = Sim" para toda a clínica — e não, especificamente, a tabela vinculada àquele mês na aba Agenda. A aba Agenda só controla se aquele mês pode ou não entrar no cálculo (precisa estar vinculado a alguma tabela), mas os valores aplicados vêm sempre da tabela ativa mais nova. Ou seja: editar um Valor numa tabela existente, ou ativar uma tabela nova, pode alterar o cálculo de meses antigos que ainda não tiveram o pagamento gerado — a única coisa que realmente fica "congelada" é a Conta a Pagar já gerada; uma vez gerada, ela não é recalculada.
 
 Na prática, para reajustar valores com segurança: gere e confira a Conta a Pagar dos meses fechados antes de alterar valores ou ativar uma tabela nova, já que o sistema recalcula pelo valor mais recente ativo no momento em que o relatório é rodado — não pelo valor vigente na época do atendimento. Se notar valores de meses antigos mudando ao reajustar uma tabela nova, isso é o comportamento atual do sistema, e vale reportar à equipe de desenvolvimento para avaliar se é assim que deveria funcionar.
 
@@ -88,11 +89,11 @@ _Resultado para Setembro/2026 (mês já vinculado à Tabela 2026): 4 linhas com 
 
 | Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
 |---|---|---|
-| Agenda (filtro) | Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Preços. | Obrigatório |
+| Agenda (filtro) | Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Valores. | Obrigatório |
 | Profissional (filtro) | Restringe o relatório a um profissional específico. | Opcional |
 | Status (filtro) | Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). | Obrigatório ter ao menos 1 marcado |
 | Sessões / Sessões Pagamento | Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados). | RelatorioRepository.cs |
-| Valor Total | Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Preços). Só fica com checkbox pra selecionar se for maior que zero. | RelatorioRepository.cs |
+| Valor Total | Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Valores). Só fica com checkbox pra selecionar se for maior que zero. | RelatorioRepository.cs |
 
 ## Relatório de Pagamento de Profissionais (analítico)
 
@@ -128,12 +129,12 @@ A conta criada aparece normalmente na tela de Contas a Pagar, com o Favorecido (
 
 _Conferindo em Contas a Pagar: a conta do "Profissional 01" (Plano de Contas "Honorário Médico", R$ 40,00) aparece com Situação "1 - Aberto" e Valor Pago R$ 0,00 — pendente só da baixa quando o pagamento for efetivamente feito._
 
-## Quando o mês não está vinculado a nenhuma tabela de preços
+## Quando o mês não está vinculado a nenhuma tabela de valores
 
-Se a Agenda (mês/ano) escolhida no filtro ainda não foi vinculada a nenhuma Tabela de Preços (aba Agenda, tela de configuração), o sistema recusa com o aviso "Agenda não vinculada a uma conf. Pagamento" — é preciso voltar em Tabelas Aux. → Tab. Pagamento e vincular aquele mês antes de tentar gerar o pagamento dele.
+Se a Agenda (mês/ano) escolhida no filtro ainda não foi vinculada a nenhuma Tabela de Valores (aba Agenda, tela de configuração), o sistema recusa com o aviso "Agenda não vinculada a uma conf. Pagamento" — é preciso voltar em Tabelas Aux. → Tab. Pagamento e vincular aquele mês antes de tentar gerar o pagamento dele.
 
 ![Exemplo real: ao filtrar por um mês (Abril/2026) que não está vinculado a nenhuma tabela, o relatório vem vazio e aparece o aviso de erro.](09-agenda-nao-vinculada-sem-linhas.png)
 
 _Exemplo real: ao filtrar por um mês (Abril/2026) que não está vinculado a nenhuma tabela, o relatório vem vazio e aparece o aviso de erro._
 
-> ⚠️ Esta é uma das rotinas que geram Conta a Pagar automaticamente: em vez de lançar manualmente uma conta para cada profissional todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos realizados e da Tabela de Preços configurada — o Plano de Contas usado costuma ser algo como "Honorário Médico" e o Tipo de Documento fica marcado como "Pag. Profissional" na Conta a Pagar gerada. Diferente do Checkin (que já gera a conta paga), aqui a conta nasce em aberto: a baixa/pagamento em si é um passo manual separado, feito quando a clínica realmente repassa o valor ao profissional.
+> ⚠️ Esta é uma das rotinas que geram Conta a Pagar automaticamente: em vez de lançar manualmente uma conta para cada profissional todo mês, o sistema calcula e gera tudo de uma vez a partir dos atendimentos realizados e da Tabela de Valores configurada — o Plano de Contas usado costuma ser algo como "Honorário Médico" e o Tipo de Documento fica marcado como "Pag. Profissional" na Conta a Pagar gerada. Diferente do Checkin (que já gera a conta paga), aqui a conta nasce em aberto: a baixa/pagamento em si é um passo manual separado, feito quando a clínica realmente repassa o valor ao profissional.

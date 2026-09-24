@@ -8,11 +8,11 @@ _O modelo (template) usado para gerar o PDF de todos os contratos da clínica_
 
 ## Vídeo narrado
 
-- [▶️ Assistir o vídeo no YouTube](https://youtu.be/w-cCTVEKQng)
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/w-cCTVEKQng?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/w-cCTVEKQng)
 
 ## Conteúdo completo do manual
-
-*As capturas de tela deste trecho estão no PDF acima — aqui fica só o texto.*
 
 ---
 
@@ -23,7 +23,6 @@ Versão 1.0 — 18/09/2026
 
 Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)
 ---
 
 ## Onde fica e o que é
