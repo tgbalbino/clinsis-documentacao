@@ -25,6 +25,31 @@
     "texto": "O resultado mostra, por paciente, quantas sessões entram no cálculo e o valor total a receber."
   },
   {
+    "audio": "05b.wav",
+    "imagem": "13-filtro-status-todos.png",
+    "texto": "Atenção ao filtro de Status: é ele que define quantas sessões são cobradas de cada paciente, com a mesma regra do Pagamento de Profissionais. Só entram as sessões que estão num dos status marcados. A tela já abre com todos marcados, então, por padrão, faltas e remarcações também são cobradas. Desmarcações normalmente não entram, e sessões ainda sem marcação nunca entram."
+  },
+  {
+    "audio": "05c.wav",
+    "imagem": "14-sintetico-todos-status.png",
+    "texto": "No exemplo de setembro, com todos os status marcados, o Paciente zero zero zero cinco aparece com uma sessão, dois reais e cinquenta e um centavos. Essa sessão é uma falta, e ela foi cobrada. O total fica em onze sessões e vinte e sete reais e trinta e nove centavos."
+  },
+  {
+    "audio": "05d.wav",
+    "imagem": "16-sintetico-somente-presente.png",
+    "texto": "Marcando só Presente, esse paciente sai da lista, e o total cai para dez sessões e vinte e quatro reais e oitenta e sete centavos. A diferença é exatamente a falta."
+  },
+  {
+    "audio": "05e.wav",
+    "imagem": "18-analitico-somente-ausentes.png",
+    "texto": "E marcando só as ausências, o relatório mostra apenas quem tem falta no mês, o que ajuda a conferir o que está sendo cobrado."
+  },
+  {
+    "audio": "05f.wav",
+    "imagem": "13-filtro-status-todos.png",
+    "texto": "A conta a receber é gerada com o valor que está na tela, calculado com os status marcados naquele momento. Por isso, confira o filtro de Status antes de gerar, conforme a regra da clínica, por exemplo, se faltas devem ou não ser cobradas."
+  },
+  {
     "audio": "06.wav",
     "imagem": "07-sintetico-modal-gerar-preenchido.png",
     "texto": "Marque os pacientes desejados e clique em Gerar Conta a Receber. Preencha Data de Vencimento, Plano de Contas e Centro de Custo, todos obrigatórios, e confirme em Sim, Gerar."

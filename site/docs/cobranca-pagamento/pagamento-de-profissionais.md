@@ -19,7 +19,7 @@ _Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
 
 _Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 26/09/2026
 
 Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
 
@@ -61,8 +61,8 @@ Esse campo não fica na Tabela de Valores — ele é configurado no cadastro da 
 
 | Campo / Label na tela | O que é / de onde vem |
 |---|---|
-| Por Sessão | O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis. |
-| Paciente | O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. |
+| Por Sessão | O profissional é pago por cada sessão cujo status esteja marcado no filtro do relatório (ver "Quais sessões entram no pagamento"). Se o agendamento tem 5 sessões previstas e 3 estão com um status marcado, contam 3 sessões pagáveis. |
+| Paciente | O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. O campo "Considera Marcação" do relatório define se o pacote exige ao menos uma sessão num status marcado. |
 
 Exemplo numérico: Especialidade "Fisioterapia" com Valor = R$ 50,00 e um agendamento com 5 sessões previstas no mês, das quais 3 foram confirmadas como realizadas. Se o Tipo de Cobrança da especialidade for Por Sessão, o valor total é 3 × R$ 50 = R$ 150,00. Se for Paciente, o valor total é 1 × R$ 50 = R$ 50,00 — paga uma única vez pelo pacote do mês, mesmo que várias sessões tenham ocorrido.
 
@@ -83,9 +83,44 @@ Rota /relatorio/pagamento/profissional/agrupado. Clique em Filtros, escolha a Ag
 |---|---|
 | Agenda (filtro) | Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Valores. *(obrigatório)* |
 | Profissional (filtro) | Restringe o relatório a um profissional específico. |
-| Status (filtro) | Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). *(obrigatório)* |
-| Sessões / Sessões Pagamento | Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados). |
+| Status (filtro) | Quais situações de sessão são pagas (Presente, Ausente, Remarcação etc.). É este filtro que define o quantitativo de sessões a pagar — veja a seção seguinte. Vem com todos os status marcados. *(obrigatório)* |
+| Considera Marcação (filtro) | Só tem efeito em especialidades com Tipo de Cobrança "Paciente": "Sim" (padrão) paga o agendamento se ao menos uma sessão estiver num status marcado; "Não" paga todo agendamento do mês, independentemente da marcação. |
+| Qtd. Horários | Quantos agendamentos (paciente + horário) entraram no cálculo — só entram os que têm ao menos uma sessão num status marcado. |
+| Sessões / Sessões Pagamento | Sessões: total de sessões previstas nesses agendamentos. Sessões Pagamento: quantas delas estão num dos Status marcados no filtro (e já com a data registrada). |
 | Valor Total | Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Valores). Só fica com checkbox pra selecionar se for maior que zero. |
+
+## Quais sessões entram no pagamento: o filtro de Status
+
+O quantitativo de Sessões Pagamento não é fixo: ele depende dos Status marcados no filtro do relatório. Cada agendamento do mês tem até 5 sessões, e cada sessão recebe na Agenda uma situação (Presente, Ausente, Ausente - Justificativa, Remarcação, Pac. Desmarcou, Pro. Desmarcou). Ao calcular, o sistema olha sessão por sessão e só conta as que estão num dos status marcados. Por isso, o mesmo mês pode dar valores diferentes dependendo do que foi marcado no filtro.
+
+
+| Status da sessão | Se estiver marcado no filtro, a sessão é paga? |
+|---|---|
+| PRESENTE | Sim. |
+| AUSENTE | Sim — a falta do paciente é paga ao profissional como se fosse uma sessão. Desmarque se a clínica não paga faltas. |
+| AUSENTE - JUSTIFICATIVA | Sim — mesma regra do Ausente. |
+| REMARCAÇÃO | Sim. |
+| PAC. DESMARCOU / PRO. DESMARCOU | Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data anterior e passa a contar. |
+| Sessão ainda sem marcação | Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar. |
+
+Exemplo real (Setembro/2026, ambiente de testes). Na linha do profissional "PSICANALISTA", especialidade Terapeuta Ocupacional, com valor de R$ 3,88 por sessão, há no mês 2 sessões marcadas como Presente e 3 marcadas como Ausente (as demais sessões previstas ainda não foram marcadas). Rodando o mesmo relatório com três combinações de Status:
+
+| Status marcados no filtro | Qtd. Horários | Sessões | Sessões Pagamento | Valor Total (PSICANALISTA / T.O.) | Total do relatório |
+|---|---|---|---|---|---|
+| Todos (padrão da tela) | 4 | 17 | 5 | R$ 19,40 (5 × 3,88) | R$ 93,93 |
+| Somente PRESENTE | 2 | 8 | 2 | R$ 7,76 (2 × 3,88) | R$ 82,29 |
+| Somente AUSENTE + AUSENTE - JUSTIFICATIVA | 2 | 9 | 3 | R$ 11,64 (3 × 3,88) | R$ 11,64 |
+
+Repare que as 5 sessões pagas com "Todos" são exatamente as 2 presenças + as 3 faltas. As colunas "Qtd. Horários" e "Sessões" também mudam, porque um agendamento só aparece se tiver ao menos uma sessão num status marcado.
+
+
+
+
+
+
+> ⚠️ O botão Gerar Contas a Pagar usa os Status que estão marcados no filtro naquele momento: o valor gravado na conta é exatamente o que aparece na tela. Por isso, confira o filtro de Status antes de gerar, de acordo com a regra da clínica (ex.: pagar faltas ou não). Depois de gerada, a conta não muda se o filtro for alterado, e a linha continua marcada como "Conta a pagar gerada" com qualquer combinação de status.
+
+Tipo de Cobrança "Paciente". Nessas especialidades o profissional recebe no máximo 1 vez por agendamento. Com "Considera Marcação = Sim" (padrão), o agendamento só é pago se ao menos uma sessão estiver num status marcado — ex.: com somente PRESENTE marcado, um paciente que faltou a todas as sessões do mês não gera pagamento. Com "Considera Marcação = Não", todo agendamento do mês é pago 1 vez, independentemente dos status. Para especialidades "Por Sessão", o campo Considera Marcação não muda nada.
 
 ## Relatório de Pagamento de Profissionais (analítico)
 

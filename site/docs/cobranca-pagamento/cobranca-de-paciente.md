@@ -19,7 +19,7 @@ _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do
 
 _Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês_
 
-Versão 1.0 — 18/09/2026
+Versão 1.1 — 26/09/2026
 
 Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
 
@@ -47,6 +47,39 @@ Rota /relatorio/valorreceber/agrupado. Clique em Filtros, escolha a Agenda (mês
 
 
 
+
+## Quais sessões entram na cobrança: o filtro de Status
+
+A quantidade de sessões cobradas de cada paciente não é fixa: ela depende dos Status marcados no filtro do relatório — a mesma regra do Pagamento de Profissionais. Cada agendamento do mês tem até 5 sessões, e cada sessão recebe na Agenda uma situação (Presente, Ausente, Ausente - Justificativa, Remarcação, Pac. Desmarcou, Pro. Desmarcou). O sistema olha sessão por sessão e só cobra as que estão num dos status marcados. Por isso, o mesmo mês pode dar valores diferentes conforme o filtro.
+
+
+| Status da sessão | Se estiver marcado no filtro, a sessão é cobrada? |
+|---|---|
+| PRESENTE | Sim. |
+| AUSENTE | Sim — a falta é cobrada do paciente como uma sessão. Desmarque se a clínica não cobra faltas. |
+| AUSENTE - JUSTIFICATIVA | Sim — mesma regra do Ausente. Desmarque se a falta justificada não deve ser cobrada. |
+| REMARCAÇÃO | Sim. |
+| PAC. DESMARCOU / PRO. DESMARCOU | Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data anterior e passa a contar. |
+| Sessão ainda sem marcação | Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar. |
+
+Exemplo real (Setembro/2026, ambiente de testes). O "Paciente 0005" (Terapeuta Ocupacional, R$ 2,51 por sessão) tem 4 sessões previstas no mês, e a única já marcada foi uma falta (Ausente). Rodando o mesmo relatório com três combinações de Status:
+
+| Status marcados no filtro | Paciente 0005 | Sessões (total) | Valor a Receber (total) |
+|---|---|---|---|
+| Todos (padrão da tela) | Aparece: 1 sessão, R$ 2,51 (a falta é cobrada) | 11 | R$ 27,39 |
+| Somente PRESENTE | Não aparece — nada a cobrar | 10 | R$ 24,87 |
+| Somente AUSENTE + AUSENTE - JUSTIFICATIVA | Único paciente da lista: 1 sessão, R$ 2,51 | 1 | R$ 2,51 |
+
+Repare que a diferença entre "Todos" e "Somente PRESENTE" (11 − 10 = 1 sessão; R$ 27,39 − R$ 24,87 = R$ 2,51) é exatamente a falta do Paciente 0005.
+
+
+
+
+
+
+> ⚠️ O botão Gerar Conta a Receber gera a conta com o Valor a Receber que está na tela, ou seja, calculado com os Status marcados naquele momento. Por isso, confira o filtro de Status antes de gerar, de acordo com a regra da clínica (ex.: cobrar faltas ou não). Depois de gerada, a conta não muda se o filtro for alterado.
+
+Diferente do Pagamento de Profissionais, a cobrança de paciente é sempre por sessão: o campo "Tipo de Cobrança" da Especialidade não é usado aqui, e esta tela não tem o filtro "Considera Marcação".
 
 ## Gerando a Conta a Receber
 

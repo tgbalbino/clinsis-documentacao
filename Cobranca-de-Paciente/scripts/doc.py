@@ -10,8 +10,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "18/09/2026"
+VERSAO = "1.1"
+DATA = "26/09/2026"
 TITULO = "Cobrança de Paciente"
 SUBTITULO = "Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês"
 VIDEO_NOME = "https://youtu.be/AdzPSoJ7_4I"
@@ -53,6 +53,54 @@ blocks = [
     ('img', '05-sintetico-resultado.png',
      'Resultado: uma linha por paciente com o total de sessões e o Valor a Receber calculado — no exemplo, '
      '9 pacientes somando R$ 22,97.'),
+
+    ('h2', 'Quais sessões entram na cobrança: o filtro de Status'),
+    ('p', 'A quantidade de sessões cobradas de cada paciente não é fixa: ela depende dos <b>Status marcados no '
+          'filtro</b> do relatório — a mesma regra do Pagamento de Profissionais. Cada agendamento do mês tem até '
+          '5 sessões, e cada sessão recebe na Agenda uma situação (Presente, Ausente, Ausente - Justificativa, '
+          'Remarcação, Pac. Desmarcou, Pro. Desmarcou). O sistema olha sessão por sessão e <b>só cobra as que '
+          'estão num dos status marcados</b>. Por isso, o mesmo mês pode dar valores diferentes conforme o filtro.'),
+    ('img', '13-filtro-status-todos.png',
+     'Filtros do relatório com a lista de Status aberta. Ao abrir a tela, todos os status já vêm marcados — '
+     'ou seja, por padrão as faltas (Ausente e Ausente - Justificativa) e as remarcações também são cobradas do paciente.'),
+    ('tabelagen', ['Status da sessão', 'Se estiver marcado no filtro, a sessão é cobrada?'], [
+        ('PRESENTE', 'Sim.'),
+        ('AUSENTE', 'Sim — a falta é cobrada do paciente como uma sessão. Desmarque se a clínica não cobra faltas.'),
+        ('AUSENTE - JUSTIFICATIVA', 'Sim — mesma regra do Ausente. Desmarque se a falta justificada não deve ser cobrada.'),
+        ('REMARCAÇÃO', 'Sim.'),
+        ('PAC. DESMARCOU / PRO. DESMARCOU', 'Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o '
+                                           'cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada '
+                                           'antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data '
+                                           'anterior e passa a contar.'),
+        ('Sessão ainda sem marcação', 'Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar.'),
+    ], [5.2, 11.8]),
+    ('p', '<b>Exemplo real (Setembro/2026, ambiente de testes).</b> O "Paciente 0005" (Terapeuta Ocupacional, '
+          'R$ 2,51 por sessão) tem 4 sessões previstas no mês, e a única já marcada foi uma falta (Ausente). Rodando '
+          'o mesmo relatório com três combinações de Status:'),
+    ('tabelagen', ['Status marcados no filtro', 'Paciente 0005', 'Sessões (total)', 'Valor a Receber (total)'], [
+        ('Todos (padrão da tela)', 'Aparece: 1 sessão, R$ 2,51 (a falta é cobrada)', '11', 'R$ 27,39'),
+        ('Somente PRESENTE', 'Não aparece — nada a cobrar', '10', 'R$ 24,87'),
+        ('Somente AUSENTE + AUSENTE - JUSTIFICATIVA', 'Único paciente da lista: 1 sessão, R$ 2,51', '1', 'R$ 2,51'),
+    ], [5.0, 6.0, 2.6, 3.4]),
+    ('p', 'Repare que a diferença entre "Todos" e "Somente PRESENTE" (11 − 10 = 1 sessão; R$ 27,39 − R$ 24,87 = '
+          'R$ 2,51) é exatamente a falta do Paciente 0005.'),
+    ('img', '14-sintetico-todos-status.png',
+     'Todos os status marcados: 11 sessões, R$ 27,39. O Paciente 0005 aparece com 1 sessão (a falta) e, neste '
+     'ambiente de testes, já teve a Conta a Receber gerada — ou seja, a falta foi cobrada.'),
+    ('img', '15-filtro-status-somente-presente.png',
+     'Para cobrar só atendimentos realizados: clique em "Limpar" e marque apenas PRESENTE.'),
+    ('img', '16-sintetico-somente-presente.png',
+     'Somente PRESENTE: o Paciente 0005 sai da lista e o total cai para 10 sessões e R$ 24,87.'),
+    ('img', '17-sintetico-somente-ausentes.png',
+     'Somente AUSENTE e AUSENTE - JUSTIFICATIVA: aparece só quem tem falta no mês — útil para conferir quanto das faltas está sendo cobrado.'),
+    ('img', '18-analitico-somente-ausentes.png',
+     'O relatório analítico com o mesmo filtro mostra o detalhe: Paciente 0005, profissional PSICANALISTA, TO, 4 sessões previstas e 1 a receber.'),
+    ('aviso', 'O botão <b>Gerar Conta a Receber</b> gera a conta com o Valor a Receber que está na tela, ou seja, '
+              'calculado com os Status marcados naquele momento. Por isso, <b>confira o filtro de Status antes de '
+              'gerar</b>, de acordo com a regra da clínica (ex.: cobrar faltas ou não). Depois de gerada, a conta não '
+              'muda se o filtro for alterado.'),
+    ('p', 'Diferente do Pagamento de Profissionais, a cobrança de paciente é sempre <b>por sessão</b>: o campo '
+          '"Tipo de Cobrança" da Especialidade não é usado aqui, e esta tela não tem o filtro "Considera Marcação".'),
 
     ('h2', 'Gerando a Conta a Receber'),
     ('p', 'Marque o checkbox dos pacientes desejados (só aparece para quem tem Valor a Receber maior que '

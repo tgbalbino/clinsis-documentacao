@@ -32,7 +32,7 @@
   {
     "audio": "06b.wav",
     "imagem": "16-especialidade-cadastro-tipocobranca.png",
-    "texto": "Já o Tipo de Cobrança fica no cadastro da Especialidade, em Cadastros, não nesta tabela de valores, e também afeta o cálculo. Por Sessão paga por cada sessão confirmada; Paciente paga uma única vez por agendamento, não importa quantas sessões ele teve. Por exemplo, cinco sessões previstas, três confirmadas, a cinquenta reais cada: Por Sessão paga cento e cinquenta reais, Paciente paga só cinquenta."
+    "texto": "Já o Tipo de Cobrança fica no cadastro da Especialidade, em Cadastros, não nesta tabela de valores, e também afeta o cálculo. Por Sessão paga cada sessão cuja situação está marcada no filtro do relatório; Paciente paga uma única vez por agendamento, não importa quantas sessões ele teve. Por exemplo, cinco sessões previstas, três com situação marcada, a cinquenta reais cada: Por Sessão paga cento e cinquenta reais, Paciente paga só cinquenta."
   },
   {
     "audio": "07.wav",
@@ -43,6 +43,36 @@
     "audio": "08.wav",
     "imagem": "05-resultado-agenda-vinculada.png",
     "texto": "No relatório, escolha a Agenda do mês que quer calcular e clique em Filtrar. Ele mostra, por profissional e especialidade, quantas sessões entram no cálculo e o valor total a repassar."
+  },
+  {
+    "audio": "08b.wav",
+    "imagem": "17-filtro-status-todos.png",
+    "texto": "Atenção ao filtro de Status: é ele que define quantas sessões serão pagas. O sistema olha cada sessão do agendamento e só conta as que estão num dos status marcados. A tela já abre com todos marcados, ou seja, por padrão, faltas, faltas justificadas e remarcações também são pagas. Desmarcações normalmente não entram, porque o sistema não registra a data delas, e sessões ainda sem marcação nunca entram."
+  },
+  {
+    "audio": "08c.wav",
+    "imagem": "18-sintetico-todos-status.png",
+    "texto": "Veja um exemplo real de setembro. Com todos os status marcados, o profissional PSICANALISTA, em Terapeuta Ocupacional, tem cinco sessões a pagar, dezenove reais e quarenta centavos, e o relatório soma noventa e três reais e noventa e três centavos."
+  },
+  {
+    "audio": "08d.wav",
+    "imagem": "19-filtro-status-somente-presente.png",
+    "texto": "Para pagar só os atendimentos realizados, clique em Limpar e marque apenas Presente."
+  },
+  {
+    "audio": "08e.wav",
+    "imagem": "20-sintetico-somente-presente.png",
+    "texto": "Agora a mesma linha cai para duas sessões, sete reais e setenta e seis centavos, e o total do relatório para oitenta e dois reais e vinte e nove centavos. As três faltas deixaram de ser pagas."
+  },
+  {
+    "audio": "08f.wav",
+    "imagem": "22-analitico-somente-ausentes.png",
+    "texto": "Marcando só Ausente e Ausente com justificativa, dá pra ver exatamente quais faltas estavam sendo pagas. No relatório analítico, são duas do Paciente zero zero zero e uma do Paciente zero zero zero cinco."
+  },
+  {
+    "audio": "08g.wav",
+    "imagem": "18-sintetico-todos-status.png",
+    "texto": "Importante: o botão Gerar Contas a Pagar usa os status marcados naquele momento, e o valor da conta é exatamente o que está na tela. Então confira o filtro antes de gerar, conforme a regra da clínica. Nas especialidades com Tipo de Cobrança Paciente, o campo Considera Marcação define se o pacote exige ao menos uma sessão num status marcado."
   },
   {
     "audio": "09.wav",

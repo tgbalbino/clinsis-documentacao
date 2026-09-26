@@ -1,0 +1,207 @@
+1
+00:00:00,400 --> 00:00:05,561
+Cobrança de Paciente calcula, a partir dos atendimentos particulares do mês,
+
+2
+00:00:05,561 --> 00:00:10,857
+quanto cada paciente deve pagar, e gera a Conta a Receber de todos de uma vez.
+
+3
+00:00:10,857 --> 00:00:15,746
+Antes de usar, é preciso configurar uma Tabela de Valores para Cobrança,
+
+4
+00:00:15,746 --> 00:00:17,580
+em Tabelas Auxiliares, Tab.
+
+5
+00:00:17,580 --> 00:00:20,296
+Cobrança, com o valor por especialidade.
+
+6
+00:00:21,396 --> 00:00:25,455
+A aba Profissional permite um valor específico por profissional,
+
+7
+00:00:25,455 --> 00:00:29,070
+que tem prioridade sobre o valor padrão da especialidade.
+
+8
+00:00:29,070 --> 00:00:32,621
+A aba Operadora guarda valores específicos por convênio.
+
+9
+00:00:33,721 --> 00:00:38,433
+Atenção: o campo Valor Social, nas abas Especialidade e Operadora,
+
+10
+00:00:38,433 --> 00:00:41,503
+fica salvo mas não é usado no cálculo hoje.
+
+11
+00:00:41,503 --> 00:00:44,930
+O relatório sempre soma pelo campo Valor normal.
+
+12
+00:00:46,030 --> 00:00:49,252
+No relatório sintético, escolha a Agenda do mês,
+
+13
+00:00:49,252 --> 00:00:52,408
+marque os status de sessão e clique em Filtrar.
+
+14
+00:00:52,408 --> 00:00:55,764
+Só entram atendimentos particulares nesse cálculo.
+
+15
+00:00:56,864 --> 00:00:59,104
+O resultado mostra, por paciente,
+
+16
+00:00:59,104 --> 00:01:03,176
+quantas sessões entram no cálculo e o valor total a receber.
+
+17
+00:01:04,276 --> 00:01:10,391
+Atenção ao filtro de Status: é ele que define quantas sessões são cobradas de cada paciente,
+
+18
+00:01:10,391 --> 00:01:13,581
+com a mesma regra do Pagamento de Profissionais.
+
+19
+00:01:13,581 --> 00:01:17,236
+Só entram as sessões que estão num dos status marcados.
+
+20
+00:01:17,236 --> 00:01:20,759
+A tela já abre com todos marcados, então, por padrão,
+
+21
+00:01:20,759 --> 00:01:23,484
+faltas e remarcações também são cobradas.
+
+22
+00:01:23,484 --> 00:01:28,735
+Desmarcações normalmente não entram, e sessões ainda sem marcação nunca entram.
+
+23
+00:01:29,835 --> 00:01:33,481
+No exemplo de setembro, com todos os status marcados,
+
+24
+00:01:33,481 --> 00:01:37,265
+o Paciente zero zero zero cinco aparece com uma sessão,
+
+25
+00:01:37,265 --> 00:01:39,810
+dois reais e cinquenta e um centavos.
+
+26
+00:01:39,810 --> 00:01:42,768
+Essa sessão é uma falta, e ela foi cobrada.
+
+27
+00:01:42,768 --> 00:01:47,928
+O total fica em onze sessões e vinte e sete reais e trinta e nove centavos.
+
+28
+00:01:49,028 --> 00:01:52,330
+Marcando só Presente, esse paciente sai da lista,
+
+29
+00:01:52,330 --> 00:01:57,722
+e o total cai para dez sessões e vinte e quatro reais e oitenta e sete centavos.
+
+30
+00:01:57,722 --> 00:01:59,946
+A diferença é exatamente a falta.
+
+31
+00:02:01,046 --> 00:02:05,824
+E marcando só as ausências, o relatório mostra apenas quem tem falta no mês,
+
+32
+00:02:05,824 --> 00:02:08,842
+o que ajuda a conferir o que está sendo cobrado.
+
+33
+00:02:09,942 --> 00:02:13,605
+A conta a receber é gerada com o valor que está na tela,
+
+34
+00:02:13,605 --> 00:02:16,811
+calculado com os status marcados naquele momento.
+
+35
+00:02:16,811 --> 00:02:22,110
+Por isso, confira o filtro de Status antes de gerar, conforme a regra da clínica,
+
+36
+00:02:22,110 --> 00:02:25,316
+por exemplo, se faltas devem ou não ser cobradas.
+
+37
+00:02:26,416 --> 00:02:30,766
+Marque os pacientes desejados e clique em Gerar Conta a Receber.
+
+38
+00:02:30,766 --> 00:02:36,409
+Preencha Data de Vencimento, Plano de Contas e Centro de Custo, todos obrigatórios,
+
+39
+00:02:36,409 --> 00:02:38,108
+e confirme em Sim, Gerar.
+
+40
+00:02:39,208 --> 00:02:43,001
+A conta é gerada na hora, com o aviso de sucesso.
+
+41
+00:02:44,101 --> 00:02:46,170
+Conferindo em Contas a Receber,
+
+42
+00:02:46,170 --> 00:02:52,108
+a conta do paciente aparece lá com situação Aberto e saldo restante igual ao valor total.
+
+43
+00:02:52,108 --> 00:02:57,646
+Essa rotina só calcula e registra a cobrança; o recebimento em si é lançado depois,
+
+44
+00:02:57,646 --> 00:03:00,715
+manualmente, quando o paciente realmente paga.
+
+45
+00:03:01,815 --> 00:03:05,674
+Existe também o Relatório de Cobrança de Paciente analítico,
+
+46
+00:03:05,674 --> 00:03:10,691
+que mostra a mesma conta detalhada por paciente, profissional e especialidade,
+
+47
+00:03:10,691 --> 00:03:13,070
+sem o botão de gerar conta a receber.
+
+48
+00:03:13,070 --> 00:03:15,836
+Serve pra conferir, antes de gerar em lote,
+
+49
+00:03:15,836 --> 00:03:20,016
+exatamente quais sessões estão compondo o valor de cada paciente.
+
+50
+00:03:21,116 --> 00:03:29,716
+Rodar o relatório de novo não gera cobrança duplicada: o paciente que já teve conta gerada aparece marcado como Conta a receber gerada,
+
+51
+00:03:29,716 --> 00:03:32,009
+sem checkbox pra selecionar de novo,
+
+52
+00:03:32,009 --> 00:03:35,067
+evitando cobrar duas vezes pelas mesmas sessões.

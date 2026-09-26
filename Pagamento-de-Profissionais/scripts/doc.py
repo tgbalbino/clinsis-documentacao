@@ -10,8 +10,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "17/09/2026"
+VERSAO = "1.1"
+DATA = "26/09/2026"
 TITULO = "Pagamento de Profissionais"
 SUBTITULO = "Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês"
 VIDEO_NOME = "https://youtu.be/0dVv7ctVDPE"
@@ -82,8 +82,8 @@ blocks = [
      'Abrindo "Editar" numa especialidade (ex.: Fisioterapeuta), o campo Tipo de Cobrança aparece no cadastro, '
      'com as opções Por Sessão / Paciente.'),
     ('tabela', [
-        ('Por Sessão', 'O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis.', 'Especialidade.TipoCobranca = 1'),
-        ('Paciente', 'O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa.', 'Especialidade.TipoCobranca = 2'),
+        ('Por Sessão', 'O profissional é pago por cada sessão cujo status esteja marcado no filtro do relatório (ver "Quais sessões entram no pagamento"). Se o agendamento tem 5 sessões previstas e 3 estão com um status marcado, contam 3 sessões pagáveis.', 'Especialidade.TipoCobranca = 1'),
+        ('Paciente', 'O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. O campo "Considera Marcação" do relatório define se o pacote exige ao menos uma sessão num status marcado.', 'Especialidade.TipoCobranca = 2'),
     ]),
     ('p', '<b>Exemplo numérico:</b> Especialidade "Fisioterapia" com Valor = R$ 50,00 e um agendamento com 5 '
           'sessões previstas no mês, das quais 3 foram confirmadas como realizadas. Se o Tipo de Cobrança da '
@@ -120,10 +120,66 @@ blocks = [
     ('tabela', [
         ('Agenda (filtro)', 'Mês/ano que será calculado — precisa estar vinculado a uma Tabela de Valores.', 'Obrigatório'),
         ('Profissional (filtro)', 'Restringe o relatório a um profissional específico.', 'Opcional'),
-        ('Status (filtro)', 'Quais status de agendamento entram no cálculo (Presente, Ausente, etc.).', 'Obrigatório ter ao menos 1 marcado'),
-        ('Sessões / Sessões Pagamento', 'Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados).', 'RelatorioRepository.cs'),
+        ('Status (filtro)', 'Quais situações de sessão são pagas (Presente, Ausente, Remarcação etc.). <b>É este filtro que define o quantitativo de sessões a pagar</b> — veja a seção seguinte. Vem com todos os status marcados.', 'Obrigatório ter ao menos 1 marcado'),
+        ('Considera Marcação (filtro)', 'Só tem efeito em especialidades com Tipo de Cobrança "Paciente": "Sim" (padrão) paga o agendamento se ao menos uma sessão estiver num status marcado; "Não" paga todo agendamento do mês, independentemente da marcação.', 'Opcional'),
+        ('Qtd. Horários', 'Quantos agendamentos (paciente + horário) entraram no cálculo — só entram os que têm ao menos uma sessão num status marcado.', 'RelatorioRepository.cs'),
+        ('Sessões / Sessões Pagamento', 'Sessões: total de sessões previstas nesses agendamentos. Sessões Pagamento: quantas delas estão num dos Status marcados no filtro (e já com a data registrada).', 'RelatorioRepository.cs'),
         ('Valor Total', 'Sessões Pagamento × Valor da sessão (da aba Profissionais ou Especialidades da Tabela de Valores). Só fica com checkbox pra selecionar se for maior que zero.', 'RelatorioRepository.cs'),
     ]),
+
+    ('h2', 'Quais sessões entram no pagamento: o filtro de Status'),
+    ('p', 'O quantitativo de <b>Sessões Pagamento</b> não é fixo: ele depende dos <b>Status marcados no filtro</b> '
+          'do relatório. Cada agendamento do mês tem até 5 sessões, e cada sessão recebe na Agenda uma situação '
+          '(Presente, Ausente, Ausente - Justificativa, Remarcação, Pac. Desmarcou, Pro. Desmarcou). Ao calcular, o '
+          'sistema olha sessão por sessão e <b>só conta as que estão num dos status marcados</b>. Por isso, o mesmo '
+          'mês pode dar valores diferentes dependendo do que foi marcado no filtro.'),
+    ('img', '17-filtro-status-todos.png',
+     'Filtros do relatório com a lista de Status aberta. Ao abrir a tela, todos os status já vêm marcados — '
+     'ou seja, por padrão faltas (Ausente), faltas justificadas e remarcações também são pagas.'),
+    ('tabelagen', ['Status da sessão', 'Se estiver marcado no filtro, a sessão é paga?'], [
+        ('PRESENTE', 'Sim.'),
+        ('AUSENTE', 'Sim — a falta do paciente é paga ao profissional como se fosse uma sessão. Desmarque se a clínica não paga faltas.'),
+        ('AUSENTE - JUSTIFICATIVA', 'Sim — mesma regra do Ausente.'),
+        ('REMARCAÇÃO', 'Sim.'),
+        ('PAC. DESMARCOU / PRO. DESMARCOU', 'Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o '
+                                           'cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada '
+                                           'antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data '
+                                           'anterior e passa a contar.'),
+        ('Sessão ainda sem marcação', 'Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar.'),
+    ], [5.2, 11.8]),
+    ('p', '<b>Exemplo real (Setembro/2026, ambiente de testes).</b> Na linha do profissional "PSICANALISTA", '
+          'especialidade Terapeuta Ocupacional, com valor de R$ 3,88 por sessão, há no mês 2 sessões marcadas como '
+          'Presente e 3 marcadas como Ausente (as demais sessões previstas ainda não foram marcadas). Rodando o mesmo '
+          'relatório com três combinações de Status:'),
+    ('tabelagen', ['Status marcados no filtro', 'Qtd. Horários', 'Sessões', 'Sessões Pagamento', 'Valor Total (PSICANALISTA / T.O.)', 'Total do relatório'], [
+        ('Todos (padrão da tela)', '4', '17', '5', 'R$ 19,40 (5 × 3,88)', 'R$ 93,93'),
+        ('Somente PRESENTE', '2', '8', '2', 'R$ 7,76 (2 × 3,88)', 'R$ 82,29'),
+        ('Somente AUSENTE + AUSENTE - JUSTIFICATIVA', '2', '9', '3', 'R$ 11,64 (3 × 3,88)', 'R$ 11,64'),
+    ], [4.6, 2.0, 1.7, 2.3, 3.6, 2.8]),
+    ('p', 'Repare que as 5 sessões pagas com "Todos" são exatamente as 2 presenças + as 3 faltas. As colunas '
+          '"Qtd. Horários" e "Sessões" também mudam, porque um agendamento só aparece se tiver ao menos uma sessão '
+          'num status marcado.'),
+    ('img', '18-sintetico-todos-status.png',
+     'Todos os status marcados: PSICANALISTA / Terapeuta Ocupacional com 5 Sessões Pagamento (R$ 19,40); total do relatório R$ 93,93.'),
+    ('img', '19-filtro-status-somente-presente.png',
+     'Para pagar só atendimentos realizados: clique em "Limpar" e marque apenas PRESENTE.'),
+    ('img', '20-sintetico-somente-presente.png',
+     'Somente PRESENTE: a mesma linha cai para 2 Sessões Pagamento (R$ 7,76) e o total do relatório para R$ 82,29 — as faltas deixaram de ser pagas.'),
+    ('img', '21-sintetico-somente-ausentes.png',
+     'Somente AUSENTE e AUSENTE - JUSTIFICATIVA: sobra apenas a linha que tem faltas, com as 3 sessões de falta (R$ 11,64). '
+     'Útil para ver quanto das faltas está sendo pago.'),
+    ('img', '22-analitico-somente-ausentes.png',
+     'O relatório analítico com o mesmo filtro mostra de quais pacientes são essas faltas: Paciente 000 (2) e Paciente 0005 (1).'),
+    ('aviso', 'O botão <b>Gerar Contas a Pagar</b> usa os Status que estão marcados no filtro naquele momento: o valor '
+              'gravado na conta é exatamente o que aparece na tela. Por isso, <b>confira o filtro de Status antes de '
+              'gerar</b>, de acordo com a regra da clínica (ex.: pagar faltas ou não). Depois de gerada, a conta não '
+              'muda se o filtro for alterado, e a linha continua marcada como "Conta a pagar gerada" com qualquer '
+              'combinação de status.'),
+    ('p', '<b>Tipo de Cobrança "Paciente".</b> Nessas especialidades o profissional recebe no máximo 1 vez por '
+          'agendamento. Com "Considera Marcação = Sim" (padrão), o agendamento só é pago se ao menos uma sessão '
+          'estiver num status marcado — ex.: com somente PRESENTE marcado, um paciente que faltou a todas as sessões '
+          'do mês não gera pagamento. Com "Considera Marcação = Não", todo agendamento do mês é pago 1 vez, '
+          'independentemente dos status. Para especialidades "Por Sessão", o campo Considera Marcação não muda nada.'),
 
     ('h2', 'Relatório de Pagamento de Profissionais (analítico)'),
     ('p', 'Rota <font face="Courier">/relatorio/pagamento/profissional</font> (sem "/agrupado"). É a versão '
