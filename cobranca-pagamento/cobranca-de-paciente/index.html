@@ -1194,6 +1194,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#quais-sessoes-entram-na-cobranca-o-filtro-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quais sessões entram na cobrança: o filtro de Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gerando-a-conta-a-receber" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1851,6 +1862,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#quais-sessoes-entram-na-cobranca-o-filtro-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quais sessões entram na cobrança: o filtro de Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gerando-a-conta-a-receber" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1924,7 +1946,7 @@
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <hr />
 <p><em>Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês</em></p>
-<p>Versão 1.0 — 18/09/2026</p>
+<p>Versão 1.1 — 26/09/2026</p>
 <p>Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.</p>
 <hr />
 <h2 id="configuracao-previa-tabela-de-valores-para-cobranca">Configuração prévia: Tabela de Valores para Cobrança<a class="headerlink" href="#configuracao-previa-tabela-de-valores-para-cobranca" title="Permanent link">&para;</a></h2>
@@ -1956,6 +1978,78 @@
 </blockquote>
 <h2 id="relatorio-de-cobranca-de-paciente-sintetico">Relatório de Cobrança de Paciente (sintético)<a class="headerlink" href="#relatorio-de-cobranca-de-paciente-sintetico" title="Permanent link">&para;</a></h2>
 <p>Rota /relatorio/valorreceber/agrupado. Clique em Filtros, escolha a Agenda (mês/ano) que quer calcular, marque os Status de sessão que devem entrar na cobrança e clique em Filtrar. O relatório considera apenas agendamentos Particulares (convênio não entra aqui) e soma, por paciente, quanto ele deve pagar.</p>
+<h2 id="quais-sessoes-entram-na-cobranca-o-filtro-de-status">Quais sessões entram na cobrança: o filtro de Status<a class="headerlink" href="#quais-sessoes-entram-na-cobranca-o-filtro-de-status" title="Permanent link">&para;</a></h2>
+<p>A quantidade de sessões cobradas de cada paciente não é fixa: ela depende dos Status marcados no filtro do relatório — a mesma regra do Pagamento de Profissionais. Cada agendamento do mês tem até 5 sessões, e cada sessão recebe na Agenda uma situação (Presente, Ausente, Ausente - Justificativa, Remarcação, Pac. Desmarcou, Pro. Desmarcou). O sistema olha sessão por sessão e só cobra as que estão num dos status marcados. Por isso, o mesmo mês pode dar valores diferentes conforme o filtro.</p>
+<table>
+<thead>
+<tr>
+<th>Status da sessão</th>
+<th>Se estiver marcado no filtro, a sessão é cobrada?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESENTE</td>
+<td>Sim.</td>
+</tr>
+<tr>
+<td>AUSENTE</td>
+<td>Sim — a falta é cobrada do paciente como uma sessão. Desmarque se a clínica não cobra faltas.</td>
+</tr>
+<tr>
+<td>AUSENTE - JUSTIFICATIVA</td>
+<td>Sim — mesma regra do Ausente. Desmarque se a falta justificada não deve ser cobrada.</td>
+</tr>
+<tr>
+<td>REMARCAÇÃO</td>
+<td>Sim.</td>
+</tr>
+<tr>
+<td>PAC. DESMARCOU / PRO. DESMARCOU</td>
+<td>Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data anterior e passa a contar.</td>
+</tr>
+<tr>
+<td>Sessão ainda sem marcação</td>
+<td>Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar.</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo real (Setembro/2026, ambiente de testes). O "Paciente 0005" (Terapeuta Ocupacional, R$ 2,51 por sessão) tem 4 sessões previstas no mês, e a única já marcada foi uma falta (Ausente). Rodando o mesmo relatório com três combinações de Status:</p>
+<table>
+<thead>
+<tr>
+<th>Status marcados no filtro</th>
+<th>Paciente 0005</th>
+<th>Sessões (total)</th>
+<th>Valor a Receber (total)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Todos (padrão da tela)</td>
+<td>Aparece: 1 sessão, R$ 2,51 (a falta é cobrada)</td>
+<td>11</td>
+<td>R$ 27,39</td>
+</tr>
+<tr>
+<td>Somente PRESENTE</td>
+<td>Não aparece — nada a cobrar</td>
+<td>10</td>
+<td>R$ 24,87</td>
+</tr>
+<tr>
+<td>Somente AUSENTE + AUSENTE - JUSTIFICATIVA</td>
+<td>Único paciente da lista: 1 sessão, R$ 2,51</td>
+<td>1</td>
+<td>R$ 2,51</td>
+</tr>
+</tbody>
+</table>
+<p>Repare que a diferença entre "Todos" e "Somente PRESENTE" (11 − 10 = 1 sessão; R$ 27,39 − R$ 24,87 = R$ 2,51) é exatamente a falta do Paciente 0005.</p>
+<blockquote>
+<p>⚠️ O botão Gerar Conta a Receber gera a conta com o Valor a Receber que está na tela, ou seja, calculado com os Status marcados naquele momento. Por isso, confira o filtro de Status antes de gerar, de acordo com a regra da clínica (ex.: cobrar faltas ou não). Depois de gerada, a conta não muda se o filtro for alterado.</p>
+</blockquote>
+<p>Diferente do Pagamento de Profissionais, a cobrança de paciente é sempre por sessão: o campo "Tipo de Cobrança" da Especialidade não é usado aqui, e esta tela não tem o filtro "Considera Marcação".</p>
 <h2 id="gerando-a-conta-a-receber">Gerando a Conta a Receber<a class="headerlink" href="#gerando-a-conta-a-receber" title="Permanent link">&para;</a></h2>
 <p>Marque o checkbox dos pacientes desejados (só aparece para quem tem Valor a Receber maior que zero) e clique em Gerar Conta a Receber. Preencha Data de Vencimento (mínimo hoje + 5 dias), Plano de Contas e Centro de Custo, todos obrigatórios, e confirme em Sim / Gerar.</p>
 <h2 id="onde-a-conta-gerada-aparece-e-por-que-ela-nasce-em-aberto">Onde a conta gerada aparece — e por que ela nasce "Em Aberto"<a class="headerlink" href="#onde-a-conta-gerada-aparece-e-por-que-ela-nasce-em-aberto" title="Permanent link">&para;</a></h2>

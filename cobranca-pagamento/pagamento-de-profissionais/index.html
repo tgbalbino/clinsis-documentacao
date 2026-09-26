@@ -1266,6 +1266,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#quais-sessoes-entram-no-pagamento-o-filtro-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quais sessões entram no pagamento: o filtro de Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#relatorio-de-pagamento-de-profissionais-analitico" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1939,6 +1950,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#quais-sessoes-entram-no-pagamento-o-filtro-de-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quais sessões entram no pagamento: o filtro de Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#relatorio-de-pagamento-de-profissionais-analitico" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2012,7 +2034,7 @@
 <h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
 <hr />
 <p><em>Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês</em></p>
-<p>Versão 1.0 — 17/09/2026</p>
+<p>Versão 1.1 — 26/09/2026</p>
 <p>Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.</p>
 <hr />
 <h2 id="configuracao-previa-tabela-de-valores-para-pagamento">Configuração prévia: Tabela de Valores para Pagamento<a class="headerlink" href="#configuracao-previa-tabela-de-valores-para-pagamento" title="Permanent link">&para;</a></h2>
@@ -2059,11 +2081,11 @@
 <tbody>
 <tr>
 <td>Por Sessão</td>
-<td>O profissional é pago por cada sessão confirmada individualmente. Se o agendamento tem 5 sessões previstas e 3 foram confirmadas, contam 3 sessões pagáveis.</td>
+<td>O profissional é pago por cada sessão cujo status esteja marcado no filtro do relatório (ver "Quais sessões entram no pagamento"). Se o agendamento tem 5 sessões previstas e 3 estão com um status marcado, contam 3 sessões pagáveis.</td>
 </tr>
 <tr>
 <td>Paciente</td>
-<td>O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa.</td>
+<td>O profissional é pago no máximo 1 vez por agendamento/paciente naquele período, não importa quantas sessões (1 a 5) ele teve — é um valor "por pacote", não por sessão avulsa. O campo "Considera Marcação" do relatório define se o pacote exige ao menos uma sessão num status marcado.</td>
 </tr>
 </tbody>
 </table>
@@ -2094,11 +2116,19 @@
 </tr>
 <tr>
 <td>Status (filtro)</td>
-<td>Quais status de agendamento entram no cálculo (Presente, Ausente, etc.). <em>(obrigatório)</em></td>
+<td>Quais situações de sessão são pagas (Presente, Ausente, Remarcação etc.). É este filtro que define o quantitativo de sessões a pagar — veja a seção seguinte. Vem com todos os status marcados. <em>(obrigatório)</em></td>
+</tr>
+<tr>
+<td>Considera Marcação (filtro)</td>
+<td>Só tem efeito em especialidades com Tipo de Cobrança "Paciente": "Sim" (padrão) paga o agendamento se ao menos uma sessão estiver num status marcado; "Não" paga todo agendamento do mês, independentemente da marcação.</td>
+</tr>
+<tr>
+<td>Qtd. Horários</td>
+<td>Quantos agendamentos (paciente + horário) entraram no cálculo — só entram os que têm ao menos uma sessão num status marcado.</td>
 </tr>
 <tr>
 <td>Sessões / Sessões Pagamento</td>
-<td>Total de sessões no mês e quantas delas contam para pagamento (conforme os Status marcados).</td>
+<td>Sessões: total de sessões previstas nesses agendamentos. Sessões Pagamento: quantas delas estão num dos Status marcados no filtro (e já com a data registrada).</td>
 </tr>
 <tr>
 <td>Valor Total</td>
@@ -2106,6 +2136,86 @@
 </tr>
 </tbody>
 </table>
+<h2 id="quais-sessoes-entram-no-pagamento-o-filtro-de-status">Quais sessões entram no pagamento: o filtro de Status<a class="headerlink" href="#quais-sessoes-entram-no-pagamento-o-filtro-de-status" title="Permanent link">&para;</a></h2>
+<p>O quantitativo de Sessões Pagamento não é fixo: ele depende dos Status marcados no filtro do relatório. Cada agendamento do mês tem até 5 sessões, e cada sessão recebe na Agenda uma situação (Presente, Ausente, Ausente - Justificativa, Remarcação, Pac. Desmarcou, Pro. Desmarcou). Ao calcular, o sistema olha sessão por sessão e só conta as que estão num dos status marcados. Por isso, o mesmo mês pode dar valores diferentes dependendo do que foi marcado no filtro.</p>
+<table>
+<thead>
+<tr>
+<th>Status da sessão</th>
+<th>Se estiver marcado no filtro, a sessão é paga?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESENTE</td>
+<td>Sim.</td>
+</tr>
+<tr>
+<td>AUSENTE</td>
+<td>Sim — a falta do paciente é paga ao profissional como se fosse uma sessão. Desmarque se a clínica não paga faltas.</td>
+</tr>
+<tr>
+<td>AUSENTE - JUSTIFICATIVA</td>
+<td>Sim — mesma regra do Ausente.</td>
+</tr>
+<tr>
+<td>REMARCAÇÃO</td>
+<td>Sim.</td>
+</tr>
+<tr>
+<td>PAC. DESMARCOU / PRO. DESMARCOU</td>
+<td>Normalmente não. Ao marcar uma sessão como desmarcada, o sistema não registra a data dela, e o cálculo só conta sessões com data registrada. A exceção é a sessão que já tinha sido marcada antes com outro status (ex.: Presente) e depois foi trocada para desmarcação: ela mantém a data anterior e passa a contar.</td>
+</tr>
+<tr>
+<td>Sessão ainda sem marcação</td>
+<td>Nunca — nem com todos os status marcados. Sessões com data futura também só contam depois que a data chegar.</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo real (Setembro/2026, ambiente de testes). Na linha do profissional "PSICANALISTA", especialidade Terapeuta Ocupacional, com valor de R$ 3,88 por sessão, há no mês 2 sessões marcadas como Presente e 3 marcadas como Ausente (as demais sessões previstas ainda não foram marcadas). Rodando o mesmo relatório com três combinações de Status:</p>
+<table>
+<thead>
+<tr>
+<th>Status marcados no filtro</th>
+<th>Qtd. Horários</th>
+<th>Sessões</th>
+<th>Sessões Pagamento</th>
+<th>Valor Total (PSICANALISTA / T.O.)</th>
+<th>Total do relatório</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Todos (padrão da tela)</td>
+<td>4</td>
+<td>17</td>
+<td>5</td>
+<td>R$ 19,40 (5 × 3,88)</td>
+<td>R$ 93,93</td>
+</tr>
+<tr>
+<td>Somente PRESENTE</td>
+<td>2</td>
+<td>8</td>
+<td>2</td>
+<td>R$ 7,76 (2 × 3,88)</td>
+<td>R$ 82,29</td>
+</tr>
+<tr>
+<td>Somente AUSENTE + AUSENTE - JUSTIFICATIVA</td>
+<td>2</td>
+<td>9</td>
+<td>3</td>
+<td>R$ 11,64 (3 × 3,88)</td>
+<td>R$ 11,64</td>
+</tr>
+</tbody>
+</table>
+<p>Repare que as 5 sessões pagas com "Todos" são exatamente as 2 presenças + as 3 faltas. As colunas "Qtd. Horários" e "Sessões" também mudam, porque um agendamento só aparece se tiver ao menos uma sessão num status marcado.</p>
+<blockquote>
+<p>⚠️ O botão Gerar Contas a Pagar usa os Status que estão marcados no filtro naquele momento: o valor gravado na conta é exatamente o que aparece na tela. Por isso, confira o filtro de Status antes de gerar, de acordo com a regra da clínica (ex.: pagar faltas ou não). Depois de gerada, a conta não muda se o filtro for alterado, e a linha continua marcada como "Conta a pagar gerada" com qualquer combinação de status.</p>
+</blockquote>
+<p>Tipo de Cobrança "Paciente". Nessas especialidades o profissional recebe no máximo 1 vez por agendamento. Com "Considera Marcação = Sim" (padrão), o agendamento só é pago se ao menos uma sessão estiver num status marcado — ex.: com somente PRESENTE marcado, um paciente que faltou a todas as sessões do mês não gera pagamento. Com "Considera Marcação = Não", todo agendamento do mês é pago 1 vez, independentemente dos status. Para especialidades "Por Sessão", o campo Considera Marcação não muda nada.</p>
 <h2 id="relatorio-de-pagamento-de-profissionais-analitico">Relatório de Pagamento de Profissionais (analítico)<a class="headerlink" href="#relatorio-de-pagamento-de-profissionais-analitico" title="Permanent link">&para;</a></h2>
 <p>Rota /relatorio/pagamento/profissional (sem "/agrupado"). É a versão detalhada do mesmo cálculo do relatório sintético: em vez de uma linha por Profissional + Especialidade, mostra uma linha por Paciente + Profissional + Especialidade, com os mesmos totais de sessões e valor. Os filtros são os mesmos (Agenda, Profissional, Status, Sessões Cobrar, Valor de Pagamento, Considera Marcação), mas essa tela não tem botão para gerar Conta a Pagar — só "Filtros" e "Exportar".</p>
 <p>Serve como tela de conferência/auditoria antes de gerar o pagamento em lote pelo relatório sintético: permite ver, paciente por paciente, exatamente quais sessões estão entrando no valor total de cada profissional — útil para investigar uma diferença inesperada (por exemplo, uma sessão que não deveria contar, ou um paciente que faltou e foi contabilizado por engano) antes de confirmar a geração da conta, ou para exportar e conferir com uma agenda física.</p>
