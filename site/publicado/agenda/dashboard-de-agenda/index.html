@@ -1,0 +1,2571 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manuais e vídeos das rotinas do sistema ClinSis">
+      
+      
+      
+      
+        <link rel="prev" href="../whatsapp/">
+      
+      
+        <link rel="next" href="../../contrato/layout-de-contrato/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Dashboard de Agenda - Documentação ClinSis</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dashboard-de-agenda" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Documentação ClinSis" class="md-header__button md-logo" aria-label="Documentação ClinSis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação ClinSis
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dashboard de Agenda
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introducao/manual-base-clinsis/" class="md-tabs__link">
+          
+  
+  
+  Base
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cadastros/cadastro-de-especialidades/" class="md-tabs__link">
+          
+  
+  
+  Cadastros Gerais
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../checkin/" class="md-tabs__link">
+          
+  
+  
+  Agenda e Atendimento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contrato/layout-de-contrato/" class="md-tabs__link">
+          
+  
+  
+  Contrato
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prontuario/prontuario-configuracao/" class="md-tabs__link">
+          
+  
+  
+  Prontuário
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../area-do-profissional/area-do-profissional/" class="md-tabs__link">
+          
+  
+  
+  Área do Profissional
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cobranca-pagamento/tabela-de-precos-cobranca/" class="md-tabs__link">
+          
+  
+  
+  Cobrança e Pagamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../financeiro/cadastro-plano-de-contas/" class="md-tabs__link">
+          
+  
+  
+  Financeiro
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentação ClinSis" class="md-nav__button md-logo" aria-label="Documentação ClinSis" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação ClinSis
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introducao/manual-base-clinsis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Base do ClinSis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastros Gerais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cadastros Gerais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cadastros/cadastro-de-especialidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro de Especialidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cadastros/cadastro-de-servicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro de Serviços
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agenda e Atendimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agenda e Atendimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkin de Paciente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whatsapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WhatsApp - lembretes e confirmações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard de Agenda
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard de Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-em-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentação em PDF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-narrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo narrado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo-completo-do-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo completo do manual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onde-encontrar-e-o-filtro-de-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Onde encontrar e o filtro de período
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atencao-o-que-o-dashboard-conta-como-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atenção: o que o Dashboard conta como "sessão"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-passo-a-passo-conferindo-sessoes-registradas-presenca-e-absenteismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxa-de-absenteismo-o-que-e-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taxa de Absenteísmo: o que é e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dias-de-antecedencia-o-que-e-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dias de Antecedência: o que é e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-8-cards-do-topo-o-que-sao-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Os 8 cards do topo — o que são e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráficos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabelas-do-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelas do Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faturamento-por-convenio-de-onde-vem-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faturamento por Convênio: de onde vem e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#previsto-no-mes-da-agenda-sessoes-previstas-pendentes-e-desmarcadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-ver-quais-sessoes-compoem-cada-numero-novo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como ver quais sessões compõem cada número (novo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listas-de-conferencia-dos-demais-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listas de conferência dos demais cards
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quadro-resumo-onde-conferir-cada-informacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quadro resumo: onde conferir cada informação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencas-entre-o-dashboard-e-as-telas-da-agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diferenças entre o Dashboard e as telas da Agenda
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contrato
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contrato
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/layout-de-contrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layout de Contrato
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/contrato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contrato (sem assinatura digital)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contrato/contrato-d4sign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contrato com Assinatura Digital (D4Sign)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prontuário
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prontuário
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prontuario/prontuario-configuracao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prontuário — Configuração (Tipos, Alíneas e Textos padrão)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prontuario/prontuario-uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prontuário — Uso pelo Profissional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prontuario/prontuario-auditoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prontuário — Auditoria e Relatórios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Área do Profissional
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Área do Profissional
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../area-do-profissional/area-do-profissional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual da Área do Profissional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cobrança e Pagamento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cobrança e Pagamento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cobranca-pagamento/tabela-de-precos-cobranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabela de Valores para Cobrança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cobranca-pagamento/tabela-de-precos-pagamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabela de Valores para Pagamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cobranca-pagamento/previsao-de-faturamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Previsão de Faturamento da Agenda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cobranca-pagamento/cobranca-de-paciente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cobrança de Paciente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cobranca-pagamento/pagamento-de-profissionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagamento de Profissionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Financeiro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Financeiro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/cadastro-plano-de-contas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro de Plano de Contas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/cadastro-centro-de-custo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro de Centro de Custo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/conta-financeira/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastro de Conta Financeira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/contas-recorrentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contas Recorrentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/contas-a-pagar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contas a Pagar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/contas-a-receber/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contas a Receber
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/movimentos-financeiros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Movimentos Financeiros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/modulo-de-caixa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Caixa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/conciliacao-bancaria-ofx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conciliação Bancária (OFX)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../financeiro/dashboard-financeiro-e-fluxo-caixa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard Financeiro e Fluxo de Caixa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-em-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentação em PDF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-narrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo narrado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo-completo-do-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo completo do manual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onde-encontrar-e-o-filtro-de-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Onde encontrar e o filtro de período
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atencao-o-que-o-dashboard-conta-como-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atenção: o que o Dashboard conta como "sessão"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-passo-a-passo-conferindo-sessoes-registradas-presenca-e-absenteismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxa-de-absenteismo-o-que-e-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taxa de Absenteísmo: o que é e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dias-de-antecedencia-o-que-e-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dias de Antecedência: o que é e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-8-cards-do-topo-o-que-sao-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Os 8 cards do topo — o que são e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráficos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabelas-do-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabelas do Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faturamento-por-convenio-de-onde-vem-e-como-conferir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faturamento por Convênio: de onde vem e como conferir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#previsto-no-mes-da-agenda-sessoes-previstas-pendentes-e-desmarcadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-ver-quais-sessoes-compoem-cada-numero-novo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como ver quais sessões compõem cada número (novo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listas-de-conferencia-dos-demais-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listas de conferência dos demais cards
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quadro-resumo-onde-conferir-cada-informacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quadro resumo: onde conferir cada informação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencas-entre-o-dashboard-e-as-telas-da-agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diferenças entre o Dashboard e as telas da Agenda
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="dashboard-de-agenda">Dashboard de Agenda<a class="headerlink" href="#dashboard-de-agenda" title="Permanent link">&para;</a></h1>
+<p>O Dashboard é um painel que reúne, numa única tela e em forma de cards, gráficos e tabelas, os principais números de um período, para que o gestor acompanhe o desempenho sem montar relatórios manualmente. O Dashboard de Agenda mostra sessões realizadas, presença e faltas (absenteísmo), antecedência dos agendamentos, ocupação da agenda e faturamento por convênio. Serve para avaliar a produtividade da clínica, identificar problemas como excesso de faltas e apoiar decisões. O manual explica o que cada indicador significa e como conferir o número dentro do sistema.</p>
+<h2 id="documentacao-em-pdf">Documentação em PDF<a class="headerlink" href="#documentacao-em-pdf" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../assets/Dashboard-de-Agenda/Documentacao_Dashboard_Agenda_Simplificado.pdf">📄 Manual em PDF</a></li>
+</ul>
+<h2 id="video-narrado">Vídeo narrado<a class="headerlink" href="#video-narrado" title="Permanent link">&para;</a></h2>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/yMswtbogABA?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+<p><a href="https://youtu.be/yMswtbogABA">Abrir no YouTube</a></p>
+<h2 id="conteudo-completo-do-manual">Conteúdo completo do manual<a class="headerlink" href="#conteudo-completo-do-manual" title="Permanent link">&para;</a></h2>
+<hr />
+<p><em>O que significa cada informação e como conferir cada uma no sistema</em></p>
+<p>Versão 3.1 — 01/10/2026</p>
+<p>O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).</p>
+<hr />
+<h2 id="onde-encontrar-e-o-filtro-de-periodo">Onde encontrar e o filtro de período<a class="headerlink" href="#onde-encontrar-e-o-filtro-de-periodo" title="Permanent link">&para;</a></h2>
+<p>Acesso em Agenda → Dashboard Agenda (perfil administrador). Os filtros são Período - Início e Período - Fim; ao abrir, vêm com o mês corrente, e o botão de borracha volta a esse padrão. O filtro de Profissional existe no sistema, mas não aparece na tela: o Dashboard sempre mostra todos os profissionais juntos.</p>
+<h2 id="atencao-o-que-o-dashboard-conta-como-sessao">Atenção: o que o Dashboard conta como "sessão"<a class="headerlink" href="#atencao-o-que-o-dashboard-conta-como-sessao" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>⚠️ O Dashboard só enxerga sessões que já têm uma data registrada. O sistema só grava essa data quando a sessão é marcada como PRESENTE, AUSENTE, AUSENTE - JUSTIFICATIVA ou REMARCAÇÃO. Por isso: (1) sessões ainda pendentes ("****", sem marcação) não aparecem; (2) PAC. DESMARCOU e PRO. DESMARCOU não aparecem (por isso o gráfico não tem fatias de desmarcação). Em outras palavras, o Dashboard mostra sessões registradas, e não todas as sessões agendadas — a própria tela traz esse aviso e os cards foram renomeados para deixar isso claro.</p>
+</blockquote>
+<p>Exemplo real (Agenda de Setembro/2026): a agenda tem 76 sessões previstas — 69 ainda pendentes, 3 marcadas como Presente e 4 como Ausente. O Dashboard mostra 7 (3 + 4). Os relatórios de Agenda (que contam as sessões previstas) mostram 76.</p>
+<h2 id="exemplo-passo-a-passo-conferindo-sessoes-registradas-presenca-e-absenteismo">Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo<a class="headerlink" href="#exemplo-passo-a-passo-conferindo-sessoes-registradas-presenca-e-absenteismo" title="Permanent link">&para;</a></h2>
+<p>Estes números do Dashboard de Setembro: Sessões Registradas = 7, Taxa de Presença = 42,9%, Taxa de Absenteísmo = 57,1%. Para conferir dentro da Agenda:</p>
+<table>
+<thead>
+<tr>
+<th>Passo</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Menu Agenda → na linha do mês (2026 / SETEMBRO) clique em Acessar.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clique em Filtros. No campo Sessão 1, escolha PRESENTE e clique em Filtrar. Veja no rodapé: "Total de registros: 2".</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Repita trocando para Sessão 2 (resultado: 0), Sessão 3 (0), Sessão 4 (1) e Sessão 5 (0). Some: 2 + 0 + 0 + 1 + 0 = 3 presentes.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Repita tudo com AUSENTE: Sessão 1 = 1, Sessão 2 = 2, Sessão 3 = 1, Sessão 4 = 0 e Sessão 5 = 0. Soma = 4 ausentes.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sessões Registradas = 3 + 4 = 7. Taxa de Presença = 3 ÷ 7 = 42,9%. Taxa de Absenteísmo = 4 ÷ 7 = 57,1%. Bate com o Dashboard.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Por que somar as 5 colunas? A grade tem uma linha por agendamento, com até 5 sessões (Sessão 1 a 5). O Dashboard conta cada sessão, então é preciso somar o resultado de cada coluna. Se o período passar de um mês, repita para cada mês (a Agenda é mensal) e some — o Dashboard usa a data da sessão, não o mês da agenda.</p>
+</blockquote>
+<h2 id="taxa-de-absenteismo-o-que-e-e-como-conferir">Taxa de Absenteísmo: o que é e como conferir<a class="headerlink" href="#taxa-de-absenteismo-o-que-e-e-como-conferir" title="Permanent link">&para;</a></h2>
+<p>Absenteísmo é o nome técnico das faltas: de cada 100 sessões em que o paciente deveria comparecer, quantas ele faltou. No ClinSis a conta é Ausentes ÷ (Presentes + Ausentes) × 100. É o complemento exato da Taxa de Presença (as duas somam 100%). Só entram na conta as sessões marcadas PRESENTE e AUSENTE; AUSENTE - JUSTIFICATIVA, remarcações e desmarcações ficam fora da fórmula.</p>
+<p>Exemplo de Setembro/2026: 3 presentes e 4 ausentes. Absenteísmo = 4 ÷ (3 + 4) × 100 = 57,1% (e a Presença é 3 ÷ 7 = 42,9%). O card é vermelho e, ao clicar nele, abre a lista das sessões que faltaram.</p>
+<table>
+<thead>
+<tr>
+<th>Onde conferir</th>
+<th>Como</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No próprio Dashboard</td>
+<td>Clique no card Taxa de Absenteísmo: abre a lista Ausentes (4), com data, sessão, paciente, profissional, especialidade, operadora, status, inclusão e antecedência. O total da lista é o numerador da taxa.</td>
+</tr>
+<tr>
+<td>Agenda (grade do mês)</td>
+<td>Agenda → Acessar → Filtros → Sessão 1 a 5 = AUSENTE e depois PRESENTE, somando as cinco colunas (passo a passo acima).</td>
+</tr>
+<tr>
+<td>Relatório Agenda - Qtd Marcação</td>
+<td>Relatórios → Agenda - Qtd Marcação (escolha a agenda do mês): a linha TOTAL traz Presentes e Ausentes do mês (Setembro: 3 e 4). Divida Ausentes ÷ (Presentes + Ausentes).</td>
+</tr>
+<tr>
+<td>Relatório da Agenda</td>
+<td>Na lista de agendas, Mais ações → Relatório: resumo do mês com presentes, ausentes e desmarcações.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Sobre o relatório "Agenda - Qtd Marcação": a linha TOTAL soma o mês inteiro, em todas as páginas (Setembro: 76 sessões, 3 presentes, 4 ausentes, 0 ausência justificada), e a coluna Ausência Justificada é separada de Ausente, como no Dashboard. Atenção: "Qtde. Sessões" continua sendo o número de sessões previstas (76), não as registradas (7); a coluna "Outras" (69) são as sessões ainda pendentes.</p>
+</blockquote>
+<h2 id="dias-de-antecedencia-o-que-e-e-como-conferir">Dias de Antecedência: o que é e como conferir<a class="headerlink" href="#dias-de-antecedencia-o-que-e-e-como-conferir" title="Permanent link">&para;</a></h2>
+<p>Antecedência é quanto tempo o agendamento ficou na agenda antes da sessão: são os dias entre a data em que o agendamento foi incluído no sistema e a data da sessão. Exemplo: um paciente incluído na agenda em 19/07/2026 e atendido em 20/09/2026 tem 63 dias de antecedência. O card Dias de Antecedência (média) é a média desse número em todas as sessões registradas do período, e ajuda a saber com quanta folga os pacientes costumam ser agendados. Na coluna Antecedência (dias) das listas, a conta de cada linha é Data da sessão − Inclusão.</p>
+<p>Um detalhe importante: a data de inclusão é a do agendamento (a linha da Agenda, que pode ter até 5 sessões), não a de cada sessão. Por isso as sessões do mesmo agendamento partilham a mesma inclusão, e as sessões mais distantes da inclusão (por exemplo, a Sessão 5 de um pacote semanal) têm antecedência maior que a Sessão 1. Uma sessão de agendamento incluído no mesmo dia tem antecedência 0, e agendamentos antigos, como o de 293 dias do exemplo, puxam a média para cima.</p>
+<p>Como conferir: a data de inclusão do agendamento não aparece em outra tela da Agenda, por isso a conferência é feita nas listas do próprio Dashboard: (1) clique em um card de sessões (por exemplo, Taxa de Absenteísmo ou Taxa de Presença) ou em Ver sessões para abrir as sessões do período; (2) confira em cada linha que Antecedência = Data − Inclusão; (3) some a coluna Antecedência e divida pelo número de linhas. Setembro/2026: 293 + 244 + 166 + 63 + 63 + 63 + 0 = 892; 892 ÷ 7 = 127,4, igual ao card. O botão Exportar CSV leva a mesma lista (com a coluna Dias de antecedência) para o Excel.</p>
+<h2 id="os-8-cards-do-topo-o-que-sao-e-como-conferir">Os 8 cards do topo — o que são e como conferir<a class="headerlink" href="#os-8-cards-do-topo-o-que-sao-e-como-conferir" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Card</th>
+<th>O que é / como é calculado</th>
+<th>Como conferir no sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sessões Registradas (antes "Total de Sessões")</td>
+<td>Quantidade de sessões registradas (com data) no período: Presente, Ausente, Ausente-Justificativa e Remarcação.</td>
+<td>Agenda → Acessar → Filtros → somar as colunas Sessão 1 a 5 por status (exemplo acima).</td>
+</tr>
+<tr>
+<td>Pacientes com Sessão Registrada (antes "Pacientes Atendidos")</td>
+<td>Pacientes distintos com ao menos uma sessão registrada no período (inclui quem faltou).</td>
+<td>Na Agenda filtrada (Sessão = PRESENTE/AUSENTE), contar os nomes diferentes da coluna Paciente.</td>
+</tr>
+<tr>
+<td>Taxa de Presença</td>
+<td>Presentes ÷ (Presentes + Ausentes) × 100.</td>
+<td>Contagens de PRESENTE e AUSENTE na Agenda (exemplo acima).</td>
+</tr>
+<tr>
+<td>Taxa de Absenteísmo</td>
+<td>Ausentes ÷ (Presentes + Ausentes) × 100.</td>
+<td>Idem — ver seção anterior.</td>
+</tr>
+<tr>
+<td>Pacientes Novos</td>
+<td>Pacientes cuja primeira sessão registrada de toda a história cai dentro do período.</td>
+<td>Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a última página para ver a primeira sessão.</td>
+</tr>
+<tr>
+<td>Pacientes Recorrentes</td>
+<td>Pacientes do período que já tinham sessão registrada antes do início do período.</td>
+<td>Mesma consulta acima (primeira sessão anterior ao início do período).</td>
+</tr>
+<tr>
+<td>Dias de Antecedência (média)</td>
+<td>Média de dias entre a data de inclusão do agendamento e a data da sessão (veja a seção própria acima).</td>
+<td>O card não abre lista, mas as listas dos cards de sessões e do botão Ver sessões trazem as colunas Inclusão e Antecedência (dias): some a coluna e divida pelo número de linhas.</td>
+</tr>
+<tr>
+<td>Taxa de Ocupação</td>
+<td>Total de Sessões ÷ Capacidade Total × 100 (o card mostra "7 de 99"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.</td>
+<td>Agenda → Horários (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Taxa de Ocupação: como só as sessões registradas entram no numerador, a taxa fica baixa em meses em andamento (7,1% em Setembro, com muitas sessões ainda pendentes). Férias ou bloqueios de um profissional específico não são descontados da capacidade — só feriados cadastrados em Tabelas Aux. → Feriados (isso já aparece no tooltip do card).</p>
+</blockquote>
+<h2 id="graficos">Gráficos<a class="headerlink" href="#graficos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Gráfico</th>
+<th>O que mostra</th>
+<th>Como conferir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sessões Registradas por Status (pizza)</td>
+<td>Presentes, Ausentes, Ausência Justificada e Remarcações, com a quantidade de sessões escrita em cada fatia. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam.</td>
+<td>Mesmas contagens da Agenda por status (Filtros → Sessão n).</td>
+</tr>
+<tr>
+<td>Evolução Diária</td>
+<td>Presentes e Ausentes de cada dia do período.</td>
+<td>Agenda → Filtros → campo Data (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios).</td>
+</tr>
+<tr>
+<td>Sessões por Faixa Etária</td>
+<td>Sessões por idade do paciente na data da sessão (0–10, 11–20, 21–30, 31–40, 41+).</td>
+<td>Sem tela de conferência; usa a data de nascimento do cadastro do paciente.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tabelas-do-dashboard">Tabelas do Dashboard<a class="headerlink" href="#tabelas-do-dashboard" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tabela</th>
+<th>O que mostra</th>
+<th>Como conferir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Por Profissional</td>
+<td>Sessões, Presentes e Ausentes de cada profissional.</td>
+<td>Agenda → Filtros → Profissionais (marque um) + Sessão n; ou relatório Agenda - Qtd Marcação (uma linha por profissional).</td>
+</tr>
+<tr>
+<td>Por Especialidade</td>
+<td>Sessões registradas por especialidade.</td>
+<td>Agenda: a coluna Espec. tem filtro no cabeçalho; combine com Sessão n.</td>
+</tr>
+<tr>
+<td>Particular x Convênio</td>
+<td>Sessões particulares × demais (sem marcação de Particular conta como Convênio).</td>
+<td>Agenda → Filtros → Particular (Sim/Não) + Sessão n.</td>
+</tr>
+<tr>
+<td>Por Operadora</td>
+<td>Sessões por convênio/operadora.</td>
+<td>Agenda: coluna Plano (filtro no cabeçalho) + Sessão n.</td>
+</tr>
+<tr>
+<td>Por Método / Por Programa</td>
+<td>Só aparecem se a clínica usa Método/Programa; contam sessões que têm essa informação.</td>
+<td>Agenda → Filtros → Método (e coluna de programa, se habilitada).</td>
+</tr>
+<tr>
+<td>Dias e Horários Mais Concorridos</td>
+<td>Top 10 de dia da semana + horário com mais sessões registradas.</td>
+<td>Agenda: filtros de cabeçalho Dia e Hora (ou Filtros → Dias) + Sessão n. Lembre: o Dashboard conta sessões; a grade conta linhas.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="faturamento-por-convenio-de-onde-vem-e-como-conferir">Faturamento por Convênio: de onde vem e como conferir<a class="headerlink" href="#faturamento-por-convenio-de-onde-vem-e-como-conferir" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>⚠️ Este é o único quadro que não usa a data da sessão. O período filtra a data do pagamento (baixa) registrado no Financeiro. Uma sessão de um mês pode ser paga em outro.</p>
+</blockquote>
+<p>De onde vem: só entram guias de faturamento (Doc. Faturamento) que já tiveram baixa em Contas a Receber dentro do período. Valor Faturado = valor da guia faturada; Valor Recebido = soma das baixas (valor pago) dessa conta. Guias faturadas sem nenhuma baixa no período não aparecem.</p>
+<p>Como conferir hoje: (1) Doc. Faturamento → Listar (botão "Listar Últimos" ou "Filtros") mostra as guias: número, paciente, emissão, sessões, status, localização e a coluna Faturamento; (2) Relatórios → Financeiro - Recebimentos (Contas a Receber), com Filtros → Data inicial/final = o período do Dashboard, lista as baixas (data, forma, valor original, valor pago) com o total no rodapé.</p>
+<p>Como ler o quadro: cada linha é uma operadora, com o Valor Faturado das guias que tiveram baixa no período e o Valor Recebido dessas baixas. Nos dados de teste usados neste manual não há guia faturada com baixa entre 01/01 e 30/09/2026, por isso o quadro aparece vazio; quando houver, o total da linha deve ser igual à soma das baixas da guia no relatório Financeiro - Recebimentos.</p>
+<h2 id="previsto-no-mes-da-agenda-sessoes-previstas-pendentes-e-desmarcadas">Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas<a class="headerlink" href="#previsto-no-mes-da-agenda-sessoes-previstas-pendentes-e-desmarcadas" title="Permanent link">&para;</a></h2>
+<p>Logo abaixo do aviso, uma faixa de quatro cards mostra o previsto no mês da agenda: Sessões Previstas (soma das sessões de todos os agendamentos do mês), Sessões Pendentes (ainda sem marcação), Desmarcadas pelo Paciente e Desmarcadas pelo Profissional. Esses números vêm do status de cada sessão do agendamento, e por isso não dependem de haver uma data gravada.</p>
+<blockquote>
+<p>⚠️ Cuidados: (1) esses quatro cards são sempre por mês da agenda; se o período informado não for de meses fechados (por exemplo, 10 a 20 de setembro), eles mostram o mês inteiro, e a tela avisa isso. (2) Como conferir: Sessões Previstas = coluna "Qtde. Sessões" do relatório Agenda - Qtd Marcação (76 em Setembro). (3) Sessões Previstas e Sessões Registradas nem sempre fecham exatamente com as Pendentes, porque remarcações e lançamentos fora do dia previsto entram de forma diferente (em Setembro fecha: 69 pendentes + 7 registradas = 76 previstas). Use como referência, não como igualdade contábil.</p>
+</blockquote>
+<h2 id="como-ver-quais-sessoes-compoem-cada-numero-novo">Como ver quais sessões compõem cada número (novo)<a class="headerlink" href="#como-ver-quais-sessoes-compoem-cada-numero-novo" title="Permanent link">&para;</a></h2>
+<p>Cada número do Dashboard pode ser aberto para mostrar as sessões que o formam. Clique em um dos cards (Sessões Registradas, Pacientes, Taxa de Presença, Taxa de Absenteísmo), em uma linha das tabelas Por Profissional, Por Especialidade ou Por Operadora, ou em Particular / Convênio. Para ver todas as sessões do período, use o botão Ver sessões ao lado de Buscar. A lista usa exatamente o mesmo critério do painel, então o total da lista é sempre igual ao número clicado.</p>
+<h2 id="listas-de-conferencia-dos-demais-cards">Listas de conferência dos demais cards<a class="headerlink" href="#listas-de-conferencia-dos-demais-cards" title="Permanent link">&para;</a></h2>
+<p>Os cards que não são sessões também abrem uma lista, com o mesmo critério do painel: Pacientes Novos e Pacientes Recorrentes (paciente, data da primeira sessão de toda a história e sessões no período), Taxa de Ocupação (cada horário de profissional que compõe a capacidade, com data, dia da semana, profissional, horário e se é fixo ou avulso) e as linhas do quadro Faturamento por Convênio (uma linha por conta a receber, com quantidade de guias, valor faturado e valor recebido no período).</p>
+<blockquote>
+<p>⚠️ Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista e pode ser identificado ali.</p>
+</blockquote>
+<p>Use o botão Exportar CSV para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".</p>
+<h2 id="quadro-resumo-onde-conferir-cada-informacao">Quadro resumo: onde conferir cada informação<a class="headerlink" href="#quadro-resumo-onde-conferir-cada-informacao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Informação do Dashboard</th>
+<th>Onde conferir</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sessões Registradas, Presentes, Ausentes, Taxas</td>
+<td>Agenda → Acessar → Filtros (Sessão 1 a 5)</td>
+<td>Somar as 5 colunas; repetir por mês.</td>
+</tr>
+<tr>
+<td>Por profissional / status</td>
+<td>Relatórios → Agenda - Qtd Marcação</td>
+<td>TOTAL do mês inteiro; "Ausência Justificada" em coluna própria.</td>
+</tr>
+<tr>
+<td>Cards/contagens de um mês</td>
+<td>Relatórios → Relatório Agenda (Agenda → botão Relatório)</td>
+<td>Mostra Presentes/Ausentes/desmarcações do mês da agenda.</td>
+</tr>
+<tr>
+<td>Presença de um dia</td>
+<td>Relatórios → Presença Diária (por data de marcação)</td>
+<td>A data é a do registro da marcação, não a da sessão.</td>
+</tr>
+<tr>
+<td>Pacientes Novos/Recorrentes</td>
+<td>Relatórios → Histórico do Paciente → aba Agenda</td>
+<td>Ir à última página para ver a 1ª sessão.</td>
+</tr>
+<tr>
+<td>Taxa de Ocupação (capacidade)</td>
+<td>Agenda → Horários</td>
+<td>Somar horários × dias; descontar feriados.</td>
+</tr>
+<tr>
+<td>Faturamento por Convênio</td>
+<td>Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos</td>
+<td>Sem agrupamento por operadora.</td>
+</tr>
+<tr>
+<td>Taxa de Absenteísmo</td>
+<td>Card → lista Ausentes; Agenda → Filtros; Relatório Agenda - Qtd Marcação</td>
+<td>Ausentes ÷ (Presentes + Ausentes).</td>
+</tr>
+<tr>
+<td>Dias de Antecedência</td>
+<td>Dashboard → lista de um card de sessões ou Ver sessões</td>
+<td>Colunas Inclusão e Antecedência (dias); média = soma ÷ nº de linhas. Não há outra tela com a data de inclusão.</td>
+</tr>
+<tr>
+<td>Faixa etária</td>
+<td>— (sem tela)</td>
+<td>Idade calculada na data da sessão.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diferencas-entre-o-dashboard-e-as-telas-da-agenda">Diferenças entre o Dashboard e as telas da Agenda<a class="headerlink" href="#diferencas-entre-o-dashboard-e-as-telas-da-agenda" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ponto</th>
+<th>Dashboard</th>
+<th>Telas da Agenda / relatórios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Período</td>
+<td>Intervalo livre de datas (data da sessão).</td>
+<td>Um mês de Agenda por vez.</td>
+</tr>
+<tr>
+<td>O que conta</td>
+<td>Sessões com data registrada (Presente, Ausente, Justificada, Remarcação).</td>
+<td>Agenda mostra todas as linhas; "Qtd Marcação" conta sessões previstas.</td>
+</tr>
+<tr>
+<td>Ausente</td>
+<td>Só status AUSENTE.</td>
+<td>Qtd Marcação separa AUSENTE e Ausência Justificada.</td>
+</tr>
+<tr>
+<td>Totais</td>
+<td>Do período inteiro.</td>
+<td>Qtd Marcação: TOTAL do período inteiro.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Previsão de melhorias: foi elaborado um plano para criar relatórios que permitam conferir todos os números do Dashboard diretamente (sessões por período, pacientes novos, capacidade e faturamento por convênio), além de decidir se o Dashboard deve passar a contar também as sessões agendadas e desmarcadas. Enquanto isso, use os caminhos acima.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
