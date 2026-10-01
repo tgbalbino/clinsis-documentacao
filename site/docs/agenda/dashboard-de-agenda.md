@@ -1,6 +1,6 @@
 # Dashboard de Agenda
 
-_O que significa cada informação e como conferir cada uma no sistema_
+O Dashboard é um painel que reúne, numa única tela e em forma de cards, gráficos e tabelas, os principais números de um período, para que o gestor acompanhe o desempenho sem montar relatórios manualmente. O Dashboard de Agenda mostra sessões realizadas, presença e faltas (absenteísmo), antecedência dos agendamentos, ocupação da agenda e faturamento por convênio. Serve para avaliar a produtividade da clínica, identificar problemas como excesso de faltas e apoiar decisões. O manual explica o que cada indicador significa e como conferir o número dentro do sistema.
 
 ## Documentação em PDF
 

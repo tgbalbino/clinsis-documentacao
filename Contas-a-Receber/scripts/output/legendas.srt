@@ -1,0 +1,139 @@
+1
+00:00:00,400 --> 00:00:05,282
+Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais,
+
+2
+00:00:05,282 --> 00:00:09,150
+em uma ou várias parcelas, e os que chegam de outras rotinas,
+
+3
+00:00:09,150 --> 00:00:13,842
+como Checkin com pagamento, fechamento de Contrato e Cobrança de Paciente.
+
+4
+00:00:13,842 --> 00:00:17,519
+Também exige Plano de Conta e Centro de Custo cadastrados.
+
+5
+00:00:18,619 --> 00:00:23,298
+Cinco caixas resumem a situação: Em Aberto, Vencido, Vence Hoje,
+
+6
+00:00:23,298 --> 00:00:25,272
+A Vencer e Recebido no Mês.
+
+7
+00:00:25,272 --> 00:00:31,194
+A barra de ações traz o botão Novo, o botão Filtros com contador e X para limpar,
+
+8
+00:00:31,194 --> 00:00:33,680
+o botão de atualizar e o Exportar.
+
+9
+00:00:33,680 --> 00:00:35,727
+Diferente de Contas a Pagar,
+
+10
+00:00:35,727 --> 00:00:39,967
+a lista começa vazia: é preciso abrir os Filtros e buscar.
+
+11
+00:00:41,067 --> 00:00:45,102
+Ao lado do botão Filtros, o Filtro rápido, com atalho F2,
+
+12
+00:00:45,102 --> 00:00:50,623
+filtra a lista pelo nome da pessoa e pelo valor, junto com os filtros da tela.
+
+13
+00:00:50,623 --> 00:00:54,163
+Um contador mostra quando está ativo, e o X limpa.
+
+14
+00:00:55,263 --> 00:00:56,555
+Ao abrir os Filtros,
+
+15
+00:00:56,555 --> 00:01:01,012
+é preciso informar um paciente ou escolher uma opção de mais filtros,
+
+16
+00:01:01,012 --> 00:01:02,756
+como o número do documento.
+
+17
+00:01:02,756 --> 00:01:04,823
+Ao buscar, as parcelas aparecem,
+
+18
+00:01:04,823 --> 00:01:09,150
+com a coluna Origem preenchida quando o título veio de um contrato.
+
+19
+00:01:10,250 --> 00:01:13,900
+O botão Novo abre o assistente de parcelas automáticas.
+
+20
+00:01:13,900 --> 00:01:17,749
+Escolha o paciente, o plano de contas e o centro de custo,
+
+21
+00:01:17,749 --> 00:01:21,200
+informe a quantidade de parcelas, o vencimento base,
+
+22
+00:01:21,200 --> 00:01:23,788
+e o valor por parcela ou o valor total.
+
+23
+00:01:23,788 --> 00:01:27,968
+O dia do vencimento base não pode ser maior que vinte e quatro.
+
+24
+00:01:29,068 --> 00:01:34,189
+Ao gerar as parcelas, uma prévia mostra cada uma com seu vencimento e valor,
+
+25
+00:01:34,189 --> 00:01:35,469
+antes de confirmar.
+
+26
+00:01:35,469 --> 00:01:39,781
+As datas seguintes são calculadas somando um mês a cada parcela.
+
+27
+00:01:40,881 --> 00:01:44,754
+Depois de confirmar, as parcelas já estão lançadas na lista.
+
+28
+00:01:45,854 --> 00:01:50,496
+O botão verde com o cifrão abre a tela de Acertos e Recebimentos.
+
+29
+00:01:50,496 --> 00:01:54,780
+Informe o valor, o método de pagamento e a conta financeira.
+
+30
+00:01:54,780 --> 00:01:59,422
+Em cartão de crédito, também se escolhe a quantidade de parcelas.
+
+31
+00:02:00,522 --> 00:02:03,359
+Ao lançar um pagamento que quita a parcela,
+
+32
+00:02:03,359 --> 00:02:07,779
+o sistema pede confirmação e avisa que a parcela vai ficar Baixada.
+
+33
+00:02:08,879 --> 00:02:11,789
+Depois de confirmar, o valor restante zera,
+
+34
+00:02:11,789 --> 00:02:14,698
+o recebimento aparece na tabela de acertos,
+
+35
+00:02:14,698 --> 00:02:17,743
+e é possível emitir o recibo para o paciente.

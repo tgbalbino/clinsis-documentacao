@@ -1,6 +1,6 @@
 # Área do Profissional
 
-_O que o profissional de saúde vê e pode fazer no ClinSis_
+Visão do profissional de saúde no ClinSis: home com resumo do dia e pendências, agenda, lista de pacientes, prontuário e atendimento (receituário). Reúne em um só lugar o que o profissional precisa no dia a dia, inclusive pelo celular.
 
 ## Documentação em PDF
 

@@ -1,0 +1,131 @@
+1
+00:00:00,400 --> 00:00:05,908
+O Dashboard Financeiro resume, num período escolhido, o que entrou, o que saiu,
+
+2
+00:00:05,908 --> 00:00:10,162
+o saldo de cada conta e os maiores pagamentos e recebimentos.
+
+3
+00:00:10,162 --> 00:00:14,624
+Você define o período e, se quiser, filtra por conta financeira,
+
+4
+00:00:14,624 --> 00:00:16,925
+centro de custo e plano de conta.
+
+5
+00:00:16,925 --> 00:00:21,876
+O botão Buscar carrega os dados e o botão de borracha limpa os filtros.
+
+6
+00:00:22,976 --> 00:00:27,811
+No topo, as caixas coloridas: entradas em verde, saídas em vermelho,
+
+7
+00:00:27,811 --> 00:00:32,362
+o resultado do período em azul, e o saldo das contas em amarelo.
+
+8
+00:00:32,362 --> 00:00:37,624
+Atenção: o saldo das contas é sempre o saldo acumulado de toda a história,
+
+9
+00:00:37,624 --> 00:00:39,402
+e não depende do período.
+
+10
+00:00:39,402 --> 00:00:43,597
+Abaixo, em cinza, os juros recebidos, o desconto concedido,
+
+11
+00:00:43,597 --> 00:00:46,086
+os juros pagos e o desconto obtido.
+
+12
+00:00:47,186 --> 00:00:50,163
+No meio da tela, o saldo por conta financeira,
+
+13
+00:00:50,163 --> 00:00:53,530
+e as entradas e saídas agrupadas por plano de conta.
+
+14
+00:00:53,530 --> 00:00:57,867
+Depois, os maiores pagamentos e os maiores recebimentos por pessoa,
+
+15
+00:00:57,867 --> 00:00:59,356
+e o comparativo mensal,
+
+16
+00:00:59,356 --> 00:01:03,758
+que compara o mês com o anterior e mostra a variação em porcentagem,
+
+17
+00:01:03,758 --> 00:01:06,930
+verde quando positiva e vermelha quando negativa.
+
+18
+00:01:08,030 --> 00:01:13,437
+O Fluxo de Caixa mostra a movimentação dia a dia, separando o que já aconteceu,
+
+19
+00:01:13,437 --> 00:01:16,654
+o realizado, do que está previsto, o projetado,
+
+20
+00:01:16,654 --> 00:01:20,076
+a partir das contas a pagar e a receber em aberto.
+
+21
+00:01:20,076 --> 00:01:24,183
+Além dos filtros do dashboard, você escolhe o que mostrar e,
+
+22
+00:01:24,183 --> 00:01:28,563
+no modo somente realizado, o agrupamento por dia, semana ou mês.
+
+23
+00:01:28,563 --> 00:01:31,233
+O período não pode passar de dois anos.
+
+24
+00:01:32,333 --> 00:01:36,480
+Os indicadores mostram o saldo inicial, as entradas, as saídas,
+
+25
+00:01:36,480 --> 00:01:38,323
+o resultado e o saldo final.
+
+26
+00:01:38,323 --> 00:01:45,366
+O bloco de fluxo projetado soma o saldo atual aos recebimentos previstos e subtrai os pagamentos previstos,
+
+27
+00:01:45,366 --> 00:01:48,986
+estimando quanto vai sobrar em caixa no fim do período.
+
+28
+00:01:48,986 --> 00:01:52,870
+O gráfico e a tabela mostram a evolução do saldo acumulado.
+
+29
+00:01:53,970 --> 00:01:57,866
+Com o agrupamento por mês, a tabela ganha uma linha por mês,
+
+30
+00:01:57,866 --> 00:02:00,723
+o que facilita a leitura de períodos longos.
+
+31
+00:02:00,723 --> 00:02:02,151
+Nos quadros do rodapé,
+
+32
+00:02:02,151 --> 00:02:06,437
+o resultado é quebrado por conta financeira e por centro de custo,
+
+33
+00:02:06,437 --> 00:02:07,801
+com a linha de total.

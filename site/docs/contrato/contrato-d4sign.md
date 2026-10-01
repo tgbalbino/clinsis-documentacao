@@ -1,6 +1,6 @@
 # Contrato com Assinatura Digital (D4Sign)
 
-_Envio para assinatura eletrônica, acompanhamento e fechamento automático_
+Complementa o Contrato com assinatura eletrônica pela D4Sign: o contrato é enviado ao paciente para assinar à distância, a assinatura é acompanhada no sistema e, quando concluída, o contrato é fechado automaticamente. Evita impressão e coleta de assinatura em papel.
 
 ## Documentação em PDF
 

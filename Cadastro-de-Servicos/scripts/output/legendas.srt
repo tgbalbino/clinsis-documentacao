@@ -1,0 +1,115 @@
+1
+00:00:00,400 --> 00:00:03,532
+Um Serviço é um item simples de nome e valor,
+
+2
+00:00:03,532 --> 00:00:08,544
+um item de catálogo usado como base para montar os itens de um Contrato.
+
+3
+00:00:08,544 --> 00:00:11,120
+Fica em Tabelas Auxiliares, Serviços.
+
+4
+00:00:12,220 --> 00:00:16,167
+O cadastro é bem enxuto: só o nome do serviço e o preço,
+
+5
+00:00:16,167 --> 00:00:19,057
+e o botão Novo fica no cabeçalho da tela.
+
+6
+00:00:19,057 --> 00:00:22,863
+Não existe ativo ou inativo, nem vínculo com convênio,
+
+7
+00:00:22,863 --> 00:00:26,176
+e não há como excluir um serviço já cadastrado.
+
+8
+00:00:27,276 --> 00:00:28,419
+Na própria lista,
+
+9
+00:00:28,419 --> 00:00:34,268
+o quadro de manutenção rápida de preços permite reajustar todos os serviços de uma vez.
+
+10
+00:00:34,268 --> 00:00:39,175
+Informe o percentual, negativo para reduzir, e clique em Calcular prévia.
+
+11
+00:00:39,175 --> 00:00:44,016
+A tabela mostra o preço atual e o novo de cada serviço, sem gravar nada.
+
+12
+00:00:44,016 --> 00:00:47,781
+Os valores só são gravados depois de Confirmar reajuste.
+
+13
+00:00:47,781 --> 00:00:52,688
+O percentual aceito vai de mais de menos cem por cento até mil por cento,
+
+14
+00:00:52,688 --> 00:00:56,587
+e nenhum preço novo pode passar de noventa e nove milhões,
+
+15
+00:00:56,587 --> 00:00:59,142
+novecentos e noventa e nove mil reais.
+
+16
+00:00:59,142 --> 00:01:02,235
+Se passar, o sistema recusa e nada é alterado.
+
+17
+00:01:03,335 --> 00:01:05,638
+Apesar do nome sugerir algo amplo,
+
+18
+00:01:05,638 --> 00:01:11,871
+o Serviço é usado num único lugar do sistema: a aba Serviços dentro do cadastro de Contrato.
+
+19
+00:01:11,871 --> 00:01:17,426
+Guia de Faturamento, Cobrança e Tabela de Valores de convênio usam outro conceito,
+
+20
+00:01:17,426 --> 00:01:19,458
+sem relação com este cadastro.
+
+21
+00:01:20,558 --> 00:01:24,080
+Ao clicar em Novo dentro da aba Serviços do contrato,
+
+22
+00:01:24,080 --> 00:01:28,333
+abre a busca: escolhe um serviço já cadastrado pelo botão verde.
+
+23
+00:01:29,433 --> 00:01:34,496
+O valor sugerido já vem preenchido; basta informar a quantidade de sessões,
+
+24
+00:01:34,496 --> 00:01:37,466
+e o valor total é calculado automaticamente.
+
+25
+00:01:37,466 --> 00:01:42,124
+O total do contrato é sempre a soma de todos os serviços adicionados.
+
+26
+00:01:43,224 --> 00:01:45,507
+Além disso, ao renovar um contrato,
+
+27
+00:01:45,507 --> 00:01:50,008
+o sistema copia automaticamente os mesmos serviços pro contrato novo.
+
+28
+00:01:50,008 --> 00:01:51,769
+E na impressão do contrato,
+
+29
+00:01:51,769 --> 00:01:56,987
+existe um espaço reservado que mostra essa lista de serviços no documento final.

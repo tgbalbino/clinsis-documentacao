@@ -1,6 +1,6 @@
 # Conciliação Bancária (OFX)
 
-_Como conferir o extrato do banco com os Movimentos Financeiros do ClinSis usando o arquivo OFX_
+Confere o extrato do banco com os Movimentos Financeiros do ClinSis a partir de um arquivo OFX exportado do banco. O sistema sugere os pares e aponta divergências, garantindo que o saldo do sistema reflita o saldo real da conta.
 
 ## Documentação em PDF
 

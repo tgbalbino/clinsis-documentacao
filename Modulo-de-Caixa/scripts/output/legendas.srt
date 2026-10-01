@@ -1,0 +1,71 @@
+1
+00:00:00,400 --> 00:00:05,884
+O módulo Caixa controla o dinheiro que passa pela mão de cada atendente durante o dia.
+
+2
+00:00:05,884 --> 00:00:12,516
+Cada usuário tem o seu próprio caixa; mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
+
+3
+00:00:13,616 --> 00:00:18,616
+Pra abrir o caixa, é informado só o valor inicial, o fundo de troco.
+
+4
+00:00:18,616 --> 00:00:22,880
+Só é possível ter um caixa aberto por usuário de cada vez.
+
+5
+00:00:23,980 --> 00:00:28,679
+Com o caixa aberto, dá pra lançar Suprimento ou Sangria manualmente.
+
+6
+00:00:28,679 --> 00:00:35,450
+Suprimento só pode ser feito em dinheiro; sangria é validada contra o saldo em espécie disponível.
+
+7
+00:00:36,550 --> 00:00:43,379
+Toda baixa de Conta a Receber ou Conta a Pagar feita com o caixa aberto entra automaticamente no extrato,
+
+8
+00:00:43,379 --> 00:00:44,810
+sem lançamento manual.
+
+9
+00:00:44,810 --> 00:00:50,208
+Isso só vale pra usuários com a opção Controla Caixa marcada no cadastro de acesso.
+
+10
+00:00:51,308 --> 00:00:56,706
+Ao fechar, o sistema mostra o resumo de entradas e saídas e calcula o saldo final.
+
+11
+00:00:56,706 --> 00:00:59,932
+O fechamento é totalmente calculado pelo sistema,
+
+12
+00:00:59,932 --> 00:01:05,067
+não existe contagem manual do dinheiro físico nem registro de quebra de caixa.
+
+13
+00:01:06,167 --> 00:01:11,176
+Cancelar um lançamento manual precisa de aprovação: o usuário solicita,
+
+14
+00:01:11,176 --> 00:01:14,773
+e só o administrador efetiva, na tela Solicitações.
+
+15
+00:01:14,773 --> 00:01:19,993
+Enquanto tiver solicitação pendente, o fechamento do caixa fica bloqueado.
+
+16
+00:01:21,093 --> 00:01:26,018
+Em Listar, dá pra consultar o histórico de caixas por usuário e período.
+
+17
+00:01:26,018 --> 00:01:30,601
+Reabrir um caixa já fechado só pode ser feito por um administrador,
+
+18
+00:01:30,601 --> 00:01:32,243
+com um motivo informado.

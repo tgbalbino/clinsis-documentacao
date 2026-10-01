@@ -1,6 +1,6 @@
 # Layout de Contrato
 
-_O modelo (template) usado para gerar o PDF de todos os contratos da clínica_
+O layout é o modelo (template) usado para gerar o PDF de todos os contratos da clínica: texto, cabeçalho e dados que aparecem no documento. Aqui você aprende a editar o modelo, usar o modelo padrão, pré-visualizar e ativar o layout. Configure antes de emitir os primeiros contratos.
 
 ## Documentação em PDF
 

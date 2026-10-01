@@ -1,6 +1,6 @@
 # Contas Recorrentes
 
-_Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
+Cadastro de contas que se repetem todo mês, ou em outro período (aluguel, internet, mensalidades), geradas automaticamente como Contas a Pagar ou a Receber. Evita lançar a mesma conta a cada mês e reduz esquecimentos.
 
 ## Documentação em PDF
 

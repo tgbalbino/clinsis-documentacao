@@ -1,6 +1,6 @@
 # Pagamento de Profissionais
 
-_Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
+Calcula e gera, de uma só vez, o repasse de todos os profissionais no mês a partir das sessões realizadas, criando as Contas a Pagar correspondentes. Possui relatórios sintético e analítico, exportação para planilha e depende da Tabela de Valores para Pagamento.
 
 ## Documentação em PDF
 

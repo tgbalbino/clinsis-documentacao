@@ -1,0 +1,107 @@
+1
+00:00:00,400 --> 00:00:07,670
+Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente e as que chegam de outras rotinas,
+
+2
+00:00:07,670 --> 00:00:10,992
+como Contas Recorrentes e Pagamento de Profissionais.
+
+3
+00:00:10,992 --> 00:00:14,626
+Ela exige Plano de Conta e Centro de Custo já cadastrados.
+
+4
+00:00:15,726 --> 00:00:20,594
+Cinco caixas resumem a situação: Em Aberto, Vencido, Vence Hoje,
+
+5
+00:00:20,594 --> 00:00:22,344
+A Vencer e Pago no Mês.
+
+6
+00:00:22,344 --> 00:00:25,614
+Abaixo, a barra de ações traz o botão Novo,
+
+7
+00:00:25,614 --> 00:00:30,863
+o botão Filtros com contador e X para limpar, e o botão de atualizar.
+
+8
+00:00:30,863 --> 00:00:35,731
+Só a lista rola, os indicadores e a barra ficam sempre visíveis.
+
+9
+00:00:36,831 --> 00:00:40,781
+Ao lado do botão Filtros, o Filtro rápido, com atalho F2,
+
+10
+00:00:40,781 --> 00:00:46,187
+filtra a lista pelo nome da pessoa e pelo valor, junto com os filtros da tela.
+
+11
+00:00:46,187 --> 00:00:49,167
+A lista mostra trinta registros por página.
+
+12
+00:00:50,267 --> 00:00:53,140
+Para lançar uma conta, clique em Novo.
+
+13
+00:00:53,140 --> 00:00:59,189
+No exemplo, uma compra de material de escritório de trezentos e cinquenta reais,
+
+14
+00:00:59,189 --> 00:01:00,852
+boleto, vencendo hoje.
+
+15
+00:01:00,852 --> 00:01:06,220
+Informe favorecido, plano de contas, centro de custo, descrição, valor,
+
+16
+00:01:06,220 --> 00:01:09,546
+tipo de documento, competência e vencimento.
+
+17
+00:01:10,646 --> 00:01:15,120
+Depois de salvar, a conta aparece na lista com a situação Aberto,
+
+18
+00:01:15,120 --> 00:01:17,941
+e os indicadores do topo são atualizados.
+
+19
+00:01:19,041 --> 00:01:24,078
+O botão verde com o cifrão, na linha da conta, abre o Pagamento ou Acerto.
+
+20
+00:01:24,078 --> 00:01:25,508
+Informe o valor pago,
+
+21
+00:01:25,508 --> 00:01:30,000
+a forma de pagamento e a conta financeira de onde o dinheiro saiu.
+
+22
+00:01:30,000 --> 00:01:31,838
+Juros são somados ao valor,
+
+23
+00:01:31,838 --> 00:01:36,330
+e o desconto só é aceito quando o pagamento quita a conta inteira.
+
+24
+00:01:36,330 --> 00:01:40,687
+É possível lançar pagamentos parciais até o saldo chegar a zero.
+
+25
+00:01:41,787 --> 00:01:47,481
+Depois de lançar, o pagamento aparece na tabela de acertos, com forma, parcelas,
+
+26
+00:01:47,481 --> 00:01:53,033
+conta financeira e situação, e com opção de ver detalhes ou cancelar o acerto.
+
+27
+00:01:53,033 --> 00:01:56,023
+Quando o saldo zera, a conta fica Quitada.

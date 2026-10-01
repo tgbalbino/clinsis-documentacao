@@ -1,0 +1,195 @@
+1
+00:00:00,400 --> 00:00:04,691
+O Contrato formaliza um pacote de sessões vendido ao paciente,
+
+2
+00:00:04,691 --> 00:00:08,566
+com um valor total e uma ou mais condições de pagamento.
+
+3
+00:00:08,566 --> 00:00:11,888
+Ele passa por fases: criado, assinado e fechado.
+
+4
+00:00:11,888 --> 00:00:16,317
+Ao fechar, gera automaticamente as parcelas em Contas a Receber.
+
+5
+00:00:16,317 --> 00:00:21,438
+Para imprimir e fechar, a clínica precisa ter um Layout de Contrato ativo.
+
+6
+00:00:22,538 --> 00:00:24,481
+Em Contrato, clique em Novo,
+
+7
+00:00:24,481 --> 00:00:28,437
+escolha o paciente pela lupa e informe a data de emissão.
+
+8
+00:00:28,437 --> 00:00:31,837
+O e-mail e o celular do paciente vêm do cadastro.
+
+9
+00:00:31,837 --> 00:00:36,973
+Cada paciente só pode ter um contrato em aberto por vez: para criar outro,
+
+10
+00:00:36,973 --> 00:00:39,887
+é preciso concluir ou cancelar o anterior.
+
+11
+00:00:40,987 --> 00:00:42,207
+Depois de salvar,
+
+12
+00:00:42,207 --> 00:00:47,875
+o contrato existe e o topo mostra a opção de assinatura eletrônica pela D4Sign,
+
+13
+00:00:47,875 --> 00:00:51,319
+com os botões Assinar pela D4Sign e Não assinar.
+
+14
+00:00:51,319 --> 00:00:54,332
+O valor inicial segue o padrão da clínica.
+
+15
+00:00:55,432 --> 00:00:59,209
+Na seção Serviços, clique em Novo, pesquise o serviço,
+
+16
+00:00:59,209 --> 00:01:02,915
+informe a quantidade de sessões e o valor por sessão.
+
+17
+00:01:02,915 --> 00:01:05,852
+O valor total é calculado automaticamente.
+
+18
+00:01:06,952 --> 00:01:11,510
+Na aba Acertos e Pagamentos, cadastre como o paciente vai pagar.
+
+19
+00:01:11,510 --> 00:01:17,136
+O Crediário é a única forma que parcela: informe o valor, o número de parcelas,
+
+20
+00:01:17,136 --> 00:01:20,412
+a data da primeira parcela e os juros mensais.
+
+21
+00:01:20,412 --> 00:01:24,116
+O botão de igual preenche o valor que falta acertar.
+
+22
+00:01:24,116 --> 00:01:26,609
+Pix, dinheiro e cartão são à vista.
+
+23
+00:01:27,709 --> 00:01:30,835
+Com o acerto salvo, o card Falta Acertar zera.
+
+24
+00:01:30,835 --> 00:01:37,089
+A soma dos acertos precisa bater com o total dos serviços para o contrato poder ser fechado.
+
+25
+00:01:38,189 --> 00:01:43,160
+Se este contrato não será assinado eletronicamente, clique em Não assinar.
+
+26
+00:01:43,160 --> 00:01:48,266
+A dispensa exige liberação administrativa: o administrador escolhe o motivo,
+
+27
+00:01:48,266 --> 00:01:53,305
+e os demais usuários informam também o login e a senha de um administrador.
+
+28
+00:01:54,405 --> 00:01:59,673
+A dispensa fica registrada no contrato, com quem dispensou, quando e o motivo.
+
+29
+00:01:59,673 --> 00:02:02,104
+O próximo passo é fechar o contrato.
+
+30
+00:02:02,104 --> 00:02:07,777
+Também é possível registrar a assinatura no papel, pelo botão de caneta na listagem,
+
+31
+00:02:07,777 --> 00:02:10,074
+marcando o contrato como assinado.
+
+32
+00:02:11,174 --> 00:02:14,571
+O botão Fechar Contrato exige ao menos um serviço,
+
+33
+00:02:14,571 --> 00:02:17,833
+um acerto e diferença zero entre os dois totais.
+
+34
+00:02:17,833 --> 00:02:18,716
+Ao confirmar,
+
+35
+00:02:18,716 --> 00:02:24,627
+o sistema gera os títulos em Contas a Receber e o contrato nunca mais pode ser editado.
+
+36
+00:02:25,727 --> 00:02:30,599
+Em Contas a Receber, as parcelas do contrato aparecem com a coluna Origem,
+
+37
+00:02:30,599 --> 00:02:35,273
+por exemplo Contrato quinze, Crediário um de dois, com situação Aberto.
+
+38
+00:02:35,273 --> 00:02:38,960
+O dinheiro só entra no caixa quando a parcela é baixada,
+
+39
+00:02:38,960 --> 00:02:41,791
+informando como o paciente realmente pagou.
+
+40
+00:02:42,891 --> 00:02:43,954
+Uma vez por dia,
+
+41
+00:02:43,954 --> 00:02:51,126
+o sistema avisa a equipe administrativa quando a última parcela de um contrato fechado está perto de vencer.
+
+42
+00:02:51,126 --> 00:02:55,576
+O aviso aparece no sino, e leva para a lista de contratos vencendo.
+
+43
+00:02:55,576 --> 00:03:00,093
+O prazo de antecedência é configurado no parâmetro de dias de aviso,
+
+44
+00:03:00,093 --> 00:03:01,819
+com padrão de trinta dias.
+
+45
+00:03:02,919 --> 00:03:07,108
+Com o contrato fechado, o botão Renovar cria um contrato novo,
+
+46
+00:03:07,108 --> 00:03:11,634
+copiando serviços e condição de pagamento, com as datas deslocadas.
+
+47
+00:03:11,634 --> 00:03:15,823
+O contrato antigo continua intacto e sai da lista de vencendo.
+
+48
+00:03:16,923 --> 00:03:21,068
+Se o paciente não vai continuar, clique em Não vai renovar.
+
+49
+00:03:21,068 --> 00:03:26,619
+Nenhum contrato é criado, e o aviso de vencimento deixa de ser gerado para ele.

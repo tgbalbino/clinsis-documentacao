@@ -1,6 +1,6 @@
 # Dashboard Financeiro e Fluxo de Caixa
 
-_O que é cada informação exibida na tela e de onde ela vem no sistema_
+O Dashboard é um painel que reúne, numa única tela, os principais números de um período em indicadores, tabelas e gráficos, para que o gestor entenda a situação sem montar relatórios manualmente. O Dashboard Financeiro resume o que entrou, o que saiu, o resultado e o saldo de cada conta, com rankings e comparativo mensal. O Fluxo de Caixa mostra a movimentação por dia, semana ou mês e projeta o saldo futuro com base nas contas a pagar e a receber em aberto. Servem para acompanhar a saúde financeira, antecipar faltas de caixa e apoiar decisões. O manual explica cada indicador e de onde ele vem no sistema.
 
 ## Documentação em PDF
 

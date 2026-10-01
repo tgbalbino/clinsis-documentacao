@@ -10,9 +10,31 @@ DOCS = os.path.join(SITE, "docs")
 
 # (pasta_origem, categoria, slug_categoria, titulo_curto_menu)
 ROTINAS = [
-    ("Manual-Base-ClinSis", "Introdução", "introducao", "Manual Base do ClinSis"),
+    ("Manual-Base-ClinSis", "Base", "introducao", "Manual Base do ClinSis"),
 
-    ("Dashboard-Financeiro-e-Fluxo-Caixa", "Financeiro", "financeiro", "Dashboard Financeiro e Fluxo de Caixa"),
+    ("Cadastro-de-Especialidades", "Cadastros Gerais", "cadastros", "Cadastro de Especialidades"),
+    ("Cadastro-de-Servicos", "Cadastros Gerais", "cadastros", "Cadastro de Serviços"),
+
+    ("Checkin", "Agenda e Atendimento", "agenda", "Checkin de Paciente"),
+    ("WhatsApp", "Agenda e Atendimento", "agenda", "WhatsApp - lembretes e confirmações"),
+    ("Dashboard-de-Agenda", "Agenda e Atendimento", "agenda", "Dashboard de Agenda"),
+
+    ("Layout-de-Contrato", "Contrato", "contrato", "Layout de Contrato"),
+    ("Contrato", "Contrato", "contrato", "Contrato (sem assinatura digital)"),
+    ("Contrato-D4Sign", "Contrato", "contrato", "Contrato com Assinatura Digital (D4Sign)"),
+
+    ("Prontuario-Configuracao", "Prontuário", "prontuario", "Prontuário — Configuração (Tipos, Alíneas e Textos padrão)"),
+    ("Prontuario-Uso", "Prontuário", "prontuario", "Prontuário — Uso pelo Profissional"),
+    ("Prontuario-Auditoria", "Prontuário", "prontuario", "Prontuário — Auditoria e Relatórios"),
+
+    ("Area-do-Profissional", "Área do Profissional", "area-do-profissional", "Manual da Área do Profissional"),
+
+    ("Tabela-de-Precos-Cobranca", "Cobrança e Pagamento", "cobranca-pagamento", "Tabela de Valores para Cobrança"),
+    ("Tabela-de-Precos-Pagamento", "Cobrança e Pagamento", "cobranca-pagamento", "Tabela de Valores para Pagamento"),
+    ("Previsao-de-Faturamento", "Cobrança e Pagamento", "cobranca-pagamento", "Previsão de Faturamento da Agenda"),
+    ("Cobranca-de-Paciente", "Cobrança e Pagamento", "cobranca-pagamento", "Cobrança de Paciente"),
+    ("Pagamento-de-Profissionais", "Cobrança e Pagamento", "cobranca-pagamento", "Pagamento de Profissionais"),
+
     ("Cadastro-Plano-de-Contas", "Financeiro", "financeiro", "Cadastro de Plano de Contas"),
     ("Cadastro-Centro-de-Custo", "Financeiro", "financeiro", "Cadastro de Centro de Custo"),
     ("Conta-Financeira", "Financeiro", "financeiro", "Cadastro de Conta Financeira"),
@@ -20,32 +42,9 @@ ROTINAS = [
     ("Contas-a-Pagar", "Financeiro", "financeiro", "Contas a Pagar"),
     ("Contas-a-Receber", "Financeiro", "financeiro", "Contas a Receber"),
     ("Movimentos-Financeiros", "Financeiro", "financeiro", "Movimentos Financeiros"),
-    ("Conciliacao-Bancaria-OFX", "Financeiro", "financeiro", "Conciliação Bancária (OFX)"),
     ("Modulo-de-Caixa", "Financeiro", "financeiro", "Módulo de Caixa"),
-    ("Tabela-de-Precos-Pagamento", "Financeiro", "financeiro", "Tabela de Valores para Pagamento"),
-    ("Tabela-de-Precos-Cobranca", "Financeiro", "financeiro", "Tabela de Valores para Cobrança"),
-
-    ("Checkin", "Agenda e Atendimento", "agenda", "Checkin de Paciente"),
-    ("Dashboard-de-Agenda", "Agenda e Atendimento", "agenda", "Dashboard de Agenda"),
-
-    ("Cobranca-de-Paciente", "Cobrança e Pagamento", "cobranca-pagamento", "Cobrança de Paciente"),
-    ("Previsao-de-Faturamento", "Cobrança e Pagamento", "cobranca-pagamento", "Previsão de Faturamento da Agenda"),
-    ("WhatsApp", "Agenda e Atendimento", "agenda-atendimento", "WhatsApp - lembretes e confirmações"),
-    ("Pagamento-de-Profissionais", "Cobrança e Pagamento", "cobranca-pagamento", "Pagamento de Profissionais"),
-
-    ("Contrato", "Contrato", "contrato", "Contrato (sem assinatura digital)"),
-    ("Contrato-D4Sign", "Contrato", "contrato", "Contrato com Assinatura Digital (D4Sign)"),
-    ("Layout-de-Contrato", "Contrato", "contrato", "Layout de Contrato"),
-
-    ("Cadastro-de-Especialidades", "Cadastros Gerais", "cadastros", "Cadastro de Especialidades"),
-    ("Cadastro-de-Servicos", "Cadastros Gerais", "cadastros", "Cadastro de Serviços"),
-
-    ("Prontuario-Configuracao", "Prontuário", "prontuario", "Prontuário — Configuração (Tipos, Alíneas e Textos padrão)"),
-
-    ("Prontuario-Uso", "Prontuário", "prontuario", "Prontuário — Uso pelo Profissional"),
-    ("Prontuario-Auditoria", "Prontuário", "prontuario", "Prontuário — Auditoria e Relatórios"),
-    ("Area-do-Profissional", "Área do Profissional", "area-do-profissional", "Manual da Área do Profissional"),
-]
+    ("Conciliacao-Bancaria-OFX", "Financeiro", "financeiro", "Conciliação Bancária (OFX)"),
+    ("Dashboard-Financeiro-e-Fluxo-Caixa", "Financeiro", "financeiro", "Dashboard Financeiro e Fluxo de Caixa"),]
 
 # Links do YouTube: preencha aqui quando os vídeos forem publicados.
 # Chave = pasta de origem; valor = url do vídeo com legenda (str) ou (url_com_legenda, url_sem_legenda)
@@ -80,6 +79,39 @@ YOUTUBE_LINKS = {
     "Previsao-de-Faturamento": "https://youtu.be/Aft3I2vvkLk",
 }
 
+
+# Texto de apresentação de cada página (aparece logo abaixo do título). Chave = pasta de origem.
+# Explica o que é a rotina, para que serve e quando usar; substitui o subtítulo curto do manual.
+INTRO_SITE = {
+    "Manual-Base-ClinSis": "Ponto de partida para quem vai usar o ClinSis. Apresenta o sistema, o fluxo geral de trabalho e os cadastros essenciais (clínica, setores, especialidades, profissionais, pacientes e operadoras), além do cadastro de usuários e da criação da agenda. Leia primeiro: as demais rotinas dependem do que é configurado aqui.",
+    "Cadastro-de-Especialidades": "As especialidades definem a área de atuação de cada profissional e influenciam outras rotinas: o Tipo de Cobrança determina como o profissional é pago (por sessão ou por paciente) e o Relatório Compartilhado controla quais prontuários podem ser vistos entre profissionais. Cadastre-as antes dos profissionais, das tabelas de valores e da agenda.",
+    "Cadastro-de-Servicos": "Serviço é o item que a clínica vende ao paciente dentro de um Contrato (por exemplo, um pacote de sessões). Este manual mostra como cadastrar os serviços, reajustar preços em massa e onde cada serviço aparece no sistema. Cadastre os serviços antes de criar contratos.",
+    "Checkin": "O Check-in registra a chegada do paciente à clínica. Quando o atendimento é cobrável, o pagamento já pode ser lançado na hora, evitando cobranças esquecidas e mantendo o caixa conferido no mesmo dia. Rotina diária da recepção.",
+    "WhatsApp": "Envia lembretes e pedidos de confirmação aos pacientes pelo WhatsApp, reduzindo faltas e horários vagos. Existem dois modos: envio manual, feito pela recepção, e envio automático pela API oficial da Meta. O manual cobre requisitos, configuração, templates, consentimento e acompanhamento dos envios.",
+    "Dashboard-de-Agenda": "O Dashboard é um painel que reúne, numa única tela e em forma de cards, gráficos e tabelas, os principais números de um período, para que o gestor acompanhe o desempenho sem montar relatórios manualmente. O Dashboard de Agenda mostra sessões realizadas, presença e faltas (absenteísmo), antecedência dos agendamentos, ocupação da agenda e faturamento por convênio. Serve para avaliar a produtividade da clínica, identificar problemas como excesso de faltas e apoiar decisões. O manual explica o que cada indicador significa e como conferir o número dentro do sistema.",
+    "Layout-de-Contrato": "O layout é o modelo (template) usado para gerar o PDF de todos os contratos da clínica: texto, cabeçalho e dados que aparecem no documento. Aqui você aprende a editar o modelo, usar o modelo padrão, pré-visualizar e ativar o layout. Configure antes de emitir os primeiros contratos.",
+    "Contrato": "Contrato formaliza a venda de serviços ao paciente, com as condições de pagamento acordadas. Este manual acompanha o ciclo completo sem assinatura digital: criação, adição de serviços, fechamento (que gera a Conta a Receber), aviso de vencimento e renovação.",
+    "Contrato-D4Sign": "Complementa o Contrato com assinatura eletrônica pela D4Sign: o contrato é enviado ao paciente para assinar à distância, a assinatura é acompanhada no sistema e, quando concluída, o contrato é fechado automaticamente. Evita impressão e coleta de assinatura em papel.",
+    "Prontuario-Configuracao": "Prepara o prontuário eletrônico antes do uso pelos profissionais: Tipos de prontuário (a estrutura de cada modelo), Alíneas (os campos de cada tipo) e Textos padrão (frases prontas para agilizar o preenchimento). Rotina feita pela administração, normalmente uma vez e depois ajustada conforme a necessidade.",
+    "Prontuario-Uso": "Passo a passo do profissional no prontuário: encontrar, criar, preencher, finalizar, consultar e imprimir prontuários, além de tags e consulta a prontuários de outros profissionais. Mostra também o que não pode ser alterado depois de finalizado.",
+    "Prontuario-Auditoria": "Relatórios para a administração conferir se cada atendimento realizado gerou o prontuário correspondente: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais. Ajuda a identificar atendimentos sem registro e inclui um roteiro de conferência mensal.",
+    "Area-do-Profissional": "Visão do profissional de saúde no ClinSis: home com resumo do dia e pendências, agenda, lista de pacientes, prontuário e atendimento (receituário). Reúne em um só lugar o que o profissional precisa no dia a dia, inclusive pelo celular.",
+    "Tabela-de-Precos-Cobranca": "Define quanto a clínica cobra por sessão, por Especialidade, Profissional e Operadora. É a base do cálculo da Cobrança de Paciente e da Previsão de Faturamento. O manual mostra o cadastro, o reajuste de preço em massa e a diferença para a Tabela de Pagamento.",
+    "Tabela-de-Precos-Pagamento": "Define quanto a clínica paga a cada profissional, por Especialidade e Profissional, incluindo valores por tipo de marcação. É a base do cálculo do Pagamento de Profissionais. O manual mostra o conceito de Tabela de Valores, as abas de valores e o reajuste de preço em massa.",
+    "Previsao-de-Faturamento": "Estima quanto a clínica deve faturar no mês com base na agenda, nos valores cadastrados e na probabilidade histórica de comparecimento. Serve para planejar o caixa, acompanhar a meta e conferir agenda e financeiro. O manual explica a configuração, como o valor é calculado e como conferir cada número.",
+    "Cobranca-de-Paciente": "Calcula e gera, de uma só vez, a cobrança de todos os pacientes particulares do mês a partir das sessões realizadas, criando as Contas a Receber correspondentes. Possui relatórios sintético e analítico para conferência e proteção contra cobrança em duplicidade. Depende da Tabela de Valores para Cobrança.",
+    "Pagamento-de-Profissionais": "Calcula e gera, de uma só vez, o repasse de todos os profissionais no mês a partir das sessões realizadas, criando as Contas a Pagar correspondentes. Possui relatórios sintético e analítico, exportação para planilha e depende da Tabela de Valores para Pagamento.",
+    "Cadastro-Plano-de-Contas": "O Plano de Contas organiza as categorias de receitas e despesas da clínica (por exemplo, aluguel, salários, consultas). Cada lançamento financeiro é classificado nele, o que permite saber de onde vem e para onde vai o dinheiro. Cadastre-o antes de lançar contas a pagar e a receber.",
+    "Cadastro-Centro-de-Custo": "O Centro de Custo divide a clínica em setores ou áreas (por exemplo, recepção, fisioterapia) para mostrar qual parte gera receita e qual gera despesa. Complementa o Plano de Contas, que diz o tipo do gasto, enquanto o Centro de Custo diz onde ele ocorreu.",
+    "Conta-Financeira": "Conta Financeira é o local onde o dinheiro da clínica fica: conta bancária, caixa ou carteira. Todo recebimento e pagamento é lançado em uma delas. O manual explica o cadastro, onde ela é usada e a validação entre Conta Financeira e Forma de Pagamento.",
+    "Contas-Recorrentes": "Cadastro de contas que se repetem todo mês, ou em outro período (aluguel, internet, mensalidades), geradas automaticamente como Contas a Pagar ou a Receber. Evita lançar a mesma conta a cada mês e reduz esquecimentos.",
+    "Contas-a-Pagar": "Controle das despesas da clínica: cadastro das contas, acompanhamento de vencimentos por indicadores e baixa (pagamento) quando elas são quitadas. Os pagamentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.",
+    "Contas-a-Receber": "Controle dos valores que pacientes e convênios devem à clínica: cadastro das parcelas, acompanhamento de vencimentos e baixa (recebimento). Os recebimentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.",
+    "Movimentos-Financeiros": "Extrato de cada Conta Financeira: lista todas as entradas e saídas já realizadas, vindas de baixas de contas, caixa e transferências. Serve para conferir o saldo, conciliar com o banco e fazer transferências entre contas.",
+    "Modulo-de-Caixa": "Controle diário do caixa da clínica: abertura, lançamentos manuais (suprimento e sangria), recebimentos e pagamentos automáticos, fechamento e histórico. Garante que o dinheiro em caixa confira ao fim de cada dia ou turno.",
+    "Conciliacao-Bancaria-OFX": "Confere o extrato do banco com os Movimentos Financeiros do ClinSis a partir de um arquivo OFX exportado do banco. O sistema sugere os pares e aponta divergências, garantindo que o saldo do sistema reflita o saldo real da conta.",
+    "Dashboard-Financeiro-e-Fluxo-Caixa": "O Dashboard é um painel que reúne, numa única tela, os principais números de um período em indicadores, tabelas e gráficos, para que o gestor entenda a situação sem montar relatórios manualmente. O Dashboard Financeiro resume o que entrou, o que saiu, o resultado e o saldo de cada conta, com rankings e comparativo mensal. O Fluxo de Caixa mostra a movimentação por dia, semana ou mês e projeta o saldo futuro com base nas contas a pagar e a receber em aberto. Servem para acompanhar a saúde financeira, antecipar faltas de caixa e apoiar decisões. O manual explica cada indicador e de onde ele vem no sistema.",
+}
 
 def slugify(nome):
     s = nome.lower()
@@ -182,6 +214,7 @@ def main():
 
         titulo, intro = extrair_intro(md_path) if md_path else (None, None)
         titulo = titulo or titulo_menu
+        intro = INTRO_SITE.get(pasta, intro)
 
         # copia PDFs para docs/assets/<pasta>/
         dest_assets = os.path.join(assets_dir, pasta)

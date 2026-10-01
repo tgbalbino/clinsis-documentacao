@@ -1,6 +1,6 @@
 # Cadastro de Especialidades
 
-_"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com exemplos_
+As especialidades definem a área de atuação de cada profissional e influenciam outras rotinas: o Tipo de Cobrança determina como o profissional é pago (por sessão ou por paciente) e o Relatório Compartilhado controla quais prontuários podem ser vistos entre profissionais. Cadastre-as antes dos profissionais, das tabelas de valores e da agenda.
 
 ## Documentação em PDF
 

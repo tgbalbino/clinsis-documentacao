@@ -1,0 +1,235 @@
+1
+00:00:00,400 --> 00:00:07,155
+A Conta Financeira é o lugar onde o dinheiro da clínica realmente entra e sai: uma conta bancária,
+
+2
+00:00:07,155 --> 00:00:09,292
+ou o próprio caixa em dinheiro.
+
+3
+00:00:09,292 --> 00:00:14,392
+Toda baixa de recebimento ou pagamento informa em qual conta o valor caiu,
+
+4
+00:00:14,392 --> 00:00:16,184
+ou de qual conta ele saiu.
+
+5
+00:00:16,184 --> 00:00:21,216
+É isso que permite conferir o extrato do banco e montar o Fluxo de Caixa.
+
+6
+00:00:21,216 --> 00:00:25,421
+O cadastro fica em Financeiro, Cadastros, Contas Financeiras,
+
+7
+00:00:25,421 --> 00:00:28,040
+e a coluna Tipo mostra Banco ou Caixa.
+
+8
+00:00:28,040 --> 00:00:32,589
+No alto da lista ficam o botão Novo, em destaque, o botão Filtros,
+
+9
+00:00:32,589 --> 00:00:37,345
+com contador e X para limpar, e o botão de atualizar, só com o ícone.
+
+10
+00:00:38,445 --> 00:00:40,858
+Para cadastrar, clique em Novo.
+
+11
+00:00:40,858 --> 00:00:43,114
+Só a descrição é obrigatória.
+
+12
+00:00:43,114 --> 00:00:44,282
+Banco, agência,
+
+13
+00:00:44,282 --> 00:00:50,118
+conta e chave PIX são opcionais e servem para identificar a conta bancária.
+
+14
+00:00:50,118 --> 00:00:55,643
+Uma conta sem banco é tratada como Caixa, ou seja, dinheiro em espécie.
+
+15
+00:00:56,743 --> 00:01:01,223
+A conta é usada nas baixas de Contas a Pagar e de Contas a Receber,
+
+16
+00:01:01,223 --> 00:01:02,962
+e no pagamento do Checkin.
+
+17
+00:01:02,962 --> 00:01:05,704
+Para conferir o que passou por uma conta,
+
+18
+00:01:05,704 --> 00:01:09,649
+abra Movimentos Financeiros e filtre pela Conta Financeira.
+
+19
+00:01:09,649 --> 00:01:09,983
+Aqui,
+
+20
+00:01:09,983 --> 00:01:15,868
+só os lançamentos do Caixa: uma entrada de Conta a Receber e uma saída de Conta a Pagar.
+
+21
+00:01:16,968 --> 00:01:22,256
+O Fluxo de Caixa também mostra, no quadro Por Conta Financeira, as entradas,
+
+22
+00:01:22,256 --> 00:01:25,456
+saídas e o resultado de cada conta cadastrada.
+
+23
+00:01:26,556 --> 00:01:30,881
+Agora a validação entre Conta Financeira e Forma de Pagamento.
+
+24
+00:01:30,881 --> 00:01:33,741
+Nem toda forma faz sentido em toda conta.
+
+25
+00:01:33,741 --> 00:01:37,368
+Cartão, por exemplo, é depositado na conta bancária,
+
+26
+00:01:37,368 --> 00:01:40,088
+e não existe dentro da gaveta do caixa.
+
+27
+00:01:40,088 --> 00:01:44,134
+Por isso, cada conta tem a sua lista de formas permitidas,
+
+28
+00:01:44,134 --> 00:01:47,692
+e o sistema recusa qualquer baixa fora dessa lista.
+
+29
+00:01:47,692 --> 00:01:51,807
+Primeiro passo: em Tabelas Auxiliares, Formas de Pagamento,
+
+30
+00:01:51,807 --> 00:01:54,179
+ficam as formas ativas da clínica.
+
+31
+00:01:55,279 --> 00:02:00,993
+Segundo passo: na lista de contas, clique no botão Formas de pagamento desta conta.
+
+32
+00:02:00,993 --> 00:02:06,570
+Ao criar uma conta nova, o sistema já habilita todas as formas ativas da clínica,
+
+33
+00:02:06,570 --> 00:02:07,534
+como sugestão.
+
+34
+00:02:07,534 --> 00:02:10,288
+Basta desabilitar as que não se aplicam.
+
+35
+00:02:11,388 --> 00:02:15,817
+No exemplo, desabilitamos o Cartão de Crédito na conta Caixa.
+
+36
+00:02:15,817 --> 00:02:18,577
+Ela passa a aceitar só Dinheiro e Pix.
+
+37
+00:02:19,677 --> 00:02:23,283
+Ao tentar receber com Cartão de Crédito na conta Caixa,
+
+38
+00:02:23,283 --> 00:02:30,234
+o sistema recusa e avisa: esta forma de pagamento não está habilitada para a conta financeira selecionada.
+
+39
+00:02:30,234 --> 00:02:33,579
+Configure essa relação na tela de Conta Financeira.
+
+40
+00:02:34,679 --> 00:02:37,913
+Trocando para Dinheiro, que a conta Caixa aceita,
+
+41
+00:02:37,913 --> 00:02:41,873
+a baixa é gravada normalmente e aparece no extrato da conta.
+
+42
+00:02:42,973 --> 00:02:47,121
+A mesma regra vale em Contas a Pagar, com a mesma mensagem.
+
+43
+00:02:47,121 --> 00:02:52,464
+Se isso acontecer no dia a dia, escolha outra conta que aceite aquela forma,
+
+44
+00:02:52,464 --> 00:02:55,135
+ou habilite a forma na conta desejada.
+
+45
+00:02:56,235 --> 00:02:59,473
+No Checkin, o recepcionista não escolhe a conta.
+
+46
+00:02:59,473 --> 00:03:04,330
+O sistema usa a conta definida no parâmetro Conta Financeira do Checkin,
+
+47
+00:03:04,330 --> 00:03:06,623
+em Tabelas Auxiliares, Parâmetros.
+
+48
+00:03:06,623 --> 00:03:11,210
+A forma de pagamento do Checkin também é validada contra essa conta.
+
+49
+00:03:11,210 --> 00:03:11,817
+Por isso,
+
+50
+00:03:11,817 --> 00:03:17,213
+aponte o parâmetro para uma conta que aceite todas as formas usadas na recepção.
+
+51
+00:03:18,313 --> 00:03:21,698
+Uma conta só pode ser excluída se nunca foi usada.
+
+52
+00:03:21,698 --> 00:03:23,390
+Se ela já tem movimentos,
+
+53
+00:03:23,390 --> 00:03:27,520
+o sistema recusa e orienta a alterar o cadastro para Inativo,
+
+54
+00:03:27,520 --> 00:03:29,145
+preservando o histórico.
+
+55
+00:03:29,145 --> 00:03:34,154
+Também não é possível excluir a conta configurada no parâmetro do Checkin.
+
+56
+00:03:35,254 --> 00:03:39,438
+Atenção: para usuários com a opção Controla Caixa marcada,
+
+57
+00:03:39,438 --> 00:03:42,034
+qualquer baixa exige o caixa aberto.
+
+58
+00:03:42,034 --> 00:03:47,588
+Sem ele, o sistema recusa com a mensagem: nenhum caixa aberto para o usuário.
+
+59
+00:03:47,588 --> 00:03:50,906
+Abra o caixa antes de registrar o recebimento.

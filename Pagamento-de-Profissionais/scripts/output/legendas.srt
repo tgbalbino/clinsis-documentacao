@@ -259,61 +259,81 @@ Ele serve pra conferir, antes de gerar o pagamento em lote,
 exatamente quais sessões de quais pacientes estão compondo o valor total de cada profissional.
 
 66
-00:04:48,196 --> 00:04:52,269
-Marque as linhas desejadas e clique em Gerar Contas a Pagar.
+00:04:48,196 --> 00:04:53,485
+Os relatórios sintético e analítico têm o botão Exportar, acima da tabela.
 
 67
-00:04:52,269 --> 00:04:57,904
-Preencha Plano de Contas, Centro de Custo e Data de Vencimento, todos obrigatórios,
+00:04:53,485 --> 00:04:56,559
+Ele gera um arquivo CSV, que abre no Excel,
 
 68
-00:04:57,904 --> 00:04:59,601
-e confirme em Sim, Gerar.
+00:04:56,559 --> 00:05:01,205
+com todos os registros do filtro aplicado, e não só os da página.
 
 69
-00:05:00,702 --> 00:05:05,580
-A conta é gerada na hora, e a linha fica marcada como Conta a pagar gerada,
+00:05:01,205 --> 00:05:06,709
+No sintético, o arquivo inclui a coluna Conta a Pagar gerada, com sim ou não.
 
 70
-00:05:05,580 --> 00:05:08,377
-pra não ser selecionada de novo por engano.
+00:05:06,709 --> 00:05:10,712
+Exportar não gera conta a pagar: serve para conferência.
 
 71
-00:05:09,477 --> 00:05:13,813
-Conferindo em Contas a Pagar, a conta do profissional aparece lá,
+00:05:11,812 --> 00:05:15,885
+Marque as linhas desejadas e clique em Gerar Contas a Pagar.
 
 72
-00:05:13,813 --> 00:05:16,816
-mas com situação Em Aberto e valor pago zero.
+00:05:15,885 --> 00:05:21,520
+Preencha Plano de Contas, Centro de Custo e Data de Vencimento, todos obrigatórios,
 
 73
-00:05:16,816 --> 00:05:17,349
-Ou seja,
+00:05:21,520 --> 00:05:23,217
+e confirme em Sim, Gerar.
 
 74
-00:05:17,349 --> 00:05:23,888
-essa rotina só calcula e registra a dívida com o profissional; o pagamento em si é lançado depois,
+00:05:24,317 --> 00:05:29,195
+A conta é gerada na hora, e a linha fica marcada como Conta a pagar gerada,
 
 75
-00:05:23,888 --> 00:05:26,824
-manualmente, no botão de Pagamento e Acerto,
+00:05:29,195 --> 00:05:31,992
+pra não ser selecionada de novo por engano.
 
 76
-00:05:26,824 --> 00:05:29,559
-quando a clínica realmente faz o repasse.
+00:05:33,092 --> 00:05:37,429
+Conferindo em Contas a Pagar, a conta do profissional aparece lá,
 
 77
-00:05:30,659 --> 00:05:35,581
-Se o mês escolhido ainda não estiver vinculado a nenhuma tabela de valores,
+00:05:37,429 --> 00:05:40,431
+mas com situação Em Aberto e valor pago zero.
 
 78
-00:05:35,581 --> 00:05:40,175
-o sistema avisa: Agenda não vinculada a uma configuração de pagamento.
+00:05:40,431 --> 00:05:40,965
+Ou seja,
 
 79
-00:05:40,175 --> 00:05:40,897
-Nesse caso,
+00:05:40,965 --> 00:05:47,504
+essa rotina só calcula e registra a dívida com o profissional; o pagamento em si é lançado depois,
 
 80
-00:05:40,897 --> 00:05:46,147
+00:05:47,504 --> 00:05:50,439
+manualmente, no botão de Pagamento e Acerto,
+
+81
+00:05:50,439 --> 00:05:53,175
+quando a clínica realmente faz o repasse.
+
+82
+00:05:54,275 --> 00:05:59,197
+Se o mês escolhido ainda não estiver vinculado a nenhuma tabela de valores,
+
+83
+00:05:59,197 --> 00:06:03,791
+o sistema avisa: Agenda não vinculada a uma configuração de pagamento.
+
+84
+00:06:03,791 --> 00:06:04,513
+Nesse caso,
+
+85
+00:06:04,513 --> 00:06:09,763
 é só voltar na tela de configuração e vincular esse mês antes de tentar de novo.

@@ -1,6 +1,6 @@
 # Movimentos Financeiros
 
-_O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
+Extrato de cada Conta Financeira: lista todas as entradas e saídas já realizadas, vindas de baixas de contas, caixa e transferências. Serve para conferir o saldo, conciliar com o banco e fazer transferências entre contas.
 
 ## Documentação em PDF
 

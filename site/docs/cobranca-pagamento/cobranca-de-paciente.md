@@ -1,6 +1,6 @@
 # Cobrança de Paciente
 
-_Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês_
+Calcula e gera, de uma só vez, a cobrança de todos os pacientes particulares do mês a partir das sessões realizadas, criando as Contas a Receber correspondentes. Possui relatórios sintético e analítico para conferência e proteção contra cobrança em duplicidade. Depende da Tabela de Valores para Cobrança.
 
 ## Documentação em PDF
 

@@ -1,0 +1,107 @@
+1
+00:00:00,400 --> 00:00:06,371
+Contas Recorrentes serve para cadastrar uma única vez uma despesa ou receita que se repete,
+
+2
+00:00:06,371 --> 00:00:08,208
+como aluguel ou mensalidade,
+
+3
+00:00:08,208 --> 00:00:13,720
+e deixar o sistema gerar o lançamento em Contas a Pagar ou a Receber a cada período.
+
+4
+00:00:13,720 --> 00:00:16,607
+Antes de usar, é preciso ter Plano de Conta,
+
+5
+00:00:16,607 --> 00:00:19,494
+Centro de Custo e um favorecido cadastrados.
+
+6
+00:00:20,594 --> 00:00:23,621
+No alto da lista ficam o botão azul Novo,
+
+7
+00:00:23,621 --> 00:00:26,944
+o botão Filtros com contador e X para limpar,
+
+8
+00:00:26,944 --> 00:00:30,045
+o botão de atualizar e o botão Log do Job.
+
+9
+00:00:30,045 --> 00:00:36,173
+A lista mostra favorecido, plano de contas, centro de custo, descrição, frequência,
+
+10
+00:00:36,173 --> 00:00:38,831
+dia de vencimento, vigência e valor.
+
+11
+00:00:39,931 --> 00:00:42,190
+Para cadastrar, clique em Novo.
+
+12
+00:00:42,190 --> 00:00:48,017
+No exemplo, um aluguel de mil e quinhentos reais, mensal, vencendo todo dia dez.
+
+13
+00:00:48,017 --> 00:00:53,189
+Informe favorecido, plano de contas, centro de custo, descrição, valor,
+
+14
+00:00:53,189 --> 00:00:56,613
+dia de vencimento, frequência e data de início.
+
+15
+00:00:56,613 --> 00:01:00,693
+A data fim vazia significa sem previsão de encerramento,
+
+16
+00:01:00,693 --> 00:01:06,812
+e a antecedência define quantos dias antes do vencimento a conta já pode ser gerada.
+
+17
+00:01:07,912 --> 00:01:11,717
+Depois de salvar, a nova recorrência aparece na lista.
+
+18
+00:01:12,817 --> 00:01:14,366
+Todo dia, de madrugada,
+
+19
+00:01:14,366 --> 00:01:20,223
+o sistema verifica quais recorrências precisam gerar lançamento e cria a conta sozinho.
+
+20
+00:01:20,223 --> 00:01:23,926
+O botão Log do Job mostra o histórico dessas execuções,
+
+21
+00:01:23,926 --> 00:01:29,312
+e permite forçar a execução agora, útil para testar ou gerar uma conta pendente.
+
+22
+00:01:30,412 --> 00:01:34,628
+Depois de forçar a execução, uma nova linha aparece no histórico,
+
+23
+00:01:34,628 --> 00:01:37,613
+com o status e a quantidade de contas geradas,
+
+24
+00:01:37,613 --> 00:01:40,337
+e um aviso confirma quantas foram criadas.
+
+25
+00:01:41,437 --> 00:01:46,358
+A conta gerada aparece em Contas a Pagar, como qualquer outro lançamento,
+
+26
+00:01:46,358 --> 00:01:51,953
+já com favorecido, plano de contas, centro de custo, descrição e valor preenchidos,
+
+27
+00:01:51,953 --> 00:01:54,380
+pronta para conferência e pagamento.

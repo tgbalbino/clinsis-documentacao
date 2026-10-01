@@ -1,6 +1,6 @@
 # Contas a Pagar
 
-_Cadastrar e pagar as contas da clínica, com indicadores de vencimento_
+Controle das despesas da clínica: cadastro das contas, acompanhamento de vencimentos por indicadores e baixa (pagamento) quando elas são quitadas. Os pagamentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.
 
 ## Documentação em PDF
 

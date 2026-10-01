@@ -59,9 +59,21 @@ Depois de confirmar, os valores são gravados de uma vez só,
 e a grade já mostra os novos preços.
 
 16
-00:01:00,852 --> 00:01:02,006
+00:01:00,852 --> 00:01:01,970
 Na aba Operadora,
 
 17
-00:01:02,006 --> 00:01:07,977
+00:01:01,970 --> 00:01:07,752
 escolha o convênio no topo antes de configurar ou reajustar os valores específicos dele.
+
+18
+00:01:07,752 --> 00:01:12,155
+Na aba Profissional, o valor social não pode ser maior que o valor,
+
+19
+00:01:12,155 --> 00:01:15,243
+e cada valor aceita até noventa e nove milhões,
+
+20
+00:01:15,243 --> 00:01:17,740
+novecentos e noventa e nove mil reais.

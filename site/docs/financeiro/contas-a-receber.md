@@ -1,6 +1,6 @@
 # Contas a Receber
 
-_Cadastrar e receber os valores que os pacientes/convênios devem à clínica_
+Controle dos valores que pacientes e convênios devem à clínica: cadastro das parcelas, acompanhamento de vencimentos e baixa (recebimento). Os recebimentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.
 
 ## Documentação em PDF
 

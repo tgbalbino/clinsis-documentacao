@@ -1,0 +1,223 @@
+1
+00:00:00,400 --> 00:00:04,489
+A Previsão de Faturamento da Agenda estima, semana a semana,
+
+2
+00:00:04,489 --> 00:00:07,829
+quanto a clínica vai faturar com a agenda do mês.
+
+3
+00:00:07,829 --> 00:00:12,464
+Ela soma o que já foi realizado e projeta o que ainda está agendado,
+
+4
+00:00:12,464 --> 00:00:15,872
+guardando cada estimativa como uma foto da semana.
+
+5
+00:00:15,872 --> 00:00:21,393
+Assim dá para acompanhar a evolução, ver o que mudou e conferir com o financeiro.
+
+6
+00:00:21,393 --> 00:00:24,869
+Só o administrador acessa, em Relatórios, Cobrança,
+
+7
+00:00:24,869 --> 00:00:27,186
+Previsão de Faturamento da Agenda.
+
+8
+00:00:28,286 --> 00:00:34,019
+Antes da primeira previsão, configure quais status de sessão geram faturamento,
+
+9
+00:00:34,019 --> 00:00:35,543
+em Tabelas Aux, Prev.
+
+10
+00:00:35,543 --> 00:00:36,414
+Faturamento.
+
+11
+00:00:36,414 --> 00:00:42,365
+Marque os status que a clínica fatura, como Presente e, se cobra a falta, Ausente,
+
+12
+00:00:42,365 --> 00:00:42,946
+e salve.
+
+13
+00:00:42,946 --> 00:00:46,284
+Cada salvamento cria uma nova versão da regra,
+
+14
+00:00:46,284 --> 00:00:49,187
+e cada previsão guarda o critério usado.
+
+15
+00:00:49,187 --> 00:00:53,033
+Mudar a regra depois não altera as previsões antigas.
+
+16
+00:00:54,133 --> 00:00:57,397
+A previsão é gerada automaticamente: a inicial,
+
+17
+00:00:57,397 --> 00:01:02,884
+quando a agenda do mês ainda não tem previsão, e a semanal, toda segunda-feira.
+
+18
+00:01:02,884 --> 00:01:08,440
+Também pode ser gerada na tela: escolha a agenda, a data de referência e o tipo,
+
+19
+00:01:08,440 --> 00:01:12,538
+inicial, semanal ou fechamento, e clique em Gerar previsão.
+
+20
+00:01:12,538 --> 00:01:15,594
+Existe uma previsão de cada tipo por semana.
+
+21
+00:01:16,694 --> 00:01:18,749
+O cálculo funciona por marcação,
+
+22
+00:01:18,749 --> 00:01:22,472
+que é um paciente com um profissional e uma especialidade.
+
+23
+00:01:22,472 --> 00:01:26,838
+As sessões realizadas com status faturável entram com o valor cheio.
+
+24
+00:01:26,838 --> 00:01:30,883
+As sessões futuras, que são as contratadas menos as encerradas,
+
+25
+00:01:30,883 --> 00:01:36,789
+entram ponderadas por uma probabilidade calculada com o histórico dos seis meses anteriores.
+
+26
+00:01:36,789 --> 00:01:38,330
+Vagas vazias não entram.
+
+27
+00:01:38,330 --> 00:01:41,990
+Na tela, a probabilidade usada aparece junto ao critério.
+
+28
+00:01:43,090 --> 00:01:45,440
+O valor de cada sessão vem da Tab.
+
+29
+00:01:45,440 --> 00:01:46,063
+Cobrança.
+
+30
+00:01:46,063 --> 00:01:47,998
+Para atendimento particular,
+
+31
+00:01:47,998 --> 00:01:52,008
+vale primeiro o valor do profissional com a especialidade,
+
+32
+00:01:52,008 --> 00:01:53,806
+depois o da especialidade.
+
+33
+00:01:53,806 --> 00:01:59,129
+Para convênio, o da operadora com a especialidade, depois o da especialidade.
+
+34
+00:01:59,129 --> 00:02:03,139
+Marcações sem preço aparecem em amarelo e viram pendência.
+
+35
+00:02:03,139 --> 00:02:08,186
+No detalhamento, cada linha mostra sessões, realizadas, futuras, valores,
+
+36
+00:02:08,186 --> 00:02:11,505
+a origem do preço, a probabilidade e a previsão.
+
+37
+00:02:11,505 --> 00:02:16,482
+Por exemplo, uma sessão realizada e três futuras de vinte e cinco reais,
+
+38
+00:02:16,482 --> 00:02:19,593
+a cinquenta e quatro vírgula cinco por cento,
+
+39
+00:02:19,593 --> 00:02:23,119
+dão sessenta e cinco reais e noventa e um centavos.
+
+40
+00:02:24,219 --> 00:02:27,216
+A conciliação compara, paciente a paciente,
+
+41
+00:02:27,216 --> 00:02:31,816
+o realizado na agenda com o financeiro gerado em Contas a Receber.
+
+42
+00:02:31,816 --> 00:02:36,765
+A situação indica se está conciliado, se falta gerar a conta a receber,
+
+43
+00:02:36,765 --> 00:02:41,852
+se há título sem realização, divergência de valor ou recebimento parcial.
+
+44
+00:02:42,952 --> 00:02:48,140
+As movimentações mostram o que mudou desde a semana anterior, com aumentos,
+
+45
+00:02:48,140 --> 00:02:50,076
+reduções e variação líquida,
+
+46
+00:02:50,076 --> 00:02:55,747
+e o motivo de cada mudança: paciente incluído ou removido, preço, status, sessões,
+
+47
+00:02:55,747 --> 00:02:58,445
+cadastro ou recálculo da probabilidade.
+
+48
+00:02:59,545 --> 00:03:04,130
+As pendências reúnem o que distorce a previsão: sem conta a receber,
+
+49
+00:03:04,130 --> 00:03:07,298
+sem realização na agenda, divergência de valor,
+
+50
+00:03:07,298 --> 00:03:10,400
+marcação sem preço e quantidade inconsistente.
+
+51
+00:03:10,400 --> 00:03:13,434
+Corrija e gere a previsão da semana seguinte.
+
+52
+00:03:14,534 --> 00:03:19,804
+Em Fechamento e precisão, cada previsão do mês é comparada com o resultado final,
+
+53
+00:03:19,804 --> 00:03:22,017
+o financeiro gerado no fechamento,
+
+54
+00:03:22,017 --> 00:03:25,400
+e o sistema mostra o erro em valor e em porcentagem.
+
+55
+00:03:25,400 --> 00:03:28,523
+É assim que se sabe se a estimativa é confiável.
+
+56
+00:03:28,523 --> 00:03:34,900
+Lembre que cada previsão é uma foto: mudanças posteriores na agenda só aparecem na próxima semana.

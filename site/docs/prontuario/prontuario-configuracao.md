@@ -1,6 +1,6 @@
 # Prontuário — Configuração
 
-_Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem_
+Prepara o prontuário eletrônico antes do uso pelos profissionais: Tipos de prontuário (a estrutura de cada modelo), Alíneas (os campos de cada tipo) e Textos padrão (frases prontas para agilizar o preenchimento). Rotina feita pela administração, normalmente uma vez e depois ajustada conforme a necessidade.
 
 ## Documentação em PDF
 

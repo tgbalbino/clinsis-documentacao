@@ -1,0 +1,139 @@
+1
+00:00:00,400 --> 00:00:06,875
+A Conciliação Bancária confere o extrato do banco com os Movimentos Financeiros do ClinSis.
+
+2
+00:00:06,875 --> 00:00:10,931
+Ela fica no menu Financeiro, Movimentos, Conciliação OFX,
+
+3
+00:00:10,931 --> 00:00:12,923
+e só o administrador acessa.
+
+4
+00:00:12,923 --> 00:00:16,908
+Você baixa o extrato no internet banking em formato OFX,
+
+5
+00:00:16,908 --> 00:00:21,746
+envia o arquivo aqui e o sistema mostra o que bate e o que não bate.
+
+6
+00:00:22,846 --> 00:00:28,607
+Antes de começar, os pagamentos e recebimentos precisam estar lançados no sistema.
+
+7
+00:00:28,607 --> 00:00:30,433
+Em Movimentos Financeiros,
+
+8
+00:00:30,433 --> 00:00:35,070
+a coluna Conciliado mostra quais movimentos ainda estão pendentes.
+
+9
+00:00:35,070 --> 00:00:39,566
+A conciliação só liga o que já existe, ela não cria lançamentos.
+
+10
+00:00:40,666 --> 00:00:42,625
+Escolha a conta financeira,
+
+11
+00:00:42,625 --> 00:00:47,340
+selecione o arquivo OFX baixado do banco e clique em Ler extrato.
+
+12
+00:00:47,340 --> 00:00:50,169
+Essa leitura não grava nada no sistema.
+
+13
+00:00:51,269 --> 00:00:56,662
+O sistema mostra o banco, a agência, a conta, o período e o saldo do arquivo.
+
+14
+00:00:56,662 --> 00:00:59,603
+Cada linha do extrato recebe uma situação.
+
+15
+00:00:59,603 --> 00:01:04,016
+Encontrado no sistema, quando há um movimento com o mesmo tipo,
+
+16
+00:01:04,016 --> 00:01:07,378
+o mesmo valor e data até três dias de diferença.
+
+17
+00:01:07,378 --> 00:01:10,880
+Já conciliado, quando a linha já foi ligada antes.
+
+18
+00:01:10,880 --> 00:01:15,993
+E só no extrato, quando o banco registrou algo que não existe no sistema,
+
+19
+00:01:15,993 --> 00:01:17,114
+como uma tarifa.
+
+20
+00:01:17,114 --> 00:01:20,896
+Abaixo, ficam os movimentos que só existem no sistema.
+
+21
+00:01:21,996 --> 00:01:24,488
+As linhas encontradas já vêm marcadas.
+
+22
+00:01:24,488 --> 00:01:29,473
+Confira principalmente os valores repetidos e desmarque o que não concordar.
+
+23
+00:01:29,473 --> 00:01:31,835
+Depois clique em Conciliar marcados.
+
+24
+00:01:31,835 --> 00:01:36,557
+O sistema avisa quantos movimentos foram conciliados e atualiza a lista.
+
+25
+00:01:37,657 --> 00:01:42,537
+Em Movimentos Financeiros, os movimentos conciliados passam a mostrar Sim,
+
+26
+00:01:42,537 --> 00:01:46,956
+e o quadro de conciliação mostra o valor conciliado e o percentual.
+
+27
+00:01:46,956 --> 00:01:49,792
+Os que ficaram pendentes continuam com Não.
+
+28
+00:01:49,792 --> 00:01:54,012
+Se conciliar algo por engano, use o botão amarelo para desfazer.
+
+29
+00:01:55,112 --> 00:02:00,589
+Se o arquivo for de outra agência, conta ou banco, aparece um aviso amarelo.
+
+30
+00:02:00,589 --> 00:02:04,408
+Confira se escolheu a conta certa antes de conciliar.
+
+31
+00:02:05,508 --> 00:02:10,292
+Se o arquivo não for um OFX válido, o sistema avisa e não lê nada.
+
+32
+00:02:10,292 --> 00:02:13,988
+Baixe novamente no banco, escolhendo o formato OFX.
+
+33
+00:02:13,988 --> 00:02:16,960
+Para as linhas que só existem no extrato,
+
+34
+00:02:16,960 --> 00:02:21,163
+registre o lançamento no ClinSis e leia o extrato de novo.
+
+35
+00:02:21,163 --> 00:02:26,889
+É seguro enviar o mesmo arquivo outra vez, porque nada é conciliado duas vezes.

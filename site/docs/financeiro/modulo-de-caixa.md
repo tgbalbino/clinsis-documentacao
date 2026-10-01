@@ -1,6 +1,6 @@
 # Módulo de Caixa
 
-_Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico_
+Controle diário do caixa da clínica: abertura, lançamentos manuais (suprimento e sangria), recebimentos e pagamentos automáticos, fechamento e histórico. Garante que o dinheiro em caixa confira ao fim de cada dia ou turno.
 
 ## Documentação em PDF
 

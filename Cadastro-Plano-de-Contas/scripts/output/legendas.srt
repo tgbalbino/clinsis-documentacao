@@ -1,0 +1,99 @@
+1
+00:00:00,400 --> 00:00:07,207
+O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica.
+
+2
+00:00:07,207 --> 00:00:12,015
+Praticamente todas as telas financeiras exigem um Plano de Conta selecionado,
+
+3
+00:00:12,015 --> 00:00:14,700
+por isso ele deve ser configurado primeiro.
+
+4
+00:00:15,800 --> 00:00:20,493
+No alto da tela ficam os controles: o botão azul Novo, o botão Filtros,
+
+5
+00:00:20,493 --> 00:00:26,309
+que mostra um número quando há filtro aplicado e ganha um X para limpar tudo de uma vez,
+
+6
+00:00:26,309 --> 00:00:28,887
+e o botão de atualizar, só com o ícone.
+
+7
+00:00:28,887 --> 00:00:32,852
+Só a lista rola, então a barra de ações fica sempre visível.
+
+8
+00:00:33,952 --> 00:00:39,582
+A tela abre em Árvore, agrupando as contas em Receitas, Despesas e Outros,
+
+9
+00:00:39,582 --> 00:00:41,104
+com até dois níveis.
+
+10
+00:00:41,104 --> 00:00:47,267
+O botão Lista, no canto direito, mostra uma tabela simples com código, descrição,
+
+11
+00:00:47,267 --> 00:00:48,864
+tipo, pai e situação.
+
+12
+00:00:49,964 --> 00:00:52,246
+Para cadastrar, clique em Novo.
+
+13
+00:00:52,246 --> 00:00:58,430
+Escolha o tipo, receita ou despesa, informe a descrição e, se quiser, uma conta pai.
+
+14
+00:00:58,430 --> 00:01:00,933
+O código é gerado automaticamente.
+
+15
+00:01:00,933 --> 00:01:04,172
+Contas inativas somem das listas de seleção,
+
+16
+00:01:04,172 --> 00:01:08,663
+mas continuam existindo para não quebrar lançamentos antigos.
+
+17
+00:01:09,763 --> 00:01:15,404
+Depois de salvar, a nova conta já aparece na árvore, dentro do grupo escolhido.
+
+18
+00:01:16,504 --> 00:01:22,008
+O botão Filtros permite buscar por código, descrição, tipo, conta pai,
+
+19
+00:01:22,008 --> 00:01:23,660
+situação e ordenação.
+
+20
+00:01:23,660 --> 00:01:28,063
+Ao aplicar, o botão mostra quantos filtros estão ativos.
+
+21
+00:01:29,163 --> 00:01:32,663
+Só as contas que atendem ao filtro aparecem na lista.
+
+22
+00:01:32,663 --> 00:01:35,900
+O X ao lado do botão limpa os filtros de uma vez.
+
+23
+00:01:35,900 --> 00:01:38,740
+Quando não existe nenhuma conta cadastrada,
+
+24
+00:01:38,740 --> 00:01:42,042
+a tela oferece importar um plano de contas padrão,
+
+25
+00:01:42,042 --> 00:01:44,420
+com categorias comuns para clínicas.

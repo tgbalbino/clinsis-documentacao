@@ -1,6 +1,6 @@
 # Checkin de Paciente
 
-_Registrar a chegada do paciente e, se houver cobrança, já receber na hora_
+O Check-in registra a chegada do paciente à clínica. Quando o atendimento é cobrável, o pagamento já pode ser lançado na hora, evitando cobranças esquecidas e mantendo o caixa conferido no mesmo dia. Rotina diária da recepção.
 
 ## Documentação em PDF
 

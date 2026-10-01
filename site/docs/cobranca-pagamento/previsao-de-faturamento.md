@@ -1,6 +1,6 @@
 # Previsão de Faturamento da Agenda
 
-_Quanto a clínica deve faturar no mês: para que serve, como configurar, de onde vêm os valores e como conferir_
+Estima quanto a clínica deve faturar no mês com base na agenda, nos valores cadastrados e na probabilidade histórica de comparecimento. Serve para planejar o caixa, acompanhar a meta e conferir agenda e financeiro. O manual explica a configuração, como o valor é calculado e como conferir cada número.
 
 ## Documentação em PDF
 

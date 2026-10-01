@@ -27,173 +27,197 @@ relatórios e evoluções finalizados ou abertos, e as pendências gerais,
 que são tudo aquilo que você começou e ainda não finalizou.
 
 8
-00:00:31,729 --> 00:00:34,554
-Em Agenda, você vê os meses disponíveis.
+00:00:31,729 --> 00:00:36,253
+Em Agenda, você vê os meses disponíveis, com o mês atual marcado.
 
 9
-00:00:34,554 --> 00:00:38,086
-O botão Acessar abre a sua agenda resumida do mês.
+00:00:36,253 --> 00:00:40,082
+O botão Minha agenda abre a sua agenda resumida do mês.
 
 10
-00:00:38,086 --> 00:00:41,124
+00:00:40,082 --> 00:00:43,075
 O profissional não cria nem remove agendas,
 
 11
-00:00:41,124 --> 00:00:44,656
+00:00:43,075 --> 00:00:46,555
 isso é feito pelo administrador ou pelo atendente.
 
 12
-00:00:45,756 --> 00:00:49,497
+00:00:47,655 --> 00:00:51,396
 A agenda resumida mostra seus pacientes agendados no mês.
 
 13
-00:00:49,497 --> 00:00:54,944
+00:00:51,396 --> 00:00:56,843
 Você pode alternar entre a visão por paciente e a visão em tabela, filtrar por dia,
 
 14
-00:00:54,944 --> 00:00:59,407
+00:00:56,843 --> 00:01:01,306
 hora e paciente, e criar um prontuário com dois cliques no paciente.
 
 15
-00:01:00,507 --> 00:01:04,825
+00:01:02,406 --> 00:01:06,456
 Em Pacientes do dia, escolha a data e clique em Pesquisar.
 
 16
-00:01:04,825 --> 00:01:10,409
+00:01:06,456 --> 00:01:11,693
 A lista mostra hora, paciente, celular, programa e o status das sessões, e,
 
 17
-00:01:10,409 --> 00:01:13,909
+00:01:11,693 --> 00:01:14,975
 se a clínica permitir, o botão Marcar Presença.
 
 18
-00:01:15,009 --> 00:01:16,241
-No menu Pacientes,
+00:01:14,975 --> 00:01:17,977
+Quando a clínica usa o WhatsApp automático,
 
 19
-00:01:16,241 --> 00:01:21,376
-o profissional consulta a lista e abre o cadastro de um paciente existente.
+00:01:17,977 --> 00:01:21,329
+o link Respostas WhatsApp mostra quem confirmou,
 
 20
-00:01:21,376 --> 00:01:27,059
-Ele não cadastra paciente novo, não baixa a ficha e não altera os dados adicionais.
+00:01:21,329 --> 00:01:24,122
+quem não vai e quem ainda não respondeu.
 
 21
-00:01:28,159 --> 00:01:31,549
-No menu Prontuário, use Pesquisa para filtrar.
+00:01:25,222 --> 00:01:26,455
+No menu Pacientes,
 
 22
-00:01:31,549 --> 00:01:34,128
-O tipo de prontuário é obrigatório.
+00:01:26,455 --> 00:01:31,590
+o profissional consulta a lista e abre o cadastro de um paciente existente.
 
 23
-00:01:34,128 --> 00:01:39,065
-Você pode filtrar também por paciente, datas de emissão e inclusão,
+00:01:31,590 --> 00:01:37,272
+Ele não cadastra paciente novo, não baixa a ficha e não altera os dados adicionais.
 
 24
-00:01:39,065 --> 00:01:40,613
-situação e ordenação.
+00:01:38,372 --> 00:01:41,762
+No menu Prontuário, use Pesquisa para filtrar.
 
 25
-00:01:41,713 --> 00:01:44,149
-A lista mostra os seus prontuários,
+00:01:41,762 --> 00:01:44,341
+O tipo de prontuário é obrigatório.
 
 26
-00:01:44,149 --> 00:01:47,698
-com a situação de cada um: Digitação ou Finalizada.
+00:01:44,341 --> 00:01:49,279
+Você pode filtrar também por paciente, datas de emissão e inclusão,
 
 27
-00:01:47,698 --> 00:01:52,848
-O olho visualiza, o bloco amarelo abre para preencher, e a lixeira exclui,
+00:01:49,279 --> 00:01:50,826
+situação e ordenação.
 
 28
-00:01:52,848 --> 00:01:56,328
-mas só prontuário seu que ainda está em digitação.
+00:01:51,926 --> 00:01:54,362
+A lista mostra os seus prontuários,
 
 29
-00:01:57,428 --> 00:01:59,809
-Para criar um novo, clique em Novo,
+00:01:54,362 --> 00:01:57,911
+com a situação de cada um: Digitação ou Finalizada.
 
 30
-00:01:59,809 --> 00:02:05,522
-escolha o paciente da agenda atual ou busque por dados, e selecione a especialidade.
+00:01:57,911 --> 00:02:03,062
+O olho visualiza, o bloco amarelo abre para preencher, e a lixeira exclui,
 
 31
-00:02:06,622 --> 00:02:10,934
-Ao preencher, informe a data de emissão, responda cada alínea,
+00:02:03,062 --> 00:02:06,541
+mas só prontuário seu que ainda está em digitação.
 
 32
-00:02:10,934 --> 00:02:14,759
-use Anterior e Próxima para navegar e clique em Salvar.
+00:02:07,641 --> 00:02:10,022
+Para criar um novo, clique em Novo,
 
 33
-00:02:14,759 --> 00:02:18,515
-Com todas as alíneas respondidas, clique em Finalizar.
+00:02:10,022 --> 00:02:15,735
+escolha o paciente da agenda atual ou busque por dados, e selecione a especialidade.
 
 34
-00:02:18,515 --> 00:02:22,271
-Depois de finalizado, só o administrador pode reabrir.
+00:02:16,835 --> 00:02:21,147
+Ao preencher, informe a data de emissão, responda cada alínea,
 
 35
-00:02:23,371 --> 00:02:27,834
-Com o prontuário finalizado, a visualização mostra todas as respostas,
+00:02:21,147 --> 00:02:24,973
+use Anterior e Próxima para navegar e clique em Salvar.
 
 36
-00:02:27,834 --> 00:02:31,850
-e a página de impressão permite imprimir ou baixar o documento.
+00:02:24,973 --> 00:02:28,729
+Com todas as alíneas respondidas, clique em Finalizar.
 
 37
-00:02:32,950 --> 00:02:36,685
-Em Textos padrões, você guarda textos que usa sempre.
+00:02:28,729 --> 00:02:32,484
+Depois de finalizado, só o administrador pode reabrir.
 
 38
-00:02:36,685 --> 00:02:41,407
-Escolha o tipo de prontuário, dê um título de até vinte caracteres,
+00:02:33,584 --> 00:02:38,047
+Com o prontuário finalizado, a visualização mostra todas as respostas,
 
 39
-00:02:41,407 --> 00:02:43,098
-escreva o texto e salve.
+00:02:38,047 --> 00:02:42,063
+e a página de impressão permite imprimir ou baixar o documento.
 
 40
-00:02:43,098 --> 00:02:47,961
-Ao usar um texto padrão em um campo, o que você já digitou é apagado.
+00:02:43,163 --> 00:02:46,898
+Em Textos padrões, você guarda textos que usa sempre.
 
 41
-00:02:49,061 --> 00:02:52,905
-No menu Atendimento, quando o módulo Receituário está ativo,
+00:02:46,898 --> 00:02:51,620
+Escolha o tipo de prontuário, dê um título de até vinte caracteres,
 
 42
-00:02:52,905 --> 00:02:57,839
-você lista seus atendimentos, com receita de medicamentos e pedido de exames,
+00:02:51,620 --> 00:02:53,311
+escreva o texto e salve.
 
 43
-00:02:57,839 --> 00:03:01,107
-e pode finalizar e imprimir o atendimento completo,
+00:02:53,311 --> 00:02:58,174
+Ao usar um texto padrão em um campo, o que você já digitou é apagado.
 
 44
-00:03:01,107 --> 00:03:03,350
-só os exames ou só os medicamentos.
+00:02:59,274 --> 00:03:03,119
+No menu Atendimento, quando o módulo Receituário está ativo,
 
 45
-00:03:04,450 --> 00:03:10,366
-Em Protocolo, você acompanha solicitações com prazo entre as pessoas da clínica.
+00:03:03,119 --> 00:03:08,053
+você lista seus atendimentos, com receita de medicamentos e pedido de exames,
 
 46
-00:03:10,366 --> 00:03:15,099
-A lista mostra solicitante, destinatários, tipo, status e prazo,
+00:03:08,053 --> 00:03:11,321
+e pode finalizar e imprimir o atendimento completo,
 
 47
-00:03:15,099 --> 00:03:17,909
-e o botão Novo cria um novo protocolo.
+00:03:11,321 --> 00:03:13,563
+só os exames ou só os medicamentos.
 
 48
-00:03:19,009 --> 00:03:23,648
-Por fim, em Perfil você vê os dados da sua conta, pode alterar nome,
+00:03:14,663 --> 00:03:20,579
+Em Protocolo, você acompanha solicitações com prazo entre as pessoas da clínica.
 
 49
-00:03:23,648 --> 00:03:27,060
-e-mail e data de nascimento, e trocar a sua senha,
+00:03:20,579 --> 00:03:25,312
+A lista mostra solicitante, destinatários, tipo, status e prazo,
 
 50
-00:03:27,060 --> 00:03:29,379
-informando a senha atual e a nova.
+00:03:25,312 --> 00:03:28,122
+e o botão Novo cria um novo protocolo.
+
+51
+00:03:29,222 --> 00:03:33,995
+Por fim, em Perfil você vê os dados da sua conta, pode alterar nome,
+
+52
+00:03:33,995 --> 00:03:37,505
+e-mail e data de nascimento, e trocar a sua senha.
+
+53
+00:03:37,505 --> 00:03:42,700
+Nome e data de nascimento também atualizam o seu cadastro de profissional.
+
+54
+00:03:42,700 --> 00:03:48,175
+O quadro Últimos acessos mostra os cinco acessos mais recentes ao seu usuário,
+
+55
+00:03:48,175 --> 00:03:50,281
+com data, rede, aparelho e IP.
+
+56
+00:03:50,281 --> 00:03:54,563
+Se algum não foi seu, altere a senha e avise o administrador.

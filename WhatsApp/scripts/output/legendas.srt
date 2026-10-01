@@ -1,0 +1,283 @@
+1
+00:00:00,400 --> 00:00:05,883
+O ClinSis avisa os pacientes dos seus agendamentos por WhatsApp de duas formas.
+
+2
+00:00:05,883 --> 00:00:06,993
+No envio manual,
+
+3
+00:00:06,993 --> 00:00:11,921
+a recepção abre o WhatsApp com a mensagem pronta e envia com um clique.
+
+4
+00:00:11,921 --> 00:00:13,309
+No envio automático,
+
+5
+00:00:13,309 --> 00:00:18,792
+o sistema usa a API oficial da Meta e envia sozinho o lembrete do dia seguinte.
+
+6
+00:00:18,792 --> 00:00:24,552
+Tudo fica em Tabelas Aux, WhatsApp e WhatsApp Meta, e só o administrador configura.
+
+7
+00:00:25,652 --> 00:00:28,321
+No envio manual, abra Enviar lembretes,
+
+8
+00:00:28,321 --> 00:00:32,631
+escolha a data e veja os pacientes agendados com seus horários.
+
+9
+00:00:32,631 --> 00:00:36,531
+Clique em Enviar e o WhatsApp abre com a mensagem pronta.
+
+10
+00:00:36,531 --> 00:00:41,047
+O envio é feito por você, e só é liberado para hoje e para amanhã.
+
+11
+00:00:41,047 --> 00:00:44,536
+Nas outras datas a tela serve apenas para consulta.
+
+12
+00:00:44,536 --> 00:00:48,025
+O texto da mensagem é definido em Definir mensagem.
+
+13
+00:00:49,125 --> 00:00:50,670
+Para o envio automático,
+
+14
+00:00:50,670 --> 00:00:55,691
+a clínica precisa ter estrutura na Meta: uma conta e um portfólio empresarial,
+
+15
+00:00:55,691 --> 00:01:00,133
+um aplicativo com o produto WhatsApp, uma conta do WhatsApp Business,
+
+16
+00:01:00,133 --> 00:01:03,738
+um número de telefone comercial, uma forma de pagamento,
+
+17
+00:01:03,738 --> 00:01:06,442
+um token de acesso e um template aprovado.
+
+18
+00:01:06,442 --> 00:01:10,883
+Guarde o identificador da conta, o identificador do número e o token,
+
+19
+00:01:10,883 --> 00:01:13,007
+pois serão informados no ClinSis.
+
+20
+00:01:14,107 --> 00:01:18,243
+O número deve pertencer à clínica, com código do país e DDD,
+
+21
+00:01:18,243 --> 00:01:22,516
+e precisar receber o código de verificação por SMS ou ligação.
+
+22
+00:01:22,516 --> 00:01:26,238
+Ele não pode estar ativo no aplicativo WhatsApp comum.
+
+23
+00:01:26,238 --> 00:01:31,959
+O token permanente é criado por um usuário do sistema nas configurações do negócio.
+
+24
+00:01:31,959 --> 00:01:33,545
+As telas da Meta mudam,
+
+25
+00:01:33,545 --> 00:01:37,956
+então siga a documentação oficial deles quando houver diferença.
+
+26
+00:01:39,056 --> 00:01:43,336
+No ClinSis, em Tabelas Aux, WhatsApp Meta, aba Configuração,
+
+27
+00:01:43,336 --> 00:01:46,262
+um quadro mostra o que falta para ativar.
+
+28
+00:01:46,262 --> 00:01:51,042
+Informe a conta da Meta e o token, ligue o lembrete de agendamento,
+
+29
+00:01:51,042 --> 00:01:54,038
+escolha o horário de geração e o template.
+
+30
+00:01:54,038 --> 00:01:57,891
+Depois clique em Testar conexão e Salvar configuração.
+
+31
+00:01:58,991 --> 00:02:04,682
+O botão Ver texto mostra como o paciente recebe a mensagem, com o nome, a clínica,
+
+32
+00:02:04,682 --> 00:02:08,429
+a data, os horários e o botão Confirmar meus horários.
+
+33
+00:02:08,429 --> 00:02:14,259
+O texto aprovado pela Meta não pode ser alterado; para mudar, crie um novo template.
+
+34
+00:02:15,359 --> 00:02:17,310
+Em Não enviar lembrete quando,
+
+35
+00:02:17,310 --> 00:02:21,147
+marque os valores dos agendamentos que devem ser ignorados,
+
+36
+00:02:21,147 --> 00:02:25,700
+como atendimento particular, plano, especialidade ou tipo de marcação.
+
+37
+00:02:26,800 --> 00:02:29,829
+Antes de ligar, use Simular próximos envios.
+
+38
+00:02:29,829 --> 00:02:36,850
+Ele mostra quem receberia o lembrete e avisa quantos pacientes não receberão por falta de autorização.
+
+39
+00:02:36,850 --> 00:02:38,708
+A simulação não envia nada.
+
+40
+00:02:39,808 --> 00:02:42,797
+Na aba Templates ficam os modelos da conta.
+
+41
+00:02:42,797 --> 00:02:46,134
+Sincronize para trazer da Meta a situação atual.
+
+42
+00:02:46,134 --> 00:02:51,208
+Só template aprovado envia, e o lembrete deve ser da categoria Utilidade.
+
+43
+00:02:51,208 --> 00:02:55,657
+Vincule o template aprovado à rotina de lembrete de agendamento.
+
+44
+00:02:56,757 --> 00:02:59,480
+O sistema só envia para quem autorizou.
+
+45
+00:02:59,480 --> 00:03:04,857
+No cadastro do paciente, em Dados principais, no campo Celular para WhatsApp,
+
+46
+00:03:04,857 --> 00:03:07,719
+informe o celular e marque a autorização.
+
+47
+00:03:07,719 --> 00:03:11,560
+Sem ela, aparece Autorização pendente e nada é enviado.
+
+48
+00:03:11,560 --> 00:03:15,959
+Registre a autorização somente com o consentimento do paciente.
+
+49
+00:03:17,059 --> 00:03:18,462
+Na lista de pacientes,
+
+50
+00:03:18,462 --> 00:03:23,948
+a coluna do WhatsApp mostra com um visto quem autorizou e com um X quem não autorizou.
+
+51
+00:03:23,948 --> 00:03:27,010
+Há também um filtro para separar os dois grupos.
+
+52
+00:03:28,110 --> 00:03:32,706
+O paciente recebe um botão que abre uma página de confirmação.
+
+53
+00:03:32,706 --> 00:03:37,599
+Nela ele marca, em cada horário, Vou comparecer ou Não poderei ir.
+
+54
+00:03:37,599 --> 00:03:39,749
+O link expira em poucos dias.
+
+55
+00:03:39,749 --> 00:03:43,974
+Para acompanhar, veja Disparos, com o resumo de cada dia.
+
+56
+00:03:45,074 --> 00:03:50,593
+Na Agenda, o botão Respostas WhatsApp abre as respostas dos pacientes de ontem,
+
+57
+00:03:50,593 --> 00:03:54,434
+hoje e amanhã, com confirmados, não vão e sem resposta.
+
+58
+00:03:54,434 --> 00:04:00,022
+Se uma mensagem falhar, a linha mostra o motivo em português e o botão Reenviar.
+
+59
+00:04:00,022 --> 00:04:03,026
+Também há Reenviar falhas, para o dia todo.
+
+60
+00:04:03,026 --> 00:04:06,728
+O reenvio vale para hoje e amanhã, gera um link novo,
+
+61
+00:04:06,728 --> 00:04:10,221
+e cada mensagem pode ser reenviada até três vezes.
+
+62
+00:04:11,321 --> 00:04:17,417
+Em Mensagens, cada envio mostra o status: pendente, enviada, entregue,
+
+63
+00:04:17,417 --> 00:04:20,377
+lida ou falha, e o motivo do erro.
+
+64
+00:04:20,377 --> 00:04:25,602
+O erro 131042 indica problema de pagamento na conta da Meta.
+
+65
+00:04:25,602 --> 00:04:31,263
+O erro 131058 acontece ao usar o template de exemplo hello world.
+
+66
+00:04:31,263 --> 00:04:34,224
+Corrija na Meta e tente novamente.
+
+67
+00:04:35,324 --> 00:04:36,580
+Como boas práticas,
+
+68
+00:04:36,580 --> 00:04:41,074
+faça uma homologação com poucos pacientes antes de ligar para todos,
+
+69
+00:04:41,074 --> 00:04:42,990
+guarde o token com segurança,
+
+70
+00:04:42,990 --> 00:04:47,286
+monitore os disparos e respeite sempre a autorização do paciente.
+
+71
+00:04:47,286 --> 00:04:50,723
+O envio manual continua disponível como alternativa.

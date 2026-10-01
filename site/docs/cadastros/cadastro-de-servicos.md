@@ -1,6 +1,6 @@
 # Cadastro de Serviços
 
-_Para que serve e onde é utilizado (Tabelas Aux. → Serviços)_
+Serviço é o item que a clínica vende ao paciente dentro de um Contrato (por exemplo, um pacote de sessões). Este manual mostra como cadastrar os serviços, reajustar preços em massa e onde cada serviço aparece no sistema. Cadastre os serviços antes de criar contratos.
 
 ## Documentação em PDF
 

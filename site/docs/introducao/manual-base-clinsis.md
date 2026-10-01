@@ -1,6 +1,6 @@
 # Manual Base do ClinSis
 
-_O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões_
+Ponto de partida para quem vai usar o ClinSis. Apresenta o sistema, o fluxo geral de trabalho e os cadastros essenciais (clínica, setores, especialidades, profissionais, pacientes e operadoras), além do cadastro de usuários e da criação da agenda. Leia primeiro: as demais rotinas dependem do que é configurado aqui.
 
 ## Documentação em PDF
 

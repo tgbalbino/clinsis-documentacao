@@ -1,6 +1,6 @@
 # Cadastro de Centro de Custo
 
-_Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
+O Centro de Custo divide a clínica em setores ou áreas (por exemplo, recepção, fisioterapia) para mostrar qual parte gera receita e qual gera despesa. Complementa o Plano de Contas, que diz o tipo do gasto, enquanto o Centro de Custo diz onde ele ocorreu.
 
 ## Documentação em PDF
 

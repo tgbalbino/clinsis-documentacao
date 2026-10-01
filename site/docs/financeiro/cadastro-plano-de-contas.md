@@ -1,6 +1,6 @@
 # Cadastro de Plano de Contas
 
-_Como organizar as categorias de receitas e despesas da clínica_
+O Plano de Contas organiza as categorias de receitas e despesas da clínica (por exemplo, aluguel, salários, consultas). Cada lançamento financeiro é classificado nele, o que permite saber de onde vem e para onde vai o dinheiro. Cadastre-o antes de lançar contas a pagar e a receber.
 
 ## Documentação em PDF
 

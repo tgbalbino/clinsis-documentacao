@@ -1,6 +1,6 @@
 # Cadastro de Conta Financeira
 
-_O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
+Conta Financeira é o local onde o dinheiro da clínica fica: conta bancária, caixa ou carteira. Todo recebimento e pagamento é lançado em uma delas. O manual explica o cadastro, onde ela é usada e a validação entre Conta Financeira e Forma de Pagamento.
 
 ## Documentação em PDF
 

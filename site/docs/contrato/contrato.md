@@ -1,6 +1,6 @@
 # Contrato (sem assinatura digital)
 
-_Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, renovação e aviso de vencimento_
+Contrato formaliza a venda de serviços ao paciente, com as condições de pagamento acordadas. Este manual acompanha o ciclo completo sem assinatura digital: criação, adição de serviços, fechamento (que gera a Conta a Receber), aviso de vencimento e renovação.
 
 ## Documentação em PDF
 

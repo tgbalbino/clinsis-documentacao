@@ -1,6 +1,6 @@
 # Prontuário — Uso pelo Profissional
 
-_Criar, preencher, finalizar, consultar e imprimir prontuários_
+Passo a passo do profissional no prontuário: encontrar, criar, preencher, finalizar, consultar e imprimir prontuários, além de tags e consulta a prontuários de outros profissionais. Mostra também o que não pode ser alterado depois de finalizado.
 
 ## Documentação em PDF
 

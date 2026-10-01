@@ -1,0 +1,95 @@
+1
+00:00:00,400 --> 00:00:11,394
+O cadastro de Especialidade tem duas configurações que mudam o comportamento de outras telas do sistema: Tipo de Cobrança e Relatório Compartilhado de Prontuários.
+
+2
+00:00:11,394 --> 00:00:14,226
+Fica em Tabelas Auxiliares, Especialidade.
+
+3
+00:00:14,226 --> 00:00:18,138
+No alto da lista ficam o botão azul Novo, o botão Filtros,
+
+4
+00:00:18,138 --> 00:00:21,713
+com contador e X para limpar, e o botão de atualizar.
+
+5
+00:00:21,713 --> 00:00:22,792
+Só a lista rola.
+
+6
+00:00:23,892 --> 00:00:29,723
+Tipo de Cobrança só é usado num único lugar: o cálculo do Pagamento de Profissionais.
+
+7
+00:00:29,723 --> 00:00:33,771
+Por Sessão paga uma vez para cada sessão confirmada no mês.
+
+8
+00:00:33,771 --> 00:00:37,064
+Já Paciente paga só uma vez por paciente no mês,
+
+9
+00:00:37,064 --> 00:00:39,603
+não importa quantas sessões ele teve.
+
+10
+00:00:40,703 --> 00:00:44,814
+Por exemplo: se Fonoaudiologia está configurada Por Sessão,
+
+11
+00:00:44,814 --> 00:00:49,900
+um paciente com 4 sessões no mês gera 4 sessões a pagar pro profissional.
+
+12
+00:00:49,900 --> 00:00:54,360
+Já se Avaliação Neuropsicológica está configurada como Paciente,
+
+13
+00:00:54,360 --> 00:00:59,376
+mesmo com 3 sessões marcadas, o sistema paga só 1 vez, o pacote fechado.
+
+14
+00:01:00,476 --> 00:01:07,276
+Relatório Compartilhado controla se um profissional pode ver o prontuário já finalizado de outro profissional,
+
+15
+00:01:07,276 --> 00:01:09,748
+quando os dois atendem o mesmo paciente.
+
+16
+00:01:09,748 --> 00:01:14,075
+Prontuário em rascunho nunca é compartilhado, só depois de finalizado.
+
+17
+00:01:15,175 --> 00:01:16,712
+Não bloqueia todo mundo.
+
+18
+00:01:16,712 --> 00:01:23,760
+Somente mesma especialidade libera só entre colegas da mesma especialidade que também atendam aquele paciente.
+
+19
+00:01:23,760 --> 00:01:29,974
+E Qualquer profissional do mesmo paciente libera pra qualquer profissional que atenda o paciente,
+
+20
+00:01:29,974 --> 00:01:32,088
+mesmo de especialidade diferente.
+
+21
+00:01:33,188 --> 00:01:37,801
+Por exemplo: com Psicologia configurada como Somente mesma especialidade,
+
+22
+00:01:37,801 --> 00:01:42,920
+outra psicóloga que atenda o mesmo paciente consegue ver o prontuário finalizado,
+
+23
+00:01:42,920 --> 00:01:46,712
+mas um fisioterapeuta que atenda esse paciente não consegue,
+
+24
+00:01:46,712 --> 00:01:48,671
+por ser de outra especialidade.

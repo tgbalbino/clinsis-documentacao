@@ -1,6 +1,6 @@
 # Prontuário — Auditoria e Relatórios
 
-_Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais_
+Relatórios para a administração conferir se cada atendimento realizado gerou o prontuário correspondente: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais. Ajuda a identificar atendimentos sem registro e inclui um roteiro de conferência mensal.
 
 ## Documentação em PDF
 

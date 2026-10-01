@@ -19,213 +19,281 @@ Vamos ver o que cada número significa e, principalmente,
 como conferir cada um dentro do sistema, usando como exemplo o mês de setembro.
 
 6
-00:00:21,373 --> 00:00:27,045
+00:00:21,373 --> 00:00:26,683
 Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada,
 
 7
-00:00:27,045 --> 00:00:30,563
+00:00:26,683 --> 00:00:29,976
 ou seja, sessões marcadas como Presente, Ausente,
 
 8
-00:00:30,563 --> 00:00:33,435
+00:00:29,976 --> 00:00:32,665
 Ausente com justificativa ou Remarcação.
 
 9
-00:00:33,435 --> 00:00:36,737
+00:00:32,665 --> 00:00:35,757
 Sessões pendentes e desmarcações não aparecem.
 
 10
-00:00:36,737 --> 00:00:41,619
-A tela agora traz esse aviso, e o card se chama Sessões Registradas.
+00:00:35,757 --> 00:00:39,722
+Em setembro, a agenda tem setenta e seis sessões previstas,
 
 11
-00:00:41,619 --> 00:00:47,004
-Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15,
+00:00:39,722 --> 00:00:45,032
+mas o Dashboard mostra sete, que são as três presentes mais as quatro ausentes.
 
 12
-00:00:47,004 --> 00:00:50,450
-que são as dez presentes mais as cinco ausentes.
-
-13
-00:00:51,550 --> 00:00:56,439
+00:00:46,132 --> 00:00:51,104
 Logo abaixo, uma faixa mostra o previsto no mês da agenda: sessões previstas,
 
-14
-00:00:56,439 --> 00:01:00,186
+13
+00:00:51,104 --> 00:00:54,913
 pendentes e desmarcadas pelo paciente ou pelo profissional.
 
-15
-00:01:00,186 --> 00:01:05,393
-Em setembro, são cento e sessenta e cinco previstas e cento e cinquenta pendentes.
+14
+00:00:54,913 --> 00:00:59,433
+Em setembro, são setenta e seis previstas e sessenta e nove pendentes.
 
-16
-00:01:05,393 --> 00:01:08,568
+15
+00:00:59,433 --> 00:01:02,661
 Esses números são sempre do mês inteiro da agenda,
 
-17
-00:01:08,568 --> 00:01:13,521
+16
+00:01:02,661 --> 00:01:07,697
 e a previsão bate com a coluna de sessões do relatório Quantidade de Marcação.
 
-18
-00:01:14,621 --> 00:01:18,330
-Uma novidade: qualquer número do painel pode ser aberto.
+17
+00:01:08,797 --> 00:01:11,593
+Qualquer número do painel pode ser aberto.
 
-19
-00:01:18,330 --> 00:01:22,369
+18
+00:01:11,593 --> 00:01:15,653
 Clique em um card, em uma linha das tabelas por profissional,
 
-20
-00:01:22,369 --> 00:01:25,813
+19
+00:01:15,653 --> 00:01:19,114
 especialidade ou operadora, ou no botão Ver sessões.
 
-21
-00:01:25,813 --> 00:01:30,978
+20
+00:01:19,114 --> 00:01:24,305
 Abre a lista das sessões que formam aquele número, com paciente, profissional,
 
+21
+00:01:24,305 --> 00:01:27,700
+operadora, data de inclusão e dias de antecedência,
+
 22
-00:01:30,978 --> 00:01:35,481
-operadora e dias de antecedência, e você pode exportar para o Excel.
+00:01:27,700 --> 00:01:29,962
+e você pode exportar para o Excel.
 
 23
-00:01:35,481 --> 00:01:38,792
+00:01:29,962 --> 00:01:33,290
 O total da lista é sempre igual ao número clicado.
 
 24
-00:01:39,892 --> 00:01:42,291
+00:01:34,390 --> 00:01:36,841
 Os outros cards também abrem listas.
 
 25
-00:01:42,291 --> 00:01:47,688
+00:01:36,841 --> 00:01:42,356
 Pacientes novos e recorrentes mostram a data da primeira sessão de cada paciente.
 
 26
-00:01:47,688 --> 00:01:51,753
+00:01:42,356 --> 00:01:46,509
 A taxa de ocupação lista os horários que formam a capacidade,
 
 27
-00:01:51,753 --> 00:01:54,418
-seiscentos e vinte e nove neste exemplo.
+00:01:46,509 --> 00:01:48,483
+noventa e nove neste exemplo.
 
 28
-00:01:54,418 --> 00:01:58,949
-E cada linha do faturamento por convênio mostra as contas a receber,
-
-29
-00:01:58,949 --> 00:02:01,215
-com o valor faturado e o recebido.
-
-30
-00:02:01,215 --> 00:02:05,013
+00:01:48,483 --> 00:01:52,364
 O número de linhas da lista deve sempre bater com o card.
 
-31
-00:02:06,113 --> 00:02:10,871
-Para conferir, abra Agenda e clique em Acessar no mês desejado.
+29
+00:01:53,464 --> 00:01:58,798
+Para conferir na Agenda, abra Agenda e clique em Acessar no mês desejado.
 
-32
-00:02:10,871 --> 00:02:15,478
+30
+00:01:58,798 --> 00:02:03,255
 A grade tem uma linha por agendamento, com até cinco sessões.
 
-33
-00:02:16,578 --> 00:02:21,698
+31
+00:02:04,355 --> 00:02:09,324
 Clique em Filtros, escolha Presente no campo Sessão 1 e filtre.
 
+32
+00:02:09,324 --> 00:02:12,716
+O rodapé mostra o total de registros: dois.
+
+33
+00:02:12,716 --> 00:02:17,606
+Repita para as Sessões 2 a 5: a quarta tem um, as outras zero.
+
 34
-00:02:21,698 --> 00:02:25,192
-O rodapé mostra o total de registros: oito.
+00:02:17,606 --> 00:02:19,814
+Somando, são três presentes.
 
 35
-00:02:25,192 --> 00:02:31,612
-Repita para as Sessões 2 a 5, e some: oito, mais um, mais um, dá dez presentes.
+00:02:20,914 --> 00:02:24,185
+Fazendo o mesmo com Ausente, dá quatro ausentes.
 
 36
-00:02:32,712 --> 00:02:35,878
-Fazendo o mesmo com Ausente, dá cinco ausentes.
+00:02:24,185 --> 00:02:29,363
+Então as sessões registradas são sete, a taxa de presença é três sobre sete,
 
 37
-00:02:35,878 --> 00:02:41,200
-Então as sessões registradas são quinze, a taxa de presença é dez sobre quinze,
+00:02:29,363 --> 00:02:34,542
+quarenta e dois vírgula nove por cento, e o absenteísmo é quatro sobre sete,
 
 38
-00:02:41,200 --> 00:02:46,387
-sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze,
+00:02:34,542 --> 00:02:37,131
+cinquenta e sete vírgula um por cento.
 
 39
-00:02:46,387 --> 00:02:48,879
-trinta e três vírgula três por cento.
-
-40
-00:02:48,879 --> 00:02:50,294
+00:02:37,131 --> 00:02:38,562
 Bate com o Dashboard.
 
+40
+00:02:39,662 --> 00:02:43,907
+Absenteísmo é o nome técnico das faltas: de cada cem sessões,
+
 41
-00:02:51,394 --> 00:02:56,242
-Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação,
+00:02:43,907 --> 00:02:45,716
+quantas o paciente faltou.
 
 42
-00:02:56,242 --> 00:03:00,958
-que mostra presentes, ausentes e ausência justificada por profissional,
+00:02:45,716 --> 00:02:49,683
+A conta é ausentes divididos por presentes mais ausentes.
 
 43
-00:03:00,958 --> 00:03:03,813
-com a linha de total somando o mês inteiro.
+00:02:49,683 --> 00:02:53,998
+Só contam as sessões Presente e Ausente; ausência justificada,
 
 44
-00:03:03,813 --> 00:03:08,529
-Atenção apenas: a quantidade de sessões é a prevista, não a registrada.
+00:02:53,998 --> 00:02:56,712
+remarcação e desmarcação ficam de fora.
 
 45
-00:03:09,629 --> 00:03:13,850
-A taxa de ocupação divide as sessões registradas pela capacidade,
+00:02:56,712 --> 00:03:00,678
+Para conferir, clique no card: abre a lista dos ausentes,
 
 46
-00:03:13,850 --> 00:03:18,266
-que é a soma dos horários configurados dos profissionais no período.
+00:03:00,678 --> 00:03:02,905
+e o total é o numerador da taxa.
 
 47
-00:03:18,266 --> 00:03:21,513
-Esses horários aparecem em Agenda, botão Horários,
+00:03:02,905 --> 00:03:07,080
+Também dá para conferir pelos filtros da Agenda, como vimos,
 
 48
-00:03:21,513 --> 00:03:24,110
-na grade da semana de cada profissional.
+00:03:07,080 --> 00:03:09,934
+ou pelo relatório Quantidade de Marcação.
 
 49
-00:03:24,110 --> 00:03:27,162
-Como só as sessões registradas entram na conta,
+00:03:11,034 --> 00:03:14,027
+No relatório Agenda, Quantidade de Marcação,
 
 50
-00:03:27,162 --> 00:03:29,760
-a taxa fica baixa em meses em andamento.
+00:03:14,027 --> 00:03:18,790
+a linha de total soma o mês inteiro: setenta e seis sessões previstas,
 
 51
-00:03:30,860 --> 00:03:38,765
-O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro.
+00:03:18,790 --> 00:03:21,036
+três presentes e quatro ausentes.
 
 52
-00:03:38,765 --> 00:03:44,353
-Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia.
+00:03:21,036 --> 00:03:26,955
+Divida os ausentes pela soma de presentes e ausentes e você chega ao mesmo absenteísmo.
 
 53
-00:03:44,353 --> 00:03:49,532
-Nesta revisão, corrigimos um erro que repetia o valor faturado a cada baixa.
+00:03:26,955 --> 00:03:31,310
+Atenção: a quantidade de sessões é a prevista, não a registrada,
 
 54
-00:03:50,632 --> 00:03:55,802
-Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período,
+00:03:31,310 --> 00:03:33,691
+e a coluna Outras são as pendentes.
 
 55
-00:03:55,802 --> 00:04:00,099
-e filtre pela operadora, que agora tem coluna e filtro próprios.
+00:03:34,791 --> 00:03:44,338
+Antecedência é quanto tempo o agendamento ficou na agenda antes da sessão: os dias entre a data em que o agendamento foi incluído e a data da sessão.
 
 56
-00:04:00,099 --> 00:04:05,605
-Some as baixas da guia: mil e vinte e três, mais duzentos, mais cento e cinquenta,
+00:03:44,338 --> 00:03:49,144
+Por exemplo, incluído em dezenove de julho e atendido em vinte de setembro,
 
 57
-00:04:05,605 --> 00:04:08,962
-dá mil trezentos e setenta e três reais recebidos.
+00:03:49,144 --> 00:03:50,746
+são sessenta e três dias.
 
 58
-00:04:08,962 --> 00:04:13,528
-O relatório Guia Faturamento também pode ser agrupado por operadora.
+00:03:50,746 --> 00:03:52,156
+O card mostra a média.
+
+59
+00:03:52,156 --> 00:03:54,975
+A data de inclusão é do agendamento inteiro,
+
+60
+00:03:54,975 --> 00:03:58,948
+então sessões mais distantes do pacote têm antecedência maior.
+
+61
+00:03:58,948 --> 00:04:00,998
+Para conferir, abra Ver sessões,
+
+62
+00:04:00,998 --> 00:04:10,353
+some a coluna Antecedência e divida pelo número de linhas: oitocentos e noventa e dois divididos por sete dão cento e vinte e sete vírgula quatro,
+
+63
+00:04:10,353 --> 00:04:11,250
+igual ao card.
+
+64
+00:04:12,351 --> 00:04:16,610
+A taxa de ocupação divide as sessões registradas pela capacidade,
+
+65
+00:04:16,610 --> 00:04:21,066
+que é a soma dos horários configurados dos profissionais no período.
+
+66
+00:04:21,066 --> 00:04:24,736
+Esses horários aparecem em Agenda, Mais ações, Horários,
+
+67
+00:04:24,736 --> 00:04:27,358
+na grade da semana de cada profissional.
+
+68
+00:04:27,358 --> 00:04:30,438
+Como só as sessões registradas entram na conta,
+
+69
+00:04:30,438 --> 00:04:33,059
+a taxa fica baixa em meses em andamento.
+
+70
+00:04:34,159 --> 00:04:41,968
+O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro.
+
+71
+00:04:41,968 --> 00:04:47,489
+Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia.
+
+72
+00:04:47,489 --> 00:04:51,326
+Neste ambiente de teste não há guia com baixa no período,
+
+73
+00:04:51,326 --> 00:04:53,278
+então o quadro aparece vazio.
+
+74
+00:04:53,278 --> 00:04:57,991
+Para conferir quando houver, use o relatório Financeiro, Recebimentos,
+
+75
+00:04:57,991 --> 00:05:01,087
+com o mesmo período, filtrando pela operadora.

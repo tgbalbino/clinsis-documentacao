@@ -1,0 +1,71 @@
+1
+00:00:00,400 --> 00:00:07,111
+O Centro de Custo identifica qual setor da clínica está envolvido em uma entrada ou saída de dinheiro,
+
+2
+00:00:07,111 --> 00:00:10,071
+como Consultório, Recepção ou Administrativo.
+
+3
+00:00:10,071 --> 00:00:15,466
+Junto com o Plano de Contas, é um cadastro exigido pelas demais telas financeiras,
+
+4
+00:00:15,466 --> 00:00:17,637
+então configure antes de usá-las.
+
+5
+00:00:18,737 --> 00:00:22,587
+No alto da lista ficam o botão azul Novo, o botão Filtros,
+
+6
+00:00:22,587 --> 00:00:27,698
+que mostra um número quando há filtro aplicado e ganha um X para limpar tudo,
+
+7
+00:00:27,698 --> 00:00:29,224
+e o botão de atualizar.
+
+8
+00:00:29,224 --> 00:00:33,472
+A lista mostra a descrição e a situação de cada centro de custo.
+
+9
+00:00:34,572 --> 00:00:39,768
+Não confunda: o Plano de Conta responde o que é o lançamento, como aluguel.
+
+10
+00:00:39,768 --> 00:00:43,301
+O Centro de Custo responde para qual setor ele vai.
+
+11
+00:00:43,301 --> 00:00:48,565
+Para cadastrar, clique em Novo e informe apenas a descrição e se está ativo.
+
+12
+00:00:49,665 --> 00:00:53,789
+Depois de salvar, o novo centro de custo já aparece na lista.
+
+13
+00:00:53,789 --> 00:00:56,832
+Centros inativos somem das listas de seleção,
+
+14
+00:00:56,832 --> 00:01:00,956
+mas continuam existindo para não quebrar lançamentos antigos.
+
+15
+00:01:02,056 --> 00:01:05,321
+O botão Filtros busca por descrição ou situação.
+
+16
+00:01:05,321 --> 00:01:10,424
+Ao aplicar, só os centros que atendem ao filtro aparecem, e o X limpa tudo.
+
+17
+00:01:10,424 --> 00:01:16,138
+Quando não há nenhum cadastrado, a tela oferece importar os centros de custo padrão,
+
+18
+00:01:16,138 --> 00:01:18,247
+com setores comuns em clínicas.

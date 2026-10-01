@@ -2,50 +2,26 @@
 
 Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizados por área.
 
-## Introdução
+## Base
 
 - [Manual Base do ClinSis](introducao/manual-base-clinsis.md)
-
-## Financeiro
-
-- [Dashboard Financeiro e Fluxo de Caixa](financeiro/dashboard-financeiro-e-fluxo-caixa.md)
-- [Cadastro de Plano de Contas](financeiro/cadastro-plano-de-contas.md)
-- [Cadastro de Centro de Custo](financeiro/cadastro-centro-de-custo.md)
-- [Cadastro de Conta Financeira](financeiro/conta-financeira.md)
-- [Contas Recorrentes](financeiro/contas-recorrentes.md)
-- [Contas a Pagar](financeiro/contas-a-pagar.md)
-- [Contas a Receber](financeiro/contas-a-receber.md)
-- [Movimentos Financeiros](financeiro/movimentos-financeiros.md)
-- [Conciliação Bancária (OFX)](financeiro/conciliacao-bancaria-ofx.md)
-- [Módulo de Caixa](financeiro/modulo-de-caixa.md)
-- [Tabela de Valores para Pagamento](financeiro/tabela-de-precos-pagamento.md)
-- [Tabela de Valores para Cobrança](financeiro/tabela-de-precos-cobranca.md)
-
-## Agenda e Atendimento
-
-- [Checkin de Paciente](agenda/checkin.md)
-- [Dashboard de Agenda](agenda/dashboard-de-agenda.md)
-
-## Cobrança e Pagamento
-
-- [Cobrança de Paciente](cobranca-pagamento/cobranca-de-paciente.md)
-- [Previsão de Faturamento da Agenda](cobranca-pagamento/previsao-de-faturamento.md)
-- [Pagamento de Profissionais](cobranca-pagamento/pagamento-de-profissionais.md)
-
-## Agenda e Atendimento
-
-- [WhatsApp - lembretes e confirmações](agenda-atendimento/whatsapp.md)
-
-## Contrato
-
-- [Contrato (sem assinatura digital)](contrato/contrato.md)
-- [Contrato com Assinatura Digital (D4Sign)](contrato/contrato-d4sign.md)
-- [Layout de Contrato](contrato/layout-de-contrato.md)
 
 ## Cadastros Gerais
 
 - [Cadastro de Especialidades](cadastros/cadastro-de-especialidades.md)
 - [Cadastro de Serviços](cadastros/cadastro-de-servicos.md)
+
+## Agenda e Atendimento
+
+- [Checkin de Paciente](agenda/checkin.md)
+- [WhatsApp - lembretes e confirmações](agenda/whatsapp.md)
+- [Dashboard de Agenda](agenda/dashboard-de-agenda.md)
+
+## Contrato
+
+- [Layout de Contrato](contrato/layout-de-contrato.md)
+- [Contrato (sem assinatura digital)](contrato/contrato.md)
+- [Contrato com Assinatura Digital (D4Sign)](contrato/contrato-d4sign.md)
 
 ## Prontuário
 
@@ -56,4 +32,25 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 ## Área do Profissional
 
 - [Manual da Área do Profissional](area-do-profissional/area-do-profissional.md)
+
+## Cobrança e Pagamento
+
+- [Tabela de Valores para Cobrança](cobranca-pagamento/tabela-de-precos-cobranca.md)
+- [Tabela de Valores para Pagamento](cobranca-pagamento/tabela-de-precos-pagamento.md)
+- [Previsão de Faturamento da Agenda](cobranca-pagamento/previsao-de-faturamento.md)
+- [Cobrança de Paciente](cobranca-pagamento/cobranca-de-paciente.md)
+- [Pagamento de Profissionais](cobranca-pagamento/pagamento-de-profissionais.md)
+
+## Financeiro
+
+- [Cadastro de Plano de Contas](financeiro/cadastro-plano-de-contas.md)
+- [Cadastro de Centro de Custo](financeiro/cadastro-centro-de-custo.md)
+- [Cadastro de Conta Financeira](financeiro/conta-financeira.md)
+- [Contas Recorrentes](financeiro/contas-recorrentes.md)
+- [Contas a Pagar](financeiro/contas-a-pagar.md)
+- [Contas a Receber](financeiro/contas-a-receber.md)
+- [Movimentos Financeiros](financeiro/movimentos-financeiros.md)
+- [Módulo de Caixa](financeiro/modulo-de-caixa.md)
+- [Conciliação Bancária (OFX)](financeiro/conciliacao-bancaria-ofx.md)
+- [Dashboard Financeiro e Fluxo de Caixa](financeiro/dashboard-financeiro-e-fluxo-caixa.md)
 
