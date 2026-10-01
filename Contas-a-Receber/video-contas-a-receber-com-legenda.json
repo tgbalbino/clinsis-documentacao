@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Contas a Receber (com legendas)",
+  "descricao": "Cadastrar e receber os valores que os pacientes/convênios devem à clínica.\n\nContas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.\n\nNeste vídeo:\n• Barra de ações\n• Indicadores e como abrir a lista\n• Filtro rápido\n• Cadastrando um recebimento — \"Parcela Automática\" (exemplo)\n• Recebendo (baixando) uma parcela\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

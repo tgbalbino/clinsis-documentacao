@@ -8,9 +8,9 @@ _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/1qx_Mgp4T_Q?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/74XN1Jb4f_c?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/1qx_Mgp4T_Q)
+[Abrir no YouTube](https://youtu.be/74XN1Jb4f_c)
 
 ## Conteúdo completo do manual
 
@@ -19,11 +19,17 @@ _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
 _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.
 
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam o botão azul Novo (em destaque), o botão Filtros — que mostra um número quando há filtro aplicado, com um ✕ ao lado para limpar tudo —, o botão de Atualizar, só com o ícone, e o botão discreto Log do Job, que abre o histórico das execuções automáticas.
+
 
 ## Tela inicial
 

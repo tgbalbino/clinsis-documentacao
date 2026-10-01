@@ -14,6 +14,7 @@ Como organizar a clínica em setores para saber onde o dinheiro entra e sai.
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
 Neste vídeo:
+• Barra de ações
 • Diferença entre Plano de Conta e Centro de Custo
 • Cadastrando um novo Centro de Custo (exemplo)
 • Filtrando centros de custo cadastrados
@@ -37,6 +38,7 @@ Como organizar a clínica em setores para saber onde o dinheiro entra e sai.
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
 Neste vídeo:
+• Barra de ações
 • Diferença entre Plano de Conta e Centro de Custo
 • Cadastrando um novo Centro de Custo (exemplo)
 • Filtrando centros de custo cadastrados

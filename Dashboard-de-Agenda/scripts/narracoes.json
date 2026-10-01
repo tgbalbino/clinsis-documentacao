@@ -1,62 +1,67 @@
 [
-  {
-    "audio": "01.wav",
-    "imagem": "40-dashboard-setembro-cards.png",
-    "texto": "O Dashboard de Agenda reúne os principais números dos atendimentos de um período. Fica em Agenda, Dashboard Agenda, e o filtro é o período, que já vem com o mês corrente. Vamos ver o que cada número significa e, principalmente, como conferir cada um dentro do sistema, usando como exemplo o mês de setembro."
-  },
-  {
-    "audio": "02.wav",
-    "imagem": "40-dashboard-setembro-cards.png",
-    "texto": "Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada, ou seja, sessões marcadas como Presente, Ausente, Ausente com justificativa ou Remarcação. Sessões pendentes e desmarcações não aparecem. A tela agora traz esse aviso, e o card se chama Sessões Registradas. Em setembro, a agenda tem 165 sessões previstas, mas o Dashboard mostra 15, que são as dez presentes mais as cinco ausentes."
-  },
-  {
-    "audio": "03.wav",
-    "imagem": "48-dashboard-previstas.png",
-    "texto": "Logo abaixo, uma faixa mostra o previsto no mês da agenda: sessões previstas, pendentes e desmarcadas pelo paciente ou pelo profissional. Em setembro, são cento e sessenta e cinco previstas e cento e cinquenta pendentes. Esses números são sempre do mês inteiro da agenda, e a previsão bate com a coluna de sessões do relatório Quantidade de Marcação."
-  },
-  {
-    "audio": "04.wav",
-    "imagem": "44-dashboard-drilldown.png",
-    "texto": "Uma novidade: qualquer número do painel pode ser aberto. Clique em um card, em uma linha das tabelas por profissional, especialidade ou operadora, ou no botão Ver sessões. Abre a lista das sessões que formam aquele número, com paciente, profissional, operadora e dias de antecedência, e você pode exportar para o Excel. O total da lista é sempre igual ao número clicado."
-  },
-  {
-    "audio": "05.wav",
-    "imagem": "46-drilldown-capacidade.png",
-    "texto": "Os outros cards também abrem listas. Pacientes novos e recorrentes mostram a data da primeira sessão de cada paciente. A taxa de ocupação lista os horários que formam a capacidade, seiscentos e vinte e nove neste exemplo. E cada linha do faturamento por convênio mostra as contas a receber, com o valor faturado e o recebido. O número de linhas da lista deve sempre bater com o card."
-  },
-  {
-    "audio": "06.wav",
-    "imagem": "22-agendamento-grade-mes.png",
-    "texto": "Para conferir, abra Agenda e clique em Acessar no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
-  },
-  {
-    "audio": "07.wav",
-    "imagem": "23a-modal-filtro-sessao1-presente.png",
-    "texto": "Clique em Filtros, escolha Presente no campo Sessão 1 e filtre. O rodapé mostra o total de registros: oito. Repita para as Sessões 2 a 5, e some: oito, mais um, mais um, dá dez presentes."
-  },
-  {
-    "audio": "08.wav",
-    "imagem": "23-agendamento-filtro-sessao1-presente.png",
-    "texto": "Fazendo o mesmo com Ausente, dá cinco ausentes. Então as sessões registradas são quinze, a taxa de presença é dez sobre quinze, sessenta e seis vírgula sete por cento, e o absenteísmo é cinco sobre quinze, trinta e três vírgula três por cento. Bate com o Dashboard."
-  },
-  {
-    "audio": "09.wav",
-    "imagem": "24-relatorio-qtd-marcacao.png",
-    "texto": "Uma alternativa mais rápida é o relatório Agenda, Quantidade de Marcação, que mostra presentes, ausentes e ausência justificada por profissional, com a linha de total somando o mês inteiro. Atenção apenas: a quantidade de sessões é a prevista, não a registrada."
-  },
-  {
-    "audio": "10.wav",
-    "imagem": "42-prof-horarios.png",
-    "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, botão Horários, na grade da semana de cada profissional. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
-  },
-  {
-    "audio": "11.wav",
-    "imagem": "43-faturamento-corrigido.png",
-    "texto": "O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro. Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia. Nesta revisão, corrigimos um erro que repetia o valor faturado a cada baixa."
-  },
-  {
-    "audio": "12.wav",
-    "imagem": "32-relatorio-recebimentos-periodo.png",
-    "texto": "Para conferir, use o relatório Financeiro, Recebimentos, com o mesmo período, e filtre pela operadora, que agora tem coluna e filtro próprios. Some as baixas da guia: mil e vinte e três, mais duzentos, mais cento e cinquenta, dá mil trezentos e setenta e três reais recebidos. O relatório Guia Faturamento também pode ser agrupado por operadora."
-  }
+ {
+  "audio": "01.wav",
+  "imagem": "40-dashboard-setembro-cards.png",
+  "texto": "O Dashboard de Agenda reúne os principais números dos atendimentos de um período. Fica em Agenda, Dashboard Agenda, e o filtro é o período, que já vem com o mês corrente. Vamos ver o que cada número significa e, principalmente, como conferir cada um dentro do sistema, usando como exemplo o mês de setembro."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "40-dashboard-setembro-cards.png",
+  "texto": "Um ponto importante: o Dashboard só enxerga sessões que já têm data registrada, ou seja, sessões marcadas como Presente, Ausente, Ausente com justificativa ou Remarcação. Sessões pendentes e desmarcações não aparecem. Em setembro, a agenda tem setenta e seis sessões previstas, mas o Dashboard mostra sete, que são as três presentes mais as quatro ausentes."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "48-dashboard-previstas.png",
+  "texto": "Logo abaixo, uma faixa mostra o previsto no mês da agenda: sessões previstas, pendentes e desmarcadas pelo paciente ou pelo profissional. Em setembro, são setenta e seis previstas e sessenta e nove pendentes. Esses números são sempre do mês inteiro da agenda, e a previsão bate com a coluna de sessões do relatório Quantidade de Marcação."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "44-dashboard-drilldown.png",
+  "texto": "Qualquer número do painel pode ser aberto. Clique em um card, em uma linha das tabelas por profissional, especialidade ou operadora, ou no botão Ver sessões. Abre a lista das sessões que formam aquele número, com paciente, profissional, operadora, data de inclusão e dias de antecedência, e você pode exportar para o Excel. O total da lista é sempre igual ao número clicado."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "46-drilldown-capacidade.png",
+  "texto": "Os outros cards também abrem listas. Pacientes novos e recorrentes mostram a data da primeira sessão de cada paciente. A taxa de ocupação lista os horários que formam a capacidade, noventa e nove neste exemplo. O número de linhas da lista deve sempre bater com o card."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "22-agendamento-grade-mes.png",
+  "texto": "Para conferir na Agenda, abra Agenda e clique em Acessar no mês desejado. A grade tem uma linha por agendamento, com até cinco sessões."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "23a-modal-filtro-sessao1-presente.png",
+  "texto": "Clique em Filtros, escolha Presente no campo Sessão 1 e filtre. O rodapé mostra o total de registros: dois. Repita para as Sessões 2 a 5: a quarta tem um, as outras zero. Somando, são três presentes."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "23-agendamento-filtro-sessao1-presente.png",
+  "texto": "Fazendo o mesmo com Ausente, dá quatro ausentes. Então as sessões registradas são sete, a taxa de presença é três sobre sete, quarenta e dois vírgula nove por cento, e o absenteísmo é quatro sobre sete, cinquenta e sete vírgula um por cento. Bate com o Dashboard."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "49-drilldown-ausentes.png",
+  "texto": "Absenteísmo é o nome técnico das faltas: de cada cem sessões, quantas o paciente faltou. A conta é ausentes divididos por presentes mais ausentes. Só contam as sessões Presente e Ausente; ausência justificada, remarcação e desmarcação ficam de fora. Para conferir, clique no card: abre a lista dos ausentes, e o total é o numerador da taxa. Também dá para conferir pelos filtros da Agenda, como vimos, ou pelo relatório Quantidade de Marcação."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "24-relatorio-qtd-marcacao.png",
+  "texto": "No relatório Agenda, Quantidade de Marcação, a linha de total soma o mês inteiro: setenta e seis sessões previstas, três presentes e quatro ausentes. Divida os ausentes pela soma de presentes e ausentes e você chega ao mesmo absenteísmo. Atenção: a quantidade de sessões é a prevista, não a registrada, e a coluna Outras são as pendentes."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "50-ver-sessoes-todas.png",
+  "texto": "Antecedência é quanto tempo o agendamento ficou na agenda antes da sessão: os dias entre a data em que o agendamento foi incluído e a data da sessão. Por exemplo, incluído em dezenove de julho e atendido em vinte de setembro, são sessenta e três dias. O card mostra a média. A data de inclusão é do agendamento inteiro, então sessões mais distantes do pacote têm antecedência maior. Para conferir, abra Ver sessões, some a coluna Antecedência e divida pelo número de linhas: oitocentos e noventa e dois divididos por sete dão cento e vinte e sete vírgula quatro, igual ao card."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "42-prof-horarios.png",
+  "texto": "A taxa de ocupação divide as sessões registradas pela capacidade, que é a soma dos horários configurados dos profissionais no período. Esses horários aparecem em Agenda, Mais ações, Horários, na grade da semana de cada profissional. Como só as sessões registradas entram na conta, a taxa fica baixa em meses em andamento."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "43-faturamento-corrigido.png",
+  "texto": "O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro. Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia. Neste ambiente de teste não há guia com baixa no período, então o quadro aparece vazio. Para conferir quando houver, use o relatório Financeiro, Recebimentos, com o mesmo período, filtrando pela operadora."
+ }
 ]

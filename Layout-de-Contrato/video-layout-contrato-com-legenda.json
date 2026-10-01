@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Layout de Contrato (com legendas)",
+  "descricao": "O modelo (template) usado para gerar o PDF de todos os contratos da clínica.\n\nEsta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato. Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)\n\nNeste vídeo:\n• Onde fica e o que é\n• Editando o layout\n• Modelo padrão pronto\n• Pré-visualizando antes de ativar\n• Ativando um layout\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

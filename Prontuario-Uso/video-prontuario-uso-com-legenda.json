@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Prontuário — Uso pelo Profissional (com legendas)",
+  "descricao": "Criar, preencher, finalizar, consultar e imprimir prontuários.\n\nEste manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual \"Prontuário — Configuração\". A conferência gerencial (auditoria) tem manual próprio. Assista ao vídeo narrado desta rotina: [https://youtu.be/XPTXN2u41Ps](https://youtu.be/XPTXN2u41Ps)\n\nNeste vídeo:\n• Quem faz o quê\n• 1. Encontrar prontuários (a lista)\n• 2. Criar um prontuário\n• 3. Preencher o prontuário\n• 4. Tags\n• 5. Finalizar\n• 6. Consultar e imprimir\n• 7. Excluir um rascunho\n• 8. Ver prontuários de outros profissionais\n• Mensagens e cuidados\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

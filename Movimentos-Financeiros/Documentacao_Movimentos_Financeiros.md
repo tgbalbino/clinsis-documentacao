@@ -2,12 +2,17 @@
 
 _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
-Versão 1.0 — 22/09/2026
+Versão 1.2 — 30/09/2026
 
 Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor e origem. A tela serve para conferir esse extrato contra o extrato real do banco (conciliação), fazer transferências entre contas do sistema e, se necessário, excluir um lançamento incorreto.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/YEE6RAVUX8I](https://youtu.be/YEE6RAVUX8I)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/md1GdiLY9Qw](https://youtu.be/md1GdiLY9Qw)
+
 ---
+
+## Barra de ações
+
+Os filtros ficam no alto da tela (período, conta financeira, tipo, origem e conciliado). Logo abaixo, o botão azul Buscar, o botão só com o ícone de borracha para Limpar os filtros e, à direita, Nova Transferência. Só a lista rola; os filtros, o card de Conciliação e os títulos das colunas ficam sempre visíveis.
 
 ## O que é e de onde vem cada linha
 
@@ -46,6 +51,8 @@ Mostra três números — Total, Conciliado (verde) e Não Conciliado (vermelho)
 ## Conciliar / Desconciliar
 
 O botão verde (✓) marca o lançamento como conciliado — ou seja, confirma que aquele valor bate com o extrato real do banco naquele dia. É uma ação de um clique, sem pedir motivo. Um lançamento conciliado ganha o botão amarelo "Desconciliar" (desfazer), caso a conciliação tenha sido feita por engano.
+
+> ⚠️ Em vez de conciliar um a um, use Financeiro → Movimentos → Conciliação OFX: você envia o extrato do banco em formato OFX e o sistema sugere, de uma vez, quais movimentos batem com cada linha do extrato (mesmo tipo, mesmo valor e data até 3 dias de diferença). Os movimentos conciliados por lá aparecem aqui com Sim, e o botão de desconciliar também libera a linha do extrato. Veja o manual "Conciliação Bancária (OFX)".
 
 ![Linha conciliada: "Sim" em verde na coluna Conciliado e o botão amarelo de desconciliar.](01-apos-conciliar.png)
 

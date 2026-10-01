@@ -8,7 +8,9 @@ _O que o profissional de saúde vê e pode fazer no ClinSis_
 
 ## Vídeo narrado
 
-*Vídeo em processo de publicação — o link será adicionado aqui assim que estiver disponível no YouTube.*
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/TAq1nN4P4DM?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+[Abrir no YouTube](https://youtu.be/TAq1nN4P4DM)
 
 ## Conteúdo completo do manual
 
@@ -17,7 +19,7 @@ _O que o profissional de saúde vê e pode fazer no ClinSis_
 
 _O que o profissional de saúde vê e pode fazer no ClinSis_
 
-Versão 1.1 — 24/09/2026
+Versão 1.4 — 01/10/2026
 
 Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
 
@@ -57,10 +59,10 @@ Logo abaixo aparece uma faixa com os números de hoje (disponível para todas as
 
 # 2. Agenda
 
-Menu Agenda: lista de Ano/Mês. Em cada linha, o botão Acessar abre a Agenda resumida do mês. Se a clínica não for consultório, aparece também o link Ver lista simples de pacientes do dia.
+Menu Agenda: lista de Ano/Mês. Em cada linha, o botão verde Minha agenda abre a Agenda resumida do mês; o mês atual tem o selo Atual e a linha destacada. Se a clínica não for consultório, aparece também o link Ver lista simples de pacientes do dia.
 
 
-> ⚠️ O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Horários, Acessar (grade de agendamento) e Divergência Sessões. Esses são do administrador e do atendente.
+> ⚠️ O profissional não pode criar nem remover agendas, e não vê o botão Acessar (grade de agendamento) nem o menu Mais ações (Relatório, Horários e Divergência Sessões). Esses são do administrador e do atendente.
 
 ## Agenda resumida
 
@@ -81,7 +83,8 @@ Criar prontuário a partir da agenda: dê dois cliques no paciente (ou clique em
 
 ## Pacientes do dia (Agenda detalhada)
 
-Acesse pelo link Agenda detalhada da Home, ou Ver lista simples de pacientes do dia na Agenda. Escolha a data e clique em Pesquisar. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão Marcar Presença em cada linha.
+Acesse pelo link Agenda detalhada da Home, ou Ver lista simples de pacientes do dia na Agenda. Escolha a data e clique em Pesquisar. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão Marcar Presença em cada linha. Quando a clínica usa o envio automático de WhatsApp, o link Respostas WhatsApp, ao lado de Pesquisar, abre as respostas dos seus pacientes de ontem, hoje e amanhã: confirmados, não vão e sem resposta.
+
 
 
 # 3. Pacientes
@@ -172,9 +175,11 @@ A lista tem protocolo, data de alteração, data limite, solicitante, usuário e
 Menu Perfil: cuidar dos dados da sua conta. Mostra nome, e-mail, situação (Ativo ou Inativo), perfil de acesso e data de cadastro.
 
 
+Abaixo dos dados da conta, o quadro Últimos acessos, em largura total, mostra em cartões lado a lado os 5 acessos mais recentes ao seu usuário, com data e hora, o acesso atual destacado, a rede, o aparelho e o IP. Se algum acesso não foi feito por você, altere a senha em Alterar Senha e avise o administrador.
+
 | Opção | Como usar |
 |---|---|
-| Alterar Dados | Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. |
+| Alterar Dados | Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. Nome e data de nascimento também atualizam o seu cadastro de profissional. |
 | Alterar Senha | Informe a senha atual, a nova senha e repita a nova senha. |
 
 # 8. Resumo: o que o profissional não faz

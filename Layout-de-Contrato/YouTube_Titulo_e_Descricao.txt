@@ -11,7 +11,7 @@ ClinSis | Layout de Contrato (com legendas)
 DESCRIÇÃO:
 O modelo (template) usado para gerar o PDF de todos os contratos da clínica.
 
-Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
+Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato. Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)
 
 Neste vídeo:
 • Onde fica e o que é
@@ -35,7 +35,7 @@ ClinSis | Layout de Contrato (sem legendas)
 DESCRIÇÃO:
 O modelo (template) usado para gerar o PDF de todos os contratos da clínica.
 
-Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
+Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato. Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)
 
 Neste vídeo:
 • Onde fica e o que é

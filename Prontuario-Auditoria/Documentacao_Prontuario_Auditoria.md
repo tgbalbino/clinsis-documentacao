@@ -6,7 +6,8 @@ Versão 1.0 — 23/09/2026
 
 Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/xRpzTXrGA3Y](https://youtu.be/xRpzTXrGA3Y)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/xdxI2t3df8w](https://youtu.be/xdxI2t3df8w)
+
 ---
 
 ## Para que serve cada relatório

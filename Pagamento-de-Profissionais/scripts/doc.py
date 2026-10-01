@@ -3,6 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.1"
-DATA = "26/09/2026"
+VERSAO = '1.2'
+DATA = '29/09/2026'
 TITULO = "Pagamento de Profissionais"
 SUBTITULO = "Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês"
-VIDEO_NOME = "https://youtu.be/0dVv7ctVDPE"
+VIDEO_NOME = "https://youtu.be/PkvsWwKU2nM"
 INTRO = ('Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto '
          'a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente '
          'com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso '
@@ -197,6 +198,15 @@ blocks = [
           'total de cada profissional — útil para investigar uma diferença inesperada (por exemplo, uma sessão '
           'que não deveria contar, ou um paciente que faltou e foi contabilizado por engano) antes de confirmar '
           'a geração da conta, ou para exportar e conferir com uma agenda física.'),
+
+    ('h2', 'Exportar para planilha (CSV)'),
+    ('p', 'Os dois relatórios (sintético e analítico) têm o botão <b>Exportar</b>, logo acima da tabela. Ele gera um arquivo <b>CSV</b>, que abre no Excel, com <b>todos os registros</b> do filtro aplicado — não só os da página exibida. Aplique antes os filtros (agenda, profissional, status e "Considera Marcação") e clique em Exportar. Se o filtro não tiver nenhum registro, nenhum arquivo é gerado.'),
+    ('img', '24-sintetico-exportar.png', 'Relatório sintético com o botão Exportar acima da tabela.'),
+    ('tabelagen', ['Relatório', 'Nome do arquivo', 'Colunas do CSV'], [
+        ['Sintético (agrupado)', 'pagamento_profissional_agrupado_(data e hora).csv', 'Profissional, Especialidade, QtdPacientes, Sessoes, SessoesPagar, ValorSessao, ValorTotal e ContaPagarGerada (Sim/Não).'],
+        ['Analítico', 'pagamento_profissional_(data e hora).csv', 'Profissional, Especialidade, Paciente, Sessoes, SessoesPagar, ValorSessao e ValorTotal.'],
+    ], [3.6, 6, 7.9]),
+    ('aviso', 'O arquivo usa ponto e vírgula como separador e os valores no formato brasileiro (ex.: 136,00). As mesmas regras da tela valem na exportação: a agenda precisa estar vinculada a uma Tabela de Valores para Pagamento; caso contrário aparece a mensagem "Agenda não vinculada a uma conf. Pagamento". Exportar não gera Conta a Pagar: serve só para conferência e controle.'),
 
     ('h2', 'Gerando a Conta a Pagar'),
     ('p', 'Marque o checkbox das linhas desejadas (ou use o botão no canto superior direito da '

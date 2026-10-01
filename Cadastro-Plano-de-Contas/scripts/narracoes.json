@@ -1,0 +1,9 @@
+[
+ {"audio":"01.wav","imagem":"00-arvore-inicial.png","texto":"O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica. Praticamente todas as telas financeiras exigem um Plano de Conta selecionado, por isso ele deve ser configurado primeiro."},
+ {"audio":"02.wav","imagem":"00-arvore-inicial.png","texto":"No alto da tela ficam os controles: o botão azul Novo, o botão Filtros, que mostra um número quando há filtro aplicado e ganha um X para limpar tudo de uma vez, e o botão de atualizar, só com o ícone. Só a lista rola, então a barra de ações fica sempre visível."},
+ {"audio":"03.wav","imagem":"01-lista.png","texto":"A tela abre em Árvore, agrupando as contas em Receitas, Despesas e Outros, com até dois níveis. O botão Lista, no canto direito, mostra uma tabela simples com código, descrição, tipo, pai e situação."},
+ {"audio":"04.wav","imagem":"02-novo-modal-preenchido.png","texto":"Para cadastrar, clique em Novo. Escolha o tipo, receita ou despesa, informe a descrição e, se quiser, uma conta pai. O código é gerado automaticamente. Contas inativas somem das listas de seleção, mas continuam existindo para não quebrar lançamentos antigos."},
+ {"audio":"05.wav","imagem":"03-apos-salvar.png","texto":"Depois de salvar, a nova conta já aparece na árvore, dentro do grupo escolhido."},
+ {"audio":"06.wav","imagem":"04-filtro-preenchido.png","texto":"O botão Filtros permite buscar por código, descrição, tipo, conta pai, situação e ordenação. Ao aplicar, o botão mostra quantos filtros estão ativos."},
+ {"audio":"07.wav","imagem":"05-resultado-filtro.png","texto":"Só as contas que atendem ao filtro aparecem na lista. O X ao lado do botão limpa os filtros de uma vez. Quando não existe nenhuma conta cadastrada, a tela oferece importar um plano de contas padrão, com categorias comuns para clínicas."}
+]

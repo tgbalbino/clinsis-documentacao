@@ -8,9 +8,9 @@ _Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/mUPp2HgJV6I?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/TGcyxaZc2QY?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/mUPp2HgJV6I)
+[Abrir no YouTube](https://youtu.be/TGcyxaZc2QY)
 
 ## Conteúdo completo do manual
 
@@ -19,11 +19,17 @@ _Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
 
 _Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam o botão azul Novo (em destaque), o botão Filtros — que mostra um número quando há filtro aplicado, com um ✕ ao lado para limpar tudo de uma vez — e o botão de Atualizar, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis.
+
 
 ## Diferença entre Plano de Conta e Centro de Custo
 

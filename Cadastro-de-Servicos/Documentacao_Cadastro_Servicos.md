@@ -2,11 +2,11 @@
 
 _Para que serve e onde é utilizado (Tabelas Aux. → Serviços)_
 
-Versão 1.0 — 22/09/2026
+Versão 1.2 — 30/09/2026
 
 Um Serviço é um item simples de "nome + valor" — como um item de tabela de valores — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/uotROr-rj6s](https://youtu.be/uotROr-rj6s)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/Zk-GdESYkls](https://youtu.be/Zk-GdESYkls)
 
 ---
 
@@ -20,9 +20,29 @@ O cadastro é bem enxuto: só Descrição e Preço. Não existe ativo/inativo, c
 
 _Lista de Serviços (Tabelas Aux. → Serviços), com Nome e Preço de cada um._
 
-![Tela de cadastro: só dois campos, Serviço (nome) e Preço.](01-cadastro-servico-vazio.png)
+![Tela de cadastro: só dois campos, Serviço (nome) e Preço, com máscara de moeda (0,00). O botão Novo fica no cabeçalho da tela, ao lado do título.](01-cadastro-servico-vazio.png)
 
-_Tela de cadastro: só dois campos, Serviço (nome) e Preço._
+_Tela de cadastro: só dois campos, Serviço (nome) e Preço, com máscara de moeda (0,00). O botão Novo fica no cabeçalho da tela, ao lado do título._
+
+## Reajuste de preços em massa
+
+Na própria lista, o quadro Manutenção rápida de preços permite reajustar o preço de todos os serviços de uma vez. Clique em Reajustar preços, informe o percentual (use valor negativo para reduzir, por exemplo -5) e clique em Calcular prévia: a tabela mostra o preço atual e o preço novo de cada serviço, e informa quantos valores serão alterados. Nada é gravado nessa etapa.
+
+![Quadro de manutenção de preços aberto: campo de percentual e botão "Calcular prévia".](00b-reajuste-aberto.png)
+
+_Quadro de manutenção de preços aberto: campo de percentual e botão "Calcular prévia"._
+
+![Prévia de um reajuste de 10%: preço atual e preço novo de cada serviço.](00c-reajuste-previa.png)
+
+_Prévia de um reajuste de 10%: preço atual e preço novo de cada serviço._
+
+O percentual aceito vai de mais de -100% até 1000%; fora disso, o sistema avisa e não calcula. Além disso, nenhum preço novo pode passar de R$ 99.999.999,99 (o maior valor que o sistema consegue gravar): se algum serviço ultrapassar esse limite, a prévia e a confirmação são recusadas com uma mensagem informando o percentual e o serviço afetado, e nada é alterado.
+
+![Percentual fora da faixa aceita: o sistema avisa e não calcula a prévia.](00d-reajuste-acima-do-limite.png)
+
+_Percentual fora da faixa aceita: o sistema avisa e não calcula a prévia._
+
+> ⚠️ A simulação não altera os preços. Os valores só são gravados quando você clica em Confirmar reajuste, depois de conferir a prévia. Contratos já criados mantêm o valor que tinham; o novo preço vale para os serviços adicionados daqui em diante.
 
 ## Onde é utilizado: exclusivamente no módulo Contrato
 

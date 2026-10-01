@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Módulo de Caixa (sem legendas)",
+  "descricao": "Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico.\n\nO módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.\n\nNeste vídeo:\n• Abrindo o caixa\n• Lançamentos manuais: Suprimento e Sangria\n• Recebimentos e pagamentos aparecem automaticamente\n• Fechando o caixa\n• Solicitação de cancelamento de lançamento\n• Histórico de caixas\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

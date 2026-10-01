@@ -8,9 +8,9 @@ _Envio para assinatura eletrônica, acompanhamento e fechamento automático_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/OY-A2nyWsuA?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/eg7ABN_eNyo?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/OY-A2nyWsuA)
+[Abrir no YouTube](https://youtu.be/eg7ABN_eNyo)
 
 ## Conteúdo completo do manual
 
@@ -19,9 +19,10 @@ _Envio para assinatura eletrônica, acompanhamento e fechamento automático_
 
 _Envio para assinatura eletrônica, acompanhamento e fechamento automático_
 
-Versão 1.0 — 18/09/2026
+Versão 1.1 — 29/09/2026
 
 Este manual complementa o de Contrato (sem assinatura digital), cobrindo o que muda quando a clínica usa a integração com a D4Sign para colher a assinatura do paciente eletronicamente, em vez de assinar manualmente no sistema. O ciclo de vida do contrato (Criado → Assinado → Fechado, com geração automática de Conta a Receber) continua o mesmo — o que muda é como a assinatura acontece: em vez de um clique interno, o paciente assina de verdade, remotamente, e o próprio sistema fecha o contrato sozinho assim que a assinatura é confirmada.
+
 
 ---
 
@@ -36,13 +37,13 @@ Antes de qualquer contrato poder ser enviado para assinatura, a integração pre
 
 ## Enviando o contrato para assinatura eletrônica
 
+No topo do contrato salvo há a opção Assinatura eletrônica (D4Sign): "Assinar pela D4Sign" (padrão da clínica) ou "Não assinar". Dispensar a assinatura exige liberação administrativa e é explicado no manual de Contrato. Com "Assinar pela D4Sign" selecionado, o contrato só pode ser fechado depois que a assinatura for concluída.
+
 Com o contrato criado, serviços e condição de pagamento preenchidos (igual à versão sem D4Sign), em vez de marcar "assinado" manualmente, clique em "Enviar para assinatura". O sistema avisa que, após o envio, os dados do contrato ficam bloqueados — ele deixa de poder ser editado a partir daqui.
 
 
 
 Ao confirmar, o sistema, em sequência: gera o PDF do contrato, envia esse PDF para a D4Sign, cadastra o(s) signatário(s) e dispara o convite de assinatura por e-mail. O signatário é o responsável do contrato, se houver um cadastrado, ou o próprio paciente quando não há responsável — o e-mail usado é sempre o que está no cadastro da pessoa no ClinSis.
-
-
 
 ## Acompanhando a assinatura
 

@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Cadastro de Plano de Contas (sem legendas)",
+  "descricao": "Como organizar as categorias de receitas e despesas da clínica.\n\nO Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: \"Consulta por Convênio\", \"Aluguel\", \"Material de Consumo\"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.\n\nNeste vídeo:\n• Barra de ações\n• Duas formas de visualizar: Árvore ou Lista\n• Cadastrando uma nova conta (exemplo)\n• Filtrando contas cadastradas\n• Atalho: Importar Plano de Contas Padrão\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

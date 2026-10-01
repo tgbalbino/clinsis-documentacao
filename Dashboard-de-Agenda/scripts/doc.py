@@ -11,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "2.2"
-DATA = "24/09/2026"
+VERSAO = "3.1"
+DATA = "01/10/2026"
 TITULO = "Dashboard de Agenda"
 SUBTITULO = "O que significa cada informação e como conferir cada uma no sistema"
-VIDEO_NOME = "https://youtu.be/QAra0-JTD5w"
+VIDEO_NOME = "https://youtu.be/yMswtbogABA"
 INTRO = ('O <b>Dashboard de Agenda</b> reúne, num só lugar, números sobre os atendimentos de um '
          'período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. '
          'Este manual explica <b>o que cada card, gráfico e tabela representa</b>, <b>como o número é '
@@ -40,42 +40,69 @@ blocks = [
               '<b>não aparecem</b>; (2) <b>PAC. DESMARCOU</b> e <b>PRO. DESMARCOU</b> <b>não aparecem</b> '
               '(por isso o gráfico não tem fatias de desmarcação). Em outras palavras, o '
               'Dashboard mostra <b>sessões registradas</b>, e não todas as sessões agendadas — a própria tela traz esse aviso e os cards foram renomeados para deixar isso claro.'),
-    ('p', '<b>Exemplo real (Agenda de Setembro/2026):</b> a agenda tem 165 sessões previstas — 150 ainda '
-          'pendentes, 10 marcadas como Presente e 5 como Ausente. O Dashboard mostra <b>15</b> '
-          '(10 + 5). Os relatórios de Agenda (que contam as sessões previstas) mostram 165.'),
+    ('p', '<b>Exemplo real (Agenda de Setembro/2026):</b> a agenda tem 76 sessões previstas — 69 ainda '
+          'pendentes, 3 marcadas como Presente e 4 como Ausente. O Dashboard mostra <b>7</b> '
+          '(3 + 4). Os relatórios de Agenda (que contam as sessões previstas) mostram 76.'),
 
     ('h2', 'Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo'),
-    ('p', 'Estes números do Dashboard de Setembro: <b>Sessões Registradas = 15</b>, <b>Taxa de Presença = '
-          '66,7%</b>, <b>Taxa de Absenteísmo = 33,3%</b>. Para conferir dentro da Agenda:'),
+    ('p', 'Estes números do Dashboard de Setembro: <b>Sessões Registradas = 7</b>, <b>Taxa de Presença = '
+          '42,9%</b>, <b>Taxa de Absenteísmo = 57,1%</b>. Para conferir dentro da Agenda:'),
     ('tabelagen', ['Passo', 'O que fazer'],
      [
          ['1', 'Menu <b>Agenda</b> → na linha do mês (2026 / SETEMBRO) clique em <b>Acessar</b>.'],
-         ['2', 'Clique em <b>Filtros</b>. No campo <b>Sessão 1</b>, escolha <b>PRESENTE</b> e clique em <b>Filtrar</b>. Veja no rodapé: <b>"Total de registros: 8"</b>.'],
-         ['3', 'Repita trocando para <b>Sessão 2</b> (resultado: 1), <b>Sessão 3</b> (1), <b>Sessão 4</b> (0) e <b>Sessão 5</b> (0). Some: 8 + 1 + 1 = <b>10 presentes</b>.'],
-         ['4', 'Repita tudo com <b>AUSENTE</b>: Sessão 1 = 3, Sessão 2 = 2, demais 0. Soma = <b>5 ausentes</b>.'],
-         ['5', 'Sessões Registradas = 10 + 5 = <b>15</b>. Taxa de Presença = 10 ÷ 15 = <b>66,7%</b>. Taxa de Absenteísmo = 5 ÷ 15 = <b>33,3%</b>. Bate com o Dashboard.'],
+         ['2', 'Clique em <b>Filtros</b>. No campo <b>Sessão 1</b>, escolha <b>PRESENTE</b> e clique em <b>Filtrar</b>. Veja no rodapé: <b>"Total de registros: 2"</b>.'],
+         ['3', 'Repita trocando para <b>Sessão 2</b> (resultado: 0), <b>Sessão 3</b> (0), <b>Sessão 4</b> (1) e <b>Sessão 5</b> (0). Some: 2 + 0 + 0 + 1 + 0 = <b>3 presentes</b>.'],
+         ['4', 'Repita tudo com <b>AUSENTE</b>: Sessão 1 = 1, Sessão 2 = 2, Sessão 3 = 1, Sessão 4 = 0 e Sessão 5 = 0. Soma = <b>4 ausentes</b>.'],
+         ['5', 'Sessões Registradas = 3 + 4 = <b>7</b>. Taxa de Presença = 3 ÷ 7 = <b>42,9%</b>. Taxa de Absenteísmo = 4 ÷ 7 = <b>57,1%</b>. Bate com o Dashboard.'],
      ], [1.6, 15.9]),
-    ('img', '22-agendamento-grade-mes.png', 'Tela Agenda de Setembro/2026 (botão Acessar): sem filtros mostra 150 linhas de agendamento (cada linha pode ter até 5 sessões).'),
+    ('img', '22-agendamento-grade-mes.png', 'Tela Agenda de Setembro/2026 (botão Acessar): sem filtros mostra 27 linhas de agendamento (cada linha pode ter até 5 sessões).'),
     ('img', '23a-modal-filtro-sessao1-presente.png', 'Filtros → Sessão 1 = PRESENTE.'),
-    ('img', '23-agendamento-filtro-sessao1-presente.png', 'Resultado: "Total de registros: 8" — as linhas cuja Sessão 1 é PRESENTE.'),
+    ('img', '23-agendamento-filtro-sessao1-presente.png', 'Resultado: "Total de registros: 2" — as linhas cuja Sessão 1 é PRESENTE.'),
     ('aviso', 'Por que somar as 5 colunas? A grade tem <b>uma linha por agendamento</b>, com até 5 sessões '
               '(Sessão 1 a 5). O Dashboard conta <b>cada sessão</b>, então é preciso somar o resultado de '
               'cada coluna. Se o período passar de um mês, repita para cada mês (a Agenda é mensal) e '
               'some — o Dashboard usa a <b>data da sessão</b>, não o mês da agenda.'),
 
     ('h2', 'Taxa de Absenteísmo: o que é e como conferir'),
-    ('p', '<b>Absenteísmo</b> é a taxa de faltas: <b>Ausentes ÷ (Presentes + Ausentes) × 100</b>. É o '
+    ('p', '<b>Absenteísmo</b> é o nome técnico das <b>faltas</b>: de cada 100 sessões em que o paciente deveria comparecer, '
+          'quantas ele faltou. No ClinSis a conta é <b>Ausentes ÷ (Presentes + Ausentes) × 100</b>. É o '
           'complemento exato da Taxa de Presença (as duas somam 100%). Só entram na conta as sessões '
           'marcadas <b>PRESENTE</b> e <b>AUSENTE</b>; <b>AUSENTE - JUSTIFICATIVA</b>, remarcações e '
           'desmarcações <b>ficam fora</b> da fórmula.'),
-    ('p', '<b>Como conferir na Agenda:</b> use o passo a passo acima (Filtros → Sessão 1 a 5 = AUSENTE e '
-          'PRESENTE) e faça a divisão. Exemplo de Setembro: 5 ÷ (10 + 5) = 33,3%.'),
-    ('img', '24-relatorio-qtd-marcacao.png', 'Alternativa mais rápida: Relatórios → Agenda - Qtd Marcação (escolha a Agenda 2026/SETEMBRO) traz Presentes e Ausentes por profissional.'),
-    ('aviso', 'Sobre o relatório "Agenda - Qtd Marcação" (atualizado): a linha <b>TOTAL agora soma o mês '
-              'inteiro</b>, em todas as páginas (Setembro: 165 sessões, <b>10 presentes, 5 ausentes</b>, '
+    ('p', '<b>Exemplo de Setembro/2026:</b> 3 presentes e 4 ausentes. Absenteísmo = 4 ÷ (3 + 4) × 100 = <b>57,1%</b> '
+          '(e a Presença é 3 ÷ 7 = 42,9%). O card é vermelho e, ao clicar nele, abre a lista das sessões que faltaram.'),
+    ('tabelagen', ['Onde conferir', 'Como'],
+     [
+         ['No próprio Dashboard', 'Clique no card <b>Taxa de Absenteísmo</b>: abre a lista <b>Ausentes (4)</b>, com data, sessão, paciente, profissional, especialidade, operadora, status, inclusão e antecedência. O total da lista é o numerador da taxa.'],
+         ['Agenda (grade do mês)', 'Agenda → Acessar → Filtros → Sessão 1 a 5 = <b>AUSENTE</b> e depois <b>PRESENTE</b>, somando as cinco colunas (passo a passo acima).'],
+         ['Relatório Agenda - Qtd Marcação', 'Relatórios → Agenda - Qtd Marcação (escolha a agenda do mês): a linha <b>TOTAL</b> traz Presentes e Ausentes do mês (Setembro: 3 e 4). Divida Ausentes ÷ (Presentes + Ausentes).'],
+         ['Relatório da Agenda', 'Na lista de agendas, Mais ações → Relatório: resumo do mês com presentes, ausentes e desmarcações.'],
+     ], [4.5, 13]),
+    ('img', '49-drilldown-ausentes.png', 'Ao clicar em Taxa de Absenteísmo (Setembro/2026): as 4 sessões ausentes, com a data de inclusão do agendamento e a antecedência em dias.'),
+    ('img', '24-relatorio-qtd-marcacao.png', 'Relatórios → Agenda - Qtd Marcação (Agenda 2026/SETEMBRO): a linha TOTAL mostra 76 sessões previstas, 3 presentes, 4 ausentes e 69 pendentes (coluna Outras).'),
+    ('aviso', 'Sobre o relatório "Agenda - Qtd Marcação": a linha <b>TOTAL soma o mês '
+              'inteiro</b>, em todas as páginas (Setembro: 76 sessões, <b>3 presentes, 4 ausentes</b>, '
               '0 ausência justificada), e a coluna <b>Ausência Justificada</b> é separada de Ausente, como no '
               'Dashboard. Atenção: "Qtde. Sessões" continua sendo o número de sessões <b>previstas</b> '
-              '(165), não as registradas (15).'),
+              '(76), não as registradas (7); a coluna "Outras" (69) são as sessões ainda pendentes.'),
+
+    ('h2', 'Dias de Antecedência: o que é e como conferir'),
+    ('p', '<b>Antecedência</b> é quanto tempo o agendamento ficou na agenda antes da sessão: são os '
+          '<b>dias entre a data em que o agendamento foi incluído no sistema e a data da sessão</b>. '
+          'Exemplo: um paciente incluído na agenda em 19/07/2026 e atendido em 20/09/2026 tem <b>63 dias</b> de antecedência. '
+          'O card <b>Dias de Antecedência (média)</b> é a média desse número em todas as sessões registradas do período, '
+          'e ajuda a saber com quanta folga os pacientes costumam ser agendados. Na coluna <b>Antecedência (dias)</b> das listas, '
+          'a conta de cada linha é <b>Data da sessão − Inclusão</b>.'),
+    ('p', '<b>Um detalhe importante:</b> a data de inclusão é a do <b>agendamento</b> (a linha da Agenda, que pode ter até 5 sessões), '
+          'não a de cada sessão. Por isso as sessões do mesmo agendamento partilham a mesma inclusão, e as sessões mais distantes da inclusão '
+          '(por exemplo, a Sessão 5 de um pacote semanal) têm antecedência maior que a Sessão 1. Uma sessão de agendamento incluído no mesmo dia '
+          'tem antecedência <b>0</b>, e agendamentos antigos, como o de 293 dias do exemplo, puxam a média para cima.'),
+    ('p', '<b>Como conferir:</b> a data de inclusão do agendamento <b>não aparece em outra tela</b> da Agenda, por isso a conferência é feita '
+          'nas listas do próprio Dashboard: (1) clique em um card de sessões (por exemplo, Taxa de Absenteísmo ou Taxa de Presença) ou em '
+          '<b>Ver sessões</b> para abrir as sessões do período; (2) confira em cada linha que Antecedência = Data − Inclusão; '
+          '(3) some a coluna Antecedência e divida pelo número de linhas. <b>Setembro/2026:</b> 293 + 244 + 166 + 63 + 63 + 63 + 0 = 892; '
+          '892 ÷ 7 = <b>127,4</b>, igual ao card. O botão Exportar CSV leva a mesma lista (com a coluna Dias de antecedência) para o Excel.'),
+    ('img', '50-ver-sessoes-todas.png', 'Ver sessões (Setembro/2026): as 7 sessões registradas, com Inclusão e Antecedência (dias). A média da coluna é o card "Dias de Antecedência (média)".'),
 
     ('h2', 'Os 8 cards do topo — o que são e como conferir'),
     ('tabelagen', ['Card', 'O que é / como é calculado', 'Como conferir no sistema'],
@@ -86,19 +113,19 @@ blocks = [
          ['Taxa de Absenteísmo', 'Ausentes ÷ (Presentes + Ausentes) × 100.', 'Idem — ver seção anterior.'],
          ['Pacientes Novos', 'Pacientes cuja <b>primeira sessão registrada de toda a história</b> cai dentro do período.', 'Relatórios → Histórico do Paciente (aba Agenda). A lista vem do mais recente para o mais antigo: vá até a <b>última página</b> para ver a primeira sessão.'],
          ['Pacientes Recorrentes', 'Pacientes do período que já tinham sessão registrada <b>antes</b> do início do período.', 'Mesma consulta acima (primeira sessão anterior ao início do período).'],
-         ['Dias de Antecedência (média)', 'Média de dias entre a data de inclusão do agendamento e a data da sessão.', '<b>Não há tela que mostre a data de inclusão do agendamento</b> — hoje só é possível conferir por consulta ao banco. Ver "Relatórios previstos".'],
-         ['Taxa de Ocupação', 'Total de Sessões ÷ Capacidade Total × 100 (o card mostra "15 de 629"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.', 'Agenda → <b>Horários</b> (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.'],
+         ['Dias de Antecedência (média)', 'Média de dias entre a data de inclusão do agendamento e a data da sessão (veja a seção própria acima).', 'O card não abre lista, mas as listas dos cards de sessões e do botão <b>Ver sessões</b> trazem as colunas <b>Inclusão</b> e <b>Antecedência (dias)</b>: some a coluna e divida pelo número de linhas.'],
+         ['Taxa de Ocupação', 'Total de Sessões ÷ Capacidade Total × 100 (o card mostra "7 de 99"). Capacidade = horários configurados para os profissionais no período, descontados os feriados.', 'Agenda → <b>Horários</b> (escolha o profissional) lista os horários semanais/avulsos configurados. A capacidade é a soma desses horários ao longo dos dias do período. Não há tela que já traga o total.'],
      ], [3.0, 7.2, 7.3]),
     ('img', '42-prof-horarios.png', 'Agenda → Horários (Profissional 01, Setembro/2026): em Horários cadastrados, cada dia da semana mostra os horários do profissional; a capacidade do card soma esses horários pelos dias do período.'),
     ('aviso', '<b>Taxa de Ocupação</b>: como só as sessões registradas entram no numerador, a taxa fica '
-              'baixa em meses em andamento (2,4% em Setembro, com muitas sessões ainda pendentes). '
+              'baixa em meses em andamento (7,1% em Setembro, com muitas sessões ainda pendentes). '
               'Férias ou bloqueios de um profissional específico não são descontados da capacidade — só '
               'feriados cadastrados em Tabelas Aux. → Feriados (isso já aparece no tooltip do card).'),
 
     ('h2', 'Gráficos'),
     ('tabelagen', ['Gráfico', 'O que mostra', 'Como conferir'],
      [
-         ['Sessões Registradas por Status (pizza)', 'Presentes, Ausentes, Ausência Justificada e Remarcações. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam.', 'Mesmas contagens da Agenda por status (Filtros → Sessão n).'],
+         ['Sessões Registradas por Status (pizza)', 'Presentes, Ausentes, Ausência Justificada e Remarcações, com a quantidade de sessões escrita em cada fatia. As fatias de Desmarcação foram retiradas: esses status não gravam data e nunca apareciam.', 'Mesmas contagens da Agenda por status (Filtros → Sessão n).'],
          ['Evolução Diária', 'Presentes e Ausentes de cada dia do período.', 'Agenda → Filtros → campo <b>Data</b> (um dia) + Sessão n = PRESENTE/AUSENTE; ou Relatório "Marcação sessão dia" (Agenda → Relatórios).'],
          ['Sessões por Faixa Etária', 'Sessões por idade do paciente <b>na data da sessão</b> (0–10, 11–20, 21–30, 31–40, 41+).', 'Sem tela de conferência; usa a data de nascimento do cadastro do paciente.'],
      ], [4.0, 7.0, 6.5]),
@@ -124,17 +151,15 @@ blocks = [
           '<b>baixa</b> em Contas a Receber dentro do período. <b>Valor Faturado</b> = valor da guia '
           'faturada; <b>Valor Recebido</b> = soma das baixas (valor pago) dessa conta. Guias faturadas '
           'sem nenhuma baixa no período não aparecem.'),
-    ('img', '43-faturamento-corrigido.png', 'Quadro Faturamento por Convênio (01/01 a 30/09/2026): Operadora PROPRIO — Faturado R$ 1.223,00 / Recebido R$ 1.373,00.'),
+    ('img', '43-faturamento-corrigido.png', 'Quadro Faturamento por Convênio (01/01 a 30/09/2026): nos dados de teste não há guia faturada com baixa no período, então o quadro mostra "Nenhum recebimento de guia no período".'),
     ('p', '<b>Como conferir hoje:</b> (1) <b>Doc. Faturamento → Listar</b> (botão "Listar Últimos" ou '
           '"Filtros") mostra as guias: número, paciente, emissão, sessões, status, localização e a coluna '
           'Faturamento; (2) <b>Relatórios → Financeiro - Recebimentos (Contas a Receber)</b>, com '
           '<b>Filtros → Data inicial/final</b> = o período do Dashboard, lista as baixas (data, forma, '
           'valor original, valor pago) com o total no rodapé.'),
-    ('p', '<b>No exemplo:</b> aparecem 4 baixas com o nome "PROPRIO" na coluna Paciente. Três delas '
-          'têm valor original de R$ 1.223,00 (a conta da guia): R$ 1.023,00 + R$ 200,00 + R$ 150,00 = '
-          '<b>R$ 1.373,00 recebidos</b>, que é o valor do quadro. A quarta (R$ 180,00, valor original '
-          'R$ 200,00) é de <b>outra conta a receber, que não é de guia</b>, e por isso não entra no quadro.'),
-    ('img', '32-relatorio-recebimentos-periodo.png', 'Financeiro - Recebimentos com período 01/01 a 30/09/2026: as baixas de "PROPRIO" somam o Valor Recebido do quadro.'),
+    ('p', '<b>Como ler o quadro:</b> cada linha é uma operadora, com o <b>Valor Faturado</b> das guias que tiveram baixa no período e o <b>Valor Recebido</b> dessas baixas. '
+          'Nos dados de teste usados neste manual não há guia faturada com baixa entre 01/01 e 30/09/2026, por isso o quadro aparece vazio; '
+          'quando houver, o total da linha deve ser igual à soma das baixas da guia no relatório Financeiro - Recebimentos.'),
     ('aviso', '<b>Correção realizada nesta revisão:</b> o quadro estava somando o valor faturado da guia '
               '<b>uma vez para cada baixa</b> (uma guia de R$ 1.223,00 com 3 baixas aparecia como '
               'R$ 3.669,00). Já corrigido: agora cada guia é contada uma única vez. <b>Conferência por operadora:</b> '
@@ -146,29 +171,27 @@ blocks = [
           '(soma das sessões de todos os agendamentos do mês), <b>Sessões Pendentes</b> (ainda sem marcação), '
           '<b>Desmarcadas pelo Paciente</b> e <b>Desmarcadas pelo Profissional</b>. Esses números vêm do status de cada sessão '
           'do agendamento, e por isso não dependem de haver uma data gravada.'),
-    ('img', '48-dashboard-previstas.png', 'Setembro/2026: 165 sessões previstas, 150 pendentes, 0 desmarcadas pelo paciente e 0 pelo profissional.'),
+    ('img', '48-dashboard-previstas.png', 'Setembro/2026: 76 sessões previstas, 69 pendentes, 0 desmarcadas pelo paciente e 0 pelo profissional.'),
     ('aviso', 'Cuidados: (1) esses quatro cards são sempre por <b>mês da agenda</b>; se o período informado não for de meses '
               'fechados (por exemplo, 10 a 20 de setembro), eles mostram o mês inteiro, e a tela avisa isso. '
-              '(2) Como conferir: Sessões Previstas = coluna "Qtde. Sessões" do relatório Agenda - Qtd Marcação (165 em Setembro, '
-              '95 em Agosto, 84 em Julho). (3) Sessões Previstas e Sessões Registradas nem sempre fecham exatamente com as '
-              'Pendentes, porque remarcações e lançamentos fora do dia previsto entram de forma diferente (em Agosto, 87 pendentes + '
-              '9 registradas = 96 para 95 previstas). Use como referência, não como igualdade contábil.'),
+              '(2) Como conferir: Sessões Previstas = coluna "Qtde. Sessões" do relatório Agenda - Qtd Marcação (76 em Setembro). (3) Sessões Previstas e Sessões Registradas nem sempre fecham exatamente com as '
+              'Pendentes, porque remarcações e lançamentos fora do dia previsto entram de forma diferente (em Setembro fecha: 69 pendentes + '
+              '7 registradas = 76 previstas). Use como referência, não como igualdade contábil.'),
     ('h2', 'Como ver quais sessões compõem cada número (novo)'),
     ('p', 'Cada número do Dashboard pode ser aberto para mostrar <b>as sessões que o formam</b>. Clique em um dos cards '
           '(Sessões Registradas, Pacientes, Taxa de Presença, Taxa de Absenteísmo), em uma linha das tabelas Por '
           'Profissional, Por Especialidade ou Por Operadora, ou em Particular / Convênio. Para ver todas as sessões do '
           'período, use o botão <b>Ver sessões</b> ao lado de Buscar. A lista usa exatamente o mesmo critério do painel, '
           'então o total da lista é sempre igual ao número clicado.'),
-    ('img', '44-dashboard-drilldown.png', 'Ao clicar em Taxa de Presença (Setembro/2026): as 10 sessões presentes, com paciente, profissional, especialidade, operadora, data de inclusão e dias de antecedência.'),
+    ('img', '44-dashboard-drilldown.png', 'Ao clicar em Taxa de Presença (Setembro/2026): as 3 sessões presentes, com paciente, profissional, especialidade, operadora, data de inclusão e dias de antecedência.'),
     ('h2', 'Listas de conferência dos demais cards'),
     ('p', 'Os cards que não são sessões também abrem uma lista, com o mesmo critério do painel: '
           '<b>Pacientes Novos</b> e <b>Pacientes Recorrentes</b> (paciente, data da primeira sessão de toda a história e '
           'sessões no período), <b>Taxa de Ocupação</b> (cada horário de profissional que compõe a capacidade, com data, dia '
           'da semana, profissional, horário e se é fixo ou avulso) e as linhas do quadro <b>Faturamento por Convênio</b> '
           '(uma linha por conta a receber, com quantidade de guias, valor faturado e valor recebido no período).'),
-    ('img', '45-drilldown-novos.png', 'Pacientes Novos (Setembro/2026): 2 pacientes, cuja primeira sessão de toda a história cai dentro do período.'),
-    ('img', '46-drilldown-capacidade.png', 'Taxa de Ocupação: a lista tem 629 linhas, uma para cada horário disponível; esse é o denominador da taxa (15 de 629).'),
-    ('img', '47-drilldown-faturamento.png', 'Faturamento por Convênio, linha PROPRIO (01/01 a 30/09/2026): conta a receber 61, 1 guia, R$ 1.223,00 faturado e R$ 1.373,00 recebido; confere com o quadro.'),
+    ('img', '45-drilldown-novos.png', 'Pacientes Novos (Setembro/2026): 1 paciente, cuja primeira sessão de toda a história cai dentro do período.'),
+    ('img', '46-drilldown-capacidade.png', 'Taxa de Ocupação: a lista tem 99 linhas, uma para cada horário disponível; esse é o denominador da taxa (7 de 99).'),
     ('aviso', 'Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. '
               'Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista '
               'e pode ser identificado ali.'),
@@ -186,7 +209,8 @@ blocks = [
          ['Pacientes Novos/Recorrentes', 'Relatórios → Histórico do Paciente → aba Agenda', 'Ir à última página para ver a 1ª sessão.'],
          ['Taxa de Ocupação (capacidade)', 'Agenda → Horários', 'Somar horários × dias; descontar feriados.'],
          ['Faturamento por Convênio', 'Doc. Faturamento → Listar + Relatórios → Financeiro - Recebimentos', 'Sem agrupamento por operadora.'],
-         ['Dias de Antecedência', '— (sem tela)', 'Só por consulta ao banco.'],
+         ['Taxa de Absenteísmo', 'Card → lista Ausentes; Agenda → Filtros; Relatório Agenda - Qtd Marcação', 'Ausentes ÷ (Presentes + Ausentes).'],
+         ['Dias de Antecedência', 'Dashboard → lista de um card de sessões ou Ver sessões', 'Colunas Inclusão e Antecedência (dias); média = soma ÷ nº de linhas. Não há outra tela com a data de inclusão.'],
          ['Faixa etária', '— (sem tela)', 'Idade calculada na data da sessão.'],
      ], [5.0, 7.0, 5.5]),
 

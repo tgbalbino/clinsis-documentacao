@@ -2,20 +2,25 @@
 
 _Como organizar as categorias de receitas e despesas da clínica_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/m4e2BMEsMZg](https://youtu.be/m4e2BMEsMZg)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/KJhezxjX10w](https://youtu.be/KJhezxjX10w)
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam os controles da tela: o botão azul Novo (destaque), o botão Filtros — que mostra um número quando há filtro aplicado, ao lado de um ✕ para limpar tudo de uma vez — e o botão só com o ícone de Atualizar. No canto direito, Árvore e Lista trocam a forma de visualização. Só a lista rola; o título e a barra de ações continuam sempre visíveis.
+
+![Tela do Plano de Contas com a barra de ações (Novo, Filtros, Atualizar) e a visão em Árvore.](00-arvore-inicial.png)
+
+_Tela do Plano de Contas com a barra de ações (Novo, Filtros, Atualizar) e a visão em Árvore._
 
 ## Duas formas de visualizar: Árvore ou Lista
 
 A tela abre no modo Árvore, que agrupa as contas em três grupos fixos — 1 - RECEITAS, 2 - DESPESAS e 3 - OUTROS — e permite até 2 níveis dentro de cada grupo (uma conta "pai" e suas contas "filhas"). O botão Lista, no canto superior direito, troca para uma tabela simples com todas as contas cadastradas, sem a hierarquia visual.
-
-![Visão em árvore: contas de Receitas e Despesas já cadastradas, cada uma com seu código (ex.: 2.01, 2.02...).](00-arvore-inicial.png)
-
-_Visão em árvore: contas de Receitas e Despesas já cadastradas, cada uma com seu código (ex.: 2.01, 2.02...)._
 
 ![A mesma informação na visão em Lista, com colunas Código, Descrição, Tipo, Pai e Ativo.](01-lista.png)
 

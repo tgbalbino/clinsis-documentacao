@@ -1,62 +1,67 @@
 [
-  {
-    "audio": "01.wav",
-    "imagem": "00-lista-contratos.png",
-    "texto": "Contrato formaliza um pacote de sessões vendido ao paciente, com um valor total e uma condição de pagamento. Ele tem um ciclo de vida com fases: criado, assinado, fechado. Uma vez fechado, gera automaticamente as parcelas em Contas a Receber. Esta é a versão sem assinatura digital."
-  },
-  {
-    "audio": "02.wav",
-    "imagem": "01-novo-contrato-vazio.png",
-    "texto": "Para criar um contrato, clique em Novo, escolha o paciente e preencha a data de emissão. Depois de salvar, o contrato passa a existir e as seções de Serviços e Pagamento ficam disponíveis."
-  },
-  {
-    "audio": "03.wav",
-    "imagem": "06-servico-preenchido.png",
-    "texto": "Na seção Serviços, adicione o que o paciente está contratando: quantidade de sessões e valor por sessão. O valor total é calculado automaticamente."
-  },
-  {
-    "audio": "04.wav",
-    "imagem": "09-pagamento-adicionado.png",
-    "texto": "Na aba Acertos e Pagamentos, cadastre como o paciente vai pagar. A soma de todas as condições de pagamento precisa bater exatamente com o total dos serviços para o contrato poder ser fechado."
-  },
-  {
-    "audio": "05.wav",
-    "imagem": "11-modal-download-assinar.png",
-    "texto": "Nesta versão sem assinatura eletrônica, a assinatura é manual: na listagem, clique no botão de caneta e marque como assinado. A partir daí, o contrato não pode mais ser editado."
-  },
-  {
-    "audio": "06.wav",
-    "imagem": "14-confirmar-fechar-contrato.png",
-    "texto": "Com o contrato assinado, clique em Fechar Contrato. As parcelas serão geradas em Contas a Receber e os serviços e pagamento não poderão mais ser alterados."
-  },
-  {
-    "audio": "07.wav",
-    "imagem": "16-conta-a-receber-gerada-pelo-contrato.png",
-    "texto": "Conferindo em Contas a Receber, a parcela gerada pelo contrato aparece com situação Aberto, pendente do recebimento. Só é possível fechar um contrato se os parâmetros de Plano de Conta e Centro de Custo do Contrato estiverem configurados."
-  },
-  {
-    "audio": "08.wav",
-    "imagem": "26-sino-notificacoes.png",
-    "texto": "Uma vez por dia, o sistema verifica os contratos fechados e ainda não renovados, e avisa a equipe quando a última parcela está perto de vencer. O aviso aparece no sino, no canto superior direito, mostrando o contrato e o paciente."
-  },
-  {
-    "audio": "08b.wav",
-    "imagem": "17-contratos-vencendo.png",
-    "texto": "Clicando no aviso, o sistema leva direto pra lista de contratos vencendo. É um aviso interno, pra equipe agir; nesta versão sem D4Sign, não existe notificação automática ao paciente."
-  },
-  {
-    "audio": "08c.wav",
-    "imagem": "25-parametro-dias-aviso-editar.png",
-    "texto": "Quantos dias de antecedência esse aviso considera é configurável por clínica, em Parâmetros, no parâmetro Dias de Aviso de Vencimento do Contrato. Se não for configurado, o padrão é 30 dias, como no exemplo."
-  },
-  {
-    "audio": "09.wav",
-    "imagem": "19-confirmar-renovar.png",
-    "texto": "Pra renovar, clique em Renovar. O sistema cria um contrato novo, copiando os serviços e a condição de pagamento, com as datas deslocadas pro mês seguinte. O contrato antigo não é alterado, só ganha a marca de renovado."
-  },
-  {
-    "audio": "10.wav",
-    "imagem": "23-apos-nao-vai-renovar.png",
-    "texto": "Se o paciente não vai continuar, clique em Não vai renovar. Isso não cria contrato nenhum, só marca esse status e para de gerar o aviso de vencimento pra esse contrato."
-  }
+ {
+  "audio": "01.wav",
+  "imagem": "00-lista-contratos.png",
+  "texto": "O Contrato formaliza um pacote de sessões vendido ao paciente, com um valor total e uma ou mais condições de pagamento. Ele passa por fases: criado, assinado e fechado. Ao fechar, gera automaticamente as parcelas em Contas a Receber. Para imprimir e fechar, a clínica precisa ter um Layout de Contrato ativo."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "02-paciente-selecionado.png",
+  "texto": "Em Contrato, clique em Novo, escolha o paciente pela lupa e informe a data de emissão. O e-mail e o celular do paciente vêm do cadastro. Cada paciente só pode ter um contrato em aberto por vez: para criar outro, é preciso concluir ou cancelar o anterior."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03-contrato-criado.png",
+  "texto": "Depois de salvar, o contrato existe e o topo mostra a opção de assinatura eletrônica pela D4Sign, com os botões Assinar pela D4Sign e Não assinar. O valor inicial segue o padrão da clínica."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "06-servico-preenchido.png",
+  "texto": "Na seção Serviços, clique em Novo, pesquise o serviço, informe a quantidade de sessões e o valor por sessão. O valor total é calculado automaticamente."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "09-pagamento-preenchido.png",
+  "texto": "Na aba Acertos e Pagamentos, cadastre como o paciente vai pagar. O Crediário é a única forma que parcela: informe o valor, o número de parcelas, a data da primeira parcela e os juros mensais. O botão de igual preenche o valor que falta acertar. Pix, dinheiro e cartão são à vista."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "10-pagamento-adicionado.png",
+  "texto": "Com o acerto salvo, o card Falta Acertar zera. A soma dos acertos precisa bater com o total dos serviços para o contrato poder ser fechado."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "11-liberacao-dispensa-assinatura.png",
+  "texto": "Se este contrato não será assinado eletronicamente, clique em Não assinar. A dispensa exige liberação administrativa: o administrador escolhe o motivo, e os demais usuários informam também o login e a senha de um administrador."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "12-assinatura-dispensada.png",
+  "texto": "A dispensa fica registrada no contrato, com quem dispensou, quando e o motivo. O próximo passo é fechar o contrato. Também é possível registrar a assinatura no papel, pelo botão de caneta na listagem, marcando o contrato como assinado."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "14-confirmar-fechar-contrato.png",
+  "texto": "O botão Fechar Contrato exige ao menos um serviço, um acerto e diferença zero entre os dois totais. Ao confirmar, o sistema gera os títulos em Contas a Receber e o contrato nunca mais pode ser editado."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "16-conta-a-receber-gerada-pelo-contrato.png",
+  "texto": "Em Contas a Receber, as parcelas do contrato aparecem com a coluna Origem, por exemplo Contrato quinze, Crediário um de dois, com situação Aberto. O dinheiro só entra no caixa quando a parcela é baixada, informando como o paciente realmente pagou."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "17-contratos-vencendo.png",
+  "texto": "Uma vez por dia, o sistema avisa a equipe administrativa quando a última parcela de um contrato fechado está perto de vencer. O aviso aparece no sino, e leva para a lista de contratos vencendo. O prazo de antecedência é configurado no parâmetro de dias de aviso, com padrão de trinta dias."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "19-confirmar-renovar.png",
+  "texto": "Com o contrato fechado, o botão Renovar cria um contrato novo, copiando serviços e condição de pagamento, com as datas deslocadas. O contrato antigo continua intacto e sai da lista de vencendo."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "22-confirmar-nao-vai-renovar.png",
+  "texto": "Se o paciente não vai continuar, clique em Não vai renovar. Nenhum contrato é criado, e o aviso de vencimento deixa de ser gerado para ele."
+ }
 ]

@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +10,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "22/09/2026"
+VERSAO = "1.1"
+DATA = "30/09/2026"
 TITULO = "Tabela de Valores para Cobrança"
 SUBTITULO = "Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa"
-VIDEO_NOME = "https://youtu.be/mFThg03z-RY"
+VIDEO_NOME = "https://youtu.be/DyyO49lac8I"
 INTRO = ('A <b>Tabela de Valores para Cobrança</b> (Tabelas Aux. → Tab. Cobrança) define quanto cobrar '
          'do paciente por sessão particular. É essa tabela que o relatório de <b>Cobrança de '
          'Paciente</b> usa para calcular o valor a receber todo mês. Este manual cobre as três formas '
@@ -58,6 +58,14 @@ blocks = [
               'mudar entre a prévia e a confirmação (outra pessoa editando ao mesmo tempo), o sistema '
               'recusa e pede uma nova prévia. Linhas com Valor Social vazio não são alteradas, mesmo '
               'com o campo marcado, e cada confirmação fica registrada no log do sistema.'),
+    ('h2', 'Valores e limites'),
+    ('tabelagen', ['Assunto', 'O que saber'], [
+        ['Digitação dos valores', 'Os campos de valor funcionam como moeda: os números entram pela direita (1 vira 0,01; 123 vira 1,23) e aparecem com separador de milhar.'],
+        ['Valor máximo', 'Cada valor aceita até <b>R$ 99.999.999,99</b> (8 dígitos antes da vírgula); o reajuste em massa também respeita esse teto.'],
+        ['Valor Social (com desconto)', 'Na aba Profissional, o <b>Valor Social</b> não pode ser maior que o <b>Valor</b>; se for, o sistema avisa "Valor com desconto inválido" e não salva.'],
+        ['Falha ao salvar', 'Se o salvamento falhar, o sistema mostra o erro e <b>recarrega a lista</b> para mostrar o que realmente está gravado.'],
+    ], [4.5, 13]),
+
 ]
 
 render_pdf(blocks, os.path.join(ENTREGA, 'Documentacao_Tabela_Preco_Cobranca.pdf'),

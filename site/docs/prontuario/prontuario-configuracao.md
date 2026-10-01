@@ -8,9 +8,9 @@ _Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e p
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/X4ClyuUIsAE?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/tMs3WdzjMSg?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/X4ClyuUIsAE)
+[Abrir no YouTube](https://youtu.be/tMs3WdzjMSg)
 
 ## Conteúdo completo do manual
 
@@ -22,6 +22,7 @@ _Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e p
 Versão 1.0 — 23/09/2026
 
 Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
+
 
 ---
 

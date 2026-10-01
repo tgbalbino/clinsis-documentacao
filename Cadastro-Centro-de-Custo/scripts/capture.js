@@ -1,0 +1,21 @@
+const { abrir } = require('../../_scripts-comuns/cap_common.js');
+(async () => {
+  const { browser, page, ir, shot, chamar } = await abrir(__dirname);
+  const lst = await chamar('POST', 'centrocusto/listar', {});
+  for (const c of (lst.data || [])) if (/^FISIOTERAPIA$/.test(c.descricao || '')) console.log('del', JSON.stringify(await chamar('DELETE', `centrocusto/${c.idCentroCusto}`)).slice(0, 80));
+  await ir('/cadastro/centrocustos');
+  await shot('00-lista-inicial');
+  await page.click('button:has-text("Novo")'); await page.waitForSelector('.modal.show'); await page.waitForTimeout(500);
+  const m = page.locator('.modal.show');
+  await m.locator('input[type=text]').first().fill('FISIOTERAPIA');
+  await shot('01-novo-modal-preenchido');
+  await m.locator('button:has-text("Salvar")').click(); await page.waitForTimeout(1500);
+  await page.waitForSelector('.modal.show', { state: 'detached' }).catch(() => {});
+  await shot('02-apos-salvar');
+  await page.click('button:has-text("Filtros")'); await page.waitForSelector('.modal.show'); await page.waitForTimeout(600);
+  await page.locator('.modal.show input[type=text]').first().fill('FISIO');
+  await shot('03-filtro-preenchido');
+  await page.locator('.modal.show button:has-text("Aplicar")').click(); await page.waitForTimeout(1200);
+  await shot('04-resultado-filtro');
+  await browser.close(); console.log('OK');
+})().catch(e => { console.error('FALHA:', e.message.slice(0, 400)); process.exit(1); });

@@ -8,9 +8,9 @@ _Como organizar as categorias de receitas e despesas da clínica_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/m4e2BMEsMZg?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/KJhezxjX10w?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/m4e2BMEsMZg)
+[Abrir no YouTube](https://youtu.be/KJhezxjX10w)
 
 ## Conteúdo completo do manual
 
@@ -19,16 +19,21 @@ _Como organizar as categorias de receitas e despesas da clínica_
 
 _Como organizar as categorias de receitas e despesas da clínica_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 O Plano de Contas é a lista de categorias usada para classificar toda entrada e saída de dinheiro da clínica (ex.: "Consulta por Convênio", "Aluguel", "Material de Consumo"). Ele é um cadastro pré-requisito: praticamente todas as outras telas financeiras do sistema (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato) exigem que o lançamento tenha um Plano de Conta selecionado. Por isso, recomendamos configurar o Plano de Contas antes de usar as demais rotinas financeiras.
 
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam os controles da tela: o botão azul Novo (destaque), o botão Filtros — que mostra um número quando há filtro aplicado, ao lado de um ✕ para limpar tudo de uma vez — e o botão só com o ícone de Atualizar. No canto direito, Árvore e Lista trocam a forma de visualização. Só a lista rola; o título e a barra de ações continuam sempre visíveis.
+
 
 ## Duas formas de visualizar: Árvore ou Lista
 
 A tela abre no modo Árvore, que agrupa as contas em três grupos fixos — 1 - RECEITAS, 2 - DESPESAS e 3 - OUTROS — e permite até 2 níveis dentro de cada grupo (uma conta "pai" e suas contas "filhas"). O botão Lista, no canto superior direito, troca para uma tabela simples com todas as contas cadastradas, sem a hierarquia visual.
-
 
 
 ## Cadastrando uma nova conta (exemplo)

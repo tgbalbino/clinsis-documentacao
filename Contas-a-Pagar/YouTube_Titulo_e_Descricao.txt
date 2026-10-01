@@ -14,7 +14,9 @@ Cadastrar e pagar as contas da clínica, com indicadores de vencimento.
 Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
 
 Neste vídeo:
+• Barra de ações
 • Indicadores do topo
+• Filtro rápido
 • Cadastrando uma conta a pagar (exemplo)
 • Pagando (baixando) uma conta
 
@@ -36,7 +38,9 @@ Cadastrar e pagar as contas da clínica, com indicadores de vencimento.
 Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
 
 Neste vídeo:
+• Barra de ações
 • Indicadores do topo
+• Filtro rápido
 • Cadastrando uma conta a pagar (exemplo)
 • Pagando (baixando) uma conta
 

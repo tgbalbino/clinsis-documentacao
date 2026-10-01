@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -14,7 +14,7 @@ VERSAO = "1.0"
 DATA = "18/09/2026"
 TITULO = "Layout de Contrato"
 SUBTITULO = "O modelo (template) usado para gerar o PDF de todos os contratos da clínica"
-VIDEO_NOME = "video-layout-contrato-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/xh1Ja1kJ0Vo"
 INTRO = ('Esta tela define o <b>texto/modelo</b> que vira o PDF de qualquer contrato da clínica — '
          'tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela '
          'D4Sign. É um pré-requisito compartilhado pelas rotinas <b>Contrato (sem assinatura '

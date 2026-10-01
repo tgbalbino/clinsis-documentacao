@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | WhatsApp - lembretes e confirmações (sem legendas)",
+  "descricao": "Envio manual e envio automático pela API oficial da Meta: requisitos, configuração, templates, consentimento e acompanhamento.\n\nO ClinSis avisa os pacientes de seus agendamentos por WhatsApp de duas formas: o envio manual, em que a recepção abre o WhatsApp com a mensagem pronta e envia com um clique, e o envio automático pela API oficial da Meta (WhatsApp Business Platform), em que o sistema envia sozinho o lembrete do dia seguinte e o paciente confirma ou avisa que não poderá ir por um link. Este documento explica as duas formas, o que a clínica precisa ter na Meta, como configurar, como acompanhar e os erros mais comuns. Assista ao vídeo narrado desta rotina...\n\nNeste vídeo:\n• Visão geral: dois modos de envio\n• Onde fica no sistema\n• 1. Envio manual\n• Enviar lembretes\n• Definir a mensagem\n• 2. Envio automático pela Meta: o que a clínica precisa ter\n• Sobre o número comercial\n• Passo a passo resumido na Meta\n• 3. Configuração no ClinSis\n• Filtros: quando não enviar o lembrete\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

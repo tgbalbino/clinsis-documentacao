@@ -3,6 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "18/09/2026"
+VERSAO = '1.1'
+DATA = '29/09/2026'
 TITULO = "Módulo de Caixa"
 SUBTITULO = "Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico"
-VIDEO_NOME = "video-caixa-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/yv9WdeiVlhI"
 INTRO = ('O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o '
          'dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está '
          'aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. <b>Cada usuário '
@@ -92,10 +93,10 @@ blocks = [
 
     ('h2', 'Histórico de caixas'),
     ('p', 'Em <b>Caixa → Listar</b>, é possível consultar caixas já abertos/fechados, filtrando por '
-          'usuário e por período (é preciso informar usuário ou um intervalo de datas). Atendentes só '
+          'usuário e por período (é preciso informar usuário ou um intervalo de datas; a busca é feita pela lupa azul ao lado das datas). Atendentes só '
           'veem os próprios caixas; administradores podem consultar de qualquer usuário.'),
     ('img', '23-listar-historico-caixas.png', 'Histórico de caixas do usuário, com valor de fechamento e valor em espécie de cada um.'),
-    ('img', '22-extrato-caixa-fechado.png', 'Extrato de um caixa já fechado, acessado pelo botão "Extrato" — mesmo layout do extrato do caixa aberto.'),
+    ('img', '22-extrato-caixa-fechado.png', 'Extrato de um caixa já fechado, aberto pelo botão verde "Extrato" da linha, em uma janela sobre a lista — mesmo conteúdo do extrato do caixa aberto.'),
 
     ('aviso', 'Reabrir um caixa já fechado só pode ser feito por um administrador, e exige informar '
               'um motivo (mínimo 5 caracteres) — é a única forma de corrigir um caixa fechado por '

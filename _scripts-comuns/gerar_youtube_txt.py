@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 import glob
+import json
 import os
 import re
 import sys
 
 RAIZ = r"C:\Projetos\W_Clinica\Documentacao-Entrega"
 SITE = "https://tgbalbino.github.io/clinsis-documentacao/"
-IGNORAR = {"Marca-ClinSis", "_scripts-comuns", "site", "youtube_upload", "Area-do-Profissional"}
+IGNORAR = {"Marca-ClinSis", "_scripts-comuns", "site", "youtube_upload"}
 
 
 def limpar(t):
@@ -101,6 +102,11 @@ for pasta in sorted(os.listdir(RAIZ)):
             desc.append("Neste vídeo:\n" + "\n".join("• " + t for t in topicos[:10]))
         desc.append("Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\n" + SITE)
         desc.append("#ClinSis #GestãoDeClínicas #Tutorial")
+        # JSON ao lado do vídeo (mesmo nome base) para o uploader do YouTube usar
+        with open(os.path.splitext(v)[0] + ".json", "w", encoding="utf-8") as fj:
+            json.dump({"titulo": titulo_yt, "descricao": "\n\n".join(desc),
+                       "tags": ["ClinSis", "Gestão de Clínicas", "Tutorial"]},
+                      fj, ensure_ascii=False, indent=2)
         saida.append(f"ARQUIVO DO VÍDEO: {nome}")
         saida.append("")
         saida.append("TÍTULO:")

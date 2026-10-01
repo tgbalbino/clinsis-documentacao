@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +10,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "22/09/2026"
+VERSAO = '1.2'
+DATA = '30/09/2026'
 TITULO = "Cadastro de Serviços"
 SUBTITULO = "Para que serve e onde é utilizado (Tabelas Aux. → Serviços)"
-VIDEO_NOME = "https://youtu.be/uotROr-rj6s"
+VIDEO_NOME = "https://youtu.be/Zk-GdESYkls"
 INTRO = ('Um <b>Serviço</b> é um item simples de "nome + valor" — como um item de tabela de valores — '
          'usado como base para montar os itens de um <b>Contrato</b>. Este manual explica o cadastro e, '
          'principalmente, onde ele entra em uso dentro do sistema.')
@@ -32,7 +32,15 @@ blocks = [
           'categoria, nem vínculo com convênio — e não há como excluir um Serviço já cadastrado pela '
           'tela, ele permanece disponível permanentemente na lista.'),
     ('img', '00-lista-servicos.png', 'Lista de Serviços (Tabelas Aux. → Serviços), com Nome e Preço de cada um.'),
-    ('img', '01-cadastro-servico-vazio.png', 'Tela de cadastro: só dois campos, Serviço (nome) e Preço.'),
+    ('img', '01-cadastro-servico-vazio.png', 'Tela de cadastro: só dois campos, Serviço (nome) e Preço, com máscara de moeda (0,00). O botão Novo fica no cabeçalho da tela, ao lado do título.'),
+
+    ('h2', 'Reajuste de preços em massa'),
+    ('p', 'Na própria lista, o quadro <b>Manutenção rápida de preços</b> permite reajustar o preço de <b>todos</b> os serviços de uma vez. Clique em <b>Reajustar preços</b>, informe o <b>percentual</b> (use valor negativo para reduzir, por exemplo -5) e clique em <b>Calcular prévia</b>: a tabela mostra o preço atual e o preço novo de cada serviço, e informa quantos valores serão alterados. Nada é gravado nessa etapa.'),
+    ('img', '00b-reajuste-aberto.png', 'Quadro de manutenção de preços aberto: campo de percentual e botão "Calcular prévia".'),
+    ('img', '00c-reajuste-previa.png', 'Prévia de um reajuste de 10%: preço atual e preço novo de cada serviço.'),
+    ('p', 'O percentual aceito vai de <b>mais de -100%</b> até <b>1000%</b>; fora disso, o sistema avisa e não calcula. Além disso, nenhum preço novo pode passar de <b>R$ 99.999.999,99</b> (o maior valor que o sistema consegue gravar): se algum serviço ultrapassar esse limite, a prévia e a confirmação são recusadas com uma mensagem informando o percentual e o serviço afetado, e nada é alterado.'),
+    ('img', '00d-reajuste-acima-do-limite.png', 'Percentual fora da faixa aceita: o sistema avisa e não calcula a prévia.'),
+    ('aviso', 'A simulação não altera os preços. Os valores só são gravados quando você clica em <b>Confirmar reajuste</b>, depois de conferir a prévia. Contratos já criados mantêm o valor que tinham; o novo preço vale para os serviços adicionados daqui em diante.'),
 
     ('h2', 'Onde é utilizado: exclusivamente no módulo Contrato'),
     ('aviso', 'Apesar do nome "Serviço" sugerir algo amplo (faturamento, convênio, guias), na prática '

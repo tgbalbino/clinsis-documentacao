@@ -2,11 +2,12 @@
 
 _Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico_
 
-Versão 1.0 — 18/09/2026
+Versão 1.1 — 29/09/2026
 
 O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/n7F19sn_uXs](https://youtu.be/n7F19sn_uXs)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/yv9WdeiVlhI](https://youtu.be/yv9WdeiVlhI)
+
 ---
 
 ## Abrindo o caixa
@@ -89,14 +90,14 @@ _Depois de aprovado pelo administrador, o lançamento some da lista de pendentes
 
 ## Histórico de caixas
 
-Em Caixa → Listar, é possível consultar caixas já abertos/fechados, filtrando por usuário e por período (é preciso informar usuário ou um intervalo de datas). Atendentes só veem os próprios caixas; administradores podem consultar de qualquer usuário.
+Em Caixa → Listar, é possível consultar caixas já abertos/fechados, filtrando por usuário e por período (é preciso informar usuário ou um intervalo de datas; a busca é feita pela lupa azul ao lado das datas). Atendentes só veem os próprios caixas; administradores podem consultar de qualquer usuário.
 
 ![Histórico de caixas do usuário, com valor de fechamento e valor em espécie de cada um.](23-listar-historico-caixas.png)
 
 _Histórico de caixas do usuário, com valor de fechamento e valor em espécie de cada um._
 
-![Extrato de um caixa já fechado, acessado pelo botão "Extrato" — mesmo layout do extrato do caixa aberto.](22-extrato-caixa-fechado.png)
+![Extrato de um caixa já fechado, aberto pelo botão verde "Extrato" da linha, em uma janela sobre a lista — mesmo conteúdo do extrato do caixa aberto.](22-extrato-caixa-fechado.png)
 
-_Extrato de um caixa já fechado, acessado pelo botão "Extrato" — mesmo layout do extrato do caixa aberto._
+_Extrato de um caixa já fechado, aberto pelo botão verde "Extrato" da linha, em uma janela sobre a lista — mesmo conteúdo do extrato do caixa aberto._
 
 > ⚠️ Reabrir um caixa já fechado só pode ser feito por um administrador, e exige informar um motivo (mínimo 5 caracteres) — é a única forma de corrigir um caixa fechado por engano ou com dados incompletos.

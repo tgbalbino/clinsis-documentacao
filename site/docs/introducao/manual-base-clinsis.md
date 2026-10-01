@@ -8,9 +8,9 @@ _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as imp
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/r7iJc03azkw?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/bba5Ib4ly8Q?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/r7iJc03azkw)
+[Abrir no YouTube](https://youtu.be/bba5Ib4ly8Q)
 
 ## Conteúdo completo do manual
 
@@ -19,7 +19,7 @@ _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as imp
 
 _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões_
 
-Versão 1.1 — 24/09/2026
+Versão 1.5 — 01/10/2026
 
 Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda.
 
@@ -126,10 +126,17 @@ Define os tipos de atendimento da clínica. Cada especialidade tem descrição, 
 
 O cadastro do profissional reúne CPF, nome, data de nascimento, Locação, Nome Agenda (o nome curto que aparece na grade da agenda), registro profissional (conselho), endereço, contatos e se é estagiário. Os campos marcados com * são obrigatórios. O profissional pode ser ativado ou inativado, um a um no cadastro ou em massa pelo menu Profissional → Inativação.
 
+Em Cadastros → Profissional → Listar ficam todos os profissionais. No alto, o botão Novo abre o cadastro, e a pesquisa por nome ou CPF tem três filtros: Estágio (Ambos, Só Profissionais ou Só Estagiários), Especialidade e Ativo (Ativo, Inativo ou Ambos, para ver ativos e inativos juntos). A primeira coluna mostra um visto verde para o profissional ativo e um X vermelho para o inativo, e a linha do inativo aparece em vermelho. Na coluna Acesso, o ícone verde com visto indica que o profissional já tem login; o ícone azul com sinal de mais (Liberar Acesso) permite criar o acesso dele com um clique.
+
+
+
+> ⚠️ O profissional e o usuário de acesso dele são ligados pelo CPF. Se o nome ou a data de nascimento for alterado no cadastro do profissional (ou da pessoa), o nome do usuário de acesso é atualizado junto; e se o próprio usuário alterar o nome ou a data de nascimento em Perfil, o cadastro do profissional também é atualizado.
 
 ## Pacientes
 
 O cadastro do paciente pede CPF, titular, nome, data de nascimento, sexo, mãe, pai, estado civil, endereço e celular (campos com *), além de dados opcionais como RG, CPS (carteira do convênio), indicação médica, doença/alergia e responsável, com anexo de laudo. Depois de cadastrado, o paciente pode ser vinculado a horários da agenda. No menu Paciente também existem Entrada e Saída (registro do tipo, data e motivo da entrada ou saída do paciente no tratamento) e Inativação.
+
+O botão Novo fica no cabeçalho da tela de cadastro (Paciente, Profissional, Operadora e Serviço). Na aba Dados principais, o campo Celular para WhatsApp e a autorização de recebimento ficam logo abaixo dos telefones (veja o manual do WhatsApp). Quando a data de nascimento indica um paciente menor de 15 anos, o Estado Civil vazio é preenchido com Solteiro.
 
 
 ## Operadoras (convênios)
@@ -137,10 +144,18 @@ O cadastro do paciente pede CPF, titular, nome, data de nascimento, sexo, mãe, 
 Cadastro dos convênios/planos atendidos pela clínica. No agendamento, o paciente atendido por convênio (Atendimento Particular = Não) é vinculado a uma operadora; o atendimento "PROPRIO" representa o particular. O submenu tem Listar, Cadastro e a relação de pacientes por operadora.
 
 
+Em Cadastros → Operadora → Pacientes ficam os pacientes de cada operadora própria. Para cada paciente há Gerar Cartão, Renovar Plano e, quando o paciente ainda não tem validade do plano, Gerar Plano (Contrato), que abre o mesmo fluxo da renovação para criar o contrato do plano.
+
+
 # 4. Cadastro de Acesso (usuários do sistema)
 
 O acesso é o login de quem usa o sistema. Fica em Cadastros → Acessos e só é visível para o Administrador. A lista mostra, para cada usuário: se está ativo, nome, e-mail, data de cadastro, perfil, perfil secundário, setor e se controla caixa.
 
+
+O botão Filtros permite localizar usuários por Status (ativos/inativos), nome, Perfil, Perfil secundário e Setor. O Log de acessos registra cada entrada; acessos suspeitos (vários pontos de risco, como outro país ou aparelho novo) aparecem em vermelho com o selo "Acesso suspeito/grave", e ao clicar na linha se vê o detalhe (IP, região e aparelho).
+
+
+> ⚠️ No primeiro acesso de um usuário, o sistema mostra uma mensagem de boas-vindas curta e uma apresentação guiada que destaca o menu Documentação. Quem ainda não tem data de nascimento cadastrada recebe, ao entrar, um aviso para preencher e salvar (é opcional: "Agora não" adia por 1 dia).
 
 ## Criando um novo acesso
 
@@ -174,6 +189,9 @@ Na coluna de ações (botão de engrenagem) de cada usuário há:
 # 5. Criação da agenda
 
 A agenda do ClinSis é mensal: existe uma agenda para cada mês/ano. Ela fica em Agenda no menu. A lista mostra todas as agendas criadas, da mais recente para a mais antiga, e cada uma tem os botões abaixo.
+
+Em cada linha, o botão azul Acessar abre a agenda do mês e o menu Mais ações reúne Relatório, Horários e Divergência Sessões. A agenda do mês atual tem o selo Atual e a linha destacada em azul claro.
+
 
 
 | Botão | Função |
@@ -292,11 +310,24 @@ O botão de engrenagem de cada linha abre o menu de ações:
 |---|---|
 | Filtros | Filtra a grade por data, paciente, dias, profissionais, quantidade de sessões, método, cooparticipativo, particular e pelo status de cada sessão. |
 | Relatórios | Abre a janela das impressões do dia (veja a seção 8). |
-| Exportar | Exporta a agenda para arquivo CSV (planilha): com os filtros aplicados ou a agenda inteira. |
+| Exportar | Abre a janela "Exportar agenda (CSV)" com duas opções em seleção: Com os filtros aplicados (o que está na tela, considerando filtros e pesquisa rápida, de todas as páginas) ou Agenda inteira (todos os horários, sem filtro). Cada opção mostra a quantidade de registros; o botão Exportar fica no rodapé da janela. |
 | Pesquisa rápida | Encontra rapidamente um profissional ou paciente na agenda. |
-| Colunas | Escolhe quais colunas ficam visíveis na grade; a escolha fica salva para o usuário. |
+| Colunas | Escolhe quais colunas ficam visíveis na grade; a escolha fica salva para o usuário. Também traz a opção Mostrar nomes longos completos, em mais de uma linha: desmarcada (padrão), Paciente, Profissional, Plano e Programa ficam em uma linha só, com "..." no fim quando o nome é longo, e o nome inteiro aparece ao passar o mouse (no celular, na seta ao lado da hora). |
+| Enviar lembretes | Abre a página "WhatsApp - Enviar lembretes", com os pacientes que têm horário na data escolhida (veja abaixo). Antes se chamava "WhatsApp do dia". |
 | Somente vagos | Mostra só os horários sem paciente. |
 | Anterior / Próxima agenda | Setas para navegar entre os meses. |
+
+## Enviar lembretes: envio manual pela agenda
+
+O botão Enviar lembretes abre a página WhatsApp - Enviar lembretes. Ela lista, uma linha por paciente, quem tem agendamento na data escolhida (setas trocam o dia, "Hoje" volta para hoje e o campo Paciente filtra pelo nome), com o celular e os horários e profissionais do paciente naquele dia. O botão verde Enviar abre o WhatsApp no navegador já com a mensagem pronta; o envio é feito por você, o sistema não manda nada sozinho. Paciente com mais de um agendamento no dia recebe uma única mensagem. O envio só é liberado para hoje e para amanhã; nas outras datas a tela serve só para consulta.
+
+
+O texto da mensagem é configurável em Definir mensagem. Clique nas variáveis para inserir no cursor: [nm] nome da clínica, [pa] nome do paciente, [dt] data da consulta, [hr] horários, [pr] profissionais, [ag] horário e profissional de cada agendamento e [br] quebra de linha. O botão Pré-visualizar mostra a mensagem com valores de exemplo (para paciente com um agendamento e com vários), Restaurar padrão volta ao texto original, e uma variável que não existe é avisada e bloqueia o salvamento.
+
+
+
+
+> ⚠️ No computador, as linhas da grade são mais baixas (mais horários por tela). No celular e no tablet (toque) a altura continua a mesma, mais confortável para o dedo.
 
 
 # 8. Impressões da agenda e seus objetivos
@@ -311,7 +342,7 @@ O ClinSis oferece impressões/relatórios da agenda para situações diferentes 
 | Horários do paciente (PDF) | Acessar → engrenagem da linha → Horários Pac. | Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável. |
 | Exportar agenda (CSV) | Acessar → Exportar | Leva a agenda para planilha, com filtros ou completa, para análises próprias. |
 | Relatório da Agenda (tela) | Agenda → Relatório (na linha do mês) | Resumo do mês: agendamentos, pacientes, sessões, presentes, ausentes e desmarcações, por profissional ou todos. |
-| Relatórios de Agenda (menu Relatórios) | Relatórios → Agenda | Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária e Atendimentos Sequenciais, com filtros próprios. |
+| Relatórios de Agenda (menu Relatórios) | Relatórios → Agenda | Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária, Atendimentos Sequenciais e Graf. Presença (gráfico de presença, agora também neste painel), com filtros próprios. |
 
 ## Relatórios do dia (Agenda → Acessar → Relatórios)
 

@@ -6,7 +6,7 @@ Versão 1.0 — 18/09/2026
 
 Esta tela define o texto/modelo que vira o PDF de qualquer contrato da clínica — tanto o PDF baixado para impressão quanto o PDF enviado para assinatura eletrônica pela D4Sign. É um pré-requisito compartilhado pelas rotinas Contrato (sem assinatura digital) e Contrato (com assinatura digital D4Sign): sem um layout ativo configurado, nenhuma delas consegue gerar ou enviar um contrato.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/w-cCTVEKQng](https://youtu.be/w-cCTVEKQng)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/xh1Ja1kJ0Vo](https://youtu.be/xh1Ja1kJ0Vo)
 ---
 
 ## Onde fica e o que é

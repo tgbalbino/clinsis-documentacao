@@ -2,12 +2,21 @@
 
 _Como organizar a clínica em setores para saber onde o dinheiro entra e sai_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 O Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: "Consultório 1", "Recepção", "Administrativo/Financeiro"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/mUPp2HgJV6I](https://youtu.be/mUPp2HgJV6I)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/TGcyxaZc2QY](https://youtu.be/TGcyxaZc2QY)
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam o botão azul Novo (em destaque), o botão Filtros — que mostra um número quando há filtro aplicado, com um ✕ ao lado para limpar tudo de uma vez — e o botão de Atualizar, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis.
+
+![Lista de Centros de Custo com a barra de ações (Novo, Filtros, Atualizar).](00-lista-inicial.png)
+
+_Lista de Centros de Custo com a barra de ações (Novo, Filtros, Atualizar)._
 
 ## Diferença entre Plano de Conta e Centro de Custo
 

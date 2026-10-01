@@ -11,7 +11,7 @@ ClinSis | Prontuário — Auditoria e Relatórios (com legendas)
 DESCRIÇÃO:
 Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais.
 
-Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
+Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem. Assista ao vídeo narrado desta rotina: [https://youtu.be/xRpzTXrGA3Y](https://youtu.be/xRpzTXrGA3Y)
 
 Neste vídeo:
 • Para que serve cada relatório
@@ -36,7 +36,7 @@ ClinSis | Prontuário — Auditoria e Relatórios (sem legendas)
 DESCRIÇÃO:
 Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais.
 
-Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem.
+Este manual é para o administrador. Ele explica como conferir, mês a mês, se os atendimentos realizados (presenças) geraram prontuários finalizados, quais ficaram em digitação e quais estão sem tag. São três relatórios em Relatórios: Auditoria de Prontuários, Produção de Prontuários e Atendimentos Sequenciais, além das configurações da clínica que mudam a contagem. Assista ao vídeo narrado desta rotina: [https://youtu.be/xRpzTXrGA3Y](https://youtu.be/xRpzTXrGA3Y)
 
 Neste vídeo:
 • Para que serve cada relatório

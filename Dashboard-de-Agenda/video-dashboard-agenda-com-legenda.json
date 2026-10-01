@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Dashboard de Agenda (com legendas)",
+  "descricao": "O que significa cada informação e como conferir cada uma no sistema.\n\nO Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026). Assista ao vídeo narrado desta rotina: [https://youtu.be/4T57kC-7llo](https://youtu.be/4T57kC-7llo)\n\nNeste vídeo:\n• Onde encontrar e o filtro de período\n• Atenção: o que o Dashboard conta como \"sessão\"\n• Exemplo passo a passo: conferindo Sessões Registradas, Presença e Absenteísmo\n• Taxa de Absenteísmo: o que é e como conferir\n• Dias de Antecedência: o que é e como conferir\n• Os 8 cards do topo — o que são e como conferir\n• Gráficos\n• Tabelas do Dashboard\n• Faturamento por Convênio: de onde vem e como conferir\n• Previsto no mês da agenda: sessões previstas, pendentes e desmarcadas\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Checkin de Paciente (com legendas)",
+  "descricao": "Registrar a chegada do paciente e, se houver cobrança, já receber na hora.\n\nO Checkin registra a chegada do paciente na clínica no dia da consulta ou sessão. Quando o paciente tem um horário agendado para hoje que é cobrado na hora (por exemplo, atendimento particular), o Checkin também mostra a cobrança e permite lançar o pagamento: nesse caso, o sistema gera automaticamente uma Conta a Receber já paga. Para o pagamento funcionar, a clínica precisa ter configurado, em Parâmetros, o Plano de Conta, o Centro de Custo e a Conta Financeira do Checkin, e o usuário precisa ter o caixa aberto. Assista ao vídeo narrado desta rotina...\n\nNeste vídeo:\n• Tela inicial\n• Antes de usar\n• Identificando o paciente\n• Quando o paciente tem um horário cobrável hoje\n• Lançando o pagamento\n• Confirmando o Check-In\n• Mensagens que você pode encontrar\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

@@ -8,9 +8,9 @@ _Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/n7F19sn_uXs?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/yv9WdeiVlhI?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/n7F19sn_uXs)
+[Abrir no YouTube](https://youtu.be/yv9WdeiVlhI)
 
 ## Conteúdo completo do manual
 
@@ -19,9 +19,10 @@ _Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico
 
 _Abertura, lançamentos, fechamento, solicitações de cancelamento e histórico_
 
-Versão 1.0 — 18/09/2026
+Versão 1.1 — 29/09/2026
 
 O módulo Caixa controla o dinheiro/valores que passam pela mão de cada atendente durante o dia: abertura com um fundo de troco, recebimentos e pagamentos feitos enquanto ele está aberto, sangrias/suprimentos manuais, e o fechamento no fim do expediente. Cada usuário tem o seu próprio caixa — não é um caixa único da clínica nem por consultório —, e mais de um atendente pode estar com o caixa aberto ao mesmo tempo.
+
 
 ---
 
@@ -69,7 +70,7 @@ Um lançamento manual (Suprimento/Sangria) pode ser cancelado, mas não diretame
 
 ## Histórico de caixas
 
-Em Caixa → Listar, é possível consultar caixas já abertos/fechados, filtrando por usuário e por período (é preciso informar usuário ou um intervalo de datas). Atendentes só veem os próprios caixas; administradores podem consultar de qualquer usuário.
+Em Caixa → Listar, é possível consultar caixas já abertos/fechados, filtrando por usuário e por período (é preciso informar usuário ou um intervalo de datas; a busca é feita pela lupa azul ao lado das datas). Atendentes só veem os próprios caixas; administradores podem consultar de qualquer usuário.
 
 
 

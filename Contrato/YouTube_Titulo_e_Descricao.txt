@@ -18,7 +18,7 @@ Neste vídeo:
 • Criando um contrato
 • Adicionando Serviços
 • Condição de Pagamento (Acertos/Pagamentos)
-• Assinatura (sem D4Sign)
+• Assinatura eletrônica, dispensa ou assinatura em papel
 • Fechando o Contrato (gera a Conta a Receber)
 • Aviso de vencimento (contratos "vencendo")
 • Configurando quantos dias de antecedência do aviso
@@ -47,7 +47,7 @@ Neste vídeo:
 • Criando um contrato
 • Adicionando Serviços
 • Condição de Pagamento (Acertos/Pagamentos)
-• Assinatura (sem D4Sign)
+• Assinatura eletrônica, dispensa ou assinatura em papel
 • Fechando o Contrato (gera a Conta a Receber)
 • Aviso de vencimento (contratos "vencendo")
 • Configurando quantos dias de antecedência do aviso

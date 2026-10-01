@@ -1,0 +1,37 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente e as que chegam de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. Ela exige Plano de Conta e Centro de Custo já cadastrados."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "Cinco caixas resumem a situação: Em Aberto, Vencido, Vence Hoje, A Vencer e Pago no Mês. Abaixo, a barra de ações traz o botão Novo, o botão Filtros com contador e X para limpar, e o botão de atualizar. Só a lista rola, os indicadores e a barra ficam sempre visíveis."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "00b-filtro-rapido.png",
+  "texto": "Ao lado do botão Filtros, o Filtro rápido, com atalho F2, filtra a lista pelo nome da pessoa e pelo valor, junto com os filtros da tela. A lista mostra trinta registros por página."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "01-novo-modal-preenchido.png",
+  "texto": "Para lançar uma conta, clique em Novo. No exemplo, uma compra de material de escritório de trezentos e cinquenta reais, boleto, vencendo hoje. Informe favorecido, plano de contas, centro de custo, descrição, valor, tipo de documento, competência e vencimento."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "02-apos-salvar.png",
+  "texto": "Depois de salvar, a conta aparece na lista com a situação Aberto, e os indicadores do topo são atualizados."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "03-pagamento-preenchido.png",
+  "texto": "O botão verde com o cifrão, na linha da conta, abre o Pagamento ou Acerto. Informe o valor pago, a forma de pagamento e a conta financeira de onde o dinheiro saiu. Juros são somados ao valor, e o desconto só é aceito quando o pagamento quita a conta inteira. É possível lançar pagamentos parciais até o saldo chegar a zero."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "04-apos-lancar-pagamento.png",
+  "texto": "Depois de lançar, o pagamento aparece na tabela de acertos, com forma, parcelas, conta financeira e situação, e com opção de ver detalhes ou cancelar o acerto. Quando o saldo zera, a conta fica Quitada."
+ }
+]

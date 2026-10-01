@@ -11,7 +11,7 @@ ClinSis | Prontuário — Configuração (com legendas)
 DESCRIÇÃO:
 Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem.
 
-Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
+Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios. Assista ao vídeo narrado desta rotina: [https://youtu.be/X4ClyuUIsAE](https://youtu.be/X4ClyuUIsAE)
 
 Neste vídeo:
 • Visão geral: o que configurar e quem faz
@@ -35,7 +35,7 @@ ClinSis | Prontuário — Configuração (sem legendas)
 DESCRIÇÃO:
 Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem.
 
-Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
+Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios. Assista ao vídeo narrado desta rotina: [https://youtu.be/X4ClyuUIsAE](https://youtu.be/X4ClyuUIsAE)
 
 Neste vídeo:
 • Visão geral: o que configurar e quem faz

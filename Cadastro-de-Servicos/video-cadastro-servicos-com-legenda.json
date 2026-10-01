@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Cadastro de Serviços (com legendas)",
+  "descricao": "Para que serve e onde é utilizado (Tabelas Aux. → Serviços).\n\nUm Serviço é um item simples de \"nome + valor\" — como um item de tabela de valores — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema. Assista ao vídeo narrado desta rotina: [https://youtu.be/rVO3BubvB5o](https://youtu.be/rVO3BubvB5o)\n\nNeste vídeo:\n• O que é um Serviço\n• Reajuste de preços em massa\n• Onde é utilizado: exclusivamente no módulo Contrato\n• Outros pontos onde o Serviço aparece\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

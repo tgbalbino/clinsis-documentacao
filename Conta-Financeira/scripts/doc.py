@@ -3,6 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "18/09/2026"
+VERSAO = '1.1'
+DATA = '29/09/2026'
 TITULO = "Cadastro de Conta Financeira"
 SUBTITULO = "O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento"
-VIDEO_NOME = "video-conta-financeira-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/m-j4pqukoHg"
 INTRO = ('A <b>Conta Financeira</b> é o "cofre" onde o dinheiro da clínica realmente entra e sai: '
          'uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. '
          'Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta '
@@ -26,7 +27,10 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'O que é e para que serve'),
+    ('h2', 'Barra de ações'),
+ ('p', 'No alto da lista ficam o botão azul <b>Novo</b> (em destaque), o botão <b>Filtros</b> — com contador de filtros aplicados e um <b>✕</b> para limpar tudo — e o botão de <b>Atualizar</b>, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis.'),
+ ('img', '00-lista-contas-financeiras.png', 'Lista de Contas Financeiras com a barra de ações (Novo, Filtros, Atualizar).'),
+ ('h2', 'O que é e para que serve'),
     ('p', 'Cada Conta Financeira representa <b>um lugar onde existe saldo</b>. Exemplos: "BANCO BRASIL" '
           '(conta corrente da clínica), "SICOOB CONTA CORRENTE" ou "CAIXA" (o dinheiro em espécie na '
           'recepção). Sem Conta Financeira o sistema não sabe <b>onde</b> o dinheiro foi parar, e por '

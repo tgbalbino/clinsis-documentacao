@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Cadastro de Centro de Custo (com legendas)",
+  "descricao": "Como organizar a clínica em setores para saber onde o dinheiro entra e sai.\n\nO Centro de Custo identifica QUAL SETOR da clínica está envolvido em uma entrada ou saída de dinheiro (ex.: \"Consultório 1\", \"Recepção\", \"Administrativo/Financeiro\"). Junto com o Plano de Contas, é um cadastro pré-requisito das demais telas financeiras (Contas a Pagar, Contas a Receber, Contas Recorrentes, Checkin com pagamento, fechamento de Contrato). Recomendamos configurar essa tela antes de usar as demais rotinas financeiras.\n\nNeste vídeo:\n• Barra de ações\n• Diferença entre Plano de Conta e Centro de Custo\n• Cadastrando um novo Centro de Custo (exemplo)\n• Filtrando centros de custo cadastrados\n• Atalho: Importar Centros de Custo Padrão\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

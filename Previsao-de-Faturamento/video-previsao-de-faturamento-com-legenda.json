@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Previsão de Faturamento da Agenda (com legendas)",
+  "descricao": "Quanto a clínica deve faturar no mês: para que serve, como configurar, de onde vêm os valores e como conferir.\n\nA Previsão de Faturamento da Agenda estima, semana a semana, quanto a clínica vai faturar com a agenda de um mês: soma o que já foi realizado e projeta o que ainda está agendado. Cada estimativa é guardada como uma \"foto\" da semana, então dá para acompanhar a evolução, ver o que mudou, conferir com o financeiro e, no fim do mês, medir o quanto a previsão acertou.\n\nNeste vídeo:\n• Para que serve\n• Onde fica\n• 1. Configuração: quais sessões contam como faturáveis\n• 2. Como a previsão é gerada\n• 3. Como o valor é calculado\n• A probabilidade histórica\n• 4. De onde vêm os valores (preço de cada sessão)\n• 5. A tela principal\n• 6. Como conferir\n• Detalhes: conferir marcação por marcação\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

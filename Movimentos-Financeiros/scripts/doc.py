@@ -3,6 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "22/09/2026"
+VERSAO = '1.2'
+DATA = '30/09/2026'
 TITULO = "Movimentos Financeiros"
 SUBTITULO = "O que é, de onde vem e para que serve o extrato de cada Conta Financeira"
-VIDEO_NOME = "video-movimentos-financeiros-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/md1GdiLY9Qw"
 INTRO = ('<b>Movimentos Financeiros</b> é o extrato interno do sistema: cada linha é uma entrada ou '
          'saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor '
          'e origem. A tela serve para <b>conferir esse extrato contra o extrato real do banco</b> '
@@ -25,7 +26,9 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'O que é e de onde vem cada linha'),
+    ('h2', 'Barra de ações'),
+ ('p', 'Os filtros ficam no alto da tela (período, conta financeira, tipo, origem e conciliado). Logo abaixo, o botão azul <b>Buscar</b>, o botão só com o ícone de borracha para <b>Limpar</b> os filtros e, à direita, <b>Nova Transferência</b>. Só a lista rola; os filtros, o card de Conciliação e os títulos das colunas ficam sempre visíveis.'),
+ ('h2', 'O que é e de onde vem cada linha'),
     ('p', 'Acesso em <b>Financeiro → Movimentos → Movimentos Financeiros</b> (rota '
           '<i>financeiro/movimentos</i>). Cada linha da lista representa um lançamento numa Conta '
           'Financeira, gerado automaticamente pelo sistema — nesta tela não existe um botão de '
@@ -66,6 +69,8 @@ blocks = [
           'valor bate com o extrato real do banco naquele dia. É uma ação de um clique, sem pedir '
           'motivo. Um lançamento conciliado ganha o botão amarelo <b>"Desconciliar"</b> (desfazer), '
           'caso a conciliação tenha sido feita por engano.'),
+    ('aviso', 'Em vez de conciliar um a um, use <b>Financeiro → Movimentos → Conciliação OFX</b>: você envia o extrato do banco em formato OFX e o sistema sugere, de uma vez, quais movimentos batem com cada linha do extrato (mesmo tipo, mesmo valor e data até 3 dias de diferença). '
+              'Os movimentos conciliados por lá aparecem aqui com <b>Sim</b>, e o botão de desconciliar também libera a linha do extrato. Veja o manual "Conciliação Bancária (OFX)".'),
     ('img', '01-apos-conciliar.png', 'Linha conciliada: "Sim" em verde na coluna Conciliado e o botão amarelo de desconciliar.'),
     ('aviso', 'Um lançamento <b>conciliado não pode ser excluído</b> diretamente — é preciso '
               'desconciliar primeiro (o botão vermelho de excluir some da linha assim que ela é '

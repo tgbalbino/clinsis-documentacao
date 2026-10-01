@@ -2,12 +2,21 @@
 
 _Contas que se repetem todo mês (ou a cada período) geradas automaticamente_
 
-Versão 1.0 — 17/09/2026
+Versão 1.1 — 29/09/2026
 
 Contas Recorrentes serve para cadastrar UMA VEZ uma despesa ou receita que se repete sempre (ex.: aluguel, mensalidade de software, salário de um profissional fixo) e deixar o próprio sistema gerar automaticamente o lançamento em Contas a Pagar (ou Contas a Receber) a cada novo período — sem precisar cadastrar tudo de novo todo mês. Esta rotina exige Plano de Conta, Centro de Custo e um Favorecido (Pessoa) já cadastrados antes de usar.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/1qx_Mgp4T_Q](https://youtu.be/1qx_Mgp4T_Q)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/74XN1Jb4f_c](https://youtu.be/74XN1Jb4f_c)
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam o botão azul Novo (em destaque), o botão Filtros — que mostra um número quando há filtro aplicado, com um ✕ ao lado para limpar tudo —, o botão de Atualizar, só com o ícone, e o botão discreto Log do Job, que abre o histórico das execuções automáticas.
+
+![Lista de Contas Recorrentes com a barra de ações (Novo, Filtros, Atualizar e Log do Job).](00-lista-inicial.png)
+
+_Lista de Contas Recorrentes com a barra de ações (Novo, Filtros, Atualizar e Log do Job)._
 
 ## Tela inicial
 
@@ -47,7 +56,7 @@ Todos os dias, um job (rotina automática) do sistema roda de madrugada e verifi
 
 Para conferir isso sem esperar até a madrugada, esta tela tem o botão Log do Job, que mostra o histórico de execuções e também permite forçar a execução agora — útil para testar ou para gerar uma conta que ficou pendente.
 
-![Histórico de execuções do job de contas recorrentes, com a opção "Forçar Execução Agora".](03-log-job-vazio.png)
+![Histórico de execuções do job de contas recorrentes, com a opção "Forçar Execução Agora".](03-log-job.png)
 
 _Histórico de execuções do job de contas recorrentes, com a opção "Forçar Execução Agora"._
 

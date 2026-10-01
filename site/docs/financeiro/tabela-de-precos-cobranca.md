@@ -8,9 +8,9 @@ _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/mFThg03z-RY?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/DyyO49lac8I?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/mFThg03z-RY)
+[Abrir no YouTube](https://youtu.be/DyyO49lac8I)
 
 ## Conteúdo completo do manual
 
@@ -19,7 +19,7 @@ _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa
 
 _Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa_
 
-Versão 1.0 — 22/09/2026
+Versão 1.1 — 30/09/2026
 
 A Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa.
 
@@ -54,3 +54,12 @@ O mesmo card "Manutenção rápida de preços" usado na Tabela de Pagamento apar
 
 
 > ⚠️ A prévia não altera nada — só a confirmação grava de verdade. Se algum valor mudar entre a prévia e a confirmação (outra pessoa editando ao mesmo tempo), o sistema recusa e pede uma nova prévia. Linhas com Valor Social vazio não são alteradas, mesmo com o campo marcado, e cada confirmação fica registrada no log do sistema.
+
+## Valores e limites
+
+| Assunto | O que saber |
+|---|---|
+| Digitação dos valores | Os campos de valor funcionam como moeda: os números entram pela direita (1 vira 0,01; 123 vira 1,23) e aparecem com separador de milhar. |
+| Valor máximo | Cada valor aceita até R$ 99.999.999,99 (8 dígitos antes da vírgula); o reajuste em massa também respeita esse teto. |
+| Valor Social (com desconto) | Na aba Profissional, o Valor Social não pode ser maior que o Valor; se for, o sistema avisa "Valor com desconto inválido" e não salva. |
+| Falha ao salvar | Se o salvamento falhar, o sistema mostra o erro e recarrega a lista para mostrar o que realmente está gravado. |

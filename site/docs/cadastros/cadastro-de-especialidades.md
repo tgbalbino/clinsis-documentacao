@@ -8,9 +8,9 @@ _"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com e
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/9pTvpUSwb_g?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/mtXmqvbPCkM?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/9pTvpUSwb_g)
+[Abrir no YouTube](https://youtu.be/mtXmqvbPCkM)
 
 ## Conteúdo completo do manual
 
@@ -19,11 +19,16 @@ _"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com e
 
 _"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com exemplos_
 
-Versão 1.0 — 22/09/2026
+Versão 1.1 — 29/09/2026
 
 O cadastro de Especialidade (Psicologia, Fisioterapia, Fonoaudiologia, etc.) tem duas configurações que mudam o comportamento de outras partes do sistema, mas cujo efeito nem sempre é óbvio pelo nome: Tipo de Cobrança (usada só no Pagamento de Profissionais) e Relatório Compartilhado(Prontuários) (usada só no Prontuário). Este manual explica as duas em detalhe, com exemplos.
 
+
 ---
+
+## Barra de ações
+
+A lista de Especialidades tem, no alto, o botão azul Novo (em destaque), o botão Filtros — com contador de filtros aplicados e um ✕ para limpar tudo — e o botão de Atualizar, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis. A coluna "Relatório Compartilhado" mostra o nível configurado em cada especialidade.
 
 ## Onde fica o cadastro
 

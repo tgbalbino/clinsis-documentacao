@@ -11,11 +11,12 @@ ClinSis | Cobrança de Paciente (com legendas)
 DESCRIÇÃO:
 Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês.
 
-Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular. Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
 
 Neste vídeo:
-• Configuração prévia: Tabela de Preços para Cobrança
+• Configuração prévia: Tabela de Valores para Cobrança
 • Relatório de Cobrança de Paciente (sintético)
+• Quais sessões entram na cobrança: o filtro de Status
 • Gerando a Conta a Receber
 • Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
 • Relatório de Cobrança de Paciente (analítico)
@@ -36,11 +37,12 @@ ClinSis | Cobrança de Paciente (sem legendas)
 DESCRIÇÃO:
 Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês.
 
-Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Preços para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
+Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular. Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
 
 Neste vídeo:
-• Configuração prévia: Tabela de Preços para Cobrança
+• Configuração prévia: Tabela de Valores para Cobrança
 • Relatório de Cobrança de Paciente (sintético)
+• Quais sessões entram na cobrança: o filtro de Status
 • Gerando a Conta a Receber
 • Onde a conta gerada aparece — e por que ela nasce "Em Aberto"
 • Relatório de Cobrança de Paciente (analítico)

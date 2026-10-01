@@ -1,0 +1,7 @@
+[
+ {"audio":"01.wav","imagem":"00-lista-inicial.png","texto":"O Centro de Custo identifica qual setor da clínica está envolvido em uma entrada ou saída de dinheiro, como Consultório, Recepção ou Administrativo. Junto com o Plano de Contas, é um cadastro exigido pelas demais telas financeiras, então configure antes de usá-las."},
+ {"audio":"02.wav","imagem":"00-lista-inicial.png","texto":"No alto da lista ficam o botão azul Novo, o botão Filtros, que mostra um número quando há filtro aplicado e ganha um X para limpar tudo, e o botão de atualizar. A lista mostra a descrição e a situação de cada centro de custo."},
+ {"audio":"03.wav","imagem":"01-novo-modal-preenchido.png","texto":"Não confunda: o Plano de Conta responde o que é o lançamento, como aluguel. O Centro de Custo responde para qual setor ele vai. Para cadastrar, clique em Novo e informe apenas a descrição e se está ativo."},
+ {"audio":"04.wav","imagem":"02-apos-salvar.png","texto":"Depois de salvar, o novo centro de custo já aparece na lista. Centros inativos somem das listas de seleção, mas continuam existindo para não quebrar lançamentos antigos."},
+ {"audio":"05.wav","imagem":"04-resultado-filtro.png","texto":"O botão Filtros busca por descrição ou situação. Ao aplicar, só os centros que atendem ao filtro aparecem, e o X limpa tudo. Quando não há nenhum cadastrado, a tela oferece importar os centros de custo padrão, com setores comuns em clínicas."}
+]

@@ -2,12 +2,17 @@
 
 _Cadastrar e pagar as contas da clínica, com indicadores de vencimento_
 
-Versão 1.0 — 17/09/2026
+Versão 1.2 — 29/09/2026
 
 Contas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/dlllj9on1gQ](https://youtu.be/dlllj9on1gQ)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/LIRC0NJ6Z3c](https://youtu.be/LIRC0NJ6Z3c)
+
 ---
+
+## Barra de ações
+
+Abaixo dos indicadores fica a barra de ações: o botão azul Novo (em destaque), o botão Filtros — que mostra um número quando há filtro aplicado, com um ✕ ao lado para limpar tudo — o botão Filtro rápido (veja abaixo) e o botão de Atualizar, só com o ícone. A lista mostra 30 registros por página; use a paginação no canto direito para ver os demais. Só a lista rola; os indicadores e a barra ficam sempre visíveis. Esta tela só aparece no menu quando o módulo de Contas a Pagar está habilitado para a clínica.
 
 ## Indicadores do topo
 
@@ -16,6 +21,14 @@ Cinco caixas resumem a situação das contas: Em Aberto (soma de tudo que ainda 
 ![Tela inicial de Contas a Pagar, com indicadores e a lista de contas.](00-lista-inicial.png)
 
 _Tela inicial de Contas a Pagar, com indicadores e a lista de contas._
+
+## Filtro rápido
+
+Ao lado do botão Filtros, o botão Filtro rápido (atalho: tecla F2) abre uma janelinha para filtrar a lista pelo nome da pessoa (parte do nome) e/ou pelo valor — o sistema considera o valor original ou o saldo restante. Ele vale junto com os filtros da tela, mostra um contador quando está ativo e tem um ✕ para limpá-lo. Na janela, Enter aplica e o botão Limpar remove o filtro.
+
+![Janela do Filtro rápido: nome da pessoa e valor.](00b-filtro-rapido.png)
+
+_Janela do Filtro rápido: nome da pessoa e valor._
 
 ## Cadastrando uma conta a pagar (exemplo)
 

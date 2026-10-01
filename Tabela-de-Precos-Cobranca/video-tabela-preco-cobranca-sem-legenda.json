@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Tabela de Valores para Cobrança (sem legendas)",
+  "descricao": "Cadastro por Especialidade/Profissional/Operadora e reajuste de preço em massa.\n\nA Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança) define quanto cobrar do paciente por sessão particular. É essa tabela que o relatório de Cobrança de Paciente usa para calcular o valor a receber todo mês. Este manual cobre as três formas de configurar o valor (Especialidade, Profissional e Operadora) e a ferramenta de reajuste de preço em massa. Assista ao vídeo narrado desta rotina: [https://youtu.be/jSXGRHy77bw](https://youtu.be/jSXGRHy77bw)\n\nNeste vídeo:\n• Diferença em relação à Tabela de Pagamento\n• Reajuste de preço em massa\n• Valores e limites\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

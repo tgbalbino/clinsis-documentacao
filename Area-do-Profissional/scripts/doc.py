@@ -11,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.1"
-DATA = "24/09/2026"
+VERSAO = '1.4'
+DATA = '01/10/2026'
 TITULO = "Área do Profissional"
 SUBTITULO = "O que o profissional de saúde vê e pode fazer no ClinSis"
-VIDEO_NOME = "video-area-do-profissional-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/TAq1nN4P4DM"
 INTRO = ('Este manual mostra, passo a passo, o dia a dia do <b>profissional de saúde</b> no ClinSis: '
          'a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos '
          'padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do '
@@ -53,10 +53,10 @@ blocos = [
           'Evoluções Abertas e os Relatórios Abertos no geral. Pendência é algo que você começou e ainda não finalizou.'),
 
     ('h1', '2. Agenda'),
-    ('p', 'Menu <b>Agenda</b>: lista de Ano/Mês. Em cada linha, o botão <b>Acessar</b> abre a Agenda resumida do mês. '
+    ('p', 'Menu <b>Agenda</b>: lista de Ano/Mês. Em cada linha, o botão verde <b>Minha agenda</b> abre a Agenda resumida do mês; o mês atual tem o selo <b>Atual</b> e a linha destacada. '
           'Se a clínica não for consultório, aparece também o link <b>Ver lista simples de pacientes do dia</b>.'),
-    ('img', 'p02-agenda.png', 'Menu Agenda do profissional: só o botão Acessar por mês.'),
-    ('aviso', 'O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Horários, Acessar (grade de agendamento) e Divergência Sessões. Esses são do administrador e do atendente.'),
+    ('img', 'p02-agenda.png', 'Menu Agenda do profissional: só o botão Minha agenda por mês, com o mês atual marcado.'),
+    ('aviso', 'O profissional não pode criar nem remover agendas, e não vê o botão Acessar (grade de agendamento) nem o menu Mais ações (Relatório, Horários e Divergência Sessões). Esses são do administrador e do atendente.'),
     ('h2', 'Agenda resumida'),
     ('p', 'Mostra os seus pacientes agendados no mês. Recursos:'),
     ('tabelagen', ['Recurso', 'Como usar'], [
@@ -73,8 +73,10 @@ blocos = [
     ('h2', 'Pacientes do dia (Agenda detalhada)'),
     ('p', 'Acesse pelo link <b>Agenda detalhada</b> da Home, ou <b>Ver lista simples de pacientes do dia</b> na Agenda. '
           'Escolha a data e clique em <b>Pesquisar</b>. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, '
-          'programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão <b>Marcar Presença</b> em cada linha.'),
-    ('img', 'p03b-pacientes-dia.png', 'Pacientes por Dia: lista do dia com status das sessões e o botão Marcar Presença.'),
+          'programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão <b>Marcar Presença</b> em cada linha. '
+          'Quando a clínica usa o envio automático de WhatsApp, o link <b>Respostas WhatsApp</b>, ao lado de Pesquisar, abre as respostas dos seus pacientes de ontem, hoje e amanhã: confirmados, não vão e sem resposta.'),
+    ('img', 'p03b-pacientes-dia.png', 'Pacientes por Dia: lista do dia com status das sessões, o botão Marcar Presença e o link Respostas WhatsApp (dados ocultados neste manual).'),
+    ('img', 'p03c-respostas-whatsapp.png', 'Respostas WhatsApp: abas Ontem, Hoje e Amanhã com os contadores de confirmados, não vão e sem resposta.'),
 
     ('h1', '3. Pacientes'),
     ('p', 'Menu <b>Pacientes</b>, só com a configuração "Profissional pode ver pacientes" ativa. Sem ela, o sistema volta para a Home. '
@@ -154,8 +156,9 @@ blocos = [
     ('h1', '7. Perfil'),
     ('p', 'Menu <b>Perfil</b>: cuidar dos dados da sua conta. Mostra nome, e-mail, situação (Ativo ou Inativo), perfil de acesso e data de cadastro.'),
     ('img', 'p10-perfil.png', 'Perfil: dados da conta (e-mail ocultado neste manual) e as opções Alterar Dados e Alterar Senha.'),
+    ('p', 'Abaixo dos dados da conta, o quadro <b>Últimos acessos</b>, em largura total, mostra em cartões lado a lado os 5 acessos mais recentes ao seu usuário, com data e hora, o acesso atual destacado, a rede, o aparelho e o IP. Se algum acesso não foi feito por você, altere a senha em <b>Alterar Senha</b> e avise o administrador.'),
     ('tabelagen', ['Opção', 'Como usar'], [
-        ['Alterar Dados', 'Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar.'],
+        ['Alterar Dados', 'Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. Nome e data de nascimento também atualizam o seu cadastro de profissional.'],
         ['Alterar Senha', 'Informe a senha atual, a nova senha e repita a nova senha.'],
     ], [4, 13.5]),
 

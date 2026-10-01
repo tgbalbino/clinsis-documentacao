@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Contas a Pagar (com legendas)",
+  "descricao": "Cadastrar e pagar as contas da clínica, com indicadores de vencimento.\n\nContas a Pagar é onde ficam todas as despesas da clínica: as lançadas manualmente aqui e também as que chegam automaticamente de outras rotinas, como Contas Recorrentes e Pagamento de Profissionais. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os pagamentos (baixas) de cada conta. Assim como as demais telas financeiras, exige Plano de Conta e Centro de Custo já cadastrados.\n\nNeste vídeo:\n• Barra de ações\n• Indicadores do topo\n• Filtro rápido\n• Cadastrando uma conta a pagar (exemplo)\n• Pagando (baixando) uma conta\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

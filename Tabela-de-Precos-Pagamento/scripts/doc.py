@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +10,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "22/09/2026"
+VERSAO = "1.1"
+DATA = "30/09/2026"
 TITULO = "Tabela de Valores para Pagamento"
 SUBTITULO = "Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa"
-VIDEO_NOME = "https://youtu.be/B5Jlz0kweIM"
+VIDEO_NOME = "https://youtu.be/tupHNaRxSrY"
 INTRO = ('A <b>Tabela de Valores para Pagamento</b> (Tabelas Aux. → Tab. Pagamento) define quanto a '
          'clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de '
          '<b>Pagamento de Profissionais</b> usa para calcular o valor a pagar todo mês. Este manual '
@@ -27,14 +27,14 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
 blocks = [
     ('h2', 'O conceito de "Tabela de Valores"'),
     ('p', 'Cada linha da lista principal é uma <b>Tabela de Valores</b>, com uma Descrição e um status Ativo/Inativo. O botão de engrenagem '
-          '("Gerenciar") abre a tabela para cadastrar os valores propriamente ditos.'),
+          '("Valores") abre a tabela para cadastrar os valores propriamente ditos.'),
     ('img', '00-lista-vigencias.png', 'Lista de tabelas de pagamento cadastradas, com o status Ativo de cada uma.'),
     ('aviso', 'O cálculo do Pagamento de Profissionais sempre usa a tabela marcada como '
               '<b>Ativo = Sim</b> — e o sistema não garante que exista só uma. <b>Nunca deixe duas '
               'tabelas ativas ao mesmo tempo</b>: como não há uma ordem confiável entre elas, o '
               'resultado do cálculo fica imprevisível.'),
 
-    ('h2', 'Dentro de "Gerenciar": três abas'),
+    ('h2', 'Dentro de "Valores": três abas'),
     ('tabela', [
         ('Agenda', 'Vincula quais meses/anos de agenda usam esta tabela de valores (não define preço, só habilita o mês para entrar no cálculo).', 'AgendaVigenciaProfPagto'),
         ('Especialidades', 'Valor padrão por Especialidade × Tipo de Marcação, aplicado a todo profissional que não tiver um valor específico.', 'ConfigEspecPagto'),
@@ -67,6 +67,14 @@ blocks = [
               'confirmação, o sistema recusa e pede para gerar uma nova prévia (evita reajustar em cima '
               'de dados já desatualizados). Linhas com Valor Convênio vazio não são alteradas, mesmo com '
               'o campo marcado. Toda confirmação de reajuste fica registrada no log do sistema.'),
+    ('h2', 'Valores, limites e uso no celular'),
+    ('tabelagen', ['Assunto', 'O que saber'], [
+        ['Valores com milhar', 'Os valores aparecem com separador de milhar (por exemplo, 1.250,00) na lista e nos campos.'],
+        ['Valor máximo', 'Cada valor aceita até <b>R$ 99.999.999,99</b> (8 dígitos antes da vírgula). O campo não deixa digitar mais que isso, e o reajuste em massa também respeita esse teto.'],
+        ['Falha ao salvar', 'Se o salvamento falhar (por exemplo, por um valor inválido), o sistema mostra o erro e <b>recarrega a lista</b>, para você ver o que realmente está gravado.'],
+        ['No celular', 'As abas Especialidades e Profissionais mostram os valores em <b>cartões</b>, com menu de ações e busca, em vez de tabela.'],
+    ], [4.5, 13]),
+
 ]
 
 render_pdf(blocks, os.path.join(ENTREGA, 'Documentacao_Tabela_Preco_Pagamento.pdf'),

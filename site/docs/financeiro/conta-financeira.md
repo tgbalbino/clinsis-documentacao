@@ -8,9 +8,9 @@ _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/er1uv0qlUjk?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/m-j4pqukoHg?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/er1uv0qlUjk)
+[Abrir no YouTube](https://youtu.be/m-j4pqukoHg)
 
 ## Conteúdo completo do manual
 
@@ -19,11 +19,17 @@ _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
 _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
-Versão 1.0 — 18/09/2026
+Versão 1.1 — 29/09/2026
 
 A Conta Financeira é o "cofre" onde o dinheiro da clínica realmente entra e sai: uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta ele saiu — é isso que permite conferir o extrato do banco, saber o saldo de cada conta e montar o Fluxo de Caixa. Este manual explica o cadastro, onde ele é usado e, principalmente, a regra que amarra cada Conta Financeira às Formas de Pagamento permitidas nela.
 
+
 ---
+
+## Barra de ações
+
+No alto da lista ficam o botão azul Novo (em destaque), o botão Filtros — com contador de filtros aplicados e um ✕ para limpar tudo — e o botão de Atualizar, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis.
+
 
 ## O que é e para que serve
 

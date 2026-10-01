@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -14,7 +14,7 @@ VERSAO = "1.1"
 DATA = "26/09/2026"
 TITULO = "Cobrança de Paciente"
 SUBTITULO = "Calcular e gerar, de uma vez, a cobrança de todos os pacientes particulares do mês"
-VIDEO_NOME = "https://youtu.be/AdzPSoJ7_4I"
+VIDEO_NOME = "https://youtu.be/ViW55USFc6I"
 INTRO = ('Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, '
          'quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber '
          'correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para '

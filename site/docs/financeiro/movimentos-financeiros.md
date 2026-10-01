@@ -8,9 +8,9 @@ _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/YEE6RAVUX8I?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/md1GdiLY9Qw?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/YEE6RAVUX8I)
+[Abrir no YouTube](https://youtu.be/md1GdiLY9Qw)
 
 ## Conteúdo completo do manual
 
@@ -19,11 +19,16 @@ _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
 _O que é, de onde vem e para que serve o extrato de cada Conta Financeira_
 
-Versão 1.0 — 22/09/2026
+Versão 1.2 — 30/09/2026
 
 Movimentos Financeiros é o extrato interno do sistema: cada linha é uma entrada ou saída de dinheiro em uma Conta Financeira específica (um banco ou o caixa), com data, valor e origem. A tela serve para conferir esse extrato contra o extrato real do banco (conciliação), fazer transferências entre contas do sistema e, se necessário, excluir um lançamento incorreto.
 
+
 ---
+
+## Barra de ações
+
+Os filtros ficam no alto da tela (período, conta financeira, tipo, origem e conciliado). Logo abaixo, o botão azul Buscar, o botão só com o ícone de borracha para Limpar os filtros e, à direita, Nova Transferência. Só a lista rola; os filtros, o card de Conciliação e os títulos das colunas ficam sempre visíveis.
 
 ## O que é e de onde vem cada linha
 
@@ -59,6 +64,8 @@ Mostra três números — Total, Conciliado (verde) e Não Conciliado (vermelho)
 ## Conciliar / Desconciliar
 
 O botão verde (✓) marca o lançamento como conciliado — ou seja, confirma que aquele valor bate com o extrato real do banco naquele dia. É uma ação de um clique, sem pedir motivo. Um lançamento conciliado ganha o botão amarelo "Desconciliar" (desfazer), caso a conciliação tenha sido feita por engano.
+
+> ⚠️ Em vez de conciliar um a um, use Financeiro → Movimentos → Conciliação OFX: você envia o extrato do banco em formato OFX e o sistema sugere, de uma vez, quais movimentos batem com cada linha do extrato (mesmo tipo, mesmo valor e data até 3 dias de diferença). Os movimentos conciliados por lá aparecem aqui com Sim, e o botão de desconciliar também libera a linha do extrato. Veja o manual "Conciliação Bancária (OFX)".
 
 
 > ⚠️ Um lançamento conciliado não pode ser excluído diretamente — é preciso desconciliar primeiro (o botão vermelho de excluir some da linha assim que ela é conciliada).

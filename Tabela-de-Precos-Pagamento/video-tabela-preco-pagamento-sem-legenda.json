@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Tabela de Valores para Pagamento (sem legendas)",
+  "descricao": "Cadastro, valores por Especialidade/Profissional e reajuste de preço em massa.\n\nA Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento) define quanto a clínica paga a cada profissional por sessão atendida. É essa tabela que o relatório de Pagamento de Profissionais usa para calcular o valor a pagar todo mês. Este manual cobre o cadastro completo e a ferramenta de reajuste de preço em massa, que aplica um percentual a vários valores de uma vez, sem precisar editar linha por linha. Assista ao vídeo narrado desta rotina: [https://youtu.be/mCFta8Z8LVA](https://youtu.be/mCFta8Z8LVA)\n\nNeste vídeo:\n• O conceito de \"Tabela de Valores\"\n• Dentro de \"Valores\": três abas\n• Reajuste de preço em massa\n• Valores, limites e uso no celular\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

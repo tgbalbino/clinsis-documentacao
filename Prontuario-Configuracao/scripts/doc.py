@@ -2,11 +2,11 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SHOTS = os.path.join(BASE, "screenshots")
+SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
@@ -14,7 +14,7 @@ VERSAO = "1.0"
 DATA = "23/09/2026"
 TITULO = "Prontuário — Configuração"
 SUBTITULO = "Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem"
-VIDEO_NOME = "video-prontuario-configuracao-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/tMs3WdzjMSg"
 INTRO = ('Antes de um profissional preencher um prontuário, a clínica precisa definir <b>quais tipos de prontuário existem</b> '
          '(Anamnese, Evolução, Relatório...) e <b>quais campos cada tipo tem</b> (as alíneas). Este manual explica essas duas '
          'configurações, feitas pelo administrador, e os <b>Textos padrão</b>, que cada profissional cria para agilizar o '

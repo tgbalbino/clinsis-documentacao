@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Previsão de Faturamento da Agenda
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-previsao-de-faturamento-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Previsão de Faturamento da Agenda (com legendas)
+
+DESCRIÇÃO:
+Quanto a clínica deve faturar no mês: para que serve, como configurar, de onde vêm os valores e como conferir.
+
+A Previsão de Faturamento da Agenda estima, semana a semana, quanto a clínica vai faturar com a agenda de um mês: soma o que já foi realizado e projeta o que ainda está agendado. Cada estimativa é guardada como uma "foto" da semana, então dá para acompanhar a evolução, ver o que mudou, conferir com o financeiro e, no fim do mês, medir o quanto a previsão acertou.
+
+Neste vídeo:
+• Para que serve
+• Onde fica
+• 1. Configuração: quais sessões contam como faturáveis
+• 2. Como a previsão é gerada
+• 3. Como o valor é calculado
+• A probabilidade histórica
+• 4. De onde vêm os valores (preço de cada sessão)
+• 5. A tela principal
+• 6. Como conferir
+• Detalhes: conferir marcação por marcação
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-previsao-de-faturamento-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Previsão de Faturamento da Agenda (sem legendas)
+
+DESCRIÇÃO:
+Quanto a clínica deve faturar no mês: para que serve, como configurar, de onde vêm os valores e como conferir.
+
+A Previsão de Faturamento da Agenda estima, semana a semana, quanto a clínica vai faturar com a agenda de um mês: soma o que já foi realizado e projeta o que ainda está agendado. Cada estimativa é guardada como uma "foto" da semana, então dá para acompanhar a evolução, ver o que mudou, conferir com o financeiro e, no fim do mês, medir o quanto a previsão acertou.
+
+Neste vídeo:
+• Para que serve
+• Onde fica
+• 1. Configuração: quais sessões contam como faturáveis
+• 2. Como a previsão é gerada
+• 3. Como o valor é calculado
+• A probabilidade histórica
+• 4. De onde vêm os valores (preço de cada sessão)
+• 5. A tela principal
+• 6. Como conferir
+• Detalhes: conferir marcação por marcação
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

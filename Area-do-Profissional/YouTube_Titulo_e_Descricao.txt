@@ -1,0 +1,58 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Área do Profissional
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-area-do-profissional-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Área do Profissional (com legendas)
+
+DESCRIÇÃO:
+O que o profissional de saúde vê e pode fazer no ClinSis.
+
+Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente. Assista ao vídeo narrado desta rotina: [https://youtu.be/gicBZ5W9boo](https://youtu.be/gicBZ5W9boo) # 1. Menu e Home do profissional O menu do profissional é menor que o do administrador. Algumas opções só aparecem se a clínica ativou o módulo...
+
+Neste vídeo:
+• Cartões de atalho
+• Resumo do dia e pendências
+• Agenda resumida
+• Pacientes do dia (Agenda detalhada)
+• Lista de prontuários
+• Preencher o prontuário
+• Visualizar e imprimir
+• Textos padrões
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-area-do-profissional-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Área do Profissional (sem legendas)
+
+DESCRIÇÃO:
+O que o profissional de saúde vê e pode fazer no ClinSis.
+
+Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente. Assista ao vídeo narrado desta rotina: [https://youtu.be/gicBZ5W9boo](https://youtu.be/gicBZ5W9boo) # 1. Menu e Home do profissional O menu do profissional é menor que o do administrador. Algumas opções só aparecem se a clínica ativou o módulo...
+
+Neste vídeo:
+• Cartões de atalho
+• Resumo do dia e pendências
+• Agenda resumida
+• Pacientes do dia (Agenda detalhada)
+• Lista de prontuários
+• Preencher o prontuário
+• Visualizar e imprimir
+• Textos padrões
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

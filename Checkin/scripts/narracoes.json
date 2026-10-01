@@ -1,0 +1,57 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "O Checkin registra a chegada do paciente no dia da consulta. Se o horário é cobrado na hora, como o atendimento particular, o Checkin também recebe o pagamento e gera sozinho uma Conta a Receber já paga. Abra pelo cartão Check-in da Home; a tela mostra os check-ins feitos na data."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "Antes de usar, confira três coisas. Em Tabelas Aux, Parâmetros, o Plano de Conta, o Centro de Custo e a Conta Financeira do Checkin precisam estar configurados. O usuário precisa ter o caixa aberto. E o paciente precisa ter horário marcado hoje, em plano próprio e com valor configurado na especialidade."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "01-modal-codigo-barras.png",
+  "texto": "Clique em Realizar Check-In. O campo principal lê o código de barras da carteirinha do paciente. Sem o código, use Pesquisa Manual."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "02-pesquisa-resultado.png",
+  "texto": "Digite o nome ou o CPF, pressione Enter e selecione o paciente na lista."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "03-paciente-com-agenda-hoje.png",
+  "texto": "O sistema mostra os horários de hoje do paciente, com o valor e o valor social. Marque o horário que está sendo confirmado."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "04-horarios-marcados-com-valor.png",
+  "texto": "Escolha o tipo de preço, normal ou social. O campo Valor Receber mostra o total a cobrar. Se aparecer o aviso de pendência de pagamento, confira as contas em aberto do paciente."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "05-pagamento-preenchido.png",
+  "texto": "Em Adicionar pagamento, escolha a forma, dinheiro, pix, cheque ou cartão, e informe o valor. O botão da calculadora preenche o valor restante. Depois clique em Adicionar."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "06-pagamento-adicionado.png",
+  "texto": "O pagamento entra na lista. Dá para combinar mais de uma forma, até o restante chegar a zero."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "06b-cartao-credito-parcelas.png",
+  "texto": "No cartão de crédito aparece o campo de parcelas, limitado ao máximo configurado na clínica."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "07-apos-confirmar-checkin.png",
+  "texto": "Com o restante em zero, clique em Confirmar Check-In. O check-in aparece na lista, com a data e hora, o horário da agenda e o atendente."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "08-conta-a-receber-gerada-pelo-checkin.png",
+  "texto": "Em Contas a Receber, a conta já está criada e baixada, com o plano de conta do Checkin. Não é preciso lançar nada manualmente. Se faltar caixa aberto, plano próprio ou algum parâmetro, o sistema explica na mensagem o que corrigir."
+ }
+]

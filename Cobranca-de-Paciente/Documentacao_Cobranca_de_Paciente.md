@@ -6,7 +6,7 @@ Versão 1.1 — 26/09/2026
 
 Cobrança de Paciente calcula, a partir dos atendimentos particulares realizados no mês, quanto cada paciente deve pagar pelas sessões que teve — e gera a Conta a Receber correspondente com um clique, em vez de lançar uma conta manual pra cada paciente. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Cobrança (Tabelas Aux. → Tab. Cobrança), com o valor cobrado por sessão/atendimento particular.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/AdzPSoJ7_4I](https://youtu.be/AdzPSoJ7_4I)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/ViW55USFc6I](https://youtu.be/ViW55USFc6I)
 
 ---
 

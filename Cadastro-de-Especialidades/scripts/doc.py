@@ -3,6 +3,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -10,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "22/09/2026"
+VERSAO = '1.1'
+DATA = '29/09/2026'
 TITULO = "Cadastro de Especialidades"
 SUBTITULO = '"Tipo de Cobrança" e "Relatório Compartilhado(Prontuários)" explicados com exemplos'
-VIDEO_NOME = "video-especialidade-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/mtXmqvbPCkM"
 INTRO = ('O cadastro de <b>Especialidade</b> (Psicologia, Fisioterapia, Fonoaudiologia, etc.) tem duas '
          'configurações que mudam o comportamento de outras partes do sistema, mas cujo efeito nem '
          'sempre é óbvio pelo nome: <b>Tipo de Cobrança</b> (usada só no Pagamento de Profissionais) e '
@@ -25,7 +26,9 @@ RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em 
           'Nenhum dado de produção foi acessado.')
 
 blocks = [
-    ('h2', 'Onde fica o cadastro'),
+    ('h2', 'Barra de ações'),
+ ('p', 'A lista de Especialidades tem, no alto, o botão azul <b>Novo</b> (em destaque), o botão <b>Filtros</b> — com contador de filtros aplicados e um <b>✕</b> para limpar tudo — e o botão de <b>Atualizar</b>, só com o ícone. Só a lista rola; o título e a barra de ações ficam sempre visíveis. A coluna "Relatório Compartilhado" mostra o nível configurado em cada especialidade.'),
+ ('h2', 'Onde fica o cadastro'),
     ('p', 'Acesso em <b>Tabelas Aux. → Especialidade</b> (rota <i>aux/especialidade</i>). Além de '
           'Descrição, Abreviação e Ativo, cada especialidade tem os dois campos explicados abaixo — '
           'que <b>não afetam o cadastro em si</b>, e sim como outras telas do sistema se comportam para '

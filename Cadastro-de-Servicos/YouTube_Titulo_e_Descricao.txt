@@ -11,10 +11,11 @@ ClinSis | Cadastro de Serviços (com legendas)
 DESCRIÇÃO:
 Para que serve e onde é utilizado (Tabelas Aux. → Serviços).
 
-Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
+Um Serviço é um item simples de "nome + valor" — como um item de tabela de valores — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema. Assista ao vídeo narrado desta rotina: [https://youtu.be/rVO3BubvB5o](https://youtu.be/rVO3BubvB5o)
 
 Neste vídeo:
 • O que é um Serviço
+• Reajuste de preços em massa
 • Onde é utilizado: exclusivamente no módulo Contrato
 • Outros pontos onde o Serviço aparece
 
@@ -33,10 +34,11 @@ ClinSis | Cadastro de Serviços (sem legendas)
 DESCRIÇÃO:
 Para que serve e onde é utilizado (Tabelas Aux. → Serviços).
 
-Um Serviço é um item simples de "nome + valor" — como um item de tabela de preços — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema.
+Um Serviço é um item simples de "nome + valor" — como um item de tabela de valores — usado como base para montar os itens de um Contrato. Este manual explica o cadastro e, principalmente, onde ele entra em uso dentro do sistema. Assista ao vídeo narrado desta rotina: [https://youtu.be/rVO3BubvB5o](https://youtu.be/rVO3BubvB5o)
 
 Neste vídeo:
 • O que é um Serviço
+• Reajuste de preços em massa
 • Onde é utilizado: exclusivamente no módulo Contrato
 • Outros pontos onde o Serviço aparece
 

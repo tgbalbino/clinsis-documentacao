@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Prontuário — Configuração (com legendas)",
+  "descricao": "Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem.\n\nAntes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios. Assista ao vídeo narrado desta rotina: [https://youtu.be/X4ClyuUIsAE](https://youtu.be/X4ClyuUIsAE)\n\nNeste vídeo:\n• Visão geral: o que configurar e quem faz\n• 1. Tipos de prontuário\n• 2. Alíneas\n• 3. Textos padrão\n• Itens ligados a esta configuração\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

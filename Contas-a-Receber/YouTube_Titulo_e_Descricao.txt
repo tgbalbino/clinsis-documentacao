@@ -14,7 +14,9 @@ Cadastrar e receber os valores que os pacientes/convênios devem à clínica.
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
 Neste vídeo:
+• Barra de ações
 • Indicadores e como abrir a lista
+• Filtro rápido
 • Cadastrando um recebimento — "Parcela Automática" (exemplo)
 • Recebendo (baixando) uma parcela
 
@@ -36,7 +38,9 @@ Cadastrar e receber os valores que os pacientes/convênios devem à clínica.
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
 Neste vídeo:
+• Barra de ações
 • Indicadores e como abrir a lista
+• Filtro rápido
 • Cadastrando um recebimento — "Parcela Automática" (exemplo)
 • Recebendo (baixando) uma parcela
 

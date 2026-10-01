@@ -1,0 +1,60 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Conciliação Bancária (OFX)
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-conciliacao-bancaria-ofx-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Conciliação Bancária (OFX) (com legendas)
+
+DESCRIÇÃO:
+Como conferir o extrato do banco com os Movimentos Financeiros do ClinSis usando o arquivo OFX.
+
+A Conciliação Bancária (OFX) confere o extrato do banco com os Movimentos Financeiros do ClinSis. Você baixa o extrato no internet banking em formato OFX, envia o arquivo ao sistema e ele mostra, linha por linha, o que já está lançado no ClinSis, o que só aparece no banco e o que só aparece no sistema. As linhas que batem podem ser conciliadas de uma só vez, sem digitar nada. Assista ao vídeo narrado desta rotina: [https://youtu.be/C-cLpy2bJ-w](https://youtu.be/C-cLpy2bJ-w)
+
+Neste vídeo:
+• Para que serve
+• Onde fica no sistema
+• Antes de começar
+• Passo a passo
+• Como o sistema encontra o par
+• As situações de cada linha
+• Depois de conciliar
+• Avisos e erros
+• Boas práticas
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-conciliacao-bancaria-ofx-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Conciliação Bancária (OFX) (sem legendas)
+
+DESCRIÇÃO:
+Como conferir o extrato do banco com os Movimentos Financeiros do ClinSis usando o arquivo OFX.
+
+A Conciliação Bancária (OFX) confere o extrato do banco com os Movimentos Financeiros do ClinSis. Você baixa o extrato no internet banking em formato OFX, envia o arquivo ao sistema e ele mostra, linha por linha, o que já está lançado no ClinSis, o que só aparece no banco e o que só aparece no sistema. As linhas que batem podem ser conciliadas de uma só vez, sem digitar nada. Assista ao vídeo narrado desta rotina: [https://youtu.be/C-cLpy2bJ-w](https://youtu.be/C-cLpy2bJ-w)
+
+Neste vídeo:
+• Para que serve
+• Onde fica no sistema
+• Antes de começar
+• Passo a passo
+• Como o sistema encontra o par
+• As situações de cada linha
+• Depois de conciliar
+• Avisos e erros
+• Boas práticas
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -2,11 +2,11 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '_scripts-comuns'))
 from doc_common import render_pdf, render_md
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-SHOTS = os.path.join(BASE, "screenshots")
+SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
@@ -14,7 +14,7 @@ VERSAO = "1.0"
 DATA = "23/09/2026"
 TITULO = "Prontuário — Auditoria e Relatórios"
 SUBTITULO = "Como conferir se cada atendimento gerou prontuário: Auditoria, Produção e Atendimentos Sequenciais"
-VIDEO_NOME = "video-prontuario-auditoria-com-legenda.mp4 (ou -sem-legenda.mp4)"
+VIDEO_NOME = "https://youtu.be/xdxI2t3df8w"
 INTRO = ('Este manual é para o <b>administrador</b>. Ele explica como conferir, mês a mês, se os atendimentos realizados '
          '(presenças) geraram <b>prontuários finalizados</b>, quais ficaram em digitação e quais estão <b>sem tag</b>. '
          'São três relatórios em <b>Relatórios</b>: <b>Auditoria de Prontuários</b>, <b>Produção de Prontuários</b> e '

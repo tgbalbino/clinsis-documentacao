@@ -11,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.1"
-DATA = "24/09/2026"
+VERSAO = '1.5'
+DATA = '01/10/2026'
 TITULO = "Manual Base do ClinSis"
 SUBTITULO = "O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões"
-VIDEO_NOME = "https://youtu.be/r7iJc03azkw"
+VIDEO_NOME = "https://youtu.be/bba5Ib4ly8Q"
 INTRO = ('Este é o <b>manual de entrada</b> do ClinSis. Ele explica, em linguagem simples, o que o sistema '
          'faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais '
          'cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os '
@@ -135,7 +135,14 @@ blocos = [
           '(o nome curto que aparece na grade da agenda), registro profissional (conselho), endereço, '
           'contatos e se é estagiário. Os campos marcados com <font color="red">*</font> são obrigatórios. '
           'O profissional pode ser ativado ou inativado, um a um no cadastro ou em massa pelo menu Profissional → Inativação.'),
-    ('img', 'c05-profissional-cadastro.png', 'Cadastros → Profissional → Cadastro: dados pessoais, endereço e contato.'),
+    ('p', 'Em <b>Cadastros → Profissional → Listar</b> ficam todos os profissionais. No alto, o botão <b>Novo</b> abre o cadastro, e a pesquisa por nome ou CPF '
+          'tem três filtros: <b>Estágio</b> (Ambos, Só Profissionais ou Só Estagiários), <b>Especialidade</b> e <b>Ativo</b> (Ativo, Inativo ou <b>Ambos</b>, para ver ativos e inativos juntos). '
+          'A primeira coluna mostra um visto verde para o profissional ativo e um X vermelho para o inativo, e a linha do inativo aparece em vermelho. '
+          'Na coluna <b>Acesso</b>, o ícone verde com visto indica que o profissional já tem login; o ícone azul com sinal de mais (<b>Liberar Acesso</b>) permite criar o acesso dele com um clique.'),
+    ('img', 'c04-profissional-lista.png', 'Cadastros → Profissional → Listar, com o filtro Ativo em Ambos: inativos em vermelho, coluna Acesso e botão Novo no alto.'),
+    ('img', 'c05-profissional-cadastro.png', 'Cadastros → Profissional → Cadastro: dados pessoais, endereço e contato. O botão Novo fica no cabeçalho da tela.'),
+    ('aviso', 'O profissional e o usuário de acesso dele são ligados pelo <b>CPF</b>. Se o <b>nome</b> ou a <b>data de nascimento</b> for alterado no cadastro do profissional (ou da pessoa), o nome do usuário de acesso é atualizado junto; '
+              'e se o próprio usuário alterar o nome ou a data de nascimento em <b>Perfil</b>, o cadastro do profissional também é atualizado.'),
 
     ('h2', 'Pacientes'),
     ('p', 'O cadastro do paciente pede CPF, titular, nome, data de nascimento, sexo, mãe, pai, estado civil, '
@@ -144,13 +151,17 @@ blocos = [
           'Depois de cadastrado, o paciente pode ser vinculado a horários da agenda. No menu Paciente '
           'também existem <b>Entrada</b> e <b>Saída</b> (registro do tipo, data e motivo da entrada ou saída '
           'do paciente no tratamento) e <b>Inativação</b>.'),
-    ('img', 'c07-paciente-cadastro.png', 'Cadastros → Paciente → Cadastro: dados pessoais, endereço, outras informações, responsável e laudo.'),
+    ('p', 'O botão <b>Novo</b> fica no cabeçalho da tela de cadastro (Paciente, Profissional, Operadora e Serviço). Na aba <b>Dados principais</b>, o campo <b>Celular para WhatsApp</b> e a '
+          'autorização de recebimento ficam logo abaixo dos telefones (veja o manual do WhatsApp). Quando a data de nascimento indica um paciente menor de 15 anos, o <b>Estado Civil</b> vazio é preenchido com <b>Solteiro</b>.'),
+    ('img', 'c07-paciente-cadastro.png', 'Cadastros → Paciente → Cadastro: dados pessoais, endereço, outras informações (incluindo o Celular para WhatsApp), responsável e laudo.'),
 
     ('h2', 'Operadoras (convênios)'),
     ('p', 'Cadastro dos convênios/planos atendidos pela clínica. No agendamento, o paciente atendido por '
           'convênio (Atendimento Particular = Não) é vinculado a uma operadora; o atendimento '
           '"PROPRIO" representa o particular. O submenu tem Listar, Cadastro e a relação de pacientes por operadora.'),
     ('img', 'c08-operadoras.png', 'Cadastros → Operadora → Listar: convênios cadastrados.'),
+    ('p', 'Em <b>Cadastros → Operadora → Pacientes</b> ficam os pacientes de cada operadora própria. Para cada paciente há <b>Gerar Cartão</b>, <b>Renovar Plano</b> e, quando o paciente ainda não tem validade do plano, <b>Gerar Plano (Contrato)</b>, que abre o mesmo fluxo da renovação para criar o contrato do plano.'),
+    ('img', 'c08c-operadora-pacientes.png', 'Operadora → Pacientes: pacientes da operadora com os botões de cartão e de plano.'),
 
     # ------------------------------------------------------------------ 4
     ('h1', '4. Cadastro de Acesso (usuários do sistema)'),
@@ -158,6 +169,11 @@ blocos = [
           'visível para o Administrador. A lista mostra, para cada usuário: se está ativo, nome, e-mail, '
           'data de cadastro, perfil, perfil secundário, setor e se <b>controla caixa</b>.'),
     ('img', 'c08b-acessos-lista.png', 'Cadastros → Acessos: lista de usuários da clínica (e-mails ocultados neste manual).'),
+
+    ('p', 'O botão <b>Filtros</b> permite localizar usuários por <b>Status</b> (ativos/inativos), nome, <b>Perfil</b>, <b>Perfil secundário</b> e <b>Setor</b>. O <b>Log de acessos</b> registra cada entrada; acessos suspeitos (vários pontos de risco, como outro país ou aparelho novo) aparecem em vermelho com o selo "Acesso suspeito/grave", e ao clicar na linha se vê o detalhe (IP, região e aparelho).'),
+    ('img', 'c08d-acessos-filtros.png', 'Filtros da lista de Acessos: status, nome, perfil, perfil secundário e setor.'),
+
+    ('aviso', 'No <b>primeiro acesso</b> de um usuário, o sistema mostra uma mensagem de boas-vindas curta e uma apresentação guiada que destaca o menu <b>Documentação</b>. Quem ainda não tem <b>data de nascimento</b> cadastrada recebe, ao entrar, um aviso para preencher e salvar (é opcional: "Agora não" adia por 1 dia).'),
 
     ('h2', 'Criando um novo acesso'),
     ('p', 'Clique em <b>Novo</b> e informe o <b>CPF</b> da pessoa:'),
@@ -188,7 +204,10 @@ blocos = [
     ('p', 'A agenda do ClinSis é <b>mensal</b>: existe uma agenda para cada mês/ano. Ela fica em <b>Agenda</b> '
           'no menu. A lista mostra todas as agendas criadas, da mais recente para a mais antiga, e cada uma '
           'tem os botões abaixo.'),
-    ('img', 'b00-agenda-lista.png', 'Menu Agenda: lista de agendas por Ano/Mês, com os botões de cada uma.'),
+    ('p', 'Em cada linha, o botão azul <b>Acessar</b> abre a agenda do mês e o menu <b>Mais ações</b> reúne Relatório, Horários e Divergência Sessões. '
+          'A agenda do <b>mês atual</b> tem o selo <b>Atual</b> e a linha destacada em azul claro.'),
+    ('img', 'b00-agenda-lista.png', 'Menu Agenda: lista de agendas por Ano/Mês, com Acessar em destaque, o menu Mais ações e o mês atual marcado.'),
+    ('img', 'b00b-agenda-mais-acoes.png', 'Mais ações: Relatório, Horários e Divergência Sessões.'),
     ('tabelagen', ['Botão', 'Função'], [
         ['Relatório', 'Resumo do mês: quantidade de agendamentos, pacientes, sessões, presentes, ausentes e desmarcações.'],
         ['Horários', 'Define os horários de cada profissional naquele mês (antes o botão se chamava "Prof. horários").'],
@@ -311,12 +330,21 @@ blocos = [
     ('tabelagen', ['Botão', 'Função'], [
         ['Filtros', 'Filtra a grade por data, paciente, dias, profissionais, quantidade de sessões, método, cooparticipativo, particular e pelo status de cada sessão.'],
         ['Relatórios', 'Abre a janela das impressões do dia (veja a seção 8).'],
-        ['Exportar', 'Exporta a agenda para arquivo CSV (planilha): com os filtros aplicados ou a agenda inteira.'],
+        ['Exportar', 'Abre a janela "Exportar agenda (CSV)" com duas opções em seleção: <b>Com os filtros aplicados</b> (o que está na tela, considerando filtros e pesquisa rápida, de todas as páginas) ou <b>Agenda inteira</b> (todos os horários, sem filtro). Cada opção mostra a quantidade de registros; o botão Exportar fica no rodapé da janela.'],
         ['Pesquisa rápida', 'Encontra rapidamente um profissional ou paciente na agenda.'],
-        ['Colunas', 'Escolhe quais colunas ficam visíveis na grade; a escolha fica salva para o usuário.'],
+        ['Colunas', 'Escolhe quais colunas ficam visíveis na grade; a escolha fica salva para o usuário. Também traz a opção <b>Mostrar nomes longos completos, em mais de uma linha</b>: desmarcada (padrão), Paciente, Profissional, Plano e Programa ficam em uma linha só, com "..." no fim quando o nome é longo, e o nome inteiro aparece ao passar o mouse (no celular, na seta ao lado da hora).'],
+        ['Enviar lembretes', 'Abre a página "WhatsApp - Enviar lembretes", com os pacientes que têm horário na data escolhida (veja abaixo). Antes se chamava "WhatsApp do dia".'],
         ['Somente vagos', 'Mostra só os horários sem paciente.'],
         ['Anterior / Próxima agenda', 'Setas para navegar entre os meses.'],
     ], [4, 13.5]),
+    ('h2', 'Enviar lembretes: envio manual pela agenda'),
+    ('p', 'O botão <b>Enviar lembretes</b> abre a página <b>WhatsApp - Enviar lembretes</b>. Ela lista, <b>uma linha por paciente</b>, quem tem agendamento na data escolhida (setas trocam o dia, "Hoje" volta para hoje e o campo Paciente filtra pelo nome), com o celular e os <b>horários e profissionais</b> do paciente naquele dia. O botão verde <b>Enviar</b> abre o WhatsApp no navegador já com a mensagem pronta; <b>o envio é feito por você</b>, o sistema não manda nada sozinho. Paciente com mais de um agendamento no dia recebe uma única mensagem. <b>O envio só é liberado para hoje e para amanhã</b>; nas outras datas a tela serve só para consulta.'),
+    ('img', 'd13-whatsapp-do-dia.png', 'WhatsApp - Enviar lembretes: pacientes da data com celular, horários e o botão Enviar (em datas que não são hoje nem amanhã, só consulta).'),
+    ('p', 'O texto da mensagem é configurável em <b>Definir mensagem</b>. Clique nas <b>variáveis</b> para inserir no cursor: [nm] nome da clínica, [pa] nome do paciente, [dt] data da consulta, [hr] horários, [pr] profissionais, [ag] horário e profissional de cada agendamento e [br] quebra de linha. O botão <b>Pré-visualizar</b> mostra a mensagem com valores de exemplo (para paciente com um agendamento e com vários), <b>Restaurar padrão</b> volta ao texto original, e uma variável que não existe é avisada e bloqueia o salvamento.'),
+    ('img', 'd14-whatsapp-definir-mensagem.png', 'Definir mensagem: texto, botão Pré-visualizar e a lista de variáveis clicáveis.'),
+    ('img', 'd10-colunas.png', 'Janela "Colunas visíveis": marque as colunas da grade e, se preferir, os nomes longos completos em mais de uma linha.'),
+    ('img', 'd11-exportar.png', 'Janela "Exportar agenda (CSV)": escolha entre exportar com os filtros aplicados ou a agenda inteira.'),
+    ('aviso', 'No computador, as linhas da grade são mais baixas (mais horários por tela). No celular e no tablet (toque) a altura continua a mesma, mais confortável para o dedo.'),
     ('img', 'd08-filtros.png', 'Filtros da grade de agendamento.'),
 
     # ------------------------------------------------------------------ 8
@@ -330,7 +358,7 @@ blocos = [
         ['Horários do paciente (PDF)', 'Acessar → engrenagem da linha → Horários Pac.', 'Folha do paciente com os dias, horários e profissionais do mês. Serve para entregar ao paciente ou responsável.'],
         ['Exportar agenda (CSV)', 'Acessar → Exportar', 'Leva a agenda para planilha, com filtros ou completa, para análises próprias.'],
         ['Relatório da Agenda (tela)', 'Agenda → Relatório (na linha do mês)', 'Resumo do mês: agendamentos, pacientes, sessões, presentes, ausentes e desmarcações, por profissional ou todos.'],
-        ['Relatórios de Agenda (menu Relatórios)', 'Relatórios → Agenda', 'Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária e Atendimentos Sequenciais, com filtros próprios.'],
+        ['Relatórios de Agenda (menu Relatórios)', 'Relatórios → Agenda', 'Marcação Sessão Dia, Sessões Faturamento, Qtd. Marcação Agenda, Presença Diária, Atendimentos Sequenciais e Graf. Presença (gráfico de presença, agora também neste painel), com filtros próprios.'],
     ], [4.4, 4.6, 8.5]),
 
     ('h2', 'Relatórios do dia (Agenda → Acessar → Relatórios)'),

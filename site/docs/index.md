@@ -16,6 +16,7 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 - [Contas a Pagar](financeiro/contas-a-pagar.md)
 - [Contas a Receber](financeiro/contas-a-receber.md)
 - [Movimentos Financeiros](financeiro/movimentos-financeiros.md)
+- [Conciliação Bancária (OFX)](financeiro/conciliacao-bancaria-ofx.md)
 - [Módulo de Caixa](financeiro/modulo-de-caixa.md)
 - [Tabela de Valores para Pagamento](financeiro/tabela-de-precos-pagamento.md)
 - [Tabela de Valores para Cobrança](financeiro/tabela-de-precos-cobranca.md)
@@ -28,7 +29,12 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 ## Cobrança e Pagamento
 
 - [Cobrança de Paciente](cobranca-pagamento/cobranca-de-paciente.md)
+- [Previsão de Faturamento da Agenda](cobranca-pagamento/previsao-de-faturamento.md)
 - [Pagamento de Profissionais](cobranca-pagamento/pagamento-de-profissionais.md)
+
+## Agenda e Atendimento
+
+- [WhatsApp - lembretes e confirmações](agenda-atendimento/whatsapp.md)
 
 ## Contrato
 

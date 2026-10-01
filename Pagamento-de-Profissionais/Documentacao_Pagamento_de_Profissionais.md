@@ -2,11 +2,11 @@
 
 _Calcular e gerar, de uma vez, o repasse de todos os profissionais do mês_
 
-Versão 1.1 — 26/09/2026
+Versão 1.2 — 29/09/2026
 
 Pagamento de Profissionais calcula, a partir dos atendimentos realizados no mês, quanto a clínica deve repassar para cada profissional — e gera a Conta a Pagar correspondente com um clique, em vez de lançar uma conta manual pra cada profissional. Para isso funcionar, é preciso configurar ANTES uma Tabela de Valores para Pagamento (Tabelas Aux. → Tab. Pagamento), com o valor pago por sessão/atendimento e vinculando o mês (Agenda) que vai usar essa tabela.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/0dVv7ctVDPE](https://youtu.be/0dVv7ctVDPE)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/PkvsWwKU2nM](https://youtu.be/PkvsWwKU2nM)
 
 ---
 
@@ -161,6 +161,21 @@ _Tela inicial do relatório analítico, antes de aplicar o filtro de Agenda._
 _Mesma Agenda (Setembro/2026) do exemplo do relatório sintético, agora aberta paciente a paciente: o total geral (R$ 67,00) bate exatamente com o valor do sintético, só que dividido em várias linhas._
 
 Serve como tela de conferência/auditoria antes de gerar o pagamento em lote pelo relatório sintético: permite ver, paciente por paciente, exatamente quais sessões estão entrando no valor total de cada profissional — útil para investigar uma diferença inesperada (por exemplo, uma sessão que não deveria contar, ou um paciente que faltou e foi contabilizado por engano) antes de confirmar a geração da conta, ou para exportar e conferir com uma agenda física.
+
+## Exportar para planilha (CSV)
+
+Os dois relatórios (sintético e analítico) têm o botão Exportar, logo acima da tabela. Ele gera um arquivo CSV, que abre no Excel, com todos os registros do filtro aplicado — não só os da página exibida. Aplique antes os filtros (agenda, profissional, status e "Considera Marcação") e clique em Exportar. Se o filtro não tiver nenhum registro, nenhum arquivo é gerado.
+
+![Relatório sintético com o botão Exportar acima da tabela.](24-sintetico-exportar.png)
+
+_Relatório sintético com o botão Exportar acima da tabela._
+
+| Relatório | Nome do arquivo | Colunas do CSV |
+|---|---|---|
+| Sintético (agrupado) | pagamento_profissional_agrupado_(data e hora).csv | Profissional, Especialidade, QtdPacientes, Sessoes, SessoesPagar, ValorSessao, ValorTotal e ContaPagarGerada (Sim/Não). |
+| Analítico | pagamento_profissional_(data e hora).csv | Profissional, Especialidade, Paciente, Sessoes, SessoesPagar, ValorSessao e ValorTotal. |
+
+> ⚠️ O arquivo usa ponto e vírgula como separador e os valores no formato brasileiro (ex.: 136,00). As mesmas regras da tela valem na exportação: a agenda precisa estar vinculada a uma Tabela de Valores para Pagamento; caso contrário aparece a mensagem "Agenda não vinculada a uma conf. Pagamento". Exportar não gera Conta a Pagar: serve só para conferência e controle.
 
 ## Gerando a Conta a Pagar
 

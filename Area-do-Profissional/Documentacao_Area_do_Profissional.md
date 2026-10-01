@@ -2,11 +2,11 @@
 
 _O que o profissional de saúde vê e pode fazer no ClinSis_
 
-Versão 1.1 — 24/09/2026
+Versão 1.4 — 01/10/2026
 
 Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
 
-Vídeo narrado desta rotina: `video-area-do-profissional-com-legenda.mp4 (ou -sem-legenda.mp4)`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/TAq1nN4P4DM](https://youtu.be/TAq1nN4P4DM)
 
 ---
 
@@ -46,13 +46,13 @@ Logo abaixo aparece uma faixa com os números de hoje (disponível para todas as
 
 # 2. Agenda
 
-Menu Agenda: lista de Ano/Mês. Em cada linha, o botão Acessar abre a Agenda resumida do mês. Se a clínica não for consultório, aparece também o link Ver lista simples de pacientes do dia.
+Menu Agenda: lista de Ano/Mês. Em cada linha, o botão verde Minha agenda abre a Agenda resumida do mês; o mês atual tem o selo Atual e a linha destacada. Se a clínica não for consultório, aparece também o link Ver lista simples de pacientes do dia.
 
-![Menu Agenda do profissional: só o botão Acessar por mês.](p02-agenda.png)
+![Menu Agenda do profissional: só o botão Minha agenda por mês, com o mês atual marcado.](p02-agenda.png)
 
-_Menu Agenda do profissional: só o botão Acessar por mês._
+_Menu Agenda do profissional: só o botão Minha agenda por mês, com o mês atual marcado._
 
-> ⚠️ O profissional não pode criar nem remover agendas, e não vê os botões Relatório, Horários, Acessar (grade de agendamento) e Divergência Sessões. Esses são do administrador e do atendente.
+> ⚠️ O profissional não pode criar nem remover agendas, e não vê o botão Acessar (grade de agendamento) nem o menu Mais ações (Relatório, Horários e Divergência Sessões). Esses são do administrador e do atendente.
 
 ## Agenda resumida
 
@@ -76,11 +76,15 @@ Criar prontuário a partir da agenda: dê dois cliques no paciente (ou clique em
 
 ## Pacientes do dia (Agenda detalhada)
 
-Acesse pelo link Agenda detalhada da Home, ou Ver lista simples de pacientes do dia na Agenda. Escolha a data e clique em Pesquisar. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão Marcar Presença em cada linha.
+Acesse pelo link Agenda detalhada da Home, ou Ver lista simples de pacientes do dia na Agenda. Escolha a data e clique em Pesquisar. A lista mostra dia, hora, paciente, celular, situação da guia, operadora, programa, observação e o status das sessões S1 a S5. Se a clínica permitir, aparece o botão Marcar Presença em cada linha. Quando a clínica usa o envio automático de WhatsApp, o link Respostas WhatsApp, ao lado de Pesquisar, abre as respostas dos seus pacientes de ontem, hoje e amanhã: confirmados, não vão e sem resposta.
 
-![Pacientes por Dia: lista do dia com status das sessões e o botão Marcar Presença.](p03b-pacientes-dia.png)
+![Pacientes por Dia: lista do dia com status das sessões, o botão Marcar Presença e o link Respostas WhatsApp (dados ocultados neste manual).](p03b-pacientes-dia.png)
 
-_Pacientes por Dia: lista do dia com status das sessões e o botão Marcar Presença._
+_Pacientes por Dia: lista do dia com status das sessões, o botão Marcar Presença e o link Respostas WhatsApp (dados ocultados neste manual)._
+
+![Respostas WhatsApp: abas Ontem, Hoje e Amanhã com os contadores de confirmados, não vão e sem resposta.](p03c-respostas-whatsapp.png)
+
+_Respostas WhatsApp: abas Ontem, Hoje e Amanhã com os contadores de confirmados, não vão e sem resposta._
 
 # 3. Pacientes
 
@@ -203,9 +207,11 @@ Menu Perfil: cuidar dos dados da sua conta. Mostra nome, e-mail, situação (Ati
 
 _Perfil: dados da conta (e-mail ocultado neste manual) e as opções Alterar Dados e Alterar Senha._
 
+Abaixo dos dados da conta, o quadro Últimos acessos, em largura total, mostra em cartões lado a lado os 5 acessos mais recentes ao seu usuário, com data e hora, o acesso atual destacado, a rede, o aparelho e o IP. Se algum acesso não foi feito por você, altere a senha em Alterar Senha e avise o administrador.
+
 | Opção | Como usar |
 |---|---|
-| Alterar Dados | Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. |
+| Alterar Dados | Altere Nome, E-mail e Data de nascimento. Digite sua senha para confirmar. Nome e data de nascimento também atualizam o seu cadastro de profissional. |
 | Alterar Senha | Informe a senha atual, a nova senha e repita a nova senha. |
 
 # 8. Resumo: o que o profissional não faz

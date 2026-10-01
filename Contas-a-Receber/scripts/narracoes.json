@@ -1,0 +1,52 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais, em uma ou várias parcelas, e os que chegam de outras rotinas, como Checkin com pagamento, fechamento de Contrato e Cobrança de Paciente. Também exige Plano de Conta e Centro de Custo cadastrados."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "00-lista-inicial.png",
+  "texto": "Cinco caixas resumem a situação: Em Aberto, Vencido, Vence Hoje, A Vencer e Recebido no Mês. A barra de ações traz o botão Novo, o botão Filtros com contador e X para limpar, o botão de atualizar e o Exportar. Diferente de Contas a Pagar, a lista começa vazia: é preciso abrir os Filtros e buscar."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03-filtro-rapido.png",
+  "texto": "Ao lado do botão Filtros, o Filtro rápido, com atalho F2, filtra a lista pelo nome da pessoa e pelo valor, junto com os filtros da tela. Um contador mostra quando está ativo, e o X limpa."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "02-resultado-busca.png",
+  "texto": "Ao abrir os Filtros, é preciso informar um paciente ou escolher uma opção de mais filtros, como o número do documento. Ao buscar, as parcelas aparecem, com a coluna Origem preenchida quando o título veio de um contrato."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "04-parcela-preenchida.png",
+  "texto": "O botão Novo abre o assistente de parcelas automáticas. Escolha o paciente, o plano de contas e o centro de custo, informe a quantidade de parcelas, o vencimento base, e o valor por parcela ou o valor total. O dia do vencimento base não pode ser maior que vinte e quatro."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "05-preview-parcelas.png",
+  "texto": "Ao gerar as parcelas, uma prévia mostra cada uma com seu vencimento e valor, antes de confirmar. As datas seguintes são calculadas somando um mês a cada parcela."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "06-apos-confirmar.png",
+  "texto": "Depois de confirmar, as parcelas já estão lançadas na lista."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "09-baixa-preenchida.png",
+  "texto": "O botão verde com o cifrão abre a tela de Acertos e Recebimentos. Informe o valor, o método de pagamento e a conta financeira. Em cartão de crédito, também se escolhe a quantidade de parcelas."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "09b-confirmacao.png",
+  "texto": "Ao lançar um pagamento que quita a parcela, o sistema pede confirmação e avisa que a parcela vai ficar Baixada."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "10-apos-lancar-baixa.png",
+  "texto": "Depois de confirmar, o valor restante zera, o recebimento aparece na tabela de acertos, e é possível emitir o recibo para o paciente."
+ }
+]

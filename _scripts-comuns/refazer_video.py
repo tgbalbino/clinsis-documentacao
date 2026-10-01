@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 SCRIPTS, TITULO, SLUG = os.path.abspath(sys.argv[1]), sys.argv[2], sys.argv[3]
-PIPE = os.path.join(SCRIPTS, "pipeline-video")
+PIPE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pipeline-video")
 MARCA = os.path.join(PIPE, "marca")
 ENTREGA = os.path.join(SCRIPTS, "entrega")
 PY = sys.executable

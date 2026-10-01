@@ -1,0 +1,77 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "00-painel-whatsapp.png",
+  "texto": "O ClinSis avisa os pacientes dos seus agendamentos por WhatsApp de duas formas. No envio manual, a recepção abre o WhatsApp com a mensagem pronta e envia com um clique. No envio automático, o sistema usa a API oficial da Meta e envia sozinho o lembrete do dia seguinte. Tudo fica em Tabelas Aux, WhatsApp e WhatsApp Meta, e só o administrador configura."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "01-manual-lembretes-do-dia.png",
+  "texto": "No envio manual, abra Enviar lembretes, escolha a data e veja os pacientes agendados com seus horários. Clique em Enviar e o WhatsApp abre com a mensagem pronta. O envio é feito por você, e só é liberado para hoje e para amanhã. Nas outras datas a tela serve apenas para consulta. O texto da mensagem é definido em Definir mensagem."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03-meta-configuracao.png",
+  "texto": "Para o envio automático, a clínica precisa ter estrutura na Meta: uma conta e um portfólio empresarial, um aplicativo com o produto WhatsApp, uma conta do WhatsApp Business, um número de telefone comercial, uma forma de pagamento, um token de acesso e um template aprovado. Guarde o identificador da conta, o identificador do número e o token, pois serão informados no ClinSis."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "03-meta-configuracao.png",
+  "texto": "O número deve pertencer à clínica, com código do país e DDD, e precisar receber o código de verificação por SMS ou ligação. Ele não pode estar ativo no aplicativo WhatsApp comum. O token permanente é criado por um usuário do sistema nas configurações do negócio. As telas da Meta mudam, então siga a documentação oficial deles quando houver diferença."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "03-meta-configuracao.png",
+  "texto": "No ClinSis, em Tabelas Aux, WhatsApp Meta, aba Configuração, um quadro mostra o que falta para ativar. Informe a conta da Meta e o token, ligue o lembrete de agendamento, escolha o horário de geração e o template. Depois clique em Testar conexão e Salvar configuração."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "04-meta-ver-texto.png",
+  "texto": "O botão Ver texto mostra como o paciente recebe a mensagem, com o nome, a clínica, a data, os horários e o botão Confirmar meus horários. O texto aprovado pela Meta não pode ser alterado; para mudar, crie um novo template."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "05-meta-filtros.png",
+  "texto": "Em Não enviar lembrete quando, marque os valores dos agendamentos que devem ser ignorados, como atendimento particular, plano, especialidade ou tipo de marcação."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "06-meta-simulacao.png",
+  "texto": "Antes de ligar, use Simular próximos envios. Ele mostra quem receberia o lembrete e avisa quantos pacientes não receberão por falta de autorização. A simulação não envia nada."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "07-meta-templates.png",
+  "texto": "Na aba Templates ficam os modelos da conta. Sincronize para trazer da Meta a situação atual. Só template aprovado envia, e o lembrete deve ser da categoria Utilidade. Vincule o template aprovado à rotina de lembrete de agendamento."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "11-paciente-aba-whatsapp.png",
+  "texto": "O sistema só envia para quem autorizou. No cadastro do paciente, em Dados principais, no campo Celular para WhatsApp, informe o celular e marque a autorização. Sem ela, aparece Autorização pendente e nada é enviado. Registre a autorização somente com o consentimento do paciente."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "10-pacientes-lista.png",
+  "texto": "Na lista de pacientes, a coluna do WhatsApp mostra com um visto quem autorizou e com um X quem não autorizou. Há também um filtro para separar os dois grupos."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "08-meta-disparos.png",
+  "texto": "O paciente recebe um botão que abre uma página de confirmação. Nela ele marca, em cada horário, Vou comparecer ou Não poderei ir. O link expira em poucos dias. Para acompanhar, veja Disparos, com o resumo de cada dia."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "12-agenda-respostas-whatsapp.png",
+  "texto": "Na Agenda, o botão Respostas WhatsApp abre as respostas dos pacientes de ontem, hoje e amanhã, com confirmados, não vão e sem resposta. Se uma mensagem falhar, a linha mostra o motivo em português e o botão Reenviar. Também há Reenviar falhas, para o dia todo. O reenvio vale para hoje e amanhã, gera um link novo, e cada mensagem pode ser reenviada até três vezes."
+ },
+ {
+  "audio": "14.wav",
+  "imagem": "09-meta-mensagens.png",
+  "texto": "Em Mensagens, cada envio mostra o status: pendente, enviada, entregue, lida ou falha, e o motivo do erro. O erro 131042 indica problema de pagamento na conta da Meta. O erro 131058 acontece ao usar o template de exemplo hello world. Corrija na Meta e tente novamente."
+ },
+ {
+  "audio": "15.wav",
+  "imagem": "09-meta-mensagens.png",
+  "texto": "Como boas práticas, faça uma homologação com poucos pacientes antes de ligar para todos, guarde o token com segurança, monitore os disparos e respeite sempre a autorização do paciente. O envio manual continua disponível como alternativa."
+ }
+]
