@@ -1,0 +1,52 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "01-recepcao-segunda-feira.png",
+  "texto": "Segunda-feira, sete e quarenta. O telefone não para, a agenda está cheia de rasuras e ainda faltam pacientes para confirmar."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "02-custo-da-desorganizacao.png",
+  "texto": "Cada falta é um horário perdido. Cada planilha paralela, uma chance de erro. E ninguém sabe ao certo como foi o mês da clínica ou do consultório."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "10-confirmacao-paciente-celular.png",
+  "texto": "E se a clínica ou o consultório soubesse, antes de o dia começar, quem vem e quem não vem? Os lembretes saem sozinhos pelo WhatsApp. O paciente confirma com um toque, e a agenda se atualiza."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "11-agenda-do-dia.png",
+  "texto": "A agenda reúne horários por profissional, sessões e remarcações em uma só tela."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "15-nova-agenda-copiar-anterior.png",
+  "texto": "E a cada novo mês, com um clique, os horários de cada profissional e os pacientes fixos passam para o mês seguinte, nos mesmos dias e horários. Você só ajusta as exceções."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "12-contas-a-receber.png",
+  "texto": "Cobranças, recebimentos e fluxo de caixa organizados, sem planilhas paralelas."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "16-prontuario-tipos.png",
+  "texto": "O prontuário digital reúne anamnese, evolução diária, relatórios de acompanhamento, declarações e outros documentos, nos modelos que a sua clínica ou consultório define. Tudo ao alcance de qualquer lugar."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "14-dashboard.png",
+  "texto": "E os indicadores de presença, absenteísmo e ocupação mostram à gestão como a clínica ou o consultório está indo."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "05-clinica-organizada.png",
+  "texto": "A recepção respira. Os profissionais sabem o que vem pela frente. E quem gere a clínica ou o consultório enxerga o todo, sem achismo e sem correria. Menos burocracia. Mais tempo para cuidar. Tudo isso reunido para organizar a sua clínica ou consultório."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "06-tela-final-clinsis.png",
+  "texto": "ClinSis. Gestão para clínicas e consultórios. Conheça mais em clinsis ponto com ponto br, barra sobre."
+ }
+]
