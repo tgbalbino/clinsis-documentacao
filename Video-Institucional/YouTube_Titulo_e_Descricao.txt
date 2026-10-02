@@ -1,0 +1,56 @@
+TÍTULO E DESCRIÇÃO PARA O YOUTUBE: Vídeo institucional ClinSis
+======================================================================
+ARQUIVO DO VÍDEO: video-institucional-clinsis.mp4  (aprox. 2 min)
+
+TÍTULO (até 100 caracteres):
+ClinSis | Gestão para clínicas e consultórios: agenda, WhatsApp, financeiro e prontuário
+
+(Alternativas)
+- Menos burocracia, mais tempo para cuidar | ClinSis para clínicas e consultórios
+- ClinSis: organize a rotina da sua clínica ou consultório em um só lugar
+
+DESCRIÇÃO (copiar e colar):
+Segunda-feira, 7h40. O telefone não para, a agenda está cheia de rasuras e ainda faltam pacientes para confirmar. Conheça o ClinSis, o sistema que organiza a rotina da sua clínica ou consultório em um só lugar.
+
+Neste vídeo:
+• Confirmação de agendamentos por WhatsApp: lembretes automáticos e link para o paciente confirmar presença ou avisar que não poderá ir
+• Agenda por profissional, com sessões e remarcações em uma só tela
+• A cada novo mês, copie a agenda anterior com um clique: horários dos profissionais e pacientes fixos passam para o mês seguinte
+• Cobranças, recebimentos e fluxo de caixa organizados
+• Prontuário digital: anamnese, evolução diária, relatórios de acompanhamento, declarações e outros documentos, nos modelos que a sua clínica ou consultório define
+• Indicadores de presença, absenteísmo e ocupação para a gestão
+• Tudo digital e acessível de qualquer lugar
+
+Capítulos:
+0:00 A rotina que desorganiza a clínica ou o consultório
+0:24 Confirmação por WhatsApp
+0:39 Agenda, cobranças e recebimentos
+1:06 Prontuário digital
+1:22 Indicadores e menos burocracia
+1:49 Conheça o ClinSis
+
+Quer conhecer ou conversar com a gente? Acesse:
+https://www.clinsis.com.br/sobre
+
+Manuais em PDF e vídeos de cada rotina do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+Sobre este vídeo: as telas usam dados fictícios de demonstração; as ilustrações e as personagens são fictícias e a narração é feita com voz sintética (Google Cloud Text-to-Speech).
+
+Music: "Sport Rock Racing" by Infraction
+https://www.youtube.com/@Infraction
+
+#ClinSis #GestãoDeClínicas #Consultório #AgendaOnline #ProntuárioEletrônico
+
+----------------------------------------------------------------------
+TAGS (campo "Tags" do YouTube Studio, separadas por vírgula):
+ClinSis, sistema para clínicas, sistema para consultórios, gestão de clínicas, software para clínica, agenda online, confirmação por WhatsApp, prontuário eletrônico, financeiro para clínicas
+
+CONFIGURAÇÕES SUGERIDAS NO YOUTUBE STUDIO:
+- Visibilidade: Público (ou Não listado, se for divulgar só pelo botão da página; os dois abrem pelo link).
+- Público: "Não, não é conteúdo para crianças".
+- Conteúdo alterado ou sintético: marcar "Sim" (narração por voz sintética).
+- Categoria: Ciência e tecnologia (ou Educação).
+- Idioma: Português (Brasil).
+- Miniatura sugerida: a ilustração "Menos burocracia. Mais tempo para cuidar." (scripts/ilustracoes/05-clinica-organizada.png), 1280x720.
+- Depois de publicar: copie o link do vídeo (https://youtu.be/...) e troque na página Sobre (botão "Conhecer recursos"): FrontClinica/src/app/Paginas/Externo/sobre-clinsis/sobre-clinsis.component.ts, constante "video".
