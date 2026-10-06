@@ -44,6 +44,7 @@ ROTINAS = [
     ("Movimentos-Financeiros", "Financeiro", "financeiro", "Movimentos Financeiros"),
     ("Modulo-de-Caixa", "Financeiro", "financeiro", "Módulo de Caixa"),
     ("Conciliacao-Bancaria-OFX", "Financeiro", "financeiro", "Conciliação Bancária (OFX)"),
+    ("Liquidacao-Financeira-Cheque-e-Cartao", "Financeiro", "financeiro", "Controle de Cheques e Liquidação Financeira"),
     ("Dashboard-Financeiro-e-Fluxo-Caixa", "Financeiro", "financeiro", "Dashboard Financeiro e Fluxo de Caixa"),]
 
 # Links do YouTube: preencha aqui quando os vídeos forem publicados.
@@ -109,6 +110,7 @@ INTRO_SITE = {
     "Contas-a-Receber": "Controle dos valores que pacientes e convênios devem à clínica: cadastro das parcelas, acompanhamento de vencimentos e baixa (recebimento). Os recebimentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.",
     "Movimentos-Financeiros": "Extrato de cada Conta Financeira: lista todas as entradas e saídas já realizadas, vindas de baixas de contas, caixa e transferências. Serve para conferir o saldo, conciliar com o banco e fazer transferências entre contas.",
     "Modulo-de-Caixa": "Controle diário do caixa da clínica: abertura, lançamentos manuais (suprimento e sangria), recebimentos e pagamentos automáticos, fechamento e histórico. Garante que o dinheiro em caixa confira ao fim de cada dia ou turno.",
+    "Liquidacao-Financeira-Cheque-e-Cartao": "Controle de cheques (recebidos e emitidos) e de cartão: o título é quitado na baixa, mas o dinheiro só entra na conta quando o cheque é compensado ou a parcela do cartão é repassada. Um cheque pode pagar vários títulos; a devolução gera estorno e nova cobrança.",
     "Conciliacao-Bancaria-OFX": "Confere o extrato do banco com os Movimentos Financeiros do ClinSis a partir de um arquivo OFX exportado do banco. O sistema sugere os pares e aponta divergências, garantindo que o saldo do sistema reflita o saldo real da conta.",
     "Dashboard-Financeiro-e-Fluxo-Caixa": "O Dashboard é um painel que reúne, numa única tela, os principais números de um período em indicadores, tabelas e gráficos, para que o gestor entenda a situação sem montar relatórios manualmente. O Dashboard Financeiro resume o que entrou, o que saiu, o resultado e o saldo de cada conta, com rankings e comparativo mensal. O Fluxo de Caixa mostra a movimentação por dia, semana ou mês e projeta o saldo futuro com base nas contas a pagar e a receber em aberto. Servem para acompanhar a saúde financeira, antecipar faltas de caixa e apoiar decisões. O manual explica cada indicador e de onde ele vem no sistema.",
 }

@@ -1,0 +1,275 @@
+1
+00:00:00,400 --> 00:00:04,235
+Quando o paciente paga com cheque ou com cartão de crédito,
+
+2
+00:00:04,235 --> 00:00:09,629
+o título é quitado na hora, mas o dinheiro só chega à conta da clínica dias depois.
+
+3
+00:00:09,629 --> 00:00:11,839
+O ClinSis controla esse intervalo.
+
+4
+00:00:11,839 --> 00:00:14,634
+Em Tabelas Auxiliares, Formas de Pagamento,
+
+5
+00:00:14,634 --> 00:00:18,859
+cada forma escolhe o seu comportamento: o dinheiro entra na hora,
+
+6
+00:00:18,859 --> 00:00:23,928
+o cheque aguarda a compensação, e o cartão é repassado em parcelas pelo banco.
+
+7
+00:00:25,028 --> 00:00:29,269
+Na baixa de uma conta a receber, escolha a forma Cheque.
+
+8
+00:00:29,269 --> 00:00:34,872
+Aparece o quadro do cheque recebido: banco, agência, conta, série, número,
+
+9
+00:00:34,872 --> 00:00:39,112
+valor do cheque, a data de bom para e o CPF do emitente.
+
+10
+00:00:39,112 --> 00:00:43,882
+Ao digitar o CPF, o sistema mostra o nome da pessoa cadastrada.
+
+11
+00:00:43,882 --> 00:00:48,501
+Aqui o cheque é de setecentos reais, para pagar dois títulos,
+
+12
+00:00:48,501 --> 00:00:52,438
+e esta primeira baixa é de quatrocentos e cinquenta.
+
+13
+00:00:53,538 --> 00:00:58,824
+Ao confirmar, o título fica quitado, mas nenhum valor entra na conta ainda.
+
+14
+00:00:58,824 --> 00:01:02,488
+O cheque fica em carteira, aguardando a compensação.
+
+15
+00:01:03,588 --> 00:01:08,197
+Na baixa do segundo título, se o mesmo cheque for digitado de novo,
+
+16
+00:01:08,197 --> 00:01:09,573
+o sistema reconhece.
+
+17
+00:01:09,573 --> 00:01:14,113
+O cheque é identificado por banco, agência, conta, série e número,
+
+18
+00:01:14,113 --> 00:01:15,971
+ignorando zeros à esquerda,
+
+19
+00:01:15,971 --> 00:01:22,987
+então zero zero zero quatrocentos e oitenta e dois é o mesmo cheque que quatrocentos e oitenta e dois.
+
+20
+00:01:22,987 --> 00:01:26,289
+A tela avisa e oferece o botão Usar este cheque.
+
+21
+00:01:27,389 --> 00:01:32,831
+Com o cheque já cadastrado selecionado, o saldo disponível aparece na lista.
+
+22
+00:01:32,831 --> 00:01:37,771
+O valor desta baixa, duzentos e cinquenta reais, é abatido do cheque,
+
+23
+00:01:37,771 --> 00:01:39,991
+que passa a pagar dois títulos.
+
+24
+00:01:41,091 --> 00:01:46,993
+Em Financeiro, Movimentos, Cheques ficam todos os cheques recebidos e emitidos,
+
+25
+00:01:46,993 --> 00:01:52,670
+com o valor, o saldo ainda sem título, a quantidade de títulos e o bom para.
+
+26
+00:01:52,670 --> 00:01:57,152
+Dá para filtrar por situação, tipo, número, banco, emitente,
+
+27
+00:01:57,152 --> 00:01:59,319
+período e ver só os vencidos.
+
+28
+00:02:00,419 --> 00:02:05,242
+O botão Ver abre o detalhe do cheque, com os dois títulos que ele pagou.
+
+29
+00:02:06,342 --> 00:02:11,996
+Na tela de Liquidações Financeiras, as linhas de cheque mostram o botão Ver cheque.
+
+30
+00:02:11,996 --> 00:02:16,288
+O cheque é compensado, devolvido e cancelado pela tela Cheques,
+
+31
+00:02:16,288 --> 00:02:18,741
+de uma só vez para todos os títulos.
+
+32
+00:02:19,841 --> 00:02:23,427
+Quando o banco compensar o cheque, clique em Compensar,
+
+33
+00:02:23,427 --> 00:02:26,621
+informe a data e a conta onde ele foi depositado.
+
+34
+00:02:26,621 --> 00:02:32,098
+O cheque só pode ser compensado quando todo o seu valor estiver vinculado a títulos.
+
+35
+00:02:33,198 --> 00:02:37,440
+Em Movimentos Financeiros aparece um único lançamento de entrada,
+
+36
+00:02:37,440 --> 00:02:41,486
+pelo valor total do cheque, mesmo ele tendo pago dois títulos.
+
+37
+00:02:41,486 --> 00:02:45,010
+Fica pronto para a conciliação com o extrato do banco.
+
+38
+00:02:46,110 --> 00:02:51,234
+Se o banco devolver o cheque, clique em Devolver, informe a data e o motivo.
+
+39
+00:02:51,234 --> 00:02:53,392
+Se ele já tinha sido compensado,
+
+40
+00:02:53,392 --> 00:02:57,303
+o sistema cria um movimento inverso e preserva o original.
+
+41
+00:02:57,303 --> 00:02:59,326
+Os títulos continuam quitados,
+
+42
+00:02:59,326 --> 00:03:03,237
+e o sistema pode gerar uma nova cobrança para cada título,
+
+43
+00:03:03,237 --> 00:03:07,080
+com o vencimento que você escolher e uma tarifa opcional,
+
+44
+00:03:07,080 --> 00:03:09,103
+somada só à primeira cobrança.
+
+45
+00:03:10,203 --> 00:03:15,766
+As novas cobranças aparecem em Contas a Receber, com a origem Cobrança de devolução,
+
+46
+00:03:15,766 --> 00:03:17,753
+para o paciente pagar de novo.
+
+47
+00:03:18,853 --> 00:03:24,310
+Um cheque em carteira pode ser alterado: valor, emissão, bom para e observação,
+
+48
+00:03:24,310 --> 00:03:26,451
+sem mudar a identificação dele.
+
+49
+00:03:26,451 --> 00:03:31,287
+E um cheque lançado por engano, sem nenhum título, pode ser cancelado,
+
+50
+00:03:31,287 --> 00:03:34,741
+liberando a mesma numeração para um novo cadastro.
+
+51
+00:03:35,841 --> 00:03:39,369
+Na conta a pagar, a forma Cheque pede a conta sacada,
+
+52
+00:03:39,369 --> 00:03:44,829
+que é a conta bancária da clínica contra a qual o cheque é emitido, além da série,
+
+53
+00:03:44,829 --> 00:03:46,427
+do número e do bom para.
+
+54
+00:03:46,427 --> 00:03:49,955
+Banco, agência e conta do cheque vêm da conta sacada.
+
+55
+00:03:51,055 --> 00:03:55,980
+Quando o fornecedor descontar o cheque, use Compensar na tela Cheques.
+
+56
+00:03:55,980 --> 00:04:01,257
+O valor sai automaticamente da conta sacada, sem precisar escolher a conta.
+
+57
+00:04:02,357 --> 00:04:04,425
+No cartão de crédito parcelado,
+
+58
+00:04:04,425 --> 00:04:09,762
+a baixa mostra como o banco vai repassar: uma parcela por mês, conforme o prazo,
+
+59
+00:04:09,762 --> 00:04:13,431
+o intervalo e a taxa do contrato da forma de pagamento.
+
+60
+00:04:14,531 --> 00:04:17,400
+Cada parcela vira uma liquidação separada.
+
+61
+00:04:17,400 --> 00:04:22,182
+Quando o banco repassar uma parcela, clique em Liquidar naquela linha.
+
+62
+00:04:22,182 --> 00:04:26,554
+O sistema sugere o valor líquido, já descontada a taxa prevista,
+
+63
+00:04:26,554 --> 00:04:29,423
+e você confere com o que o banco creditou.
+
+64
+00:04:30,523 --> 00:04:33,563
+Cada parcela pode ser devolvida separadamente.
+
+65
+00:04:33,563 --> 00:04:39,182
+E não é possível cancelar a baixa de um título cujo cartão já teve parcela repassada,
+
+66
+00:04:39,182 --> 00:04:43,941
+nem a de um cheque já compensado: o sistema bloqueia e explica o motivo.
+
+67
+00:04:45,041 --> 00:04:49,938
+No Fluxo de Caixa, os cheques e as parcelas do cartão entram como previsto,
+
+68
+00:04:49,938 --> 00:04:53,333
+na data esperada, separados do que já foi realizado.
+
+69
+00:04:53,333 --> 00:04:56,859
+Assim a clínica enxerga o dinheiro que está a caminho.

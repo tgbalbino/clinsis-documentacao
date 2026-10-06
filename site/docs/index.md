@@ -52,5 +52,6 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 - [Movimentos Financeiros](financeiro/movimentos-financeiros.md)
 - [Módulo de Caixa](financeiro/modulo-de-caixa.md)
 - [Conciliação Bancária (OFX)](financeiro/conciliacao-bancaria-ofx.md)
+- [Controle de Cheques e Liquidação Financeira](financeiro/liquidacao-financeira-cheque-e-cartao.md)
 - [Dashboard Financeiro e Fluxo de Caixa](financeiro/dashboard-financeiro-e-fluxo-caixa.md)
 

@@ -1,0 +1,97 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "01-config-formas.png",
+  "texto": "Quando o paciente paga com cheque ou com cartão de crédito, o título é quitado na hora, mas o dinheiro só chega à conta da clínica dias depois. O ClinSis controla esse intervalo. Em Tabelas Auxiliares, Formas de Pagamento, cada forma escolhe o seu comportamento: o dinheiro entra na hora, o cheque aguarda a compensação, e o cartão é repassado em parcelas pelo banco."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "02-baixa-cheque-novo.png",
+  "texto": "Na baixa de uma conta a receber, escolha a forma Cheque. Aparece o quadro do cheque recebido: banco, agência, conta, série, número, valor do cheque, a data de bom para e o CPF do emitente. Ao digitar o CPF, o sistema mostra o nome da pessoa cadastrada. Aqui o cheque é de setecentos reais, para pagar dois títulos, e esta primeira baixa é de quatrocentos e cinquenta."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03-baixa-cheque-confirmacao.png",
+  "texto": "Ao confirmar, o título fica quitado, mas nenhum valor entra na conta ainda. O cheque fica em carteira, aguardando a compensação."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "04-cheque-duplicado.png",
+  "texto": "Na baixa do segundo título, se o mesmo cheque for digitado de novo, o sistema reconhece. O cheque é identificado por banco, agência, conta, série e número, ignorando zeros à esquerda, então zero zero zero quatrocentos e oitenta e dois é o mesmo cheque que quatrocentos e oitenta e dois. A tela avisa e oferece o botão Usar este cheque."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "05-cheque-da-carteira.png",
+  "texto": "Com o cheque já cadastrado selecionado, o saldo disponível aparece na lista. O valor desta baixa, duzentos e cinquenta reais, é abatido do cheque, que passa a pagar dois títulos."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "06-lista-cheques.png",
+  "texto": "Em Financeiro, Movimentos, Cheques ficam todos os cheques recebidos e emitidos, com o valor, o saldo ainda sem título, a quantidade de títulos e o bom para. Dá para filtrar por situação, tipo, número, banco, emitente, período e ver só os vencidos."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "07-detalhe-cheque.png",
+  "texto": "O botão Ver abre o detalhe do cheque, com os dois títulos que ele pagou."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "08-liquidacoes-cheque.png",
+  "texto": "Na tela de Liquidações Financeiras, as linhas de cheque mostram o botão Ver cheque. O cheque é compensado, devolvido e cancelado pela tela Cheques, de uma só vez para todos os títulos."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "09-compensar-cheque.png",
+  "texto": "Quando o banco compensar o cheque, clique em Compensar, informe a data e a conta onde ele foi depositado. O cheque só pode ser compensado quando todo o seu valor estiver vinculado a títulos."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "11-movimentos.png",
+  "texto": "Em Movimentos Financeiros aparece um único lançamento de entrada, pelo valor total do cheque, mesmo ele tendo pago dois títulos. Fica pronto para a conciliação com o extrato do banco."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "12-devolver-cheque.png",
+  "texto": "Se o banco devolver o cheque, clique em Devolver, informe a data e o motivo. Se ele já tinha sido compensado, o sistema cria um movimento inverso e preserva o original. Os títulos continuam quitados, e o sistema pode gerar uma nova cobrança para cada título, com o vencimento que você escolher e uma tarifa opcional, somada só à primeira cobrança."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "14-cobrancas-devolucao.png",
+  "texto": "As novas cobranças aparecem em Contas a Receber, com a origem Cobrança de devolução, para o paciente pagar de novo."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "23-alterar-cheque.png",
+  "texto": "Um cheque em carteira pode ser alterado: valor, emissão, bom para e observação, sem mudar a identificação dele. E um cheque lançado por engano, sem nenhum título, pode ser cancelado, liberando a mesma numeração para um novo cadastro."
+ },
+ {
+  "audio": "14.wav",
+  "imagem": "21-pagar-cheque-emitido.png",
+  "texto": "Na conta a pagar, a forma Cheque pede a conta sacada, que é a conta bancária da clínica contra a qual o cheque é emitido, além da série, do número e do bom para. Banco, agência e conta do cheque vêm da conta sacada."
+ },
+ {
+  "audio": "15.wav",
+  "imagem": "24-compensar-cheque-emitido.png",
+  "texto": "Quando o fornecedor descontar o cheque, use Compensar na tela Cheques. O valor sai automaticamente da conta sacada, sem precisar escolher a conta."
+ },
+ {
+  "audio": "16.wav",
+  "imagem": "15-baixa-cartao.png",
+  "texto": "No cartão de crédito parcelado, a baixa mostra como o banco vai repassar: uma parcela por mês, conforme o prazo, o intervalo e a taxa do contrato da forma de pagamento."
+ },
+ {
+  "audio": "17.wav",
+  "imagem": "16-parcelas-repasse.png",
+  "texto": "Cada parcela vira uma liquidação separada. Quando o banco repassar uma parcela, clique em Liquidar naquela linha. O sistema sugere o valor líquido, já descontada a taxa prevista, e você confere com o que o banco creditou."
+ },
+ {
+  "audio": "18.wav",
+  "imagem": "20-cancelar-bloqueado.png",
+  "texto": "Cada parcela pode ser devolvida separadamente. E não é possível cancelar a baixa de um título cujo cartão já teve parcela repassada, nem a de um cheque já compensado: o sistema bloqueia e explica o motivo."
+ },
+ {
+  "audio": "19.wav",
+  "imagem": "26-fluxo-projetado.png",
+  "texto": "No Fluxo de Caixa, os cheques e as parcelas do cartão entram como previsto, na data esperada, separados do que já foi realizado. Assim a clínica enxerga o dinheiro que está a caminho."
+ }
+]
