@@ -1,0 +1,303 @@
+1
+00:00:00,400 --> 00:00:06,542
+Este treinamento mostra como estornar uma baixa de conta a receber e de conta a pagar no ClinSis,
+
+2
+00:00:06,542 --> 00:00:09,834
+e como conferir o resultado no Dashboard Financeiro,
+
+3
+00:00:09,834 --> 00:00:12,620
+nos relatórios e nos Movimentos Financeiros.
+
+4
+00:00:12,620 --> 00:00:16,799
+Estornar é cancelar um recebimento ou um pagamento lançado errado.
+
+5
+00:00:16,799 --> 00:00:17,875
+Antes de começar,
+
+6
+00:00:17,875 --> 00:00:22,117
+o Dashboard do mês mostra entradas de seiscentos e cinquenta reais,
+
+7
+00:00:22,117 --> 00:00:26,232
+saídas de quatrocentos e setenta, e resultado de cento e oitenta.
+
+8
+00:00:26,232 --> 00:00:29,398
+O saldo da conta Caixa é de cento e oitenta reais.
+
+9
+00:00:30,498 --> 00:00:33,548
+No relatório de Recebimentos, em Relatórios,
+
+10
+00:00:33,548 --> 00:00:39,092
+estão as duas baixas do mês: quatrocentos reais da Paciente zero zero zero dois,
+
+11
+00:00:39,092 --> 00:00:42,904
+e duzentos e cinquenta da Paciente zero zero zero três.
+
+12
+00:00:42,904 --> 00:00:44,221
+Ambas estão ativas.
+
+13
+00:00:45,321 --> 00:00:49,879
+No relatório de Pagamentos, as duas contas pagas: energia elétrica,
+
+14
+00:00:49,879 --> 00:00:54,777
+de trezentos e cinquenta reais, e material de limpeza, de cento e vinte.
+
+15
+00:00:55,877 --> 00:00:57,686
+Em Movimentos Financeiros,
+
+16
+00:00:57,686 --> 00:01:02,904
+cada baixa gerou um lançamento na conta Caixa: duas entradas e duas saídas,
+
+17
+00:01:02,904 --> 00:01:05,130
+somando mil cento e vinte reais.
+
+18
+00:01:06,231 --> 00:01:09,856
+Vamos estornar o recebimento de quatrocentos reais.
+
+19
+00:01:09,856 --> 00:01:14,761
+Em Contas a Receber, o título aparece como Baixada, com saldo zerado.
+
+20
+00:01:14,761 --> 00:01:18,600
+Clique no botão verde de pagamento, ao lado do título.
+
+21
+00:01:19,700 --> 00:01:24,761
+Na janela de Acertos e Recebimentos, abra a aba Histórico e Estornos.
+
+22
+00:01:24,761 --> 00:01:27,401
+Ela lista todas as baixas do título.
+
+23
+00:01:27,401 --> 00:01:31,141
+Para estornar, clique na lixeira vermelha da linha.
+
+24
+00:01:32,241 --> 00:01:34,984
+O sistema pede o motivo do cancelamento,
+
+25
+00:01:34,984 --> 00:01:40,540
+que é obrigatório: recebimento lançado em conta errada, valor ou data incorretos,
+
+26
+00:01:40,540 --> 00:01:44,381
+recebimento em duplicidade ou recebimento não realizado.
+
+27
+00:01:44,381 --> 00:01:47,947
+Escolha o motivo e clique em Confirmar cancelamento.
+
+28
+00:01:49,047 --> 00:01:49,547
+Pronto.
+
+29
+00:01:49,547 --> 00:01:55,114
+A baixa não é apagada: ela continua no histórico, em vermelho, como Estornado,
+
+30
+00:01:55,114 --> 00:01:57,469
+com a data, o usuário e o motivo.
+
+31
+00:01:57,469 --> 00:02:02,322
+O Valor Restante volta a quatrocentos reais, e a lixeira desaparece,
+
+32
+00:02:02,322 --> 00:02:06,462
+porque uma baixa estornada não pode ser estornada de novo.
+
+33
+00:02:07,562 --> 00:02:11,554
+Na lista de Contas a Receber, o título voltou para Aberto,
+
+34
+00:02:11,554 --> 00:02:15,754
+com saldo de quatrocentos reais, pronto para receber de novo.
+
+35
+00:02:15,754 --> 00:02:20,366
+Se o valor ou a data estavam errados, basta lançar a baixa correta.
+
+36
+00:02:21,466 --> 00:02:24,850
+O estorno de um pagamento funciona do mesmo jeito.
+
+37
+00:02:24,850 --> 00:02:30,197
+Em Contas a Pagar, a conta de energia elétrica, de trezentos e cinquenta reais,
+
+38
+00:02:30,197 --> 00:02:31,077
+está quitada.
+
+39
+00:02:31,077 --> 00:02:36,221
+Clique no botão verde de pagamento para abrir o Pagamento e Acerto da conta.
+
+40
+00:02:37,321 --> 00:02:41,181
+Na aba Histórico e Estornos ficam os pagamentos da conta.
+
+41
+00:02:41,181 --> 00:02:44,702
+Para estornar, clique no botão vermelho de cancelar.
+
+42
+00:02:45,802 --> 00:02:49,508
+Escolha o motivo do cancelamento, também obrigatório,
+
+43
+00:02:49,508 --> 00:02:51,956
+e clique em Confirmar Cancelamento.
+
+44
+00:02:53,056 --> 00:02:56,108
+O pagamento passa a aparecer como Cancelado,
+
+45
+00:02:56,108 --> 00:03:00,756
+e o sistema informa o total cancelado: trezentos e cinquenta reais.
+
+46
+00:03:01,856 --> 00:03:04,949
+A conta de energia elétrica voltou para Aberto,
+
+47
+00:03:04,949 --> 00:03:08,371
+com o saldo integral de trezentos e cinquenta reais.
+
+48
+00:03:09,471 --> 00:03:10,741
+Agora a conferência.
+
+49
+00:03:10,741 --> 00:03:13,598
+No Dashboard Financeiro, com o mesmo período,
+
+50
+00:03:13,598 --> 00:03:20,965
+as entradas caíram de seiscentos e cinquenta para duzentos e cinquenta reais: exatamente os quatrocentos estornados.
+
+51
+00:03:20,965 --> 00:03:28,014
+As saídas caíram de quatrocentos e setenta para cento e vinte: os trezentos e cinquenta do pagamento cancelado.
+
+52
+00:03:28,014 --> 00:03:32,777
+O resultado do período passou de cento e oitenta para cento e trinta reais,
+
+53
+00:03:32,777 --> 00:03:34,809
+e o saldo da conta Caixa também.
+
+54
+00:03:34,809 --> 00:03:41,032
+As tabelas por plano de conta e os maiores recebimentos e pagamentos por pessoa foram atualizados.
+
+55
+00:03:42,132 --> 00:03:45,721
+No relatório de Recebimentos, com a situação Todas,
+
+56
+00:03:45,721 --> 00:03:50,505
+a baixa estornada continua aparecendo, com o selo vermelho Excluída,
+
+57
+00:03:50,505 --> 00:03:52,335
+para consulta e auditoria.
+
+58
+00:03:52,335 --> 00:03:57,963
+Mas o total do rodapé soma somente as baixas ativas: duzentos e cinquenta reais.
+
+59
+00:03:59,063 --> 00:04:03,552
+Com a situação Somente ativas, a baixa estornada sai da lista,
+
+60
+00:04:03,552 --> 00:04:05,507
+e o total continua o mesmo.
+
+61
+00:04:06,607 --> 00:04:09,793
+No relatório de Pagamentos vale a mesma regra.
+
+62
+00:04:09,793 --> 00:04:13,325
+O pagamento cancelado aparece com o selo Cancelado,
+
+63
+00:04:13,325 --> 00:04:17,965
+mas o total soma somente os pagamentos ativos: cento e vinte reais.
+
+64
+00:04:19,065 --> 00:04:24,427
+Em Movimentos Financeiros, os lançamentos dos estornos deixaram de aparecer.
+
+65
+00:04:24,427 --> 00:04:30,283
+Sobraram apenas a entrada de duzentos e cinquenta reais e a saída de cento e vinte.
+
+66
+00:04:30,283 --> 00:04:36,139
+O lançamento original não é apagado do banco de dados: ele é marcado como excluído,
+
+67
+00:04:36,139 --> 00:04:38,043
+com usuário, data e motivo.
+
+68
+00:04:38,043 --> 00:04:42,841
+Por isso não entra mais em saldos, dashboard, extrato e conciliação.
+
+69
+00:04:43,941 --> 00:04:46,719
+Para terminar, três regras importantes.
+
+70
+00:04:46,719 --> 00:04:51,706
+Primeira: o estorno exige motivo e fica registrado com usuário e data.
+
+71
+00:04:51,706 --> 00:04:55,196
+Segunda: se a baixa foi feita com o caixa aberto,
+
+72
+00:04:55,196 --> 00:04:59,114
+esse caixa precisa continuar aberto; se já foi fechado,
+
+73
+00:04:59,114 --> 00:05:01,892
+peça a um administrador para reabri-lo.
+
+74
+00:05:01,892 --> 00:05:07,520
+Terceira: baixa de cheque já compensado, ou de cartão com parcela já repassada,
+
+75
+00:05:07,520 --> 00:05:09,657
+não pode ser estornada direto.
+
+76
+00:05:09,657 --> 00:05:13,219
+Antes, é preciso devolver a liquidação financeira.
