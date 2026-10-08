@@ -1,0 +1,102 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "01-dashboard-antes.png",
+  "texto": "Este treinamento mostra como estornar uma baixa de conta a receber e de conta a pagar no ClinSis, e como conferir o resultado no Dashboard Financeiro, nos relatórios e nos Movimentos Financeiros. Estornar é cancelar um recebimento ou um pagamento lançado errado. Antes de começar, o Dashboard do mês mostra entradas de seiscentos e cinquenta reais, saídas de quatrocentos e setenta, e resultado de cento e oitenta. O saldo da conta Caixa é de cento e oitenta reais."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "02-rel-recebimentos-antes.png",
+  "texto": "No relatório de Recebimentos, em Relatórios, estão as duas baixas do mês: quatrocentos reais da Paciente zero zero zero dois, e duzentos e cinquenta da Paciente zero zero zero três. Ambas estão ativas."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03-rel-pagamentos-antes.png",
+  "texto": "No relatório de Pagamentos, as duas contas pagas: energia elétrica, de trezentos e cinquenta reais, e material de limpeza, de cento e vinte."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "04-movimentos-antes.png",
+  "texto": "Em Movimentos Financeiros, cada baixa gerou um lançamento na conta Caixa: duas entradas e duas saídas, somando mil cento e vinte reais."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "05-lista-receber-quitado.png",
+  "texto": "Vamos estornar o recebimento de quatrocentos reais. Em Contas a Receber, o título aparece como Baixada, com saldo zerado. Clique no botão verde de pagamento, ao lado do título."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "06-receber-historico.png",
+  "texto": "Na janela de Acertos e Recebimentos, abra a aba Histórico e Estornos. Ela lista todas as baixas do título. Para estornar, clique na lixeira vermelha da linha."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "07-receber-motivo.png",
+  "texto": "O sistema pede o motivo do cancelamento, que é obrigatório: recebimento lançado em conta errada, valor ou data incorretos, recebimento em duplicidade ou recebimento não realizado. Escolha o motivo e clique em Confirmar cancelamento."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "08-receber-estornado.png",
+  "texto": "Pronto. A baixa não é apagada: ela continua no histórico, em vermelho, como Estornado, com a data, o usuário e o motivo. O Valor Restante volta a quatrocentos reais, e a lixeira desaparece, porque uma baixa estornada não pode ser estornada de novo."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "09-receber-reaberto.png",
+  "texto": "Na lista de Contas a Receber, o título voltou para Aberto, com saldo de quatrocentos reais, pronto para receber de novo. Se o valor ou a data estavam errados, basta lançar a baixa correta."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "10-lista-pagar-quitado.png",
+  "texto": "O estorno de um pagamento funciona do mesmo jeito. Em Contas a Pagar, a conta de energia elétrica, de trezentos e cinquenta reais, está quitada. Clique no botão verde de pagamento para abrir o Pagamento e Acerto da conta."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "11-pagar-historico.png",
+  "texto": "Na aba Histórico e Estornos ficam os pagamentos da conta. Para estornar, clique no botão vermelho de cancelar."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "12-pagar-motivo.png",
+  "texto": "Escolha o motivo do cancelamento, também obrigatório, e clique em Confirmar Cancelamento."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "13-pagar-estornado.png",
+  "texto": "O pagamento passa a aparecer como Cancelado, e o sistema informa o total cancelado: trezentos e cinquenta reais."
+ },
+ {
+  "audio": "14.wav",
+  "imagem": "14-pagar-reaberto.png",
+  "texto": "A conta de energia elétrica voltou para Aberto, com o saldo integral de trezentos e cinquenta reais."
+ },
+ {
+  "audio": "15.wav",
+  "imagem": "15-dashboard-depois.png",
+  "texto": "Agora a conferência. No Dashboard Financeiro, com o mesmo período, as entradas caíram de seiscentos e cinquenta para duzentos e cinquenta reais: exatamente os quatrocentos estornados. As saídas caíram de quatrocentos e setenta para cento e vinte: os trezentos e cinquenta do pagamento cancelado. O resultado do período passou de cento e oitenta para cento e trinta reais, e o saldo da conta Caixa também. As tabelas por plano de conta e os maiores recebimentos e pagamentos por pessoa foram atualizados."
+ },
+ {
+  "audio": "16.wav",
+  "imagem": "16-rel-recebimentos-todas.png",
+  "texto": "No relatório de Recebimentos, com a situação Todas, a baixa estornada continua aparecendo, com o selo vermelho Excluída, para consulta e auditoria. Mas o total do rodapé soma somente as baixas ativas: duzentos e cinquenta reais."
+ },
+ {
+  "audio": "17.wav",
+  "imagem": "17-rel-recebimentos-ativas.png",
+  "texto": "Com a situação Somente ativas, a baixa estornada sai da lista, e o total continua o mesmo."
+ },
+ {
+  "audio": "18.wav",
+  "imagem": "18-rel-pagamentos-depois.png",
+  "texto": "No relatório de Pagamentos vale a mesma regra. O pagamento cancelado aparece com o selo Cancelado, mas o total soma somente os pagamentos ativos: cento e vinte reais."
+ },
+ {
+  "audio": "19.wav",
+  "imagem": "19-movimentos-depois.png",
+  "texto": "Em Movimentos Financeiros, os lançamentos dos estornos deixaram de aparecer. Sobraram apenas a entrada de duzentos e cinquenta reais e a saída de cento e vinte. O lançamento original não é apagado do banco de dados: ele é marcado como excluído, com usuário, data e motivo. Por isso não entra mais em saldos, dashboard, extrato e conciliação."
+ },
+ {
+  "audio": "20.wav",
+  "imagem": "08-receber-estornado.png",
+  "texto": "Para terminar, três regras importantes. Primeira: o estorno exige motivo e fica registrado com usuário e data. Segunda: se a baixa foi feita com o caixa aberto, esse caixa precisa continuar aberto; se já foi fechado, peça a um administrador para reabri-lo. Terceira: baixa de cheque já compensado, ou de cartão com parcela já repassada, não pode ser estornada direto. Antes, é preciso devolver a liquidação financeira."
+ }
+]
