@@ -1,0 +1,195 @@
+1
+00:00:00,400 --> 00:00:04,283
+Este treinamento mostra o Totem de check-in do ClinSis.
+
+2
+00:00:04,283 --> 00:00:08,731
+É a tela da portaria onde o paciente, ou o responsável por ele,
+
+3
+00:00:08,731 --> 00:00:12,120
+registra a chegada sozinho, sem usuário e senha,
+
+4
+00:00:12,120 --> 00:00:14,944
+informando o CPF e a data de nascimento.
+
+5
+00:00:14,944 --> 00:00:17,203
+A recepção vê o aviso na agenda.
+
+6
+00:00:17,203 --> 00:00:23,416
+O totem só avisa a chegada: o check-in com pagamento continua sendo feito pela recepção.
+
+7
+00:00:24,516 --> 00:00:26,151
+O recurso vem desligado.
+
+8
+00:00:26,151 --> 00:00:30,172
+O administrador abre Tabelas Auxiliares, Totem de check-in,
+
+9
+00:00:30,172 --> 00:00:34,056
+marca Ativar o totem nesta clínica e ajusta, se precisar,
+
+10
+00:00:34,056 --> 00:00:36,236
+a janela de horário: por padrão,
+
+11
+00:00:36,236 --> 00:00:43,732
+o paciente pode registrar a chegada até sessenta minutos antes e até trinta minutos depois do horário marcado.
+
+12
+00:00:43,732 --> 00:00:48,093
+Também dá para definir a inatividade, a validade da autorização,
+
+13
+00:00:48,093 --> 00:00:52,1000
+as tentativas erradas antes do bloqueio e a mensagem para Plano Próprio.
+
+14
+00:00:52,1000 --> 00:00:54,362
+Depois, é só salvar.
+
+15
+00:00:55,462 --> 00:01:00,001
+Na portaria, abra o endereço do sistema acrescido de barra totem.
+
+16
+00:01:00,001 --> 00:01:02,864
+O equipamento mostra Autorize este totem,
+
+17
+00:01:02,864 --> 00:01:07,123
+com um código de resposta rápida e um código de seis dígitos.
+
+18
+00:01:08,223 --> 00:01:12,399
+Com o administrador logado, leia o código com o celular.
+
+19
+00:01:12,399 --> 00:01:18,439
+Dê um nome ao totem, por exemplo, Totem da recepção, e clique em Autorizar totem.
+
+20
+00:01:18,439 --> 00:01:20,826
+O código vale por cinco minutos.
+
+21
+00:01:21,926 --> 00:01:26,538
+Pronto, o totem foi autorizado e essa página já pode ser fechada.
+
+22
+00:01:26,538 --> 00:01:31,222
+Em poucos segundos o equipamento troca para a tela de boas-vindas.
+
+23
+00:01:32,322 --> 00:01:37,336
+O paciente toca em Registrar chegada e digita o CPF no teclado da tela.
+
+24
+00:01:37,336 --> 00:01:43,269
+Atenção: o CPF e a data de nascimento são sempre da pessoa que está diante do totem.
+
+25
+00:01:43,269 --> 00:01:48,565
+Se quem chegou é o responsável pelo paciente, ele digita os próprios dados,
+
+26
+00:01:48,565 --> 00:01:49,907
+não os do paciente.
+
+27
+00:01:51,007 --> 00:01:56,486
+Em seguida, a data de nascimento, com oito números: dia, mês e ano.
+
+28
+00:01:56,486 --> 00:01:58,858
+Na tela, nunca aparece o CPF,
+
+29
+00:01:58,858 --> 00:02:03,601
+e os dados digitados são apagados depois da identificação.
+
+30
+00:02:04,701 --> 00:02:07,345
+O totem mostra os atendimentos de hoje.
+
+31
+00:02:07,345 --> 00:02:11,209
+O paciente confere o horário e toca em Confirmar chegada.
+
+32
+00:02:11,209 --> 00:02:15,750
+O responsável com mais de um dependente vê o nome de cada paciente.
+
+33
+00:02:16,850 --> 00:02:18,206
+Chegada registrada.
+
+34
+00:02:18,206 --> 00:02:19,634
+Aguarde ser chamado.
+
+35
+00:02:19,634 --> 00:02:21,846
+A tela volta ao início sozinha.
+
+36
+00:02:21,846 --> 00:02:25,699
+Se o paciente chegar cedo demais, ou depois da janela,
+
+37
+00:02:25,699 --> 00:02:28,839
+o totem avisa e orienta procurar a recepção.
+
+38
+00:02:28,839 --> 00:02:34,477
+Paciente de Plano Próprio recebe a mensagem configurada para seguir à recepção.
+
+39
+00:02:35,577 --> 00:02:38,590
+Na agenda do dia, antes do nome do paciente,
+
+40
+00:02:38,590 --> 00:02:41,809
+aparece um selo verde com o horário da chegada.
+
+41
+00:02:41,809 --> 00:02:44,959
+Assim a recepção sabe quem já está na clínica.
+
+42
+00:02:44,959 --> 00:02:48,383
+A tela se atualiza sozinha a cada trinta segundos.
+
+43
+00:02:49,483 --> 00:02:54,359
+Na tela do totem, a lista Totens autorizados mostra cada equipamento,
+
+44
+00:02:54,359 --> 00:02:56,408
+a validade e o último acesso.
+
+45
+00:02:56,408 --> 00:02:59,729
+O botão Revogar desliga um equipamento na hora.
+
+46
+00:02:59,729 --> 00:03:02,980
+Para parar de usar o totem na clínica inteira,
+
+47
+00:03:02,980 --> 00:03:06,301
+desmarque Ativar o totem nesta clínica e salve.
+
+48
+00:03:06,301 --> 00:03:11,742
+Para o responsável ser reconhecido, ele precisa estar cadastrado no paciente,
+
+49
+00:03:11,742 --> 00:03:14,852
+com CPF, data de nascimento e vínculo ativo.
