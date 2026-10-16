@@ -1,0 +1,195 @@
+1
+00:00:00,400 --> 00:00:04,946
+Este treinamento mostra a Revisão cadastral de pacientes do ClinSis.
+
+2
+00:00:04,946 --> 00:00:09,558
+O objetivo é manter o endereço e o contato dos pacientes atualizados.
+
+3
+00:00:09,558 --> 00:00:14,104
+Primeiro, o administrador do sistema libera o módulo para a clínica,
+
+4
+00:00:14,104 --> 00:00:17,380
+na Área do Administrador, no cadastro da clínica,
+
+5
+00:00:17,380 --> 00:00:20,054
+e os usuários entram de novo no sistema.
+
+6
+00:00:20,054 --> 00:00:24,867
+Com o módulo ligado, aparece no menu Paciente a opção Revisão cadastral.
+
+7
+00:00:24,867 --> 00:00:28,811
+A lista mostra os pacientes ativos que precisam de revisão,
+
+8
+00:00:28,811 --> 00:00:32,822
+do mais antigo para o mais recente, com o motivo de cada um.
+
+9
+00:00:32,822 --> 00:00:36,966
+No canto, o prazo em vigor: trezentos e sessenta e cinco dias,
+
+10
+00:00:36,966 --> 00:00:39,172
+e o total de pacientes pendentes.
+
+11
+00:00:40,272 --> 00:00:47,473
+Um paciente precisa de revisão em três situações: quando a última revisão passou do prazo ou nunca foi feita,
+
+12
+00:00:47,473 --> 00:00:50,644
+selo amarelo; quando o endereço está incompleto,
+
+13
+00:00:50,644 --> 00:00:55,136
+selo vermelho; ou quando não tem nenhum celular, telefone ou e-mail,
+
+14
+00:00:55,136 --> 00:00:56,391
+também em vermelho.
+
+15
+00:00:56,391 --> 00:01:00,817
+Endereço incompleto e falta de contato valem mesmo dentro do prazo.
+
+16
+00:01:00,817 --> 00:01:04,517
+Use o filtro Motivo para trabalhar um grupo de cada vez.
+
+17
+00:01:04,517 --> 00:01:07,688
+Aqui, apenas o paciente com o endereço faltando.
+
+18
+00:01:08,788 --> 00:01:12,893
+E aqui, os pacientes sem celular, telefone ou e-mail.
+
+19
+00:01:12,893 --> 00:01:15,604
+Também é possível buscar pelo nome.
+
+20
+00:01:15,604 --> 00:01:20,561
+O botão com o lápis, em cada linha, abre o cadastro do paciente.
+
+21
+00:01:21,662 --> 00:01:23,924
+O prazo é um parâmetro da clínica.
+
+22
+00:01:23,924 --> 00:01:26,187
+Em Tabelas Auxiliares, Parâmetros,
+
+23
+00:01:26,187 --> 00:01:32,708
+o parâmetro Revisão Cadastral Dias define de quantos em quantos dias o cadastro deve ser revisado.
+
+24
+00:01:32,708 --> 00:01:35,703
+O padrão é trezentos e sessenta e cinco dias,
+
+25
+00:01:35,703 --> 00:01:39,164
+e aceita de trinta a mil oitocentos e vinte e cinco.
+
+26
+00:01:39,164 --> 00:01:41,626
+Clique no lápis amarelo para alterar.
+
+27
+00:01:42,726 --> 00:01:43,425
+Na agenda,
+
+28
+00:01:43,425 --> 00:01:49,015
+o paciente que precisa de revisão ganha um pequeno cartão amarelo antes do nome.
+
+29
+00:01:49,015 --> 00:01:54,046
+Ao passar o mouse, aparece o motivo, e o clique leva direto ao cadastro.
+
+30
+00:01:54,046 --> 00:01:58,238
+Assim a recepção percebe o aviso antes de o paciente chegar.
+
+31
+00:01:59,338 --> 00:02:02,082
+No check-in, ao ler o cartão do paciente,
+
+32
+00:02:02,082 --> 00:02:05,161
+uma faixa amarela informa o motivo da revisão.
+
+33
+00:02:05,161 --> 00:02:07,303
+O aviso não bloqueia o check-in.
+
+34
+00:02:07,303 --> 00:02:13,929
+O link Abrir cadastro em outra aba permite conferir os dados sem perder o atendimento em andamento.
+
+35
+00:02:15,029 --> 00:02:16,721
+No cadastro do paciente,
+
+36
+00:02:16,721 --> 00:02:22,219
+a faixa amarela no topo mostra o motivo e o botão Confirmar dados atualizados.
+
+37
+00:02:22,219 --> 00:02:25,461
+Confira o endereço e o contato com o paciente.
+
+38
+00:02:25,461 --> 00:02:26,659
+Se corrigir algo,
+
+39
+00:02:26,659 --> 00:02:32,791
+basta salvar o cadastro: salvar com endereço e contato completos já registra a revisão.
+
+40
+00:02:32,791 --> 00:02:37,020
+Se estava tudo certo, clique em Confirmar dados atualizados.
+
+41
+00:02:38,120 --> 00:02:43,346
+A revisão foi registrada, com a data e o usuário, e a faixa desapareceu.
+
+42
+00:02:43,346 --> 00:02:49,371
+O paciente deixa de aparecer na lista, na agenda e no check-in até o próximo prazo.
+
+43
+00:02:50,471 --> 00:02:54,820
+Na lista, também é possível confirmar vários pacientes de uma vez.
+
+44
+00:02:54,820 --> 00:02:59,630
+Marque os pacientes que foram conferidos, clique em Marcar como revisado,
+
+45
+00:02:59,630 --> 00:03:02,859
+e o sistema pede uma confirmação antes de gravar.
+
+46
+00:03:03,959 --> 00:03:09,474
+Depois de confirmar, os pacientes saem da lista: o total caiu de onze para dez.
+
+47
+00:03:09,474 --> 00:03:15,896
+Lembrando: revisar é conferir com o paciente se o telefone e o endereço continuam os mesmos.
+
+48
+00:03:15,896 --> 00:03:20,015
+Salvar o cadastro com dado faltando não conta como revisão,
+
+49
+00:03:20,015 --> 00:03:23,017
+e só aparecem na lista os pacientes ativos.

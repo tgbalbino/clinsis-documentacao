@@ -1,0 +1,52 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "02-lista.png",
+  "texto": "Este treinamento mostra a Revisão cadastral de pacientes do ClinSis. O objetivo é manter o endereço e o contato dos pacientes atualizados. Primeiro, o administrador do sistema libera o módulo para a clínica, na Área do Administrador, no cadastro da clínica, e os usuários entram de novo no sistema. Com o módulo ligado, aparece no menu Paciente a opção Revisão cadastral. A lista mostra os pacientes ativos que precisam de revisão, do mais antigo para o mais recente, com o motivo de cada um. No canto, o prazo em vigor: trezentos e sessenta e cinco dias, e o total de pacientes pendentes."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "03-filtro-endereco.png",
+  "texto": "Um paciente precisa de revisão em três situações: quando a última revisão passou do prazo ou nunca foi feita, selo amarelo; quando o endereço está incompleto, selo vermelho; ou quando não tem nenhum celular, telefone ou e-mail, também em vermelho. Endereço incompleto e falta de contato valem mesmo dentro do prazo. Use o filtro Motivo para trabalhar um grupo de cada vez. Aqui, apenas o paciente com o endereço faltando."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "03b-filtro-contato.png",
+  "texto": "E aqui, os pacientes sem celular, telefone ou e-mail. Também é possível buscar pelo nome. O botão com o lápis, em cada linha, abre o cadastro do paciente."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "05-parametro.png",
+  "texto": "O prazo é um parâmetro da clínica. Em Tabelas Auxiliares, Parâmetros, o parâmetro Revisão Cadastral Dias define de quantos em quantos dias o cadastro deve ser revisado. O padrão é trezentos e sessenta e cinco dias, e aceita de trinta a mil oitocentos e vinte e cinco. Clique no lápis amarelo para alterar."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "06-agenda-selo.png",
+  "texto": "Na agenda, o paciente que precisa de revisão ganha um pequeno cartão amarelo antes do nome. Ao passar o mouse, aparece o motivo, e o clique leva direto ao cadastro. Assim a recepção percebe o aviso antes de o paciente chegar."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "07-checkin-aviso.png",
+  "texto": "No check-in, ao ler o cartão do paciente, uma faixa amarela informa o motivo da revisão. O aviso não bloqueia o check-in. O link Abrir cadastro em outra aba permite conferir os dados sem perder o atendimento em andamento."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "08-cadastro-aviso.png",
+  "texto": "No cadastro do paciente, a faixa amarela no topo mostra o motivo e o botão Confirmar dados atualizados. Confira o endereço e o contato com o paciente. Se corrigir algo, basta salvar o cadastro: salvar com endereço e contato completos já registra a revisão. Se estava tudo certo, clique em Confirmar dados atualizados."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "09-cadastro-confirmado.png",
+  "texto": "A revisão foi registrada, com a data e o usuário, e a faixa desapareceu. O paciente deixa de aparecer na lista, na agenda e no check-in até o próximo prazo."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "04-confirmar-lote.png",
+  "texto": "Na lista, também é possível confirmar vários pacientes de uma vez. Marque os pacientes que foram conferidos, clique em Marcar como revisado, e o sistema pede uma confirmação antes de gravar."
+ },
+ {
+  "audio": "10.wav",
+  "imagem": "10-lista-depois.png",
+  "texto": "Depois de confirmar, os pacientes saem da lista: o total caiu de onze para dez. Lembrando: revisar é conferir com o paciente se o telefone e o endereço continuam os mesmos. Salvar o cadastro com dado faltando não conta como revisão, e só aparecem na lista os pacientes ativos."
+ }
+]
