@@ -10,8 +10,8 @@ SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "23/09/2026"
+VERSAO = "1.1"
+DATA = "16/10/2026"
 TITULO = "Prontuário — Uso pelo Profissional"
 SUBTITULO = "Criar, preencher, finalizar, consultar e imprimir prontuários"
 VIDEO_NOME = "https://youtu.be/lCpFbKV5WrI"
@@ -79,6 +79,11 @@ blocks = [
     ('img', '10-alinea-salva.png', 'Alínea salva. O botão <b>Finalizar</b> só aparece depois que há texto salvo.'),
     ('p', 'Para alíneas do tipo <b>Sim ou Não</b> aparece uma lista de opções, e nas do tipo <b>Arquivo</b> há o envio de um anexo. '
           'Cada alínea é salva separadamente.'),
+    ('p', '<b>Alínea de Marcação</b> (nas clínicas em que o tipo está liberado): as opções aparecem como <b>cartões selecionáveis</b>. '
+          'Se a alínea é de <b>uma opção</b>, marcar outra troca a escolha; se é de <b>várias</b>, pode marcar mais de uma, e o canto mostra quantas estão marcadas. '
+          'O selo <b>Obrigatória</b> indica que é preciso marcar ao menos uma opção para finalizar. Se a alínea permite <b>Outros</b>, ao marcar essa opção aparece uma linha '
+          '<b>"Descreva (obrigatório)"</b> para digitar o texto. Como as demais, a marcação é salva pelo botão <b>Salvar</b> da alínea.'),
+    ('img', 'U06-marcacao-outros.png', 'Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever.'),
 
     ('h2', '4. Tags'),
     ('p', 'As tags identificam o <b>método de atendimento</b> (por exemplo, "Padrão" ou "Jedi") e são usadas na Auditoria de Prontuário. '
@@ -99,6 +104,9 @@ blocks = [
     ('p', 'Clique em <b>Finalizar</b>. A janela confirma a <b>data de emissão</b> que será usada; escolha Sim para concluir.'),
     ('img', '11-finalizar-confirmar.png', 'Confirmação de finalização com a data de emissão.'),
     ('img', '12-finalizado.png', 'Prontuário finalizado: os campos ficam bloqueados (cinza) e as tags saem da tela de edição.'),
+    ('p', 'Depois de finalizado, o prontuário mostra <b>todas as alíneas em sequência, na mesma página</b>, somente leitura, sem os botões Anterior e Próxima. '
+          'Nas alíneas de marcação aparecem todas as opções, com as marcadas em destaque e, na opção Outros, o texto digitado.'),
+    ('img', 'U09-finalizado.png', 'Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros.'),
     ('tabelagen', ['Depois de finalizar', 'Regra'],
      [
          ['Edição', 'Não é mais possível alterar textos. Se tentar (por exemplo, por outra tela), o servidor responde "Não é possível salvar. O prontuário está finalizado."'],

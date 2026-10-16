@@ -10,8 +10,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '2.0'
-DATA = '30/09/2026'
+VERSAO = '2.1'
+DATA = '16/10/2026'
 TITULO = 'Checkin de Paciente'
 SUBTITULO = 'Registrar a chegada do paciente e, se houver cobrança, já receber na hora'
 VIDEO_NOME = "https://youtu.be/MKW8mdKnfTg"
@@ -65,6 +65,25 @@ blocks = [
     ('img', '07-apos-confirmar-checkin.png', 'Check-in confirmado: aparece na lista com a data/hora, o horário da agenda (20:30:00) e o atendente.'),
     ('img', '08-conta-a-receber-gerada-pelo-checkin.png', 'Contas a Receber: a linha do paciente, R$ 36,56, Plano de Conta "Consulta Particular", Situação "Baixada", gerada e paga automaticamente pelo Checkin.'),
     ('aviso', 'Esta rotina gera Conta a Receber automaticamente: não é preciso lançar nada à mão em Contas a Receber.'),
+
+    ('h2', 'Avisar o profissional (Painel de chegada)'),
+    ('p', 'Com o módulo <b>Painel de chegada</b> ligado na clínica, logo depois de confirmar o Check-In abre a janela <b>Notificar profissional</b>: '
+          '"Deseja avisar o profissional que o paciente chegou?". Cada horário do paciente aparece com a hora e o profissional. Marque os que quiser e clique em '
+          '<b>Avisar agora</b> (ou em <b>Agora não</b>). O sistema confirma com "N aviso(s) enviado(s) para o painel": a TV da clínica mostra <b>Nova chegada</b> e o profissional '
+          'recebe o chamado no sistema. Se nenhuma TV estiver conectada, o aviso não é enviado. Todos os detalhes estão no manual <b>Painel de Chegada (TV)</b>.'),
+    ('img', '09-painel-tv-nova-chegada.png', 'TV da clínica mostrando a chegada avisada pelo Check-In.'),
+
+    ('h2', 'Aviso de revisão cadastral'),
+    ('p', 'Com o módulo <b>Revisão cadastral</b> ligado, se o cadastro do paciente precisa de revisão (prazo vencido, endereço incompleto ou sem contato), '
+          'aparece uma <b>faixa amarela</b> no Check-In com o motivo. O aviso <b>não bloqueia</b> o check-in; o link <b>Abrir cadastro em outra aba</b> permite conferir os dados sem perder o atendimento. '
+          'Veja o manual <b>Revisão Cadastral de Pacientes</b>.'),
+    ('img', '10-aviso-revisao-cadastral.png', 'Check-In: faixa de revisão cadastral com o motivo, acima dos agendamentos do dia.'),
+
+    ('h2', 'Quando o paciente já se anunciou no totem'),
+    ('p', 'Se a clínica usa o <b>Totem de check-in</b>, o paciente (ou o responsável) pode registrar a chegada sozinho na portaria. Na <b>Agenda</b>, aparece um selo verde com o horário '
+          'antes do nome do paciente. O totem <b>apenas avisa a chegada</b>: o Check-In da recepção, com pagamento e Plano Próprio, continua sendo feito normalmente, como descrito neste manual. '
+          'Veja o manual <b>Totem de Check-in</b>.'),
+    ('img', '11-agenda-chegada-totem.png', 'Agenda: selo verde com o horário da chegada registrada no totem.'),
 
     ('h2', 'Mensagens que você pode encontrar'),
     ('tabelagen', ['Mensagem', 'Causa', 'O que fazer'], [

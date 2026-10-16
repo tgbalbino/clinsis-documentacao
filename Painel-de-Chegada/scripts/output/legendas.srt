@@ -1,0 +1,159 @@
+1
+00:00:00,400 --> 00:00:04,006
+Este treinamento mostra o Painel de chegada do ClinSis.
+
+2
+00:00:04,006 --> 00:00:09,777
+Ele mostra numa TV da clínica o nome do profissional e do paciente que acabou de chegar,
+
+3
+00:00:09,777 --> 00:00:14,367
+com um aviso sonoro, e também avisa o profissional no próprio sistema.
+
+4
+00:00:14,367 --> 00:00:17,645
+Quando não há chegada, a TV mostra a data, a hora,
+
+5
+00:00:17,645 --> 00:00:20,006
+o clima e os aniversariantes do dia.
+
+6
+00:00:21,106 --> 00:00:26,219
+O módulo é liberado por clínica na Área do Administrador e vem desligado.
+
+7
+00:00:26,219 --> 00:00:30,911
+Depois, o administrador abre Tabelas Auxiliares, Painel de chegada,
+
+8
+00:00:30,911 --> 00:00:35,604
+ativa o módulo e ajusta a duração do aviso, o tempo de cada cartão,
+
+9
+00:00:35,604 --> 00:00:40,997
+o som e o volume, se o nome do paciente aparece só com a inicial ou completo,
+
+10
+00:00:40,997 --> 00:00:43,518
+e quantas TVs podem ser autorizadas.
+
+11
+00:00:43,518 --> 00:00:47,510
+Embaixo, a presença da TV informa se há alguma conectada.
+
+12
+00:00:48,610 --> 00:00:52,481
+Se o painel estiver ligado e nenhuma TV estiver conectada,
+
+13
+00:00:52,481 --> 00:00:56,819
+a agenda mostra um aviso amarelo: Painel de chegada indisponível,
+
+14
+00:00:56,819 --> 00:01:00,824
+os avisos não serão exibidos, com o link Como conectar a TV.
+
+15
+00:01:01,924 --> 00:01:07,120
+Na TV, abra o endereço do sistema acrescido de barra painel hífen chegada,
+
+16
+00:01:07,120 --> 00:01:08,103
+em tela cheia.
+
+17
+00:01:08,103 --> 00:01:10,981
+A tela pede para autorizar o dispositivo,
+
+18
+00:01:10,981 --> 00:01:15,264
+com um código de resposta rápida e um código de seis dígitos.
+
+19
+00:01:16,364 --> 00:01:20,301
+Com o celular da recepção, logado como administrador,
+
+20
+00:01:20,301 --> 00:01:22,974
+leia o código e clique em Autorizar.
+
+21
+00:01:24,074 --> 00:01:26,497
+A TV passa para Aguardando chegadas.
+
+22
+00:01:26,497 --> 00:01:29,727
+Clique uma vez na tela da TV para liberar o som,
+
+23
+00:01:29,727 --> 00:01:33,159
+porque o navegador só toca som depois de um clique.
+
+24
+00:01:34,259 --> 00:01:36,635
+Para avisar uma chegada pela agenda,
+
+25
+00:01:36,635 --> 00:01:41,190
+abra o menu de ações da linha do paciente e clique em Avisar chegada.
+
+26
+00:01:41,190 --> 00:01:44,160
+O botão só aparece para atendimentos de hoje.
+
+27
+00:01:44,160 --> 00:01:47,659
+Também é possível avisar pelo check-in: ao confirmar,
+
+28
+00:01:47,659 --> 00:01:51,025
+o sistema pergunta se deseja avisar o profissional,
+
+29
+00:01:51,025 --> 00:01:54,458
+e basta marcar os horários e clicar em Avisar agora.
+
+30
+00:01:55,558 --> 00:01:57,309
+Na TV aparece Nova chegada,
+
+31
+00:01:57,309 --> 00:02:01,331
+com o nome do profissional em destaque e o do paciente abaixo,
+
+32
+00:02:01,331 --> 00:02:03,082
+uma barra de tempo e o som.
+
+33
+00:02:03,082 --> 00:02:05,742
+A chamada anterior fica no canto da tela.
+
+34
+00:02:05,742 --> 00:02:10,477
+O profissional logado também vê a mensagem de que o paciente foi chamado,
+
+35
+00:02:10,477 --> 00:02:16,639
+e pode ativar as notificações do navegador para receber o aviso mesmo com o sistema minimizado.
+
+36
+00:02:17,739 --> 00:02:22,457
+Para conferir, na agenda, em Mais opções, Ver chamadas do painel.
+
+37
+00:02:22,457 --> 00:02:26,884
+A lista mostra o profissional, o paciente, a hora da chamada,
+
+38
+00:02:26,884 --> 00:02:28,844
+quando expira e a situação.
+
+39
+00:02:28,844 --> 00:02:32,981
+Sem chamadas, o sistema mostra os aniversariantes do dia,
+
+40
+00:02:32,981 --> 00:02:36,392
+e a TV também os exibe com a mensagem Parabéns.

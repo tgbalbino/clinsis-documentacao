@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = 'Contas a Receber'
 SUBTITULO = 'Cadastrar e receber os valores que os pacientes/convênios devem à clínica'
 VIDEO_NOME = "https://youtu.be/PFpYbTqKvFM"
@@ -47,6 +47,13 @@ blocks = [('h2', 'Barra de ações'),
  ('img', '09-baixa-preenchida.png', 'Recebimento preenchido: Valor, Método de Pagamento (Cartão de Crédito, com a escolha de Qtd. Parcelas) e Conta Financeira.'),
  ('img', '09b-confirmacao.png', 'Confirmação ao lançar o pagamento que quita a parcela: ao clicar em Sim, a situação passa a Baixada.'),
  ('img', '10-apos-lancar-baixa.png', 'Depois de confirmar: mensagem "Salvo", Valor Restante zerado, e opção de Emitir Recibo para o paciente.'),
+ ('h2', 'Recebimento em atraso (pagamento em mês posterior ao vencimento)'),
+ ('p', 'Quando a data do recebimento cai em um <b>mês depois</b> do vencimento da parcela, ao clicar em <b>Lançar</b> o sistema mostra o aviso <b>"Pagamento em atraso"</b>, com a data do vencimento, a data do recebimento e em que mês o valor será contado. Clique em <b>Sim</b> para confirmar ou em <b>Não</b> para corrigir a data (por exemplo, se o paciente pagou em outro dia).'),
+ ('img', 'R02-aviso-atraso.png', 'Aviso ao receber, em outubro, uma parcela que venceu em setembro: nos relatórios e no dashboard o valor conta em outubro.'),
+ ('aviso', 'Regra: o valor é contado no <b>mês do recebimento</b>, e não no mês do vencimento. Por isso o aviso só aparece quando os meses são diferentes; recebimento no mesmo mês ou antecipado não pede confirmação.'),
+ ('p', 'O <b>relatório de recebimentos</b> (<b>Relatórios → Financeiro - Recebimentos (Contas a Receber)</b>, modo Detalhado) mostra as colunas <b>Vencimento</b>, <b>Data pagamento</b> e <b>Atraso</b>. A coluna Atraso traz os dias de atraso e a marca "outro mês" quando o recebimento caiu em mês diferente do vencimento.'),
+ ('img', 'R03-relatorio-recebimentos.png', 'Relatório de recebimentos: parcelas que venceram em setembro, recebidas em outubro, com os dias de atraso (36 e 16 dias).'),
+ ('p', 'O <b>Dashboard Financeiro</b> resume isso nos cartões <b>Recebido em atraso</b>, <b>Atraso médio</b> e <b>Recebido em mês posterior ao vencimento</b> (veja o manual do Dashboard Financeiro e Fluxo de Caixa). Baixas estornadas não entram nesses totais.'),
  ('aviso', 'Contas a Receber é o destino de lançamentos automáticos de outras rotinas: Checkin (quando há pagamento na hora, já gera a conta baixada), fechamento de Contrato (um título para cada acerto à vista ou no cartão e uma parcela por mês para cada acerto em Crediário) e Cobrança de Paciente (geração em lote a partir de sessões realizadas). O filtro "Analítica" na tela de Filtros permite inclusive separar o que foi lançado manualmente do que veio do Checkin ou da Cobrança de Paciente. Os títulos gerados por um Contrato trazem a coluna "Origem" na lista (por exemplo, "Contrato 12 - Crediário 2/5" ou "Contrato 12 - Pix"), e a mesma informação aparece na tela de baixa.')]
 
 render_pdf(blocks, os.path.join(ENTREGA, 'Documentacao_Contas_a_Receber.pdf'),

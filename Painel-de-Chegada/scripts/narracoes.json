@@ -1,0 +1,47 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "07-tv-nova-chegada.png",
+  "texto": "Este treinamento mostra o Painel de chegada do ClinSis. Ele mostra numa TV da clínica o nome do profissional e do paciente que acabou de chegar, com um aviso sonoro, e também avisa o profissional no próprio sistema. Quando não há chegada, a TV mostra a data, a hora, o clima e os aniversariantes do dia."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "01-configuracao.png",
+  "texto": "O módulo é liberado por clínica na Área do Administrador e vem desligado. Depois, o administrador abre Tabelas Auxiliares, Painel de chegada, ativa o módulo e ajusta a duração do aviso, o tempo de cada cartão, o som e o volume, se o nome do paciente aparece só com a inicial ou completo, e quantas TVs podem ser autorizadas. Embaixo, a presença da TV informa se há alguma conectada."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "02-agenda-sem-tv.png",
+  "texto": "Se o painel estiver ligado e nenhuma TV estiver conectada, a agenda mostra um aviso amarelo: Painel de chegada indisponível, os avisos não serão exibidos, com o link Como conectar a TV."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "03-tv-qr.png",
+  "texto": "Na TV, abra o endereço do sistema acrescido de barra painel hífen chegada, em tela cheia. A tela pede para autorizar o dispositivo, com um código de resposta rápida e um código de seis dígitos."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "04-autorizar.png",
+  "texto": "Com o celular da recepção, logado como administrador, leia o código e clique em Autorizar."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "05-tv-aguardando.png",
+  "texto": "A TV passa para Aguardando chegadas. Clique uma vez na tela da TV para liberar o som, porque o navegador só toca som depois de um clique."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "06-agenda-avisar.png",
+  "texto": "Para avisar uma chegada pela agenda, abra o menu de ações da linha do paciente e clique em Avisar chegada. O botão só aparece para atendimentos de hoje. Também é possível avisar pelo check-in: ao confirmar, o sistema pergunta se deseja avisar o profissional, e basta marcar os horários e clicar em Avisar agora."
+ },
+ {
+  "audio": "08.wav",
+  "imagem": "07-tv-nova-chegada.png",
+  "texto": "Na TV aparece Nova chegada, com o nome do profissional em destaque e o do paciente abaixo, uma barra de tempo e o som. A chamada anterior fica no canto da tela. O profissional logado também vê a mensagem de que o paciente foi chamado, e pode ativar as notificações do navegador para receber o aviso mesmo com o sistema minimizado."
+ },
+ {
+  "audio": "09.wav",
+  "imagem": "08-chamadas.png",
+  "texto": "Para conferir, na agenda, em Mais opções, Ver chamadas do painel. A lista mostra o profissional, o paciente, a hora da chamada, quando expira e a situação. Sem chamadas, o sistema mostra os aniversariantes do dia, e a TV também os exibe com a mensagem Parabéns."
+ }
+]

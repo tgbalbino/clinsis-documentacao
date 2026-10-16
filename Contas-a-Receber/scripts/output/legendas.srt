@@ -137,3 +137,39 @@ o recebimento aparece na tabela de acertos,
 35
 00:02:14,698 --> 00:02:17,743
 e é possível emitir o recibo para o paciente.
+
+36
+00:02:18,843 --> 00:02:24,343
+Novidade: quando a data do recebimento cai em um mês depois do vencimento da parcela,
+
+37
+00:02:24,343 --> 00:02:29,714
+ao clicar em Lançar o sistema mostra o aviso Pagamento em atraso, com o vencimento,
+
+38
+00:02:29,714 --> 00:02:33,466
+a data do recebimento e o mês em que o valor será contado.
+
+39
+00:02:33,466 --> 00:02:37,413
+Clique em Sim para confirmar, ou em Não para corrigir a data.
+
+40
+00:02:37,413 --> 00:02:42,266
+O valor é sempre contado no mês do recebimento, e não no mês do vencimento.
+
+41
+00:02:43,366 --> 00:02:47,724
+No relatório de recebimentos, modo detalhado, as colunas Vencimento,
+
+42
+00:02:47,724 --> 00:02:52,403
+Data de pagamento e Atraso mostram os dias de atraso de cada recebimento,
+
+43
+00:02:52,403 --> 00:02:57,466
+com a marca outro mês quando o recebimento caiu em mês diferente do vencimento.
+
+44
+00:02:57,466 --> 00:03:00,670
+Os totais também aparecem no Dashboard Financeiro.

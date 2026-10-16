@@ -2,7 +2,7 @@
 
 _Criar, preencher, finalizar, consultar e imprimir prontuários_
 
-Versão 1.0 — 23/09/2026
+Versão 1.1 — 16/10/2026
 
 Este manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". A conferência gerencial (auditoria) tem manual próprio.
 
@@ -92,6 +92,12 @@ _Alínea salva. O botão Finalizar só aparece depois que há texto salvo._
 
 Para alíneas do tipo Sim ou Não aparece uma lista de opções, e nas do tipo Arquivo há o envio de um anexo. Cada alínea é salva separadamente.
 
+Alínea de Marcação (nas clínicas em que o tipo está liberado): as opções aparecem como cartões selecionáveis. Se a alínea é de uma opção, marcar outra troca a escolha; se é de várias, pode marcar mais de uma, e o canto mostra quantas estão marcadas. O selo Obrigatória indica que é preciso marcar ao menos uma opção para finalizar. Se a alínea permite Outros, ao marcar essa opção aparece uma linha "Descreva (obrigatório)" para digitar o texto. Como as demais, a marcação é salva pelo botão Salvar da alínea.
+
+![Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever.](U06-marcacao-outros.png)
+
+_Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever._
+
 ## 4. Tags
 
 As tags identificam o método de atendimento (por exemplo, "Padrão" ou "Jedi") e são usadas na Auditoria de Prontuário. Só aparecem se a clínica tem a opção PRONTUARIO_TAGS. Como elas entram no prontuário:
@@ -120,6 +126,12 @@ _Confirmação de finalização com a data de emissão._
 ![Prontuário finalizado: os campos ficam bloqueados (cinza) e as tags saem da tela de edição.](12-finalizado.png)
 
 _Prontuário finalizado: os campos ficam bloqueados (cinza) e as tags saem da tela de edição._
+
+Depois de finalizado, o prontuário mostra todas as alíneas em sequência, na mesma página, somente leitura, sem os botões Anterior e Próxima. Nas alíneas de marcação aparecem todas as opções, com as marcadas em destaque e, na opção Outros, o texto digitado.
+
+![Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros.](U09-finalizado.png)
+
+_Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros._
 
 | Depois de finalizar | Regra |
 |---|---|

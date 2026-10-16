@@ -1,0 +1,4 @@
+{
+  "aviso": "Atenção Pagamento em atraso. A parcela venceu em 20/09/2026 e o recebimento está sendo registrado em 16/10/2026. Nos relatórios e no dashboard este valor será contado em outubro/2026 (mês do recebimento), e não em setembro/2026. Se o cliente pagou em outra data, clique em 'Não' e corrija a data do recebimento. Deseja realmente salvar este pagamento? Ao clica no botão 'Sim' o status da parcela mudará para a situação Baixada, pois, o valor pago está igual ao valor cobrado. Não Sim",
+  "relatorio": "Paciente Vencimento Data pagamento Atraso Forma pagamento Operadora Parcelas cartão Valor original Valor pago Juros Desconto Valor líquido Situação Paciente 0002 10/09/2026 16/10/2026 36 dias · outro mês Dinheiro - - R$ 120,00 R$ 120,00 R$ 0,00 R$ 0,00 R$ 120,00 Ativa Paciente 0002 30/09/2026 16/10/2026 16 dias · outro mês Dinheiro - - R$ 80,00 R$ 80,00 R$ 0,00 R$ 0,00 R$ 80,00 Ativa Totais R$ 200,00 R$ 200,00 R$ 0,00 R$ 0,00 R$ 200,00 "
+}

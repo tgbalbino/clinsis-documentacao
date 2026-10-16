@@ -129,3 +129,39 @@ o resultado é quebrado por conta financeira e por centro de custo,
 33
 00:02:06,437 --> 00:02:07,801
 com a linha de total.
+
+34
+00:02:08,901 --> 00:02:16,591
+Novidade no Dashboard Financeiro: três cartões amarelos mostram os recebimentos pagos depois do vencimento.
+
+35
+00:02:16,591 --> 00:02:19,969
+Recebido em atraso, com o valor e a quantidade.
+
+36
+00:02:19,969 --> 00:02:21,550
+Atraso médio, em dias.
+
+37
+00:02:21,550 --> 00:02:26,940
+E Recebido em mês posterior ao vencimento, que conta no mês do recebimento.
+
+38
+00:02:26,940 --> 00:02:30,031
+Baixas estornadas não entram nesses totais.
+
+39
+00:02:31,131 --> 00:02:32,820
+No fluxo de caixa projetado,
+
+40
+00:02:32,820 --> 00:02:37,344
+quando existem baixas de cheques ou cartões que ainda aguardam compensação,
+
+41
+00:02:37,344 --> 00:02:41,928
+uma linha informa os valores a receber e a pagar já incluídos nos previstos,
+
+42
+00:02:41,928 --> 00:02:45,728
+e lembra de confirmar a compensação em Liquidações Financeiras.

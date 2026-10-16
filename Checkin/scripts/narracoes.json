@@ -53,5 +53,20 @@
   "audio": "11.wav",
   "imagem": "08-conta-a-receber-gerada-pelo-checkin.png",
   "texto": "Em Contas a Receber, a conta já está criada e baixada, com o plano de conta do Checkin. Não é preciso lançar nada manualmente. Se faltar caixa aberto, plano próprio ou algum parâmetro, o sistema explica na mensagem o que corrigir."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "09-painel-tv-nova-chegada.png",
+  "texto": "Novidade: com o módulo Painel de chegada ligado, depois de confirmar o check-in o sistema pergunta se deseja notificar o profissional. Marque os horários e clique em Avisar agora. A TV da clínica mostra a nova chegada, e o profissional recebe o chamado no sistema. Se nenhuma TV estiver conectada, o aviso não é enviado."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "10-aviso-revisao-cadastral.png",
+  "texto": "Outra novidade: com o módulo Revisão cadastral ligado, se o cadastro do paciente precisa de revisão, aparece uma faixa amarela no check-in com o motivo. O aviso não bloqueia o check-in, e o link permite abrir o cadastro em outra aba."
+ },
+ {
+  "audio": "14.wav",
+  "imagem": "11-agenda-chegada-totem.png",
+  "texto": "Se a clínica usa o totem de check-in, o paciente pode registrar a chegada sozinho na portaria. Na agenda aparece um selo verde com o horário. O totem apenas avisa a chegada: o check-in da recepção, com pagamento, continua sendo feito normalmente."
  }
 ]

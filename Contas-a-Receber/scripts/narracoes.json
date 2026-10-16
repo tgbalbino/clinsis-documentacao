@@ -48,5 +48,15 @@
   "audio": "10.wav",
   "imagem": "10-apos-lancar-baixa.png",
   "texto": "Depois de confirmar, o valor restante zera, o recebimento aparece na tabela de acertos, e é possível emitir o recibo para o paciente."
+ },
+ {
+  "audio": "11.wav",
+  "imagem": "R02-aviso-atraso.png",
+  "texto": "Novidade: quando a data do recebimento cai em um mês depois do vencimento da parcela, ao clicar em Lançar o sistema mostra o aviso Pagamento em atraso, com o vencimento, a data do recebimento e o mês em que o valor será contado. Clique em Sim para confirmar, ou em Não para corrigir a data. O valor é sempre contado no mês do recebimento, e não no mês do vencimento."
+ },
+ {
+  "audio": "12.wav",
+  "imagem": "R03-relatorio-recebimentos.png",
+  "texto": "No relatório de recebimentos, modo detalhado, as colunas Vencimento, Data de pagamento e Atraso mostram os dias de atraso de cada recebimento, com a marca outro mês quando o recebimento caiu em mês diferente do vencimento. Os totais também aparecem no Dashboard Financeiro."
  }
 ]

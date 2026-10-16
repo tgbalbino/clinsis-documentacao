@@ -1,0 +1,211 @@
+1
+00:00:00,400 --> 00:00:05,050
+Este vídeo mostra o dia a dia do prontuário para o profissional.
+
+2
+00:00:05,050 --> 00:00:08,828
+Em Prontuário, no menu, aparece a janela de filtros.
+
+3
+00:00:08,828 --> 00:00:12,824
+O tipo é obrigatório, como Anamnese ou Evolução diária,
+
+4
+00:00:12,824 --> 00:00:18,708
+e os demais filtros são opcionais: número, paciente, datas de emissão e inclusão,
+
+5
+00:00:18,708 --> 00:00:19,871
+situação e tags.
+
+6
+00:00:20,971 --> 00:00:26,545
+A lista mostra cada prontuário como Digitação, que é o rascunho, ou Finalizada.
+
+7
+00:00:26,545 --> 00:00:30,567
+Em cada linha há o olho para visualizar, o botão de tags,
+
+8
+00:00:30,567 --> 00:00:36,142
+o botão amarelo para preencher, e a lixeira, que só aparece nos seus rascunhos.
+
+9
+00:00:37,242 --> 00:00:39,190
+Para criar, clique em Novo.
+
+10
+00:00:39,190 --> 00:00:44,096
+Você pode listar os pacientes da agenda atual e marcar um ou vários.
+
+11
+00:00:44,096 --> 00:00:48,857
+Escolha a especialidade, que é obrigatória, e clique em Adicionar.
+
+12
+00:00:48,857 --> 00:00:53,186
+Pacientes que já têm um rascunho do mesmo tipo não aparecem,
+
+13
+00:00:53,186 --> 00:00:54,917
+para evitar duplicidade.
+
+14
+00:00:56,017 --> 00:00:58,570
+O prontuário abre para preenchimento.
+
+15
+00:00:58,570 --> 00:01:03,814
+Você vê os dados do paciente, a data de emissão, que vem com a data de hoje,
+
+16
+00:01:03,814 --> 00:01:05,746
+as tags e a primeira alínea.
+
+17
+00:01:05,746 --> 00:01:09,403
+Use Anterior e Próxima para navegar entre as alíneas,
+
+18
+00:01:09,403 --> 00:01:11,542
+e salve cada uma separadamente.
+
+19
+00:01:12,642 --> 00:01:16,391
+Você pode inserir um texto padrão escolhendo na lista.
+
+20
+00:01:16,391 --> 00:01:21,320
+Atenção: o sistema avisa que o texto já digitado no campo será apagado.
+
+21
+00:01:21,320 --> 00:01:25,624
+Por isso, insira o texto padrão primeiro e complemente depois.
+
+22
+00:01:26,724 --> 00:01:30,457
+Depois de salvar o texto, aparece o botão Finalizar.
+
+23
+00:01:30,457 --> 00:01:33,616
+As tags identificam o método de atendimento.
+
+24
+00:01:33,616 --> 00:01:37,278
+Se o paciente tem um único método na agenda do mês,
+
+25
+00:01:37,278 --> 00:01:39,719
+a tag é aplicada sozinha ao criar.
+
+26
+00:01:39,719 --> 00:01:44,386
+Se a clínica usa tags, é preciso ter ao menos uma para finalizar.
+
+27
+00:01:45,486 --> 00:01:50,156
+Quando o tipo de campo é Marcação, as opções aparecem como cartões.
+
+28
+00:01:50,156 --> 00:01:54,129
+Em uma alínea de uma opção, marcar outra troca a escolha.
+
+29
+00:01:54,129 --> 00:01:58,032
+Em uma alínea de várias opções, pode marcar mais de uma,
+
+30
+00:01:58,032 --> 00:02:00,820
+e o canto mostra quantas estão marcadas.
+
+31
+00:02:00,820 --> 00:02:06,466
+O selo Obrigatória indica que é preciso marcar ao menos uma opção para finalizar.
+
+32
+00:02:06,466 --> 00:02:11,624
+Se a alínea permite Outros, ao marcar essa opção aparece o campo Descreva,
+
+33
+00:02:11,624 --> 00:02:13,994
+obrigatório, para digitar o texto.
+
+34
+00:02:15,094 --> 00:02:18,519
+Ao finalizar, o sistema confirma a data de emissão.
+
+35
+00:02:18,519 --> 00:02:23,421
+Depois disso o prontuário fica travado: ninguém consegue alterar o texto,
+
+36
+00:02:23,421 --> 00:02:25,301
+e ele não pode ser excluído.
+
+37
+00:02:25,301 --> 00:02:27,248
+Só o profissional dono edita,
+
+38
+00:02:27,248 --> 00:02:32,016
+e o compartilhamento com outros profissionais é sempre somente leitura.
+
+39
+00:02:33,116 --> 00:02:37,987
+Depois de finalizado, o prontuário mostra todas as alíneas em sequência,
+
+40
+00:02:37,987 --> 00:02:40,557
+na mesma página, somente para leitura.
+
+41
+00:02:40,557 --> 00:02:43,872
+Nas alíneas de marcação aparecem todas as opções,
+
+42
+00:02:43,872 --> 00:02:47,728
+com as marcadas em destaque e o texto digitado em Outros.
+
+43
+00:02:48,828 --> 00:02:53,558
+Para imprimir, marque o prontuário finalizado e clique na impressora.
+
+44
+00:02:53,558 --> 00:02:57,397
+O PDF traz os dados do paciente, as alíneas preenchidas,
+
+45
+00:02:57,397 --> 00:03:00,824
+a marca d'água da clínica e a linha de assinatura.
+
+46
+00:03:00,824 --> 00:03:03,978
+Só é possível imprimir de um paciente por vez,
+
+47
+00:03:03,978 --> 00:03:06,857
+e o arquivo agora leva o nome do paciente.
+
+48
+00:03:07,957 --> 00:03:11,049
+Rascunhos podem ser excluídos pela lixeira.
+
+49
+00:03:11,049 --> 00:03:14,428
+Sem texto salvo, o prontuário é apagado de vez.
+
+50
+00:03:14,428 --> 00:03:19,533
+Com texto salvo, ele é marcado como excluído e o registro é preservado.
+
+51
+00:03:19,533 --> 00:03:20,899
+Nesta documentação,
+
+52
+00:03:20,899 --> 00:03:26,004
+corrigimos a tag automática ao criar e a exclusão de rascunhos com tag,
+
+53
+00:03:26,004 --> 00:03:27,730
+que falhava em silêncio.

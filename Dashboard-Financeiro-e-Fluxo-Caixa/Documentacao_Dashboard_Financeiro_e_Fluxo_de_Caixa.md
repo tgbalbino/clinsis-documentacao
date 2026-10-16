@@ -2,7 +2,7 @@
 
 _O que é cada informação exibida na tela e de onde ela vem no sistema_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 O Dashboard Financeiro resume, num período escolhido, o que entrou, o que saiu, o saldo de cada conta e os maiores pagamentos e recebimentos. O Fluxo de Caixa mostra a movimentação dia a dia (ou por semana/mês) e ainda projeta o saldo futuro a partir das contas a pagar e a receber em aberto. Este documento explica cada campo das duas telas.
 
@@ -117,6 +117,26 @@ Com "Somente Realizado" e Agrupamento "Mês", a tabela passa a ter uma linha por
 ![Mesmo tipo de consulta, agora agrupada por mês.](12-fluxo-agrupado-mes.png)
 
 _Mesmo tipo de consulta, agora agrupada por mês._
+
+## Recebimentos em atraso (Dashboard Financeiro)
+
+Logo abaixo dos indicadores de juros e descontos, três cartões amarelos mostram como estão os recebimentos de Contas a Receber que foram pagos depois do vencimento, dentro do período do filtro:
+
+| Campo / Label na tela | Origem no banco de dados (fórmula) | Onde é calculado |
+|---|---|---|
+| Recebido em atraso | Valor e quantidade de recebimentos cuja data de pagamento é posterior ao vencimento da parcela. Baixas estornadas não entram. | ContaReceberBaixa x ContaReceber |
+| Atraso médio | Média, em dias, entre o vencimento e o recebimento dos itens acima. | Cálculo sobre as baixas |
+| Recebido em mês posterior ao vencimento | Parcelas que venceram em um mês e foram recebidas em mês seguinte: o valor conta no mês do recebimento. | ContaReceberBaixa |
+
+![Cartões de atraso: R$ 200,00 em 2 recebimentos, atraso médio de 26 dias e o mesmo valor recebido em mês posterior (exemplo com duas parcelas de setembro recebidas em outubro).](A01-dashboard-atraso.png)
+
+_Cartões de atraso: R$ 200,00 em 2 recebimentos, atraso médio de 26 dias e o mesmo valor recebido em mês posterior (exemplo com duas parcelas de setembro recebidas em outubro)._
+
+No Fluxo de Caixa Projetado, quando há baixas já feitas que ainda aguardam compensação (cheques e cartões), uma linha informa "Já baixados e aguardando compensação, incluídos nos previstos", com os valores a receber e a pagar, e lembra de confirmar a compensação em Financeiro → Liquidações Financeiras.
+
+![Fluxo de Caixa Projetado: saldo atual, recebimentos e pagamentos previstos e saldo projetado.](A02-fluxo-projetado.png)
+
+_Fluxo de Caixa Projetado: saldo atual, recebimentos e pagamentos previstos e saldo projetado._
 
 ## Pontos de atenção
 

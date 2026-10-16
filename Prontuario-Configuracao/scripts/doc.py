@@ -10,8 +10,8 @@ SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "23/09/2026"
+VERSAO = "1.1"
+DATA = "16/10/2026"
 TITULO = "Prontuário — Configuração"
 SUBTITULO = "Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem"
 VIDEO_NOME = "https://youtu.be/tMs3WdzjMSg"
@@ -72,6 +72,7 @@ blocks = [
          ['Texto', 'Caixa de texto livre (aceita os Textos padrão).'],
          ['Sim ou Não', 'Lista com as opções Sim/Não.'],
          ['Arquivo - Upload', 'Anexo de um arquivo (por exemplo, um laudo em PDF ou imagem).'],
+         ['Marcação (lista de opções)', 'Lista de opções que o profissional marca: escolha única ou várias (veja abaixo). Só aparece nas clínicas liberadas.'],
      ], [5.0, 12.5]),
     ('p', 'Depois de Salvar, a janela <b>continua aberta</b> para você cadastrar várias alíneas seguidas; use Fechar ao terminar. '
           'O sistema não impede duas alíneas com o mesmo nome no mesmo tipo, então confira para não duplicar.'),
@@ -84,6 +85,34 @@ blocks = [
           '<b>BLOCK_ADD_PRONT</b> (bloqueio de novos lançamentos de prontuário), os botões <b>Novo</b> e <b>excluir</b> desta tela '
           'deixam de aparecer, e o cadastro de alíneas fica somente para consulta.'),
     ('img', '14-alinea-excluir.png', 'Confirmação ao excluir uma alínea.'),
+
+    ('h2', '2.1 Alínea de Marcação (lista de opções)'),
+    ('p', 'A alínea do tipo <b>Marcação</b> mostra ao profissional uma lista de opções para marcar, em vez de um texto livre. Serve para respostas padronizadas, '
+          'como "Como o paciente chegou" ou "Queixas". O tipo vem <b>desligado</b>: o administrador do sistema libera por clínica, na <b>Área do Administrador</b> '
+          '(cadastro da clínica, opção de Prontuário com marcação), e os usuários precisam sair e entrar de novo. Enquanto não for liberado, a opção '
+          '<b>Marcação (lista de opções)</b> não aparece em <b>Tipo campo</b>; alíneas de marcação já criadas continuam funcionando.'),
+    ('img', 'M05-modal-marcacao.png', 'Nova alínea de Marcação: formato de resposta, Obrigatória, Permitir "Outros" e as opções.'),
+    ('tabelagen', ['Campo', 'Como funciona'],
+     [
+         ['Como o profissional vai responder', '<b>Uma opção</b> (escolha única: marcar outra troca a escolha) ou <b>Várias opções</b> (múltipla escolha).'],
+         ['Obrigatória', 'O profissional precisa marcar ao menos uma opção para finalizar o prontuário.'],
+         ['Permitir "Outros"', 'Acrescenta uma última opção em que o profissional digita um texto livre, <b>obrigatório</b> quando ela é marcada. Dá para trocar o nome da opção (padrão: Outros).'],
+         ['Opções', 'Até 30 opções, de até 80 caracteres cada, com setas para mudar a ordem. Editar ou excluir uma opção <b>não altera</b> prontuários já preenchidos: a resposta gravada mantém o texto da época.'],
+     ], [5.0, 12.5]),
+    ('p', 'O botão <b>Pré-visualizar</b> (no rodapé da janela) mostra como o profissional verá a alínea, com dados fictícios. <b>Nada é gravado</b>.'),
+    ('img', 'M06-preview-alinea.png', 'Pré-visualização da alínea: opções em cartões, selo Obrigatória e a opção Outros.'),
+    ('p', 'Com um tipo filtrado, o botão <b>Pré-visualizar prontuário</b> (acima da lista) mostra <b>todas as alíneas do tipo em sequência</b>, ou <b>uma por vez</b>, '
+          'para conferir o formulário completo antes de liberar para os profissionais.'),
+    ('img', 'M08-preview-prontuario.png', 'Pré-visualização do prontuário completo: todas as alíneas em sequência.'),
+    ('aviso', 'O tipo de campo <b>não pode ser alterado</b> depois que a alínea é criada. Se errou o tipo, crie outra alínea e exclua a antiga.'),
+
+    ('h2', '2.2 Clonar um tipo de prontuário'),
+    ('p', 'Para criar um tipo parecido com um que já existe, use o botão <b>Clonar</b> (ícone de cópia) na linha do tipo, em <b>Prontuário → Tipos</b>. '
+          'Informe o <b>nome do novo tipo</b> (até 30 caracteres) e confirme: o sistema copia as <b>alíneas</b>, as <b>opções de marcação</b> e os <b>textos padrão</b>. '
+          '<b>Modelo para download e De-Para não são copiados</b>.'),
+    ('img', 'M01-tipos-clonar.png', 'Lista de tipos: o botão cinza com o ícone de cópia clona o tipo.'),
+    ('img', 'M02-clonar-modal.png', 'Janela Clonar: só o nome do novo tipo.'),
+    ('img', 'M03-tipo-clonado.png', 'Tipo clonado ("Tipo clonado!"), já com as alíneas do original.'),
 
     ('h2', '3. Textos padrão'),
     ('p', 'Um <b>Texto padrão</b> é um trecho pronto que o profissional insere numa alínea de texto com um clique, em vez de digitar '
