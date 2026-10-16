@@ -6,6 +6,8 @@ Versão 1.0 — 16/10/2026
 
 Cadastro desatualizado atrapalha a clínica: telefone que não atende, lembrete que não chega, cobrança enviada para o endereço errado. O módulo Revisão cadastral ajuda a manter o cadastro do paciente em dia, com foco em endereço e contato. Ele mostra, numa lista, quem precisa de revisão, e avisa na agenda do dia, no check-in e no próprio cadastro do paciente. O prazo para sugerir uma nova revisão (em dias) é um parâmetro da clínica. O módulo vem desligado e é liberado por clínica pela Área do Administrador.
 
+Vídeo narrado desta rotina: `video-revisao-cadastral-com-legenda.mp4`
+
 ---
 
 ## Quando o cadastro precisa de revisão

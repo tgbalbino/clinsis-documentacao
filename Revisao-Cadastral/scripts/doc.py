@@ -16,7 +16,7 @@ DATA = '16/10/2026'
 NOME = 'Revisao_Cadastral'
 TITULO = "Revisão Cadastral de Pacientes"
 SUBTITULO = "Como manter endereço e contato dos pacientes atualizados: lista de pendentes, aviso na agenda e no check-in"
-VIDEO_NOME = None
+VIDEO_NOME = "video-revisao-cadastral-com-legenda.mp4"
 INTRO = ('Cadastro desatualizado atrapalha a clínica: telefone que não atende, lembrete que não chega, cobrança enviada '
          'para o endereço errado. O módulo <b>Revisão cadastral</b> ajuda a manter o cadastro do paciente em dia, '
          'com foco em <b>endereço</b> e <b>contato</b>. Ele mostra, numa lista, quem precisa de revisão, e avisa na '
