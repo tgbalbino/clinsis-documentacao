@@ -58,5 +58,10 @@
   "audio": "12.wav",
   "imagem": "R03-relatorio-recebimentos.png",
   "texto": "No relatório de recebimentos, modo detalhado, as colunas Vencimento, Data de pagamento e Atraso mostram os dias de atraso de cada recebimento, com a marca outro mês quando o recebimento caiu em mês diferente do vencimento. Os totais também aparecem no Dashboard Financeiro."
+ },
+ {
+  "audio": "13.wav",
+  "imagem": "C02-modal-cancelar.png",
+  "texto": "Para um título lançado errado, use Cancelar documento, no cadastro do título. Só o administrador vê o botão, e apenas enquanto o título está em aberto. A janela pede o motivo do cancelamento, que é obrigatório. A conta não é excluída: fica registrada como cancelada, com a data, o usuário e o motivo. Cancelar não é estornar: o estorno desfaz um recebimento já feito, e o cancelamento encerra o título inteiro."
  }
 ]

@@ -16,7 +16,12 @@ ROTINAS = [
     ("Cadastro-de-Servicos", "Cadastros Gerais", "cadastros", "Cadastro de Serviços"),
 
     ("Checkin", "Agenda e Atendimento", "agenda", "Checkin de Paciente"),
+    ("Totem-de-Checkin", "Agenda e Atendimento", "agenda", "Totem de Check-in"),
+    ("Painel-de-Chegada", "Agenda e Atendimento", "agenda", "Painel de Chegada (TV)"),
+    ("Responsaveis-do-Paciente", "Agenda e Atendimento", "agenda", "Responsáveis do Paciente"),
+    ("Revisao-Cadastral", "Agenda e Atendimento", "agenda", "Revisão Cadastral de Pacientes"),
     ("WhatsApp", "Agenda e Atendimento", "agenda", "WhatsApp - lembretes e confirmações"),
+    ("Efetividade-WhatsApp", "Agenda e Atendimento", "agenda", "Efetividade do Aviso por WhatsApp"),
     ("Dashboard-de-Agenda", "Agenda e Atendimento", "agenda", "Dashboard de Agenda"),
 
     ("Layout-de-Contrato", "Contrato", "contrato", "Layout de Contrato"),
@@ -45,6 +50,7 @@ ROTINAS = [
     ("Modulo-de-Caixa", "Financeiro", "financeiro", "Módulo de Caixa"),
     ("Conciliacao-Bancaria-OFX", "Financeiro", "financeiro", "Conciliação Bancária (OFX)"),
     ("Liquidacao-Financeira-Cheque-e-Cartao", "Financeiro", "financeiro", "Controle de Cheques e Liquidação Financeira"),
+    ("Estorno-de-Baixas", "Financeiro", "financeiro", "Estorno de Baixas (Contas a Receber e a Pagar)"),
     ("Dashboard-Financeiro-e-Fluxo-Caixa", "Financeiro", "financeiro", "Dashboard Financeiro e Fluxo de Caixa"),]
 
 # Links do YouTube: preencha aqui quando os vídeos forem publicados.
@@ -110,6 +116,12 @@ INTRO_SITE = {
     "Contas-a-Receber": "Controle dos valores que pacientes e convênios devem à clínica: cadastro das parcelas, acompanhamento de vencimentos e baixa (recebimento). Os recebimentos baixados alimentam os Movimentos Financeiros e o fluxo de caixa.",
     "Movimentos-Financeiros": "Extrato de cada Conta Financeira: lista todas as entradas e saídas já realizadas, vindas de baixas de contas, caixa e transferências. Serve para conferir o saldo, conciliar com o banco e fazer transferências entre contas.",
     "Modulo-de-Caixa": "Controle diário do caixa da clínica: abertura, lançamentos manuais (suprimento e sangria), recebimentos e pagamentos automáticos, fechamento e histórico. Garante que o dinheiro em caixa confira ao fim de cada dia ou turno.",
+    "Totem-de-Checkin": "Tela da portaria onde o paciente, ou o responsável, registra a chegada sozinho informando CPF e data de nascimento. A recepção vê o selo de chegada na agenda. Explica como ativar, autorizar o equipamento e o que o paciente vê.",
+    "Painel-de-Chegada": "Mostra numa TV da clínica o profissional e o paciente que acabou de chegar, com aviso sonoro, e avisa o profissional no sistema. Explica a configuração, a autorização da TV e como avisar a chegada pelo Check-in ou pela Agenda.",
+    "Responsaveis-do-Paciente": "Cada paciente pode ter quantos responsáveis forem necessários, com parentesco e situação. Explica como cadastrar, a opção de exigir responsável para menores de 18 anos e o uso do responsável no totem.",
+    "Revisao-Cadastral": "Mantém endereço e contato dos pacientes atualizados: lista de pendentes, aviso na agenda, no check-in e no cadastro, e o prazo de revisão como parâmetro da clínica.",
+    "Efetividade-WhatsApp": "Mostra se o lembrete por WhatsApp vale a pena: taxa de falta de quem recebeu e de quem não recebeu o aviso, respostas, faltas evitadas e custo por falta evitada.",
+    "Estorno-de-Baixas": "Como desfazer uma baixa de Contas a Receber ou a Pagar, com motivo e histórico, e como conferir o efeito no dashboard financeiro, nos relatórios e nos movimentos financeiros.",
     "Liquidacao-Financeira-Cheque-e-Cartao": "Controle de cheques (recebidos e emitidos) e de cartão: o título é quitado na baixa, mas o dinheiro só entra na conta quando o cheque é compensado ou a parcela do cartão é repassada. Um cheque pode pagar vários títulos; a devolução gera estorno e nova cobrança.",
     "Conciliacao-Bancaria-OFX": "Confere o extrato do banco com os Movimentos Financeiros do ClinSis a partir de um arquivo OFX exportado do banco. O sistema sugere os pares e aponta divergências, garantindo que o saldo do sistema reflita o saldo real da conta.",
     "Dashboard-Financeiro-e-Fluxo-Caixa": "O Dashboard é um painel que reúne, numa única tela, os principais números de um período em indicadores, tabelas e gráficos, para que o gestor entenda a situação sem montar relatórios manualmente. O Dashboard Financeiro resume o que entrou, o que saiu, o resultado e o saldo de cada conta, com rankings e comparativo mensal. O Fluxo de Caixa mostra a movimentação por dia, semana ou mês e projeta o saldo futuro com base nas contas a pagar e a receber em aberto. Servem para acompanhar a saúde financeira, antecipar faltas de caixa e apoiar decisões. O manual explica cada indicador e de onde ele vem no sistema.",

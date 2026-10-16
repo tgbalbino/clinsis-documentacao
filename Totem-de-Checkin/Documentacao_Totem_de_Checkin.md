@@ -119,9 +119,9 @@ _Chegada registrada. A tela volta ao início sozinha._
 
 Na Agenda do dia, antes do nome do paciente aparece um selo verde com um ✔ e o horário da chegada. Ao passar o mouse, o selo diz "Chegada registrada no totem às HH:mm". A tela consulta a cada 30 segundos. O totem não faz check-in financeiro nem baixa pagamento: o Check-in da recepção continua normal.
 
-![Agenda do dia: selo verde com o horário (01:45) antes do nome do paciente que usou o totem.](09-agenda-chegou.png)
+![Agenda do dia: selo verde com o horário da chegada antes do nome do paciente que usou o totem.](09-agenda-chegou.png)
 
-_Agenda do dia: selo verde com o horário (01:45) antes do nome do paciente que usou o totem._
+_Agenda do dia: selo verde com o horário da chegada antes do nome do paciente que usou o totem._
 
 ## Gerenciar os totens
 

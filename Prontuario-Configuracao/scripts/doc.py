@@ -10,8 +10,8 @@ SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.1"
-DATA = "16/10/2026"
+VERSAO = '1.1'
+DATA = '16/10/2026'
 TITULO = "Prontuário — Configuração"
 SUBTITULO = "Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem"
 VIDEO_NOME = "https://youtu.be/tMs3WdzjMSg"
@@ -113,6 +113,12 @@ blocks = [
     ('img', 'M01-tipos-clonar.png', 'Lista de tipos: o botão cinza com o ícone de cópia clona o tipo.'),
     ('img', 'M02-clonar-modal.png', 'Janela Clonar: só o nome do novo tipo.'),
     ('img', 'M03-tipo-clonado.png', 'Tipo clonado ("Tipo clonado!"), já com as alíneas do original.'),
+
+    ('h2', '2.3 Excluir ou renomear uma alínea que já tem respostas'),
+    ('p', 'Excluir uma alínea que <b>já tem respostas</b> apenas a <b>desativa</b>: ela deixa de aparecer em prontuários novos e os já preenchidos continuam como estavam. '
+          'Renomear o título de uma alínea <b>não altera os prontuários já finalizados</b>: ao finalizar, o sistema grava o título e a descrição das opções marcadas daquele momento.'),
+    ('p', 'Para o profissional poder <b>cancelar</b> prontuários, a clínica precisa habilitar o parâmetro <b>ProntuarioCancelarProprio</b> (valor 1) em <b>Tabelas Aux. → Parâmetros</b> e ter motivos em '
+          '<b>Cancelamento de Prontuário</b> no cadastro de Motivos. Veja o manual de Uso do Prontuário.'),
 
     ('h2', '3. Textos padrão'),
     ('p', 'Um <b>Texto padrão</b> é um trecho pronto que o profissional insere numa alínea de texto com um clique, em vez de digitar '

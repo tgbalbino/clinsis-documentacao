@@ -137,6 +137,12 @@ _Janela Clonar: só o nome do novo tipo._
 
 _Tipo clonado ("Tipo clonado!"), já com as alíneas do original._
 
+## 2.3 Excluir ou renomear uma alínea que já tem respostas
+
+Excluir uma alínea que já tem respostas apenas a desativa: ela deixa de aparecer em prontuários novos e os já preenchidos continuam como estavam. Renomear o título de uma alínea não altera os prontuários já finalizados: ao finalizar, o sistema grava o título e a descrição das opções marcadas daquele momento.
+
+Para o profissional poder cancelar prontuários, a clínica precisa habilitar o parâmetro ProntuarioCancelarProprio (valor 1) em Tabelas Aux. → Parâmetros e ter motivos em Cancelamento de Prontuário no cadastro de Motivos. Veja o manual de Uso do Prontuário.
+
 ## 3. Textos padrão
 
 Um Texto padrão é um trecho pronto que o profissional insere numa alínea de texto com um clique, em vez de digitar tudo de novo. Cada profissional cria os seus, por tipo de prontuário. Acesso: Prontuário → Textos padrão, na área do profissional.

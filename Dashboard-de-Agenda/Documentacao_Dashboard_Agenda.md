@@ -2,7 +2,7 @@
 
 _O que significa cada informação e como conferir cada uma no sistema_
 
-Versão 3.1 — 01/10/2026
+Versão 3.2 — 16/10/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
@@ -180,6 +180,33 @@ _Taxa de Ocupação: a lista tem 99 linhas, uma para cada horário disponível; 
 > ⚠️ Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista e pode ser identificado ali.
 
 Use o botão Exportar CSV para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".
+
+## Evolução de presenças e ausências por agenda (novo)
+
+Abaixo dos gráficos do período existe o quadro Evolução de Presenças e Ausências por Agenda. Ele não depende do período escolhido acima: usa uma janela própria (os últimos meses ou semanas) para mostrar se a presença está melhorando ou piorando ao longo do tempo.
+
+| Opção | O que faz |
+|---|---|
+| Periodicidade | Mensal (uma coluna por mês de agenda) ou Semanal (uma coluna por semana). |
+| Últimos | Quantos períodos mostrar: 3, 6, 12 ou 24 meses (ou o equivalente em semanas). |
+| Agrupar por | Geral, Especialidade, Particular / Convênio, Operadora, Método, Programa ou Profissional. Com um agrupamento, o gráfico traz uma linha por grupo (os maiores) e a tabela traz todos. |
+| Indicador | Taxa de presença, Taxa de ausência (só faltas) ou Taxa de ausência (com justificadas). |
+
+![Evolução mensal da taxa de presença (Geral): linha do tempo e tabela, com a variação em pontos percentuais (p.p.) em relação ao período anterior.](E01-evolucao-geral.png)
+
+_Evolução mensal da taxa de presença (Geral): linha do tempo e tabela, com a variação em pontos percentuais (p.p.) em relação ao período anterior._
+
+Cada célula da tabela mostra a taxa do período e, embaixo, a variação em pontos percentuais (seta verde quando melhora, vermelha quando piora). Um asterisco (*) marca o período em andamento, cuja taxa ainda é parcial. As taxas usam só as sessões com desfecho registrado (presente, ausente e ausência justificada): desmarcadas e sem status ficam de fora. Clique em uma célula para ver as sessões que a compõem.
+
+![Mesma evolução agrupada por Especialidade: uma linha por grupo.](E02-evolucao-especialidade.png)
+
+_Mesma evolução agrupada por Especialidade: uma linha por grupo._
+
+![Periodicidade Semanal: uma coluna por semana, útil para acompanhar a rotina de perto.](E03-evolucao-semanal.png)
+
+_Periodicidade Semanal: uma coluna por semana, útil para acompanhar a rotina de perto._
+
+> ⚠️ Períodos sem sessões com desfecho aparecem com um traço (-). Isso não significa 0% de presença: significa que não houve dado para calcular.
 
 ## Quadro resumo: onde conferir cada informação
 

@@ -10,8 +10,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.2'
-DATA = '01/10/2026'
+VERSAO = '1.3'
+DATA = '16/10/2026'
 TITULO = 'WhatsApp - lembretes e confirmações'
 SUBTITULO = 'Envio manual e envio automático pela API oficial da Meta: requisitos, configuração, templates, consentimento e acompanhamento'
 VIDEO_NOME = "https://youtu.be/2lvKkYApZFE"
@@ -190,6 +190,13 @@ blocks = [
         ['Quem pode', 'Administrador e atendente, com o módulo WhatsApp Meta habilitado na clínica.'],
     ], [4.6, 12.9]),
     ('aviso', 'Se a falha continuar, o motivo indica o que corrigir: celular do paciente, pagamento da conta na Meta, template aprovado ou limite de envios. Corrija e use Reenviar novamente.'),
+
+    ('h2', 'Efetividade do aviso e dia sem expediente'),
+    ('p', 'Para saber se o lembrete vale a pena, existe a tela <b>Relatórios → WhatsApp Meta → Efetividade do aviso</b> (só administrador). Ela cruza o que aconteceu com a mensagem '
+          '(enviada, entregue, lida, link aberto, resposta) com o que foi lançado na agenda (presente, faltou, desmarcou) e mostra a taxa de falta de quem recebeu o aviso e de quem não recebeu, '
+          'as faltas evitadas (estimativa), o tempo mediano até responder e o custo por falta evitada. Veja o manual <b>Efetividade do Aviso por WhatsApp</b>.'),
+    ('p', 'Quando a data da consulta cai em <b>feriado ou dia sem expediente</b> da clínica, a <b>simulação dos próximos envios</b> e o <b>link do paciente</b> '
+          'mostram o aviso de <b>dia sem expediente</b>, para o paciente não confirmar uma consulta que não vai acontecer.'),
 
     ('h2', 'Erros comuns'),
     ('tabelagen', ['Sintoma', 'Causa provável', 'O que fazer'], [

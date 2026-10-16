@@ -17,16 +17,18 @@ DATA = sys.argv[1] if len(sys.argv) > 1 else "lote"
 
 # (pasta da rotina, prefixo do arquivo de vídeo, título curto da miniatura, categoria)
 LOTE = [
-    ("Manual-Base-ClinSis", "video-manual-base-clinsis", "Manual Base do ClinSis", "PRIMEIROS PASSOS"),
-    ("Cadastro-de-Servicos", "video-cadastro-servicos", "Serviços", "CADASTROS"),
-    ("Tabela-de-Precos-Cobranca", "video-tabela-preco-cobranca", "Tabela de Valores: Cobrança", "CADASTROS"),
-    ("Tabela-de-Precos-Pagamento", "video-tabela-preco-pagamento", "Tabela de Valores: Pagamento", "CADASTROS"),
-    ("Movimentos-Financeiros", "video-movimentos-financeiros", "Movimentos Financeiros", "FINANCEIRO"),
-    ("Conciliacao-Bancaria-OFX", "video-conciliacao-bancaria-ofx", "Conciliação Bancária (OFX)", "FINANCEIRO"),
-    ("WhatsApp", "video-whatsapp", "WhatsApp: lembretes e confirmações", "AGENDA E ATENDIMENTO"),
-    ("Dashboard-de-Agenda", "video-dashboard-agenda", "Dashboard de Agenda", "PAINÉIS"),
-    ("Area-do-Profissional", "video-area-do-profissional", "Área do Profissional", "PRIMEIROS PASSOS"),
-    ("Checkin", "video-checkin", "Checkin de Paciente", "ATENDIMENTO"),
+    ("Totem-de-Checkin", "video-totem-de-checkin", "Totem de Check-in", "AGENDA E ATENDIMENTO"),
+    ("Painel-de-Chegada", "video-painel-de-chegada", "Painel de Chegada (TV)", "AGENDA E ATENDIMENTO"),
+    ("Responsaveis-do-Paciente", "video-responsaveis-do-paciente", "Responsáveis do Paciente", "AGENDA E ATENDIMENTO"),
+    ("Revisao-Cadastral", "video-revisao-cadastral", "Revisão Cadastral", "AGENDA E ATENDIMENTO"),
+    ("Estorno-de-Baixas", "video-estorno-de-baixas", "Estorno de Baixas", "FINANCEIRO"),
+    ("Liquidacao-Financeira-Cheque-e-Cartao", "video-controle-de-cheques-liquidacao", "Cheques e Liquidação", "FINANCEIRO"),
+    ("Checkin", "video-checkin", "Checkin de Paciente (atualizado)", "ATENDIMENTO"),
+    ("Prontuario-Configuracao", "video-prontuario-configuracao", "Prontuário: Configuração (atualizado)", "PRONTUÁRIO"),
+    ("Prontuario-Uso", "video-prontuario-uso", "Prontuário: Uso (atualizado)", "PRONTUÁRIO"),
+    ("Contas-a-Receber", "video-contas-a-receber", "Contas a Receber (atualizado)", "FINANCEIRO"),
+    ("Dashboard-Financeiro-e-Fluxo-Caixa", "video-dashboard-financeiro-e-fluxo-caixa", "Dashboard Financeiro (atualizado)", "PAINÉIS"),
+    ("Dashboard-de-Agenda", "video-dashboard-agenda", "Dashboard de Agenda (atualizado)", "PAINÉIS"),
 ]
 
 # 1) guarda o que já estava na pasta

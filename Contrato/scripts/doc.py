@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = 'Contrato (sem assinatura digital)'
 SUBTITULO = 'Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, renovação e aviso de vencimento'
 VIDEO_NOME = "https://youtu.be/szRnAwHrqI4"
@@ -58,6 +58,12 @@ blocks = [('aviso', 'Para o contrato poder ser fechado/impresso, a clínica prec
  ('img', '12-assinatura-dispensada.png', 'Assinatura dispensada: o topo mostra quem dispensou, quando e o motivo; o próximo passo é fechar o contrato.'),
  ('p', 'Se a clínica prefere registrar a assinatura no papel, na listagem de Contratos clique no botão de caneta/download da linha e, no modal que abre, em "Marcar como assinado" (esse botão só aparece se o contrato ainda não estiver assinado). O mesmo modal permite baixar o PDF do contrato para impressão e assinatura física.'),
  ('img', '11-modal-download-assinar.png', 'Modal "Download contrato / Assinar", com os botões Baixar documento e Marcar como assinado.'),
+('h2', 'Documento do contrato assinado e selo de assinatura'),
+ ('p', 'Na lista de contratos, o botão de <b>Download contrato / Assinar</b> abre a janela de ações do contrato selecionado. Um contrato já assinado traz o selo <b>"Assinado digitalmente pela D4Sign"</b> ou <b>"Assinado manualmente"</b>, conforme a forma usada.'),
+ ('p', 'Quando o contrato é <b>assinado manualmente</b>, o documento finalizado é <b>guardado como foi gerado</b> (um documento imutável, com verificação de integridade): se o layout ou os dados mudarem depois, o contrato assinado continua igual. '
+       'Contratos assinados <b>antes</b> dessa guarda não têm documento armazenado, e o sistema avisa isso ao tentar baixar. Se a integridade do documento não puder ser confirmada, o download é recusado.'),
+ ('p', 'Ao fechar a janela do cadastro do contrato com alterações não salvas, o sistema pergunta se deseja <b>perder as alterações</b>.'),
+
  ('h2', 'Fechando o Contrato (gera a Conta a Receber)'),
  ('p', 'Com o contrato assinado (ou mesmo sem assinar, se a clínica não exigir isso), abra-o de novo e clique em Fechar Contrato. O botão só fica habilitado se houver pelo menos um Serviço, pelo menos uma condição de Pagamento, e a diferença entre os dois totais for zero. Ao confirmar, o sistema gera, de uma só vez, os títulos em Contas a Receber — uma parcela por mês para cada acerto em Crediário e um único título para cada acerto à vista ou no cartão — e o contrato fica travado definitivamente (nunca mais pode ser editado).'),
  ('img', '14-confirmar-fechar-contrato.png', 'Confirmação: "As parcelas serão geradas em Contas a Receber e os serviços/pagamento não poderão mais ser alterados."'),

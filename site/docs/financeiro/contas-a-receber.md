@@ -19,7 +19,7 @@ Controle dos valores que pacientes e convênios devem à clínica: cadastro das 
 
 _Cadastrar e receber os valores que os pacientes/convênios devem à clínica_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
@@ -65,5 +65,28 @@ O botão verde com o cifrão ($), na linha da conta, abre a tela de Acertos / Re
 
 
 
+
+## Recebimento em atraso (pagamento em mês posterior ao vencimento)
+
+Quando a data do recebimento cai em um mês depois do vencimento da parcela, ao clicar em Lançar o sistema mostra o aviso "Pagamento em atraso", com a data do vencimento, a data do recebimento e em que mês o valor será contado. Clique em Sim para confirmar ou em Não para corrigir a data (por exemplo, se o paciente pagou em outro dia).
+
+
+> ⚠️ Regra: o valor é contado no mês do recebimento, e não no mês do vencimento. Por isso o aviso só aparece quando os meses são diferentes; recebimento no mesmo mês ou antecipado não pede confirmação.
+
+O relatório de recebimentos (Relatórios → Financeiro - Recebimentos (Contas a Receber), modo Detalhado) mostra as colunas Vencimento, Data pagamento e Atraso. A coluna Atraso traz os dias de atraso e a marca "outro mês" quando o recebimento caiu em mês diferente do vencimento.
+
+
+O Dashboard Financeiro resume isso nos cartões Recebido em atraso, Atraso médio e Recebido em mês posterior ao vencimento (veja o manual do Dashboard Financeiro e Fluxo de Caixa). Baixas estornadas não entram nesses totais.
+
+## Cancelar um documento
+
+Um título lançado errado (valor incorreto, duplicado, cobrança que não deve ser feita) pode ser cancelado em vez de excluído. Só o Administrador vê o botão Cancelar documento, dentro do cadastro do título (lápis amarelo), e apenas enquanto o título está em aberto (situação Aberto). A janela pede o motivo do cancelamento (obrigatório), escolhido na lista de motivos de Cancelamento de Conta a Receber (cadastro de Motivos, em Tabelas Aux.).
+
+
+
+Depois de confirmar, o sistema avisa "Conta a receber cancelada", o título passa à situação Cancelado e o cadastro mostra a faixa Documento cancelado, com data, usuário e motivo. Título cancelado não entra mais nos valores a receber.
+
+
+> ⚠️ Cancelar não é o mesmo que estornar um recebimento. O estorno desfaz uma baixa já feita (veja o manual Estorno de Baixas); o cancelamento encerra o título inteiro, sem recebimento.
 
 > ⚠️ Contas a Receber é o destino de lançamentos automáticos de outras rotinas: Checkin (quando há pagamento na hora, já gera a conta baixada), fechamento de Contrato (um título para cada acerto à vista ou no cartão e uma parcela por mês para cada acerto em Crediário) e Cobrança de Paciente (geração em lote a partir de sessões realizadas). O filtro "Analítica" na tela de Filtros permite inclusive separar o que foi lançado manualmente do que veio do Checkin ou da Cobrança de Paciente. Os títulos gerados por um Contrato trazem a coluna "Origem" na lista (por exemplo, "Contrato 12 - Crediário 2/5" ou "Contrato 12 - Pix"), e a mesma informação aparece na tela de baixa.

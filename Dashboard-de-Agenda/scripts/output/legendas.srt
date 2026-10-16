@@ -297,3 +297,55 @@ Para conferir quando houver, use o relatório Financeiro, Recebimentos,
 75
 00:04:57,991 --> 00:05:01,087
 com o mesmo período, filtrando pela operadora.
+
+76
+00:05:02,187 --> 00:05:06,533
+Novidade: o quadro Evolução de Presenças e Ausências por Agenda.
+
+77
+00:05:06,533 --> 00:05:11,218
+Ele não depende do período escolhido no topo: usa uma janela própria,
+
+78
+00:05:11,218 --> 00:05:13,187
+dos últimos meses ou semanas,
+
+79
+00:05:13,187 --> 00:05:16,922
+para mostrar se a presença está melhorando ou piorando.
+
+80
+00:05:16,922 --> 00:05:22,557
+Escolha a periodicidade, quantos períodos mostrar, como agrupar, por especialidade,
+
+81
+00:05:22,557 --> 00:05:26,224
+convênio, operadora, método, programa ou profissional,
+
+82
+00:05:26,224 --> 00:05:29,415
+e o indicador: taxa de presença ou de ausência.
+
+83
+00:05:29,415 --> 00:05:32,742
+A tabela mostra a variação em pontos percentuais,
+
+84
+00:05:32,742 --> 00:05:35,662
+e o asterisco marca o período em andamento.
+
+85
+00:05:35,662 --> 00:05:38,446
+Clique em uma célula para ver as sessões.
+
+86
+00:05:39,546 --> 00:05:44,946
+Aqui, a mesma evolução agrupada por especialidade, com uma linha por grupo.
+
+87
+00:05:44,946 --> 00:05:49,842
+As taxas consideram só as sessões com desfecho registrado: presente,
+
+88
+00:05:49,842 --> 00:05:52,074
+ausente e ausência justificada.

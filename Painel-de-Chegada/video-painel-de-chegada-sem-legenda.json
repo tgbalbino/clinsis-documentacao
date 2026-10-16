@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Painel de Chegada (TV) (sem legendas)",
+  "descricao": "Avisar o profissional, na TV e no celular, que o paciente chegou.\n\nO Painel de chegada mostra, numa TV da clínica, o nome do profissional e do paciente que acabou de chegar, com um aviso sonoro. Ao mesmo tempo, o profissional recebe o chamado no sistema (e no celular, se ativar as notificações). O aviso sai do Check-in (\"Notificar profissional\") ou do botão Avisar chegada da Agenda. Quando não há chegada, a TV mostra a data, a hora, o clima e os aniversariantes do dia. O módulo é liberado por clínica pela Área do Administrador e vem desligado.\n\nNeste vídeo:\n• Como funciona\n• Passo 1: liberar e configurar\n• Passo 2: abrir a TV\n• Passo 3: autorizar a TV\n• Avisar a chegada do paciente\n• O que o profissional recebe\n• Conferir as chamadas do dia\n• Aniversariantes e datas comemorativas\n• Problemas comuns\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

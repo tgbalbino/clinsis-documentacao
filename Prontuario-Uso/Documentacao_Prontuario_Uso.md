@@ -160,6 +160,12 @@ _PDF gerado: cabeçalho com dados do paciente, as alíneas preenchidas, marca d'
 
 > ⚠️ Correção feita nesta documentação: o nome do arquivo saía como "pac__data.pdf", sem o nome do paciente. Agora inclui o nome (ex.: "pac_Paciente_0005_23-09-2026 17-49.pdf"). O modelo do PDF (1, 2 ou 3) é definido por tipo de prontuário na configuração da clínica.
 
+## 6.1 Cancelar um prontuário (opcional por clínica)
+
+Quando a clínica habilita o parâmetro ProntuarioCancelarProprio (valor 1), o profissional ganha o botão amarelo Cancelar prontuário na lista, nos prontuários dele que ainda não estão cancelados. A janela explica que o prontuário será mantido no histórico e marcado como cancelado e pede o motivo, escolhido na lista de motivos de Cancelamento de Prontuário (cadastro de Motivos). Só o próprio profissional cancela o que criou, e um prontuário cancelado não pode ser finalizado. Ao contrário da exclusão de rascunho, o cancelamento serve para prontuários já finalizados.
+
+> ⚠️ Para finalizar um prontuário com alínea de Marcação obrigatória, marque ao menos uma opção (ou preencha o texto de Outros). Sem isso o sistema avisa: "Marque ao menos uma opção nas alíneas obrigatórias: ...".
+
 ## 7. Excluir um rascunho
 
 A lixeira aparece só nos seus rascunhos (situação Digitação).

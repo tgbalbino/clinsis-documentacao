@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Totem de Check-in (com legendas)",
+  "descricao": "O paciente (ou o responsável) registra a chegada sozinho na portaria, com CPF e data de nascimento.\n\nO Totem de check-in é a tela da portaria onde o paciente, ou o responsável por ele, registra a chegada sem usuário e senha: basta informar o CPF e a data de nascimento. A recepção vê um selo verde com o horário da chegada ao lado do nome do paciente na Agenda do dia. O totem apenas avisa a chegada: o Check-in da recepção (pagamento, Plano Próprio) continua sendo feito normalmente. O recurso vem desligado e é ativado pelo administrador da clínica.\n\nNeste vídeo:\n• Onde fica cada coisa\n• Antes de começar\n• Passo 1: ativar e configurar (administrador)\n• Passo 2: abrir o totem na portaria\n• Passo 3: autorizar o totem (administrador)\n• Como o paciente usa\n• O que o totem responde\n• O que a recepção vê\n• Gerenciar os totens\n• Segurança e privacidade\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

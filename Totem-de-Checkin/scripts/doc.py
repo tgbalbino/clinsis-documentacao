@@ -103,7 +103,7 @@ blocks = [
     ('p', 'Na <b>Agenda</b> do dia, antes do nome do paciente aparece um selo verde com um <b>✔</b> e o horário da chegada. '
           'Ao passar o mouse, o selo diz "Chegada registrada no totem às HH:mm". A tela consulta a cada 30 segundos. '
           'O totem <b>não</b> faz check-in financeiro nem baixa pagamento: o Check-in da recepção continua normal.'),
-    ('img', '09-agenda-chegou.png', 'Agenda do dia: selo verde com o horário (01:45) antes do nome do paciente que usou o totem.'),
+    ('img', '09-agenda-chegou.png', 'Agenda do dia: selo verde com o horário da chegada antes do nome do paciente que usou o totem.'),
 
     ('h2', 'Gerenciar os totens'),
     ('p', 'Na mesma tela <b>Totem de check-in</b>, a lista <b>Totens autorizados</b> mostra nome, quando foi autorizado, validade e último acesso. '

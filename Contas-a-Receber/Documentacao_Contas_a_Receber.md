@@ -98,4 +98,24 @@ _Relatório de recebimentos: parcelas que venceram em setembro, recebidas em out
 
 O Dashboard Financeiro resume isso nos cartões Recebido em atraso, Atraso médio e Recebido em mês posterior ao vencimento (veja o manual do Dashboard Financeiro e Fluxo de Caixa). Baixas estornadas não entram nesses totais.
 
+## Cancelar um documento
+
+Um título lançado errado (valor incorreto, duplicado, cobrança que não deve ser feita) pode ser cancelado em vez de excluído. Só o Administrador vê o botão Cancelar documento, dentro do cadastro do título (lápis amarelo), e apenas enquanto o título está em aberto (situação Aberto). A janela pede o motivo do cancelamento (obrigatório), escolhido na lista de motivos de Cancelamento de Conta a Receber (cadastro de Motivos, em Tabelas Aux.).
+
+![Cadastro do título em aberto, com o botão vermelho Cancelar documento.](C01-cadastro-cancelar.png)
+
+_Cadastro do título em aberto, com o botão vermelho Cancelar documento._
+
+![Cancelar Conta a Receber: motivo obrigatório. A conta não é excluída e fica registrada como cancelada.](C02-modal-cancelar.png)
+
+_Cancelar Conta a Receber: motivo obrigatório. A conta não é excluída e fica registrada como cancelada._
+
+Depois de confirmar, o sistema avisa "Conta a receber cancelada", o título passa à situação Cancelado e o cadastro mostra a faixa Documento cancelado, com data, usuário e motivo. Título cancelado não entra mais nos valores a receber.
+
+![Título cancelado: faixa vermelha com a data, o usuário e o motivo.](C03-cancelado.png)
+
+_Título cancelado: faixa vermelha com a data, o usuário e o motivo._
+
+> ⚠️ Cancelar não é o mesmo que estornar um recebimento. O estorno desfaz uma baixa já feita (veja o manual Estorno de Baixas); o cancelamento encerra o título inteiro, sem recebimento.
+
 > ⚠️ Contas a Receber é o destino de lançamentos automáticos de outras rotinas: Checkin (quando há pagamento na hora, já gera a conta baixada), fechamento de Contrato (um título para cada acerto à vista ou no cartão e uma parcela por mês para cada acerto em Crediário) e Cobrança de Paciente (geração em lote a partir de sessões realizadas). O filtro "Analítica" na tela de Filtros permite inclusive separar o que foi lançado manualmente do que veio do Checkin ou da Cobrança de Paciente. Os títulos gerados por um Contrato trazem a coluna "Origem" na lista (por exemplo, "Contrato 12 - Crediário 2/5" ou "Contrato 12 - Pix"), e a mesma informação aparece na tela de baixa.

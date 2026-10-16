@@ -63,5 +63,15 @@
   "audio": "13.wav",
   "imagem": "43-faturamento-corrigido.png",
   "texto": "O quadro Faturamento por Convênio é o único que não usa a data da sessão: ele usa a data do pagamento no Financeiro. Valor faturado é o valor da guia, e valor recebido é a soma das baixas dessa guia. Neste ambiente de teste não há guia com baixa no período, então o quadro aparece vazio. Para conferir quando houver, use o relatório Financeiro, Recebimentos, com o mesmo período, filtrando pela operadora."
+ },
+ {
+  "audio": "14.wav",
+  "imagem": "E01-evolucao-geral.png",
+  "texto": "Novidade: o quadro Evolução de Presenças e Ausências por Agenda. Ele não depende do período escolhido no topo: usa uma janela própria, dos últimos meses ou semanas, para mostrar se a presença está melhorando ou piorando. Escolha a periodicidade, quantos períodos mostrar, como agrupar, por especialidade, convênio, operadora, método, programa ou profissional, e o indicador: taxa de presença ou de ausência. A tabela mostra a variação em pontos percentuais, e o asterisco marca o período em andamento. Clique em uma célula para ver as sessões."
+ },
+ {
+  "audio": "15.wav",
+  "imagem": "E02-evolucao-especialidade.png",
+  "texto": "Aqui, a mesma evolução agrupada por especialidade, com uma linha por grupo. As taxas consideram só as sessões com desfecho registrado: presente, ausente e ausência justificada."
  }
 ]

@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = "Cadastro de Conta Financeira"
 SUBTITULO = "O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento"
 VIDEO_NOME = "https://youtu.be/m-j4pqukoHg"
@@ -145,6 +145,14 @@ blocks = [
               'cartão), o Checkin é recusado com uma mensagem indicando o parâmetro e a tela de Conta '
               'Financeira para ajuste. Por isso, aponte o parâmetro para uma conta que aceite todas as '
               'formas usadas na recepção.'),
+
+    ('h2', 'Conta duplicada'),
+    ('p', 'O sistema não deixa cadastrar duas contas financeiras iguais. Com <b>banco</b> informado, a conta é considerada duplicada quando já existe outra com o <b>mesmo banco, agência e conta</b> '
+          '(a mensagem é <b>"Já existe uma conta financeira com o mesmo banco, agência e conta"</b>). Para contas <b>sem banco</b> (caixa, por exemplo), vale a <b>descrição</b>: '
+          '<b>"Já existe uma conta financeira sem banco com a mesma descrição"</b>. Ao alterar uma conta, ela mesma não conta como duplicada.'),
+    ('h2', 'Conta Financeira nos Parâmetros'),
+    ('p', 'Nos <b>Parâmetros</b> que apontam para uma Conta Financeira (como a conta padrão de recebimento e a de pagamento), o campo agora é uma <b>lista das contas ativas</b>, no formato "código - descrição". '
+          'Para os parâmetros de conta de <b>recebimento</b> e de <b>pagamento</b>, só aparecem contas que tenham <b>banco e agência</b> preenchidos.'),
 
     ('h2', 'Excluir uma conta financeira'),
     ('p', 'O botão vermelho (lixeira) exclui a conta — <b>desde que ela nunca tenha sido usada</b>. Uma '

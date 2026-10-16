@@ -2,7 +2,7 @@
 
 _Envio para assinatura eletrônica, acompanhamento e fechamento automático_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 Este manual complementa o de Contrato (sem assinatura digital), cobrindo o que muda quando a clínica usa a integração com a D4Sign para colher a assinatura do paciente eletronicamente, em vez de assinar manualmente no sistema. O ciclo de vida do contrato (Criado → Assinado → Fechado, com geração automática de Conta a Receber) continua o mesmo — o que muda é como a assinatura acontece: em vez de um clique interno, o paciente assina de verdade, remotamente, e o próprio sistema fecha o contrato sozinho assim que a assinatura é confirmada.
 
@@ -37,6 +37,10 @@ _Contrato pronto (serviços e acerto batendo): no topo a opção "Assinar pela D
 _Confirmação: "Deseja enviar este contrato para assinatura eletrônica? Após o envio, os dados ficarão bloqueados."_
 
 Ao confirmar, o sistema, em sequência: gera o PDF do contrato, envia esse PDF para a D4Sign, cadastra o(s) signatário(s) e dispara o convite de assinatura por e-mail. O signatário é o responsável do contrato, se houver um cadastrado, ou o próprio paciente quando não há responsável — o e-mail usado é sempre o que está no cadastro da pessoa no ClinSis.
+
+## Compartilhar o link de assinatura
+
+Enquanto o contrato está aguardando assinaturas, aparece o botão verde Compartilhar assinatura. A janela pergunta como enviar o link ao signatário: Enviar pelo WhatsApp (abre a conversa com o link pronto) ou Copiar link (para mandar por outro meio).
 
 ## Acompanhando a assinatura
 

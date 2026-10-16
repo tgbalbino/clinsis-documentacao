@@ -19,7 +19,7 @@ O Dashboard é um painel que reúne, numa única tela, os principais números de
 
 _O que é cada informação exibida na tela e de onde ela vem no sistema_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 O Dashboard Financeiro resume, num período escolhido, o que entrou, o que saiu, o saldo de cada conta e os maiores pagamentos e recebimentos. O Fluxo de Caixa mostra a movimentação dia a dia (ou por semana/mês) e ainda projeta o saldo futuro a partir das contas a pagar e a receber em aberto. Este documento explica cada campo das duas telas.
 
@@ -117,6 +117,20 @@ O gráfico Saldo acumulado desenha a evolução da coluna "Saldo Acumulado" da t
 ## Exemplo com Agrupamento = Mês
 
 Com "Somente Realizado" e Agrupamento "Mês", a tabela passa a ter uma linha por mês em vez de uma por dia, mais fácil de ler em períodos longos.
+
+
+## Recebimentos em atraso (Dashboard Financeiro)
+
+Logo abaixo dos indicadores de juros e descontos, três cartões amarelos mostram como estão os recebimentos de Contas a Receber que foram pagos depois do vencimento, dentro do período do filtro:
+
+| Campo / Label na tela | O que é / de onde vem |
+|---|---|
+| Recebido em atraso | Valor e quantidade de recebimentos cuja data de pagamento é posterior ao vencimento da parcela. Baixas estornadas não entram. |
+| Atraso médio | Média, em dias, entre o vencimento e o recebimento dos itens acima. |
+| Recebido em mês posterior ao vencimento | Parcelas que venceram em um mês e foram recebidas em mês seguinte: o valor conta no mês do recebimento. |
+
+
+No Fluxo de Caixa Projetado, quando há baixas já feitas que ainda aguardam compensação (cheques e cartões), uma linha informa "Já baixados e aguardando compensação, incluídos nos previstos", com os valores a receber e a pagar, e lembra de confirmar a compensação em Financeiro → Liquidações Financeiras.
 
 
 ## Pontos de atenção

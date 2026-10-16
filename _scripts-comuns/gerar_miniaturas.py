@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 RAIZ = r"C:\Projetos\W_Clinica\Documentacao-Entrega"
-MARCA = r"C:\Users\Dev\AppData\Local\Temp\claude\c--Projetos-W-Clinica-ApiClinica\9f6f67c6-bb27-4e65-be84-5877a44fa848\scratchpad\marca"
+MARCA = os.path.join(RAIZ, "_scripts-comuns", "pipeline-video", "marca")
 DEST = r"C:\Projetos\W_Clinica\Videos-YouTube"
 os.makedirs(DEST, exist_ok=True)
 W, H = 1280, 720

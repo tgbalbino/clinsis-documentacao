@@ -19,7 +19,7 @@ Passo a passo do profissional no prontuário: encontrar, criar, preencher, final
 
 _Criar, preencher, finalizar, consultar e imprimir prontuários_
 
-Versão 1.0 — 23/09/2026
+Versão 1.1 — 16/10/2026
 
 Este manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". A conferência gerencial (auditoria) tem manual próprio.
 
@@ -84,6 +84,9 @@ Marque o(s) paciente(s), escolha a Especialidade (obrigatória: ela é gravada n
 
 Para alíneas do tipo Sim ou Não aparece uma lista de opções, e nas do tipo Arquivo há o envio de um anexo. Cada alínea é salva separadamente.
 
+Alínea de Marcação (nas clínicas em que o tipo está liberado): as opções aparecem como cartões selecionáveis. Se a alínea é de uma opção, marcar outra troca a escolha; se é de várias, pode marcar mais de uma, e o canto mostra quantas estão marcadas. O selo Obrigatória indica que é preciso marcar ao menos uma opção para finalizar. Se a alínea permite Outros, ao marcar essa opção aparece uma linha "Descreva (obrigatório)" para digitar o texto. Como as demais, a marcação é salva pelo botão Salvar da alínea.
+
+
 ## 4. Tags
 
 As tags identificam o método de atendimento (por exemplo, "Padrão" ou "Jedi") e são usadas na Auditoria de Prontuário. Só aparecem se a clínica tem a opção PRONTUARIO_TAGS. Como elas entram no prontuário:
@@ -103,6 +106,9 @@ Clique em Finalizar. A janela confirma a data de emissão que será usada; escol
 
 
 
+Depois de finalizado, o prontuário mostra todas as alíneas em sequência, na mesma página, somente leitura, sem os botões Anterior e Próxima. Nas alíneas de marcação aparecem todas as opções, com as marcadas em destaque e, na opção Outros, o texto digitado.
+
+
 | Depois de finalizar | Regra |
 |---|---|
 | Edição | Não é mais possível alterar textos. Se tentar (por exemplo, por outra tela), o servidor responde "Não é possível salvar. O prontuário está finalizado." |
@@ -119,6 +125,12 @@ Para gerar o PDF direto da lista, marque a caixa dos prontuários finalizados e 
 
 
 
+
+## 6.1 Cancelar um prontuário (opcional por clínica)
+
+Quando a clínica habilita o parâmetro ProntuarioCancelarProprio (valor 1), o profissional ganha o botão amarelo Cancelar prontuário na lista, nos prontuários dele que ainda não estão cancelados. A janela explica que o prontuário será mantido no histórico e marcado como cancelado e pede o motivo, escolhido na lista de motivos de Cancelamento de Prontuário (cadastro de Motivos). Só o próprio profissional cancela o que criou, e um prontuário cancelado não pode ser finalizado. Ao contrário da exclusão de rascunho, o cancelamento serve para prontuários já finalizados.
+
+> ⚠️ Para finalizar um prontuário com alínea de Marcação obrigatória, marque ao menos uma opção (ou preencha o texto de Outros). Sem isso o sistema avisa: "Marque ao menos uma opção nas alíneas obrigatórias: ...".
 
 ## 7. Excluir um rascunho
 

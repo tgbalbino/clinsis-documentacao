@@ -2,7 +2,7 @@
 
 _Ciclo de vida completo: criação, fechamento, geração de Conta a Receber, renovação e aviso de vencimento_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 Contrato formaliza um pacote de sessões vendido ao paciente (ex.: "10 sessões de Fisioterapia"), com um valor total e uma ou mais condições de pagamento (à vista, parcelado no cartão, etc.). Diferente de um agendamento avulso, o Contrato tem um ciclo de vida com fases — criado, assinado, fechado — e, uma vez fechado, gera automaticamente as parcelas em Contas a Receber. Este manual cobre a versão sem assinatura digital (assinatura "no papel", marcada manualmente no sistema); a versão com assinatura eletrônica pela D4Sign é documentada à parte.
 
@@ -111,6 +111,14 @@ Se a clínica prefere registrar a assinatura no papel, na listagem de Contratos 
 ![Modal "Download contrato / Assinar", com os botões Baixar documento e Marcar como assinado.](11-modal-download-assinar.png)
 
 _Modal "Download contrato / Assinar", com os botões Baixar documento e Marcar como assinado._
+
+## Documento do contrato assinado e selo de assinatura
+
+Na lista de contratos, o botão de Download contrato / Assinar abre a janela de ações do contrato selecionado. Um contrato já assinado traz o selo "Assinado digitalmente pela D4Sign" ou "Assinado manualmente", conforme a forma usada.
+
+Quando o contrato é assinado manualmente, o documento finalizado é guardado como foi gerado (um documento imutável, com verificação de integridade): se o layout ou os dados mudarem depois, o contrato assinado continua igual. Contratos assinados antes dessa guarda não têm documento armazenado, e o sistema avisa isso ao tentar baixar. Se a integridade do documento não puder ser confirmada, o download é recusado.
+
+Ao fechar a janela do cadastro do contrato com alterações não salvas, o sistema pergunta se deseja perder as alterações.
 
 ## Fechando o Contrato (gera a Conta a Receber)
 

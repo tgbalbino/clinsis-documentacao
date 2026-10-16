@@ -10,8 +10,8 @@ SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.1"
-DATA = "16/10/2026"
+VERSAO = '1.1'
+DATA = '16/10/2026'
 TITULO = "Prontuário — Uso pelo Profissional"
 SUBTITULO = "Criar, preencher, finalizar, consultar e imprimir prontuários"
 VIDEO_NOME = "https://youtu.be/lCpFbKV5WrI"
@@ -125,6 +125,12 @@ blocks = [
     ('img', '18-pdf-prontuario.png', 'PDF gerado: cabeçalho com dados do paciente, as alíneas preenchidas, marca d\'água da clínica e linha de assinatura e carimbo.'),
     ('aviso', '<b>Correção feita nesta documentação:</b> o nome do arquivo saía como "pac__data.pdf", sem o nome do paciente. Agora inclui o nome '
               '(ex.: "pac_Paciente_0005_23-09-2026 17-49.pdf"). O modelo do PDF (1, 2 ou 3) é definido por tipo de prontuário na configuração da clínica.'),
+
+    ('h2', '6.1 Cancelar um prontuário (opcional por clínica)'),
+    ('p', 'Quando a clínica habilita o parâmetro <b>ProntuarioCancelarProprio</b> (valor 1), o profissional ganha o botão amarelo <b>Cancelar prontuário</b> na lista, nos prontuários <b>dele</b> que ainda não estão cancelados. '
+          'A janela explica que o prontuário <b>será mantido no histórico e marcado como cancelado</b> e pede o <b>motivo</b>, escolhido na lista de motivos de <b>Cancelamento de Prontuário</b> (cadastro de Motivos). '
+          'Só o próprio profissional cancela o que criou, e um prontuário cancelado <b>não pode ser finalizado</b>. Ao contrário da exclusão de rascunho, o cancelamento serve para prontuários já finalizados.'),
+    ('aviso', 'Para finalizar um prontuário com alínea de <b>Marcação obrigatória</b>, marque ao menos uma opção (ou preencha o texto de Outros). Sem isso o sistema avisa: "Marque ao menos uma opção nas alíneas obrigatórias: ...".'),
 
     ('h2', '7. Excluir um rascunho'),
     ('p', 'A lixeira aparece só nos <b>seus rascunhos</b> (situação Digitação).'),
