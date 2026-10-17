@@ -2,7 +2,7 @@
 
 _O que o profissional de saúde vê e pode fazer no ClinSis_
 
-Versão 1.4 — 01/10/2026
+Versão 1.5 — 16/10/2026
 
 Este manual mostra, passo a passo, o dia a dia do profissional de saúde no ClinSis: a Home, a agenda e os pacientes do dia, os pacientes, os prontuários e relatórios, os textos padrões, o atendimento, o protocolo e o perfil. O menu do profissional é menor que o do administrador, e algumas opções só aparecem se a clínica ativou o módulo correspondente.
 
@@ -158,6 +158,12 @@ A visualização mostra todas as alíneas. Com o prontuário finalizado, use Pá
 ![Prontuário finalizado em modo de visualização.](p06-prontuario-visualizar.png)
 
 _Prontuário finalizado em modo de visualização._
+
+## Chamado do painel e novidades do prontuário
+
+Chamado do painel. Quando a recepção avisa a chegada de um paciente (pelo Check-in ou pelo botão Avisar chegada da agenda), o profissional logado vê a mensagem "Nome do paciente foi chamado." por 10 segundos e, se tiver ativado as notificações do navegador, recebe o aviso também com o sistema minimizado. Veja o manual Painel de Chegada (TV).
+
+Alínea de Marcação. Nas clínicas em que está liberada, as opções aparecem como cartões selecionáveis (uma ou várias, com Outros e texto). Depois de finalizado, o prontuário mostra todas as alíneas em sequência. Cancelar prontuário. Com o parâmetro habilitado pela clínica, o profissional cancela, com motivo, prontuários que ele criou; o registro fica no histórico. Veja os manuais Prontuário — Uso e Prontuário — Configuração.
 
 ## Textos padrões
 

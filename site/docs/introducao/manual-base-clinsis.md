@@ -19,7 +19,7 @@ Ponto de partida para quem vai usar o ClinSis. Apresenta o sistema, o fluxo gera
 
 _O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões_
 
-Versão 1.5 — 01/10/2026
+Versão 1.6 — 16/10/2026
 
 Este é o manual de entrada do ClinSis. Ele explica, em linguagem simples, o que o sistema faz, como as partes se encaixam (Cadastros → Agenda → Atendimento/Prontuário → Financeiro), quais cadastros precisam existir antes de agendar, como criar a agenda do mês, como configurar os horários e agendar pacientes, e para que serve cada impressão da agenda.
 
@@ -303,6 +303,21 @@ O botão de engrenagem de cada linha abre o menu de ações:
 
 
 > ⚠️ Também é possível marcar a sessão com duplo clique na célula da coluna Sessão 1…5 da linha do paciente.
+
+## Novidades de outubro de 2026
+
+| Novidade | Como funciona |
+|---|---|
+| Versão no login | O rodapé da tela de login mostra a versão do front e a versão da API, separadas por "-" (por exemplo, 2.2.46-2.2.34), útil para o suporte. |
+| Página Sobre o ClinSis | Página pública, sem login, no endereço /sobre, com formulário de contato (e-mail e Telegram) para pedir demonstração. |
+| Tema claro, escuro e azul | Cada usuário escolhe o tema, e a preferência fica salva no usuário. O seletor também existe no login e na página Sobre. |
+| Datas comemorativas | Em datas como Outubro Rosa, Novembro Azul, Natal e Páscoa, a logo ganha um texto explicando a data (passe o mouse) e a Home mostra uma faixa temática. Não atrapalha o trabalho. |
+| Botão Novo no cabeçalho | Nos cadastros de Paciente, Profissional, Operadora e Serviço, o botão Novo subiu para o cabeçalho da tela, ao lado do título, no canto direito. |
+| Filtros da lista de Profissional | Os filtros Ativo e Estágio ganharam a opção Ambos. |
+| WhatsApp no cadastro do paciente | A autorização de WhatsApp passou para a aba Dados principais, logo abaixo dos telefones, e o sistema valida os números usados no WhatsApp. |
+| Agenda do profissional (consultório) | Para consultório de um profissional com agenda por data: calendário do mês com marcação por dia, horários por dia, prévia antes de gravar e bloqueio de feriados e recessos da Inatividade da clínica. |
+| Aviso de paciente já agendado | Ao marcar, o sistema avisa quando o paciente já tem agendamento na agenda, e a pesquisa da agenda ignora acentos. |
+| Responsáveis, Revisão cadastral, Totem e Painel | Têm manuais próprios: Responsáveis do Paciente, Revisão Cadastral de Pacientes, Totem de Check-in e Painel de Chegada (TV). |
 
 ## Ferramentas da tela de agendamento
 

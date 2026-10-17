@@ -10,11 +10,11 @@ SHOTS = BASE
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "1.0"
-DATA = "23/09/2026"
+VERSAO = '1.1'
+DATA = '16/10/2026'
 TITULO = "Prontuário — Uso pelo Profissional"
 SUBTITULO = "Criar, preencher, finalizar, consultar e imprimir prontuários"
-VIDEO_NOME = "https://youtu.be/lCpFbKV5WrI"
+VIDEO_NOME = "https://youtu.be/KJeRf5yIZXM"
 INTRO = ('Este manual mostra o dia a dia do prontuário para o <b>profissional</b>: como criar um prontuário para um paciente da '
          'agenda, preencher as alíneas, usar textos padrão e tags, <b>finalizar</b>, consultar, imprimir em PDF e excluir um '
          'rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". '
@@ -79,6 +79,11 @@ blocks = [
     ('img', '10-alinea-salva.png', 'Alínea salva. O botão <b>Finalizar</b> só aparece depois que há texto salvo.'),
     ('p', 'Para alíneas do tipo <b>Sim ou Não</b> aparece uma lista de opções, e nas do tipo <b>Arquivo</b> há o envio de um anexo. '
           'Cada alínea é salva separadamente.'),
+    ('p', '<b>Alínea de Marcação</b> (nas clínicas em que o tipo está liberado): as opções aparecem como <b>cartões selecionáveis</b>. '
+          'Se a alínea é de <b>uma opção</b>, marcar outra troca a escolha; se é de <b>várias</b>, pode marcar mais de uma, e o canto mostra quantas estão marcadas. '
+          'O selo <b>Obrigatória</b> indica que é preciso marcar ao menos uma opção para finalizar. Se a alínea permite <b>Outros</b>, ao marcar essa opção aparece uma linha '
+          '<b>"Descreva (obrigatório)"</b> para digitar o texto. Como as demais, a marcação é salva pelo botão <b>Salvar</b> da alínea.'),
+    ('img', 'U06-marcacao-outros.png', 'Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever.'),
 
     ('h2', '4. Tags'),
     ('p', 'As tags identificam o <b>método de atendimento</b> (por exemplo, "Padrão" ou "Jedi") e são usadas na Auditoria de Prontuário. '
@@ -99,6 +104,9 @@ blocks = [
     ('p', 'Clique em <b>Finalizar</b>. A janela confirma a <b>data de emissão</b> que será usada; escolha Sim para concluir.'),
     ('img', '11-finalizar-confirmar.png', 'Confirmação de finalização com a data de emissão.'),
     ('img', '12-finalizado.png', 'Prontuário finalizado: os campos ficam bloqueados (cinza) e as tags saem da tela de edição.'),
+    ('p', 'Depois de finalizado, o prontuário mostra <b>todas as alíneas em sequência, na mesma página</b>, somente leitura, sem os botões Anterior e Próxima. '
+          'Nas alíneas de marcação aparecem todas as opções, com as marcadas em destaque e, na opção Outros, o texto digitado.'),
+    ('img', 'U09-finalizado.png', 'Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros.'),
     ('tabelagen', ['Depois de finalizar', 'Regra'],
      [
          ['Edição', 'Não é mais possível alterar textos. Se tentar (por exemplo, por outra tela), o servidor responde "Não é possível salvar. O prontuário está finalizado."'],
@@ -117,6 +125,12 @@ blocks = [
     ('img', '18-pdf-prontuario.png', 'PDF gerado: cabeçalho com dados do paciente, as alíneas preenchidas, marca d\'água da clínica e linha de assinatura e carimbo.'),
     ('aviso', '<b>Correção feita nesta documentação:</b> o nome do arquivo saía como "pac__data.pdf", sem o nome do paciente. Agora inclui o nome '
               '(ex.: "pac_Paciente_0005_23-09-2026 17-49.pdf"). O modelo do PDF (1, 2 ou 3) é definido por tipo de prontuário na configuração da clínica.'),
+
+    ('h2', '6.1 Cancelar um prontuário (opcional por clínica)'),
+    ('p', 'Quando a clínica habilita o parâmetro <b>ProntuarioCancelarProprio</b> (valor 1), o profissional ganha o botão amarelo <b>Cancelar prontuário</b> na lista, nos prontuários <b>dele</b> que ainda não estão cancelados. '
+          'A janela explica que o prontuário <b>será mantido no histórico e marcado como cancelado</b> e pede o <b>motivo</b>, escolhido na lista de motivos de <b>Cancelamento de Prontuário</b> (cadastro de Motivos). '
+          'Só o próprio profissional cancela o que criou, e um prontuário cancelado <b>não pode ser finalizado</b>. Ao contrário da exclusão de rascunho, o cancelamento serve para prontuários já finalizados.'),
+    ('aviso', 'Para finalizar um prontuário com alínea de <b>Marcação obrigatória</b>, marque ao menos uma opção (ou preencha o texto de Outros). Sem isso o sistema avisa: "Marque ao menos uma opção nas alíneas obrigatórias: ...".'),
 
     ('h2', '7. Excluir um rascunho'),
     ('p', 'A lixeira aparece só nos <b>seus rascunhos</b> (situação Digitação).'),

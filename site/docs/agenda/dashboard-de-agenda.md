@@ -8,9 +8,9 @@ O Dashboard é um painel que reúne, numa única tela e em forma de cards, gráf
 
 ## Vídeo narrado
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/yMswtbogABA?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.youtube.com/embed/UqmqBCSoWXo?rel=0" title="Vídeo narrado" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-[Abrir no YouTube](https://youtu.be/yMswtbogABA)
+[Abrir no YouTube](https://youtu.be/UqmqBCSoWXo)
 
 ## Conteúdo completo do manual
 
@@ -19,7 +19,7 @@ O Dashboard é um painel que reúne, numa única tela e em forma de cards, gráf
 
 _O que significa cada informação e como conferir cada uma no sistema_
 
-Versão 3.1 — 01/10/2026
+Versão 3.2 — 16/10/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
@@ -150,6 +150,24 @@ Os cards que não são sessões também abrem uma lista, com o mesmo critério d
 > ⚠️ Como conferir: o número de linhas de cada lista (mostrado no título) deve ser igual ao número do card. Se algum horário da capacidade não deveria contar (por exemplo, um profissional em férias), ele aparece na lista e pode ser identificado ali.
 
 Use o botão Exportar CSV para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".
+
+## Evolução de presenças e ausências por agenda (novo)
+
+Abaixo dos gráficos do período existe o quadro Evolução de Presenças e Ausências por Agenda. Ele não depende do período escolhido acima: usa uma janela própria (os últimos meses ou semanas) para mostrar se a presença está melhorando ou piorando ao longo do tempo.
+
+| Opção | O que faz |
+|---|---|
+| Periodicidade | Mensal (uma coluna por mês de agenda) ou Semanal (uma coluna por semana). |
+| Últimos | Quantos períodos mostrar: 3, 6, 12 ou 24 meses (ou o equivalente em semanas). |
+| Agrupar por | Geral, Especialidade, Particular / Convênio, Operadora, Método, Programa ou Profissional. Com um agrupamento, o gráfico traz uma linha por grupo (os maiores) e a tabela traz todos. |
+| Indicador | Taxa de presença, Taxa de ausência (só faltas) ou Taxa de ausência (com justificadas). |
+
+
+Cada célula da tabela mostra a taxa do período e, embaixo, a variação em pontos percentuais (seta verde quando melhora, vermelha quando piora). Um asterisco (*) marca o período em andamento, cuja taxa ainda é parcial. As taxas usam só as sessões com desfecho registrado (presente, ausente e ausência justificada): desmarcadas e sem status ficam de fora. Clique em uma célula para ver as sessões que a compõem.
+
+
+
+> ⚠️ Períodos sem sessões com desfecho aparecem com um traço (-). Isso não significa 0% de presença: significa que não houve dado para calcular.
 
 ## Quadro resumo: onde conferir cada informação
 

@@ -2,11 +2,11 @@
 
 _Registrar a chegada do paciente e, se houver cobrança, já receber na hora_
 
-Versão 2.0 — 30/09/2026
+Versão 2.1 — 16/10/2026
 
 O Checkin registra a chegada do paciente na clínica no dia da consulta ou sessão. Quando o paciente tem um horário agendado para hoje que é cobrado na hora (por exemplo, atendimento particular), o Checkin também mostra a cobrança e permite lançar o pagamento: nesse caso, o sistema gera automaticamente uma Conta a Receber já paga. Para o pagamento funcionar, a clínica precisa ter configurado, em Parâmetros, o Plano de Conta, o Centro de Custo e a Conta Financeira do Checkin, e o usuário precisa ter o caixa aberto.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/MKW8mdKnfTg](https://youtu.be/MKW8mdKnfTg)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/ifvL23xnsPY](https://youtu.be/ifvL23xnsPY)
 
 ---
 
@@ -86,6 +86,30 @@ _Check-in confirmado: aparece na lista com a data/hora, o horário da agenda (20
 _Contas a Receber: a linha do paciente, R$ 36,56, Plano de Conta "Consulta Particular", Situação "Baixada", gerada e paga automaticamente pelo Checkin._
 
 > ⚠️ Esta rotina gera Conta a Receber automaticamente: não é preciso lançar nada à mão em Contas a Receber.
+
+## Avisar o profissional (Painel de chegada)
+
+Com o módulo Painel de chegada ligado na clínica, logo depois de confirmar o Check-In abre a janela Notificar profissional: "Deseja avisar o profissional que o paciente chegou?". Cada horário do paciente aparece com a hora e o profissional. Marque os que quiser e clique em Avisar agora (ou em Agora não). O sistema confirma com "N aviso(s) enviado(s) para o painel": a TV da clínica mostra Nova chegada e o profissional recebe o chamado no sistema. Se nenhuma TV estiver conectada, o aviso não é enviado. Todos os detalhes estão no manual Painel de Chegada (TV).
+
+![TV da clínica mostrando a chegada avisada pelo Check-In.](09-painel-tv-nova-chegada.png)
+
+_TV da clínica mostrando a chegada avisada pelo Check-In._
+
+## Aviso de revisão cadastral
+
+Com o módulo Revisão cadastral ligado, se o cadastro do paciente precisa de revisão (prazo vencido, endereço incompleto ou sem contato), aparece uma faixa amarela no Check-In com o motivo. O aviso não bloqueia o check-in; o link Abrir cadastro em outra aba permite conferir os dados sem perder o atendimento. Veja o manual Revisão Cadastral de Pacientes.
+
+![Check-In: faixa de revisão cadastral com o motivo, acima dos agendamentos do dia.](10-aviso-revisao-cadastral.png)
+
+_Check-In: faixa de revisão cadastral com o motivo, acima dos agendamentos do dia._
+
+## Quando o paciente já se anunciou no totem
+
+Se a clínica usa o Totem de check-in, o paciente (ou o responsável) pode registrar a chegada sozinho na portaria. Na Agenda, aparece um selo verde com o horário antes do nome do paciente. O totem apenas avisa a chegada: o Check-In da recepção, com pagamento e Plano Próprio, continua sendo feito normalmente, como descrito neste manual. Veja o manual Totem de Check-in.
+
+![Agenda: selo verde com o horário da chegada registrada no totem.](11-agenda-chegada-totem.png)
+
+_Agenda: selo verde com o horário da chegada registrada no totem._
 
 ## Mensagens que você pode encontrar
 

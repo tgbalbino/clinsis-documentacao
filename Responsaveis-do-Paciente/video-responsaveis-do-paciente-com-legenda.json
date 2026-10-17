@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Responsáveis do Paciente (com legendas)",
+  "descricao": "Quantos responsáveis forem necessários por paciente, com parentesco, contato e situação.\n\nCrianças, adolescentes e pacientes que dependem de alguém para vir à clínica costumam ter mais de um responsável: pai, mãe, avó, babá. No ClinSis, cada paciente pode ter quantos responsáveis forem necessários. Cada responsável é uma Pessoa (do tipo Responsável) ligada ao paciente pelo grau de parentesco e pela situação ativo ou inativo. A clínica pode exigir pelo menos um responsável ativo para pacientes menores de 18 anos, e os responsáveis são os que usam o Totem de check-in com os próprios dados.\n\nNeste vídeo:\n• Como funciona\n• Como ligar a exigência de responsável para menores\n• Cadastrar um responsável no paciente\n• Editar, inativar e remover\n• Responsável na tela de Pessoa\n• Cuidados e regras\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

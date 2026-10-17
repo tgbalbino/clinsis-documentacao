@@ -10,11 +10,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = 'Dashboard Financeiro e Fluxo de Caixa'
 SUBTITULO = 'O que é cada informação exibida na tela e de onde ela vem no sistema'
-VIDEO_NOME = "https://youtu.be/WCa8gVOdXKE"
+VIDEO_NOME = "https://youtu.be/wU6dqQLD3hA"
 INTRO = ('O <b>Dashboard Financeiro</b> resume, num período escolhido, o que entrou, o que saiu, o saldo de cada conta e '
          'os maiores pagamentos e recebimentos. O <b>Fluxo de Caixa</b> mostra a movimentação dia a dia (ou por semana/mês) e '
          'ainda projeta o saldo futuro a partir das contas a pagar e a receber em aberto. Este documento explica cada '
@@ -102,6 +102,17 @@ blocks = [
     ('h2', 'Exemplo com Agrupamento = Mês'),
     ('p', 'Com "Somente Realizado" e Agrupamento "Mês", a tabela passa a ter uma linha por mês em vez de uma por dia, mais fácil de ler em períodos longos.'),
     ('img', '12-fluxo-agrupado-mes.png', 'Mesmo tipo de consulta, agora agrupada por mês.'),
+
+    ('h2', 'Recebimentos em atraso (Dashboard Financeiro)'),
+    ('p', 'Logo abaixo dos indicadores de juros e descontos, três cartões amarelos mostram como estão os recebimentos de Contas a Receber que foram pagos depois do vencimento, dentro do período do filtro:'),
+    ('tabela', [
+        ('Recebido em atraso', 'Valor e quantidade de recebimentos cuja data de pagamento é posterior ao vencimento da parcela. Baixas estornadas não entram.', 'ContaReceberBaixa x ContaReceber'),
+        ('Atraso médio', 'Média, em dias, entre o vencimento e o recebimento dos itens acima.', 'Cálculo sobre as baixas'),
+        ('Recebido em mês posterior ao vencimento', 'Parcelas que venceram em um mês e foram recebidas em mês seguinte: o valor conta no <b>mês do recebimento</b>.', 'ContaReceberBaixa'),
+    ]),
+    ('img', 'A01-dashboard-atraso.png', 'Cartões de atraso: R$ 200,00 em 2 recebimentos, atraso médio de 26 dias e o mesmo valor recebido em mês posterior (exemplo com duas parcelas de setembro recebidas em outubro).'),
+    ('p', 'No <b>Fluxo de Caixa Projetado</b>, quando há baixas já feitas que ainda aguardam compensação (cheques e cartões), uma linha informa "Já baixados e aguardando compensação, incluídos nos previstos", com os valores a receber e a pagar, e lembra de confirmar a compensação em <b>Financeiro → Liquidações Financeiras</b>.'),
+    ('img', 'A02-fluxo-projetado.png', 'Fluxo de Caixa Projetado: saldo atual, recebimentos e pagamentos previstos e saldo projetado.'),
 
     ('h2', 'Pontos de atenção'),
     ('aviso', 'Todos os valores em dinheiro aparecem no formato R$ 0.000,00 e saldos ou resultados negativos ficam em vermelho. '

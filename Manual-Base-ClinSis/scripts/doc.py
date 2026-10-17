@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.5'
-DATA = '01/10/2026'
+VERSAO = '1.6'
+DATA = '16/10/2026'
 TITULO = "Manual Base do ClinSis"
 SUBTITULO = "O que é o sistema, o fluxo geral, os cadastros, a criação da agenda e as impressões"
 VIDEO_NOME = "https://youtu.be/bba5Ib4ly8Q"
@@ -325,6 +325,20 @@ blocos = [
     ], [4, 13.5]),
     ('img', 'd07-sessao.png', 'Marcar Sessão: identifica profissional, paciente, dia e hora e pede a sessão a marcar.'),
     ('aviso', 'Também é possível marcar a sessão com <b>duplo clique</b> na célula da coluna Sessão 1…5 da linha do paciente.'),
+
+    ('h2', 'Novidades de outubro de 2026'),
+    ('tabelagen', ['Novidade', 'Como funciona'],
+     [['Versão no login', 'O rodapé da tela de login mostra a versão do front e a versão da API, separadas por "-" (por exemplo, 2.2.46-2.2.34), útil para o suporte.'],
+      ['Página Sobre o ClinSis', 'Página pública, sem login, no endereço <b>/sobre</b>, com formulário de contato (e-mail e Telegram) para pedir demonstração.'],
+      ['Tema claro, escuro e azul', 'Cada usuário escolhe o tema, e a preferência fica salva no usuário. O seletor também existe no login e na página Sobre.'],
+      ['Datas comemorativas', 'Em datas como Outubro Rosa, Novembro Azul, Natal e Páscoa, a logo ganha um texto explicando a data (passe o mouse) e a Home mostra uma faixa temática. Não atrapalha o trabalho.'],
+      ['Botão Novo no cabeçalho', 'Nos cadastros de Paciente, Profissional, Operadora e Serviço, o botão <b>Novo</b> subiu para o cabeçalho da tela, ao lado do título, no canto direito.'],
+      ['Filtros da lista de Profissional', 'Os filtros <b>Ativo</b> e <b>Estágio</b> ganharam a opção <b>Ambos</b>.'],
+      ['WhatsApp no cadastro do paciente', 'A autorização de WhatsApp passou para a aba Dados principais, logo abaixo dos telefones, e o sistema valida os números usados no WhatsApp.'],
+      ['Agenda do profissional (consultório)', 'Para consultório de um profissional com agenda por data: calendário do mês com marcação por dia, horários por dia, prévia antes de gravar e bloqueio de feriados e recessos da Inatividade da clínica.'],
+      ['Aviso de paciente já agendado', 'Ao marcar, o sistema avisa quando o paciente já tem agendamento na agenda, e a pesquisa da agenda ignora acentos.'],
+      ['Responsáveis, Revisão cadastral, Totem e Painel', 'Têm manuais próprios: Responsáveis do Paciente, Revisão Cadastral de Pacientes, Totem de Check-in e Painel de Chegada (TV).']],
+     [5, 13]),
 
     ('h2', 'Ferramentas da tela de agendamento'),
     ('tabelagen', ['Botão', 'Função'], [

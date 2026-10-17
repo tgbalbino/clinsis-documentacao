@@ -1,0 +1,37 @@
+[
+ {
+  "audio": "01.wav",
+  "imagem": "03-paciente-com-responsavel.png",
+  "texto": "Este treinamento mostra os Responsáveis do paciente no ClinSis. Cada paciente pode ter quantos responsáveis forem necessários: pai, mãe, avó, babá. Eles ficam no cadastro do paciente, na aba Dados principais, no bloco Responsáveis, com nome, parentesco, CPF e situação. O selo amarelo, sem nascimento, avisa que aquele responsável ainda não poderá usar o totem de check-in."
+ },
+ {
+  "audio": "02.wav",
+  "imagem": "02-paciente-sem-responsavel.png",
+  "texto": "A clínica pode exigir pelo menos um responsável ativo para pacientes menores de dezoito anos. A opção fica na Área do Administrador, no cadastro da clínica, e vem desligada. Quando ligada, o título Responsáveis ganha um asterisco vermelho e o sistema não deixa salvar um menor sem responsável: informe ao menos um responsável ativo."
+ },
+ {
+  "audio": "03.wav",
+  "imagem": "04-modal-novo.png",
+  "texto": "Para cadastrar, clique em Adicionar responsável. Informe o CPF, o nome e o grau de parentesco. Se o CPF já existir como responsável de outro paciente, o sistema carrega os dados dele. O celular é opcional. A data de nascimento é obrigatória quando o totem está ativo, porque o responsável se identifica no totem com o próprio CPF e nascimento. O endereço já vem preenchido com o do paciente, e pode ser alterado."
+ },
+ {
+  "audio": "04.wav",
+  "imagem": "05-tabela-com-responsavel.png",
+  "texto": "Clique em Confirmar para incluir o responsável na lista. Nada é gravado ainda: o responsável só é salvo junto com o paciente, no botão Salvar. Antes de salvar, a lixeira permite remover quem acabou de ser incluído."
+ },
+ {
+  "audio": "05.wav",
+  "imagem": "06-salvo.png",
+  "texto": "Cadastro salvo. O responsável passou a existir como Pessoa e ficou ligado ao paciente. Depois de salvo, para tirar alguém da lista, use a chave Inativar: o responsável inativo continua no histórico, não conta para a exigência de menor e não usa o totem."
+ },
+ {
+  "audio": "06.wav",
+  "imagem": "01-pessoa-filtro.png",
+  "texto": "Na tela de Pessoa, em Cadastros, existe o filtro Responsável, que mostra só essas pessoas, e o filtro Sem data de nascimento, que ajuda a encontrar quem ainda não consegue usar o totem."
+ },
+ {
+  "audio": "07.wav",
+  "imagem": "07-pessoa-responsavel.png",
+  "texto": "Aqui estão os responsáveis, com a coluna Responsável marcada, incluindo o que acabamos de criar. O mesmo responsável pode estar ligado a vários pacientes, e alterar o celular dele vale para todos. Uma pessoa que é só responsável não conta como CPF duplicado de paciente, o que permite cadastrar a criança com o CPF do pai ou da mãe."
+ }
+]

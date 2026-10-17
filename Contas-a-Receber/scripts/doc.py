@@ -11,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = 'Contas a Receber'
 SUBTITULO = 'Cadastrar e receber os valores que os pacientes/convênios devem à clínica'
-VIDEO_NOME = "https://youtu.be/PFpYbTqKvFM"
+VIDEO_NOME = "https://youtu.be/4zDcmijBoJY"
 INTRO = 'Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.'
 RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em ambiente local de '
           'homologação, clínica de testes "Homologação" (Clínica 1), usuário administrador de teste. '
@@ -47,6 +47,20 @@ blocks = [('h2', 'Barra de ações'),
  ('img', '09-baixa-preenchida.png', 'Recebimento preenchido: Valor, Método de Pagamento (Cartão de Crédito, com a escolha de Qtd. Parcelas) e Conta Financeira.'),
  ('img', '09b-confirmacao.png', 'Confirmação ao lançar o pagamento que quita a parcela: ao clicar em Sim, a situação passa a Baixada.'),
  ('img', '10-apos-lancar-baixa.png', 'Depois de confirmar: mensagem "Salvo", Valor Restante zerado, e opção de Emitir Recibo para o paciente.'),
+ ('h2', 'Recebimento em atraso (pagamento em mês posterior ao vencimento)'),
+ ('p', 'Quando a data do recebimento cai em um <b>mês depois</b> do vencimento da parcela, ao clicar em <b>Lançar</b> o sistema mostra o aviso <b>"Pagamento em atraso"</b>, com a data do vencimento, a data do recebimento e em que mês o valor será contado. Clique em <b>Sim</b> para confirmar ou em <b>Não</b> para corrigir a data (por exemplo, se o paciente pagou em outro dia).'),
+ ('img', 'R02-aviso-atraso.png', 'Aviso ao receber, em outubro, uma parcela que venceu em setembro: nos relatórios e no dashboard o valor conta em outubro.'),
+ ('aviso', 'Regra: o valor é contado no <b>mês do recebimento</b>, e não no mês do vencimento. Por isso o aviso só aparece quando os meses são diferentes; recebimento no mesmo mês ou antecipado não pede confirmação.'),
+ ('p', 'O <b>relatório de recebimentos</b> (<b>Relatórios → Financeiro - Recebimentos (Contas a Receber)</b>, modo Detalhado) mostra as colunas <b>Vencimento</b>, <b>Data pagamento</b> e <b>Atraso</b>. A coluna Atraso traz os dias de atraso e a marca "outro mês" quando o recebimento caiu em mês diferente do vencimento.'),
+ ('img', 'R03-relatorio-recebimentos.png', 'Relatório de recebimentos: parcelas que venceram em setembro, recebidas em outubro, com os dias de atraso (36 e 16 dias).'),
+ ('p', 'O <b>Dashboard Financeiro</b> resume isso nos cartões <b>Recebido em atraso</b>, <b>Atraso médio</b> e <b>Recebido em mês posterior ao vencimento</b> (veja o manual do Dashboard Financeiro e Fluxo de Caixa). Baixas estornadas não entram nesses totais.'),
+ ('h2', 'Cancelar um documento'),
+ ('p', 'Um título lançado errado (valor incorreto, duplicado, cobrança que não deve ser feita) pode ser <b>cancelado</b> em vez de excluído. Só o <b>Administrador</b> vê o botão <b>Cancelar documento</b>, dentro do cadastro do título (lápis amarelo), e apenas enquanto o título está <b>em aberto</b> (situação Aberto). A janela pede o <b>motivo do cancelamento</b> (obrigatório), escolhido na lista de motivos de <b>Cancelamento de Conta a Receber</b> (cadastro de Motivos, em Tabelas Aux.).'),
+ ('img', 'C01-cadastro-cancelar.png', 'Cadastro do título em aberto, com o botão vermelho Cancelar documento.'),
+ ('img', 'C02-modal-cancelar.png', 'Cancelar Conta a Receber: motivo obrigatório. A conta não é excluída e fica registrada como cancelada.'),
+ ('p', 'Depois de confirmar, o sistema avisa <b>"Conta a receber cancelada"</b>, o título passa à situação <b>Cancelado</b> e o cadastro mostra a faixa <b>Documento cancelado</b>, com data, usuário e motivo. Título cancelado não entra mais nos valores a receber.'),
+ ('img', 'C03-cancelado.png', 'Título cancelado: faixa vermelha com a data, o usuário e o motivo.'),
+ ('aviso', 'Cancelar não é o mesmo que <b>estornar um recebimento</b>. O estorno desfaz uma baixa já feita (veja o manual Estorno de Baixas); o cancelamento encerra o título inteiro, sem recebimento.'),
  ('aviso', 'Contas a Receber é o destino de lançamentos automáticos de outras rotinas: Checkin (quando há pagamento na hora, já gera a conta baixada), fechamento de Contrato (um título para cada acerto à vista ou no cartão e uma parcela por mês para cada acerto em Crediário) e Cobrança de Paciente (geração em lote a partir de sessões realizadas). O filtro "Analítica" na tela de Filtros permite inclusive separar o que foi lançado manualmente do que veio do Checkin ou da Cobrança de Paciente. Os títulos gerados por um Contrato trazem a coluna "Origem" na lista (por exemplo, "Contrato 12 - Crediário 2/5" ou "Contrato 12 - Pix"), e a mesma informação aparece na tela de baixa.')]
 
 render_pdf(blocks, os.path.join(ENTREGA, 'Documentacao_Contas_a_Receber.pdf'),

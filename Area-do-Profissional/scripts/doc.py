@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.4'
-DATA = '01/10/2026'
+VERSAO = '1.5'
+DATA = '16/10/2026'
 TITULO = "Área do Profissional"
 SUBTITULO = "O que o profissional de saúde vê e pode fazer no ClinSis"
 VIDEO_NOME = "https://youtu.be/TAq1nN4P4DM"
@@ -123,6 +123,12 @@ blocos = [
     ('h2', 'Visualizar e imprimir'),
     ('p', 'A visualização mostra todas as alíneas. Com o prontuário finalizado, use <b>Página de impressão / Download</b>.'),
     ('img', 'p06-prontuario-visualizar.png', 'Prontuário finalizado em modo de visualização.'),
+    ('h2', 'Chamado do painel e novidades do prontuário'),
+    ('p', '<b>Chamado do painel.</b> Quando a recepção avisa a chegada de um paciente (pelo Check-in ou pelo botão Avisar chegada da agenda), o profissional logado vê a mensagem '
+          '<b>"Nome do paciente foi chamado."</b> por 10 segundos e, se tiver ativado as notificações do navegador, recebe o aviso também com o sistema minimizado. Veja o manual <b>Painel de Chegada (TV)</b>.'),
+    ('p', '<b>Alínea de Marcação.</b> Nas clínicas em que está liberada, as opções aparecem como cartões selecionáveis (uma ou várias, com Outros e texto). Depois de finalizado, o prontuário mostra todas as alíneas em sequência. '
+          '<b>Cancelar prontuário.</b> Com o parâmetro habilitado pela clínica, o profissional cancela, com motivo, prontuários que ele criou; o registro fica no histórico. Veja os manuais <b>Prontuário — Uso</b> e <b>Prontuário — Configuração</b>.'),
+
     ('h2', 'Textos padrões'),
     ('p', 'Na Home, no cartão Prontuário, o link <b>Textos padrões</b> guarda textos que você usa sempre. Clique em <b>Novo</b>, escolha o '
           '<b>Tipo de prontuário</b>, digite o <b>Título</b> (máximo de 20 caracteres) e o <b>Texto</b>, e clique em Salvar. Para mudar, '

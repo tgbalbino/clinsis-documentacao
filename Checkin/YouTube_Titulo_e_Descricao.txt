@@ -20,6 +20,9 @@ Neste vídeo:
 • Quando o paciente tem um horário cobrável hoje
 • Lançando o pagamento
 • Confirmando o Check-In
+• Avisar o profissional (Painel de chegada)
+• Aviso de revisão cadastral
+• Quando o paciente já se anunciou no totem
 • Mensagens que você pode encontrar
 
 Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
@@ -46,6 +49,9 @@ Neste vídeo:
 • Quando o paciente tem um horário cobrável hoje
 • Lançando o pagamento
 • Confirmando o Check-In
+• Avisar o profissional (Painel de chegada)
+• Aviso de revisão cadastral
+• Quando o paciente já se anunciou no totem
 • Mensagens que você pode encontrar
 
 Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:

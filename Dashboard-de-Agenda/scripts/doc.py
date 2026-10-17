@@ -11,11 +11,11 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = "3.1"
-DATA = "01/10/2026"
+VERSAO = "3.2"
+DATA = "16/10/2026"
 TITULO = "Dashboard de Agenda"
 SUBTITULO = "O que significa cada informação e como conferir cada uma no sistema"
-VIDEO_NOME = "https://youtu.be/yMswtbogABA"
+VIDEO_NOME = "https://youtu.be/UqmqBCSoWXo"
 INTRO = ('O <b>Dashboard de Agenda</b> reúne, num só lugar, números sobre os atendimentos de um '
          'período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. '
          'Este manual explica <b>o que cada card, gráfico e tabela representa</b>, <b>como o número é '
@@ -198,6 +198,23 @@ blocks = [
     ('p', 'Use o botão <b>Exportar CSV</b> para levar a lista ao Excel. Colunas: Data, Sessão, Paciente, Idade, Profissional, '
           'Especialidade, Operadora, Particular, Método, Programa, Status, Data de inclusão e Dias de antecedência. '
           'A coluna Dias de antecedência é a que permite conferir o card "Dias de Antecedência (média)".'),
+
+    ('h2', 'Evolução de presenças e ausências por agenda (novo)'),
+    ('p', 'Abaixo dos gráficos do período existe o quadro <b>Evolução de Presenças e Ausências por Agenda</b>. Ele <b>não depende do período</b> escolhido acima: usa uma janela própria '
+          '(os últimos meses ou semanas) para mostrar se a presença está melhorando ou piorando ao longo do tempo.'),
+    ('tabelagen', ['Opção', 'O que faz'],
+     [['Periodicidade', '<b>Mensal</b> (uma coluna por mês de agenda) ou <b>Semanal</b> (uma coluna por semana).'],
+      ['Últimos', 'Quantos períodos mostrar: 3, 6, 12 ou 24 meses (ou o equivalente em semanas).'],
+      ['Agrupar por', 'Geral, Especialidade, Particular / Convênio, Operadora, Método, Programa ou Profissional. Com um agrupamento, o gráfico traz uma linha por grupo (os maiores) e a tabela traz todos.'],
+      ['Indicador', '<b>Taxa de presença</b>, <b>Taxa de ausência (só faltas)</b> ou <b>Taxa de ausência (com justificadas)</b>.']],
+     [4, 14]),
+    ('img', 'E01-evolucao-geral.png', 'Evolução mensal da taxa de presença (Geral): linha do tempo e tabela, com a variação em pontos percentuais (p.p.) em relação ao período anterior.'),
+    ('p', 'Cada célula da tabela mostra a taxa do período e, embaixo, a <b>variação em pontos percentuais</b> (seta verde quando melhora, vermelha quando piora). '
+          'Um asterisco (*) marca o período em andamento, cuja taxa ainda é <b>parcial</b>. As taxas usam só as sessões com <b>desfecho registrado</b> (presente, ausente e ausência justificada): '
+          'desmarcadas e sem status ficam de fora. <b>Clique em uma célula</b> para ver as sessões que a compõem.'),
+    ('img', 'E02-evolucao-especialidade.png', 'Mesma evolução agrupada por Especialidade: uma linha por grupo.'),
+    ('img', 'E03-evolucao-semanal.png', 'Periodicidade Semanal: uma coluna por semana, útil para acompanhar a rotina de perto.'),
+    ('aviso', 'Períodos sem sessões com desfecho aparecem com um traço (-). Isso não significa 0% de presença: significa que não houve dado para calcular.'),
 
     ('h2', 'Quadro resumo: onde conferir cada informação'),
     ('tabelagen', ['Informação do Dashboard', 'Onde conferir', 'Observação'],

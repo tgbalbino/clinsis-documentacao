@@ -1,0 +1,9 @@
+{
+  "titulo": "ClinSis | Revisão Cadastral de Pacientes (com legendas)",
+  "descricao": "Como manter endereço e contato dos pacientes atualizados: lista de pendentes, aviso na agenda e no check-in.\n\nCadastro desatualizado atrapalha a clínica: telefone que não atende, lembrete que não chega, cobrança enviada para o endereço errado. O módulo Revisão cadastral ajuda a manter o cadastro do paciente em dia, com foco em endereço e contato. Ele mostra, numa lista, quem precisa de revisão, e avisa na agenda do dia, no check-in e no próprio cadastro do paciente. O prazo para sugerir uma nova revisão (em dias) é um parâmetro da clínica. O módulo vem desligado e é liberado por clínica pela Área do Administrador.\n\nNeste vídeo:\n• Quando o cadastro precisa de revisão\n• Como ativar o módulo (administrador do sistema)\n• Como definir o prazo (parâmetro)\n• Lista de pacientes para revisar\n• Confirmar que o cadastro está atualizado\n• Aviso na agenda do dia\n• Aviso no check-in\n• Aviso no cadastro do paciente\n• Regras importantes\n\nManual em PDF (completo e simplificado) e as demais rotinas do ClinSis:\nhttps://tgbalbino.github.io/clinsis-documentacao/\n\n#ClinSis #GestãoDeClínicas #Tutorial",
+  "tags": [
+    "ClinSis",
+    "Gestão de Clínicas",
+    "Tutorial"
+  ]
+}

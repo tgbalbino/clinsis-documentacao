@@ -1,0 +1,11 @@
+{
+  "motivos": [
+    "Selecione...",
+    "Cobrança não deve ser realizada",
+    "Data do documento incorreta",
+    "Documento gerado em duplicidade",
+    "Documento lançado incorretamente",
+    "Valor do documento incorreto"
+  ],
+  "toast": "Conta a receber cancelada"
+}

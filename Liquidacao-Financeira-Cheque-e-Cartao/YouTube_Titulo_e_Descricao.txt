@@ -1,0 +1,62 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Controle de Cheques e Liquidação Financeira
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-controle-de-cheques-liquidacao-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Controle de Cheques e Liquidação Financeira (com legendas)
+
+DESCRIÇÃO:
+Cheque e cartão: o dinheiro só entra na conta quando é compensado ou repassado.
+
+Quando o paciente paga com cheque ou com cartão de crédito, o título é quitado na hora, mas o dinheiro só chega à conta da clínica dias depois. Este manual mostra como o ClinSis controla esse intervalo: cada cheque é cadastrado com seus dados (banco, agência, conta, série, número e emitente), pode pagar mais de um título, e a conta só é movimentada quando o cheque é compensado. No cartão, cada parcela repassada pelo banco é confirmada separadamente. Também explica a devolução do cheque com nova cobrança e o cheque emitido pela clínica nos pagamentos.
+
+Neste vídeo:
+• A ideia: baixar o título não é o dinheiro entrar
+• Receber com cheque: cadastrando o cheque na baixa
+• Um cheque pagando mais de um título
+• A tela Cheques
+• Liquidações Financeiras e o cheque
+• Compensar o cheque
+• Devolução do cheque
+• Alterar e cancelar um cheque
+• Pagar com cheque emitido pela clínica
+• Cartão de crédito parcelado
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-controle-de-cheques-liquidacao-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Controle de Cheques e Liquidação Financeira (sem legendas)
+
+DESCRIÇÃO:
+Cheque e cartão: o dinheiro só entra na conta quando é compensado ou repassado.
+
+Quando o paciente paga com cheque ou com cartão de crédito, o título é quitado na hora, mas o dinheiro só chega à conta da clínica dias depois. Este manual mostra como o ClinSis controla esse intervalo: cada cheque é cadastrado com seus dados (banco, agência, conta, série, número e emitente), pode pagar mais de um título, e a conta só é movimentada quando o cheque é compensado. No cartão, cada parcela repassada pelo banco é confirmada separadamente. Também explica a devolução do cheque com nova cobrança e o cheque emitido pela clínica nos pagamentos.
+
+Neste vídeo:
+• A ideia: baixar o título não é o dinheiro entrar
+• Receber com cheque: cadastrando o cheque na baixa
+• Um cheque pagando mais de um título
+• A tela Cheques
+• Liquidações Financeiras e o cheque
+• Compensar o cheque
+• Devolução do cheque
+• Alterar e cancelar um cheque
+• Pagar com cheque emitido pela clínica
+• Cartão de crédito parcelado
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

@@ -1,0 +1,30 @@
+{
+  "opcoes": {
+    "periodicidade": [
+      "Mensal",
+      "Semanal"
+    ],
+    "quantidade": [
+      "3 meses",
+      "6 meses",
+      "12 meses",
+      "24 meses"
+    ],
+    "agrupar": [
+      "Geral",
+      "Especialidade",
+      "Particular / Convênio",
+      "Operadora",
+      "Método",
+      "Programa",
+      "Profissional"
+    ],
+    "indicador": [
+      "Taxa de presença",
+      "Taxa de ausência (só faltas)",
+      "Taxa de ausência (com justificadas)"
+    ]
+  },
+  "tabelaSemanal": " 27/07 03/08 10/08 17/08 24/08 31/08 07/09 14/09 21/09 28/09 05/10 12/10* Geral - - - - 100,0% - - 42,9% 100,0% +57.1 p.p. 66,7% -33.3 p.p. - -",
+  "cardsRetorno": []
+}

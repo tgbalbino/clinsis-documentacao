@@ -2,11 +2,11 @@
 
 _Criar, preencher, finalizar, consultar e imprimir prontuários_
 
-Versão 1.0 — 23/09/2026
+Versão 1.1 — 16/10/2026
 
 Este manual mostra o dia a dia do prontuário para o profissional: como criar um prontuário para um paciente da agenda, preencher as alíneas, usar textos padrão e tags, finalizar, consultar, imprimir em PDF e excluir um rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". A conferência gerencial (auditoria) tem manual próprio.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/lCpFbKV5WrI](https://youtu.be/lCpFbKV5WrI)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/KJeRf5yIZXM](https://youtu.be/KJeRf5yIZXM)
 
 ---
 
@@ -92,6 +92,12 @@ _Alínea salva. O botão Finalizar só aparece depois que há texto salvo._
 
 Para alíneas do tipo Sim ou Não aparece uma lista de opções, e nas do tipo Arquivo há o envio de um anexo. Cada alínea é salva separadamente.
 
+Alínea de Marcação (nas clínicas em que o tipo está liberado): as opções aparecem como cartões selecionáveis. Se a alínea é de uma opção, marcar outra troca a escolha; se é de várias, pode marcar mais de uma, e o canto mostra quantas estão marcadas. O selo Obrigatória indica que é preciso marcar ao menos uma opção para finalizar. Se a alínea permite Outros, ao marcar essa opção aparece uma linha "Descreva (obrigatório)" para digitar o texto. Como as demais, a marcação é salva pelo botão Salvar da alínea.
+
+![Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever.](U06-marcacao-outros.png)
+
+_Alínea de Marcação (várias opções): duas opções marcadas, incluindo Outros, com o campo para descrever._
+
 ## 4. Tags
 
 As tags identificam o método de atendimento (por exemplo, "Padrão" ou "Jedi") e são usadas na Auditoria de Prontuário. Só aparecem se a clínica tem a opção PRONTUARIO_TAGS. Como elas entram no prontuário:
@@ -121,6 +127,12 @@ _Confirmação de finalização com a data de emissão._
 
 _Prontuário finalizado: os campos ficam bloqueados (cinza) e as tags saem da tela de edição._
 
+Depois de finalizado, o prontuário mostra todas as alíneas em sequência, na mesma página, somente leitura, sem os botões Anterior e Próxima. Nas alíneas de marcação aparecem todas as opções, com as marcadas em destaque e, na opção Outros, o texto digitado.
+
+![Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros.](U09-finalizado.png)
+
+_Prontuário finalizado: alíneas em sequência; na marcação, as opções escolhidas em destaque e o texto de Outros._
+
 | Depois de finalizar | Regra |
 |---|---|
 | Edição | Não é mais possível alterar textos. Se tentar (por exemplo, por outra tela), o servidor responde "Não é possível salvar. O prontuário está finalizado." |
@@ -147,6 +159,12 @@ _Prontuário finalizado marcado; o ícone da impressora gera o PDF._
 _PDF gerado: cabeçalho com dados do paciente, as alíneas preenchidas, marca d'água da clínica e linha de assinatura e carimbo._
 
 > ⚠️ Correção feita nesta documentação: o nome do arquivo saía como "pac__data.pdf", sem o nome do paciente. Agora inclui o nome (ex.: "pac_Paciente_0005_23-09-2026 17-49.pdf"). O modelo do PDF (1, 2 ou 3) é definido por tipo de prontuário na configuração da clínica.
+
+## 6.1 Cancelar um prontuário (opcional por clínica)
+
+Quando a clínica habilita o parâmetro ProntuarioCancelarProprio (valor 1), o profissional ganha o botão amarelo Cancelar prontuário na lista, nos prontuários dele que ainda não estão cancelados. A janela explica que o prontuário será mantido no histórico e marcado como cancelado e pede o motivo, escolhido na lista de motivos de Cancelamento de Prontuário (cadastro de Motivos). Só o próprio profissional cancela o que criou, e um prontuário cancelado não pode ser finalizado. Ao contrário da exclusão de rascunho, o cancelamento serve para prontuários já finalizados.
+
+> ⚠️ Para finalizar um prontuário com alínea de Marcação obrigatória, marque ao menos uma opção (ou preencha o texto de Outros). Sem isso o sistema avisa: "Marque ao menos uma opção nas alíneas obrigatórias: ...".
 
 ## 7. Excluir um rascunho
 

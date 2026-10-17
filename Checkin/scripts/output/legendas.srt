@@ -137,3 +137,59 @@ Se faltar caixa aberto, plano próprio ou algum parâmetro,
 35
 00:02:12,739 --> 00:02:15,822
 o sistema explica na mensagem o que corrigir.
+
+36
+00:02:16,922 --> 00:02:20,248
+Novidade: com o módulo Painel de chegada ligado,
+
+37
+00:02:20,248 --> 00:02:26,139
+depois de confirmar o check-in o sistema pergunta se deseja notificar o profissional.
+
+38
+00:02:26,139 --> 00:02:29,188
+Marque os horários e clique em Avisar agora.
+
+39
+00:02:29,188 --> 00:02:35,009
+A TV da clínica mostra a nova chegada, e o profissional recebe o chamado no sistema.
+
+40
+00:02:35,009 --> 00:02:38,820
+Se nenhuma TV estiver conectada, o aviso não é enviado.
+
+41
+00:02:39,920 --> 00:02:43,535
+Outra novidade: com o módulo Revisão cadastral ligado,
+
+42
+00:02:43,535 --> 00:02:46,547
+se o cadastro do paciente precisa de revisão,
+
+43
+00:02:46,547 --> 00:02:49,961
+aparece uma faixa amarela no check-in com o motivo.
+
+44
+00:02:49,961 --> 00:02:55,317
+O aviso não bloqueia o check-in, e o link permite abrir o cadastro em outra aba.
+
+45
+00:02:56,417 --> 00:02:58,990
+Se a clínica usa o totem de check-in,
+
+46
+00:02:58,990 --> 00:03:02,886
+o paciente pode registrar a chegada sozinho na portaria.
+
+47
+00:03:02,886 --> 00:03:06,086
+Na agenda aparece um selo verde com o horário.
+
+48
+00:03:06,086 --> 00:03:10,956
+O totem apenas avisa a chegada: o check-in da recepção, com pagamento,
+
+49
+00:03:10,956 --> 00:03:13,251
+continua sendo feito normalmente.

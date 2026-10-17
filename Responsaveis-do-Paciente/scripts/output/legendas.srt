@@ -1,0 +1,143 @@
+1
+00:00:00,400 --> 00:00:05,057
+Este treinamento mostra os Responsáveis do paciente no ClinSis.
+
+2
+00:00:05,057 --> 00:00:11,192
+Cada paciente pode ter quantos responsáveis forem necessários: pai, mãe, avó, babá.
+
+3
+00:00:11,192 --> 00:00:17,328
+Eles ficam no cadastro do paciente, na aba Dados principais, no bloco Responsáveis,
+
+4
+00:00:17,328 --> 00:00:20,063
+com nome, parentesco, CPF e situação.
+
+5
+00:00:20,063 --> 00:00:22,354
+O selo amarelo, sem nascimento,
+
+6
+00:00:22,354 --> 00:00:27,603
+avisa que aquele responsável ainda não poderá usar o totem de check-in.
+
+7
+00:00:28,703 --> 00:00:34,886
+A clínica pode exigir pelo menos um responsável ativo para pacientes menores de dezoito anos.
+
+8
+00:00:34,886 --> 00:00:40,138
+A opção fica na Área do Administrador, no cadastro da clínica, e vem desligada.
+
+9
+00:00:40,138 --> 00:00:41,069
+Quando ligada,
+
+10
+00:00:41,069 --> 00:00:50,576
+o título Responsáveis ganha um asterisco vermelho e o sistema não deixa salvar um menor sem responsável: informe ao menos um responsável ativo.
+
+11
+00:00:51,676 --> 00:00:55,129
+Para cadastrar, clique em Adicionar responsável.
+
+12
+00:00:55,129 --> 00:00:58,366
+Informe o CPF, o nome e o grau de parentesco.
+
+13
+00:00:58,366 --> 00:01:02,322
+Se o CPF já existir como responsável de outro paciente,
+
+14
+00:01:02,322 --> 00:01:04,623
+o sistema carrega os dados dele.
+
+15
+00:01:04,623 --> 00:01:06,134
+O celular é opcional.
+
+16
+00:01:06,134 --> 00:01:10,521
+A data de nascimento é obrigatória quando o totem está ativo,
+
+17
+00:01:10,521 --> 00:01:15,916
+porque o responsável se identifica no totem com o próprio CPF e nascimento.
+
+18
+00:01:15,916 --> 00:01:20,807
+O endereço já vem preenchido com o do paciente, e pode ser alterado.
+
+19
+00:01:21,907 --> 00:01:25,794
+Clique em Confirmar para incluir o responsável na lista.
+
+20
+00:01:25,794 --> 00:01:30,513
+Nada é gravado ainda: o responsável só é salvo junto com o paciente,
+
+21
+00:01:30,513 --> 00:01:31,623
+no botão Salvar.
+
+22
+00:01:31,623 --> 00:01:36,551
+Antes de salvar, a lixeira permite remover quem acabou de ser incluído.
+
+23
+00:01:37,651 --> 00:01:38,680
+Cadastro salvo.
+
+24
+00:01:38,680 --> 00:01:43,483
+O responsável passou a existir como Pessoa e ficou ligado ao paciente.
+
+25
+00:01:43,483 --> 00:01:46,501
+Depois de salvo, para tirar alguém da lista,
+
+26
+00:01:46,501 --> 00:01:51,029
+use a chave Inativar: o responsável inativo continua no histórico,
+
+27
+00:01:51,029 --> 00:01:54,734
+não conta para a exigência de menor e não usa o totem.
+
+28
+00:01:55,834 --> 00:01:59,689
+Na tela de Pessoa, em Cadastros, existe o filtro Responsável,
+
+29
+00:01:59,689 --> 00:02:03,670
+que mostra só essas pessoas, e o filtro Sem data de nascimento,
+
+30
+00:02:03,670 --> 00:02:07,398
+que ajuda a encontrar quem ainda não consegue usar o totem.
+
+31
+00:02:08,498 --> 00:02:12,665
+Aqui estão os responsáveis, com a coluna Responsável marcada,
+
+32
+00:02:12,665 --> 00:02:14,988
+incluindo o que acabamos de criar.
+
+33
+00:02:14,988 --> 00:02:18,882
+O mesmo responsável pode estar ligado a vários pacientes,
+
+34
+00:02:18,882 --> 00:02:21,683
+e alterar o celular dele vale para todos.
+
+35
+00:02:21,683 --> 00:02:26,670
+Uma pessoa que é só responsável não conta como CPF duplicado de paciente,
+
+36
+00:02:26,670 --> 00:02:30,837
+o que permite cadastrar a criança com o CPF do pai ou da mãe.

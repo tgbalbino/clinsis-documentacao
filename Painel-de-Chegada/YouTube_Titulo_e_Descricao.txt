@@ -1,0 +1,60 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Painel de Chegada (TV)
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-painel-de-chegada-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Painel de Chegada (TV) (com legendas)
+
+DESCRIÇÃO:
+Avisar o profissional, na TV e no celular, que o paciente chegou.
+
+O Painel de chegada mostra, numa TV da clínica, o nome do profissional e do paciente que acabou de chegar, com um aviso sonoro. Ao mesmo tempo, o profissional recebe o chamado no sistema (e no celular, se ativar as notificações). O aviso sai do Check-in ("Notificar profissional") ou do botão Avisar chegada da Agenda. Quando não há chegada, a TV mostra a data, a hora, o clima e os aniversariantes do dia. O módulo é liberado por clínica pela Área do Administrador e vem desligado.
+
+Neste vídeo:
+• Como funciona
+• Passo 1: liberar e configurar
+• Passo 2: abrir a TV
+• Passo 3: autorizar a TV
+• Avisar a chegada do paciente
+• O que o profissional recebe
+• Conferir as chamadas do dia
+• Aniversariantes e datas comemorativas
+• Problemas comuns
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-painel-de-chegada-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Painel de Chegada (TV) (sem legendas)
+
+DESCRIÇÃO:
+Avisar o profissional, na TV e no celular, que o paciente chegou.
+
+O Painel de chegada mostra, numa TV da clínica, o nome do profissional e do paciente que acabou de chegar, com um aviso sonoro. Ao mesmo tempo, o profissional recebe o chamado no sistema (e no celular, se ativar as notificações). O aviso sai do Check-in ("Notificar profissional") ou do botão Avisar chegada da Agenda. Quando não há chegada, a TV mostra a data, a hora, o clima e os aniversariantes do dia. O módulo é liberado por clínica pela Área do Administrador e vem desligado.
+
+Neste vídeo:
+• Como funciona
+• Passo 1: liberar e configurar
+• Passo 2: abrir a TV
+• Passo 3: autorizar a TV
+• Avisar a chegada do paciente
+• O que o profissional recebe
+• Conferir as chamadas do dia
+• Aniversariantes e datas comemorativas
+• Problemas comuns
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

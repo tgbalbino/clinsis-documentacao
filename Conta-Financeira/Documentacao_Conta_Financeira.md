@@ -2,7 +2,7 @@
 
 _O que é, onde é usada e a validação Conta Financeira x Forma de Pagamento_
 
-Versão 1.1 — 29/09/2026
+Versão 1.2 — 16/10/2026
 
 A Conta Financeira é o "cofre" onde o dinheiro da clínica realmente entra e sai: uma conta bancária (Banco do Brasil, Sicoob, etc.) ou o próprio caixa em dinheiro. Toda baixa (recebimento ou pagamento) informa em qual conta o valor caiu ou de qual conta ele saiu — é isso que permite conferir o extrato do banco, saber o saldo de cada conta e montar o Fluxo de Caixa. Este manual explica o cadastro, onde ele é usado e, principalmente, a regra que amarra cada Conta Financeira às Formas de Pagamento permitidas nela.
 
@@ -140,6 +140,14 @@ O pagamento feito no Checkin do paciente gera uma Conta a Receber e sua baixa au
 _Tela de Parâmetros: a linha "Conta financeira usada na baixa automática do ContaReceber gerado pelo Checkin" aponta para "BANCO BRASIL"._
 
 > ⚠️ Se a conta configurada nesse parâmetro não aceitar a forma de pagamento escolhida no Checkin (por exemplo, o parâmetro apontando para o CAIXA e o paciente pagando no cartão), o Checkin é recusado com uma mensagem indicando o parâmetro e a tela de Conta Financeira para ajuste. Por isso, aponte o parâmetro para uma conta que aceite todas as formas usadas na recepção.
+
+## Conta duplicada
+
+O sistema não deixa cadastrar duas contas financeiras iguais. Com banco informado, a conta é considerada duplicada quando já existe outra com o mesmo banco, agência e conta (a mensagem é "Já existe uma conta financeira com o mesmo banco, agência e conta"). Para contas sem banco (caixa, por exemplo), vale a descrição: "Já existe uma conta financeira sem banco com a mesma descrição". Ao alterar uma conta, ela mesma não conta como duplicada.
+
+## Conta Financeira nos Parâmetros
+
+Nos Parâmetros que apontam para uma Conta Financeira (como a conta padrão de recebimento e a de pagamento), o campo agora é uma lista das contas ativas, no formato "código - descrição". Para os parâmetros de conta de recebimento e de pagamento, só aparecem contas que tenham banco e agência preenchidos.
 
 ## Excluir uma conta financeira
 

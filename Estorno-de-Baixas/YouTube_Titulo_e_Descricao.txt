@@ -1,0 +1,60 @@
+﻿TÍTULOS E DESCRIÇÕES PARA O YOUTUBE — Estorno de Baixas
+======================================================================
+Sugestão: publique os dois vídeos da pasta (com e sem legenda) ou só o com legenda,
+como preferir. Cada bloco abaixo pode ser copiado direto para o YouTube.
+
+ARQUIVO DO VÍDEO: video-estorno-de-baixas-com-legenda.mp4
+
+TÍTULO:
+ClinSis | Estorno de Baixas (com legendas)
+
+DESCRIÇÃO:
+Contas a Receber e Contas a Pagar: como estornar e como conferir no Dashboard e nos relatórios.
+
+Estornar uma baixa é cancelar um recebimento ou um pagamento que foi lançado errado (conta errada, valor ou data incorretos, duplicidade, ou pagamento que não aconteceu). O ClinSis não apaga o lançamento: ele fica no histórico, marcado como estornado, com quem estornou, quando e por quê, e o título volta a ficar em aberto com o saldo integral. Este manual mostra o passo a passo nas Contas a Receber e nas Contas a Pagar e como conferir o efeito no Dashboard Financeiro, nos relatórios e nos Movimentos Financeiros.
+
+Neste vídeo:
+• O exemplo deste manual
+• Antes do estorno: o que os totais mostram
+• Como estornar um recebimento (Contas a Receber)
+• Como estornar um pagamento (Contas a Pagar)
+• Conferência no Dashboard Financeiro
+• Conferência nos relatórios
+• Conferência nos Movimentos Financeiros
+• O que o estorno altera no sistema
+• Regras e bloqueios
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------
+
+ARQUIVO DO VÍDEO: video-estorno-de-baixas-sem-legenda.mp4
+
+TÍTULO:
+ClinSis | Estorno de Baixas (sem legendas)
+
+DESCRIÇÃO:
+Contas a Receber e Contas a Pagar: como estornar e como conferir no Dashboard e nos relatórios.
+
+Estornar uma baixa é cancelar um recebimento ou um pagamento que foi lançado errado (conta errada, valor ou data incorretos, duplicidade, ou pagamento que não aconteceu). O ClinSis não apaga o lançamento: ele fica no histórico, marcado como estornado, com quem estornou, quando e por quê, e o título volta a ficar em aberto com o saldo integral. Este manual mostra o passo a passo nas Contas a Receber e nas Contas a Pagar e como conferir o efeito no Dashboard Financeiro, nos relatórios e nos Movimentos Financeiros.
+
+Neste vídeo:
+• O exemplo deste manual
+• Antes do estorno: o que os totais mostram
+• Como estornar um recebimento (Contas a Receber)
+• Como estornar um pagamento (Contas a Pagar)
+• Conferência no Dashboard Financeiro
+• Conferência nos relatórios
+• Conferência nos Movimentos Financeiros
+• O que o estorno altera no sistema
+• Regras e bloqueios
+
+Manual em PDF (completo e simplificado) e as demais rotinas do ClinSis:
+https://tgbalbino.github.io/clinsis-documentacao/
+
+#ClinSis #GestãoDeClínicas #Tutorial
+
+----------------------------------------------------------------------

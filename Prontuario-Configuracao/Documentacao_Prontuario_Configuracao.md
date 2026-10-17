@@ -2,11 +2,11 @@
 
 _Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem_
 
-Versão 1.0 — 23/09/2026
+Versão 1.1 — 16/10/2026
 
 Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/tMs3WdzjMSg](https://youtu.be/tMs3WdzjMSg)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/EtH5lRGkhDc](https://youtu.be/EtH5lRGkhDc)
 
 ---
 
@@ -68,6 +68,7 @@ _Nova alínea: escolha o tipo de prontuário, o tipo de campo e digite o nome da
 | Texto | Caixa de texto livre (aceita os Textos padrão). |
 | Sim ou Não | Lista com as opções Sim/Não. |
 | Arquivo - Upload | Anexo de um arquivo (por exemplo, um laudo em PDF ou imagem). |
+| Marcação (lista de opções) | Lista de opções que o profissional marca: escolha única ou várias (veja abaixo). Só aparece nas clínicas liberadas. |
 
 Depois de Salvar, a janela continua aberta para você cadastrar várias alíneas seguidas; use Fechar ao terminar. O sistema não impede duas alíneas com o mesmo nome no mesmo tipo, então confira para não duplicar.
 
@@ -90,6 +91,57 @@ Excluir uma alínea (botão vermelho) pede confirmação. Se a clínica tiver a 
 ![Confirmação ao excluir uma alínea.](14-alinea-excluir.png)
 
 _Confirmação ao excluir uma alínea._
+
+## 2.1 Alínea de Marcação (lista de opções)
+
+A alínea do tipo Marcação mostra ao profissional uma lista de opções para marcar, em vez de um texto livre. Serve para respostas padronizadas, como "Como o paciente chegou" ou "Queixas". O tipo vem desligado: o administrador do sistema libera por clínica, na Área do Administrador (cadastro da clínica, opção de Prontuário com marcação), e os usuários precisam sair e entrar de novo. Enquanto não for liberado, a opção Marcação (lista de opções) não aparece em Tipo campo; alíneas de marcação já criadas continuam funcionando.
+
+![Nova alínea de Marcação: formato de resposta, Obrigatória, Permitir "Outros" e as opções.](M05-modal-marcacao.png)
+
+_Nova alínea de Marcação: formato de resposta, Obrigatória, Permitir "Outros" e as opções._
+
+| Campo | Como funciona |
+|---|---|
+| Como o profissional vai responder | Uma opção (escolha única: marcar outra troca a escolha) ou Várias opções (múltipla escolha). |
+| Obrigatória | O profissional precisa marcar ao menos uma opção para finalizar o prontuário. |
+| Permitir "Outros" | Acrescenta uma última opção em que o profissional digita um texto livre, obrigatório quando ela é marcada. Dá para trocar o nome da opção (padrão: Outros). |
+| Opções | Até 30 opções, de até 80 caracteres cada, com setas para mudar a ordem. Editar ou excluir uma opção não altera prontuários já preenchidos: a resposta gravada mantém o texto da época. |
+
+O botão Pré-visualizar (no rodapé da janela) mostra como o profissional verá a alínea, com dados fictícios. Nada é gravado.
+
+![Pré-visualização da alínea: opções em cartões, selo Obrigatória e a opção Outros.](M06-preview-alinea.png)
+
+_Pré-visualização da alínea: opções em cartões, selo Obrigatória e a opção Outros._
+
+Com um tipo filtrado, o botão Pré-visualizar prontuário (acima da lista) mostra todas as alíneas do tipo em sequência, ou uma por vez, para conferir o formulário completo antes de liberar para os profissionais.
+
+![Pré-visualização do prontuário completo: todas as alíneas em sequência.](M08-preview-prontuario.png)
+
+_Pré-visualização do prontuário completo: todas as alíneas em sequência._
+
+> ⚠️ O tipo de campo não pode ser alterado depois que a alínea é criada. Se errou o tipo, crie outra alínea e exclua a antiga.
+
+## 2.2 Clonar um tipo de prontuário
+
+Para criar um tipo parecido com um que já existe, use o botão Clonar (ícone de cópia) na linha do tipo, em Prontuário → Tipos. Informe o nome do novo tipo (até 30 caracteres) e confirme: o sistema copia as alíneas, as opções de marcação e os textos padrão. Modelo para download e De-Para não são copiados.
+
+![Lista de tipos: o botão cinza com o ícone de cópia clona o tipo.](M01-tipos-clonar.png)
+
+_Lista de tipos: o botão cinza com o ícone de cópia clona o tipo._
+
+![Janela Clonar: só o nome do novo tipo.](M02-clonar-modal.png)
+
+_Janela Clonar: só o nome do novo tipo._
+
+![Tipo clonado ("Tipo clonado!"), já com as alíneas do original.](M03-tipo-clonado.png)
+
+_Tipo clonado ("Tipo clonado!"), já com as alíneas do original._
+
+## 2.3 Excluir ou renomear uma alínea que já tem respostas
+
+Excluir uma alínea que já tem respostas apenas a desativa: ela deixa de aparecer em prontuários novos e os já preenchidos continuam como estavam. Renomear o título de uma alínea não altera os prontuários já finalizados: ao finalizar, o sistema grava o título e a descrição das opções marcadas daquele momento.
+
+Para o profissional poder cancelar prontuários, a clínica precisa habilitar o parâmetro ProntuarioCancelarProprio (valor 1) em Tabelas Aux. → Parâmetros e ter motivos em Cancelamento de Prontuário no cadastro de Motivos. Veja o manual de Uso do Prontuário.
 
 ## 3. Textos padrão
 

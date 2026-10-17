@@ -6,7 +6,7 @@ Versão 1.0 — 06/10/2026
 
 Quando o paciente paga com cheque ou com cartão de crédito, o título é quitado na hora, mas o dinheiro só chega à conta da clínica dias depois. Este manual mostra como o ClinSis controla esse intervalo: cada cheque é cadastrado com seus dados (banco, agência, conta, série, número e emitente), pode pagar mais de um título, e a conta só é movimentada quando o cheque é compensado. No cartão, cada parcela repassada pelo banco é confirmada separadamente. Também explica a devolução do cheque com nova cobrança e o cheque emitido pela clínica nos pagamentos.
 
-Vídeo narrado desta rotina: `video-controle-de-cheques-liquidacao-com-legenda.mp4`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/HwchLf2HIFE](https://youtu.be/HwchLf2HIFE)
 
 ---
 

@@ -11,8 +11,8 @@ SHOTS = os.path.join(BASE, "screenshots")
 ENTREGA = os.path.join(BASE, "entrega")
 os.makedirs(ENTREGA, exist_ok=True)
 
-VERSAO = '1.1'
-DATA = '29/09/2026'
+VERSAO = '1.2'
+DATA = '16/10/2026'
 TITULO = 'Contrato com Assinatura Digital (D4Sign)'
 SUBTITULO = 'Envio para assinatura eletrônica, acompanhamento e fechamento automático'
 VIDEO_NOME = "https://youtu.be/eg7ABN_eNyo"
@@ -32,6 +32,9 @@ blocks = [('aviso', 'Para o contrato poder ser fechado/enviado para assinatura, 
  ('img', '01-contrato-pronto-enviar-assinatura.png', 'Contrato pronto (serviços e acerto batendo): no topo a opção "Assinar pela D4Sign / Não assinar" e, no rodapé, o botão "Enviar para assinatura". O aviso amarelo lembra que a assinatura eletrônica é obrigatória antes do fechamento.'),
  ('img', '02-confirmar-enviar-assinatura.png', 'Confirmação: "Deseja enviar este contrato para assinatura eletrônica? Após o envio, os dados ficarão bloqueados."'),
  ('p', 'Ao confirmar, o sistema, em sequência: gera o PDF do contrato, envia esse PDF para a D4Sign, cadastra o(s) signatário(s) e dispara o convite de assinatura por e-mail. O signatário é o responsável do contrato, se houver um cadastrado, ou o próprio paciente quando não há responsável — o e-mail usado é sempre o que está no cadastro da pessoa no ClinSis.'),
+('h2', 'Compartilhar o link de assinatura'),
+ ('p', 'Enquanto o contrato está <b>aguardando assinaturas</b>, aparece o botão verde <b>Compartilhar assinatura</b>. A janela pergunta como enviar o link ao signatário: <b>Enviar pelo WhatsApp</b> (abre a conversa com o link pronto) ou <b>Copiar link</b> (para mandar por outro meio).'),
+
  ('h2', 'Acompanhando a assinatura'),
  ('p', 'A assinatura em si acontece fora do ClinSis, na página da D4Sign — o paciente/responsável recebe o e-mail, abre o link, confere e assina o documento eletronicamente. Dentro do ClinSis, a aba "Histórico da assinatura" do contrato registra cada evento recebido (documento enviado, visualizado, assinado, finalizado), com data e situação (Processado/Pendente).'),
  ('img', '05-historico-assinatura.png', 'Contrato com a assinatura finalizada: a aba Histórico da assinatura lista cada evento recebido (aqui "Finalizado", capturado por sincronização). O alerta amarelo mostra que o fechamento automático falhou e o botão "Fechar Contrato" reprocessa.'),

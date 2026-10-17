@@ -2,7 +2,7 @@
 
 _Envio manual e envio automático pela API oficial da Meta: requisitos, configuração, templates, consentimento e acompanhamento_
 
-Versão 1.2 — 01/10/2026
+Versão 1.3 — 16/10/2026
 
 O ClinSis avisa os pacientes de seus agendamentos por WhatsApp de duas formas: o envio manual, em que a recepção abre o WhatsApp com a mensagem pronta e envia com um clique, e o envio automático pela API oficial da Meta (WhatsApp Business Platform), em que o sistema envia sozinho o lembrete do dia seguinte e o paciente confirma ou avisa que não poderá ir por um link. Este documento explica as duas formas, o que a clínica precisa ter na Meta, como configurar, como acompanhar e os erros mais comuns.
 
@@ -222,6 +222,12 @@ Quando uma mensagem falha, a linha mostra o motivo em português (por exemplo, n
 | Quem pode | Administrador e atendente, com o módulo WhatsApp Meta habilitado na clínica. |
 
 > ⚠️ Se a falha continuar, o motivo indica o que corrigir: celular do paciente, pagamento da conta na Meta, template aprovado ou limite de envios. Corrija e use Reenviar novamente.
+
+## Efetividade do aviso e dia sem expediente
+
+Para saber se o lembrete vale a pena, existe a tela Relatórios → WhatsApp Meta → Efetividade do aviso (só administrador). Ela cruza o que aconteceu com a mensagem (enviada, entregue, lida, link aberto, resposta) com o que foi lançado na agenda (presente, faltou, desmarcou) e mostra a taxa de falta de quem recebeu o aviso e de quem não recebeu, as faltas evitadas (estimativa), o tempo mediano até responder e o custo por falta evitada. Veja o manual Efetividade do Aviso por WhatsApp.
+
+Quando a data da consulta cai em feriado ou recesso cadastrado na Inatividade da clínica, a simulação dos próximos envios e o link do paciente mostram o aviso de dia sem expediente, para o paciente não confirmar uma consulta que não vai acontecer.
 
 ## Erros comuns
 

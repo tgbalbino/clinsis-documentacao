@@ -11,7 +11,7 @@ ClinSis | Dashboard de Agenda (com legendas)
 DESCRIÇÃO:
 O que significa cada informação e como conferir cada uma no sistema.
 
-O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026). Assista ao vídeo narrado desta rotina: [https://youtu.be/4T57kC-7llo](https://youtu.be/4T57kC-7llo)
+O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026). Assista ao vídeo narrado desta rotina: [https://youtu.be/yMswtbogABA](https://youtu.be/yMswtbogABA)
 
 Neste vídeo:
 • Onde encontrar e o filtro de período
@@ -40,7 +40,7 @@ ClinSis | Dashboard de Agenda (sem legendas)
 DESCRIÇÃO:
 O que significa cada informação e como conferir cada uma no sistema.
 
-O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026). Assista ao vídeo narrado desta rotina: [https://youtu.be/4T57kC-7llo](https://youtu.be/4T57kC-7llo)
+O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026). Assista ao vídeo narrado desta rotina: [https://youtu.be/yMswtbogABA](https://youtu.be/yMswtbogABA)
 
 Neste vídeo:
 • Onde encontrar e o filtro de período

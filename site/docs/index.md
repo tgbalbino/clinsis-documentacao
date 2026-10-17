@@ -14,7 +14,12 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 ## Agenda e Atendimento
 
 - [Checkin de Paciente](agenda/checkin.md)
+- [Totem de Check-in](agenda/totem-de-checkin.md)
+- [Painel de Chegada (TV)](agenda/painel-de-chegada.md)
+- [Responsáveis do Paciente](agenda/responsaveis-do-paciente.md)
+- [Revisão Cadastral de Pacientes](agenda/revisao-cadastral.md)
 - [WhatsApp - lembretes e confirmações](agenda/whatsapp.md)
+- [Efetividade do Aviso por WhatsApp](agenda/efetividade-whatsapp.md)
 - [Dashboard de Agenda](agenda/dashboard-de-agenda.md)
 
 ## Contrato
@@ -53,5 +58,6 @@ Central de manuais (PDF) e vídeos narrados de cada rotina do sistema, organizad
 - [Módulo de Caixa](financeiro/modulo-de-caixa.md)
 - [Conciliação Bancária (OFX)](financeiro/conciliacao-bancaria-ofx.md)
 - [Controle de Cheques e Liquidação Financeira](financeiro/liquidacao-financeira-cheque-e-cartao.md)
+- [Estorno de Baixas (Contas a Receber e a Pagar)](financeiro/estorno-de-baixas.md)
 - [Dashboard Financeiro e Fluxo de Caixa](financeiro/dashboard-financeiro-e-fluxo-caixa.md)
 

@@ -75,3 +75,7 @@ PDF completo + simplificado + MD prontos em `Manual-Base-ClinSis/` e incluídos 
 ## 22. Área do Profissional (24/09/2026)
 PDF completo + simplificado + MD + vídeos (com/sem legenda, ~3m38s) em `Area-do-Profissional/`, feitos com usuário de perfil Profissional (login de teste 55555555555). Link do YouTube ainda pendente (a capa do PDF cita o nome do arquivo até o link existir).
 Site: agora só o PDF simplificado é publicado e o texto é limpo de informação técnica (ver `limpar_para_usuario_final` em `site/scripts/gerar_site_docs.py`).
+
+
+## Revisão de 16/10/2026 (tarefa 0170)
+Revisão de tudo que mudou desde a reorganização de 01/10. Novos manuais com vídeo: Totem de Check-in, Responsáveis do Paciente, Painel de Chegada (TV) e Revisão Cadastral (vídeo). Novo manual só em PDF/MD: Efetividade do Aviso por WhatsApp. Atualizados com vídeo refeito: Checkin, Prontuário (Configuração e Uso), Contas a Receber, Dashboard Financeiro e Dashboard de Agenda. Atualizados só em texto: WhatsApp, Contrato, Contrato D4Sign, Conta Financeira, Área do Profissional e Manual Base. Detalhes, lacunas e pendências em `Controle-Tarefas/REVISAO-DOCUMENTACOES-0170.md`. Vídeos prontos para subir na pasta `Videos-YouTube` (upload manual, sem credenciais do YouTube no disco).
