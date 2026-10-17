@@ -14,7 +14,7 @@ VERSAO = '2.1'
 DATA = '16/10/2026'
 TITULO = 'Checkin de Paciente'
 SUBTITULO = 'Registrar a chegada do paciente e, se houver cobrança, já receber na hora'
-VIDEO_NOME = "https://youtu.be/MKW8mdKnfTg"
+VIDEO_NOME = "https://youtu.be/ifvL23xnsPY"
 INTRO = ('O <b>Checkin</b> registra a chegada do paciente na clínica no dia da consulta ou sessão. Quando o paciente tem um horário '
          '<b>agendado para hoje</b> que é cobrado na hora (por exemplo, atendimento particular), o Checkin também mostra a cobrança e permite '
          'lançar o pagamento: nesse caso, o sistema gera automaticamente uma <b>Conta a Receber já paga</b>. Para o pagamento funcionar, a clínica '

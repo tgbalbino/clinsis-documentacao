@@ -15,7 +15,7 @@ VERSAO = "3.2"
 DATA = "16/10/2026"
 TITULO = "Dashboard de Agenda"
 SUBTITULO = "O que significa cada informação e como conferir cada uma no sistema"
-VIDEO_NOME = "https://youtu.be/yMswtbogABA"
+VIDEO_NOME = "https://youtu.be/UqmqBCSoWXo"
 INTRO = ('O <b>Dashboard de Agenda</b> reúne, num só lugar, números sobre os atendimentos de um '
          'período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. '
          'Este manual explica <b>o que cada card, gráfico e tabela representa</b>, <b>como o número é '

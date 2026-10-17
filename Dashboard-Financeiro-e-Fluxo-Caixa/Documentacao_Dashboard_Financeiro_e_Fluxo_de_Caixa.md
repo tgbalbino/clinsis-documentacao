@@ -6,7 +6,7 @@ Versão 1.2 — 16/10/2026
 
 O Dashboard Financeiro resume, num período escolhido, o que entrou, o que saiu, o saldo de cada conta e os maiores pagamentos e recebimentos. O Fluxo de Caixa mostra a movimentação dia a dia (ou por semana/mês) e ainda projeta o saldo futuro a partir das contas a pagar e a receber em aberto. Este documento explica cada campo das duas telas.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/WCa8gVOdXKE](https://youtu.be/WCa8gVOdXKE)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/wU6dqQLD3hA](https://youtu.be/wU6dqQLD3hA)
 
 ---
 

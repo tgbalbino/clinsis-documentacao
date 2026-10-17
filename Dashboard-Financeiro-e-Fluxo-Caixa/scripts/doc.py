@@ -14,7 +14,7 @@ VERSAO = '1.2'
 DATA = '16/10/2026'
 TITULO = 'Dashboard Financeiro e Fluxo de Caixa'
 SUBTITULO = 'O que é cada informação exibida na tela e de onde ela vem no sistema'
-VIDEO_NOME = "https://youtu.be/WCa8gVOdXKE"
+VIDEO_NOME = "https://youtu.be/wU6dqQLD3hA"
 INTRO = ('O <b>Dashboard Financeiro</b> resume, num período escolhido, o que entrou, o que saiu, o saldo de cada conta e '
          'os maiores pagamentos e recebimentos. O <b>Fluxo de Caixa</b> mostra a movimentação dia a dia (ou por semana/mês) e '
          'ainda projeta o saldo futuro a partir das contas a pagar e a receber em aberto. Este documento explica cada '

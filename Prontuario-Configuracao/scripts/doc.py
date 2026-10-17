@@ -14,7 +14,7 @@ VERSAO = '1.1'
 DATA = '16/10/2026'
 TITULO = "Prontuário — Configuração"
 SUBTITULO = "Tipos de prontuário, Alíneas e Textos padrão: o que são, como cadastrar e para que servem"
-VIDEO_NOME = "https://youtu.be/tMs3WdzjMSg"
+VIDEO_NOME = "https://youtu.be/EtH5lRGkhDc"
 INTRO = ('Antes de um profissional preencher um prontuário, a clínica precisa definir <b>quais tipos de prontuário existem</b> '
          '(Anamnese, Evolução, Relatório...) e <b>quais campos cada tipo tem</b> (as alíneas). Este manual explica essas duas '
          'configurações, feitas pelo administrador, e os <b>Textos padrão</b>, que cada profissional cria para agilizar o '

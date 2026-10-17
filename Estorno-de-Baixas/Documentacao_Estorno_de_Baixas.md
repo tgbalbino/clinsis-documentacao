@@ -6,7 +6,7 @@ Versão 1.0 — 07/10/2026
 
 Estornar uma baixa é cancelar um recebimento ou um pagamento que foi lançado errado (conta errada, valor ou data incorretos, duplicidade, ou pagamento que não aconteceu). O ClinSis não apaga o lançamento: ele fica no histórico, marcado como estornado, com quem estornou, quando e por quê, e o título volta a ficar em aberto com o saldo integral. Este manual mostra o passo a passo nas Contas a Receber e nas Contas a Pagar e como conferir o efeito no Dashboard Financeiro, nos relatórios e nos Movimentos Financeiros.
 
-Vídeo narrado desta rotina: `video-estorno-de-baixas-com-legenda.mp4`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/Bb6zZYqqztg](https://youtu.be/Bb6zZYqqztg)
 
 ---
 

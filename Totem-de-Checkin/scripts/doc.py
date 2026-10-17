@@ -16,7 +16,7 @@ DATA = '16/10/2026'
 NOME = 'Totem_de_Checkin'
 TITULO = "Totem de Check-in"
 SUBTITULO = "O paciente (ou o responsável) registra a chegada sozinho na portaria, com CPF e data de nascimento"
-VIDEO_NOME = "video-totem-de-checkin-com-legenda.mp4"
+VIDEO_NOME = "https://youtu.be/tgVOJsZ96Ls"
 INTRO = ('O <b>Totem de check-in</b> é a tela da portaria onde o paciente, ou o responsável por ele, registra a chegada '
          'sem usuário e senha: basta informar o <b>CPF</b> e a <b>data de nascimento</b>. A recepção vê um selo verde '
          'com o <b>horário da chegada</b> ao lado do nome do paciente na <b>Agenda</b> do dia. O totem apenas avisa a chegada: '

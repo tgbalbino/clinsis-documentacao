@@ -16,7 +16,7 @@ DATA = '07/10/2026'
 NOME = 'Estorno_de_Baixas'
 TITULO = "Estorno de Baixas"
 SUBTITULO = "Contas a Receber e Contas a Pagar: como estornar e como conferir no Dashboard e nos relatórios"
-VIDEO_NOME = "video-estorno-de-baixas-com-legenda.mp4"
+VIDEO_NOME = "https://youtu.be/Bb6zZYqqztg"
 INTRO = ('<b>Estornar</b> uma baixa é cancelar um recebimento ou um pagamento que foi lançado errado (conta errada, '
          'valor ou data incorretos, duplicidade, ou pagamento que não aconteceu). O ClinSis <b>não apaga</b> o lançamento: '
          'ele fica no histórico, marcado como estornado, com <b>quem</b> estornou, <b>quando</b> e <b>por quê</b>, e o título '

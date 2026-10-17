@@ -15,7 +15,7 @@ VERSAO = '1.2'
 DATA = '16/10/2026'
 TITULO = 'Contas a Receber'
 SUBTITULO = 'Cadastrar e receber os valores que os pacientes/convênios devem à clínica'
-VIDEO_NOME = "https://youtu.be/PFpYbTqKvFM"
+VIDEO_NOME = "https://youtu.be/4zDcmijBoJY"
 INTRO = 'Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.'
 RODAPE = ('Documento gerado por teste manual guiado (navegador automatizado) em ambiente local de '
           'homologação, clínica de testes "Homologação" (Clínica 1), usuário administrador de teste. '

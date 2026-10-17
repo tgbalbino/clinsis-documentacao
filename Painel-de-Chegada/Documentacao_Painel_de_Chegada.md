@@ -6,7 +6,7 @@ Versão 1.0 — 16/10/2026
 
 O Painel de chegada mostra, numa TV da clínica, o nome do profissional e do paciente que acabou de chegar, com um aviso sonoro. Ao mesmo tempo, o profissional recebe o chamado no sistema (e no celular, se ativar as notificações). O aviso sai do Check-in ("Notificar profissional") ou do botão Avisar chegada da Agenda. Quando não há chegada, a TV mostra a data, a hora, o clima e os aniversariantes do dia. O módulo é liberado por clínica pela Área do Administrador e vem desligado.
 
-Vídeo narrado desta rotina: `video-painel-de-chegada-com-legenda.mp4`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/CX3IduHG7Kg](https://youtu.be/CX3IduHG7Kg)
 
 ---
 

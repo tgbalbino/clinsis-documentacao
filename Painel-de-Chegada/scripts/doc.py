@@ -16,7 +16,7 @@ DATA = '16/10/2026'
 NOME = 'Painel_de_Chegada'
 TITULO = "Painel de Chegada (TV)"
 SUBTITULO = "Avisar o profissional, na TV e no celular, que o paciente chegou"
-VIDEO_NOME = "video-painel-de-chegada-com-legenda.mp4"
+VIDEO_NOME = "https://youtu.be/CX3IduHG7Kg"
 INTRO = ('O <b>Painel de chegada</b> mostra, numa <b>TV</b> da clínica, o nome do profissional e do paciente que acabou de chegar, '
          'com um aviso sonoro. Ao mesmo tempo, o <b>profissional</b> recebe o chamado no sistema (e no celular, se ativar as '
          'notificações). O aviso sai do <b>Check-in</b> ("Notificar profissional") ou do botão <b>Avisar chegada</b> da <b>Agenda</b>. '

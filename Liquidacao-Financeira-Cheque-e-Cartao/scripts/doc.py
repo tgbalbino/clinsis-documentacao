@@ -16,7 +16,7 @@ DATA = '06/10/2026'
 NOME = 'Controle_de_Cheques_e_Liquidacao'
 TITULO = "Controle de Cheques e Liquidação Financeira"
 SUBTITULO = "Cheque e cartão: o dinheiro só entra na conta quando é compensado ou repassado"
-VIDEO_NOME = "video-controle-de-cheques-liquidacao-com-legenda.mp4"
+VIDEO_NOME = "https://youtu.be/HwchLf2HIFE"
 INTRO = ('Quando o paciente paga com <b>cheque</b> ou com <b>cartão de crédito</b>, o título é quitado na hora, '
          'mas o dinheiro só chega à conta da clínica dias depois. Este manual mostra como o ClinSis controla esse '
          'intervalo: cada <b>cheque</b> é cadastrado com seus dados (banco, agência, conta, série, número e emitente), '

@@ -6,7 +6,7 @@ Versão 1.0 — 16/10/2026
 
 O Totem de check-in é a tela da portaria onde o paciente, ou o responsável por ele, registra a chegada sem usuário e senha: basta informar o CPF e a data de nascimento. A recepção vê um selo verde com o horário da chegada ao lado do nome do paciente na Agenda do dia. O totem apenas avisa a chegada: o Check-in da recepção (pagamento, Plano Próprio) continua sendo feito normalmente. O recurso vem desligado e é ativado pelo administrador da clínica.
 
-Vídeo narrado desta rotina: `video-totem-de-checkin-com-legenda.mp4`
+Assista ao vídeo narrado desta rotina: [https://youtu.be/tgVOJsZ96Ls](https://youtu.be/tgVOJsZ96Ls)
 
 ---
 

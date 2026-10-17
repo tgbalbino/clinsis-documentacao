@@ -6,7 +6,7 @@ Versão 1.1 — 16/10/2026
 
 Antes de um profissional preencher um prontuário, a clínica precisa definir quais tipos de prontuário existem (Anamnese, Evolução, Relatório...) e quais campos cada tipo tem (as alíneas). Este manual explica essas duas configurações, feitas pelo administrador, e os Textos padrão, que cada profissional cria para agilizar o preenchimento. O uso do dia a dia (criar, preencher, finalizar) e a auditoria estão em manuais próprios.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/tMs3WdzjMSg](https://youtu.be/tMs3WdzjMSg)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/EtH5lRGkhDc](https://youtu.be/EtH5lRGkhDc)
 
 ---
 

@@ -6,7 +6,7 @@ Versão 1.2 — 16/10/2026
 
 Contas a Receber reúne tudo que a clínica tem a receber: lançamentos manuais feitos aqui (em uma ou várias parcelas) e também os que chegam automaticamente de outras rotinas, como Checkin (quando há pagamento na hora), fechamento de Contrato e Cobrança de Paciente. A partir dela dá pra acompanhar o que está em aberto, vencido, vencendo hoje ou a vencer, e lançar os recebimentos (baixas). Também exige Plano de Conta e Centro de Custo já cadastrados.
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/PFpYbTqKvFM](https://youtu.be/PFpYbTqKvFM)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/4zDcmijBoJY](https://youtu.be/4zDcmijBoJY)
 
 ---
 

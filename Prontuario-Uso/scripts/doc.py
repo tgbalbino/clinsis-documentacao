@@ -14,7 +14,7 @@ VERSAO = '1.1'
 DATA = '16/10/2026'
 TITULO = "Prontuário — Uso pelo Profissional"
 SUBTITULO = "Criar, preencher, finalizar, consultar e imprimir prontuários"
-VIDEO_NOME = "https://youtu.be/lCpFbKV5WrI"
+VIDEO_NOME = "https://youtu.be/KJeRf5yIZXM"
 INTRO = ('Este manual mostra o dia a dia do prontuário para o <b>profissional</b>: como criar um prontuário para um paciente da '
          'agenda, preencher as alíneas, usar textos padrão e tags, <b>finalizar</b>, consultar, imprimir em PDF e excluir um '
          'rascunho. Os tipos e as alíneas (o formulário) são configurados antes, no manual "Prontuário — Configuração". '

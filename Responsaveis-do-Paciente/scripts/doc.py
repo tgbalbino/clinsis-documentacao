@@ -16,7 +16,7 @@ DATA = '16/10/2026'
 NOME = 'Responsaveis_do_Paciente'
 TITULO = "Responsáveis do Paciente"
 SUBTITULO = "Quantos responsáveis forem necessários por paciente, com parentesco, contato e situação"
-VIDEO_NOME = "video-responsaveis-do-paciente-com-legenda.mp4"
+VIDEO_NOME = "https://youtu.be/6df6y0tUt8o"
 INTRO = ('Crianças, adolescentes e pacientes que dependem de alguém para vir à clínica costumam ter <b>mais de um responsável</b>: '
          'pai, mãe, avó, babá. No ClinSis, cada paciente pode ter quantos <b>responsáveis</b> forem necessários. Cada responsável é uma '
          '<b>Pessoa</b> (do tipo <b>Responsável</b>) ligada ao paciente pelo <b>grau de parentesco</b> e pela situação <b>ativo ou inativo</b>. '

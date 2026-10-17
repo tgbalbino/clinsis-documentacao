@@ -6,7 +6,7 @@ Versão 3.2 — 16/10/2026
 
 O Dashboard de Agenda reúne, num só lugar, números sobre os atendimentos de um período: sessões, pacientes, presença/falta, ocupação da agenda e faturamento por convênio. Este manual explica o que cada card, gráfico e tabela representa, como o número é calculado e, principalmente, como conferir cada valor dentro do sistema — com um exemplo real passo a passo (Setembro/2026).
 
-Assista ao vídeo narrado desta rotina: [https://youtu.be/yMswtbogABA](https://youtu.be/yMswtbogABA)
+Assista ao vídeo narrado desta rotina: [https://youtu.be/UqmqBCSoWXo](https://youtu.be/UqmqBCSoWXo)
 
 ---
 
